@@ -1,0 +1,56 @@
+name: Update Subscriptions
+
+on:
+  schedule:
+    # 默认每 6 小时运行一次（教程第三部分：修改此 cron 即可调整间隔）
+    - cron: '0 */6 * * *'
+  workflow_dispatch: # 支持手动点击运行
+
+concurrency:
+  group: freesub-build
+  cancel-in-progress: true # 定时任务与手动触发重叠时，杀掉旧任务，避免 git push 冲突
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30 # 防止异常时任务挂到 6 小时
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+          cache: 'pip'
+
+      - name: Cache GeoLite Databases
+        uses: actions/cache@v4
+        with:
+          path: |
+            Country.mmdb
+            ASN.mmdb
+          key: mmdb-cache-v1 # 地理数据库按月更新，固定 key 长期复用，避免每轮重下 ~10MB
+
+      - name: Install Dependencies
+        run: |
+          pip install -r scripts/requirements.txt
+
+      - name: Run Real-Prober and Classifier
+        run: |
+          python scripts/main.py
+
+      - name: Commit and Push Results
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A output/ README.md
+          if git diff --staged --quiet; then
+            echo "没有节点变动与内容更新。"
+          else
+            git commit -m "Auto Update: $(date -u '+%Y-%m-%d %H:%M:%S') UTC"
+            git push
+          fi

@@ -1,0 +1,51 @@
+{
+  "version": 1,
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇳🇴 挪威 (Norway) 01 - xiaohe",
+        "🇳🇴 挪威 (Norway) 02 - xiaohe",
+        "🇳🇴 挪威 (Norway) 03 - xiaohe",
+        "🇳🇴 挪威 (Norway) 04 - xiaohe",
+        "🇳🇴 挪威 (Norway) 05 - xiaohe",
+        "🇳🇴 挪威 (Norway) 06 - xiaohe",
+        "🇳🇴 挪威 (Norway) 07 - xiaohe",
+        "🇳🇴 挪威 (Norway) 08 - xiaohe",
+        "🇳🇴 挪威 (Norway) 09 - xiaohe",
+        "🇳🇴 挪威 (Norway) 10 - xiaohe",
+        "🇳🇴 挪威 (Norway) 11 - xiaohe",
+        "🇳🇴 挪威 (Norway) 12 - xiaohe"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇳🇴 挪威 (Norway) 01 - xiaohe",
+        "🇳🇴 挪威 (Norway) 02 - xiaohe",
+        "🇳🇴 挪威 (Norway) 03 - xiaohe",
+        "🇳🇴 挪威 (Norway) 04 - xiaohe",
+        "🇳🇴 挪威 (Norway) 05 - xiaohe",
+        "🇳🇴 挪威 (Norway) 06 - xiaohe",
+        "🇳🇴 挪威 (Norway) 07 - xiaohe",
+        "🇳🇴 挪威 (Norway) 08 - xiaohe",
+        "🇳🇴 挪威 (Norway) 09 - xiaohe",
+        "🇳🇴 挪威 (Norway) 10 - xiaohe",
+        "🇳🇴 挪威 (Norway) 11 - xiaohe",
+        "🇳🇴 挪威 (Norway) 12 - xiaohe"
+      ],
+      "url": "https://www.google.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}

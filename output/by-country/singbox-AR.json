@@ -1,0 +1,57 @@
+{
+  "version": 1,
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇦🇷 AR 01 - xiaohe",
+        "🇦🇷 AR 02 - xiaohe",
+        "🇦🇷 AR 03 - xiaohe",
+        "🇦🇷 AR 04 - xiaohe",
+        "🇦🇷 AR 05 - xiaohe",
+        "🇦🇷 AR 06 - xiaohe",
+        "🇦🇷 AR 07 - xiaohe",
+        "🇦🇷 AR 08 - xiaohe",
+        "🇦🇷 AR 09 - xiaohe",
+        "🇦🇷 AR 10 - xiaohe",
+        "🇦🇷 AR 11 - xiaohe",
+        "🇦🇷 AR 12 - xiaohe",
+        "🇦🇷 AR 13 - xiaohe",
+        "🇦🇷 AR 14 - xiaohe",
+        "🇦🇷 AR 15 - xiaohe"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇦🇷 AR 01 - xiaohe",
+        "🇦🇷 AR 02 - xiaohe",
+        "🇦🇷 AR 03 - xiaohe",
+        "🇦🇷 AR 04 - xiaohe",
+        "🇦🇷 AR 05 - xiaohe",
+        "🇦🇷 AR 06 - xiaohe",
+        "🇦🇷 AR 07 - xiaohe",
+        "🇦🇷 AR 08 - xiaohe",
+        "🇦🇷 AR 09 - xiaohe",
+        "🇦🇷 AR 10 - xiaohe",
+        "🇦🇷 AR 11 - xiaohe",
+        "🇦🇷 AR 12 - xiaohe",
+        "🇦🇷 AR 13 - xiaohe",
+        "🇦🇷 AR 14 - xiaohe",
+        "🇦🇷 AR 15 - xiaohe"
+      ],
+      "url": "https://www.google.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}

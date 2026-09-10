@@ -1,0 +1,15 @@
+Country.mmdb
+ASN.mmdb
+__pycache__/
+*.pyc
+.venv/
+xray.exe
+xray
+xray.zip
+sing-box.exe
+sing-box
+sing-box-*.zip
+sing-box-*.tar.gz
+*.log
+xray_tmp_*.json
+singbox_tmp_*.json
