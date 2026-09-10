@@ -29,8 +29,34 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: 192.145.31.5
+      Host: neth9.lunariai.ru
 - name: 🇧🇬 保加利亚 (Bulgaria) 03 - xiaohe
+  type: vless
+  server: 192.145.31.5
+  port: 443
+  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 192.145.31.5
+- name: 🇧🇬 保加利亚 (Bulgaria) 04 - xiaohe
+  type: vless
+  server: 192.145.31.5
+  port: 443
+  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 192.145.31.5
+- name: 🇧🇬 保加利亚 (Bulgaria) 05 - xiaohe
   type: vless
   server: 193.148.59.178
   port: 443
@@ -43,34 +69,6 @@ proxies:
     short-id: e3daad69
   servername: www.apple.com
   client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇧🇬 保加利亚 (Bulgaria) 04 - xiaohe
-  type: vless
-  server: 144.31.50.236
-  port: 443
-  uuid: 1c332eae-7e02-4acd-996d-4eb3e652401c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: uitO4Z8t9TplwwYaqwLqh5rfxDh_X8bOBiNuPbzvaEM
-    short-id: bbe46bd8f6b96839
-  servername: yandex.ru
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇧🇬 保加利亚 (Bulgaria) 05 - xiaohe
-  type: vless
-  server: 144.31.50.236
-  port: 443
-  uuid: 1c332eae-7e02-4acd-996d-4eb3e652401c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: uitO4Z8t9TplwwYaqwLqh5rfxDh_X8bOBiNuPbzvaEM
-    short-id: bbe46bd8f6b96839
-  servername: yandex.ru
-  client-fingerprint: randomized
   flow: xtls-rprx-vision
 - name: 🇧🇬 保加利亚 (Bulgaria) 06 - xiaohe
   type: vless
@@ -88,7 +86,7 @@ proxies:
   flow: xtls-rprx-vision
 - name: 🇧🇬 保加利亚 (Bulgaria) 07 - xiaohe
   type: vless
-  server: prep.wwwinternetvideo.click
+  server: 144.31.50.236
   port: 443
   uuid: 1c332eae-7e02-4acd-996d-4eb3e652401c
   udp: true
@@ -99,6 +97,20 @@ proxies:
     short-id: bbe46bd8f6b96839
   servername: yandex.ru
   client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇧🇬 保加利亚 (Bulgaria) 08 - xiaohe
+  type: vless
+  server: 144.31.50.236
+  port: 443
+  uuid: 1c332eae-7e02-4acd-996d-4eb3e652401c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: uitO4Z8t9TplwwYaqwLqh5rfxDh_X8bOBiNuPbzvaEM
+    short-id: bbe46bd8f6b96839
+  servername: yandex.ru
+  client-fingerprint: randomized
   flow: xtls-rprx-vision
 proxy-groups:
 - name: PROXIES
@@ -112,6 +124,7 @@ proxy-groups:
   - 🇧🇬 保加利亚 (Bulgaria) 05 - xiaohe
   - 🇧🇬 保加利亚 (Bulgaria) 06 - xiaohe
   - 🇧🇬 保加利亚 (Bulgaria) 07 - xiaohe
+  - 🇧🇬 保加利亚 (Bulgaria) 08 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -124,5 +137,6 @@ proxy-groups:
   - 🇧🇬 保加利亚 (Bulgaria) 05 - xiaohe
   - 🇧🇬 保加利亚 (Bulgaria) 06 - xiaohe
   - 🇧🇬 保加利亚 (Bulgaria) 07 - xiaohe
+  - 🇧🇬 保加利亚 (Bulgaria) 08 - xiaohe
 rules:
 - MATCH,PROXIES

@@ -16,7 +16,7 @@ proxies:
     public-key: mM33xyzf1GPaU2CQXAGYoGkTuYzEZRYT6S-NngyqfHQ
     short-id: beb4
   servername: deepl.com
-  client-fingerprint: qq
+  client-fingerprint: chrome
   flow: xtls-rprx-vision
 - name: 🇬🇷 希腊 (Greece) 02 - xiaohe
   type: vless
@@ -44,7 +44,7 @@ proxies:
     public-key: mM33xyzf1GPaU2CQXAGYoGkTuYzEZRYT6S-NngyqfHQ
     short-id: beb4
   servername: deepl.com
-  client-fingerprint: chrome
+  client-fingerprint: qq
   flow: xtls-rprx-vision
 - name: 🇬🇷 希腊 (Greece) 04 - xiaohe
   type: vless
@@ -58,51 +58,9 @@ proxies:
     public-key: mM33xyzf1GPaU2CQXAGYoGkTuYzEZRYT6S-NngyqfHQ
     short-id: beb4
   servername: deepl.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇬🇷 希腊 (Greece) 05 - xiaohe
-  type: vless
-  server: 94.241.174.157
-  port: 40443
-  uuid: 8ac637bf-554e-4902-94d7-baf01780a83c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: mM33xyzf1GPaU2CQXAGYoGkTuYzEZRYT6S-NngyqfHQ
-    short-id: beb4
-  servername: deepl.com
   client-fingerprint: firefox
   flow: xtls-rprx-vision
-- name: 🇬🇷 希腊 (Greece) 06 - xiaohe
-  type: vless
-  server: edge.netraidly.ru
-  port: 40443
-  uuid: 8ac637bf-554e-4902-94d7-baf01780a83c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: mM33xyzf1GPaU2CQXAGYoGkTuYzEZRYT6S-NngyqfHQ
-    short-id: beb4
-  servername: deepl.com
-  client-fingerprint: qq
-  flow: xtls-rprx-vision
-- name: 🇬🇷 希腊 (Greece) 07 - xiaohe
-  type: vless
-  server: edge.netraidly.ru
-  port: 40443
-  uuid: 8ac637bf-554e-4902-94d7-baf01780a83c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: mM33xyzf1GPaU2CQXAGYoGkTuYzEZRYT6S-NngyqfHQ
-    short-id: beb4
-  servername: deepl.com
-  client-fingerprint: qq
-  flow: xtls-rprx-vision
-- name: 🇬🇷 希腊 (Greece) 08 - xiaohe
+- name: 🇬🇷 希腊 (Greece) 05 - xiaohe
   type: vless
   server: edge.netraidly.ru
   port: 40443
@@ -126,9 +84,6 @@ proxy-groups:
   - 🇬🇷 希腊 (Greece) 03 - xiaohe
   - 🇬🇷 希腊 (Greece) 04 - xiaohe
   - 🇬🇷 希腊 (Greece) 05 - xiaohe
-  - 🇬🇷 希腊 (Greece) 06 - xiaohe
-  - 🇬🇷 希腊 (Greece) 07 - xiaohe
-  - 🇬🇷 希腊 (Greece) 08 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -139,8 +94,5 @@ proxy-groups:
   - 🇬🇷 希腊 (Greece) 03 - xiaohe
   - 🇬🇷 希腊 (Greece) 04 - xiaohe
   - 🇬🇷 希腊 (Greece) 05 - xiaohe
-  - 🇬🇷 希腊 (Greece) 06 - xiaohe
-  - 🇬🇷 希腊 (Greece) 07 - xiaohe
-  - 🇬🇷 希腊 (Greece) 08 - xiaohe
 rules:
 - MATCH,PROXIES

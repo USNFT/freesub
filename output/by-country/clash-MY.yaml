@@ -6,6 +6,20 @@ log-level: info
 proxies:
 - name: 🇲🇾 马来西亚 (Malaysia) 01 - xiaohe
   type: vless
+  server: 56.69.159.191
+  port: 53271
+  uuid: e8358eb5-7210-4cf8-982f-68af141b7694
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 1P58ZYmo81kPDnL4U7SnEUA-aT2R86l-o6dbFXoeDjc
+    short-id: 0a9bd9db19578964
+  servername: www.tesla.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇲🇾 马来西亚 (Malaysia) 02 - xiaohe
+  type: vless
   server: 38.60.168.98
   port: 2087
   uuid: 8a346b7c-5b95-4845-affa-0e5d9929e9ae
@@ -17,33 +31,19 @@ proxies:
     path: /db55c40bbc75
     headers:
       Host: 38.60.168.98
-- name: 🇲🇾 马来西亚 (Malaysia) 02 - xiaohe
-  type: vless
-  server: 43.217.16.8
-  port: 21874
-  uuid: 85dd8227-0f12-4826-a712-6313211774b5
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 75sTDYJk8ylA97-aBhAlF1tU4OaCfdOaOSIBshPW7Bs
-    short-id: 42e853a5559e1032
-  servername: www.amd.com
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
 - name: 🇲🇾 马来西亚 (Malaysia) 03 - xiaohe
   type: vless
-  server: 43.217.16.8
-  port: 21874
-  uuid: 85dd8227-0f12-4826-a712-6313211774b5
+  server: 56.69.159.191
+  port: 53271
+  uuid: e8358eb5-7210-4cf8-982f-68af141b7694
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: 75sTDYJk8ylA97-aBhAlF1tU4OaCfdOaOSIBshPW7Bs
-    short-id: 42e853a5559e1032
-  servername: www.amd.com
-  client-fingerprint: random
+    public-key: 1P58ZYmo81kPDnL4U7SnEUA-aT2R86l-o6dbFXoeDjc
+    short-id: 0a9bd9db19578964
+  servername: www.tesla.com
+  client-fingerprint: chrome
   flow: xtls-rprx-vision
 - name: 🇲🇾 马来西亚 (Malaysia) 04 - xiaohe
   type: vless
@@ -61,33 +61,6 @@ proxies:
   flow: xtls-rprx-vision
 - name: 🇲🇾 马来西亚 (Malaysia) 05 - xiaohe
   type: vless
-  server: 43.217.16.8
-  port: 21874
-  uuid: 85dd8227-0f12-4826-a712-6313211774b5
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 75sTDYJk8ylA97-aBhAlF1tU4OaCfdOaOSIBshPW7Bs
-    short-id: 42e853a5559e1032
-  servername: www.amd.com
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇲🇾 马来西亚 (Malaysia) 06 - xiaohe
-  type: vless
-  server: 38.60.168.98
-  port: 2087
-  uuid: 8a346b7c-5b95-4845-affa-0e5d9929e9ae
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /db55c40bbc75
-    headers:
-      Host: 38.60.168.98
-- name: 🇲🇾 马来西亚 (Malaysia) 07 - xiaohe
-  type: vless
   server: 56.69.159.191
   port: 53271
   uuid: e8358eb5-7210-4cf8-982f-68af141b7694
@@ -100,7 +73,7 @@ proxies:
   servername: www.tesla.com
   client-fingerprint: random
   flow: xtls-rprx-vision
-- name: 🇲🇾 马来西亚 (Malaysia) 08 - xiaohe
+- name: 🇲🇾 马来西亚 (Malaysia) 06 - xiaohe
   type: vless
   server: 56.69.159.191
   port: 53271
@@ -112,9 +85,9 @@ proxies:
     public-key: 1P58ZYmo81kPDnL4U7SnEUA-aT2R86l-o6dbFXoeDjc
     short-id: 0a9bd9db19578964
   servername: www.tesla.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
   flow: xtls-rprx-vision
-- name: 🇲🇾 马来西亚 (Malaysia) 09 - xiaohe
+- name: 🇲🇾 马来西亚 (Malaysia) 07 - xiaohe
   type: vless
   server: 38.60.168.98
   port: 2087
@@ -127,74 +100,31 @@ proxies:
     path: /db55c40bbc75
     headers:
       Host: 38.60.168.98
-- name: 🇲🇾 马来西亚 (Malaysia) 10 - xiaohe
+- name: 🇲🇾 马来西亚 (Malaysia) 08 - xiaohe
   type: vless
-  server: 43.217.16.8
-  port: 21874
-  uuid: 85dd8227-0f12-4826-a712-6313211774b5
+  server: 38.60.168.98
+  port: 2087
+  uuid: 8a346b7c-5b95-4845-affa-0e5d9929e9ae
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /db55c40bbc75
+    headers:
+      Host: 38.60.168.98
+- name: 🇲🇾 马来西亚 (Malaysia) 09 - xiaohe
+  type: vless
+  server: 56.69.159.191
+  port: 53271
+  uuid: e8358eb5-7210-4cf8-982f-68af141b7694
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: 75sTDYJk8ylA97-aBhAlF1tU4OaCfdOaOSIBshPW7Bs
-    short-id: 42e853a5559e1032
-  servername: www.amd.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇲🇾 马来西亚 (Malaysia) 11 - xiaohe
-  type: vless
-  server: 43.217.16.8
-  port: 21874
-  uuid: 85dd8227-0f12-4826-a712-6313211774b5
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 75sTDYJk8ylA97-aBhAlF1tU4OaCfdOaOSIBshPW7Bs
-    short-id: 42e853a5559e1032
-  servername: www.amd.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇲🇾 马来西亚 (Malaysia) 12 - xiaohe
-  type: vless
-  server: my2.miyazono-kaori.com
-  port: 443
-  uuid: e98cb2e2-4c82-4704-84ca-ac47d00c3e32
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: R6q8qhMxgq3ynJPUgudaRkcDXj0qgoc_UU1N0SWGLwM
-    short-id: ed77ac35a310
-  servername: www.setel.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇲🇾 马来西亚 (Malaysia) 13 - xiaohe
-  type: vless
-  server: 43.217.16.8
-  port: 21874
-  uuid: 85dd8227-0f12-4826-a712-6313211774b5
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 75sTDYJk8ylA97-aBhAlF1tU4OaCfdOaOSIBshPW7Bs
-    short-id: 42e853a5559e1032
-  servername: www.amd.com
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇲🇾 马来西亚 (Malaysia) 14 - xiaohe
-  type: vless
-  server: my1.miyazono-kaori.com
-  port: 443
-  uuid: e98cb2e2-4c82-4704-84ca-ac47d00c3e32
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: t3HU7p5iYjE9Lcq2-QHTXZFhpAvoXljTNDgmFkFN-Tc
-    short-id: 99f8972e3dd5ed
-  servername: www.setel.com
+    public-key: 1P58ZYmo81kPDnL4U7SnEUA-aT2R86l-o6dbFXoeDjc
+    short-id: 0a9bd9db19578964
+  servername: www.tesla.com
   client-fingerprint: chrome
   flow: xtls-rprx-vision
 proxy-groups:
@@ -211,11 +141,6 @@ proxy-groups:
   - 🇲🇾 马来西亚 (Malaysia) 07 - xiaohe
   - 🇲🇾 马来西亚 (Malaysia) 08 - xiaohe
   - 🇲🇾 马来西亚 (Malaysia) 09 - xiaohe
-  - 🇲🇾 马来西亚 (Malaysia) 10 - xiaohe
-  - 🇲🇾 马来西亚 (Malaysia) 11 - xiaohe
-  - 🇲🇾 马来西亚 (Malaysia) 12 - xiaohe
-  - 🇲🇾 马来西亚 (Malaysia) 13 - xiaohe
-  - 🇲🇾 马来西亚 (Malaysia) 14 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -230,10 +155,5 @@ proxy-groups:
   - 🇲🇾 马来西亚 (Malaysia) 07 - xiaohe
   - 🇲🇾 马来西亚 (Malaysia) 08 - xiaohe
   - 🇲🇾 马来西亚 (Malaysia) 09 - xiaohe
-  - 🇲🇾 马来西亚 (Malaysia) 10 - xiaohe
-  - 🇲🇾 马来西亚 (Malaysia) 11 - xiaohe
-  - 🇲🇾 马来西亚 (Malaysia) 12 - xiaohe
-  - 🇲🇾 马来西亚 (Malaysia) 13 - xiaohe
-  - 🇲🇾 马来西亚 (Malaysia) 14 - xiaohe
 rules:
 - MATCH,PROXIES
