@@ -5,18 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇱🇻 拉脱维亚 (Latvia) 01 - xiaohe
-  type: vless
-  server: 89.36.161.222
-  port: 2096
-  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
+  type: hysteria2
+  server: 85.159.228.22
+  port: 443
+  password: GSPOBvG-ZwYcBFMr0ekFGO_Zga3wK6v_
   udp: true
-  tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: laoye.in-gect.fun
 - name: 🇱🇻 拉脱维亚 (Latvia) 02 - xiaohe
   type: vless
   server: 89.36.161.222
@@ -58,18 +52,17 @@ proxies:
       Host: laoye.in-gect.fun
 - name: 🇱🇻 拉脱维亚 (Latvia) 05 - xiaohe
   type: vless
-  server: 138.124.180.137
-  port: 443
-  uuid: 5234b2b7-5e07-422c-8159-d62a676c00c6
+  server: 89.36.161.222
+  port: 2096
+  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: GBdkyDLfr0LIZo_94Xv8ycAKOmkjArYzwJAEMhuXX2c
-    short-id: 33acba1b
-  servername: www.apple.com
-  client-fingerprint: random
-  flow: xtls-rprx-vision
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 89.36.161.222
 - name: 🇱🇻 拉脱维亚 (Latvia) 06 - xiaohe
   type: vless
   server: 138.124.180.137
@@ -82,16 +75,50 @@ proxies:
     public-key: GBdkyDLfr0LIZo_94Xv8ycAKOmkjArYzwJAEMhuXX2c
     short-id: 33acba1b
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: random
   flow: xtls-rprx-vision
 - name: 🇱🇻 拉脱维亚 (Latvia) 07 - xiaohe
-  type: hysteria2
-  server: 85.159.228.22
-  port: 443
-  password: GSPOBvG-ZwYcBFMr0ekFGO_Zga3wK6v_
+  type: vless
+  server: 89.36.161.222
+  port: 2096
+  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
   udp: true
+  tls: false
   skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: laoye.in-gect.fun
 - name: 🇱🇻 拉脱维亚 (Latvia) 08 - xiaohe
+  type: vless
+  server: 89.36.161.222
+  port: 2053
+  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: cGVu5j95KoeHBkWXveyTKolORbdvZm9g1T6yyo64ZBg
+    short-id: d26f4703cdd30f4e
+  servername: vk.ru
+  client-fingerprint: edge
+  flow: xtls-rprx-vision
+- name: 🇱🇻 拉脱维亚 (Latvia) 09 - xiaohe
+  type: vless
+  server: 89.36.161.222
+  port: 2053
+  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: cGVu5j95KoeHBkWXveyTKolORbdvZm9g1T6yyo64ZBg
+    short-id: d26f4703cdd30f4e
+  servername: vk.ru
+  client-fingerprint: edge
+  flow: xtls-rprx-vision
+- name: 🇱🇻 拉脱维亚 (Latvia) 10 - xiaohe
   type: vless
   server: 195.123.213.28
   port: 443
@@ -105,7 +132,42 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: 🇱🇻 拉脱维亚 (Latvia) 09 - xiaohe
+- name: 🇱🇻 拉脱维亚 (Latvia) 11 - xiaohe
+  type: vless
+  server: 89.36.161.222
+  port: 2053
+  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: cGVu5j95KoeHBkWXveyTKolORbdvZm9g1T6yyo64ZBg
+    short-id: d26f4703cdd30f4e
+  servername: vk.ru
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+- name: 🇱🇻 拉脱维亚 (Latvia) 12 - xiaohe
+  type: hysteria2
+  server: hy2-latvia2.unlimited-access.ru
+  port: 443
+  password: GSPOBvG-ZwYcBFMr0ekFGO_Zga3wK6v_
+  udp: true
+  skip-cert-verify: true
+- name: 🇱🇻 拉脱维亚 (Latvia) 13 - xiaohe
+  type: vless
+  server: 138.124.180.137
+  port: 443
+  uuid: 5234b2b7-5e07-422c-8159-d62a676c00c6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: GBdkyDLfr0LIZo_94Xv8ycAKOmkjArYzwJAEMhuXX2c
+    short-id: 33acba1b
+  servername: www.apple.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇱🇻 拉脱维亚 (Latvia) 14 - xiaohe
   type: vless
   server: 138.124.180.137
   port: 443
@@ -133,6 +195,11 @@ proxy-groups:
   - 🇱🇻 拉脱维亚 (Latvia) 07 - xiaohe
   - 🇱🇻 拉脱维亚 (Latvia) 08 - xiaohe
   - 🇱🇻 拉脱维亚 (Latvia) 09 - xiaohe
+  - 🇱🇻 拉脱维亚 (Latvia) 10 - xiaohe
+  - 🇱🇻 拉脱维亚 (Latvia) 11 - xiaohe
+  - 🇱🇻 拉脱维亚 (Latvia) 12 - xiaohe
+  - 🇱🇻 拉脱维亚 (Latvia) 13 - xiaohe
+  - 🇱🇻 拉脱维亚 (Latvia) 14 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -147,5 +214,10 @@ proxy-groups:
   - 🇱🇻 拉脱维亚 (Latvia) 07 - xiaohe
   - 🇱🇻 拉脱维亚 (Latvia) 08 - xiaohe
   - 🇱🇻 拉脱维亚 (Latvia) 09 - xiaohe
+  - 🇱🇻 拉脱维亚 (Latvia) 10 - xiaohe
+  - 🇱🇻 拉脱维亚 (Latvia) 11 - xiaohe
+  - 🇱🇻 拉脱维亚 (Latvia) 12 - xiaohe
+  - 🇱🇻 拉脱维亚 (Latvia) 13 - xiaohe
+  - 🇱🇻 拉脱维亚 (Latvia) 14 - xiaohe
 rules:
 - MATCH,PROXIES

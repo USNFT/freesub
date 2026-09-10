@@ -5,33 +5,60 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇭 瑞士 (Switzerland) 01 - xiaohe
-  type: hysteria2
-  server: 104.165.205.42
-  port: 8443
-  password: 54d2f622-fd71-4f5f-8813-832b68f4ca3b
+  type: vless
+  server: 131.123.34.42
+  port: 443
+  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
   udp: true
+  tls: true
   skip-cert-verify: true
+  reality-opts:
+    public-key: pX9uknHGLC9I26TT5kq4bIAljtX2AGWLK23EMgn6xFo
+    short-id: 84be686ea1d16478
+  servername: sheetpeek.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
 - name: 🇨🇭 瑞士 (Switzerland) 02 - xiaohe
-  type: hysteria2
-  server: 104.165.205.42
-  port: 8443
-  password: 52e3dd44-ed23-4030-b0cc-5b5a953f2d4d
-  udp: true
-  skip-cert-verify: true
-- name: 🇨🇭 瑞士 (Switzerland) 03 - xiaohe
   type: hysteria2
   server: 104.165.205.40
   port: 8443
   password: 54d2f622-fd71-4f5f-8813-832b68f4ca3b
   udp: true
   skip-cert-verify: true
-- name: 🇨🇭 瑞士 (Switzerland) 04 - xiaohe
+- name: 🇨🇭 瑞士 (Switzerland) 03 - xiaohe
   type: hysteria2
   server: 104.165.205.42
   port: 8443
   password: 52e3dd44-ed23-4030-b0cc-5b5a953f2d4d
   udp: true
   skip-cert-verify: true
+- name: 🇨🇭 瑞士 (Switzerland) 04 - xiaohe
+  type: hysteria2
+  server: 104.165.205.42
+  port: 8443
+  password: 54d2f622-fd71-4f5f-8813-832b68f4ca3b
+  udp: true
+  skip-cert-verify: true
+- name: 🇨🇭 瑞士 (Switzerland) 05 - xiaohe
+  type: hysteria2
+  server: 104.165.205.42
+  port: 8443
+  password: 52e3dd44-ed23-4030-b0cc-5b5a953f2d4d
+  udp: true
+  skip-cert-verify: true
+- name: 🇨🇭 瑞士 (Switzerland) 06 - xiaohe
+  type: vless
+  server: 188.114.97.6
+  port: 8080
+  uuid: bd9ff08b-d042-3650-48e4-c4b400000000
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN
+    headers:
+      Host: netlivpn2950.bbxff.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -41,6 +68,8 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 02 - xiaohe
   - 🇨🇭 瑞士 (Switzerland) 03 - xiaohe
   - 🇨🇭 瑞士 (Switzerland) 04 - xiaohe
+  - 🇨🇭 瑞士 (Switzerland) 05 - xiaohe
+  - 🇨🇭 瑞士 (Switzerland) 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -50,5 +79,7 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 02 - xiaohe
   - 🇨🇭 瑞士 (Switzerland) 03 - xiaohe
   - 🇨🇭 瑞士 (Switzerland) 04 - xiaohe
+  - 🇨🇭 瑞士 (Switzerland) 05 - xiaohe
+  - 🇨🇭 瑞士 (Switzerland) 06 - xiaohe
 rules:
 - MATCH,PROXIES

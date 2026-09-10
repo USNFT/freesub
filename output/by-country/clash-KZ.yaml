@@ -11,17 +11,126 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: s8LbJCgUiGXeCKVc63tHJP
   udp: true
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaohe
+  type: hysteria2
+  server: 46.247.41.120
+  port: 443
+  password: 8fb328f0-d8e0-4b11-a6db-3dadfc4f02a3
+  udp: true
+  skip-cert-verify: true
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - xiaohe
+  type: vless
+  server: 213.155.20.83
+  port: 443
+  uuid: 6fb79584-30b8-4888-b358-98f7ef6b8697
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: RR_T91yZY_QUPN53wQNakGmCN3mq0i_Ozom7etyh4RI
+  servername: notebookpro.kz
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - xiaohe
+  type: vless
+  server: 111.88.143.139
+  port: 8443
+  uuid: 2b8c0574-ff6f-4975-8a06-e24ebefa1d1c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: Ao_imnCEIGAaL1DZnjOK1SSPpjQOw_XJcgMpNLEZwg0
+    short-id: ac4b582e
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 05 - xiaohe
+  type: vless
+  server: 83.222.23.81
+  port: 38065
+  uuid: 4b9063e0-3288-44e9-9aac-80fbfce323a0
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: dSSDPTK6AHfAdRAXD9i4rzqcNIY65RxlF25UyCKdiyo
+    short-id: fa
+  servername: yahoo.com
+  client-fingerprint: chrome
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 06 - xiaohe
+  type: hysteria2
+  server: kz03hy01.tcp-reset-club.net
+  port: 443
+  password: 8fb328f0-d8e0-4b11-a6db-3dadfc4f02a3
+  udp: true
+  skip-cert-verify: true
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 07 - xiaohe
+  type: vless
+  server: 111.88.143.139
+  port: 51940
+  uuid: 03464802-b517-404b-b15c-7750ffc5e78f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: uPHvFb_vZ3DKL-8Et_e9OliZskdSV5U1NZ66tHfC-2Y
+    short-id: fd7f
+  servername: yahoo.com
+  client-fingerprint: chrome
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 08 - xiaohe
+  type: vless
+  server: 77.73.232.61
+  port: 19747
+  uuid: 2a9ed01e-5455-44b4-a66a-76ee8165f0ac
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: ZO9dTeg1slvTXgVsBsaJ1BDvz_YUImTLJjbHs-GdVyM
+    short-id: '2001'
+  servername: yahoo.com
+  client-fingerprint: chrome
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 09 - xiaohe
+  type: vless
+  server: 77.73.232.61
+  port: 19747
+  uuid: 2a9ed01e-5455-44b4-a66a-76ee8165f0ac
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: ZO9dTeg1slvTXgVsBsaJ1BDvz_YUImTLJjbHs-GdVyM
+    short-id: '2001'
+  servername: yahoo.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaohe
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaohe
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - xiaohe
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - xiaohe
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 05 - xiaohe
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 06 - xiaohe
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 07 - xiaohe
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 08 - xiaohe
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 09 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaohe
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaohe
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - xiaohe
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - xiaohe
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 05 - xiaohe
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 06 - xiaohe
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 07 - xiaohe
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 08 - xiaohe
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 09 - xiaohe
 rules:
 - MATCH,PROXIES

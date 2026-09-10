@@ -34,6 +34,19 @@ proxies:
   flow: xtls-rprx-vision
 - name: 🇹🇷 土耳其 (Turkey) 03 - xiaohe
   type: vless
+  server: 45.74.158.180
+  port: 443
+  uuid: 42994234-1689-48bc-8d01-cfb16e7b017a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: MgyA2FY0p2q_VOwoL9T1Z3rzpKEcGjfN61QliGcyHA8
+    short-id: ca41ef1263c02279
+  servername: refersion.com
+  client-fingerprint: chrome
+- name: 🇹🇷 土耳其 (Turkey) 04 - xiaohe
+  type: vless
   server: 156.67.63.231
   port: 443
   uuid: b052df40-d51c-456c-9bd6-57af01a87e4e
@@ -46,6 +59,19 @@ proxies:
   servername: sync-bridge.org
   client-fingerprint: chrome
   flow: xtls-rprx-vision
+- name: 🇹🇷 土耳其 (Turkey) 05 - xiaohe
+  type: vless
+  server: Rital-caca.tempfast.ir
+  port: 4323
+  uuid: 78440584-c334-44a8-bab1-8b1a7d08012b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: T7pTw3G0AIiLmvi96auuSsRjv1q52lpexxO2oITguhA
+    short-id: 40d9e0206a1bd03d
+  servername: play.googleapis.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -54,6 +80,8 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 01 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 02 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 03 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 04 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -62,5 +90,7 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 01 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 02 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 03 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 04 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 05 - xiaohe
 rules:
 - MATCH,PROXIES

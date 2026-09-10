@@ -18,26 +18,6 @@ proxies:
     headers:
       Host: 94.183.170.135
 - name: 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
-  type: hysteria2
-  server: 91.240.87.46
-  port: 59448
-  password: 5beff945-adaa-492f-85c6-8aaf5df6cfa5
-  udp: true
-  skip-cert-verify: true
-- name: 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
-  type: vless
-  server: 94.183.170.135
-  port: 443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 94.183.170.135
-- name: 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe
   type: vless
   server: 95.85.224.51
   port: 443
@@ -51,7 +31,7 @@ proxies:
   servername: max.ru
   client-fingerprint: qq
   flow: xtls-rprx-vision
-- name: 🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe
+- name: 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
   type: vless
   server: 95.85.224.51
   port: 443
@@ -65,7 +45,20 @@ proxies:
   servername: max.ru
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: 🇪🇪 爱沙尼亚 (Estonia) 06 - xiaohe
+- name: 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe
+  type: vless
+  server: 94.183.170.135
+  port: 443
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 94.183.170.135
+- name: 🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe
   type: hysteria2
   server: 217.60.182.79
   port: 443
@@ -82,7 +75,6 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
   - 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe
   - 🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe
-  - 🇪🇪 爱沙尼亚 (Estonia) 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -93,6 +85,5 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
   - 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe
   - 🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe
-  - 🇪🇪 爱沙尼亚 (Estonia) 06 - xiaohe
 rules:
 - MATCH,PROXIES
