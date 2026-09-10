@@ -5,31 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
-  type: vless
-  server: 94.183.170.135
+  type: hysteria2
+  server: 217.60.182.79
   port: 443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  password: sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX
   udp: true
-  tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 94.183.170.135
 - name: 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
-  type: vless
-  server: 94.183.170.135
+  type: hysteria2
+  server: 217.60.182.79
   port: 443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  password: sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX
   udp: true
-  tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 94.183.170.135
 - name: 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
   type: vless
   server: 95.85.224.51
@@ -59,20 +47,81 @@ proxies:
   client-fingerprint: chrome
   flow: xtls-rprx-vision
 - name: 🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe
+  type: vless
+  server: 95.85.224.51
+  port: 443
+  uuid: 342ab7e4-5a89-0001-8809-304120d4aa83
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: WWeAHWUVD-phmnjNJ823cer0c4CMIbEs08AhsuEZmDc
+    short-id: a696de84963656de
+  servername: max.ru
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇪🇪 爱沙尼亚 (Estonia) 06 - xiaohe
+  type: hysteria2
+  server: cabinet.wwwinternetvideo.click
+  port: 443
+  password: sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX
+  udp: true
+  skip-cert-verify: true
+- name: 🇪🇪 爱沙尼亚 (Estonia) 07 - xiaohe
+  type: vless
+  server: 94.183.170.135
+  port: 443
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 94.183.170.135
+- name: 🇪🇪 爱沙尼亚 (Estonia) 08 - xiaohe
+  type: vless
+  server: 94.183.170.135
+  port: 443
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 94.183.170.135
+- name: 🇪🇪 爱沙尼亚 (Estonia) 09 - xiaohe
+  type: hysteria2
+  server: faq.wwwinternetvideo.click
+  port: 443
+  password: sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX
+  udp: true
+  skip-cert-verify: true
+- name: 🇪🇪 爱沙尼亚 (Estonia) 10 - xiaohe
+  type: hysteria2
+  server: news.gazette.help
+  port: 443
+  password: sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX
+  udp: true
+  skip-cert-verify: true
+- name: 🇪🇪 爱沙尼亚 (Estonia) 11 - xiaohe
   type: hysteria2
   server: 31.76.71.63
   port: 443
   password: sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX
   udp: true
   skip-cert-verify: true
-- name: 🇪🇪 爱沙尼亚 (Estonia) 06 - xiaohe
+- name: 🇪🇪 爱沙尼亚 (Estonia) 12 - xiaohe
   type: hysteria2
-  server: 217.60.182.79
+  server: news.gazette.help
   port: 443
   password: sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX
   udp: true
   skip-cert-verify: true
-- name: 🇪🇪 爱沙尼亚 (Estonia) 07 - xiaohe
+- name: 🇪🇪 爱沙尼亚 (Estonia) 13 - xiaohe
   type: hysteria2
   server: 31.76.71.63
   port: 443
@@ -91,6 +140,12 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe
   - 🇪🇪 爱沙尼亚 (Estonia) 06 - xiaohe
   - 🇪🇪 爱沙尼亚 (Estonia) 07 - xiaohe
+  - 🇪🇪 爱沙尼亚 (Estonia) 08 - xiaohe
+  - 🇪🇪 爱沙尼亚 (Estonia) 09 - xiaohe
+  - 🇪🇪 爱沙尼亚 (Estonia) 10 - xiaohe
+  - 🇪🇪 爱沙尼亚 (Estonia) 11 - xiaohe
+  - 🇪🇪 爱沙尼亚 (Estonia) 12 - xiaohe
+  - 🇪🇪 爱沙尼亚 (Estonia) 13 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -103,5 +158,11 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe
   - 🇪🇪 爱沙尼亚 (Estonia) 06 - xiaohe
   - 🇪🇪 爱沙尼亚 (Estonia) 07 - xiaohe
+  - 🇪🇪 爱沙尼亚 (Estonia) 08 - xiaohe
+  - 🇪🇪 爱沙尼亚 (Estonia) 09 - xiaohe
+  - 🇪🇪 爱沙尼亚 (Estonia) 10 - xiaohe
+  - 🇪🇪 爱沙尼亚 (Estonia) 11 - xiaohe
+  - 🇪🇪 爱沙尼亚 (Estonia) 12 - xiaohe
+  - 🇪🇪 爱沙尼亚 (Estonia) 13 - xiaohe
 rules:
 - MATCH,PROXIES

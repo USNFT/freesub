@@ -6,81 +6,63 @@ log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - xiaohe
   type: vless
-  server: 31.58.181.88
-  port: 8443
-  uuid: cc422436-e0e9-4f15-bfe8-db3d816e5527
+  server: 31.56.189.27
+  port: 8765
+  uuid: df9f5aca-eda0-428f-a752-e53866153d12
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
-  servername: tradingview.com
-  client-fingerprint: firefox
+    public-key: M08l5tDmJUYELykZCNYQyFgtR9Zc-A4ZGlUSLcUeS2c
+    short-id: 1bcc9177f3124b25
+  servername: srv-21bac9.vless.monster
+  client-fingerprint: chrome
   flow: xtls-rprx-vision
 - name: 🇦🇪 阿联酋 (UAE) 02 - xiaohe
   type: vless
-  server: 31.58.181.88
-  port: 8443
-  uuid: 05819bb1-2975-473c-a51f-0fbccf8d2cfa
+  server: 31.56.189.27
+  port: 8765
+  uuid: df9f5aca-eda0-428f-a752-e53866153d12
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
-  servername: tradingview.com
-  client-fingerprint: firefox
+    public-key: M08l5tDmJUYELykZCNYQyFgtR9Zc-A4ZGlUSLcUeS2c
+    short-id: 1bcc9177f3124b25
+  servername: srv-21bac9.vless.monster
+  client-fingerprint: chrome
   flow: xtls-rprx-vision
 - name: 🇦🇪 阿联酋 (UAE) 03 - xiaohe
-  type: vless
-  server: 31.58.181.88
-  port: 8443
-  uuid: 93a8f0b3-4c97-4d14-999c-c207a55b70b0
+  type: hysteria2
+  server: 85.204.107.181
+  port: 8080
+  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
   udp: true
-  tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
-  servername: tradingview.com
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
 - name: 🇦🇪 阿联酋 (UAE) 04 - xiaohe
-  type: vless
-  server: 31.56.189.27
-  port: 8765
-  uuid: df9f5aca-eda0-428f-a752-e53866153d12
+  type: hysteria2
+  server: 85.204.107.173
+  port: 8080
+  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
   udp: true
-  tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: M08l5tDmJUYELykZCNYQyFgtR9Zc-A4ZGlUSLcUeS2c
-    short-id: 1bcc9177f3124b25
-  servername: srv-21bac9.vless.monster
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
 - name: 🇦🇪 阿联酋 (UAE) 05 - xiaohe
-  type: vless
-  server: 31.56.189.27
-  port: 8765
-  uuid: df9f5aca-eda0-428f-a752-e53866153d12
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: M08l5tDmJUYELykZCNYQyFgtR9Zc-A4ZGlUSLcUeS2c
-    short-id: 1bcc9177f3124b25
-  servername: srv-21bac9.vless.monster
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇦🇪 阿联酋 (UAE) 06 - xiaohe
   type: hysteria2
   server: 85.204.107.177
   port: 8080
   password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
   udp: true
   skip-cert-verify: true
-- name: 🇦🇪 阿联酋 (UAE) 07 - xiaohe
+- name: 🇦🇪 阿联酋 (UAE) 06 - xiaohe
   type: hysteria2
   server: 85.204.107.178
+  port: 8080
+  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
+  udp: true
+  skip-cert-verify: true
+- name: 🇦🇪 阿联酋 (UAE) 07 - xiaohe
+  type: hysteria2
+  server: 85.204.107.181
   port: 8080
   password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
   udp: true
@@ -100,21 +82,22 @@ proxies:
   udp: true
   skip-cert-verify: true
 - name: 🇦🇪 阿联酋 (UAE) 10 - xiaohe
-  type: vless
-  server: 31.58.181.88
-  port: 8443
-  uuid: 315adcfd-5eab-4041-b876-f9cc8e2aa6c2
+  type: hysteria2
+  server: 85.204.107.178
+  port: 8080
+  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
   udp: true
-  tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
-  servername: tradingview.com
-  client-fingerprint: qq
-  flow: xtls-rprx-vision
 - name: 🇦🇪 阿联酋 (UAE) 11 - xiaohe
   type: hysteria2
-  server: 85.204.107.181
+  server: 85.204.107.183
+  port: 8080
+  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
+  udp: true
+  skip-cert-verify: true
+- name: 🇦🇪 阿联酋 (UAE) 12 - xiaohe
+  type: hysteria2
+  server: 85.204.107.176
   port: 8080
   password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
   udp: true
@@ -135,6 +118,7 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 09 - xiaohe
   - 🇦🇪 阿联酋 (UAE) 10 - xiaohe
   - 🇦🇪 阿联酋 (UAE) 11 - xiaohe
+  - 🇦🇪 阿联酋 (UAE) 12 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -151,5 +135,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 09 - xiaohe
   - 🇦🇪 阿联酋 (UAE) 10 - xiaohe
   - 🇦🇪 阿联酋 (UAE) 11 - xiaohe
+  - 🇦🇪 阿联酋 (UAE) 12 - xiaohe
 rules:
 - MATCH,PROXIES

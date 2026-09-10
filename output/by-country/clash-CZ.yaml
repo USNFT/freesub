@@ -4,31 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇱🇹 LT 01 - xiaohe
+- name: 🇨🇿 捷克 (Czechia) 01 - xiaohe
   type: vless
-  server: 88.119.176.24
+  server: nl.cloudtechone.org
   port: 443
-  uuid: ae8e0f7d-b661-41ca-b55d-d8c383adb2f8
+  uuid: 2b2ea9d8-501e-4b79-8fd9-19bff6ed5cf5
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE
-    short-id: ff776ff77be48b88
-  servername: lit9.helper-internet.com
-  client-fingerprint: chrome
+    public-key: _IBXb9NfhsnS21XbU9PIl73ExvrjXGXVLO0Za1ui5Fo
+    short-id: f93c9d5127e622e4
+  servername: nl.cloudtechone.org
+  client-fingerprint: firefox
   flow: xtls-rprx-vision
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇱🇹 LT 01 - xiaohe
+  - 🇨🇿 捷克 (Czechia) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇱🇹 LT 01 - xiaohe
+  - 🇨🇿 捷克 (Czechia) 01 - xiaohe
 rules:
 - MATCH,PROXIES

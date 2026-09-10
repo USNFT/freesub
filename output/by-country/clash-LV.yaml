@@ -56,7 +56,7 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: laoye.in-gect.fun
+      Host: 89.36.161.222
 - name: 🇱🇻 拉脱维亚 (Latvia) 05 - xiaohe
   type: vless
   server: 89.36.161.222
@@ -69,89 +69,7 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: laoye.in-gect.fun
-- name: 🇱🇻 拉脱维亚 (Latvia) 06 - xiaohe
-  type: vless
-  server: 89.36.161.222
-  port: 2096
-  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
       Host: 89.36.161.222
-- name: 🇱🇻 拉脱维亚 (Latvia) 07 - xiaohe
-  type: vless
-  server: 89.36.161.222
-  port: 2096
-  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 89.36.161.222
-- name: 🇱🇻 拉脱维亚 (Latvia) 08 - xiaohe
-  type: vless
-  server: 89.36.161.222
-  port: 2053
-  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: cGVu5j95KoeHBkWXveyTKolORbdvZm9g1T6yyo64ZBg
-    short-id: d26f4703cdd30f4e
-  servername: vk.ru
-  client-fingerprint: edge
-  flow: xtls-rprx-vision
-- name: 🇱🇻 拉脱维亚 (Latvia) 09 - xiaohe
-  type: vless
-  server: 89.36.161.222
-  port: 2053
-  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: cGVu5j95KoeHBkWXveyTKolORbdvZm9g1T6yyo64ZBg
-    short-id: d26f4703cdd30f4e
-  servername: vk.ru
-  client-fingerprint: edge
-  flow: xtls-rprx-vision
-- name: 🇱🇻 拉脱维亚 (Latvia) 10 - xiaohe
-  type: vless
-  server: 138.124.180.137
-  port: 443
-  uuid: 5234b2b7-5e07-422c-8159-d62a676c00c6
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: GBdkyDLfr0LIZo_94Xv8ycAKOmkjArYzwJAEMhuXX2c
-    short-id: 33acba1b
-  servername: www.apple.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇱🇻 拉脱维亚 (Latvia) 11 - xiaohe
-  type: vless
-  server: 138.124.180.137
-  port: 443
-  uuid: 5234b2b7-5e07-422c-8159-d62a676c00c6
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: GBdkyDLfr0LIZo_94Xv8ycAKOmkjArYzwJAEMhuXX2c
-    short-id: 33acba1b
-  servername: www.apple.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
 proxy-groups:
 - name: PROXIES
   type: select
@@ -162,12 +80,6 @@ proxy-groups:
   - 🇱🇻 拉脱维亚 (Latvia) 03 - xiaohe
   - 🇱🇻 拉脱维亚 (Latvia) 04 - xiaohe
   - 🇱🇻 拉脱维亚 (Latvia) 05 - xiaohe
-  - 🇱🇻 拉脱维亚 (Latvia) 06 - xiaohe
-  - 🇱🇻 拉脱维亚 (Latvia) 07 - xiaohe
-  - 🇱🇻 拉脱维亚 (Latvia) 08 - xiaohe
-  - 🇱🇻 拉脱维亚 (Latvia) 09 - xiaohe
-  - 🇱🇻 拉脱维亚 (Latvia) 10 - xiaohe
-  - 🇱🇻 拉脱维亚 (Latvia) 11 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -178,11 +90,5 @@ proxy-groups:
   - 🇱🇻 拉脱维亚 (Latvia) 03 - xiaohe
   - 🇱🇻 拉脱维亚 (Latvia) 04 - xiaohe
   - 🇱🇻 拉脱维亚 (Latvia) 05 - xiaohe
-  - 🇱🇻 拉脱维亚 (Latvia) 06 - xiaohe
-  - 🇱🇻 拉脱维亚 (Latvia) 07 - xiaohe
-  - 🇱🇻 拉脱维亚 (Latvia) 08 - xiaohe
-  - 🇱🇻 拉脱维亚 (Latvia) 09 - xiaohe
-  - 🇱🇻 拉脱维亚 (Latvia) 10 - xiaohe
-  - 🇱🇻 拉脱维亚 (Latvia) 11 - xiaohe
 rules:
 - MATCH,PROXIES

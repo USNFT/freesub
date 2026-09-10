@@ -29,7 +29,7 @@ proxies:
     public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
     short-id: a8ae
   servername: deepl.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇨🇾 塞浦路斯 (Cyprus) 03 - xiaohe
   type: vless
   server: 194.76.154.31
@@ -42,73 +42,64 @@ proxies:
     public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
     short-id: a8ae
   servername: deepl.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇨🇾 塞浦路斯 (Cyprus) 04 - xiaohe
   type: vless
-  server: 194.76.154.31
+  server: preview.netraidly.ru
   port: 40443
-  uuid: 9f0baff8-bdee-4de9-9515-bcc4932b41fa
+  uuid: 15fd22d1-8931-4d41-af37-8ba6711e93fe
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
-    short-id: a8ae
+    public-key: d1gJntekIStCHyAwgJCuv-N4_BBx5dDQ7K6CeWmpMRo
+    short-id: 84fc
   servername: deepl.com
   client-fingerprint: chrome
+  flow: xtls-rprx-vision
 - name: 🇨🇾 塞浦路斯 (Cyprus) 05 - xiaohe
   type: vless
-  server: 194.76.154.31
+  server: 5.253.42.163
   port: 40443
-  uuid: 9f0baff8-bdee-4de9-9515-bcc4932b41fa
+  uuid: 15fd22d1-8931-4d41-af37-8ba6711e93fe
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
-    short-id: a8ae
+    public-key: d1gJntekIStCHyAwgJCuv-N4_BBx5dDQ7K6CeWmpMRo
+    short-id: 84fc
   servername: deepl.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
 - name: 🇨🇾 塞浦路斯 (Cyprus) 06 - xiaohe
   type: vless
-  server: 194.76.154.31
+  server: 5.253.42.163
   port: 40443
-  uuid: 9f0baff8-bdee-4de9-9515-bcc4932b41fa
+  uuid: 15fd22d1-8931-4d41-af37-8ba6711e93fe
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
-    short-id: a8ae
+    public-key: d1gJntekIStCHyAwgJCuv-N4_BBx5dDQ7K6CeWmpMRo
+    short-id: 84fc
   servername: deepl.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
 - name: 🇨🇾 塞浦路斯 (Cyprus) 07 - xiaohe
   type: vless
-  server: 194.76.154.31
+  server: 5.253.42.163
   port: 40443
-  uuid: 9f0baff8-bdee-4de9-9515-bcc4932b41fa
+  uuid: 15fd22d1-8931-4d41-af37-8ba6711e93fe
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
-    short-id: a8ae
+    public-key: d1gJntekIStCHyAwgJCuv-N4_BBx5dDQ7K6CeWmpMRo
+    short-id: 84fc
   servername: deepl.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
 - name: 🇨🇾 塞浦路斯 (Cyprus) 08 - xiaohe
-  type: vless
-  server: 194.76.154.31
-  port: 40443
-  uuid: 9f0baff8-bdee-4de9-9515-bcc4932b41fa
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
-    short-id: a8ae
-  servername: deepl.com
-  client-fingerprint: chrome
-- name: 🇨🇾 塞浦路斯 (Cyprus) 09 - xiaohe
   type: vless
   server: 5.253.42.163
   port: 40443
@@ -122,6 +113,20 @@ proxies:
   servername: deepl.com
   client-fingerprint: edge
   flow: xtls-rprx-vision
+- name: 🇨🇾 塞浦路斯 (Cyprus) 09 - xiaohe
+  type: vless
+  server: preview.netraidly.ru
+  port: 40443
+  uuid: 15fd22d1-8931-4d41-af37-8ba6711e93fe
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: d1gJntekIStCHyAwgJCuv-N4_BBx5dDQ7K6CeWmpMRo
+    short-id: 84fc
+  servername: deepl.com
+  client-fingerprint: qq
+  flow: xtls-rprx-vision
 - name: 🇨🇾 塞浦路斯 (Cyprus) 10 - xiaohe
   type: vless
   server: 5.253.42.163
@@ -134,7 +139,7 @@ proxies:
     public-key: d1gJntekIStCHyAwgJCuv-N4_BBx5dDQ7K6CeWmpMRo
     short-id: 84fc
   servername: deepl.com
-  client-fingerprint: chrome
+  client-fingerprint: qq
   flow: xtls-rprx-vision
 - name: 🇨🇾 塞浦路斯 (Cyprus) 11 - xiaohe
   type: vless
@@ -148,7 +153,7 @@ proxies:
     public-key: d1gJntekIStCHyAwgJCuv-N4_BBx5dDQ7K6CeWmpMRo
     short-id: 84fc
   servername: deepl.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   flow: xtls-rprx-vision
 - name: 🇨🇾 塞浦路斯 (Cyprus) 12 - xiaohe
   type: vless
@@ -162,7 +167,7 @@ proxies:
     public-key: d1gJntekIStCHyAwgJCuv-N4_BBx5dDQ7K6CeWmpMRo
     short-id: 84fc
   servername: deepl.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
   flow: xtls-rprx-vision
 - name: 🇨🇾 塞浦路斯 (Cyprus) 13 - xiaohe
   type: vless
@@ -176,7 +181,7 @@ proxies:
     public-key: d1gJntekIStCHyAwgJCuv-N4_BBx5dDQ7K6CeWmpMRo
     short-id: 84fc
   servername: deepl.com
-  client-fingerprint: chrome
+  client-fingerprint: random
   flow: xtls-rprx-vision
 - name: 🇨🇾 塞浦路斯 (Cyprus) 14 - xiaohe
   type: vless
@@ -190,7 +195,7 @@ proxies:
     public-key: d1gJntekIStCHyAwgJCuv-N4_BBx5dDQ7K6CeWmpMRo
     short-id: 84fc
   servername: deepl.com
-  client-fingerprint: qq
+  client-fingerprint: chrome
   flow: xtls-rprx-vision
 - name: 🇨🇾 塞浦路斯 (Cyprus) 15 - xiaohe
   type: vless
@@ -246,11 +251,11 @@ proxies:
     public-key: d1gJntekIStCHyAwgJCuv-N4_BBx5dDQ7K6CeWmpMRo
     short-id: 84fc
   servername: deepl.com
-  client-fingerprint: qq
+  client-fingerprint: chrome
   flow: xtls-rprx-vision
 - name: 🇨🇾 塞浦路斯 (Cyprus) 19 - xiaohe
   type: vless
-  server: 5.253.42.163
+  server: preview.netraidly.ru
   port: 40443
   uuid: 15fd22d1-8931-4d41-af37-8ba6711e93fe
   udp: true
@@ -264,7 +269,7 @@ proxies:
   flow: xtls-rprx-vision
 - name: 🇨🇾 塞浦路斯 (Cyprus) 20 - xiaohe
   type: vless
-  server: 5.253.42.163
+  server: preview.netraidly.ru
   port: 40443
   uuid: 15fd22d1-8931-4d41-af37-8ba6711e93fe
   udp: true
@@ -274,11 +279,11 @@ proxies:
     public-key: d1gJntekIStCHyAwgJCuv-N4_BBx5dDQ7K6CeWmpMRo
     short-id: 84fc
   servername: deepl.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   flow: xtls-rprx-vision
 - name: 🇨🇾 塞浦路斯 (Cyprus) 21 - xiaohe
   type: vless
-  server: 5.253.42.163
+  server: preview.netraidly.ru
   port: 40443
   uuid: 15fd22d1-8931-4d41-af37-8ba6711e93fe
   udp: true
@@ -288,25 +293,11 @@ proxies:
     public-key: d1gJntekIStCHyAwgJCuv-N4_BBx5dDQ7K6CeWmpMRo
     short-id: 84fc
   servername: deepl.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   flow: xtls-rprx-vision
 - name: 🇨🇾 塞浦路斯 (Cyprus) 22 - xiaohe
   type: vless
-  server: 5.253.42.164
-  port: 40443
-  uuid: e99ba96d-dec8-42eb-be53-19e71eef7cab
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: g77ZJbm18JEotapmVRjaXi133MzkbhkU2lxhVeXx8zw
-    short-id: 68a8
-  servername: deepl.com
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇨🇾 塞浦路斯 (Cyprus) 23 - xiaohe
-  type: vless
-  server: 5.253.42.163
+  server: preview.netraidly.ru
   port: 40443
   uuid: 15fd22d1-8931-4d41-af37-8ba6711e93fe
   udp: true
@@ -318,91 +309,7 @@ proxies:
   servername: deepl.com
   client-fingerprint: random
   flow: xtls-rprx-vision
-- name: 🇨🇾 塞浦路斯 (Cyprus) 24 - xiaohe
-  type: vless
-  server: preview.netraidly.ru
-  port: 40443
-  uuid: 15fd22d1-8931-4d41-af37-8ba6711e93fe
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: d1gJntekIStCHyAwgJCuv-N4_BBx5dDQ7K6CeWmpMRo
-    short-id: 84fc
-  servername: deepl.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇨🇾 塞浦路斯 (Cyprus) 25 - xiaohe
-  type: vless
-  server: 5.253.30.99
-  port: 40443
-  uuid: 511c1563-2cb6-4064-abc6-a59ee49818a8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0
-    short-id: 88b6
-  servername: deepl.com
-  client-fingerprint: qq
-  flow: xtls-rprx-vision
-- name: 🇨🇾 塞浦路斯 (Cyprus) 26 - xiaohe
-  type: vless
-  server: preview.netraidly.ru
-  port: 40443
-  uuid: 15fd22d1-8931-4d41-af37-8ba6711e93fe
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: d1gJntekIStCHyAwgJCuv-N4_BBx5dDQ7K6CeWmpMRo
-    short-id: 84fc
-  servername: deepl.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇨🇾 塞浦路斯 (Cyprus) 27 - xiaohe
-  type: vless
-  server: preview.netraidly.ru
-  port: 40443
-  uuid: 15fd22d1-8931-4d41-af37-8ba6711e93fe
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: d1gJntekIStCHyAwgJCuv-N4_BBx5dDQ7K6CeWmpMRo
-    short-id: 84fc
-  servername: deepl.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇨🇾 塞浦路斯 (Cyprus) 28 - xiaohe
-  type: vless
-  server: 5.253.30.99
-  port: 40443
-  uuid: 511c1563-2cb6-4064-abc6-a59ee49818a8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0
-    short-id: 88b6
-  servername: deepl.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇨🇾 塞浦路斯 (Cyprus) 29 - xiaohe
-  type: vless
-  server: preview.netraidly.ru
-  port: 40443
-  uuid: 15fd22d1-8931-4d41-af37-8ba6711e93fe
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: d1gJntekIStCHyAwgJCuv-N4_BBx5dDQ7K6CeWmpMRo
-    short-id: 84fc
-  servername: deepl.com
-  client-fingerprint: qq
-  flow: xtls-rprx-vision
-- name: 🇨🇾 塞浦路斯 (Cyprus) 30 - xiaohe
+- name: 🇨🇾 塞浦路斯 (Cyprus) 23 - xiaohe
   type: vless
   server: preview.netraidly.ru
   port: 40443
@@ -415,76 +322,6 @@ proxies:
     short-id: 84fc
   servername: deepl.com
   client-fingerprint: edge
-  flow: xtls-rprx-vision
-- name: 🇨🇾 塞浦路斯 (Cyprus) 31 - xiaohe
-  type: vless
-  server: preview.netraidly.ru
-  port: 40443
-  uuid: 15fd22d1-8931-4d41-af37-8ba6711e93fe
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: d1gJntekIStCHyAwgJCuv-N4_BBx5dDQ7K6CeWmpMRo
-    short-id: 84fc
-  servername: deepl.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇨🇾 塞浦路斯 (Cyprus) 32 - xiaohe
-  type: vless
-  server: preview.netraidly.ru
-  port: 40443
-  uuid: 15fd22d1-8931-4d41-af37-8ba6711e93fe
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: d1gJntekIStCHyAwgJCuv-N4_BBx5dDQ7K6CeWmpMRo
-    short-id: 84fc
-  servername: deepl.com
-  client-fingerprint: random
-  flow: xtls-rprx-vision
-- name: 🇨🇾 塞浦路斯 (Cyprus) 33 - xiaohe
-  type: vless
-  server: 5.253.42.164
-  port: 40443
-  uuid: e99ba96d-dec8-42eb-be53-19e71eef7cab
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: g77ZJbm18JEotapmVRjaXi133MzkbhkU2lxhVeXx8zw
-    short-id: 68a8
-  servername: deepl.com
-  client-fingerprint: random
-  flow: xtls-rprx-vision
-- name: 🇨🇾 塞浦路斯 (Cyprus) 34 - xiaohe
-  type: vless
-  server: 5.253.30.99
-  port: 40443
-  uuid: 511c1563-2cb6-4064-abc6-a59ee49818a8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0
-    short-id: 88b6
-  servername: deepl.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇨🇾 塞浦路斯 (Cyprus) 35 - xiaohe
-  type: vless
-  server: 5.253.30.99
-  port: 40443
-  uuid: 511c1563-2cb6-4064-abc6-a59ee49818a8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0
-    short-id: 88b6
-  servername: deepl.com
-  client-fingerprint: chrome
   flow: xtls-rprx-vision
 proxy-groups:
 - name: PROXIES
@@ -514,18 +351,6 @@ proxy-groups:
   - 🇨🇾 塞浦路斯 (Cyprus) 21 - xiaohe
   - 🇨🇾 塞浦路斯 (Cyprus) 22 - xiaohe
   - 🇨🇾 塞浦路斯 (Cyprus) 23 - xiaohe
-  - 🇨🇾 塞浦路斯 (Cyprus) 24 - xiaohe
-  - 🇨🇾 塞浦路斯 (Cyprus) 25 - xiaohe
-  - 🇨🇾 塞浦路斯 (Cyprus) 26 - xiaohe
-  - 🇨🇾 塞浦路斯 (Cyprus) 27 - xiaohe
-  - 🇨🇾 塞浦路斯 (Cyprus) 28 - xiaohe
-  - 🇨🇾 塞浦路斯 (Cyprus) 29 - xiaohe
-  - 🇨🇾 塞浦路斯 (Cyprus) 30 - xiaohe
-  - 🇨🇾 塞浦路斯 (Cyprus) 31 - xiaohe
-  - 🇨🇾 塞浦路斯 (Cyprus) 32 - xiaohe
-  - 🇨🇾 塞浦路斯 (Cyprus) 33 - xiaohe
-  - 🇨🇾 塞浦路斯 (Cyprus) 34 - xiaohe
-  - 🇨🇾 塞浦路斯 (Cyprus) 35 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -554,17 +379,5 @@ proxy-groups:
   - 🇨🇾 塞浦路斯 (Cyprus) 21 - xiaohe
   - 🇨🇾 塞浦路斯 (Cyprus) 22 - xiaohe
   - 🇨🇾 塞浦路斯 (Cyprus) 23 - xiaohe
-  - 🇨🇾 塞浦路斯 (Cyprus) 24 - xiaohe
-  - 🇨🇾 塞浦路斯 (Cyprus) 25 - xiaohe
-  - 🇨🇾 塞浦路斯 (Cyprus) 26 - xiaohe
-  - 🇨🇾 塞浦路斯 (Cyprus) 27 - xiaohe
-  - 🇨🇾 塞浦路斯 (Cyprus) 28 - xiaohe
-  - 🇨🇾 塞浦路斯 (Cyprus) 29 - xiaohe
-  - 🇨🇾 塞浦路斯 (Cyprus) 30 - xiaohe
-  - 🇨🇾 塞浦路斯 (Cyprus) 31 - xiaohe
-  - 🇨🇾 塞浦路斯 (Cyprus) 32 - xiaohe
-  - 🇨🇾 塞浦路斯 (Cyprus) 33 - xiaohe
-  - 🇨🇾 塞浦路斯 (Cyprus) 34 - xiaohe
-  - 🇨🇾 塞浦路斯 (Cyprus) 35 - xiaohe
 rules:
 - MATCH,PROXIES

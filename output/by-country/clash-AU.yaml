@@ -54,6 +54,27 @@ proxies:
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   udp: true
   skip-cert-verify: true
+- name: 🇦🇺 澳大利亚 (Australia) 06 - xiaohe
+  type: hysteria2
+  server: vpn-au-002.fastervpn.world
+  port: 443
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  udp: true
+  skip-cert-verify: true
+- name: 🇦🇺 澳大利亚 (Australia) 07 - xiaohe
+  type: hysteria2
+  server: vpn-au-002.fastervpn.world
+  port: 443
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  udp: true
+  skip-cert-verify: true
+- name: 🇦🇺 澳大利亚 (Australia) 08 - xiaohe
+  type: hysteria2
+  server: vpn-au-002.fastervpn.world
+  port: 443
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  udp: true
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -64,6 +85,9 @@ proxy-groups:
   - 🇦🇺 澳大利亚 (Australia) 03 - xiaohe
   - 🇦🇺 澳大利亚 (Australia) 04 - xiaohe
   - 🇦🇺 澳大利亚 (Australia) 05 - xiaohe
+  - 🇦🇺 澳大利亚 (Australia) 06 - xiaohe
+  - 🇦🇺 澳大利亚 (Australia) 07 - xiaohe
+  - 🇦🇺 澳大利亚 (Australia) 08 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -74,5 +98,8 @@ proxy-groups:
   - 🇦🇺 澳大利亚 (Australia) 03 - xiaohe
   - 🇦🇺 澳大利亚 (Australia) 04 - xiaohe
   - 🇦🇺 澳大利亚 (Australia) 05 - xiaohe
+  - 🇦🇺 澳大利亚 (Australia) 06 - xiaohe
+  - 🇦🇺 澳大利亚 (Australia) 07 - xiaohe
+  - 🇦🇺 澳大利亚 (Australia) 08 - xiaohe
 rules:
 - MATCH,PROXIES

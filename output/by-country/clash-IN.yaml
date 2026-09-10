@@ -16,7 +16,7 @@ proxies:
     public-key: R06_DTSjzQI9DswvRz9OqSBECfSwlpCMPR4DCc9oXyw
     short-id: c0cb7457deebbc70
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇮🇳 印度 (India) 02 - xiaohe
   type: hysteria2
   server: vpn-in-001.fastervpn.world
@@ -25,18 +25,12 @@ proxies:
   udp: true
   skip-cert-verify: true
 - name: 🇮🇳 印度 (India) 03 - xiaohe
-  type: vless
-  server: 194.61.31.126
-  port: 2053
-  uuid: 50ddfd92-dc79-4777-a256-41e34d56836e
+  type: hysteria2
+  server: vpn-in-001.fastervpn.world
+  port: 443
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   udp: true
-  tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: R06_DTSjzQI9DswvRz9OqSBECfSwlpCMPR4DCc9oXyw
-    short-id: c0cb7457deebbc70
-  servername: www.apple.com
-  client-fingerprint: firefox
 - name: 🇮🇳 印度 (India) 04 - xiaohe
   type: hysteria2
   server: vpn-in-001.fastervpn.world
@@ -45,20 +39,6 @@ proxies:
   udp: true
   skip-cert-verify: true
 - name: 🇮🇳 印度 (India) 05 - xiaohe
-  type: hysteria2
-  server: vpn-in-001.fastervpn.world
-  port: 443
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  udp: true
-  skip-cert-verify: true
-- name: 🇮🇳 印度 (India) 06 - xiaohe
-  type: hysteria2
-  server: vpn-in-001.fastervpn.world
-  port: 443
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  udp: true
-  skip-cert-verify: true
-- name: 🇮🇳 印度 (India) 07 - xiaohe
   type: vless
   server: 194.61.31.126
   port: 2053
@@ -71,80 +51,6 @@ proxies:
     short-id: c0cb7457deebbc70
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇮🇳 印度 (India) 08 - xiaohe
-  type: vless
-  server: 194.61.31.126
-  port: 2053
-  uuid: 50ddfd92-dc79-4777-a256-41e34d56836e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: R06_DTSjzQI9DswvRz9OqSBECfSwlpCMPR4DCc9oXyw
-    short-id: c0cb7457deebbc70
-  servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇮🇳 印度 (India) 09 - xiaohe
-  type: vmess
-  server: 152.67.8.205
-  port: 80
-  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ''
-- name: 🇮🇳 印度 (India) 10 - xiaohe
-  type: hysteria2
-  server: vpn-in-001.fastervpn.world
-  port: 443
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  udp: true
-  skip-cert-verify: true
-- name: 🇮🇳 印度 (India) 11 - xiaohe
-  type: vless
-  server: 194.61.31.126
-  port: 2053
-  uuid: 50ddfd92-dc79-4777-a256-41e34d56836e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: R06_DTSjzQI9DswvRz9OqSBECfSwlpCMPR4DCc9oXyw
-    short-id: c0cb7457deebbc70
-  servername: www.apple.com
-  client-fingerprint: random
-- name: 🇮🇳 印度 (India) 12 - xiaohe
-  type: vless
-  server: 194.61.31.126
-  port: 2053
-  uuid: 50ddfd92-dc79-4777-a256-41e34d56836e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: R06_DTSjzQI9DswvRz9OqSBECfSwlpCMPR4DCc9oXyw
-    short-id: c0cb7457deebbc70
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇮🇳 印度 (India) 13 - xiaohe
-  type: vless
-  server: 194.61.31.126
-  port: 2053
-  uuid: 50ddfd92-dc79-4777-a256-41e34d56836e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: R06_DTSjzQI9DswvRz9OqSBECfSwlpCMPR4DCc9oXyw
-    short-id: c0cb7457deebbc70
-  servername: www.apple.com
-  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -155,14 +61,6 @@ proxy-groups:
   - 🇮🇳 印度 (India) 03 - xiaohe
   - 🇮🇳 印度 (India) 04 - xiaohe
   - 🇮🇳 印度 (India) 05 - xiaohe
-  - 🇮🇳 印度 (India) 06 - xiaohe
-  - 🇮🇳 印度 (India) 07 - xiaohe
-  - 🇮🇳 印度 (India) 08 - xiaohe
-  - 🇮🇳 印度 (India) 09 - xiaohe
-  - 🇮🇳 印度 (India) 10 - xiaohe
-  - 🇮🇳 印度 (India) 11 - xiaohe
-  - 🇮🇳 印度 (India) 12 - xiaohe
-  - 🇮🇳 印度 (India) 13 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -173,13 +71,5 @@ proxy-groups:
   - 🇮🇳 印度 (India) 03 - xiaohe
   - 🇮🇳 印度 (India) 04 - xiaohe
   - 🇮🇳 印度 (India) 05 - xiaohe
-  - 🇮🇳 印度 (India) 06 - xiaohe
-  - 🇮🇳 印度 (India) 07 - xiaohe
-  - 🇮🇳 印度 (India) 08 - xiaohe
-  - 🇮🇳 印度 (India) 09 - xiaohe
-  - 🇮🇳 印度 (India) 10 - xiaohe
-  - 🇮🇳 印度 (India) 11 - xiaohe
-  - 🇮🇳 印度 (India) 12 - xiaohe
-  - 🇮🇳 印度 (India) 13 - xiaohe
 rules:
 - MATCH,PROXIES
