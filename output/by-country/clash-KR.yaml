@@ -5,6 +5,30 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇷 韩国 (South Korea) 01 - xiaohe
+  type: ss
+  server: 141.164.45.187
+  port: 8119
+  cipher: aes-256-gcm
+  password: cdBIDV42DCwnfIN
+  udp: true
+- name: 🇰🇷 韩国 (South Korea) 02 - xiaohe
+  type: vmess
+  server: 146.56.112.110
+  port: 8888
+  uuid: e7c302f3-90d6-42dd-9d7d-94a3683a3707
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 03 - xiaohe
+  type: ss
+  server: 141.164.45.187
+  port: 7001
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
+  udp: true
+- name: 🇰🇷 韩国 (South Korea) 04 - xiaohe
   type: vmess
   server: 140.238.2.250
   port: 443
@@ -14,14 +38,14 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 02 - xiaohe
+- name: 🇰🇷 韩国 (South Korea) 05 - xiaohe
   type: ss
   server: 141.164.45.187
-  port: 6697
+  port: 5001
   cipher: aes-256-gcm
-  password: TEzjfAYq2IjtuoS
+  password: Y6R9pAtvxxzmGC
   udp: true
-- name: 🇰🇷 韩国 (South Korea) 03 - xiaohe
+- name: 🇰🇷 韩国 (South Korea) 06 - xiaohe
   type: vless
   server: 3.39.4.109
   port: 18967
@@ -34,53 +58,11 @@ proxies:
     short-id: 48050fab
   servername: www.apple.com
   client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇰🇷 韩国 (South Korea) 04 - xiaohe
-  type: vless
-  server: 3.39.4.109
-  port: 13672
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇰🇷 韩国 (South Korea) 05 - xiaohe
-  type: vless
-  server: 3.39.4.109
-  port: 13672
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇰🇷 韩国 (South Korea) 06 - xiaohe
-  type: vless
-  server: 3.39.4.109
-  port: 13672
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: edge
   flow: xtls-rprx-vision
 - name: 🇰🇷 韩国 (South Korea) 07 - xiaohe
   type: vless
   server: 3.39.4.109
-  port: 18967
+  port: 13672
   uuid: 814bd064-544d-4255-a070-5705c03f6da9
   udp: true
   tls: true
@@ -89,7 +71,7 @@ proxies:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
     short-id: 48050fab
   servername: www.apple.com
-  client-fingerprint: edge
+  client-fingerprint: chrome
   flow: xtls-rprx-vision
 - name: 🇰🇷 韩国 (South Korea) 08 - xiaohe
   type: vless
@@ -103,23 +85,58 @@ proxies:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
     short-id: 48050fab
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: edge
   flow: xtls-rprx-vision
 - name: 🇰🇷 韩国 (South Korea) 09 - xiaohe
-  type: hysteria2
-  server: 3.36.93.74
-  port: 443
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  type: ss
+  server: 141.164.45.187
+  port: 7002
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
   udp: true
-  skip-cert-verify: true
 - name: 🇰🇷 韩国 (South Korea) 10 - xiaohe
-  type: hysteria2
-  server: 150-230-252-217.liao.kdns.fr
-  port: 50160
-  password: 9cfc9458e48c028ec03ff86ebc71c744
+  type: vless
+  server: 3.39.4.109
+  port: 13672
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
   udp: true
+  tls: true
   skip-cert-verify: true
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
 - name: 🇰🇷 韩国 (South Korea) 11 - xiaohe
+  type: vless
+  server: 3.39.4.109
+  port: 13672
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇰🇷 韩国 (South Korea) 12 - xiaohe
+  type: vless
+  server: 3.39.4.109
+  port: 18967
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: edge
+  flow: xtls-rprx-vision
+- name: 🇰🇷 韩国 (South Korea) 13 - xiaohe
   type: vless
   server: 119.28.161.143
   port: 443
@@ -132,81 +149,53 @@ proxies:
     short-id: 0a427bc3
   servername: apple.com
   client-fingerprint: chrome
-- name: 🇰🇷 韩国 (South Korea) 12 - xiaohe
+- name: 🇰🇷 韩国 (South Korea) 14 - xiaohe
   type: hysteria2
   server: 3.36.93.74
   port: 443
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   udp: true
   skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 13 - xiaohe
-  type: vless
-  server: 129.154.192.50
-  port: 2053
-  uuid: 48e84fcc-ecb1-48a3-a596-88fea84887f5
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: oBYxqt4GNTWrmvHRHM_6SAVj_yy95lXtQ0NLd1QWQDU
-    short-id: dea6d68a3f6f96e3
-  servername: www.ibm.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇰🇷 韩国 (South Korea) 14 - xiaohe
-  type: ss
-  server: 141.164.45.187
-  port: 9090
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
-  udp: true
 - name: 🇰🇷 韩国 (South Korea) 15 - xiaohe
-  type: hysteria2
-  server: 150-230-252-217.liao.kdns.fr
-  port: 50160
-  password: 9cfc9458e48c028ec03ff86ebc71c744
+  type: ss
+  server: 141.164.45.187
+  port: 8091
+  cipher: aes-256-gcm
+  password: PCnnH6SQSnfoS27
   udp: true
-  skip-cert-verify: true
 - name: 🇰🇷 韩国 (South Korea) 16 - xiaohe
-  type: vless
-  server: 129.154.192.50
-  port: 2053
-  uuid: 48e84fcc-ecb1-48a3-a596-88fea84887f5
+  type: hysteria2
+  server: 3.36.93.74
+  port: 443
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   udp: true
-  tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: oBYxqt4GNTWrmvHRHM_6SAVj_yy95lXtQ0NLd1QWQDU
-    short-id: dea6d68a3f6f96e3
-  servername: www.ibm.com
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
 - name: 🇰🇷 韩国 (South Korea) 17 - xiaohe
-  type: ss
-  server: 141.164.45.187
-  port: 5498
-  cipher: aes-256-gcm
-  password: lGqs95QkFHo2NV
-  udp: true
-- name: 🇰🇷 韩国 (South Korea) 18 - xiaohe
   type: hysteria2
   server: 150-230-252-217.liao.kdns.fr
   port: 50160
   password: 9cfc9458e48c028ec03ff86ebc71c744
   udp: true
   skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 19 - xiaohe
-  type: ss
-  server: 141.164.45.187
-  port: 8888
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
-  udp: true
-- name: 🇰🇷 韩国 (South Korea) 20 - xiaohe
+- name: 🇰🇷 韩国 (South Korea) 18 - xiaohe
   type: hysteria2
   server: 152.67.200.82
   port: 50160
   password: 3d7634af8cb2c6cb4bac1c0efad8b43d
+  udp: true
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 19 - xiaohe
+  type: hysteria2
+  server: 150-230-252-217.liao.kdns.fr
+  port: 50160
+  password: 9cfc9458e48c028ec03ff86ebc71c744
+  udp: true
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 20 - xiaohe
+  type: hysteria2
+  server: 150-230-252-217.liao.kdns.fr
+  port: 50160
+  password: 9cfc9458e48c028ec03ff86ebc71c744
   udp: true
   skip-cert-verify: true
 - name: 🇰🇷 韩国 (South Korea) 21 - xiaohe
@@ -224,12 +213,47 @@ proxies:
       Host: 130.94.29.111
 - name: 🇰🇷 韩国 (South Korea) 22 - xiaohe
   type: hysteria2
-  server: 152.67.200.82
-  port: 50160
-  password: 3d7634af8cb2c6cb4bac1c0efad8b43d
+  server: 152.70.237.123
+  port: 2053
+  password: maintell
   udp: true
   skip-cert-verify: true
 - name: 🇰🇷 韩国 (South Korea) 23 - xiaohe
+  type: vless
+  server: 129.154.192.50
+  port: 2053
+  uuid: 48e84fcc-ecb1-48a3-a596-88fea84887f5
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: oBYxqt4GNTWrmvHRHM_6SAVj_yy95lXtQ0NLd1QWQDU
+    short-id: dea6d68a3f6f96e3
+  servername: www.ibm.com
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+- name: 🇰🇷 韩国 (South Korea) 24 - xiaohe
+  type: vless
+  server: 129.154.192.50
+  port: 2053
+  uuid: 48e84fcc-ecb1-48a3-a596-88fea84887f5
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: oBYxqt4GNTWrmvHRHM_6SAVj_yy95lXtQ0NLd1QWQDU
+    short-id: dea6d68a3f6f96e3
+  servername: www.ibm.com
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+- name: 🇰🇷 韩国 (South Korea) 25 - xiaohe
+  type: ss
+  server: 141.164.45.187
+  port: 8000
+  cipher: aes-256-gcm
+  password: KixLvKzwjekG00rm
+  udp: true
+- name: 🇰🇷 韩国 (South Korea) 26 - xiaohe
   type: vless
   server: 130.94.29.111
   port: 2087
@@ -270,6 +294,9 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 21 - xiaohe
   - 🇰🇷 韩国 (South Korea) 22 - xiaohe
   - 🇰🇷 韩国 (South Korea) 23 - xiaohe
+  - 🇰🇷 韩国 (South Korea) 24 - xiaohe
+  - 🇰🇷 韩国 (South Korea) 25 - xiaohe
+  - 🇰🇷 韩国 (South Korea) 26 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -298,5 +325,8 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 21 - xiaohe
   - 🇰🇷 韩国 (South Korea) 22 - xiaohe
   - 🇰🇷 韩国 (South Korea) 23 - xiaohe
+  - 🇰🇷 韩国 (South Korea) 24 - xiaohe
+  - 🇰🇷 韩国 (South Korea) 25 - xiaohe
+  - 🇰🇷 韩国 (South Korea) 26 - xiaohe
 rules:
 - MATCH,PROXIES

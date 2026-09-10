@@ -29,7 +29,7 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: neth9.lunariai.ru
+      Host: 192.145.31.5
 - name: 🇧🇬 保加利亚 (Bulgaria) 03 - xiaohe
   type: vless
   server: 192.145.31.5
@@ -55,7 +55,7 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: 192.145.31.5
+      Host: neth9.lunariai.ru
 - name: 🇧🇬 保加利亚 (Bulgaria) 05 - xiaohe
   type: vless
   server: 193.148.59.178
@@ -96,7 +96,7 @@ proxies:
     public-key: uitO4Z8t9TplwwYaqwLqh5rfxDh_X8bOBiNuPbzvaEM
     short-id: bbe46bd8f6b96839
   servername: yandex.ru
-  client-fingerprint: chrome
+  client-fingerprint: randomized
   flow: xtls-rprx-vision
 - name: 🇧🇬 保加利亚 (Bulgaria) 08 - xiaohe
   type: vless
@@ -110,7 +110,7 @@ proxies:
     public-key: uitO4Z8t9TplwwYaqwLqh5rfxDh_X8bOBiNuPbzvaEM
     short-id: bbe46bd8f6b96839
   servername: yandex.ru
-  client-fingerprint: randomized
+  client-fingerprint: chrome
   flow: xtls-rprx-vision
 proxy-groups:
 - name: PROXIES

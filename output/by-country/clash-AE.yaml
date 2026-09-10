@@ -8,7 +8,7 @@ proxies:
   type: vless
   server: 31.58.181.88
   port: 8443
-  uuid: 0817a3bb-c8fb-4ddf-a05e-321565b39cd8
+  uuid: cc422436-e0e9-4f15-bfe8-db3d816e5527
   udp: true
   tls: true
   skip-cert-verify: true
@@ -21,7 +21,7 @@ proxies:
   type: vless
   server: 31.58.181.88
   port: 8443
-  uuid: cc422436-e0e9-4f15-bfe8-db3d816e5527
+  uuid: 05819bb1-2975-473c-a51f-0fbccf8d2cfa
   udp: true
   tls: true
   skip-cert-verify: true
@@ -34,7 +34,7 @@ proxies:
   type: vless
   server: 31.58.181.88
   port: 8443
-  uuid: 05819bb1-2975-473c-a51f-0fbccf8d2cfa
+  uuid: 93a8f0b3-4c97-4d14-999c-c207a55b70b0
   udp: true
   tls: true
   skip-cert-verify: true
@@ -69,7 +69,7 @@ proxies:
     public-key: M08l5tDmJUYELykZCNYQyFgtR9Zc-A4ZGlUSLcUeS2c
     short-id: 1bcc9177f3124b25
   servername: srv-21bac9.vless.monster
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   flow: xtls-rprx-vision
 - name: 🇦🇪 阿联酋 (UAE) 06 - xiaohe
   type: hysteria2
@@ -100,13 +100,6 @@ proxies:
   udp: true
   skip-cert-verify: true
 - name: 🇦🇪 阿联酋 (UAE) 10 - xiaohe
-  type: hysteria2
-  server: 85.204.107.181
-  port: 8080
-  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
-  udp: true
-  skip-cert-verify: true
-- name: 🇦🇪 阿联酋 (UAE) 11 - xiaohe
   type: vless
   server: 31.58.181.88
   port: 8443
@@ -119,22 +112,9 @@ proxies:
   servername: tradingview.com
   client-fingerprint: qq
   flow: xtls-rprx-vision
-- name: 🇦🇪 阿联酋 (UAE) 12 - xiaohe
-  type: vless
-  server: 31.58.181.88
-  port: 8443
-  uuid: 93a8f0b3-4c97-4d14-999c-c207a55b70b0
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
-  servername: tradingview.com
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇦🇪 阿联酋 (UAE) 13 - xiaohe
+- name: 🇦🇪 阿联酋 (UAE) 11 - xiaohe
   type: hysteria2
-  server: 85.204.107.178
+  server: 85.204.107.181
   port: 8080
   password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
   udp: true
@@ -155,8 +135,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 09 - xiaohe
   - 🇦🇪 阿联酋 (UAE) 10 - xiaohe
   - 🇦🇪 阿联酋 (UAE) 11 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 12 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 13 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -173,7 +151,5 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 09 - xiaohe
   - 🇦🇪 阿联酋 (UAE) 10 - xiaohe
   - 🇦🇪 阿联酋 (UAE) 11 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 12 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 13 - xiaohe
 rules:
 - MATCH,PROXIES

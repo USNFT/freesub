@@ -20,30 +20,32 @@ proxies:
   udp: true
 - name: 🇮🇹 意大利 (Italy) 03 - xiaohe
   type: vless
-  server: 57.131.32.191
-  port: 80
-  uuid: 1e280316-0408-47c4-b058-05b8f1f17f02
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: 57.131.32.191
-- name: 🇮🇹 意大利 (Italy) 04 - xiaohe
-  type: vless
-  server: 57.131.38.163
-  port: 2053
-  uuid: d4b08cd6-0903-411a-9dac-45dbdf5c9712
+  server: 172.238.232.239
+  port: 32833
+  uuid: 167ed405-7de9-4bff-b1ea-6e3d49c76b0b
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: Ej2H5ucT7qKegYcT8wODdlxa-cLHr7F4hDVUHzAhcnc
-    short-id: 5b8a942318178e7b
-  servername: www.apple.com
+    public-key: PaTDdYBrlh1xBixdI0igvRRkf0vnUwMRzi-4oDyfS20
+    short-id: a0a305ccc8e94aa8
+  servername: www.intel.com
   client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇮🇹 意大利 (Italy) 04 - xiaohe
+  type: vless
+  server: 172.238.232.239
+  port: 32833
+  uuid: 167ed405-7de9-4bff-b1ea-6e3d49c76b0b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: PaTDdYBrlh1xBixdI0igvRRkf0vnUwMRzi-4oDyfS20
+    short-id: a0a305ccc8e94aa8
+  servername: www.intel.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
 - name: 🇮🇹 意大利 (Italy) 05 - xiaohe
   type: vless
   server: 172.238.232.239
@@ -70,30 +72,9 @@ proxies:
     public-key: PaTDdYBrlh1xBixdI0igvRRkf0vnUwMRzi-4oDyfS20
     short-id: a0a305ccc8e94aa8
   servername: www.intel.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇮🇹 意大利 (Italy) 07 - xiaohe
-  type: ss
-  server: 66.245.207.70
-  port: 8388
-  cipher: aes-256-gcm
-  password: qMvJmCbMduKUoeHq
-  udp: true
-- name: 🇮🇹 意大利 (Italy) 08 - xiaohe
-  type: vless
-  server: 172.238.232.239
-  port: 32833
-  uuid: 167ed405-7de9-4bff-b1ea-6e3d49c76b0b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: PaTDdYBrlh1xBixdI0igvRRkf0vnUwMRzi-4oDyfS20
-    short-id: a0a305ccc8e94aa8
-  servername: www.intel.com
   client-fingerprint: firefox
   flow: xtls-rprx-vision
-- name: 🇮🇹 意大利 (Italy) 09 - xiaohe
+- name: 🇮🇹 意大利 (Italy) 07 - xiaohe
   type: vless
   server: 57.131.38.163
   port: 2053
@@ -106,20 +87,20 @@ proxies:
     short-id: 5b8a942318178e7b
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇮🇹 意大利 (Italy) 10 - xiaohe
+- name: 🇮🇹 意大利 (Italy) 08 - xiaohe
   type: vless
-  server: 57.131.32.191
-  port: 80
-  uuid: 1e280316-0408-47c4-b058-05b8f1f17f02
+  server: 57.131.38.163
+  port: 2053
+  uuid: d4b08cd6-0903-411a-9dac-45dbdf5c9712
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: ov-italy1.09vpn.com
-- name: 🇮🇹 意大利 (Italy) 11 - xiaohe
+  reality-opts:
+    public-key: Ej2H5ucT7qKegYcT8wODdlxa-cLHr7F4hDVUHzAhcnc
+    short-id: 5b8a942318178e7b
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇮🇹 意大利 (Italy) 09 - xiaohe
   type: vless
   server: 57.131.32.191
   port: 80
@@ -132,7 +113,100 @@ proxies:
     path: /vless/
     headers:
       Host: 57.131.32.191
+- name: 🇮🇹 意大利 (Italy) 10 - xiaohe
+  type: vless
+  server: 57.131.38.163
+  port: 2053
+  uuid: d4b08cd6-0903-411a-9dac-45dbdf5c9712
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: Ej2H5ucT7qKegYcT8wODdlxa-cLHr7F4hDVUHzAhcnc
+    short-id: 5b8a942318178e7b
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇮🇹 意大利 (Italy) 11 - xiaohe
+  type: vless
+  server: 57.131.38.163
+  port: 2053
+  uuid: d4b08cd6-0903-411a-9dac-45dbdf5c9712
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: Ej2H5ucT7qKegYcT8wODdlxa-cLHr7F4hDVUHzAhcnc
+    short-id: 5b8a942318178e7b
+  servername: www.apple.com
+  client-fingerprint: chrome
 - name: 🇮🇹 意大利 (Italy) 12 - xiaohe
+  type: vless
+  server: 57.131.32.191
+  port: 80
+  uuid: 1e280316-0408-47c4-b058-05b8f1f17f02
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: ov-italy1.09vpn.com
+- name: 🇮🇹 意大利 (Italy) 13 - xiaohe
+  type: vless
+  server: 31.59.150.174
+  port: 9443
+  uuid: 92089155-6602-4122-86d4-fe6de20e8c4d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: RWu6ktBE4DFbUz_prmz-5KuolLhO53ehh19mNxhP-wI
+    short-id: a1b2c3d4
+  servername: hotcoals.aeternavpn.space
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇮🇹 意大利 (Italy) 14 - xiaohe
+  type: vless
+  server: 31.59.150.174
+  port: 9443
+  uuid: 92089155-6602-4122-86d4-fe6de20e8c4d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: RWu6ktBE4DFbUz_prmz-5KuolLhO53ehh19mNxhP-wI
+    short-id: a1b2c3d4
+  servername: hotcoals.aeternavpn.space
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+- name: 🇮🇹 意大利 (Italy) 15 - xiaohe
+  type: vless
+  server: 57.131.32.191
+  port: 80
+  uuid: 1e280316-0408-47c4-b058-05b8f1f17f02
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: ov-italy1.09vpn.com
+- name: 🇮🇹 意大利 (Italy) 16 - xiaohe
+  type: vless
+  server: 57.131.32.191
+  port: 80
+  uuid: 1e280316-0408-47c4-b058-05b8f1f17f02
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: 57.131.32.191
+- name: 🇮🇹 意大利 (Italy) 17 - xiaohe
   type: vless
   server: 57.131.32.191
   port: 80
@@ -145,46 +219,7 @@ proxies:
     path: /vless/
     headers:
       Host: OV-Italy1.09vpn.com
-- name: 🇮🇹 意大利 (Italy) 13 - xiaohe
-  type: vless
-  server: 57.131.32.191
-  port: 80
-  uuid: 1e280316-0408-47c4-b058-05b8f1f17f02
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: ov-italy1.09vpn.com
-- name: 🇮🇹 意大利 (Italy) 14 - xiaohe
-  type: vless
-  server: 57.131.32.191
-  port: 80
-  uuid: 1e280316-0408-47c4-b058-05b8f1f17f02
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: ov-italy1.09vpn.com
-- name: 🇮🇹 意大利 (Italy) 15 - xiaohe
-  type: vless
-  server: Rital-caca.tempfast.ir
-  port: 4323
-  uuid: 78440584-c334-44a8-bab1-8b1a7d08012b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: T7pTw3G0AIiLmvi96auuSsRjv1q52lpexxO2oITguhA
-    short-id: 40d9e0206a1bd03d
-  servername: play.googleapis.com
-  client-fingerprint: chrome
-- name: 🇮🇹 意大利 (Italy) 16 - xiaohe
+- name: 🇮🇹 意大利 (Italy) 18 - xiaohe
   type: vless
   server: 204.216.216.23
   port: 10086
@@ -213,6 +248,8 @@ proxy-groups:
   - 🇮🇹 意大利 (Italy) 14 - xiaohe
   - 🇮🇹 意大利 (Italy) 15 - xiaohe
   - 🇮🇹 意大利 (Italy) 16 - xiaohe
+  - 🇮🇹 意大利 (Italy) 17 - xiaohe
+  - 🇮🇹 意大利 (Italy) 18 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -234,5 +271,7 @@ proxy-groups:
   - 🇮🇹 意大利 (Italy) 14 - xiaohe
   - 🇮🇹 意大利 (Italy) 15 - xiaohe
   - 🇮🇹 意大利 (Italy) 16 - xiaohe
+  - 🇮🇹 意大利 (Italy) 17 - xiaohe
+  - 🇮🇹 意大利 (Italy) 18 - xiaohe
 rules:
 - MATCH,PROXIES

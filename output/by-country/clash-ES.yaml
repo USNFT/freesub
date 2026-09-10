@@ -6,26 +6,19 @@ log-level: info
 proxies:
 - name: 🇪🇸 西班牙 (Spain) 01 - xiaohe
   type: vless
-  server: 83.147.18.3
-  port: 443
-  uuid: 9f61cdf4-810d-4052-bbc7-2da0c8e20104
+  server: 93.189.94.67
+  port: 48296
+  uuid: 898537d9-ce3a-4937-bbef-c0fa61c07791
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: 3iVJAIGPx6JMlhlRmfpGrHkSmLpHJ4CPvBBH7KsFrFA
-    short-id: fd8cf7e1173f0edb
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
+    public-key: ga1wUMMknP4pwJfUNOOvD9I35XV4q3c73byXPYbRxBE
+    short-id: 109657bb2dbe99
+  servername: www.sony.com
+  client-fingerprint: firefox
   flow: xtls-rprx-vision
 - name: 🇪🇸 西班牙 (Spain) 02 - xiaohe
-  type: ss
-  server: 108.181.121.226
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: WSyL4XTwNsdv
-  udp: true
-- name: 🇪🇸 西班牙 (Spain) 03 - xiaohe
   type: vless
   server: 93.189.94.67
   port: 48296
@@ -37,21 +30,35 @@ proxies:
     public-key: ga1wUMMknP4pwJfUNOOvD9I35XV4q3c73byXPYbRxBE
     short-id: 109657bb2dbe99
   servername: www.sony.com
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+- name: 🇪🇸 西班牙 (Spain) 03 - xiaohe
+  type: vless
+  server: 185.254.205.79
+  port: 19842
+  uuid: 43c23116-1115-4af4-a0f0-56f02841a605
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: sfOfuQeJBlKfDnPL_EMWUxMIiFAN8BNKjtWDUvlsjzM
+    short-id: 25ebc9e0a912
+  servername: www.tesla.com
   client-fingerprint: firefox
   flow: xtls-rprx-vision
 - name: 🇪🇸 西班牙 (Spain) 04 - xiaohe
   type: vless
-  server: 93.189.94.67
-  port: 48296
-  uuid: 898537d9-ce3a-4937-bbef-c0fa61c07791
+  server: 185.254.205.79
+  port: 19842
+  uuid: 43c23116-1115-4af4-a0f0-56f02841a605
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: ga1wUMMknP4pwJfUNOOvD9I35XV4q3c73byXPYbRxBE
-    short-id: 109657bb2dbe99
-  servername: www.sony.com
-  client-fingerprint: firefox
+    public-key: sfOfuQeJBlKfDnPL_EMWUxMIiFAN8BNKjtWDUvlsjzM
+    short-id: 25ebc9e0a912
+  servername: www.tesla.com
+  client-fingerprint: chrome
   flow: xtls-rprx-vision
 - name: 🇪🇸 西班牙 (Spain) 05 - xiaohe
   type: vless
@@ -65,7 +72,7 @@ proxies:
     public-key: sfOfuQeJBlKfDnPL_EMWUxMIiFAN8BNKjtWDUvlsjzM
     short-id: 25ebc9e0a912
   servername: www.tesla.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
   flow: xtls-rprx-vision
 - name: 🇪🇸 西班牙 (Spain) 06 - xiaohe
   type: vless
@@ -79,7 +86,7 @@ proxies:
     public-key: sfOfuQeJBlKfDnPL_EMWUxMIiFAN8BNKjtWDUvlsjzM
     short-id: 25ebc9e0a912
   servername: www.tesla.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   flow: xtls-rprx-vision
 - name: 🇪🇸 西班牙 (Spain) 07 - xiaohe
   type: vless
@@ -93,23 +100,9 @@ proxies:
     public-key: ga1wUMMknP4pwJfUNOOvD9I35XV4q3c73byXPYbRxBE
     short-id: 109657bb2dbe99
   servername: www.sony.com
-  client-fingerprint: random
-  flow: xtls-rprx-vision
-- name: 🇪🇸 西班牙 (Spain) 08 - xiaohe
-  type: vless
-  server: 185.254.205.79
-  port: 19842
-  uuid: 43c23116-1115-4af4-a0f0-56f02841a605
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: sfOfuQeJBlKfDnPL_EMWUxMIiFAN8BNKjtWDUvlsjzM
-    short-id: 25ebc9e0a912
-  servername: www.tesla.com
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: 🇪🇸 西班牙 (Spain) 09 - xiaohe
+- name: 🇪🇸 西班牙 (Spain) 08 - xiaohe
   type: vless
   server: 93.189.94.67
   port: 48296
@@ -123,20 +116,20 @@ proxies:
   servername: www.sony.com
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: 🇪🇸 西班牙 (Spain) 10 - xiaohe
-  type: vless
-  server: 185.254.205.79
-  port: 19842
-  uuid: 43c23116-1115-4af4-a0f0-56f02841a605
+- name: 🇪🇸 西班牙 (Spain) 09 - xiaohe
+  type: ss
+  server: 108.181.121.226
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: WSyL4XTwNsdv
   udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: sfOfuQeJBlKfDnPL_EMWUxMIiFAN8BNKjtWDUvlsjzM
-    short-id: 25ebc9e0a912
-  servername: www.tesla.com
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
+- name: 🇪🇸 西班牙 (Spain) 10 - xiaohe
+  type: ss
+  server: 140.174.184.5
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: qItG8SueYQcP
+  udp: true
 - name: 🇪🇸 西班牙 (Spain) 11 - xiaohe
   type: vless
   server: 83.147.18.3
@@ -152,22 +145,19 @@ proxies:
   client-fingerprint: chrome
   flow: xtls-rprx-vision
 - name: 🇪🇸 西班牙 (Spain) 12 - xiaohe
-  type: ss
-  server: 140.174.184.5
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: qItG8SueYQcP
+  type: vless
+  server: 83.147.18.3
+  port: 443
+  uuid: 9f61cdf4-810d-4052-bbc7-2da0c8e20104
   udp: true
-- name: 🇪🇸 西班牙 (Spain) 13 - xiaohe
-  type: vmess
-  server: 85.90.217.42
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  reality-opts:
+    public-key: 3iVJAIGPx6JMlhlRmfpGrHkSmLpHJ4CPvBBH7KsFrFA
+    short-id: fd8cf7e1173f0edb
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
 proxy-groups:
 - name: PROXIES
   type: select
@@ -185,7 +175,6 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 10 - xiaohe
   - 🇪🇸 西班牙 (Spain) 11 - xiaohe
   - 🇪🇸 西班牙 (Spain) 12 - xiaohe
-  - 🇪🇸 西班牙 (Spain) 13 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -203,6 +192,5 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 10 - xiaohe
   - 🇪🇸 西班牙 (Spain) 11 - xiaohe
   - 🇪🇸 西班牙 (Spain) 12 - xiaohe
-  - 🇪🇸 西班牙 (Spain) 13 - xiaohe
 rules:
 - MATCH,PROXIES
