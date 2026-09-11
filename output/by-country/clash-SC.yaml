@@ -5,19 +5,31 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe
-  type: hysteria2
-  server: 82.38.60.15
-  port: 8080
-  password: VB92_Ka9qwef143K_L23K1hz3_bF_Hz62uT_Bn1_sC
+  type: vless
+  server: 188.114.97.6
+  port: 2086
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
+  tls: false
   skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
 - name: 🇸🇨 塞舌尔 (Seychelles) 02 - xiaohe
-  type: hysteria2
-  server: 138.124.0.168
+  type: vless
+  server: 188.114.97.6
   port: 8080
-  password: h_B9x3942fJ9x_Kpx3914KQ_nZ934HFg_rT
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
+  tls: false
   skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
 - name: 🇸🇨 塞舌尔 (Seychelles) 03 - xiaohe
   type: vless
   server: 156.226.168.221
@@ -30,16 +42,9 @@ proxies:
     public-key: d_pn_DMaIxhCkNh80h0Mc7nP94hrlN--I8liOIREDxE
     short-id: e8daed2d
   servername: www.apple.com
-  client-fingerprint: safari
+  client-fingerprint: qq
   flow: xtls-rprx-vision
 - name: 🇸🇨 塞舌尔 (Seychelles) 04 - xiaohe
-  type: hysteria2
-  server: 138.124.0.168
-  port: 8080
-  password: h_B9x3942fJ9x_Kpx3914KQ_nZ934HFg_rT
-  udp: true
-  skip-cert-verify: true
-- name: 🇸🇨 塞舌尔 (Seychelles) 05 - xiaohe
   type: vless
   server: 156.226.168.221
   port: 35193
@@ -52,6 +57,20 @@ proxies:
     short-id: e8daed2d
   servername: www.apple.com
   client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇸🇨 塞舌尔 (Seychelles) 05 - xiaohe
+  type: vless
+  server: 156.226.168.221
+  port: 35193
+  uuid: 35cbae61-ee10-4cb9-abb8-4950b35e9851
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: d_pn_DMaIxhCkNh80h0Mc7nP94hrlN--I8liOIREDxE
+    short-id: e8daed2d
+  servername: www.apple.com
+  client-fingerprint: safari
   flow: xtls-rprx-vision
 - name: 🇸🇨 塞舌尔 (Seychelles) 06 - xiaohe
   type: vless
@@ -69,7 +88,7 @@ proxies:
   flow: xtls-rprx-vision
 - name: 🇸🇨 塞舌尔 (Seychelles) 07 - xiaohe
   type: vless
-  server: 156.226.168.221
+  server: hk3n.wxgqlfx.vip
   port: 35193
   uuid: 35cbae61-ee10-4cb9-abb8-4950b35e9851
   udp: true
@@ -79,7 +98,7 @@ proxies:
     public-key: d_pn_DMaIxhCkNh80h0Mc7nP94hrlN--I8liOIREDxE
     short-id: e8daed2d
   servername: www.apple.com
-  client-fingerprint: edge
+  client-fingerprint: chrome
   flow: xtls-rprx-vision
 - name: 🇸🇨 塞舌尔 (Seychelles) 08 - xiaohe
   type: vless
@@ -96,20 +115,20 @@ proxies:
   client-fingerprint: chrome
   flow: xtls-rprx-vision
 - name: 🇸🇨 塞舌尔 (Seychelles) 09 - xiaohe
-  type: vless
-  server: hk3n.wxgqlfx.vip
-  port: 35193
-  uuid: 35cbae61-ee10-4cb9-abb8-4950b35e9851
+  type: hysteria2
+  server: 138.124.0.168
+  port: 8080
+  password: h_B9x3942fJ9x_Kpx3914KQ_nZ934HFg_rT
   udp: true
-  tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: d_pn_DMaIxhCkNh80h0Mc7nP94hrlN--I8liOIREDxE
-    short-id: e8daed2d
-  servername: www.apple.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
 - name: 🇸🇨 塞舌尔 (Seychelles) 10 - xiaohe
+  type: hysteria2
+  server: 138.124.0.168
+  port: 8080
+  password: h_B9x3942fJ9x_Kpx3914KQ_nZ934HFg_rT
+  udp: true
+  skip-cert-verify: true
+- name: 🇸🇨 塞舌尔 (Seychelles) 11 - xiaohe
   type: vmess
   server: 156.226.183.181
   port: 54321
@@ -119,7 +138,17 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇸🇨 塞舌尔 (Seychelles) 11 - xiaohe
+- name: 🇸🇨 塞舌尔 (Seychelles) 12 - xiaohe
+  type: vmess
+  server: 156.226.183.181
+  port: 54321
+  uuid: d3bcc1f1-6294-4f68-bcf3-c3bcb2001520
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇨 塞舌尔 (Seychelles) 13 - xiaohe
   type: vmess
   server: 156.226.183.181
   port: 54321
@@ -145,6 +174,8 @@ proxy-groups:
   - 🇸🇨 塞舌尔 (Seychelles) 09 - xiaohe
   - 🇸🇨 塞舌尔 (Seychelles) 10 - xiaohe
   - 🇸🇨 塞舌尔 (Seychelles) 11 - xiaohe
+  - 🇸🇨 塞舌尔 (Seychelles) 12 - xiaohe
+  - 🇸🇨 塞舌尔 (Seychelles) 13 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -161,5 +192,7 @@ proxy-groups:
   - 🇸🇨 塞舌尔 (Seychelles) 09 - xiaohe
   - 🇸🇨 塞舌尔 (Seychelles) 10 - xiaohe
   - 🇸🇨 塞舌尔 (Seychelles) 11 - xiaohe
+  - 🇸🇨 塞舌尔 (Seychelles) 12 - xiaohe
+  - 🇸🇨 塞舌尔 (Seychelles) 13 - xiaohe
 rules:
 - MATCH,PROXIES
