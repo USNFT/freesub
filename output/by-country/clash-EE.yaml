@@ -5,19 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
-  type: vless
-  server: ee-node.usel.pro
+  type: hysteria2
+  server: 217.60.182.79
   port: 443
-  uuid: 6fb79584-30b8-4888-b358-98f7ef6b8697
+  password: sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX
   udp: true
-  tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: NiCJO84l7l--GJ10ggvb6HcOS8qLR30pWTphwvWozhg
-  servername: mail.protech-plus.ee
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
 - name: 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
+  type: hysteria2
+  server: news.gazette.help
+  port: 443
+  password: sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX
+  udp: true
+  skip-cert-verify: true
+- name: 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
   type: hysteria2
   server: 31.76.71.63
   port: 443
@@ -31,6 +32,7 @@ proxy-groups:
   - AUTO
   - 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
   - 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
+  - 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -38,5 +40,6 @@ proxy-groups:
   proxies:
   - 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
   - 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
+  - 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
 rules:
 - MATCH,PROXIES

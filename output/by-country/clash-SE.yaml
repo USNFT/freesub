@@ -12,12 +12,19 @@ proxies:
   udp: true
   skip-cert-verify: true
 - name: 🇸🇪 瑞典 (Sweden) 02 - xiaohe
-  type: hysteria2
-  server: se-node.rumedia-cdn.com
-  port: 25443
-  password: 29ffde49-e1d6-4dcd-a135-352920f9f0b8
+  type: vless
+  server: 171.22.129.56
+  port: 2083
+  uuid: b2744db0-1c64-4218-a93b-9eba0e5f811f
   udp: true
+  tls: true
   skip-cert-verify: true
+  reality-opts:
+    public-key: 40eDnye2AHCQqgM2_ikKzRayZ4Vlu4rnnkHmLmNalQc
+    short-id: 32a37218722f0081
+  servername: swe-one.quiet-rogue.site
+  client-fingerprint: edge
+  flow: xtls-rprx-vision
 proxy-groups:
 - name: PROXIES
   type: select

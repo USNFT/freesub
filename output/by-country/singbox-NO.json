@@ -6,14 +6,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇳🇴 挪威 (Norway) 01 - xiaohe"
+        "🇳🇴 挪威 (Norway) 01 - xiaohe",
+        "🇳🇴 挪威 (Norway) 02 - xiaohe",
+        "🇳🇴 挪威 (Norway) 03 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇳🇴 挪威 (Norway) 01 - xiaohe"
+        "🇳🇴 挪威 (Norway) 01 - xiaohe",
+        "🇳🇴 挪威 (Norway) 02 - xiaohe",
+        "🇳🇴 挪威 (Norway) 03 - xiaohe"
       ],
       "url": "https://www.google.com/generate_204"
     },
