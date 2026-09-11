@@ -13,38 +13,26 @@ proxies:
   udp: true
 - name: 🇮🇹 意大利 (Italy) 02 - xiaohe
   type: ss
+  server: 66.245.207.70
+  port: 8388
+  cipher: aes-256-gcm
+  password: qMvJmCbMduKUoeHq
+  udp: true
+- name: 🇮🇹 意大利 (Italy) 03 - xiaohe
+  type: ss
   server: 57.131.48.45
   port: 8388
   cipher: aes-256-gcm
   password: itzvpn@321
   udp: true
-- name: 🇮🇹 意大利 (Italy) 03 - xiaohe
-  type: vless
-  server: 57.131.38.163
-  port: 2053
-  uuid: d4b08cd6-0903-411a-9dac-45dbdf5c9712
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: Ej2H5ucT7qKegYcT8wODdlxa-cLHr7F4hDVUHzAhcnc
-    short-id: 5b8a942318178e7b
-  servername: www.apple.com
-  client-fingerprint: chrome
 - name: 🇮🇹 意大利 (Italy) 04 - xiaohe
   type: vless
-  server: 172.238.232.239
-  port: 32833
-  uuid: 167ed405-7de9-4bff-b1ea-6e3d49c76b0b
+  server: 204.216.216.23
+  port: 10086
+  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: PaTDdYBrlh1xBixdI0igvRRkf0vnUwMRzi-4oDyfS20
-    short-id: a0a305ccc8e94aa8
-  servername: www.intel.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
 - name: 🇮🇹 意大利 (Italy) 05 - xiaohe
   type: vless
   server: 172.238.232.239
@@ -61,6 +49,20 @@ proxies:
   flow: xtls-rprx-vision
 - name: 🇮🇹 意大利 (Italy) 06 - xiaohe
   type: vless
+  server: 172.238.232.239
+  port: 32833
+  uuid: 167ed405-7de9-4bff-b1ea-6e3d49c76b0b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: PaTDdYBrlh1xBixdI0igvRRkf0vnUwMRzi-4oDyfS20
+    short-id: a0a305ccc8e94aa8
+  servername: www.intel.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇮🇹 意大利 (Italy) 07 - xiaohe
+  type: vless
   server: 57.131.32.191
   port: 80
   uuid: 1e280316-0408-47c4-b058-05b8f1f17f02
@@ -72,6 +74,20 @@ proxies:
     path: /vless/
     headers:
       Host: ov-italy1.09vpn.com
+- name: 🇮🇹 意大利 (Italy) 08 - xiaohe
+  type: vless
+  server: 31.59.150.174
+  port: 9443
+  uuid: 92089155-6602-4122-86d4-fe6de20e8c4d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: RWu6ktBE4DFbUz_prmz-5KuolLhO53ehh19mNxhP-wI
+    short-id: a1b2c3d4
+  servername: hotcoals.aeternavpn.space
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
 proxy-groups:
 - name: PROXIES
   type: select
@@ -83,6 +99,8 @@ proxy-groups:
   - 🇮🇹 意大利 (Italy) 04 - xiaohe
   - 🇮🇹 意大利 (Italy) 05 - xiaohe
   - 🇮🇹 意大利 (Italy) 06 - xiaohe
+  - 🇮🇹 意大利 (Italy) 07 - xiaohe
+  - 🇮🇹 意大利 (Italy) 08 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -94,5 +112,7 @@ proxy-groups:
   - 🇮🇹 意大利 (Italy) 04 - xiaohe
   - 🇮🇹 意大利 (Italy) 05 - xiaohe
   - 🇮🇹 意大利 (Italy) 06 - xiaohe
+  - 🇮🇹 意大利 (Italy) 07 - xiaohe
+  - 🇮🇹 意大利 (Italy) 08 - xiaohe
 rules:
 - MATCH,PROXIES

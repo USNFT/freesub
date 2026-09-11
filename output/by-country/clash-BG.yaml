@@ -6,45 +6,28 @@ log-level: info
 proxies:
 - name: 🇧🇬 保加利亚 (Bulgaria) 01 - xiaohe
   type: vless
-  server: 193.148.59.178
+  server: 192.145.31.5
   port: 443
-  uuid: 20d7c485-5d24-49b5-a5cc-bb7a7daf9908
+  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: -GMpCber8qtrKzJbwvpLcwlIhOy-5zS66u_x9lLvIjE
-    short-id: e3daad69
-  servername: www.apple.com
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇧🇬 保加利亚 (Bulgaria) 02 - xiaohe
-  type: vless
-  server: 193.148.59.178
-  port: 443
-  uuid: 20d7c485-5d24-49b5-a5cc-bb7a7daf9908
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: -GMpCber8qtrKzJbwvpLcwlIhOy-5zS66u_x9lLvIjE
-    short-id: e3daad69
-  servername: www.apple.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: neth9.lunariai.ru
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇧🇬 保加利亚 (Bulgaria) 01 - xiaohe
-  - 🇧🇬 保加利亚 (Bulgaria) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇧🇬 保加利亚 (Bulgaria) 01 - xiaohe
-  - 🇧🇬 保加利亚 (Bulgaria) 02 - xiaohe
 rules:
 - MATCH,PROXIES

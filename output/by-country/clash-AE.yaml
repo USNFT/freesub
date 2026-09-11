@@ -20,86 +20,103 @@ proxies:
   flow: xtls-rprx-vision
 - name: 🇦🇪 阿联酋 (UAE) 02 - xiaohe
   type: vless
-  server: 31.56.189.27
-  port: 8765
-  uuid: df9f5aca-eda0-428f-a752-e53866153d12
+  server: 45.130.125.201
+  port: 80
+  uuid: dc8a9493-c54a-459e-d060-81a700000001
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: nahan-core.netizo09.workers.dev
+- name: 🇦🇪 阿联酋 (UAE) 03 - xiaohe
+  type: vless
+  server: 31.58.181.88
+  port: 8443
+  uuid: 863ce48d-6b5e-4682-b5d7-0c9b43895841
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: M08l5tDmJUYELykZCNYQyFgtR9Zc-A4ZGlUSLcUeS2c
-    short-id: 1bcc9177f3124b25
-  servername: srv-21bac9.vless.monster
-  client-fingerprint: chrome
+    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
+  servername: tradingview.com
+  client-fingerprint: firefox
   flow: xtls-rprx-vision
-- name: 🇦🇪 阿联酋 (UAE) 03 - xiaohe
-  type: hysteria2
-  server: 85.204.107.181
-  port: 8080
-  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
-  udp: true
-  skip-cert-verify: true
 - name: 🇦🇪 阿联酋 (UAE) 04 - xiaohe
   type: hysteria2
-  server: 85.204.107.173
+  server: 85.204.107.178
   port: 8080
   password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
   udp: true
   skip-cert-verify: true
 - name: 🇦🇪 阿联酋 (UAE) 05 - xiaohe
   type: hysteria2
-  server: 85.204.107.177
+  server: 85.204.107.181
   port: 8080
   password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
   udp: true
   skip-cert-verify: true
 - name: 🇦🇪 阿联酋 (UAE) 06 - xiaohe
   type: hysteria2
-  server: 85.204.107.178
+  server: 85.204.107.181
   port: 8080
   password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
   udp: true
   skip-cert-verify: true
 - name: 🇦🇪 阿联酋 (UAE) 07 - xiaohe
   type: hysteria2
-  server: 85.204.107.181
+  server: 85.204.107.177
   port: 8080
   password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
   udp: true
   skip-cert-verify: true
 - name: 🇦🇪 阿联酋 (UAE) 08 - xiaohe
   type: hysteria2
-  server: 85.204.107.181
+  server: 85.204.107.178
   port: 8080
   password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
   udp: true
   skip-cert-verify: true
 - name: 🇦🇪 阿联酋 (UAE) 09 - xiaohe
-  type: hysteria2
-  server: 85.204.107.178
-  port: 8080
-  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
+  type: vless
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
+  tls: false
   skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 10 - xiaohe
   type: hysteria2
-  server: 85.204.107.178
-  port: 8080
-  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
+  server: cabinet.wwwinternetvideo.click
+  port: 443
+  password: sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX
   udp: true
   skip-cert-verify: true
 - name: 🇦🇪 阿联酋 (UAE) 11 - xiaohe
-  type: hysteria2
-  server: 85.204.107.183
-  port: 8080
-  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
+  type: vless
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
+  tls: false
   skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 12 - xiaohe
   type: hysteria2
-  server: 85.204.107.176
-  port: 8080
-  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
+  server: 217.60.182.79
+  port: 443
+  password: sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX
   udp: true
   skip-cert-verify: true
 proxy-groups:
