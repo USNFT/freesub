@@ -6,45 +6,16 @@ log-level: info
 proxies:
 - name: 🇬🇷 希腊 (Greece) 01 - xiaohe
   type: vless
-  server: 94.241.174.157
-  port: 40443
-  uuid: 8ac637bf-554e-4902-94d7-baf01780a83c
+  server: uk-tube-01.stre4m.net
+  port: 443
+  uuid: f85ba8bb-a3da-4389-a67a-2b0afde7bbc1
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: mM33xyzf1GPaU2CQXAGYoGkTuYzEZRYT6S-NngyqfHQ
-    short-id: beb4
-  servername: deepl.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇬🇷 希腊 (Greece) 02 - xiaohe
-  type: vless
-  server: edge.netraidly.ru
-  port: 40443
-  uuid: 8ac637bf-554e-4902-94d7-baf01780a83c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: mM33xyzf1GPaU2CQXAGYoGkTuYzEZRYT6S-NngyqfHQ
-    short-id: beb4
-  servername: deepl.com
-  client-fingerprint: qq
-  flow: xtls-rprx-vision
-- name: 🇬🇷 希腊 (Greece) 03 - xiaohe
-  type: vless
-  server: edge.netraidly.ru
-  port: 40443
-  uuid: 8ac637bf-554e-4902-94d7-baf01780a83c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: mM33xyzf1GPaU2CQXAGYoGkTuYzEZRYT6S-NngyqfHQ
-    short-id: beb4
-  servername: deepl.com
-  client-fingerprint: qq
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  servername: jobinvest.ru
+  client-fingerprint: firefox
   flow: xtls-rprx-vision
 proxy-groups:
 - name: PROXIES
@@ -52,15 +23,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇬🇷 希腊 (Greece) 01 - xiaohe
-  - 🇬🇷 希腊 (Greece) 02 - xiaohe
-  - 🇬🇷 希腊 (Greece) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇬🇷 希腊 (Greece) 01 - xiaohe
-  - 🇬🇷 希腊 (Greece) 02 - xiaohe
-  - 🇬🇷 希腊 (Greece) 03 - xiaohe
 rules:
 - MATCH,PROXIES

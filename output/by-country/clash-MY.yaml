@@ -34,6 +34,19 @@ proxies:
   flow: xtls-rprx-vision
 - name: 🇲🇾 马来西亚 (Malaysia) 03 - xiaohe
   type: vless
+  server: 38.60.168.98
+  port: 2087
+  uuid: 8a346b7c-5b95-4845-affa-0e5d9929e9ae
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /db55c40bbc75
+    headers:
+      Host: 38.60.168.98
+- name: 🇲🇾 马来西亚 (Malaysia) 04 - xiaohe
+  type: vless
   server: 56.69.159.191
   port: 53271
   uuid: e8358eb5-7210-4cf8-982f-68af141b7694
@@ -46,7 +59,7 @@ proxies:
   servername: www.tesla.com
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: 🇲🇾 马来西亚 (Malaysia) 04 - xiaohe
+- name: 🇲🇾 马来西亚 (Malaysia) 05 - xiaohe
   type: vless
   server: 38.60.168.98
   port: 2087
@@ -59,20 +72,6 @@ proxies:
     path: /db55c40bbc75
     headers:
       Host: 38.60.168.98
-- name: 🇲🇾 马来西亚 (Malaysia) 05 - xiaohe
-  type: vless
-  server: 56.69.159.191
-  port: 53271
-  uuid: e8358eb5-7210-4cf8-982f-68af141b7694
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 1P58ZYmo81kPDnL4U7SnEUA-aT2R86l-o6dbFXoeDjc
-    short-id: 0a9bd9db19578964
-  servername: www.tesla.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
 - name: 🇲🇾 马来西亚 (Malaysia) 06 - xiaohe
   type: vless
   server: 56.69.159.191
@@ -101,20 +100,6 @@ proxies:
   servername: www.tesla.com
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: 🇲🇾 马来西亚 (Malaysia) 08 - xiaohe
-  type: vless
-  server: 56.69.159.191
-  port: 53271
-  uuid: e8358eb5-7210-4cf8-982f-68af141b7694
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 1P58ZYmo81kPDnL4U7SnEUA-aT2R86l-o6dbFXoeDjc
-    short-id: 0a9bd9db19578964
-  servername: www.tesla.com
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
 proxy-groups:
 - name: PROXIES
   type: select
@@ -127,7 +112,6 @@ proxy-groups:
   - 🇲🇾 马来西亚 (Malaysia) 05 - xiaohe
   - 🇲🇾 马来西亚 (Malaysia) 06 - xiaohe
   - 🇲🇾 马来西亚 (Malaysia) 07 - xiaohe
-  - 🇲🇾 马来西亚 (Malaysia) 08 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -140,6 +124,5 @@ proxy-groups:
   - 🇲🇾 马来西亚 (Malaysia) 05 - xiaohe
   - 🇲🇾 马来西亚 (Malaysia) 06 - xiaohe
   - 🇲🇾 马来西亚 (Malaysia) 07 - xiaohe
-  - 🇲🇾 马来西亚 (Malaysia) 08 - xiaohe
 rules:
 - MATCH,PROXIES

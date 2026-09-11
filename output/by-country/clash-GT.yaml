@@ -4,18 +4,18 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇱🇻 拉脱维亚 (Latvia) 01 - xiaohe
+- name: 🇬🇹 GT 01 - xiaohe
   type: vless
-  server: 138.124.180.137
+  server: 185.47.254.251
   port: 443
-  uuid: 5234b2b7-5e07-422c-8159-d62a676c00c6
+  uuid: 878fb7f7-fc65-465e-a352-17c7216c6f3d
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: GBdkyDLfr0LIZo_94Xv8ycAKOmkjArYzwJAEMhuXX2c
-    short-id: 33acba1b
-  servername: www.apple.com
+    public-key: 6-_ZidygR8PRt4gtHlGCAW-PPmjEIm7Wn7MZqJU1z1Q
+    short-id: 6c059ecfddf9b179
+  servername: gateway.icloud.com
   client-fingerprint: chrome
   flow: xtls-rprx-vision
 proxy-groups:
@@ -23,12 +23,12 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇱🇻 拉脱维亚 (Latvia) 01 - xiaohe
+  - 🇬🇹 GT 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇱🇻 拉脱维亚 (Latvia) 01 - xiaohe
+  - 🇬🇹 GT 01 - xiaohe
 rules:
 - MATCH,PROXIES
