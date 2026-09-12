@@ -5,13 +5,26 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 瑞典 (Sweden) 01 - xiaohe
+  type: vless
+  server: 143.246.193.215
+  port: 443
+  uuid: 77da6e30-ad4e-11f1-94d5-525400d1d4f7
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: wSjV1yR_rhDUdoNbM9zIXNGLASLp9RorComnyoayo2c
+  servername: www.blocket.se
+  client-fingerprint: randomized
+  flow: xtls-rprx-vision
+- name: 🇸🇪 瑞典 (Sweden) 02 - xiaohe
   type: hysteria2
   server: se-node.rumedia-cdn.com
   port: 25443
   password: 29ffde49-e1d6-4dcd-a135-352920f9f0b8
   udp: true
   skip-cert-verify: true
-- name: 🇸🇪 瑞典 (Sweden) 02 - xiaohe
+- name: 🇸🇪 瑞典 (Sweden) 03 - xiaohe
   type: vless
   server: 88.216.130.139
   port: 8443
@@ -24,13 +37,6 @@ proxies:
   servername: apple.com
   client-fingerprint: firefox
   flow: xtls-rprx-vision
-- name: 🇸🇪 瑞典 (Sweden) 03 - xiaohe
-  type: hysteria2
-  server: se-node.rumedia-cdn.com
-  port: 25443
-  password: 29ffde49-e1d6-4dcd-a135-352920f9f0b8
-  udp: true
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select

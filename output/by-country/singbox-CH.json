@@ -6,14 +6,20 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇭 瑞士 (Switzerland) 01 - xiaohe"
+        "🇨🇭 瑞士 (Switzerland) 01 - xiaohe",
+        "🇨🇭 瑞士 (Switzerland) 02 - xiaohe",
+        "🇨🇭 瑞士 (Switzerland) 03 - xiaohe",
+        "🇨🇭 瑞士 (Switzerland) 04 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇭 瑞士 (Switzerland) 01 - xiaohe"
+        "🇨🇭 瑞士 (Switzerland) 01 - xiaohe",
+        "🇨🇭 瑞士 (Switzerland) 02 - xiaohe",
+        "🇨🇭 瑞士 (Switzerland) 03 - xiaohe",
+        "🇨🇭 瑞士 (Switzerland) 04 - xiaohe"
       ],
       "url": "https://www.google.com/generate_204"
     },
