@@ -5,19 +5,26 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇺 澳大利亚 (Australia) 01 - xiaohe
-  type: vless
-  server: 103.75.119.126
-  port: 2087
-  uuid: 731f177e-00aa-480c-b935-661456139a32
+  type: vmess
+  server: 82.198.246.233
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /7586c69d3dc9
-    headers:
-      Host: 103.75.119.126
 - name: 🇦🇺 澳大利亚 (Australia) 02 - xiaohe
+  type: vmess
+  server: 82.198.246.233
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇦🇺 澳大利亚 (Australia) 03 - xiaohe
   type: vless
   server: 103.75.119.126
   port: 2087
@@ -30,13 +37,6 @@ proxies:
     path: /7586c69d3dc9
     headers:
       Host: 103.75.119.126
-- name: 🇦🇺 澳大利亚 (Australia) 03 - xiaohe
-  type: hysteria2
-  server: vpn-au-002.fastervpn.world
-  port: 443
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  udp: true
-  skip-cert-verify: true
 - name: 🇦🇺 澳大利亚 (Australia) 04 - xiaohe
   type: hysteria2
   server: vpn-au-002.fastervpn.world
@@ -52,12 +52,19 @@ proxies:
   udp: true
   skip-cert-verify: true
 - name: 🇦🇺 澳大利亚 (Australia) 06 - xiaohe
-  type: hysteria2
-  server: vpn-au-002.fastervpn.world
+  type: vless
+  server: 51.161.204.242
   port: 443
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  uuid: a14b736b-a92a-48d6-a596-5d31f7378ded
   udp: true
+  tls: true
   skip-cert-verify: true
+  reality-opts:
+    public-key: a2qGjvUPq6Nz5FTbn_MSHp-055q2h8YXqIL5VIJ5zwE
+    short-id: d15c17cef9b2e456
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
 - name: 🇦🇺 澳大利亚 (Australia) 07 - xiaohe
   type: hysteria2
   server: vpn-au-002.fastervpn.world

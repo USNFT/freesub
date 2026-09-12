@@ -20,24 +20,17 @@ proxies:
   flow: xtls-rprx-vision
 - name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
   type: ss
-  server: 36.224.152.189
+  server: 36.224.174.174
   port: 50099
   cipher: chacha20-ietf-poly1305
   password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
   udp: true
 - name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
   type: ss
-  server: 36.224.174.174
+  server: 36.224.152.189
   port: 50099
   cipher: chacha20-ietf-poly1305
   password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-  udp: true
-- name: 🇰🇷 韩国 (South Korea) 04 (家宽) - xiaohe
-  type: ss
-  server: 115.161.136.145
-  port: 10099
-  cipher: chacha20-ietf-poly1305
-  password: '12242'
   udp: true
 proxy-groups:
 - name: PROXIES
@@ -47,7 +40,6 @@ proxy-groups:
   - 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
-  - 🇰🇷 韩国 (South Korea) 04 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -56,6 +48,5 @@ proxy-groups:
   - 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
-  - 🇰🇷 韩国 (South Korea) 04 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES
