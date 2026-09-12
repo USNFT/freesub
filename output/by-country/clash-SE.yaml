@@ -5,26 +5,32 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 瑞典 (Sweden) 01 - xiaohe
+  type: vless
+  server: 143.246.193.215
+  port: 443
+  uuid: 77da6e30-ad4e-11f1-94d5-525400d1d4f7
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: wSjV1yR_rhDUdoNbM9zIXNGLASLp9RorComnyoayo2c
+  servername: www.blocket.se
+  client-fingerprint: randomized
+  flow: xtls-rprx-vision
+- name: 🇸🇪 瑞典 (Sweden) 02 - xiaohe
   type: hysteria2
   server: se-node.rumedia-cdn.com
   port: 25443
   password: 29ffde49-e1d6-4dcd-a135-352920f9f0b8
   udp: true
   skip-cert-verify: true
-- name: 🇸🇪 瑞典 (Sweden) 02 - xiaohe
-  type: vless
-  server: 171.22.129.56
-  port: 2083
-  uuid: b2744db0-1c64-4218-a93b-9eba0e5f811f
+- name: 🇸🇪 瑞典 (Sweden) 03 - xiaohe
+  type: hysteria2
+  server: se-node.rumedia-cdn.com
+  port: 25443
+  password: 29ffde49-e1d6-4dcd-a135-352920f9f0b8
   udp: true
-  tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: 40eDnye2AHCQqgM2_ikKzRayZ4Vlu4rnnkHmLmNalQc
-    short-id: 32a37218722f0081
-  servername: swe-one.quiet-rogue.site
-  client-fingerprint: edge
-  flow: xtls-rprx-vision
 proxy-groups:
 - name: PROXIES
   type: select
@@ -32,6 +38,7 @@ proxy-groups:
   - AUTO
   - 🇸🇪 瑞典 (Sweden) 01 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 02 - xiaohe
+  - 🇸🇪 瑞典 (Sweden) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -39,5 +46,6 @@ proxy-groups:
   proxies:
   - 🇸🇪 瑞典 (Sweden) 01 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 02 - xiaohe
+  - 🇸🇪 瑞典 (Sweden) 03 - xiaohe
 rules:
 - MATCH,PROXIES
