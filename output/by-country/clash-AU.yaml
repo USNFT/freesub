@@ -6,17 +6,17 @@ log-level: info
 proxies:
 - name: 🇦🇺 澳大利亚 (Australia) 01 - xiaohe
   type: vless
-  server: 50.62.195.50
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  server: 103.75.119.126
+  port: 2087
+  uuid: 731f177e-00aa-480c-b935-661456139a32
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /?ed=2560
+    path: /7586c69d3dc9
     headers:
-      Host: vms.lifetime38.workers.dev
+      Host: 103.75.119.126
 - name: 🇦🇺 澳大利亚 (Australia) 02 - xiaohe
   type: vless
   server: 103.75.119.126
@@ -31,32 +31,19 @@ proxies:
     headers:
       Host: 103.75.119.126
 - name: 🇦🇺 澳大利亚 (Australia) 03 - xiaohe
-  type: vless
-  server: 51.161.204.242
+  type: hysteria2
+  server: vpn-au-002.fastervpn.world
   port: 443
-  uuid: a14b736b-a92a-48d6-a596-5d31f7378ded
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   udp: true
-  tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: a2qGjvUPq6Nz5FTbn_MSHp-055q2h8YXqIL5VIJ5zwE
-    short-id: d15c17cef9b2e456
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
 - name: 🇦🇺 澳大利亚 (Australia) 04 - xiaohe
-  type: vless
-  server: 103.75.119.126
-  port: 2087
-  uuid: 731f177e-00aa-480c-b935-661456139a32
+  type: hysteria2
+  server: vpn-au-002.fastervpn.world
+  port: 443
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   udp: true
-  tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /7586c69d3dc9
-    headers:
-      Host: 103.75.119.126
 - name: 🇦🇺 澳大利亚 (Australia) 05 - xiaohe
   type: hysteria2
   server: vpn-au-002.fastervpn.world
@@ -78,13 +65,6 @@ proxies:
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   udp: true
   skip-cert-verify: true
-- name: 🇦🇺 澳大利亚 (Australia) 08 - xiaohe
-  type: hysteria2
-  server: vpn-au-002.fastervpn.world
-  port: 443
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  udp: true
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -97,7 +77,6 @@ proxy-groups:
   - 🇦🇺 澳大利亚 (Australia) 05 - xiaohe
   - 🇦🇺 澳大利亚 (Australia) 06 - xiaohe
   - 🇦🇺 澳大利亚 (Australia) 07 - xiaohe
-  - 🇦🇺 澳大利亚 (Australia) 08 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -110,6 +89,5 @@ proxy-groups:
   - 🇦🇺 澳大利亚 (Australia) 05 - xiaohe
   - 🇦🇺 澳大利亚 (Australia) 06 - xiaohe
   - 🇦🇺 澳大利亚 (Australia) 07 - xiaohe
-  - 🇦🇺 澳大利亚 (Australia) 08 - xiaohe
 rules:
 - MATCH,PROXIES

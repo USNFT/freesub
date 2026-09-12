@@ -6,18 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaohe",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaohe",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - xiaohe"
+        "🌐 其他地区 (Other) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaohe",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaohe",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - xiaohe"
+        "🌐 其他地区 (Other) 01 - xiaohe"
       ],
       "url": "https://www.google.com/generate_204"
     },

@@ -1,0 +1,34 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🌐 其他地区 (Other) 01 - xiaohe
+  type: vless
+  server: 104.21.34.170
+  port: 443
+  uuid: b74bbaca-8bbe-41e1-9af9-18d467836282
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 017.EleCTRoCelLCo-CF-017.Workers.dEv
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoibnhUbllUVXY1OWIiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119?ed=2560
+    headers:
+      Host: 017.EleCTRoCelLCo-CF-017.Workers.dEv
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🌐 其他地区 (Other) 01 - xiaohe
+- name: AUTO
+  type: url-test
+  url: https://www.google.com/generate_204
+  interval: 300
+  proxies:
+  - 🌐 其他地区 (Other) 01 - xiaohe
+rules:
+- MATCH,PROXIES
