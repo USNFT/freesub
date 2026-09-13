@@ -12,13 +12,12 @@ proxies:
   password: itzvpn@321
   udp: true
 - name: 🇮🇹 意大利 (Italy) 02 - xiaohe
-  type: vless
-  server: 204.216.216.23
-  port: 10086
-  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
+  type: ss
+  server: 185.164.175.81
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-  tls: false
-  skip-cert-verify: true
 - name: 🇮🇹 意大利 (Italy) 03 - xiaohe
   type: ss
   server: 57.131.48.45
@@ -27,50 +26,74 @@ proxies:
   password: itzvpn@321
   udp: true
 - name: 🇮🇹 意大利 (Italy) 04 - xiaohe
-  type: ss
-  server: 185.164.175.81
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇮🇹 意大利 (Italy) 05 - xiaohe
   type: vless
-  server: 57.131.38.163
-  port: 2053
-  uuid: d4b08cd6-0903-411a-9dac-45dbdf5c9712
+  server: 204.216.216.23
+  port: 10086
+  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: Ej2H5ucT7qKegYcT8wODdlxa-cLHr7F4hDVUHzAhcnc
-    short-id: 5b8a942318178e7b
-  servername: www.apple.com
-  client-fingerprint: chrome
+- name: 🇮🇹 意大利 (Italy) 05 - xiaohe
+  type: ss
+  server: 66.245.207.70
+  port: 8388
+  cipher: aes-256-gcm
+  password: qMvJmCbMduKUoeHq
+  udp: true
 - name: 🇮🇹 意大利 (Italy) 06 - xiaohe
   type: vless
-  server: 57.131.38.163
-  port: 2053
-  uuid: d4b08cd6-0903-411a-9dac-45dbdf5c9712
+  server: 31.77.154.91
+  port: 443
+  uuid: 3b6a9df3-f1d1-4bc1-94a5-0d8f2d5512b1
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: Ej2H5ucT7qKegYcT8wODdlxa-cLHr7F4hDVUHzAhcnc
-    short-id: 5b8a942318178e7b
-  servername: www.apple.com
-  client-fingerprint: chrome
+    public-key: vMpyuTZ06hfF-Yu1u8w43TiUidkML1Ges5KGeyr6Ui4
+    short-id: '324344345654'
+  servername: mil.2clash.ru
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
 - name: 🇮🇹 意大利 (Italy) 07 - xiaohe
   type: vless
-  server: 82.118.16.189
+  server: 82.118.16.187
   port: 443
-  uuid: d5e5f5a1-0f23-4c49-af9f-4be445bf9d8e
+  uuid: dc2259c4-388e-4285-ba18-df619b6672b6
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: SjGkzJQ9I6ZZjC3V73atcPMczhMm0oiTrB8mUQXz1HY
-    short-id: 37fbf155c7a9f3ff
+    public-key: R5ycsjJ-v024902dMSqTsSdqxUwCFEXMebdBEWFt9VU
+    short-id: cd6065902eea7a02
   servername: www.cloudflare.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇮🇹 意大利 (Italy) 08 - xiaohe
+  type: vless
+  server: mil.2clash.ru
+  port: 443
+  uuid: 3b6a9df3-f1d1-4bc1-94a5-0d8f2d5512b1
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: vMpyuTZ06hfF-Yu1u8w43TiUidkML1Ges5KGeyr6Ui4
+    short-id: '324344345654'
+  servername: mil.2clash.ru
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+- name: 🇮🇹 意大利 (Italy) 09 - xiaohe
+  type: vless
+  server: 172.238.232.239
+  port: 32833
+  uuid: 167ed405-7de9-4bff-b1ea-6e3d49c76b0b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: PaTDdYBrlh1xBixdI0igvRRkf0vnUwMRzi-4oDyfS20
+    short-id: a0a305ccc8e94aa8
+  servername: www.intel.com
   client-fingerprint: chrome
   flow: xtls-rprx-vision
 proxy-groups:
@@ -85,6 +108,8 @@ proxy-groups:
   - 🇮🇹 意大利 (Italy) 05 - xiaohe
   - 🇮🇹 意大利 (Italy) 06 - xiaohe
   - 🇮🇹 意大利 (Italy) 07 - xiaohe
+  - 🇮🇹 意大利 (Italy) 08 - xiaohe
+  - 🇮🇹 意大利 (Italy) 09 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -97,5 +122,7 @@ proxy-groups:
   - 🇮🇹 意大利 (Italy) 05 - xiaohe
   - 🇮🇹 意大利 (Italy) 06 - xiaohe
   - 🇮🇹 意大利 (Italy) 07 - xiaohe
+  - 🇮🇹 意大利 (Italy) 08 - xiaohe
+  - 🇮🇹 意大利 (Italy) 09 - xiaohe
 rules:
 - MATCH,PROXIES
