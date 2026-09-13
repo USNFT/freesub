@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇦🇺 澳大利亚 (Australia) 01 - xiaohe
   type: vmess
-  server: 82.198.246.97
+  server: 82.198.246.250
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
@@ -15,13 +15,32 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇦🇺 澳大利亚 (Australia) 02 - xiaohe
-  type: hysteria2
-  server: vpn-au-002.fastervpn.world
-  port: 443
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  type: vless
+  server: 103.75.119.126
+  port: 2087
+  uuid: 731f177e-00aa-480c-b935-661456139a32
   udp: true
+  tls: false
   skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /7586c69d3dc9
+    headers:
+      Host: 103.75.119.126
 - name: 🇦🇺 澳大利亚 (Australia) 03 - xiaohe
+  type: vless
+  server: 103.75.119.126
+  port: 2087
+  uuid: 731f177e-00aa-480c-b935-661456139a32
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /7586c69d3dc9
+    headers:
+      Host: 103.75.119.126
+- name: 🇦🇺 澳大利亚 (Australia) 04 - xiaohe
   type: vless
   server: 51.161.204.242
   port: 443
@@ -35,19 +54,6 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: 🇦🇺 澳大利亚 (Australia) 04 - xiaohe
-  type: vless
-  server: 103.75.119.126
-  port: 2087
-  uuid: 731f177e-00aa-480c-b935-661456139a32
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /7586c69d3dc9
-    headers:
-      Host: 103.75.119.126
 - name: 🇦🇺 澳大利亚 (Australia) 05 - xiaohe
   type: hysteria2
   server: vpn-au-002.fastervpn.world
@@ -57,40 +63,19 @@ proxies:
   skip-cert-verify: true
 - name: 🇦🇺 澳大利亚 (Australia) 06 - xiaohe
   type: hysteria2
-  server: vpn-au-002.fastervpn.world
+  server: 32.236.239.65
   port: 443
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   udp: true
   skip-cert-verify: true
 - name: 🇦🇺 澳大利亚 (Australia) 07 - xiaohe
   type: hysteria2
-  server: 32.236.239.65
+  server: vpn-au-002.fastervpn.world
   port: 443
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   udp: true
   skip-cert-verify: true
 - name: 🇦🇺 澳大利亚 (Australia) 08 - xiaohe
-  type: hysteria2
-  server: 32.236.171.236
-  port: 443
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  udp: true
-  skip-cert-verify: true
-- name: 🇦🇺 澳大利亚 (Australia) 09 - xiaohe
-  type: hysteria2
-  server: vpn-au-002.fastervpn.world
-  port: 443
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  udp: true
-  skip-cert-verify: true
-- name: 🇦🇺 澳大利亚 (Australia) 10 - xiaohe
-  type: hysteria2
-  server: vpn-au-002.fastervpn.world
-  port: 443
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  udp: true
-  skip-cert-verify: true
-- name: 🇦🇺 澳大利亚 (Australia) 11 - xiaohe
   type: hysteria2
   server: vpn-au-002.fastervpn.world
   port: 443
@@ -110,9 +95,6 @@ proxy-groups:
   - 🇦🇺 澳大利亚 (Australia) 06 - xiaohe
   - 🇦🇺 澳大利亚 (Australia) 07 - xiaohe
   - 🇦🇺 澳大利亚 (Australia) 08 - xiaohe
-  - 🇦🇺 澳大利亚 (Australia) 09 - xiaohe
-  - 🇦🇺 澳大利亚 (Australia) 10 - xiaohe
-  - 🇦🇺 澳大利亚 (Australia) 11 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -126,8 +108,5 @@ proxy-groups:
   - 🇦🇺 澳大利亚 (Australia) 06 - xiaohe
   - 🇦🇺 澳大利亚 (Australia) 07 - xiaohe
   - 🇦🇺 澳大利亚 (Australia) 08 - xiaohe
-  - 🇦🇺 澳大利亚 (Australia) 09 - xiaohe
-  - 🇦🇺 澳大利亚 (Australia) 10 - xiaohe
-  - 🇦🇺 澳大利亚 (Australia) 11 - xiaohe
 rules:
 - MATCH,PROXIES
