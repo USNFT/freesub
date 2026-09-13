@@ -30,7 +30,7 @@ proxies:
     public-key: -GMpCber8qtrKzJbwvpLcwlIhOy-5zS66u_x9lLvIjE
     short-id: e3daad69
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: edge
   flow: xtls-rprx-vision
 - name: 🇧🇬 保加利亚 (Bulgaria) 03 - xiaohe
   type: vless
@@ -44,7 +44,35 @@ proxies:
     public-key: -GMpCber8qtrKzJbwvpLcwlIhOy-5zS66u_x9lLvIjE
     short-id: e3daad69
   servername: www.apple.com
-  client-fingerprint: edge
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇧🇬 保加利亚 (Bulgaria) 04 - xiaohe
+  type: vless
+  server: 193.148.59.178
+  port: 443
+  uuid: 20d7c485-5d24-49b5-a5cc-bb7a7daf9908
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: -GMpCber8qtrKzJbwvpLcwlIhOy-5zS66u_x9lLvIjE
+    short-id: e3daad69
+  servername: www.apple.com
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+- name: 🇧🇬 保加利亚 (Bulgaria) 05 - xiaohe
+  type: vless
+  server: 144.31.50.236
+  port: 443
+  uuid: 1c332eae-7e02-4acd-996d-4eb3e652401c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: uitO4Z8t9TplwwYaqwLqh5rfxDh_X8bOBiNuPbzvaEM
+    short-id: bbe46bd8f6b96839
+  servername: yandex.ru
+  client-fingerprint: firefox
   flow: xtls-rprx-vision
 proxy-groups:
 - name: PROXIES
@@ -54,6 +82,8 @@ proxy-groups:
   - 🇧🇬 保加利亚 (Bulgaria) 01 - xiaohe
   - 🇧🇬 保加利亚 (Bulgaria) 02 - xiaohe
   - 🇧🇬 保加利亚 (Bulgaria) 03 - xiaohe
+  - 🇧🇬 保加利亚 (Bulgaria) 04 - xiaohe
+  - 🇧🇬 保加利亚 (Bulgaria) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -62,5 +92,7 @@ proxy-groups:
   - 🇧🇬 保加利亚 (Bulgaria) 01 - xiaohe
   - 🇧🇬 保加利亚 (Bulgaria) 02 - xiaohe
   - 🇧🇬 保加利亚 (Bulgaria) 03 - xiaohe
+  - 🇧🇬 保加利亚 (Bulgaria) 04 - xiaohe
+  - 🇧🇬 保加利亚 (Bulgaria) 05 - xiaohe
 rules:
 - MATCH,PROXIES

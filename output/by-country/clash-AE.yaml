@@ -6,57 +6,19 @@ log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - xiaohe
   type: vless
-  server: 31.58.181.88
-  port: 8443
-  uuid: 05819bb1-2975-473c-a51f-0fbccf8d2cfa
+  server: 31.56.189.27
+  port: 8765
+  uuid: df9f5aca-eda0-428f-a752-e53866153d12
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
-  servername: tradingview.com
-  client-fingerprint: firefox
+    public-key: M08l5tDmJUYELykZCNYQyFgtR9Zc-A4ZGlUSLcUeS2c
+    short-id: 1bcc9177f3124b25
+  servername: srv-21bac9.vless.monster
+  client-fingerprint: chrome
   flow: xtls-rprx-vision
 - name: 🇦🇪 阿联酋 (UAE) 02 - xiaohe
-  type: vless
-  server: 31.58.181.88
-  port: 8443
-  uuid: 315adcfd-5eab-4041-b876-f9cc8e2aa6c2
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
-  servername: tradingview.com
-  client-fingerprint: qq
-  flow: xtls-rprx-vision
-- name: 🇦🇪 阿联酋 (UAE) 03 - xiaohe
-  type: vless
-  server: 31.58.181.88
-  port: 8443
-  uuid: b5f27d9a-4d7a-4fa3-a45a-09bfd3e8a248
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
-  servername: tradingview.com
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇦🇪 阿联酋 (UAE) 04 - xiaohe
-  type: vless
-  server: 31.58.181.88
-  port: 8443
-  uuid: 67018597-36a2-40f2-aa72-a253d0ad438b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
-  servername: tradingview.com
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇦🇪 阿联酋 (UAE) 05 - xiaohe
   type: vless
   server: 89.125.147.199
   port: 443
@@ -69,272 +31,75 @@ proxies:
     short-id: f6c7c139b9c938db
   servername: maps.apple.com
   client-fingerprint: chrome
-- name: 🇦🇪 阿联酋 (UAE) 06 - xiaohe
+- name: 🇦🇪 阿联酋 (UAE) 03 - xiaohe
   type: vless
-  server: 45.135.128.5
+  server: 89.47.55.8
   port: 443
-  uuid: 624208cf-54e0-4341-823b-1bee6595fce9
+  uuid: dca76b88-b038-e82b-45e1-1d76b476d7ca
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: nDUrcIPWyCo7gAOVPfjAneLz17NdCrUMCIvdJsTRsD4
-  servername: upload.tbotapi.ru
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇦🇪 阿联酋 (UAE) 07 - xiaohe
-  type: vless
-  server: 31.56.189.27
-  port: 8765
-  uuid: df9f5aca-eda0-428f-a752-e53866153d12
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: M08l5tDmJUYELykZCNYQyFgtR9Zc-A4ZGlUSLcUeS2c
-    short-id: 1bcc9177f3124b25
-  servername: srv-21bac9.vless.monster
+    public-key: iVDh09Vm2DqZMNQoUdf-LCZ6TqVGb9mLXnClAK2LRj4
+  servername: www.canon.com
   client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇦🇪 阿联酋 (UAE) 08 - xiaohe
-  type: vless
-  server: 31.56.189.27
-  port: 8765
-  uuid: df9f5aca-eda0-428f-a752-e53866153d12
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: M08l5tDmJUYELykZCNYQyFgtR9Zc-A4ZGlUSLcUeS2c
-    short-id: 1bcc9177f3124b25
-  servername: srv-21bac9.vless.monster
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇦🇪 阿联酋 (UAE) 09 - xiaohe
-  type: vless
-  server: 31.58.181.88
-  port: 8443
-  uuid: 77d4bb66-82c8-4511-98e0-44edb2da8978
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
-  servername: tradingview.com
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇦🇪 阿联酋 (UAE) 10 - xiaohe
-  type: vless
-  server: 45.135.128.5
-  port: 443
-  uuid: 624208cf-54e0-4341-823b-1bee6595fce9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: nDUrcIPWyCo7gAOVPfjAneLz17NdCrUMCIvdJsTRsD4
-  servername: upload.tbotapi.ru
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇦🇪 阿联酋 (UAE) 11 - xiaohe
-  type: vless
-  server: upload.tbotapi.ru
-  port: 443
-  uuid: 624208cf-54e0-4341-823b-1bee6595fce9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: nDUrcIPWyCo7gAOVPfjAneLz17NdCrUMCIvdJsTRsD4
-  servername: upload.tbotapi.ru
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇦🇪 阿联酋 (UAE) 12 - xiaohe
-  type: vless
-  server: upload.tbotapi.ru
-  port: 443
-  uuid: 624208cf-54e0-4341-823b-1bee6595fce9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: nDUrcIPWyCo7gAOVPfjAneLz17NdCrUMCIvdJsTRsD4
-  servername: upload.tbotapi.ru
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇦🇪 阿联酋 (UAE) 13 - xiaohe
-  type: vless
-  server: 31.58.181.88
-  port: 8443
-  uuid: c4783cc5-aeec-4473-855b-1c98965949dd
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
-  servername: tradingview.com
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇦🇪 阿联酋 (UAE) 14 - xiaohe
-  type: vless
-  server: upload.tbotapi.ru
-  port: 443
-  uuid: 624208cf-54e0-4341-823b-1bee6595fce9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: nDUrcIPWyCo7gAOVPfjAneLz17NdCrUMCIvdJsTRsD4
-  servername: upload.tbotapi.ru
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇦🇪 阿联酋 (UAE) 15 - xiaohe
-  type: vless
-  server: upload.tbotapi.ru
-  port: 443
-  uuid: 624208cf-54e0-4341-823b-1bee6595fce9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: nDUrcIPWyCo7gAOVPfjAneLz17NdCrUMCIvdJsTRsD4
-  servername: upload.tbotapi.ru
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇦🇪 阿联酋 (UAE) 16 - xiaohe
-  type: vless
-  server: 31.58.181.88
-  port: 8443
-  uuid: febfeec2-9a21-4afc-9edb-0833466672cd
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
-  servername: tradingview.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇦🇪 阿联酋 (UAE) 17 - xiaohe
-  type: vless
-  server: 31.58.181.88
-  port: 8443
-  uuid: d0da19f1-fb05-488e-99c2-262389b3537b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
-  servername: tradingview.com
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇦🇪 阿联酋 (UAE) 18 - xiaohe
-  type: vless
-  server: 31.58.181.88
-  port: 8443
-  uuid: af674f24-71f7-4683-9e8e-370ec70cffc4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
-  servername: tradingview.com
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇦🇪 阿联酋 (UAE) 19 - xiaohe
-  type: vless
-  server: 31.58.181.88
-  port: 8443
-  uuid: 3e930211-9887-4ec3-969a-c2e7a8837da2
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
-  servername: tradingview.com
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇦🇪 阿联酋 (UAE) 20 - xiaohe
+- name: 🇦🇪 阿联酋 (UAE) 04 - xiaohe
   type: hysteria2
   server: 85.204.107.178
   port: 8080
   password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
   udp: true
   skip-cert-verify: true
-- name: 🇦🇪 阿联酋 (UAE) 21 - xiaohe
+- name: 🇦🇪 阿联酋 (UAE) 05 - xiaohe
   type: hysteria2
-  server: 85.204.107.177
+  server: 85.204.107.183
   port: 8080
   password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
   udp: true
   skip-cert-verify: true
-- name: 🇦🇪 阿联酋 (UAE) 22 - xiaohe
-  type: vless
-  server: 31.58.181.88
-  port: 8443
-  uuid: 863ce48d-6b5e-4682-b5d7-0c9b43895841
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
-  servername: tradingview.com
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇦🇪 阿联酋 (UAE) 23 - xiaohe
+- name: 🇦🇪 阿联酋 (UAE) 06 - xiaohe
   type: hysteria2
   server: 85.204.107.181
   port: 8080
   password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
   udp: true
   skip-cert-verify: true
-- name: 🇦🇪 阿联酋 (UAE) 24 - xiaohe
-  type: hysteria2
-  server: 85.204.107.177
-  port: 8080
-  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
-  udp: true
-  skip-cert-verify: true
-- name: 🇦🇪 阿联酋 (UAE) 25 - xiaohe
+- name: 🇦🇪 阿联酋 (UAE) 07 - xiaohe
   type: hysteria2
   server: 85.204.107.181
   port: 8080
   password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
   udp: true
   skip-cert-verify: true
-- name: 🇦🇪 阿联酋 (UAE) 26 - xiaohe
-  type: vless
-  server: 31.58.181.88
-  port: 8443
-  uuid: 94f1b60a-7786-4ab4-a1f6-eb5591c3d645
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
-  servername: tradingview.com
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇦🇪 阿联酋 (UAE) 27 - xiaohe
-  type: vless
-  server: 31.58.181.88
-  port: 8443
-  uuid: 75efda17-fdc2-43d8-a2c6-fbdba0289244
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
-  servername: tradingview.com
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇦🇪 阿联酋 (UAE) 28 - xiaohe
+- name: 🇦🇪 阿联酋 (UAE) 08 - xiaohe
   type: hysteria2
-  server: 85.204.107.172
+  server: 85.204.107.171
   port: 8080
   password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
   udp: true
   skip-cert-verify: true
-- name: 🇦🇪 阿联酋 (UAE) 29 - xiaohe
+- name: 🇦🇪 阿联酋 (UAE) 09 - xiaohe
+  type: hysteria2
+  server: 85.204.107.181
+  port: 8080
+  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
+  udp: true
+  skip-cert-verify: true
+- name: 🇦🇪 阿联酋 (UAE) 10 - xiaohe
+  type: hysteria2
+  server: 85.204.107.178
+  port: 8080
+  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
+  udp: true
+  skip-cert-verify: true
+- name: 🇦🇪 阿联酋 (UAE) 11 - xiaohe
+  type: hysteria2
+  server: 85.204.107.174
+  port: 8080
+  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
+  udp: true
+  skip-cert-verify: true
+- name: 🇦🇪 阿联酋 (UAE) 12 - xiaohe
   type: vless
   server: 84.235.244.108
   port: 22573
@@ -347,7 +112,33 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 30 - xiaohe
+- name: 🇦🇪 阿联酋 (UAE) 13 - xiaohe
+  type: vless
+  server: 84.235.244.108
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 14 - xiaohe
+  type: vless
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 15 - xiaohe
   type: vless
   server: 89.47.55.8
   port: 443
@@ -359,152 +150,6 @@ proxies:
     public-key: WtLZK1KyhSpI3K-R4M3sLAHWPOgGPMgkL6RneL0OfCY
   servername: download.nvidia.com
   client-fingerprint: chrome
-- name: 🇦🇪 阿联酋 (UAE) 31 - xiaohe
-  type: vless
-  server: 31.58.181.88
-  port: 8443
-  uuid: 98983e4e-31df-4061-bc86-1d6ade4b551b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
-  servername: tradingview.com
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇦🇪 阿联酋 (UAE) 32 - xiaohe
-  type: vless
-  server: 31.58.181.88
-  port: 8443
-  uuid: c4783cc5-aeec-4473-855b-1c98965949dd
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
-  servername: tradingview.com
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇦🇪 阿联酋 (UAE) 33 - xiaohe
-  type: hysteria2
-  server: 85.204.107.183
-  port: 8080
-  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
-  udp: true
-  skip-cert-verify: true
-- name: 🇦🇪 阿联酋 (UAE) 34 - xiaohe
-  type: vless
-  server: 31.58.181.88
-  port: 8443
-  uuid: e177b819-cfc2-4c59-bd37-e9cf15bc3bc3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
-  servername: tradingview.com
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇦🇪 阿联酋 (UAE) 35 - xiaohe
-  type: hysteria2
-  server: 85.204.107.173
-  port: 8080
-  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
-  udp: true
-  skip-cert-verify: true
-- name: 🇦🇪 阿联酋 (UAE) 36 - xiaohe
-  type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 37 - xiaohe
-  type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 38 - xiaohe
-  type: hysteria2
-  server: 85.204.107.174
-  port: 8080
-  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
-  udp: true
-  skip-cert-verify: true
-- name: 🇦🇪 阿联酋 (UAE) 39 - xiaohe
-  type: hysteria2
-  server: 85.204.107.175
-  port: 8080
-  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
-  udp: true
-  skip-cert-verify: true
-- name: 🇦🇪 阿联酋 (UAE) 40 - xiaohe
-  type: vless
-  server: 31.58.181.88
-  port: 8443
-  uuid: 757e753e-85e2-482e-a29b-852ad193bc5f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
-  servername: tradingview.com
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇦🇪 阿联酋 (UAE) 41 - xiaohe
-  type: vless
-  server: 31.58.181.88
-  port: 8443
-  uuid: 17e85193-a95c-4430-9b05-d8f303a34ac3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
-  servername: tradingview.com
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇦🇪 阿联酋 (UAE) 42 - xiaohe
-  type: hysteria2
-  server: 85.204.107.178
-  port: 8080
-  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
-  udp: true
-  skip-cert-verify: true
-- name: 🇦🇪 阿联酋 (UAE) 43 - xiaohe
-  type: vless
-  server: 31.58.181.88
-  port: 8443
-  uuid: 04dc7739-5b33-49c9-bf16-3c6919a6498f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
-  servername: tradingview.com
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇦🇪 阿联酋 (UAE) 44 - xiaohe
-  type: hysteria2
-  server: 85.204.107.178
-  port: 8080
-  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
-  udp: true
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -525,35 +170,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 13 - xiaohe
   - 🇦🇪 阿联酋 (UAE) 14 - xiaohe
   - 🇦🇪 阿联酋 (UAE) 15 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 16 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 17 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 18 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 19 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 20 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 21 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 22 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 23 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 24 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 25 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 26 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 27 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 28 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 29 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 30 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 31 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 32 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 33 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 34 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 35 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 36 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 37 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 38 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 39 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 40 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 41 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 42 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 43 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 44 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -574,34 +190,5 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 13 - xiaohe
   - 🇦🇪 阿联酋 (UAE) 14 - xiaohe
   - 🇦🇪 阿联酋 (UAE) 15 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 16 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 17 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 18 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 19 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 20 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 21 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 22 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 23 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 24 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 25 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 26 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 27 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 28 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 29 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 30 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 31 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 32 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 33 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 34 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 35 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 36 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 37 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 38 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 39 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 40 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 41 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 42 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 43 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 44 - xiaohe
 rules:
 - MATCH,PROXIES

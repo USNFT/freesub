@@ -11,21 +11,7 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
   udp: true
-- name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe
-  type: vless
-  server: dlbgwqqngrjbwan.jiedddym.com
-  port: 42868
-  uuid: 6dbb8854-17a5-4684-b930-c11f022975ec
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: GLtdhq3ZSKYlJv62ye5dFKfjI3UF9mBIGOl5ms75rVA
-    short-id: 747a75eb5ecef8
-  servername: www.apple.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
+- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
   type: vless
   server: wwbqwqqnlyydssc.cfooov.xyz
   port: 39817
@@ -39,30 +25,35 @@ proxies:
   servername: www.apple.com
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - xiaohe
-  type: hysteria2
-  server: hk02.xn--9kq85xcu6b.com
-  port: 65534
-  password: 45dae7e6-4573-4e6b-a1f3-57b3bbaf990d
+- name: 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe
+  type: vless
+  server: dlbgwqqngrjbwan.jiedddym.com
+  port: 42868
+  uuid: 6dbb8854-17a5-4684-b930-c11f022975ec
   udp: true
+  tls: true
   skip-cert-verify: true
+  reality-opts:
+    public-key: GLtdhq3ZSKYlJv62ye5dFKfjI3UF9mBIGOl5ms75rVA
+    short-id: 747a75eb5ecef8
+  servername: www.apple.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES
