@@ -18,17 +18,33 @@ proxies:
   servername: p-nt-www-amazon-com-kalias.amazon.com
   client-fingerprint: firefox
   flow: xtls-rprx-vision
+- name: 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
+  type: vless
+  server: 95.85.224.51
+  port: 443
+  uuid: 342ab7e4-5a89-0001-8809-304120d4aa83
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: WWeAHWUVD-phmnjNJ823cer0c4CMIbEs08AhsuEZmDc
+    short-id: a696de84963656de
+  servername: max.ru
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
+  - 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
+  - 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
 rules:
 - MATCH,PROXIES
