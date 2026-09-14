@@ -12,13 +12,53 @@ proxies:
   password: WSyL4XTwNsdv
   udp: true
 - name: 🇪🇸 西班牙 (Spain) 02 - xiaohe
+  type: vless
+  server: 80.91.65.89
+  port: 443
+  uuid: 6dd13cd4-e378-4742-bef1-d8ac54083626
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: qSdvSbr8scEUh7pMy8edVRkjIn91fJpDRDVmZQTFMno
+    short-id: 16b80cabbd9c0ee6
+  servername: www.nvidia.com
+  client-fingerprint: ''
+  flow: xtls-rprx-vision
+- name: 🇪🇸 西班牙 (Spain) 03 - xiaohe
   type: ss
   server: 140.174.184.5
   port: 8388
   cipher: chacha20-ietf-poly1305
   password: qItG8SueYQcP
   udp: true
-- name: 🇪🇸 西班牙 (Spain) 03 - xiaohe
+- name: 🇪🇸 西班牙 (Spain) 04 - xiaohe
+  type: vless
+  server: 212.227.235.66
+  port: 2053
+  uuid: ead0dd61-d398-40ad-80d6-a0e1e516d7d3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk
+    short-id: 29e8dcd2b37aaa7f
+  servername: www.apple.com
+  client-fingerprint: firefox
+- name: 🇪🇸 西班牙 (Spain) 05 - xiaohe
+  type: vless
+  server: 212.227.235.66
+  port: 2053
+  uuid: ead0dd61-d398-40ad-80d6-a0e1e516d7d3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk
+    short-id: 29e8dcd2b37aaa7f
+  servername: www.apple.com
+  client-fingerprint: random
+- name: 🇪🇸 西班牙 (Spain) 06 - xiaohe
   type: vless
   server: 80.91.65.89
   port: 443
@@ -32,7 +72,7 @@ proxies:
   servername: www.nvidia.com
   client-fingerprint: edge
   flow: xtls-rprx-vision
-- name: 🇪🇸 西班牙 (Spain) 04 - xiaohe
+- name: 🇪🇸 西班牙 (Spain) 07 - xiaohe
   type: vless
   server: 80.91.65.89
   port: 443
@@ -46,34 +86,6 @@ proxies:
   servername: www.nvidia.com
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: 🇪🇸 西班牙 (Spain) 05 - xiaohe
-  type: vless
-  server: 194.146.223.231
-  port: 443
-  uuid: bf8c3d34-c16c-423f-8ff0-9341d6621e97
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: CuGfoVwpKbDfXx5Lx657c-RpIyCJgWmd2xXsLgb5AhQ
-    short-id: '273288'
-  servername: blog.api.www.cloudflare.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇪🇸 西班牙 (Spain) 06 - xiaohe
-  type: vless
-  server: 194.146.223.231
-  port: 443
-  uuid: bf8c3d34-c16c-423f-8ff0-9341d6621e97
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: CuGfoVwpKbDfXx5Lx657c-RpIyCJgWmd2xXsLgb5AhQ
-    short-id: '273288'
-  servername: blog.api.www.cloudflare.com
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
 proxy-groups:
 - name: PROXIES
   type: select
@@ -85,6 +97,7 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 04 - xiaohe
   - 🇪🇸 西班牙 (Spain) 05 - xiaohe
   - 🇪🇸 西班牙 (Spain) 06 - xiaohe
+  - 🇪🇸 西班牙 (Spain) 07 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -96,5 +109,6 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 04 - xiaohe
   - 🇪🇸 西班牙 (Spain) 05 - xiaohe
   - 🇪🇸 西班牙 (Spain) 06 - xiaohe
+  - 🇪🇸 西班牙 (Spain) 07 - xiaohe
 rules:
 - MATCH,PROXIES
