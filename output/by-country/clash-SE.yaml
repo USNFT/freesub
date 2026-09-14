@@ -18,19 +18,19 @@ proxies:
   client-fingerprint: randomized
   flow: xtls-rprx-vision
 - name: 🇸🇪 瑞典 (Sweden) 02 - xiaohe
-  type: hysteria2
-  server: se-node.rumedia-cdn.com
-  port: 25443
-  password: 29ffde49-e1d6-4dcd-a135-352920f9f0b8
+  type: vless
+  server: se.chick-team.ru
+  port: 24443
+  uuid: 15553b23-a621-4dfd-995e-2fe28d124526
   udp: true
+  tls: true
   skip-cert-verify: true
-- name: 🇸🇪 瑞典 (Sweden) 03 - xiaohe
-  type: hysteria2
-  server: se-node.rumedia-cdn.com
-  port: 25443
-  password: 29ffde49-e1d6-4dcd-a135-352920f9f0b8
-  udp: true
-  skip-cert-verify: true
+  reality-opts:
+    public-key: uUI9qoHBKhlrPy4BRJSQQygc4jstmLKLrhRI6jqhYxw
+    short-id: 8df4211d612176a5
+  servername: se.chick-team.ru
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
 proxy-groups:
 - name: PROXIES
   type: select
@@ -38,7 +38,6 @@ proxy-groups:
   - AUTO
   - 🇸🇪 瑞典 (Sweden) 01 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 02 - xiaohe
-  - 🇸🇪 瑞典 (Sweden) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -46,6 +45,5 @@ proxy-groups:
   proxies:
   - 🇸🇪 瑞典 (Sweden) 01 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 02 - xiaohe
-  - 🇸🇪 瑞典 (Sweden) 03 - xiaohe
 rules:
 - MATCH,PROXIES
