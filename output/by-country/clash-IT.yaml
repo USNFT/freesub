@@ -5,13 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇹 意大利 (Italy) 01 - xiaohe
-  type: vless
-  server: 204.216.216.23
-  port: 10086
-  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
+  type: ss
+  server: 185.164.175.81
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-  tls: false
-  skip-cert-verify: true
 - name: 🇮🇹 意大利 (Italy) 02 - xiaohe
   type: ss
   server: 57.131.48.45
@@ -27,12 +26,13 @@ proxies:
   password: itzvpn@321
   udp: true
 - name: 🇮🇹 意大利 (Italy) 04 - xiaohe
-  type: ss
-  server: 185.164.175.81
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  type: vless
+  server: 204.216.216.23
+  port: 10086
+  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
   udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 🇮🇹 意大利 (Italy) 05 - xiaohe
   type: vless
   server: 82.118.16.187
@@ -62,19 +62,12 @@ proxies:
   client-fingerprint: chrome
   flow: xtls-rprx-vision
 - name: 🇮🇹 意大利 (Italy) 07 - xiaohe
-  type: vless
-  server: 31.59.150.174
-  port: 9443
-  uuid: 92089155-6602-4122-86d4-fe6de20e8c4d
+  type: ss
+  server: 66.245.207.70
+  port: 8388
+  cipher: aes-256-gcm
+  password: qMvJmCbMduKUoeHq
   udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: RWu6ktBE4DFbUz_prmz-5KuolLhO53ehh19mNxhP-wI
-    short-id: a1b2c3d4
-  servername: hotcoals.aeternavpn.space
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
 proxy-groups:
 - name: PROXIES
   type: select
