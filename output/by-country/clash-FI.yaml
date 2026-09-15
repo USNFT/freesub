@@ -19,6 +19,47 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
+  type: vless
+  server: 31.77.199.182
+  port: 443
+  uuid: c09cfd91-b234-4998-9bed-a0211b7f5c3c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: -qLezG1nUEtvOJi-Ra7WRYv-aHkv3PSefEuXpWV2G04
+    short-id: abcd1234
+  servername: fi2.yservice.help
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇫🇮 芬兰 (Finland) 04 - xiaohe
+  type: vless
+  server: 31.77.199.182
+  port: 443
+  uuid: c09cfd91-b234-4998-9bed-a0211b7f5c3c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: -qLezG1nUEtvOJi-Ra7WRYv-aHkv3PSefEuXpWV2G04
+    short-id: abcd1234
+  servername: fi2.yservice.help
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇫🇮 芬兰 (Finland) 05 - xiaohe
+  type: vless
+  server: 185.79.138.71
+  port: 448
+  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
+    short-id: cd21e552537c7c0b
+  servername: www.samsung.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -26,6 +67,9 @@ proxy-groups:
   - AUTO
   - 🇫🇮 芬兰 (Finland) 01 - xiaohe
   - 🇫🇮 芬兰 (Finland) 02 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 03 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 04 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -33,5 +77,8 @@ proxy-groups:
   proxies:
   - 🇫🇮 芬兰 (Finland) 01 - xiaohe
   - 🇫🇮 芬兰 (Finland) 02 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 03 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 04 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 05 - xiaohe
 rules:
 - MATCH,PROXIES
