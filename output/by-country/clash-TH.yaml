@@ -6,6 +6,16 @@ log-level: info
 proxies:
 - name: 🇹🇭 泰国 (Thailand) 01 - xiaohe
   type: vmess
+  server: 36.133.78.37
+  port: 50017
+  uuid: 9195e0f1-f466-4e69-838f-a95519b5d45e
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇹🇭 泰国 (Thailand) 02 - xiaohe
+  type: vmess
   server: 118.193.57.167
   port: 49667
   uuid: d46bf492-45f4-4c33-82d1-ea2a1cb54eb6
@@ -19,7 +29,7 @@ proxies:
     path: /d46bf492
     headers:
       Host: ''
-- name: 🇹🇭 泰国 (Thailand) 02 - xiaohe
+- name: 🇹🇭 泰国 (Thailand) 03 - xiaohe
   type: vmess
   server: 118.193.57.167
   port: 49667
@@ -41,6 +51,7 @@ proxy-groups:
   - AUTO
   - 🇹🇭 泰国 (Thailand) 01 - xiaohe
   - 🇹🇭 泰国 (Thailand) 02 - xiaohe
+  - 🇹🇭 泰国 (Thailand) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -48,5 +59,6 @@ proxy-groups:
   proxies:
   - 🇹🇭 泰国 (Thailand) 01 - xiaohe
   - 🇹🇭 泰国 (Thailand) 02 - xiaohe
+  - 🇹🇭 泰国 (Thailand) 03 - xiaohe
 rules:
 - MATCH,PROXIES
