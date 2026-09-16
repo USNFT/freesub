@@ -26,26 +26,12 @@ proxies:
   skip-cert-verify: true
 - name: 🇮🇳 印度 (India) 03 - xiaohe
   type: hysteria2
-  server: vpn-in-001.fastervpn.world
+  server: 13.207.151.141
   port: 443
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   udp: true
   skip-cert-verify: true
 - name: 🇮🇳 印度 (India) 04 - xiaohe
-  type: hysteria2
-  server: vpn-in-001.fastervpn.world
-  port: 443
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  udp: true
-  skip-cert-verify: true
-- name: 🇮🇳 印度 (India) 05 - xiaohe
-  type: hysteria2
-  server: vpn-in-001.fastervpn.world
-  port: 443
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  udp: true
-  skip-cert-verify: true
-- name: 🇮🇳 印度 (India) 06 - xiaohe
   type: vless
   server: 194.61.31.126
   port: 2053
@@ -58,7 +44,35 @@ proxies:
     short-id: 9980e0609b0d3891
   servername: www.apple.com
   client-fingerprint: firefox
+- name: 🇮🇳 印度 (India) 05 - xiaohe
+  type: hysteria2
+  server: vpn-in-001.fastervpn.world
+  port: 443
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  udp: true
+  skip-cert-verify: true
+- name: 🇮🇳 印度 (India) 06 - xiaohe
+  type: hysteria2
+  server: vpn-in-001.fastervpn.world
+  port: 443
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  udp: true
+  skip-cert-verify: true
 - name: 🇮🇳 印度 (India) 07 - xiaohe
+  type: hysteria2
+  server: vpn-in-001.fastervpn.world
+  port: 443
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  udp: true
+  skip-cert-verify: true
+- name: 🇮🇳 印度 (India) 08 - xiaohe
+  type: hysteria2
+  server: vpn-in-001.fastervpn.world
+  port: 443
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  udp: true
+  skip-cert-verify: true
+- name: 🇮🇳 印度 (India) 09 - xiaohe
   type: vless
   server: 194.61.31.126
   port: 2053
@@ -71,7 +85,14 @@ proxies:
     short-id: 9980e0609b0d3891
   servername: www.apple.com
   client-fingerprint: random
-- name: 🇮🇳 印度 (India) 08 - xiaohe
+- name: 🇮🇳 印度 (India) 10 - xiaohe
+  type: hysteria2
+  server: vpn-in-001.fastervpn.world
+  port: 443
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  udp: true
+  skip-cert-verify: true
+- name: 🇮🇳 印度 (India) 11 - xiaohe
   type: hysteria2
   server: vpn-in-001.fastervpn.world
   port: 443
@@ -91,6 +112,9 @@ proxy-groups:
   - 🇮🇳 印度 (India) 06 - xiaohe
   - 🇮🇳 印度 (India) 07 - xiaohe
   - 🇮🇳 印度 (India) 08 - xiaohe
+  - 🇮🇳 印度 (India) 09 - xiaohe
+  - 🇮🇳 印度 (India) 10 - xiaohe
+  - 🇮🇳 印度 (India) 11 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -104,5 +128,8 @@ proxy-groups:
   - 🇮🇳 印度 (India) 06 - xiaohe
   - 🇮🇳 印度 (India) 07 - xiaohe
   - 🇮🇳 印度 (India) 08 - xiaohe
+  - 🇮🇳 印度 (India) 09 - xiaohe
+  - 🇮🇳 印度 (India) 10 - xiaohe
+  - 🇮🇳 印度 (India) 11 - xiaohe
 rules:
 - MATCH,PROXIES

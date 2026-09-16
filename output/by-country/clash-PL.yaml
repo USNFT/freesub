@@ -13,7 +13,7 @@ proxies:
   skip-cert-verify: true
 - name: 🇵🇱 波兰 (Poland) 02 - xiaohe
   type: hysteria2
-  server: 45.192.12.93
+  server: admin.wwwinternetvideo.click
   port: 443
   password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
   udp: true
@@ -34,32 +34,25 @@ proxies:
   flow: xtls-rprx-vision
 - name: 🇵🇱 波兰 (Poland) 04 - xiaohe
   type: hysteria2
+  server: 45.192.12.93
+  port: 443
+  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
+  udp: true
+  skip-cert-verify: true
+- name: 🇵🇱 波兰 (Poland) 05 - xiaohe
+  type: hysteria2
   server: streambox.wwwinternetvideo.click
   port: 443
   password: 865e271f7c97b549b024255c9d02cebe9cc0c2c070a82b1e11bb11b9cd88dd01
   udp: true
   skip-cert-verify: true
-- name: 🇵🇱 波兰 (Poland) 05 - xiaohe
-  type: vless
-  server: 185.32.6.63
-  port: 443
-  uuid: 0ce122a3-1c91-4cf5-a2cc-67f25e8cb56f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: xy8AHr_xZCNqFOuLq_t2fe4oLlrv5iu38uCQ1hUJ40w
-    short-id: 954c99065465428d
-  servername: dropbox.com
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
 - name: 🇵🇱 波兰 (Poland) 06 - xiaohe
-  type: hysteria2
-  server: admin.wwwinternetvideo.click
-  port: 443
-  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
+  type: ss
+  server: 194.61.121.93
+  port: 7538
+  cipher: chacha20-ietf-poly1305
+  password: U9YAoqBgg5VyGBc6vQv1sN
   udp: true
-  skip-cert-verify: true
 - name: 🇵🇱 波兰 (Poland) 07 - xiaohe
   type: hysteria2
   server: admin.wwwinternetvideo.click
@@ -68,17 +61,17 @@ proxies:
   udp: true
   skip-cert-verify: true
 - name: 🇵🇱 波兰 (Poland) 08 - xiaohe
-  type: ss
-  server: 194.61.121.93
-  port: 7538
-  cipher: chacha20-ietf-poly1305
-  password: U9YAoqBgg5VyGBc6vQv1sN
+  type: hysteria2
+  server: admin.wwwinternetvideo.click
+  port: 443
+  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
   udp: true
+  skip-cert-verify: true
 - name: 🇵🇱 波兰 (Poland) 09 - xiaohe
   type: hysteria2
-  server: streambox.wwwinternetvideo.click
+  server: 144.31.93.126
   port: 443
-  password: 865e271f7c97b549b024255c9d02cebe9cc0c2c070a82b1e11bb11b9cd88dd01
+  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
   udp: true
   skip-cert-verify: true
 - name: 🇵🇱 波兰 (Poland) 10 - xiaohe
@@ -104,18 +97,35 @@ proxies:
   skip-cert-verify: true
 - name: 🇵🇱 波兰 (Poland) 13 - xiaohe
   type: hysteria2
-  server: 144.31.93.126
+  server: go.wwwinternetvideo.click
   port: 443
   password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
   udp: true
   skip-cert-verify: true
 - name: 🇵🇱 波兰 (Poland) 14 - xiaohe
   type: hysteria2
-  server: go.wwwinternetvideo.click
+  server: 144.31.49.47
   port: 443
   password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
   udp: true
   skip-cert-verify: true
+- name: 🇵🇱 波兰 (Poland) 15 - xiaohe
+  type: vmess
+  server: 178.95.176.16
+  port: 2086
+  uuid: f6361af8-bb8f-4609-bf5d-3fc0f688f47b
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇵🇱 波兰 (Poland) 16 - xiaohe
+  type: ss
+  server: 178.95.176.16
+  port: 1080
+  cipher: chacha20-ietf-poly1305
+  password: rSeYcig_XBy8q3k33NpK3A
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -135,6 +145,8 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 12 - xiaohe
   - 🇵🇱 波兰 (Poland) 13 - xiaohe
   - 🇵🇱 波兰 (Poland) 14 - xiaohe
+  - 🇵🇱 波兰 (Poland) 15 - xiaohe
+  - 🇵🇱 波兰 (Poland) 16 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -154,5 +166,7 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 12 - xiaohe
   - 🇵🇱 波兰 (Poland) 13 - xiaohe
   - 🇵🇱 波兰 (Poland) 14 - xiaohe
+  - 🇵🇱 波兰 (Poland) 15 - xiaohe
+  - 🇵🇱 波兰 (Poland) 16 - xiaohe
 rules:
 - MATCH,PROXIES
