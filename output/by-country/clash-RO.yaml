@@ -6,142 +6,37 @@ log-level: info
 proxies:
 - name: 🇷🇴 罗马尼亚 (Romania) 01 - xiaohe
   type: hysteria2
-  server: 205.237.109.163
+  server: 162.249.126.2
   port: 8443
-  password: Oz_Kx9342gefwJ89x3_M9z32kzf9KJq003_s
+  password: 9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z
   udp: true
   skip-cert-verify: true
 - name: 🇷🇴 罗马尼亚 (Romania) 02 - xiaohe
   type: hysteria2
-  server: 205.237.109.165
+  server: 162.249.126.7
   port: 8443
-  password: Oz_Kx9342gefwJ89x3_M9z32kzf9KJq003_s
+  password: 9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z
   udp: true
   skip-cert-verify: true
 - name: 🇷🇴 罗马尼亚 (Romania) 03 - xiaohe
   type: hysteria2
-  server: 205.237.109.168
+  server: 162.249.126.7
   port: 8443
-  password: Oz_Kx9342gefwJ89x3_M9z32kzf9KJq003_s
+  password: 9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z
   udp: true
   skip-cert-verify: true
 - name: 🇷🇴 罗马尼亚 (Romania) 04 - xiaohe
   type: hysteria2
-  server: 205.237.109.166
+  server: 162.249.126.6
   port: 8443
-  password: Oz_Kx9342gefwJ89x3_M9z32kzf9KJq003_s
+  password: 9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z
   udp: true
   skip-cert-verify: true
 - name: 🇷🇴 罗马尼亚 (Romania) 05 - xiaohe
   type: hysteria2
-  server: 205.237.109.162
-  port: 8443
-  password: Oz_Kx9342gefwJ89x3_M9z32kzf9KJq003_s
-  udp: true
-  skip-cert-verify: true
-- name: 🇷🇴 罗马尼亚 (Romania) 06 - xiaohe
-  type: hysteria2
-  server: 205.237.109.171
-  port: 8443
-  password: Oz_Kx9342gefwJ89x3_M9z32kzf9KJq003_s
-  udp: true
-  skip-cert-verify: true
-- name: 🇷🇴 罗马尼亚 (Romania) 07 - xiaohe
-  type: hysteria2
   server: 162.249.126.7
   port: 8443
   password: 9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z
-  udp: true
-  skip-cert-verify: true
-- name: 🇷🇴 罗马尼亚 (Romania) 08 - xiaohe
-  type: hysteria2
-  server: 162.249.126.7
-  port: 8443
-  password: 9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z
-  udp: true
-  skip-cert-verify: true
-- name: 🇷🇴 罗马尼亚 (Romania) 09 - xiaohe
-  type: hysteria2
-  server: 205.237.109.162
-  port: 8443
-  password: Oz_Kx9342gefwJ89x3_M9z32kzf9KJq003_s
-  udp: true
-  skip-cert-verify: true
-- name: 🇷🇴 罗马尼亚 (Romania) 10 - xiaohe
-  type: hysteria2
-  server: 162.249.126.7
-  port: 8443
-  password: 9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z
-  udp: true
-  skip-cert-verify: true
-- name: 🇷🇴 罗马尼亚 (Romania) 11 - xiaohe
-  type: hysteria2
-  server: 205.237.109.163
-  port: 8443
-  password: Oz_Kx9342gefwJ89x3_M9z32kzf9KJq003_s
-  udp: true
-  skip-cert-verify: true
-- name: 🇷🇴 罗马尼亚 (Romania) 12 - xiaohe
-  type: hysteria2
-  server: 205.237.109.176
-  port: 8443
-  password: Oz_Kx9342gefwJ89x3_M9z32kzf9KJq003_s
-  udp: true
-  skip-cert-verify: true
-- name: 🇷🇴 罗马尼亚 (Romania) 13 - xiaohe
-  type: hysteria2
-  server: 205.237.109.163
-  port: 8443
-  password: Oz_Kx9342gefwJ89x3_M9z32kzf9KJq003_s
-  udp: true
-  skip-cert-verify: true
-- name: 🇷🇴 罗马尼亚 (Romania) 14 - xiaohe
-  type: hysteria2
-  server: 85.204.107.171
-  port: 8443
-  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
-  udp: true
-  skip-cert-verify: true
-- name: 🇷🇴 罗马尼亚 (Romania) 15 - xiaohe
-  type: hysteria2
-  server: 85.204.107.176
-  port: 8443
-  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
-  udp: true
-  skip-cert-verify: true
-- name: 🇷🇴 罗马尼亚 (Romania) 16 - xiaohe
-  type: hysteria2
-  server: 85.204.107.175
-  port: 8443
-  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
-  udp: true
-  skip-cert-verify: true
-- name: 🇷🇴 罗马尼亚 (Romania) 17 - xiaohe
-  type: hysteria2
-  server: 85.204.107.170
-  port: 8443
-  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
-  udp: true
-  skip-cert-verify: true
-- name: 🇷🇴 罗马尼亚 (Romania) 18 - xiaohe
-  type: hysteria2
-  server: 85.204.107.172
-  port: 8443
-  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
-  udp: true
-  skip-cert-verify: true
-- name: 🇷🇴 罗马尼亚 (Romania) 19 - xiaohe
-  type: hysteria2
-  server: 85.204.107.172
-  port: 8443
-  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
-  udp: true
-  skip-cert-verify: true
-- name: 🇷🇴 罗马尼亚 (Romania) 20 - xiaohe
-  type: hysteria2
-  server: 85.204.107.174
-  port: 8443
-  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
   udp: true
   skip-cert-verify: true
 proxy-groups:
@@ -154,21 +49,6 @@ proxy-groups:
   - 🇷🇴 罗马尼亚 (Romania) 03 - xiaohe
   - 🇷🇴 罗马尼亚 (Romania) 04 - xiaohe
   - 🇷🇴 罗马尼亚 (Romania) 05 - xiaohe
-  - 🇷🇴 罗马尼亚 (Romania) 06 - xiaohe
-  - 🇷🇴 罗马尼亚 (Romania) 07 - xiaohe
-  - 🇷🇴 罗马尼亚 (Romania) 08 - xiaohe
-  - 🇷🇴 罗马尼亚 (Romania) 09 - xiaohe
-  - 🇷🇴 罗马尼亚 (Romania) 10 - xiaohe
-  - 🇷🇴 罗马尼亚 (Romania) 11 - xiaohe
-  - 🇷🇴 罗马尼亚 (Romania) 12 - xiaohe
-  - 🇷🇴 罗马尼亚 (Romania) 13 - xiaohe
-  - 🇷🇴 罗马尼亚 (Romania) 14 - xiaohe
-  - 🇷🇴 罗马尼亚 (Romania) 15 - xiaohe
-  - 🇷🇴 罗马尼亚 (Romania) 16 - xiaohe
-  - 🇷🇴 罗马尼亚 (Romania) 17 - xiaohe
-  - 🇷🇴 罗马尼亚 (Romania) 18 - xiaohe
-  - 🇷🇴 罗马尼亚 (Romania) 19 - xiaohe
-  - 🇷🇴 罗马尼亚 (Romania) 20 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -179,20 +59,5 @@ proxy-groups:
   - 🇷🇴 罗马尼亚 (Romania) 03 - xiaohe
   - 🇷🇴 罗马尼亚 (Romania) 04 - xiaohe
   - 🇷🇴 罗马尼亚 (Romania) 05 - xiaohe
-  - 🇷🇴 罗马尼亚 (Romania) 06 - xiaohe
-  - 🇷🇴 罗马尼亚 (Romania) 07 - xiaohe
-  - 🇷🇴 罗马尼亚 (Romania) 08 - xiaohe
-  - 🇷🇴 罗马尼亚 (Romania) 09 - xiaohe
-  - 🇷🇴 罗马尼亚 (Romania) 10 - xiaohe
-  - 🇷🇴 罗马尼亚 (Romania) 11 - xiaohe
-  - 🇷🇴 罗马尼亚 (Romania) 12 - xiaohe
-  - 🇷🇴 罗马尼亚 (Romania) 13 - xiaohe
-  - 🇷🇴 罗马尼亚 (Romania) 14 - xiaohe
-  - 🇷🇴 罗马尼亚 (Romania) 15 - xiaohe
-  - 🇷🇴 罗马尼亚 (Romania) 16 - xiaohe
-  - 🇷🇴 罗马尼亚 (Romania) 17 - xiaohe
-  - 🇷🇴 罗马尼亚 (Romania) 18 - xiaohe
-  - 🇷🇴 罗马尼亚 (Romania) 19 - xiaohe
-  - 🇷🇴 罗马尼亚 (Romania) 20 - xiaohe
 rules:
 - MATCH,PROXIES
