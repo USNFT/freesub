@@ -16,20 +16,6 @@ proxies:
     public-key: zcB60qKELnjt8HqO_3lAE2qV1d-C8aZ7NXNSHv_iDV8
     short-id: 1f763fda79312e53
   servername: reserve-1.lunoa.ru
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇨🇿 捷克 (Czechia) 02 - xiaohe
-  type: vless
-  server: 46.8.103.64
-  port: 443
-  uuid: 8f67e374-53d9-43bb-85c9-a459a959cd1b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: zcB60qKELnjt8HqO_3lAE2qV1d-C8aZ7NXNSHv_iDV8
-    short-id: 1f763fda79312e53
-  servername: reserve-1.lunoa.ru
   client-fingerprint: firefox
   flow: xtls-rprx-vision
 proxy-groups:
@@ -38,13 +24,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇨🇿 捷克 (Czechia) 01 - xiaohe
-  - 🇨🇿 捷克 (Czechia) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇨🇿 捷克 (Czechia) 01 - xiaohe
-  - 🇨🇿 捷克 (Czechia) 02 - xiaohe
 rules:
 - MATCH,PROXIES

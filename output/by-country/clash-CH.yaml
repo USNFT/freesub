@@ -5,17 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇭 瑞士 (Switzerland) 01 - xiaohe
-  type: vless
-  server: 138.124.245.116
-  port: 443
-  uuid: 568addfa-796a-40f8-820d-a071ee2ca50a
+  type: hysteria2
+  server: 104.165.205.42
+  port: 8443
+  password: 54d2f622-fd71-4f5f-8813-832b68f4ca3b
   udp: true
-  tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: sJTPQLMDCyPAbRcaJM-P8Y3_xRVpEEGrvv-kkIuIuQE
-  servername: www.google.com
-  client-fingerprint: chrome
 - name: 🇨🇭 瑞士 (Switzerland) 02 - xiaohe
   type: hysteria2
   server: 104.165.205.40
@@ -30,6 +25,20 @@ proxies:
   password: 84a506ca5aca505696a454d828420b3f
   udp: true
   skip-cert-verify: true
+- name: 🇨🇭 瑞士 (Switzerland) 04 - xiaohe
+  type: vless
+  server: 45.90.59.15
+  port: 443
+  uuid: 3950b45e-740d-4dca-ac95-505ec8534592
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: P7S4UPFlQbmiBr4txyy8NZIMTrmO3UdxyH16WBU-YzY
+    short-id: 19253fae84102271
+  servername: www.cloudflare.com
+  client-fingerprint: random
+  flow: xtls-rprx-vision
 proxy-groups:
 - name: PROXIES
   type: select
@@ -38,6 +47,7 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 01 - xiaohe
   - 🇨🇭 瑞士 (Switzerland) 02 - xiaohe
   - 🇨🇭 瑞士 (Switzerland) 03 - xiaohe
+  - 🇨🇭 瑞士 (Switzerland) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -46,5 +56,6 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 01 - xiaohe
   - 🇨🇭 瑞士 (Switzerland) 02 - xiaohe
   - 🇨🇭 瑞士 (Switzerland) 03 - xiaohe
+  - 🇨🇭 瑞士 (Switzerland) 04 - xiaohe
 rules:
 - MATCH,PROXIES
