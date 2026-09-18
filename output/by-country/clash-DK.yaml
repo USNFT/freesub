@@ -12,27 +12,6 @@ proxies:
   udp: true
   skip-cert-verify: true
 - name: 🇩🇰 丹麦 (Denmark) 02 - xiaohe
-  type: ss
-  server: 38.180.214.110
-  port: 5600
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
-  udp: true
-- name: 🇩🇰 丹麦 (Denmark) 03 - xiaohe
-  type: hysteria2
-  server: se.xiaoliyu.cyou
-  port: 4433
-  password: 19f72087-4591-4d72-930b-2697078ec2be
-  udp: true
-  skip-cert-verify: true
-- name: 🇩🇰 丹麦 (Denmark) 04 - xiaohe
-  type: hysteria2
-  server: se.xiaoliyu.cyou
-  port: 4433
-  password: 19f72087-4591-4d72-930b-2697078ec2be
-  udp: true
-  skip-cert-verify: true
-- name: 🇩🇰 丹麦 (Denmark) 05 - xiaohe
   type: hysteria2
   server: se.xiaoliyu.cyou
   port: 4433
@@ -46,9 +25,6 @@ proxy-groups:
   - AUTO
   - 🇩🇰 丹麦 (Denmark) 01 - xiaohe
   - 🇩🇰 丹麦 (Denmark) 02 - xiaohe
-  - 🇩🇰 丹麦 (Denmark) 03 - xiaohe
-  - 🇩🇰 丹麦 (Denmark) 04 - xiaohe
-  - 🇩🇰 丹麦 (Denmark) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -56,8 +32,5 @@ proxy-groups:
   proxies:
   - 🇩🇰 丹麦 (Denmark) 01 - xiaohe
   - 🇩🇰 丹麦 (Denmark) 02 - xiaohe
-  - 🇩🇰 丹麦 (Denmark) 03 - xiaohe
-  - 🇩🇰 丹麦 (Denmark) 04 - xiaohe
-  - 🇩🇰 丹麦 (Denmark) 05 - xiaohe
 rules:
 - MATCH,PROXIES
