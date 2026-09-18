@@ -20,32 +20,25 @@ proxies:
   skip-cert-verify: true
 - name: 🇵🇱 波兰 (Poland) 03 - xiaohe
   type: hysteria2
-  server: 45.192.12.93
+  server: admin.wwwinternetvideo.click
   port: 443
   password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
   udp: true
   skip-cert-verify: true
 - name: 🇵🇱 波兰 (Poland) 04 - xiaohe
   type: hysteria2
-  server: admin.wwwinternetvideo.click
+  server: 45.192.12.93
   port: 443
   password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
   udp: true
   skip-cert-verify: true
 - name: 🇵🇱 波兰 (Poland) 05 - xiaohe
-  type: vless
-  server: pl.bubahero.com
+  type: hysteria2
+  server: 45.192.12.93
   port: 443
-  uuid: c5694dc5-39fd-4a92-8430-3837baa522a3
+  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
   udp: true
-  tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: GmZv3anSeAeHr_cMFKr-6MPLli-nyKNatnY6P3AFK00
-    short-id: 9c2378562188c3cb
-  servername: pl.bubahero.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
 - name: 🇵🇱 波兰 (Poland) 06 - xiaohe
   type: hysteria2
   server: streambox.wwwinternetvideo.click
@@ -54,29 +47,29 @@ proxies:
   udp: true
   skip-cert-verify: true
 - name: 🇵🇱 波兰 (Poland) 07 - xiaohe
+  type: hysteria2
+  server: admin.wwwinternetvideo.click
+  port: 443
+  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
+  udp: true
+  skip-cert-verify: true
+- name: 🇵🇱 波兰 (Poland) 08 - xiaohe
+  type: hysteria2
+  server: admin.wwwinternetvideo.click
+  port: 443
+  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
+  udp: true
+  skip-cert-verify: true
+- name: 🇵🇱 波兰 (Poland) 09 - xiaohe
   type: ss
   server: 194.61.121.93
   port: 7538
   cipher: chacha20-ietf-poly1305
   password: U9YAoqBgg5VyGBc6vQv1sN
   udp: true
-- name: 🇵🇱 波兰 (Poland) 08 - xiaohe
-  type: hysteria2
-  server: 144.31.49.47
-  port: 443
-  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
-  udp: true
-  skip-cert-verify: true
-- name: 🇵🇱 波兰 (Poland) 09 - xiaohe
-  type: hysteria2
-  server: 144.31.49.47
-  port: 443
-  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
-  udp: true
-  skip-cert-verify: true
 - name: 🇵🇱 波兰 (Poland) 10 - xiaohe
   type: hysteria2
-  server: 144.31.93.126
+  server: 144.31.49.47
   port: 443
   password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
   udp: true
@@ -97,14 +90,21 @@ proxies:
   skip-cert-verify: true
 - name: 🇵🇱 波兰 (Poland) 13 - xiaohe
   type: hysteria2
-  server: go.wwwinternetvideo.click
+  server: 144.31.93.126
   port: 443
   password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
   udp: true
   skip-cert-verify: true
 - name: 🇵🇱 波兰 (Poland) 14 - xiaohe
+  type: hysteria2
+  server: go.wwwinternetvideo.click
+  port: 443
+  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
+  udp: true
+  skip-cert-verify: true
+- name: 🇵🇱 波兰 (Poland) 15 - xiaohe
   type: vless
-  server: 194.93.63.246
+  server: pl.bubahero.com
   port: 443
   uuid: c5694dc5-39fd-4a92-8430-3837baa522a3
   udp: true
@@ -116,6 +116,34 @@ proxies:
   servername: pl.bubahero.com
   client-fingerprint: chrome
   flow: xtls-rprx-vision
+- name: 🇵🇱 波兰 (Poland) 16 - xiaohe
+  type: hysteria2
+  server: 144.31.49.47
+  port: 443
+  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
+  udp: true
+  skip-cert-verify: true
+- name: 🇵🇱 波兰 (Poland) 17 - xiaohe
+  type: hysteria2
+  server: go.wwwinternetvideo.click
+  port: 443
+  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
+  udp: true
+  skip-cert-verify: true
+- name: 🇵🇱 波兰 (Poland) 18 - xiaohe
+  type: hysteria2
+  server: go2.wwwinternetvideo.click
+  port: 443
+  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
+  udp: true
+  skip-cert-verify: true
+- name: 🇵🇱 波兰 (Poland) 19 - xiaohe
+  type: hysteria2
+  server: go.wwwinternetvideo.click
+  port: 443
+  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
+  udp: true
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -135,6 +163,11 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 12 - xiaohe
   - 🇵🇱 波兰 (Poland) 13 - xiaohe
   - 🇵🇱 波兰 (Poland) 14 - xiaohe
+  - 🇵🇱 波兰 (Poland) 15 - xiaohe
+  - 🇵🇱 波兰 (Poland) 16 - xiaohe
+  - 🇵🇱 波兰 (Poland) 17 - xiaohe
+  - 🇵🇱 波兰 (Poland) 18 - xiaohe
+  - 🇵🇱 波兰 (Poland) 19 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -154,5 +187,10 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 12 - xiaohe
   - 🇵🇱 波兰 (Poland) 13 - xiaohe
   - 🇵🇱 波兰 (Poland) 14 - xiaohe
+  - 🇵🇱 波兰 (Poland) 15 - xiaohe
+  - 🇵🇱 波兰 (Poland) 16 - xiaohe
+  - 🇵🇱 波兰 (Poland) 17 - xiaohe
+  - 🇵🇱 波兰 (Poland) 18 - xiaohe
+  - 🇵🇱 波兰 (Poland) 19 - xiaohe
 rules:
 - MATCH,PROXIES
