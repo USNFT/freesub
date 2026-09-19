@@ -4,30 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇶🇦 QA 01 - xiaohe
+- name: 🇬🇹 GT 01 - xiaohe
   type: vless
-  server: 34.18.31.5
+  server: 185.47.254.251
   port: 443
-  uuid: bd82d5e7-4395-40e1-b34e-2974eb0c8555
+  uuid: 878fb7f7-fc65-465e-a352-17c7216c6f3d
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: ZRWl48Ahw4vlnPSTMkNs6xcCEDd9Qq4AsChUp-mg7A4
-    short-id: 9c8748aa3f7d4219
-  servername: www.cloudflare.com
-  client-fingerprint: safari
+    public-key: 6-_ZidygR8PRt4gtHlGCAW-PPmjEIm7Wn7MZqJU1z1Q
+    short-id: 6c059ecfddf9b179
+  servername: gateway.icloud.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇶🇦 QA 01 - xiaohe
+  - 🇬🇹 GT 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇶🇦 QA 01 - xiaohe
+  - 🇬🇹 GT 01 - xiaohe
 rules:
 - MATCH,PROXIES
