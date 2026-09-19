@@ -1,0 +1,98 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇱🇹 LT 01 - xiaohe
+  type: vless
+  server: 103.139.51.41
+  port: 443
+  uuid: 71b91642-93ed-4923-8cab-877e19bfc2d6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: H5CXI4RvEWW0TFPvFrnF1iX-05Y57ZYMMngjmkMfv24
+    short-id: 711ad7f475c35e5e
+  servername: mail.figmafound.org
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+- name: 🇱🇹 LT 02 - xiaohe
+  type: vless
+  server: 103.139.51.21
+  port: 443
+  uuid: 71b91642-93ed-4923-8cab-877e19bfc2d6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: H5CXI4RvEWW0TFPvFrnF1iX-05Y57ZYMMngjmkMfv24
+    short-id: 711ad7f475c35e5e
+  servername: auth.figmafound.org
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+- name: 🇱🇹 LT 03 - xiaohe
+  type: vless
+  server: 103.139.51.51
+  port: 443
+  uuid: 71b91642-93ed-4923-8cab-877e19bfc2d6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: H5CXI4RvEWW0TFPvFrnF1iX-05Y57ZYMMngjmkMfv24
+    short-id: 711ad7f475c35e5e
+  servername: cloud.figmafound.org
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+- name: 🇱🇹 LT 04 - xiaohe
+  type: vless
+  server: auth.figmafound.org
+  port: 443
+  uuid: 71b91642-93ed-4923-8cab-877e19bfc2d6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: H5CXI4RvEWW0TFPvFrnF1iX-05Y57ZYMMngjmkMfv24
+    short-id: 711ad7f475c35e5e
+  servername: auth.figmafound.org
+  client-fingerprint: random
+  flow: xtls-rprx-vision
+- name: 🇱🇹 LT 05 - xiaohe
+  type: vless
+  server: mail.figmafound.org
+  port: 443
+  uuid: 71b91642-93ed-4923-8cab-877e19bfc2d6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: H5CXI4RvEWW0TFPvFrnF1iX-05Y57ZYMMngjmkMfv24
+    short-id: 711ad7f475c35e5e
+  servername: mail.figmafound.org
+  client-fingerprint: random
+  flow: xtls-rprx-vision
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇱🇹 LT 01 - xiaohe
+  - 🇱🇹 LT 02 - xiaohe
+  - 🇱🇹 LT 03 - xiaohe
+  - 🇱🇹 LT 04 - xiaohe
+  - 🇱🇹 LT 05 - xiaohe
+- name: AUTO
+  type: url-test
+  url: https://www.google.com/generate_204
+  interval: 300
+  proxies:
+  - 🇱🇹 LT 01 - xiaohe
+  - 🇱🇹 LT 02 - xiaohe
+  - 🇱🇹 LT 03 - xiaohe
+  - 🇱🇹 LT 04 - xiaohe
+  - 🇱🇹 LT 05 - xiaohe
+rules:
+- MATCH,PROXIES
