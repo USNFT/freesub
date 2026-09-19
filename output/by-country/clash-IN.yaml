@@ -5,6 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇳 印度 (India) 01 - xiaohe
+  type: hysteria2
+  server: 35.154.58.87
+  port: 443
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  udp: true
+  skip-cert-verify: true
+- name: 🇮🇳 印度 (India) 02 - xiaohe
   type: vmess
   server: 152.67.8.205
   port: 80
@@ -19,7 +26,22 @@ proxies:
     path: ''
     headers:
       Host: ''
-- name: 🇮🇳 印度 (India) 02 - xiaohe
+- name: 🇮🇳 印度 (India) 03 - xiaohe
+  type: vmess
+  server: 152.67.8.205
+  port: 80
+  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: ''
+    headers:
+      Host: ''
+- name: 🇮🇳 印度 (India) 04 - xiaohe
   type: vless
   server: 194.61.31.126
   port: 2053
@@ -31,21 +53,7 @@ proxies:
     public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
     short-id: 9980e0609b0d3891
   servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇮🇳 印度 (India) 03 - xiaohe
-  type: hysteria2
-  server: 13.207.151.141
-  port: 443
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  udp: true
-  skip-cert-verify: true
-- name: 🇮🇳 印度 (India) 04 - xiaohe
-  type: hysteria2
-  server: vpn-in-001.fastervpn.world
-  port: 443
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  udp: true
-  skip-cert-verify: true
+  client-fingerprint: firefox
 - name: 🇮🇳 印度 (India) 05 - xiaohe
   type: hysteria2
   server: 13.207.151.141
@@ -54,12 +62,20 @@ proxies:
   udp: true
   skip-cert-verify: true
 - name: 🇮🇳 印度 (India) 06 - xiaohe
-  type: hysteria2
-  server: vpn-in-001.fastervpn.world
-  port: 443
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  type: vmess
+  server: 152.67.8.205
+  port: 80
+  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+  alterId: 0
+  cipher: auto
   udp: true
+  tls: false
   skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ''
 - name: 🇮🇳 印度 (India) 07 - xiaohe
   type: hysteria2
   server: vpn-in-001.fastervpn.world
@@ -76,7 +92,7 @@ proxies:
   skip-cert-verify: true
 - name: 🇮🇳 印度 (India) 09 - xiaohe
   type: hysteria2
-  server: 35.154.58.87
+  server: vpn-in-001.fastervpn.world
   port: 443
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   udp: true
@@ -90,19 +106,12 @@ proxies:
   skip-cert-verify: true
 - name: 🇮🇳 印度 (India) 11 - xiaohe
   type: hysteria2
-  server: vpn-in-001.fastervpn.world
+  server: 35.154.58.87
   port: 443
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   udp: true
   skip-cert-verify: true
 - name: 🇮🇳 印度 (India) 12 - xiaohe
-  type: hysteria2
-  server: vpn-in-001.fastervpn.world
-  port: 443
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  udp: true
-  skip-cert-verify: true
-- name: 🇮🇳 印度 (India) 13 - xiaohe
   type: vless
   server: 194.61.31.126
   port: 2053
@@ -115,7 +124,28 @@ proxies:
     short-id: 9980e0609b0d3891
   servername: www.apple.com
   client-fingerprint: firefox
+- name: 🇮🇳 印度 (India) 13 - xiaohe
+  type: hysteria2
+  server: vpn-in-001.fastervpn.world
+  port: 443
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  udp: true
+  skip-cert-verify: true
 - name: 🇮🇳 印度 (India) 14 - xiaohe
+  type: hysteria2
+  server: vpn-in-001.fastervpn.world
+  port: 443
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  udp: true
+  skip-cert-verify: true
+- name: 🇮🇳 印度 (India) 15 - xiaohe
+  type: hysteria2
+  server: vpn-in-001.fastervpn.world
+  port: 443
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  udp: true
+  skip-cert-verify: true
+- name: 🇮🇳 印度 (India) 16 - xiaohe
   type: vless
   server: 194.61.31.126
   port: 2053
@@ -128,13 +158,19 @@ proxies:
     short-id: 9980e0609b0d3891
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇮🇳 印度 (India) 15 - xiaohe
-  type: hysteria2
-  server: vpn-in-001.fastervpn.world
-  port: 443
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+- name: 🇮🇳 印度 (India) 17 - xiaohe
+  type: vless
+  server: 194.61.31.126
+  port: 2053
+  uuid: 1d4e18bd-1f26-4915-b35a-7ace4826e76a
   udp: true
+  tls: true
   skip-cert-verify: true
+  reality-opts:
+    public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
+    short-id: 9980e0609b0d3891
+  servername: www.apple.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -155,6 +191,8 @@ proxy-groups:
   - 🇮🇳 印度 (India) 13 - xiaohe
   - 🇮🇳 印度 (India) 14 - xiaohe
   - 🇮🇳 印度 (India) 15 - xiaohe
+  - 🇮🇳 印度 (India) 16 - xiaohe
+  - 🇮🇳 印度 (India) 17 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -175,5 +213,7 @@ proxy-groups:
   - 🇮🇳 印度 (India) 13 - xiaohe
   - 🇮🇳 印度 (India) 14 - xiaohe
   - 🇮🇳 印度 (India) 15 - xiaohe
+  - 🇮🇳 印度 (India) 16 - xiaohe
+  - 🇮🇳 印度 (India) 17 - xiaohe
 rules:
 - MATCH,PROXIES
