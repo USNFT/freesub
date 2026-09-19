@@ -35,64 +35,6 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 04 - xiaohe
-  type: vmess
-  server: 165.154.195.38
-  port: 35034
-  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 05 - xiaohe
-  type: vmess
-  server: 165.154.195.38
-  port: 35034
-  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 06 - xiaohe
-  type: vmess
-  server: 165.154.195.38
-  port: 35034
-  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 07 - xiaohe
-  type: vless
-  server: 35.201.230.136
-  port: 443
-  uuid: 18eef0d3-35b3-4a5f-97a1-7b5264530dd8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: Uq9Q8VXK9VkVOJ1M5PfORTqMhjjGoIS40-V0tAG_1FM
-    short-id: 5e13a6d43d0644c9
-  servername: www.cloudflare.com
-  client-fingerprint: ios
-  flow: xtls-rprx-vision
-- name: 🇹🇼 中国台湾 (Taiwan) 08 - xiaohe
-  type: vless
-  server: 35.201.230.136
-  port: 443
-  uuid: 18eef0d3-35b3-4a5f-97a1-7b5264530dd8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: Uq9Q8VXK9VkVOJ1M5PfORTqMhjjGoIS40-V0tAG_1FM
-    short-id: 5e13a6d43d0644c9
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇹🇼 中国台湾 (Taiwan) 09 - xiaohe
   type: vless
   server: 35.201.230.136
   port: 443
@@ -106,7 +48,7 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: safari
   flow: xtls-rprx-vision
-- name: 🇹🇼 中国台湾 (Taiwan) 10 - xiaohe
+- name: 🇹🇼 中国台湾 (Taiwan) 05 - xiaohe
   type: vless
   server: 35.201.230.136
   port: 443
@@ -118,37 +60,9 @@ proxies:
     public-key: Uq9Q8VXK9VkVOJ1M5PfORTqMhjjGoIS40-V0tAG_1FM
     short-id: 5e13a6d43d0644c9
   servername: www.cloudflare.com
-  client-fingerprint: chrome
+  client-fingerprint: ios
   flow: xtls-rprx-vision
-- name: 🇹🇼 中国台湾 (Taiwan) 11 - xiaohe
-  type: vless
-  server: 35.201.230.136
-  port: 443
-  uuid: 18eef0d3-35b3-4a5f-97a1-7b5264530dd8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: Uq9Q8VXK9VkVOJ1M5PfORTqMhjjGoIS40-V0tAG_1FM
-    short-id: 5e13a6d43d0644c9
-  servername: www.cloudflare.com
-  client-fingerprint: qq
-  flow: xtls-rprx-vision
-- name: 🇹🇼 中国台湾 (Taiwan) 12 - xiaohe
-  type: vless
-  server: 35.201.230.136
-  port: 443
-  uuid: 18eef0d3-35b3-4a5f-97a1-7b5264530dd8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: Uq9Q8VXK9VkVOJ1M5PfORTqMhjjGoIS40-V0tAG_1FM
-    short-id: 5e13a6d43d0644c9
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇹🇼 中国台湾 (Taiwan) 13 - xiaohe
+- name: 🇹🇼 中国台湾 (Taiwan) 06 - xiaohe
   type: vless
   server: 35.201.230.136
   port: 443
@@ -162,51 +76,156 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: edge
   flow: xtls-rprx-vision
-- name: 🇹🇼 中国台湾 (Taiwan) 14 - xiaohe
+- name: 🇹🇼 中国台湾 (Taiwan) 07 - xiaohe
+  type: vless
+  server: 35.201.230.136
+  port: 443
+  uuid: 18eef0d3-35b3-4a5f-97a1-7b5264530dd8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: Uq9Q8VXK9VkVOJ1M5PfORTqMhjjGoIS40-V0tAG_1FM
+    short-id: 5e13a6d43d0644c9
+  servername: www.cloudflare.com
+  client-fingerprint: qq
+  flow: xtls-rprx-vision
+- name: 🇹🇼 中国台湾 (Taiwan) 08 - xiaohe
+  type: vless
+  server: 35.201.230.136
+  port: 443
+  uuid: 18eef0d3-35b3-4a5f-97a1-7b5264530dd8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: Uq9Q8VXK9VkVOJ1M5PfORTqMhjjGoIS40-V0tAG_1FM
+    short-id: 5e13a6d43d0644c9
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+- name: 🇹🇼 中国台湾 (Taiwan) 09 - xiaohe
+  type: vless
+  server: 35.201.230.136
+  port: 443
+  uuid: 18eef0d3-35b3-4a5f-97a1-7b5264530dd8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: Uq9Q8VXK9VkVOJ1M5PfORTqMhjjGoIS40-V0tAG_1FM
+    short-id: 5e13a6d43d0644c9
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇹🇼 中国台湾 (Taiwan) 10 - xiaohe
+  type: vless
+  server: 35.201.230.136
+  port: 443
+  uuid: 18eef0d3-35b3-4a5f-97a1-7b5264530dd8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: Uq9Q8VXK9VkVOJ1M5PfORTqMhjjGoIS40-V0tAG_1FM
+    short-id: 5e13a6d43d0644c9
+  servername: www.cloudflare.com
+  client-fingerprint: random
+  flow: xtls-rprx-vision
+- name: 🇹🇼 中国台湾 (Taiwan) 11 - xiaohe
   type: hysteria2
   server: 160.187.100.109
   port: 443
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   udp: true
   skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 15 - xiaohe
+- name: 🇹🇼 中国台湾 (Taiwan) 12 - xiaohe
+  type: vless
+  server: 35.201.163.218
+  port: 30837
+  uuid: 85a6bd94-83a9-4e80-849f-c06d7011d1a4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: LXPNhrAGxr_QE4YCdJfKE40ebsPNIHnLbydhl6bipCo
+    short-id: 97101ba788915e5a
+  servername: www.sony.com
+  client-fingerprint: qq
+  flow: xtls-rprx-vision
+- name: 🇹🇼 中国台湾 (Taiwan) 13 - xiaohe
+  type: vless
+  server: 35.201.163.218
+  port: 30837
+  uuid: 85a6bd94-83a9-4e80-849f-c06d7011d1a4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: LXPNhrAGxr_QE4YCdJfKE40ebsPNIHnLbydhl6bipCo
+    short-id: 97101ba788915e5a
+  servername: www.sony.com
+  client-fingerprint: safari
+  flow: xtls-rprx-vision
+- name: 🇹🇼 中国台湾 (Taiwan) 14 - xiaohe
   type: hysteria2
   server: 103.115.109.49
   port: 443
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   udp: true
   skip-cert-verify: true
+- name: 🇹🇼 中国台湾 (Taiwan) 15 - xiaohe
+  type: vless
+  server: 35.201.230.136
+  port: 443
+  uuid: 18eef0d3-35b3-4a5f-97a1-7b5264530dd8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: Uq9Q8VXK9VkVOJ1M5PfORTqMhjjGoIS40-V0tAG_1FM
+    short-id: 5e13a6d43d0644c9
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
 - name: 🇹🇼 中国台湾 (Taiwan) 16 - xiaohe
   type: hysteria2
-  server: 160.187.100.109
+  server: 103.115.109.49
   port: 443
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   udp: true
   skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 17 - xiaohe
   type: hysteria2
-  server: 103.115.109.49
+  server: 160.187.100.109
   port: 443
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   udp: true
   skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 18 - xiaohe
+  type: vless
+  server: 35.201.163.218
+  port: 30837
+  uuid: 85a6bd94-83a9-4e80-849f-c06d7011d1a4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: LXPNhrAGxr_QE4YCdJfKE40ebsPNIHnLbydhl6bipCo
+    short-id: 97101ba788915e5a
+  servername: www.sony.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇹🇼 中国台湾 (Taiwan) 19 - xiaohe
   type: hysteria2
   server: 160.187.100.109
   port: 443
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   udp: true
   skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 19 - xiaohe
-  type: hysteria2
-  server: 103.115.109.49
-  port: 443
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  udp: true
-  skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 20 - xiaohe
   type: hysteria2
-  server: vpn-tw-002.fastervpn.world
+  server: 103.115.109.49
   port: 443
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   udp: true
@@ -220,7 +239,7 @@ proxies:
   skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 22 - xiaohe
   type: hysteria2
-  server: 160.187.100.109
+  server: 103.115.109.49
   port: 443
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   udp: true
@@ -241,7 +260,7 @@ proxies:
   skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 25 - xiaohe
   type: hysteria2
-  server: 103.115.109.49
+  server: 160.187.100.109
   port: 443
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   udp: true
@@ -255,18 +274,25 @@ proxies:
   skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 27 - xiaohe
   type: hysteria2
-  server: vpn-tw-002.fastervpn.world
+  server: 103.115.109.49
   port: 443
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   udp: true
   skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 28 - xiaohe
-  type: hysteria2
-  server: vpn-tw-002.fastervpn.world
-  port: 443
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  type: vless
+  server: 34.81.129.171
+  port: 34376
+  uuid: bf8cc771-51a0-4395-810f-1f135325cfc1
   udp: true
+  tls: true
   skip-cert-verify: true
+  reality-opts:
+    public-key: Atq4Fo_Mg48QtKXagBW9jnhaQSDUCiKgnATB2EU6OHU
+    short-id: 8dbafb690450d8a9
+  servername: www.sony.com
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
 - name: 🇹🇼 中国台湾 (Taiwan) 29 - xiaohe
   type: vless
   server: 34.80.164.239
@@ -279,100 +305,9 @@ proxies:
     public-key: nm6jFiI7_auZ15UMqpeEbiITrK4OR2rfFTqXhe5pMFA
     short-id: 79b6f82800c68925
   servername: www.tesla.com
-  client-fingerprint: random
+  client-fingerprint: firefox
   flow: xtls-rprx-vision
 - name: 🇹🇼 中国台湾 (Taiwan) 30 - xiaohe
-  type: hysteria2
-  server: 103.115.109.49
-  port: 443
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  udp: true
-  skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 31 - xiaohe
-  type: vless
-  server: 104.199.219.172
-  port: 40800
-  uuid: 5859f6a7-cda1-47c2-8353-fcdee281f31d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: zohUbvPLKVBwzuDmZNsaXXFYZSKA9_xEhdUyURChrgo
-    short-id: 186e4c2732d61a3d
-  servername: www.intel.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇹🇼 中国台湾 (Taiwan) 32 - xiaohe
-  type: vless
-  server: 35.229.136.113
-  port: 35412
-  uuid: 5d3cbdb2-b82d-4078-82b8-5dd413cca82b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: eg6DfbLnWtz7PubkXRYvSuQx6QWIRxUsn4l7QEO3Cg4
-    short-id: 0630b874d595
-  servername: www.amd.com
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇹🇼 中国台湾 (Taiwan) 33 - xiaohe
-  type: vless
-  server: 35.221.158.209
-  port: 32981
-  uuid: 41b96ee9-ee5e-455f-9753-187a9dead97a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: JSn0GPz1WOSTUDBxN_XYnhgb2Jpjc2LpfBTzX1j3V2E
-    short-id: 70f4b7a4c40636
-  servername: www.sony.com
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇹🇼 中国台湾 (Taiwan) 34 - xiaohe
-  type: vless
-  server: 34.80.164.239
-  port: 21776
-  uuid: b0399730-1618-4727-8ddd-2baf94ab90d6
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: nm6jFiI7_auZ15UMqpeEbiITrK4OR2rfFTqXhe5pMFA
-    short-id: 79b6f82800c68925
-  servername: www.tesla.com
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇹🇼 中国台湾 (Taiwan) 35 - xiaohe
-  type: vless
-  server: 34.80.164.239
-  port: 21776
-  uuid: b0399730-1618-4727-8ddd-2baf94ab90d6
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: nm6jFiI7_auZ15UMqpeEbiITrK4OR2rfFTqXhe5pMFA
-    short-id: 79b6f82800c68925
-  servername: www.tesla.com
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇹🇼 中国台湾 (Taiwan) 36 - xiaohe
-  type: vless
-  server: 34.80.164.239
-  port: 21776
-  uuid: b0399730-1618-4727-8ddd-2baf94ab90d6
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: nm6jFiI7_auZ15UMqpeEbiITrK4OR2rfFTqXhe5pMFA
-    short-id: 79b6f82800c68925
-  servername: www.tesla.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇹🇼 中国台湾 (Taiwan) 37 - xiaohe
   type: vless
   server: 104.199.134.231
   port: 28364
@@ -384,9 +319,23 @@ proxies:
     public-key: NPhCET0GkjSZuKg4vWsPHLvjYGHW9w99Ucxvavu0-1I
     short-id: 7241c359c2dfab
   servername: www.sony.com
-  client-fingerprint: random
+  client-fingerprint: firefox
   flow: xtls-rprx-vision
-- name: 🇹🇼 中国台湾 (Taiwan) 38 - xiaohe
+- name: 🇹🇼 中国台湾 (Taiwan) 31 - xiaohe
+  type: hysteria2
+  server: 103.115.109.49
+  port: 443
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  udp: true
+  skip-cert-verify: true
+- name: 🇹🇼 中国台湾 (Taiwan) 32 - xiaohe
+  type: hysteria2
+  server: 160.187.100.109
+  port: 443
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  udp: true
+  skip-cert-verify: true
+- name: 🇹🇼 中国台湾 (Taiwan) 33 - xiaohe
   type: vless
   server: 104.199.219.172
   port: 40800
@@ -398,19 +347,68 @@ proxies:
     public-key: zohUbvPLKVBwzuDmZNsaXXFYZSKA9_xEhdUyURChrgo
     short-id: 186e4c2732d61a3d
   servername: www.intel.com
-  client-fingerprint: ios
+  client-fingerprint: firefox
   flow: xtls-rprx-vision
-- name: 🇹🇼 中国台湾 (Taiwan) 39 - xiaohe
+- name: 🇹🇼 中国台湾 (Taiwan) 34 - xiaohe
+  type: hysteria2
+  server: 103.115.109.49
+  port: 443
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  udp: true
+  skip-cert-verify: true
+- name: 🇹🇼 中国台湾 (Taiwan) 35 - xiaohe
   type: vless
-  server: 35.221.158.209
-  port: 32981
-  uuid: 41b96ee9-ee5e-455f-9753-187a9dead97a
+  server: 34.81.129.171
+  port: 34376
+  uuid: bf8cc771-51a0-4395-810f-1f135325cfc1
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: JSn0GPz1WOSTUDBxN_XYnhgb2Jpjc2LpfBTzX1j3V2E
-    short-id: 70f4b7a4c40636
+    public-key: Atq4Fo_Mg48QtKXagBW9jnhaQSDUCiKgnATB2EU6OHU
+    short-id: 8dbafb690450d8a9
+  servername: www.sony.com
+  client-fingerprint: edge
+  flow: xtls-rprx-vision
+- name: 🇹🇼 中国台湾 (Taiwan) 36 - xiaohe
+  type: hysteria2
+  server: vpn-tw-002.fastervpn.world
+  port: 443
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  udp: true
+  skip-cert-verify: true
+- name: 🇹🇼 中国台湾 (Taiwan) 37 - xiaohe
+  type: vless
+  server: 35.201.163.218
+  port: 30837
+  uuid: 85a6bd94-83a9-4e80-849f-c06d7011d1a4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: LXPNhrAGxr_QE4YCdJfKE40ebsPNIHnLbydhl6bipCo
+    short-id: 97101ba788915e5a
+  servername: www.sony.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇹🇼 中国台湾 (Taiwan) 38 - xiaohe
+  type: hysteria2
+  server: vpn-tw-002.fastervpn.world
+  port: 443
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  udp: true
+  skip-cert-verify: true
+- name: 🇹🇼 中国台湾 (Taiwan) 39 - xiaohe
+  type: vless
+  server: 104.199.134.231
+  port: 28364
+  uuid: 3a62a0c2-ba80-43a9-b757-9aca88b0552e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: NPhCET0GkjSZuKg4vWsPHLvjYGHW9w99Ucxvavu0-1I
+    short-id: 7241c359c2dfab
   servername: www.sony.com
   client-fingerprint: random
   flow: xtls-rprx-vision
@@ -430,17 +428,17 @@ proxies:
   flow: xtls-rprx-vision
 - name: 🇹🇼 中国台湾 (Taiwan) 41 - xiaohe
   type: vless
-  server: 35.201.163.218
-  port: 30837
-  uuid: 85a6bd94-83a9-4e80-849f-c06d7011d1a4
+  server: 35.221.158.209
+  port: 32981
+  uuid: 41b96ee9-ee5e-455f-9753-187a9dead97a
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: LXPNhrAGxr_QE4YCdJfKE40ebsPNIHnLbydhl6bipCo
-    short-id: 97101ba788915e5a
+    public-key: JSn0GPz1WOSTUDBxN_XYnhgb2Jpjc2LpfBTzX1j3V2E
+    short-id: 70f4b7a4c40636
   servername: www.sony.com
-  client-fingerprint: edge
+  client-fingerprint: qq
   flow: xtls-rprx-vision
 - name: 🇹🇼 中国台湾 (Taiwan) 42 - xiaohe
   type: vless
@@ -454,23 +452,65 @@ proxies:
     public-key: eg6DfbLnWtz7PubkXRYvSuQx6QWIRxUsn4l7QEO3Cg4
     short-id: 0630b874d595
   servername: www.amd.com
-  client-fingerprint: ios
+  client-fingerprint: edge
   flow: xtls-rprx-vision
 - name: 🇹🇼 中国台湾 (Taiwan) 43 - xiaohe
   type: vless
-  server: 35.201.163.218
-  port: 30837
-  uuid: 85a6bd94-83a9-4e80-849f-c06d7011d1a4
+  server: 104.199.219.172
+  port: 40800
+  uuid: 5859f6a7-cda1-47c2-8353-fcdee281f31d
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: LXPNhrAGxr_QE4YCdJfKE40ebsPNIHnLbydhl6bipCo
-    short-id: 97101ba788915e5a
-  servername: www.sony.com
+    public-key: zohUbvPLKVBwzuDmZNsaXXFYZSKA9_xEhdUyURChrgo
+    short-id: 186e4c2732d61a3d
+  servername: www.intel.com
   client-fingerprint: chrome
   flow: xtls-rprx-vision
 - name: 🇹🇼 中国台湾 (Taiwan) 44 - xiaohe
+  type: vless
+  server: 34.80.164.239
+  port: 21776
+  uuid: b0399730-1618-4727-8ddd-2baf94ab90d6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: nm6jFiI7_auZ15UMqpeEbiITrK4OR2rfFTqXhe5pMFA
+    short-id: 79b6f82800c68925
+  servername: www.tesla.com
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+- name: 🇹🇼 中国台湾 (Taiwan) 45 - xiaohe
+  type: vless
+  server: 35.194.157.16
+  port: 43450
+  uuid: 64d77a12-ad6b-4d85-a349-bd287535af1c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: HNPJBiUbqYVC3ylvu1GA7fCHLTaHO7S13Bex1nm0O1o
+    short-id: e65d010354bdad73
+  servername: www.amd.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇹🇼 中国台湾 (Taiwan) 46 - xiaohe
+  type: vless
+  server: 34.80.164.239
+  port: 21776
+  uuid: b0399730-1618-4727-8ddd-2baf94ab90d6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: nm6jFiI7_auZ15UMqpeEbiITrK4OR2rfFTqXhe5pMFA
+    short-id: 79b6f82800c68925
+  servername: www.tesla.com
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+- name: 🇹🇼 中国台湾 (Taiwan) 47 - xiaohe
   type: vless
   server: 35.229.136.113
   port: 35412
@@ -482,104 +522,62 @@ proxies:
     public-key: eg6DfbLnWtz7PubkXRYvSuQx6QWIRxUsn4l7QEO3Cg4
     short-id: 0630b874d595
   servername: www.amd.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇹🇼 中国台湾 (Taiwan) 45 - xiaohe
-  type: vless
-  server: 104.199.134.231
-  port: 28364
-  uuid: 3a62a0c2-ba80-43a9-b757-9aca88b0552e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: NPhCET0GkjSZuKg4vWsPHLvjYGHW9w99Ucxvavu0-1I
-    short-id: 7241c359c2dfab
-  servername: www.sony.com
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇹🇼 中国台湾 (Taiwan) 46 - xiaohe
-  type: vless
-  server: 35.201.163.218
-  port: 30837
-  uuid: 85a6bd94-83a9-4e80-849f-c06d7011d1a4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: LXPNhrAGxr_QE4YCdJfKE40ebsPNIHnLbydhl6bipCo
-    short-id: 97101ba788915e5a
-  servername: www.sony.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇹🇼 中国台湾 (Taiwan) 47 - xiaohe
-  type: vless
-  server: 104.199.134.231
-  port: 28364
-  uuid: 3a62a0c2-ba80-43a9-b757-9aca88b0552e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: NPhCET0GkjSZuKg4vWsPHLvjYGHW9w99Ucxvavu0-1I
-    short-id: 7241c359c2dfab
-  servername: www.sony.com
-  client-fingerprint: firefox
+  client-fingerprint: random
   flow: xtls-rprx-vision
 - name: 🇹🇼 中国台湾 (Taiwan) 48 - xiaohe
   type: vless
-  server: 35.201.163.218
-  port: 30837
-  uuid: 85a6bd94-83a9-4e80-849f-c06d7011d1a4
+  server: 34.81.129.171
+  port: 34376
+  uuid: bf8cc771-51a0-4395-810f-1f135325cfc1
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: LXPNhrAGxr_QE4YCdJfKE40ebsPNIHnLbydhl6bipCo
-    short-id: 97101ba788915e5a
+    public-key: Atq4Fo_Mg48QtKXagBW9jnhaQSDUCiKgnATB2EU6OHU
+    short-id: 8dbafb690450d8a9
   servername: www.sony.com
   client-fingerprint: firefox
   flow: xtls-rprx-vision
 - name: 🇹🇼 中国台湾 (Taiwan) 49 - xiaohe
   type: vless
-  server: 35.201.163.218
-  port: 30837
-  uuid: 85a6bd94-83a9-4e80-849f-c06d7011d1a4
+  server: 34.80.164.239
+  port: 21776
+  uuid: b0399730-1618-4727-8ddd-2baf94ab90d6
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: LXPNhrAGxr_QE4YCdJfKE40ebsPNIHnLbydhl6bipCo
-    short-id: 97101ba788915e5a
-  servername: www.sony.com
+    public-key: nm6jFiI7_auZ15UMqpeEbiITrK4OR2rfFTqXhe5pMFA
+    short-id: 79b6f82800c68925
+  servername: www.tesla.com
   client-fingerprint: firefox
   flow: xtls-rprx-vision
 - name: 🇹🇼 中国台湾 (Taiwan) 50 - xiaohe
   type: vless
-  server: 35.201.163.218
-  port: 30837
-  uuid: 85a6bd94-83a9-4e80-849f-c06d7011d1a4
+  server: 35.194.157.16
+  port: 43450
+  uuid: 64d77a12-ad6b-4d85-a349-bd287535af1c
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: LXPNhrAGxr_QE4YCdJfKE40ebsPNIHnLbydhl6bipCo
-    short-id: 97101ba788915e5a
-  servername: www.sony.com
-  client-fingerprint: safari
+    public-key: HNPJBiUbqYVC3ylvu1GA7fCHLTaHO7S13Bex1nm0O1o
+    short-id: e65d010354bdad73
+  servername: www.amd.com
+  client-fingerprint: random
   flow: xtls-rprx-vision
 - name: 🇹🇼 中国台湾 (Taiwan) 51 - xiaohe
   type: vless
-  server: 35.221.158.209
-  port: 32981
-  uuid: 41b96ee9-ee5e-455f-9753-187a9dead97a
+  server: 35.229.136.113
+  port: 35412
+  uuid: 5d3cbdb2-b82d-4078-82b8-5dd413cca82b
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: JSn0GPz1WOSTUDBxN_XYnhgb2Jpjc2LpfBTzX1j3V2E
-    short-id: 70f4b7a4c40636
-  servername: www.sony.com
+    public-key: eg6DfbLnWtz7PubkXRYvSuQx6QWIRxUsn4l7QEO3Cg4
+    short-id: 0630b874d595
+  servername: www.amd.com
   client-fingerprint: qq
   flow: xtls-rprx-vision
 - name: 🇹🇼 中国台湾 (Taiwan) 52 - xiaohe
@@ -594,7 +592,7 @@ proxies:
     public-key: Atq4Fo_Mg48QtKXagBW9jnhaQSDUCiKgnATB2EU6OHU
     short-id: 8dbafb690450d8a9
   servername: www.sony.com
-  client-fingerprint: random
+  client-fingerprint: firefox
   flow: xtls-rprx-vision
 - name: 🇹🇼 中国台湾 (Taiwan) 53 - xiaohe
   type: vless
@@ -612,33 +610,89 @@ proxies:
   flow: xtls-rprx-vision
 - name: 🇹🇼 中国台湾 (Taiwan) 54 - xiaohe
   type: vless
-  server: 35.229.136.113
-  port: 35412
-  uuid: 5d3cbdb2-b82d-4078-82b8-5dd413cca82b
+  server: 35.201.163.218
+  port: 30837
+  uuid: 85a6bd94-83a9-4e80-849f-c06d7011d1a4
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: eg6DfbLnWtz7PubkXRYvSuQx6QWIRxUsn4l7QEO3Cg4
-    short-id: 0630b874d595
-  servername: www.amd.com
-  client-fingerprint: random
+    public-key: LXPNhrAGxr_QE4YCdJfKE40ebsPNIHnLbydhl6bipCo
+    short-id: 97101ba788915e5a
+  servername: www.sony.com
+  client-fingerprint: edge
   flow: xtls-rprx-vision
 - name: 🇹🇼 中国台湾 (Taiwan) 55 - xiaohe
   type: vless
-  server: 104.199.219.172
-  port: 40800
-  uuid: 5859f6a7-cda1-47c2-8353-fcdee281f31d
+  server: 35.201.163.218
+  port: 30837
+  uuid: 85a6bd94-83a9-4e80-849f-c06d7011d1a4
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: zohUbvPLKVBwzuDmZNsaXXFYZSKA9_xEhdUyURChrgo
-    short-id: 186e4c2732d61a3d
-  servername: www.intel.com
-  client-fingerprint: firefox
+    public-key: LXPNhrAGxr_QE4YCdJfKE40ebsPNIHnLbydhl6bipCo
+    short-id: 97101ba788915e5a
+  servername: www.sony.com
+  client-fingerprint: chrome
   flow: xtls-rprx-vision
 - name: 🇹🇼 中国台湾 (Taiwan) 56 - xiaohe
+  type: vless
+  server: 34.80.164.239
+  port: 21776
+  uuid: b0399730-1618-4727-8ddd-2baf94ab90d6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: nm6jFiI7_auZ15UMqpeEbiITrK4OR2rfFTqXhe5pMFA
+    short-id: 79b6f82800c68925
+  servername: www.tesla.com
+  client-fingerprint: safari
+  flow: xtls-rprx-vision
+- name: 🇹🇼 中国台湾 (Taiwan) 57 - xiaohe
+  type: vless
+  server: 35.221.158.209
+  port: 32981
+  uuid: 41b96ee9-ee5e-455f-9753-187a9dead97a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: JSn0GPz1WOSTUDBxN_XYnhgb2Jpjc2LpfBTzX1j3V2E
+    short-id: 70f4b7a4c40636
+  servername: www.sony.com
+  client-fingerprint: random
+  flow: xtls-rprx-vision
+- name: 🇹🇼 中国台湾 (Taiwan) 58 - xiaohe
+  type: vless
+  server: 34.80.164.239
+  port: 21776
+  uuid: b0399730-1618-4727-8ddd-2baf94ab90d6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: nm6jFiI7_auZ15UMqpeEbiITrK4OR2rfFTqXhe5pMFA
+    short-id: 79b6f82800c68925
+  servername: www.tesla.com
+  client-fingerprint: ios
+  flow: xtls-rprx-vision
+- name: 🇹🇼 中国台湾 (Taiwan) 59 - xiaohe
+  type: vless
+  server: 35.201.163.218
+  port: 30837
+  uuid: 85a6bd94-83a9-4e80-849f-c06d7011d1a4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: LXPNhrAGxr_QE4YCdJfKE40ebsPNIHnLbydhl6bipCo
+    short-id: 97101ba788915e5a
+  servername: www.sony.com
+  client-fingerprint: ios
+  flow: xtls-rprx-vision
+- name: 🇹🇼 中国台湾 (Taiwan) 60 - xiaohe
   type: vless
   server: 104.199.219.172
   port: 40800
@@ -652,108 +706,21 @@ proxies:
   servername: www.intel.com
   client-fingerprint: qq
   flow: xtls-rprx-vision
-- name: 🇹🇼 中国台湾 (Taiwan) 57 - xiaohe
-  type: vless
-  server: 34.80.164.239
-  port: 21776
-  uuid: b0399730-1618-4727-8ddd-2baf94ab90d6
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: nm6jFiI7_auZ15UMqpeEbiITrK4OR2rfFTqXhe5pMFA
-    short-id: 79b6f82800c68925
-  servername: www.tesla.com
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇹🇼 中国台湾 (Taiwan) 58 - xiaohe
-  type: hysteria2
-  server: vpn-tw-002.fastervpn.world
-  port: 443
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  udp: true
-  skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 59 - xiaohe
-  type: vless
-  server: 34.81.129.171
-  port: 34376
-  uuid: bf8cc771-51a0-4395-810f-1f135325cfc1
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: Atq4Fo_Mg48QtKXagBW9jnhaQSDUCiKgnATB2EU6OHU
-    short-id: 8dbafb690450d8a9
-  servername: www.sony.com
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇹🇼 中国台湾 (Taiwan) 60 - xiaohe
-  type: vmess
-  server: 165.154.195.38
-  port: 35034
-  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 61 - xiaohe
   type: vless
-  server: 34.81.129.171
-  port: 34376
-  uuid: bf8cc771-51a0-4395-810f-1f135325cfc1
+  server: 35.229.136.113
+  port: 35412
+  uuid: 5d3cbdb2-b82d-4078-82b8-5dd413cca82b
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: Atq4Fo_Mg48QtKXagBW9jnhaQSDUCiKgnATB2EU6OHU
-    short-id: 8dbafb690450d8a9
-  servername: www.sony.com
-  client-fingerprint: firefox
+    public-key: eg6DfbLnWtz7PubkXRYvSuQx6QWIRxUsn4l7QEO3Cg4
+    short-id: 0630b874d595
+  servername: www.amd.com
+  client-fingerprint: ios
   flow: xtls-rprx-vision
 - name: 🇹🇼 中国台湾 (Taiwan) 62 - xiaohe
-  type: vless
-  server: 34.80.164.239
-  port: 21776
-  uuid: b0399730-1618-4727-8ddd-2baf94ab90d6
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: nm6jFiI7_auZ15UMqpeEbiITrK4OR2rfFTqXhe5pMFA
-    short-id: 79b6f82800c68925
-  servername: www.tesla.com
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇹🇼 中国台湾 (Taiwan) 63 - xiaohe
-  type: vless
-  server: 35.194.157.16
-  port: 43450
-  uuid: 64d77a12-ad6b-4d85-a349-bd287535af1c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: HNPJBiUbqYVC3ylvu1GA7fCHLTaHO7S13Bex1nm0O1o
-    short-id: e65d010354bdad73
-  servername: www.amd.com
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇹🇼 中国台湾 (Taiwan) 64 - xiaohe
-  type: vless
-  server: 104.199.219.172
-  port: 40800
-  uuid: 5859f6a7-cda1-47c2-8353-fcdee281f31d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: zohUbvPLKVBwzuDmZNsaXXFYZSKA9_xEhdUyURChrgo
-    short-id: 186e4c2732d61a3d
-  servername: www.intel.com
-  client-fingerprint: safari
-  flow: xtls-rprx-vision
-- name: 🇹🇼 中国台湾 (Taiwan) 65 - xiaohe
   type: vless
   server: 35.201.163.218
   port: 30837
@@ -767,6 +734,41 @@ proxies:
   servername: www.sony.com
   client-fingerprint: random
   flow: xtls-rprx-vision
+- name: 🇹🇼 中国台湾 (Taiwan) 63 - xiaohe
+  type: vless
+  server: 104.199.219.172
+  port: 40800
+  uuid: 5859f6a7-cda1-47c2-8353-fcdee281f31d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: zohUbvPLKVBwzuDmZNsaXXFYZSKA9_xEhdUyURChrgo
+    short-id: 186e4c2732d61a3d
+  servername: www.intel.com
+  client-fingerprint: ios
+  flow: xtls-rprx-vision
+- name: 🇹🇼 中国台湾 (Taiwan) 64 - xiaohe
+  type: hysteria2
+  server: vpn-tw-002.fastervpn.world
+  port: 443
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  udp: true
+  skip-cert-verify: true
+- name: 🇹🇼 中国台湾 (Taiwan) 65 - xiaohe
+  type: vless
+  server: 34.80.164.239
+  port: 21776
+  uuid: b0399730-1618-4727-8ddd-2baf94ab90d6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: nm6jFiI7_auZ15UMqpeEbiITrK4OR2rfFTqXhe5pMFA
+    short-id: 79b6f82800c68925
+  servername: www.tesla.com
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
 - name: 🇹🇼 中国台湾 (Taiwan) 66 - xiaohe
   type: vless
   server: 34.80.164.239
@@ -779,7 +781,7 @@ proxies:
     public-key: nm6jFiI7_auZ15UMqpeEbiITrK4OR2rfFTqXhe5pMFA
     short-id: 79b6f82800c68925
   servername: www.tesla.com
-  client-fingerprint: qq
+  client-fingerprint: chrome
   flow: xtls-rprx-vision
 - name: 🇹🇼 中国台湾 (Taiwan) 67 - xiaohe
   type: vless
@@ -797,6 +799,90 @@ proxies:
   flow: xtls-rprx-vision
 - name: 🇹🇼 中国台湾 (Taiwan) 68 - xiaohe
   type: vless
+  server: 35.194.157.16
+  port: 43450
+  uuid: 64d77a12-ad6b-4d85-a349-bd287535af1c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: HNPJBiUbqYVC3ylvu1GA7fCHLTaHO7S13Bex1nm0O1o
+    short-id: e65d010354bdad73
+  servername: www.amd.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇹🇼 中国台湾 (Taiwan) 69 - xiaohe
+  type: vless
+  server: 35.229.136.113
+  port: 35412
+  uuid: 5d3cbdb2-b82d-4078-82b8-5dd413cca82b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: eg6DfbLnWtz7PubkXRYvSuQx6QWIRxUsn4l7QEO3Cg4
+    short-id: 0630b874d595
+  servername: www.amd.com
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+- name: 🇹🇼 中国台湾 (Taiwan) 70 - xiaohe
+  type: vless
+  server: 35.194.157.16
+  port: 43450
+  uuid: 64d77a12-ad6b-4d85-a349-bd287535af1c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: HNPJBiUbqYVC3ylvu1GA7fCHLTaHO7S13Bex1nm0O1o
+    short-id: e65d010354bdad73
+  servername: www.amd.com
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+- name: 🇹🇼 中国台湾 (Taiwan) 71 - xiaohe
+  type: vless
+  server: 34.81.129.171
+  port: 34376
+  uuid: bf8cc771-51a0-4395-810f-1f135325cfc1
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: Atq4Fo_Mg48QtKXagBW9jnhaQSDUCiKgnATB2EU6OHU
+    short-id: 8dbafb690450d8a9
+  servername: www.sony.com
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+- name: 🇹🇼 中国台湾 (Taiwan) 72 - xiaohe
+  type: vless
+  server: 35.229.136.113
+  port: 35412
+  uuid: 5d3cbdb2-b82d-4078-82b8-5dd413cca82b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: eg6DfbLnWtz7PubkXRYvSuQx6QWIRxUsn4l7QEO3Cg4
+    short-id: 0630b874d595
+  servername: www.amd.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇹🇼 中国台湾 (Taiwan) 73 - xiaohe
+  type: vless
+  server: 34.81.129.171
+  port: 34376
+  uuid: bf8cc771-51a0-4395-810f-1f135325cfc1
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: Atq4Fo_Mg48QtKXagBW9jnhaQSDUCiKgnATB2EU6OHU
+    short-id: 8dbafb690450d8a9
+  servername: www.sony.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇹🇼 中国台湾 (Taiwan) 74 - xiaohe
+  type: vless
   server: 35.221.158.209
   port: 32981
   uuid: 41b96ee9-ee5e-455f-9753-187a9dead97a
@@ -807,37 +893,44 @@ proxies:
     public-key: JSn0GPz1WOSTUDBxN_XYnhgb2Jpjc2LpfBTzX1j3V2E
     short-id: 70f4b7a4c40636
   servername: www.sony.com
-  client-fingerprint: ios
+  client-fingerprint: firefox
   flow: xtls-rprx-vision
-- name: 🇹🇼 中国台湾 (Taiwan) 69 - xiaohe
+- name: 🇹🇼 中国台湾 (Taiwan) 75 - xiaohe
   type: vless
-  server: 104.199.219.172
-  port: 40800
-  uuid: 5859f6a7-cda1-47c2-8353-fcdee281f31d
+  server: 34.80.164.239
+  port: 21776
+  uuid: b0399730-1618-4727-8ddd-2baf94ab90d6
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: zohUbvPLKVBwzuDmZNsaXXFYZSKA9_xEhdUyURChrgo
-    short-id: 186e4c2732d61a3d
-  servername: www.intel.com
+    public-key: nm6jFiI7_auZ15UMqpeEbiITrK4OR2rfFTqXhe5pMFA
+    short-id: 79b6f82800c68925
+  servername: www.tesla.com
   client-fingerprint: random
   flow: xtls-rprx-vision
-- name: 🇹🇼 中国台湾 (Taiwan) 70 - xiaohe
+- name: 🇹🇼 中国台湾 (Taiwan) 76 - xiaohe
   type: vless
-  server: 35.201.163.218
-  port: 30837
-  uuid: 85a6bd94-83a9-4e80-849f-c06d7011d1a4
+  server: 35.229.136.113
+  port: 35412
+  uuid: 5d3cbdb2-b82d-4078-82b8-5dd413cca82b
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: LXPNhrAGxr_QE4YCdJfKE40ebsPNIHnLbydhl6bipCo
-    short-id: 97101ba788915e5a
-  servername: www.sony.com
-  client-fingerprint: ios
+    public-key: eg6DfbLnWtz7PubkXRYvSuQx6QWIRxUsn4l7QEO3Cg4
+    short-id: 0630b874d595
+  servername: www.amd.com
+  client-fingerprint: firefox
   flow: xtls-rprx-vision
-- name: 🇹🇼 中国台湾 (Taiwan) 71 - xiaohe
+- name: 🇹🇼 中国台湾 (Taiwan) 77 - xiaohe
+  type: hysteria2
+  server: vpn-tw-002.fastervpn.world
+  port: 443
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  udp: true
+  skip-cert-verify: true
+- name: 🇹🇼 中国台湾 (Taiwan) 78 - xiaohe
   type: vless
   server: 35.201.163.218
   port: 30837
@@ -849,7 +942,7 @@ proxies:
     public-key: LXPNhrAGxr_QE4YCdJfKE40ebsPNIHnLbydhl6bipCo
     short-id: 97101ba788915e5a
   servername: www.sony.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
   flow: xtls-rprx-vision
 proxy-groups:
 - name: PROXIES
@@ -927,6 +1020,13 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 69 - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 70 - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 71 - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 72 - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 73 - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 74 - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 75 - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 76 - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 77 - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 78 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -1003,5 +1103,12 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 69 - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 70 - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 71 - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 72 - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 73 - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 74 - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 75 - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 76 - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 77 - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 78 - xiaohe
 rules:
 - MATCH,PROXIES

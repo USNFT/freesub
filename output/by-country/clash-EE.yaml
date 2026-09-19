@@ -19,17 +19,18 @@ proxies:
       Host: 94.183.170.135
 - name: 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
   type: vless
-  server: 94.183.170.135
+  server: estomin1.vodniki.monster
   port: 443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 94.183.170.135
+  reality-opts:
+    public-key: r1MW0o1DsC6EEWN-KPKnoXszb1trxlKShRIgOpxqHBk
+    short-id: d98e7afec9c0c359
+  servername: estomin1.vodniki.monster
+  client-fingerprint: edge
+  flow: xtls-rprx-vision
 proxy-groups:
 - name: PROXIES
   type: select

@@ -13,10 +13,10 @@ proxies:
   udp: true
 - name: 🇬🇧 英国 (United Kingdom) 02 - xiaohe
   type: ss
-  server: 141.98.101.181
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
+  server: 134.65.63.122
+  port: 61312
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 9UzSnfj0gy1JNUBD2L3JgpLLlQieW6AfOJ9vptz0iks=
   udp: true
 - name: 🇬🇧 英国 (United Kingdom) 03 - xiaohe
   type: ss
@@ -26,20 +26,12 @@ proxies:
   password: 0N1dYtQFmHnwBeKv53o5MJDkRzbGYY1KkLXnaNkWo3o=
   udp: true
 - name: 🇬🇧 英国 (United Kingdom) 04 - xiaohe
-  type: vmess
-  server: 57.129.132.223
-  port: 80
-  uuid: a25cbf11-2908-4a1b-a3a8-9a571777dca3
-  alterId: 0
-  cipher: auto
+  type: ss
+  server: 141.98.101.181
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
   udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vmess/
-    headers:
-      Host: google.com
 - name: 🇬🇧 英国 (United Kingdom) 05 - xiaohe
   type: vless
   server: 87.117.234.19
@@ -52,23 +44,9 @@ proxies:
     public-key: SiSky02wHz-S0TDHKFTdYhnrlT8Y3CfRsekZlcdLXDY
     short-id: fd55b698ee8c3629
   servername: strapi.io
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   flow: xtls-rprx-vision
 - name: 🇬🇧 英国 (United Kingdom) 06 - xiaohe
-  type: vless
-  server: 87.117.234.19
-  port: 443
-  uuid: 4d583b2c-2f5a-47d0-8181-e95217fe8cd9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: SiSky02wHz-S0TDHKFTdYhnrlT8Y3CfRsekZlcdLXDY
-    short-id: fd55b698ee8c3629
-  servername: strapi.io
-  client-fingerprint: qq
-  flow: xtls-rprx-vision
-- name: 🇬🇧 英国 (United Kingdom) 07 - xiaohe
   type: vless
   server: 78.129.208.44
   port: 421
@@ -80,6 +58,20 @@ proxies:
     public-key: zUdAvpr07q1Yd0Om-jc4-Vu4Un5tVird8FGoN-7W9Tg
     short-id: a1facbc8575701ae
   servername: chistomat.dry.care
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇬🇧 英国 (United Kingdom) 07 - xiaohe
+  type: vless
+  server: 95.154.196.61
+  port: 443
+  uuid: e5d917f5-fc78-455e-bbb5-81d08715f3d6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 2ATxqiR22wlo3yXOHc43LFHM5NzWCdSGZLdBay_vJgM
+    short-id: e4a1b53b03eff60d
+  servername: strapi.io
   client-fingerprint: chrome
   flow: xtls-rprx-vision
 - name: 🇬🇧 英国 (United Kingdom) 08 - xiaohe
@@ -94,21 +86,21 @@ proxies:
     public-key: 2ATxqiR22wlo3yXOHc43LFHM5NzWCdSGZLdBay_vJgM
     short-id: e4a1b53b03eff60d
   servername: strapi.io
-  client-fingerprint: random
+  client-fingerprint: chrome
   flow: xtls-rprx-vision
 - name: 🇬🇧 英国 (United Kingdom) 09 - xiaohe
   type: vless
-  server: 164.37.100.194
+  server: 5.152.223.97
   port: 443
-  uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
+  uuid: be5b6ad6-8184-4b63-82ac-3bc00c09c98c
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: s0ypPx0AL3k2KOk74tbm-aE-i7eIR_MYVzfLHZeLaUk
-    short-id: 2e124af254a65e7c
-  servername: 14ang88.snusoed.baby
-  client-fingerprint: firefox
+    public-key: IFEZmwpGK7VCuDj3kmVdyMn7vUIG8Sntc6TG4eIS3xs
+    short-id: 1aa9f3c9021280c0
+  servername: strapi.io
+  client-fingerprint: chrome
   flow: xtls-rprx-vision
 - name: 🇬🇧 英国 (United Kingdom) 10 - xiaohe
   type: vless
@@ -126,31 +118,31 @@ proxies:
   flow: xtls-rprx-vision
 - name: 🇬🇧 英国 (United Kingdom) 11 - xiaohe
   type: vless
-  server: 95.154.196.61
+  server: 5.152.223.97
   port: 443
-  uuid: e5d917f5-fc78-455e-bbb5-81d08715f3d6
+  uuid: be5b6ad6-8184-4b63-82ac-3bc00c09c98c
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: 2ATxqiR22wlo3yXOHc43LFHM5NzWCdSGZLdBay_vJgM
-    short-id: e4a1b53b03eff60d
+    public-key: IFEZmwpGK7VCuDj3kmVdyMn7vUIG8Sntc6TG4eIS3xs
+    short-id: 1aa9f3c9021280c0
   servername: strapi.io
-  client-fingerprint: firefox
+  client-fingerprint: random
   flow: xtls-rprx-vision
 - name: 🇬🇧 英国 (United Kingdom) 12 - xiaohe
   type: vless
-  server: 14ang88.snusoed.baby
+  server: 5.152.223.97
   port: 443
-  uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
+  uuid: be5b6ad6-8184-4b63-82ac-3bc00c09c98c
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: s0ypPx0AL3k2KOk74tbm-aE-i7eIR_MYVzfLHZeLaUk
-    short-id: 2e124af254a65e7c
-  servername: 14ang88.snusoed.baby
-  client-fingerprint: random
+    public-key: IFEZmwpGK7VCuDj3kmVdyMn7vUIG8Sntc6TG4eIS3xs
+    short-id: 1aa9f3c9021280c0
+  servername: strapi.io
+  client-fingerprint: chrome
   flow: xtls-rprx-vision
 - name: 🇬🇧 英国 (United Kingdom) 13 - xiaohe
   type: vless
@@ -164,59 +156,63 @@ proxies:
     public-key: s0ypPx0AL3k2KOk74tbm-aE-i7eIR_MYVzfLHZeLaUk
     short-id: 2e124af254a65e7c
   servername: 14ang88.snusoed.baby
-  client-fingerprint: ''
+  client-fingerprint: chrome
   flow: xtls-rprx-vision
 - name: 🇬🇧 英国 (United Kingdom) 14 - xiaohe
   type: vless
-  server: comte.farxmode.ir
-  port: 8080
-  uuid: 23ddda0f-6333-493a-839d-f9c8e561f7e4
+  server: 14ang88.snusoed.baby
+  port: 443
+  uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: 3WnHdv9A0tNParChTLxPnDteRD841h8thOGR7MBgAhY
-  servername: play-apps-features.googleusercontent.com
-  client-fingerprint: ios
+    public-key: s0ypPx0AL3k2KOk74tbm-aE-i7eIR_MYVzfLHZeLaUk
+    short-id: 2e124af254a65e7c
+  servername: 14ang88.snusoed.baby
+  client-fingerprint: ''
+  flow: xtls-rprx-vision
 - name: 🇬🇧 英国 (United Kingdom) 15 - xiaohe
   type: vless
-  server: 3.9.135.156
-  port: 51847
-  uuid: 391a01e9-b664-407b-9158-610fab3f5920
+  server: 14ang88.snusoed.baby
+  port: 443
+  uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: S6noV0L8eNASnTe1gXLutLZNdfENsvKMsOJiGQYi6nc
-    short-id: 0eec442e7b34d2f2
-  servername: www.tesla.com
+    public-key: s0ypPx0AL3k2KOk74tbm-aE-i7eIR_MYVzfLHZeLaUk
+    short-id: 2e124af254a65e7c
+  servername: 14ang88.snusoed.baby
   client-fingerprint: chrome
   flow: xtls-rprx-vision
 - name: 🇬🇧 英国 (United Kingdom) 16 - xiaohe
-  type: vmess
-  server: 66.163.117.58
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 14ang88.snusoed.baby
+  port: 443
+  uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  reality-opts:
+    public-key: s0ypPx0AL3k2KOk74tbm-aE-i7eIR_MYVzfLHZeLaUk
+    short-id: 2e124af254a65e7c
+  servername: 14ang88.snusoed.baby
+  client-fingerprint: ios
+  flow: xtls-rprx-vision
 - name: 🇬🇧 英国 (United Kingdom) 17 - xiaohe
-  type: vmess
-  server: 57.129.132.223
-  port: 80
-  uuid: a25cbf11-2908-4a1b-a3a8-9a571777dca3
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 46.250.250.149
+  port: 2053
+  uuid: b4caaf57-ad77-4948-a6f5-51b3513799bf
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vmess/
-    headers:
-      Host: viber.com
+  reality-opts:
+    public-key: hieuCHb3HYdDYHmTDyWw2SGqyfo36AVuA-wSiZMdU1M
+    short-id: 9922313fffed1c63
+  servername: www.apple.com
+  client-fingerprint: random
 - name: 🇬🇧 英国 (United Kingdom) 18 - xiaohe
   type: vless
   server: 46.250.250.149
@@ -232,31 +228,19 @@ proxies:
   client-fingerprint: firefox
 - name: 🇬🇧 英国 (United Kingdom) 19 - xiaohe
   type: vless
-  server: 46.250.250.149
-  port: 2053
-  uuid: b4caaf57-ad77-4948-a6f5-51b3513799bf
+  server: 3.9.135.156
+  port: 51847
+  uuid: 391a01e9-b664-407b-9158-610fab3f5920
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: hieuCHb3HYdDYHmTDyWw2SGqyfo36AVuA-wSiZMdU1M
-    short-id: 9922313fffed1c63
-  servername: www.apple.com
-  client-fingerprint: firefox
+    public-key: S6noV0L8eNASnTe1gXLutLZNdfENsvKMsOJiGQYi6nc
+    short-id: 0eec442e7b34d2f2
+  servername: www.tesla.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
 - name: 🇬🇧 英国 (United Kingdom) 20 - xiaohe
-  type: vless
-  server: 46.250.250.149
-  port: 2053
-  uuid: b4caaf57-ad77-4948-a6f5-51b3513799bf
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: hieuCHb3HYdDYHmTDyWw2SGqyfo36AVuA-wSiZMdU1M
-    short-id: 9922313fffed1c63
-  servername: www.apple.com
-  client-fingerprint: random
-- name: 🇬🇧 英国 (United Kingdom) 21 - xiaohe
   type: vmess
   server: 66.163.117.58
   port: 22324
@@ -266,7 +250,7 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇬🇧 英国 (United Kingdom) 22 - xiaohe
+- name: 🇬🇧 英国 (United Kingdom) 21 - xiaohe
   type: vless
   server: server.slavkiti.monster
   port: 443
@@ -278,6 +262,20 @@ proxies:
     public-key: J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk
     short-id: 2a2ce9e42980
   servername: www.mozilla.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇬🇧 英国 (United Kingdom) 22 - xiaohe
+  type: vless
+  server: 193.163.203.170
+  port: 443
+  uuid: 11aabba0-5fd1-4f15-8068-74c1a466cefc
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: GCCZ1ZZjB_nj7yxqFi22bIIWWr_G6rnWUzDcssN_40o
+    short-id: b28db60d77c50b4f
+  servername: yandex.ru
   client-fingerprint: chrome
   flow: xtls-rprx-vision
 proxy-groups:
