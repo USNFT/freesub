@@ -6,45 +6,6 @@ log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - xiaohe
   type: vless
-  server: 89.125.147.199
-  port: 443
-  uuid: 246b101b-4e4a-451f-8e9c-5e8d3b64b4ef
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: iQJ8UdFw-lUWa9mXugescYHkmwNH96nuj_z-LAZvfxg
-    short-id: f6c7c139b9c938db
-  servername: maps.apple.com
-  client-fingerprint: firefox
-- name: 🇦🇪 阿联酋 (UAE) 02 - xiaohe
-  type: vless
-  server: 89.125.147.199
-  port: 443
-  uuid: cabd9303-ae32-4d25-86b9-26b312d0f044
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: iQJ8UdFw-lUWa9mXugescYHkmwNH96nuj_z-LAZvfxg
-    short-id: f6c7c139b9c938db
-  servername: maps.apple.com
-  client-fingerprint: chrome
-- name: 🇦🇪 阿联酋 (UAE) 03 - xiaohe
-  type: vless
-  server: 89.125.147.199
-  port: 443
-  uuid: cabd9303-ae32-4d25-86b9-26b312d0f044
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: iQJ8UdFw-lUWa9mXugescYHkmwNH96nuj_z-LAZvfxg
-    short-id: f6c7c139b9c938db
-  servername: maps.apple.com
-  client-fingerprint: ''
-- name: 🇦🇪 阿联酋 (UAE) 04 - xiaohe
-  type: vless
   server: 31.56.189.27
   port: 8765
   uuid: df9f5aca-eda0-428f-a752-e53866153d12
@@ -57,23 +18,62 @@ proxies:
   servername: srv-21bac9.vless.monster
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: 🇦🇪 阿联酋 (UAE) 05 - xiaohe
+- name: 🇦🇪 阿联酋 (UAE) 02 - xiaohe
   type: vless
-  server: 31.57.18.63
+  server: 89.125.147.199
   port: 443
-  uuid: 4f8a1d19-4d21-47f5-816e-a8f475fbd3f7
+  uuid: 246b101b-4e4a-451f-8e9c-5e8d3b64b4ef
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: qPgl3LmKAKs5K-KzGNRJyr5KTO0KoRNN5m2PTCMscXU
-    short-id: 22f534c530d37170
-  servername: srv-waw.kintecolas.com
+    public-key: iQJ8UdFw-lUWa9mXugescYHkmwNH96nuj_z-LAZvfxg
+    short-id: f6c7c139b9c938db
+  servername: maps.apple.com
   client-fingerprint: firefox
+- name: 🇦🇪 阿联酋 (UAE) 03 - xiaohe
+  type: vless
+  server: 31.58.181.88
+  port: 8443
+  uuid: 4a64b0c2-de7e-4e32-b931-247be6dc4488
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
+  servername: tradingview.com
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+- name: 🇦🇪 阿联酋 (UAE) 04 - xiaohe
+  type: vless
+  server: 89.125.147.199
+  port: 443
+  uuid: 246b101b-4e4a-451f-8e9c-5e8d3b64b4ef
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: iQJ8UdFw-lUWa9mXugescYHkmwNH96nuj_z-LAZvfxg
+    short-id: f6c7c139b9c938db
+  servername: maps.apple.com
+  client-fingerprint: firefox
+- name: 🇦🇪 阿联酋 (UAE) 05 - xiaohe
+  type: vless
+  server: 94.183.224.45
+  port: 443
+  uuid: d72f05b0-b182-4783-a6f2-21cecc7d841a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: SibLV5WBGdljTiUCmKx77KhHQfErCwjDMD_ZLoha3js
+    short-id: a1b2c3d4e5f67890
+  servername: dzen.ru
+  client-fingerprint: chrome
   flow: xtls-rprx-vision
 - name: 🇦🇪 阿联酋 (UAE) 06 - xiaohe
   type: vless
-  server: 31.57.18.58
+  server: 31.57.18.56
   port: 443
   uuid: 4f8a1d19-4d21-47f5-816e-a8f475fbd3f7
   udp: true
@@ -100,36 +100,22 @@ proxies:
   client-fingerprint: chrome
   flow: xtls-rprx-vision
 - name: 🇦🇪 阿联酋 (UAE) 08 - xiaohe
-  type: vless
-  server: 31.57.18.60
-  port: 443
-  uuid: 4f8a1d19-4d21-47f5-816e-a8f475fbd3f7
+  type: hysteria2
+  server: 85.204.107.171
+  port: 8080
+  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
   udp: true
-  tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: qPgl3LmKAKs5K-KzGNRJyr5KTO0KoRNN5m2PTCMscXU
-    short-id: 22f534c530d37170
-  servername: srv-waw.kintecolas.com
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
 - name: 🇦🇪 阿联酋 (UAE) 09 - xiaohe
-  type: vless
-  server: 31.57.18.59
-  port: 443
-  uuid: 4f8a1d19-4d21-47f5-816e-a8f475fbd3f7
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: qPgl3LmKAKs5K-KzGNRJyr5KTO0KoRNN5m2PTCMscXU
-    short-id: 22f534c530d37170
-  servername: srv-waw.kintecolas.com
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇦🇪 阿联酋 (UAE) 10 - xiaohe
   type: hysteria2
   server: 85.204.107.181
+  port: 8080
+  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
+  udp: true
+  skip-cert-verify: true
+- name: 🇦🇪 阿联酋 (UAE) 10 - xiaohe
+  type: hysteria2
+  server: 85.204.107.178
   port: 8080
   password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
   udp: true
@@ -150,18 +136,38 @@ proxies:
   skip-cert-verify: true
 - name: 🇦🇪 阿联酋 (UAE) 13 - xiaohe
   type: hysteria2
-  server: 85.204.107.178
+  server: 85.204.107.181
   port: 8080
   password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
   udp: true
   skip-cert-verify: true
 - name: 🇦🇪 阿联酋 (UAE) 14 - xiaohe
-  type: hysteria2
-  server: 85.204.107.171
-  port: 8080
-  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
+  type: vless
+  server: 84.235.244.108
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
+  tls: false
   skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 15 - xiaohe
+  type: vless
+  server: 31.57.18.59
+  port: 443
+  uuid: 4f8a1d19-4d21-47f5-816e-a8f475fbd3f7
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: qPgl3LmKAKs5K-KzGNRJyr5KTO0KoRNN5m2PTCMscXU
+    short-id: 22f534c530d37170
+  servername: srv-waw.kintecolas.com
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
 proxy-groups:
 - name: PROXIES
   type: select
@@ -181,6 +187,7 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 12 - xiaohe
   - 🇦🇪 阿联酋 (UAE) 13 - xiaohe
   - 🇦🇪 阿联酋 (UAE) 14 - xiaohe
+  - 🇦🇪 阿联酋 (UAE) 15 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -200,5 +207,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 12 - xiaohe
   - 🇦🇪 阿联酋 (UAE) 13 - xiaohe
   - 🇦🇪 阿联酋 (UAE) 14 - xiaohe
+  - 🇦🇪 阿联酋 (UAE) 15 - xiaohe
 rules:
 - MATCH,PROXIES

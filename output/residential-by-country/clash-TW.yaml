@@ -13,7 +13,7 @@ proxies:
   udp: true
 - name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
   type: vless
-  server: hinet1.2yly.com
+  server: 118.167.246.43
   port: 24215
   uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
   udp: true

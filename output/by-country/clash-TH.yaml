@@ -16,7 +16,7 @@ proxies:
     public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
     short-id: ca672c53fbbac555
   servername: www.cloudflare.com
-  client-fingerprint: random
+  client-fingerprint: chrome
 - name: 🇹🇭 泰国 (Thailand) 02 - xiaohe
   type: vless
   server: 34.15.162.1
@@ -29,7 +29,7 @@ proxies:
     public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
     short-id: ca672c53fbbac555
   servername: www.cloudflare.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇹🇭 泰国 (Thailand) 03 - xiaohe
   type: vless
   server: 34.15.162.1
@@ -68,7 +68,7 @@ proxies:
     public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
     short-id: ca672c53fbbac555
   servername: www.cloudflare.com
-  client-fingerprint: qq
+  client-fingerprint: safari
 - name: 🇹🇭 泰国 (Thailand) 06 - xiaohe
   type: vless
   server: 34.15.162.1
@@ -81,7 +81,7 @@ proxies:
     public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
     short-id: ca672c53fbbac555
   servername: www.cloudflare.com
-  client-fingerprint: safari
+  client-fingerprint: qq
 - name: 🇹🇭 泰国 (Thailand) 07 - xiaohe
   type: vless
   server: 34.15.162.1
@@ -94,7 +94,7 @@ proxies:
     public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
     short-id: ca672c53fbbac555
   servername: www.cloudflare.com
-  client-fingerprint: chrome
+  client-fingerprint: ios
 - name: 🇹🇭 泰国 (Thailand) 08 - xiaohe
   type: vless
   server: 34.15.162.1
@@ -107,8 +107,34 @@ proxies:
     public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
     short-id: ca672c53fbbac555
   servername: www.cloudflare.com
-  client-fingerprint: ios
+  client-fingerprint: random
 - name: 🇹🇭 泰国 (Thailand) 09 - xiaohe
+  type: vless
+  server: 34.15.162.1
+  port: 443
+  uuid: 2b1d0c2a-9c80-4b72-892e-93d0500b9210
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
+    short-id: ca672c53fbbac555
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇹🇭 泰国 (Thailand) 10 - xiaohe
+  type: vless
+  server: 34.15.162.1
+  port: 443
+  uuid: 2b1d0c2a-9c80-4b72-892e-93d0500b9210
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
+    short-id: ca672c53fbbac555
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇹🇭 泰国 (Thailand) 11 - xiaohe
   type: vmess
   server: 118.193.57.167
   port: 49667
@@ -123,6 +149,19 @@ proxies:
     path: /d46bf492
     headers:
       Host: ''
+- name: 🇹🇭 泰国 (Thailand) 12 - xiaohe
+  type: vless
+  server: 103.86.49.57
+  port: 80
+  uuid: 3c52e091-6714-4915-949f-2149fe69951b
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: aIs.SpEeDtEsT.nEt
 proxy-groups:
 - name: PROXIES
   type: select
@@ -137,6 +176,9 @@ proxy-groups:
   - 🇹🇭 泰国 (Thailand) 07 - xiaohe
   - 🇹🇭 泰国 (Thailand) 08 - xiaohe
   - 🇹🇭 泰国 (Thailand) 09 - xiaohe
+  - 🇹🇭 泰国 (Thailand) 10 - xiaohe
+  - 🇹🇭 泰国 (Thailand) 11 - xiaohe
+  - 🇹🇭 泰国 (Thailand) 12 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -151,5 +193,8 @@ proxy-groups:
   - 🇹🇭 泰国 (Thailand) 07 - xiaohe
   - 🇹🇭 泰国 (Thailand) 08 - xiaohe
   - 🇹🇭 泰国 (Thailand) 09 - xiaohe
+  - 🇹🇭 泰国 (Thailand) 10 - xiaohe
+  - 🇹🇭 泰国 (Thailand) 11 - xiaohe
+  - 🇹🇭 泰国 (Thailand) 12 - xiaohe
 rules:
 - MATCH,PROXIES

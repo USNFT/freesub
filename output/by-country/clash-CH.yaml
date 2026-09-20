@@ -15,15 +15,21 @@ proxies:
   reality-opts:
     public-key: mJ-0fJDvKp0rhuyUvs1bw4RasRRM-BEOAl9iAZ8gXy0
   servername: usa.oblaco.bet
-  client-fingerprint: chrome
+  client-fingerprint: ''
   flow: xtls-rprx-vision
 - name: 🇨🇭 瑞士 (Switzerland) 02 - xiaohe
-  type: hysteria2
-  server: 82.38.64.229
-  port: 8443
-  password: we9_I1893UFj3149xbr1_k8qvJ8734ic_Mx82gH
+  type: vless
+  server: 138.124.60.146
+  port: 443
+  uuid: bbfd1f68-ec64-452f-8404-9e2bcf1df951
   udp: true
+  tls: true
   skip-cert-verify: true
+  reality-opts:
+    public-key: mJ-0fJDvKp0rhuyUvs1bw4RasRRM-BEOAl9iAZ8gXy0
+  servername: usa.oblaco.bet
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
 - name: 🇨🇭 瑞士 (Switzerland) 03 - xiaohe
   type: vless
   server: 138.124.60.146
@@ -38,18 +44,12 @@ proxies:
   client-fingerprint: chrome
   flow: xtls-rprx-vision
 - name: 🇨🇭 瑞士 (Switzerland) 04 - xiaohe
-  type: vless
-  server: 138.124.60.146
-  port: 443
-  uuid: bbfd1f68-ec64-452f-8404-9e2bcf1df951
+  type: hysteria2
+  server: 82.38.64.229
+  port: 8443
+  password: we9_I1893UFj3149xbr1_k8qvJ8734ic_Mx82gH
   udp: true
-  tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: mJ-0fJDvKp0rhuyUvs1bw4RasRRM-BEOAl9iAZ8gXy0
-  servername: usa.oblaco.bet
-  client-fingerprint: ''
-  flow: xtls-rprx-vision
 proxy-groups:
 - name: PROXIES
   type: select
