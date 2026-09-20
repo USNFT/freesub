@@ -6,32 +6,6 @@ log-level: info
 proxies:
 - name: 🇦🇲 AM 01 - xiaohe
   type: vless
-  server: 87.121.47.179
-  port: 443
-  uuid: d0f0a880-0df1-48c9-bdf1-5669fb9483ce
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
-  servername: aotocon.ggisopi.su
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇦🇲 AM 02 - xiaohe
-  type: vless
-  server: aotocon.ggisopi.su
-  port: 443
-  uuid: d0f0a880-0df1-48c9-bdf1-5669fb9483ce
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
-  servername: aotocon.ggisopi.su
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇦🇲 AM 03 - xiaohe
-  type: vless
   server: aotocon.ggisopi.su
   port: 443
   uuid: d0f0a880-0df1-48c9-bdf1-5669fb9483ce
@@ -49,15 +23,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇦🇲 AM 01 - xiaohe
-  - 🇦🇲 AM 02 - xiaohe
-  - 🇦🇲 AM 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇦🇲 AM 01 - xiaohe
-  - 🇦🇲 AM 02 - xiaohe
-  - 🇦🇲 AM 03 - xiaohe
 rules:
 - MATCH,PROXIES
