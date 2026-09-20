@@ -13,67 +13,53 @@ proxies:
   skip-cert-verify: true
 - name: 🇷🇴 罗马尼亚 (Romania) 02 - xiaohe
   type: hysteria2
-  server: 162.249.126.7
+  server: 162.249.126.8
   port: 8443
   password: 9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z
   udp: true
   skip-cert-verify: true
 - name: 🇷🇴 罗马尼亚 (Romania) 03 - xiaohe
   type: hysteria2
-  server: 162.249.126.7
+  server: 162.249.126.6
   port: 8443
   password: 9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z
   udp: true
   skip-cert-verify: true
 - name: 🇷🇴 罗马尼亚 (Romania) 04 - xiaohe
   type: hysteria2
-  server: 162.249.126.7
+  server: 85.204.107.170
   port: 8443
-  password: 9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z
+  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
   udp: true
   skip-cert-verify: true
 - name: 🇷🇴 罗马尼亚 (Romania) 05 - xiaohe
+  type: hysteria2
+  server: 85.204.107.171
+  port: 8443
+  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
+  udp: true
+  skip-cert-verify: true
+- name: 🇷🇴 罗马尼亚 (Romania) 06 - xiaohe
   type: hysteria2
   server: 162.249.126.9
   port: 8443
   password: 9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z
   udp: true
   skip-cert-verify: true
-- name: 🇷🇴 罗马尼亚 (Romania) 06 - xiaohe
-  type: hysteria2
-  server: 85.204.107.187
-  port: 8443
-  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
-  udp: true
-  skip-cert-verify: true
 - name: 🇷🇴 罗马尼亚 (Romania) 07 - xiaohe
-  type: hysteria2
-  server: 85.204.107.187
-  port: 8443
-  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
-  udp: true
-  skip-cert-verify: true
-- name: 🇷🇴 罗马尼亚 (Romania) 08 - xiaohe
   type: hysteria2
   server: 85.204.107.184
   port: 8443
   password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
   udp: true
   skip-cert-verify: true
-- name: 🇷🇴 罗马尼亚 (Romania) 09 - xiaohe
-  type: vless
-  server: 46.28.67.55
-  port: 443
-  uuid: d1a6a033-fdbd-46a6-a177-3370ba042b9f
+- name: 🇷🇴 罗马尼亚 (Romania) 08 - xiaohe
+  type: hysteria2
+  server: 162.249.126.7
+  port: 8443
+  password: 9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z
   udp: true
-  tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: i2dJ1_XGDpp50qpEclh6SWSWkxt4B0t2hi2qOVQbeSU
-    short-id: d06d78e974491b6e
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
 proxy-groups:
 - name: PROXIES
   type: select
@@ -87,7 +73,6 @@ proxy-groups:
   - 🇷🇴 罗马尼亚 (Romania) 06 - xiaohe
   - 🇷🇴 罗马尼亚 (Romania) 07 - xiaohe
   - 🇷🇴 罗马尼亚 (Romania) 08 - xiaohe
-  - 🇷🇴 罗马尼亚 (Romania) 09 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -101,6 +86,5 @@ proxy-groups:
   - 🇷🇴 罗马尼亚 (Romania) 06 - xiaohe
   - 🇷🇴 罗马尼亚 (Romania) 07 - xiaohe
   - 🇷🇴 罗马尼亚 (Romania) 08 - xiaohe
-  - 🇷🇴 罗马尼亚 (Romania) 09 - xiaohe
 rules:
 - MATCH,PROXIES

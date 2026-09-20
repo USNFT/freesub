@@ -5,6 +5,34 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇲🇾 马来西亚 (Malaysia) 01 - xiaohe
+  type: vless
+  server: my1.miyazono-kaori.com
+  port: 443
+  uuid: 355337bc-90f9-4469-8d9a-1e2be6a7a055
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: t3HU7p5iYjE9Lcq2-QHTXZFhpAvoXljTNDgmFkFN-Tc
+    short-id: 99f8972e3dd5ed
+  servername: www.setel.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇲🇾 马来西亚 (Malaysia) 02 - xiaohe
+  type: vless
+  server: my2.miyazono-kaori.com
+  port: 443
+  uuid: 355337bc-90f9-4469-8d9a-1e2be6a7a055
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: R6q8qhMxgq3ynJPUgudaRkcDXj0qgoc_UU1N0SWGLwM
+    short-id: ed77ac35a310
+  servername: www.setel.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇲🇾 马来西亚 (Malaysia) 03 - xiaohe
   type: hysteria2
   server: mlxy1.mangshe.xyz
   port: 2060
@@ -17,11 +45,15 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇲🇾 马来西亚 (Malaysia) 01 - xiaohe
+  - 🇲🇾 马来西亚 (Malaysia) 02 - xiaohe
+  - 🇲🇾 马来西亚 (Malaysia) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇲🇾 马来西亚 (Malaysia) 01 - xiaohe
+  - 🇲🇾 马来西亚 (Malaysia) 02 - xiaohe
+  - 🇲🇾 马来西亚 (Malaysia) 03 - xiaohe
 rules:
 - MATCH,PROXIES
