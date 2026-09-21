@@ -1,0 +1,34 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇲🇾 马来西亚 (Malaysia) 01 - xiaohe
+  type: vless
+  server: clhkzzzdbgwxxndnlm.cfooov.xyz
+  port: 60507
+  uuid: 17ab31f7-c021-4aec-83b2-ab48de8886bd
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: zCNI8OUsvp6NKt52Z_93OoqegAjbVjzP2tHGXd3cQjM
+    short-id: 0888830f7006f1
+  servername: addons.mozilla.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇲🇾 马来西亚 (Malaysia) 01 - xiaohe
+- name: AUTO
+  type: url-test
+  url: https://www.google.com/generate_204
+  interval: 300
+  proxies:
+  - 🇲🇾 马来西亚 (Malaysia) 01 - xiaohe
+rules:
+- MATCH,PROXIES

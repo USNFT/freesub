@@ -6,37 +6,65 @@ log-level: info
 proxies:
 - name: 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
   type: hysteria2
-  server: tishina-axe.dedyn.io
-  port: 8443
-  password: 319ed24b1c7203aa
+  server: 217.60.182.79
+  port: 443
+  password: sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX
   udp: true
   skip-cert-verify: true
 - name: 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
   type: hysteria2
-  server: 31.76.71.63
+  server: 217.60.182.79
   port: 443
   password: sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX
   udp: true
   skip-cert-verify: true
 - name: 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
-  type: hysteria2
-  server: 31.76.71.63
+  type: vless
+  server: 132.243.65.161
   port: 443
-  password: sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX
+  uuid: 4d08aa81-f729-4857-a2e9-06e48b8b9556
   udp: true
+  tls: true
   skip-cert-verify: true
+  reality-opts:
+    public-key: RO5YMxxtJmZo2w370qG-seJ41toowHPbz6i2uXJ2gG0
+    short-id: 7a3f9e2b1c8d4f6a
+  servername: ee.global-cdn.org
+  client-fingerprint: safari
+  flow: xtls-rprx-vision
 - name: 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe
   type: hysteria2
-  server: 217.60.182.79
+  server: 31.76.71.63
   port: 443
   password: sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX
   udp: true
   skip-cert-verify: true
 - name: 🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe
   type: hysteria2
-  server: 217.60.182.79
+  server: tishina-axe.dedyn.io
+  port: 8443
+  password: 319ed24b1c7203aa
+  udp: true
+  skip-cert-verify: true
+- name: 🇪🇪 爱沙尼亚 (Estonia) 06 - xiaohe
+  type: hysteria2
+  server: 31.76.71.63
   port: 443
   password: sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX
+  udp: true
+  skip-cert-verify: true
+- name: 🇪🇪 爱沙尼亚 (Estonia) 07 - xiaohe
+  type: hysteria2
+  server: tishina-axe.dedyn.io
+  port: 8443
+  password: 319ed24b1c7203aa
+  udp: true
+  skip-cert-verify: true
+- name: 🇪🇪 爱沙尼亚 (Estonia) 08 - xiaohe
+  type: hysteria2
+  server: tishina-axe.dedyn.io
+  port: 8443
+  password: 319ed24b1c7203aa
   udp: true
   skip-cert-verify: true
 proxy-groups:
@@ -49,6 +77,9 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
   - 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe
   - 🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe
+  - 🇪🇪 爱沙尼亚 (Estonia) 06 - xiaohe
+  - 🇪🇪 爱沙尼亚 (Estonia) 07 - xiaohe
+  - 🇪🇪 爱沙尼亚 (Estonia) 08 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -59,5 +90,8 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
   - 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe
   - 🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe
+  - 🇪🇪 爱沙尼亚 (Estonia) 06 - xiaohe
+  - 🇪🇪 爱沙尼亚 (Estonia) 07 - xiaohe
+  - 🇪🇪 爱沙尼亚 (Estonia) 08 - xiaohe
 rules:
 - MATCH,PROXIES
