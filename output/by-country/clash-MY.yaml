@@ -6,18 +6,17 @@ log-level: info
 proxies:
 - name: 🇲🇾 马来西亚 (Malaysia) 01 - xiaohe
   type: vless
-  server: clhkzzzdbgwxxndnlm.cfooov.xyz
-  port: 60507
-  uuid: 17ab31f7-c021-4aec-83b2-ab48de8886bd
+  server: upwork.com
+  port: 8880
+  uuid: 05e7abc2-46e1-4a23-9cdc-173ce17eb0d4
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: zCNI8OUsvp6NKt52Z_93OoqegAjbVjzP2tHGXd3cQjM
-    short-id: 0888830f7006f1
-  servername: addons.mozilla.org
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+    headers:
+      Host: round-term-947c.41-332.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select

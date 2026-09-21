@@ -6,17 +6,17 @@ log-level: info
 proxies:
 - name: 🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe
   type: vless
-  server: 45.137.43.88
-  port: 2443
-  uuid: 7cbc0c1f-9aa1-4a4c-a052-45ccc855df10
+  server: 156.226.168.221
+  port: 35193
+  uuid: 35cbae61-ee10-4cb9-abb8-4950b35e9851
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: NRMcsDMeaI-ox1k7hHh0YrdKOSRHpIX3m2NkuwTq62Q
-    short-id: a4
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
+    public-key: d_pn_DMaIxhCkNh80h0Mc7nP94hrlN--I8liOIREDxE
+    short-id: e8daed2d
+  servername: www.apple.com
+  client-fingerprint: chrome
   flow: xtls-rprx-vision
 - name: 🇸🇨 塞舌尔 (Seychelles) 02 - xiaohe
   type: vless
@@ -30,7 +30,7 @@ proxies:
     public-key: d_pn_DMaIxhCkNh80h0Mc7nP94hrlN--I8liOIREDxE
     short-id: e8daed2d
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: ios
   flow: xtls-rprx-vision
 - name: 🇸🇨 塞舌尔 (Seychelles) 03 - xiaohe
   type: vless
@@ -44,7 +44,7 @@ proxies:
     public-key: d_pn_DMaIxhCkNh80h0Mc7nP94hrlN--I8liOIREDxE
     short-id: e8daed2d
   servername: www.apple.com
-  client-fingerprint: firefox
+  client-fingerprint: safari
   flow: xtls-rprx-vision
 - name: 🇸🇨 塞舌尔 (Seychelles) 04 - xiaohe
   type: vless
@@ -58,35 +58,7 @@ proxies:
     public-key: d_pn_DMaIxhCkNh80h0Mc7nP94hrlN--I8liOIREDxE
     short-id: e8daed2d
   servername: www.apple.com
-  client-fingerprint: ios
-  flow: xtls-rprx-vision
-- name: 🇸🇨 塞舌尔 (Seychelles) 05 - xiaohe
-  type: vless
-  server: 156.226.168.221
-  port: 35193
-  uuid: 35cbae61-ee10-4cb9-abb8-4950b35e9851
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: d_pn_DMaIxhCkNh80h0Mc7nP94hrlN--I8liOIREDxE
-    short-id: e8daed2d
-  servername: www.apple.com
-  client-fingerprint: safari
-  flow: xtls-rprx-vision
-- name: 🇸🇨 塞舌尔 (Seychelles) 06 - xiaohe
-  type: vless
-  server: hk3n.wxgqlfx.vip
-  port: 35193
-  uuid: 35cbae61-ee10-4cb9-abb8-4950b35e9851
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: d_pn_DMaIxhCkNh80h0Mc7nP94hrlN--I8liOIREDxE
-    short-id: e8daed2d
-  servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: edge
   flow: xtls-rprx-vision
 proxy-groups:
 - name: PROXIES
@@ -97,8 +69,6 @@ proxy-groups:
   - 🇸🇨 塞舌尔 (Seychelles) 02 - xiaohe
   - 🇸🇨 塞舌尔 (Seychelles) 03 - xiaohe
   - 🇸🇨 塞舌尔 (Seychelles) 04 - xiaohe
-  - 🇸🇨 塞舌尔 (Seychelles) 05 - xiaohe
-  - 🇸🇨 塞舌尔 (Seychelles) 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -108,7 +78,5 @@ proxy-groups:
   - 🇸🇨 塞舌尔 (Seychelles) 02 - xiaohe
   - 🇸🇨 塞舌尔 (Seychelles) 03 - xiaohe
   - 🇸🇨 塞舌尔 (Seychelles) 04 - xiaohe
-  - 🇸🇨 塞舌尔 (Seychelles) 05 - xiaohe
-  - 🇸🇨 塞舌尔 (Seychelles) 06 - xiaohe
 rules:
 - MATCH,PROXIES

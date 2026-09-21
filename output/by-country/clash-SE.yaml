@@ -5,48 +5,23 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 瑞典 (Sweden) 01 - xiaohe
-  type: ss
-  server: 51.170.185.165
-  port: 45819
-  cipher: 2022-blake3-chacha20-poly1305
-  password: u1NAK7Sc9gI0zhd9RVIsisY4VVe58lx0Jvn2QV8QMeo=
-  udp: true
-- name: 🇸🇪 瑞典 (Sweden) 02 - xiaohe
   type: hysteria2
   server: se-node.rumedia-cdn.com
   port: 25443
   password: 29ffde49-e1d6-4dcd-a135-352920f9f0b8
   udp: true
   skip-cert-verify: true
-- name: 🇸🇪 瑞典 (Sweden) 03 - xiaohe
-  type: vless
-  server: svvedko.nxxzxaw.beer
-  port: 443
-  uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: x6p656szvu_3CKLsJ4NtkooRvdTVGx7IoPca_p58_jA
-    short-id: fb442438e2223836
-  servername: svvedko.nxxzxaw.beer
-  client-fingerprint: random
-  flow: xtls-rprx-vision
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇸🇪 瑞典 (Sweden) 01 - xiaohe
-  - 🇸🇪 瑞典 (Sweden) 02 - xiaohe
-  - 🇸🇪 瑞典 (Sweden) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇸🇪 瑞典 (Sweden) 01 - xiaohe
-  - 🇸🇪 瑞典 (Sweden) 02 - xiaohe
-  - 🇸🇪 瑞典 (Sweden) 03 - xiaohe
 rules:
 - MATCH,PROXIES
