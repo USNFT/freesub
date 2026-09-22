@@ -16,7 +16,7 @@ proxies:
     public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
     short-id: ca672c53fbbac555
   servername: www.cloudflare.com
-  client-fingerprint: chrome
+  client-fingerprint: safari
 - name: 🇹🇭 泰国 (Thailand) 02 - xiaohe
   type: vless
   server: 34.15.162.1
@@ -29,7 +29,7 @@ proxies:
     public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
     short-id: ca672c53fbbac555
   servername: www.cloudflare.com
-  client-fingerprint: qq
+  client-fingerprint: chrome
 - name: 🇹🇭 泰国 (Thailand) 03 - xiaohe
   type: vless
   server: 34.15.162.1
@@ -42,7 +42,7 @@ proxies:
     public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
     short-id: ca672c53fbbac555
   servername: www.cloudflare.com
-  client-fingerprint: chrome
+  client-fingerprint: edge
 - name: 🇹🇭 泰国 (Thailand) 04 - xiaohe
   type: vless
   server: 34.15.162.1
@@ -55,7 +55,7 @@ proxies:
     public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
     short-id: ca672c53fbbac555
   servername: www.cloudflare.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇹🇭 泰国 (Thailand) 05 - xiaohe
   type: vless
   server: 34.15.162.1
@@ -68,22 +68,33 @@ proxies:
     public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
     short-id: ca672c53fbbac555
   servername: www.cloudflare.com
-  client-fingerprint: safari
+  client-fingerprint: qq
 - name: 🇹🇭 泰国 (Thailand) 06 - xiaohe
-  type: vmess
-  server: 118.193.57.167
-  port: 49667
-  uuid: d46bf492-45f4-4c33-82d1-ea2a1cb54eb6
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 34.15.162.1
+  port: 443
+  uuid: 2b1d0c2a-9c80-4b72-892e-93d0500b9210
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /d46bf492
-    headers:
-      Host: ''
+  reality-opts:
+    public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
+    short-id: ca672c53fbbac555
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇹🇭 泰国 (Thailand) 07 - xiaohe
+  type: vless
+  server: 34.15.162.1
+  port: 443
+  uuid: 2b1d0c2a-9c80-4b72-892e-93d0500b9210
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
+    short-id: ca672c53fbbac555
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -95,6 +106,7 @@ proxy-groups:
   - 🇹🇭 泰国 (Thailand) 04 - xiaohe
   - 🇹🇭 泰国 (Thailand) 05 - xiaohe
   - 🇹🇭 泰国 (Thailand) 06 - xiaohe
+  - 🇹🇭 泰国 (Thailand) 07 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -106,5 +118,6 @@ proxy-groups:
   - 🇹🇭 泰国 (Thailand) 04 - xiaohe
   - 🇹🇭 泰国 (Thailand) 05 - xiaohe
   - 🇹🇭 泰国 (Thailand) 06 - xiaohe
+  - 🇹🇭 泰国 (Thailand) 07 - xiaohe
 rules:
 - MATCH,PROXIES

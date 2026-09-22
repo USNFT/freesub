@@ -41,7 +41,7 @@ proxies:
   reality-opts:
     public-key: mJ-0fJDvKp0rhuyUvs1bw4RasRRM-BEOAl9iAZ8gXy0
   servername: usa.oblaco.bet
-  client-fingerprint: chrome
+  client-fingerprint: firefox
   flow: xtls-rprx-vision
 - name: 🇨🇭 瑞士 (Switzerland) 04 - xiaohe
   type: vless
@@ -54,7 +54,7 @@ proxies:
   reality-opts:
     public-key: mJ-0fJDvKp0rhuyUvs1bw4RasRRM-BEOAl9iAZ8gXy0
   servername: usa.oblaco.bet
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   flow: xtls-rprx-vision
 - name: 🇨🇭 瑞士 (Switzerland) 05 - xiaohe
   type: vless
@@ -67,7 +67,7 @@ proxies:
   reality-opts:
     public-key: mJ-0fJDvKp0rhuyUvs1bw4RasRRM-BEOAl9iAZ8gXy0
   servername: usa.oblaco.bet
-  client-fingerprint: ''
+  client-fingerprint: chrome
   flow: xtls-rprx-vision
 - name: 🇨🇭 瑞士 (Switzerland) 06 - xiaohe
   type: vless
@@ -83,6 +83,26 @@ proxies:
   client-fingerprint: chrome
   flow: xtls-rprx-vision
 - name: 🇨🇭 瑞士 (Switzerland) 07 - xiaohe
+  type: vless
+  server: 138.124.60.146
+  port: 443
+  uuid: bbfd1f68-ec64-452f-8404-9e2bcf1df951
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: mJ-0fJDvKp0rhuyUvs1bw4RasRRM-BEOAl9iAZ8gXy0
+  servername: usa.oblaco.bet
+  client-fingerprint: ''
+  flow: xtls-rprx-vision
+- name: 🇨🇭 瑞士 (Switzerland) 08 - xiaohe
+  type: hysteria2
+  server: 82.38.64.229
+  port: 8443
+  password: we9_I1893UFj3149xbr1_k8qvJ8734ic_Mx82gH
+  udp: true
+  skip-cert-verify: true
+- name: 🇨🇭 瑞士 (Switzerland) 09 - xiaohe
   type: hysteria2
   server: 82.38.64.229
   port: 8443
@@ -101,6 +121,8 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 05 - xiaohe
   - 🇨🇭 瑞士 (Switzerland) 06 - xiaohe
   - 🇨🇭 瑞士 (Switzerland) 07 - xiaohe
+  - 🇨🇭 瑞士 (Switzerland) 08 - xiaohe
+  - 🇨🇭 瑞士 (Switzerland) 09 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -113,5 +135,7 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 05 - xiaohe
   - 🇨🇭 瑞士 (Switzerland) 06 - xiaohe
   - 🇨🇭 瑞士 (Switzerland) 07 - xiaohe
+  - 🇨🇭 瑞士 (Switzerland) 08 - xiaohe
+  - 🇨🇭 瑞士 (Switzerland) 09 - xiaohe
 rules:
 - MATCH,PROXIES
