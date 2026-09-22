@@ -17,62 +17,17 @@ proxies:
   servername: us04.mcloud.mov
   client-fingerprint: safari
   flow: xtls-rprx-vision
-- name: 🇨🇿 捷克 (Czechia) 02 - xiaohe
-  type: vless
-  server: 95.85.230.35
-  port: 443
-  uuid: bbfd1f68-ec64-452f-8404-9e2bcf1df951
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: mJ-0fJDvKp0rhuyUvs1bw4RasRRM-BEOAl9iAZ8gXy0
-  servername: de.oblaco.bet
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇨🇿 捷克 (Czechia) 03 - xiaohe
-  type: vless
-  server: 95.85.230.35
-  port: 443
-  uuid: bbfd1f68-ec64-452f-8404-9e2bcf1df951
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: mJ-0fJDvKp0rhuyUvs1bw4RasRRM-BEOAl9iAZ8gXy0
-  servername: de.oblaco.bet
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇨🇿 捷克 (Czechia) 04 - xiaohe
-  type: vless
-  server: 95.85.230.35
-  port: 443
-  uuid: bbfd1f68-ec64-452f-8404-9e2bcf1df951
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: mJ-0fJDvKp0rhuyUvs1bw4RasRRM-BEOAl9iAZ8gXy0
-  servername: de.oblaco.bet
-  client-fingerprint: ''
-  flow: xtls-rprx-vision
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇨🇿 捷克 (Czechia) 01 - xiaohe
-  - 🇨🇿 捷克 (Czechia) 02 - xiaohe
-  - 🇨🇿 捷克 (Czechia) 03 - xiaohe
-  - 🇨🇿 捷克 (Czechia) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇨🇿 捷克 (Czechia) 01 - xiaohe
-  - 🇨🇿 捷克 (Czechia) 02 - xiaohe
-  - 🇨🇿 捷克 (Czechia) 03 - xiaohe
-  - 🇨🇿 捷克 (Czechia) 04 - xiaohe
 rules:
 - MATCH,PROXIES

@@ -1,0 +1,43 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe
+  type: hysteria2
+  server: a2c6d68b-tm3mo0-u4mwoi-1jdha.hk3.hyhuawei.com
+  port: 443
+  password: de629d50-1711-11ed-bd7c-f23c913c8d2b
+  udp: true
+  skip-cert-verify: true
+- name: 🇧🇬 保加利亚 (Bulgaria) 02 (家宽) - xiaohe
+  type: vless
+  server: 136.175.82.85
+  port: 18775
+  uuid: 9ae5940b-0278-403d-a1e1-9dddc47bdcf6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: oR75S6pg_RDAKIuzv_WrCiwaUqqFoek2iuo5N22llQQ
+    short-id: 6ba85179e30d4fc2
+  servername: addons.mozilla.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe
+  - 🇧🇬 保加利亚 (Bulgaria) 02 (家宽) - xiaohe
+- name: AUTO
+  type: url-test
+  url: https://www.google.com/generate_204
+  interval: 300
+  proxies:
+  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe
+  - 🇧🇬 保加利亚 (Bulgaria) 02 (家宽) - xiaohe
+rules:
+- MATCH,PROXIES
