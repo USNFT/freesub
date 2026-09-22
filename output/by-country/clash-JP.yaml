@@ -5,6 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇯🇵 日本 (Japan) 01 - xiaohe
+  type: ss
+  server: 149.22.87.204
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇯🇵 日本 (Japan) 02 - xiaohe
+  type: ss
+  server: 149.22.87.241
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇯🇵 日本 (Japan) 03 - xiaohe
   type: vmess
   server: 45.32.57.118
   port: 4433
@@ -14,20 +28,6 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 02 - xiaohe
-  type: ss
-  server: 149.22.87.240
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇯🇵 日本 (Japan) 03 - xiaohe
-  type: ss
-  server: 149.22.87.204
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
 - name: 🇯🇵 日本 (Japan) 04 - xiaohe
   type: vmess
   server: 45.32.57.118
@@ -39,41 +39,67 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇯🇵 日本 (Japan) 05 - xiaohe
-  type: ss
-  server: 149.22.87.241
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
+  type: vmess
+  server: 45.32.57.118
+  port: 4433
+  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
+  alterId: 0
+  cipher: auto
   udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 🇯🇵 日本 (Japan) 06 - xiaohe
-  type: vless
-  server: 154.31.114.248
-  port: 50159
-  uuid: d56624b2-35bb-468c-9b2a-e0b0df7230c1
+  type: vmess
+  server: 45.32.57.118
+  port: 4433
+  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: j4QXngGuJkUGwRj4XIrfHRohYYuEfnJlX4cvCE-WklA
-    short-id: 091e1c5db8451757
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
 - name: 🇯🇵 日本 (Japan) 07 - xiaohe
+  type: vmess
+  server: 168.110.60.104
+  port: 18112
+  uuid: ad45f8f6-0f0a-4cc4-b907-c4582407dc94
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 08 - xiaohe
+  type: vmess
+  server: 168.110.60.104
+  port: 18112
+  uuid: ad45f8f6-0f0a-4cc4-b907-c4582407dc94
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 09 - xiaohe
+  type: ss
+  server: 89.125.244.241
+  port: 10090
+  cipher: aes-256-gcm
+  password: 9cfaa78d51ac366f
+  udp: true
+- name: 🇯🇵 日本 (Japan) 10 - xiaohe
   type: vless
-  server: 151.242.165.75
-  port: 19012
-  uuid: 05453546-201f-4e8d-97ae-fd70da0e951f
+  server: 104.19.174.68
+  port: 443
+  uuid: 7e346122-2ee0-406e-b964-a8ee665f1814
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: xSSSjzSFrsCyp3t5I39sgWFd6a2zKdsLt6vEwCWPKFk
-    short-id: d09eb5a304f8a989
-  servername: www.sony.bg
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇯🇵 日本 (Japan) 08 - xiaohe
+  servername: paRMis-1Tk63J.PArMiS.WoRkeRs.DeV
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: paRMis-1Tk63J.PArMiS.WoRkeRs.DeV
+- name: 🇯🇵 日本 (Japan) 11 - xiaohe
   type: vless
   server: 154.31.114.248
   port: 50159
@@ -87,21 +113,63 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: 🇯🇵 日本 (Japan) 09 - xiaohe
+- name: 🇯🇵 日本 (Japan) 12 - xiaohe
   type: vless
-  server: 47.74.3.200
-  port: 443
-  uuid: 7fb42fab-ea8a-4f0f-af9e-55df8ae6cb1d
+  server: 154.31.114.248
+  port: 50159
+  uuid: d56624b2-35bb-468c-9b2a-e0b0df7230c1
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: kb1uhDsBcfsCD6acCuFcVERW29dscNGIjKPd67NArVk
-    short-id: ab3b914f0c9d9de5
-  servername: www.logitech.com
+    public-key: j4QXngGuJkUGwRj4XIrfHRohYYuEfnJlX4cvCE-WklA
+    short-id: 091e1c5db8451757
+  servername: www.cloudflare.com
+  client-fingerprint: random
+  flow: xtls-rprx-vision
+- name: 🇯🇵 日本 (Japan) 13 - xiaohe
+  type: vless
+  server: 154.31.114.248
+  port: 50159
+  uuid: d56624b2-35bb-468c-9b2a-e0b0df7230c1
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: j4QXngGuJkUGwRj4XIrfHRohYYuEfnJlX4cvCE-WklA
+    short-id: 091e1c5db8451757
+  servername: www.cloudflare.com
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: 🇯🇵 日本 (Japan) 10 - xiaohe
+- name: 🇯🇵 日本 (Japan) 14 - xiaohe
+  type: vless
+  server: 154.31.114.248
+  port: 50159
+  uuid: d56624b2-35bb-468c-9b2a-e0b0df7230c1
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: j4QXngGuJkUGwRj4XIrfHRohYYuEfnJlX4cvCE-WklA
+    short-id: 091e1c5db8451757
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇯🇵 日本 (Japan) 15 - xiaohe
+  type: vless
+  server: 154.31.114.248
+  port: 50159
+  uuid: d56624b2-35bb-468c-9b2a-e0b0df7230c1
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: j4QXngGuJkUGwRj4XIrfHRohYYuEfnJlX4cvCE-WklA
+    short-id: 091e1c5db8451757
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇯🇵 日本 (Japan) 16 - xiaohe
   type: vless
   server: 38.207.130.15
   port: 443
@@ -115,94 +183,38 @@ proxies:
   servername: amazon.com
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: 🇯🇵 日本 (Japan) 11 - xiaohe
-  type: vless
-  server: 3.114.220.22
-  port: 19645
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇯🇵 日本 (Japan) 12 - xiaohe
-  type: vless
-  server: 3.114.220.22
-  port: 10583
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: random
-  flow: xtls-rprx-vision
-- name: 🇯🇵 日本 (Japan) 13 - xiaohe
-  type: vless
-  server: 3.114.220.22
-  port: 19645
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇯🇵 日本 (Japan) 14 - xiaohe
-  type: vless
-  server: 3.114.220.22
-  port: 10583
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇯🇵 日本 (Japan) 15 - xiaohe
-  type: vless
-  server: 3.114.220.22
-  port: 18007
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇯🇵 日本 (Japan) 16 - xiaohe
-  type: vless
-  server: 3.114.220.22
-  port: 18007
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
 - name: 🇯🇵 日本 (Japan) 17 - xiaohe
   type: vless
+  server: 47.74.3.200
+  port: 443
+  uuid: 7fb42fab-ea8a-4f0f-af9e-55df8ae6cb1d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: kb1uhDsBcfsCD6acCuFcVERW29dscNGIjKPd67NArVk
+    short-id: ab3b914f0c9d9de5
+  servername: www.logitech.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇯🇵 日本 (Japan) 18 - xiaohe
+  type: ss
+  server: 84.247.155.196
+  port: 443
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
+  udp: true
+- name: 🇯🇵 日本 (Japan) 19 - xiaohe
+  type: hysteria2
+  server: 45.88.43.116
+  port: 52454
+  password: 6c077487-06af-4fb1-9e46-d485d98f0a31
+  udp: true
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 20 - xiaohe
+  type: vless
   server: 3.114.220.22
-  port: 19645
+  port: 10583
   uuid: 814bd064-544d-4255-a070-5705c03f6da9
   udp: true
   tls: true
@@ -213,52 +225,10 @@ proxies:
   servername: www.apple.com
   client-fingerprint: qq
   flow: xtls-rprx-vision
-- name: 🇯🇵 日本 (Japan) 18 - xiaohe
-  type: vless
-  server: 154.31.114.248
-  port: 50159
-  uuid: d56624b2-35bb-468c-9b2a-e0b0df7230c1
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: j4QXngGuJkUGwRj4XIrfHRohYYuEfnJlX4cvCE-WklA
-    short-id: 091e1c5db8451757
-  servername: www.cloudflare.com
-  client-fingerprint: random
-  flow: xtls-rprx-vision
-- name: 🇯🇵 日本 (Japan) 19 - xiaohe
-  type: vless
-  server: 3.114.220.22
-  port: 18007
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: random
-  flow: xtls-rprx-vision
-- name: 🇯🇵 日本 (Japan) 20 - xiaohe
-  type: vless
-  server: 3.114.220.22
-  port: 18007
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
 - name: 🇯🇵 日本 (Japan) 21 - xiaohe
   type: vless
   server: 3.114.220.22
-  port: 10583
+  port: 18007
   uuid: 814bd064-544d-4255-a070-5705c03f6da9
   udp: true
   tls: true
@@ -267,7 +237,7 @@ proxies:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
     short-id: 48050fab
   servername: www.apple.com
-  client-fingerprint: firefox
+  client-fingerprint: qq
   flow: xtls-rprx-vision
 - name: 🇯🇵 日本 (Japan) 22 - xiaohe
   type: vless
@@ -281,7 +251,7 @@ proxies:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
     short-id: 48050fab
   servername: www.apple.com
-  client-fingerprint: ios
+  client-fingerprint: random
   flow: xtls-rprx-vision
 - name: 🇯🇵 日本 (Japan) 23 - xiaohe
   type: vless
@@ -295,7 +265,7 @@ proxies:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
     short-id: 48050fab
   servername: www.apple.com
-  client-fingerprint: ios
+  client-fingerprint: chrome
   flow: xtls-rprx-vision
 - name: 🇯🇵 日本 (Japan) 24 - xiaohe
   type: vless
@@ -309,7 +279,7 @@ proxies:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
     short-id: 48050fab
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
   flow: xtls-rprx-vision
 - name: 🇯🇵 日本 (Japan) 25 - xiaohe
   type: vless
@@ -328,7 +298,7 @@ proxies:
 - name: 🇯🇵 日本 (Japan) 26 - xiaohe
   type: vless
   server: 3.114.220.22
-  port: 18007
+  port: 10583
   uuid: 814bd064-544d-4255-a070-5705c03f6da9
   udp: true
   tls: true
@@ -342,7 +312,7 @@ proxies:
 - name: 🇯🇵 日本 (Japan) 27 - xiaohe
   type: vless
   server: 3.114.220.22
-  port: 10583
+  port: 18007
   uuid: 814bd064-544d-4255-a070-5705c03f6da9
   udp: true
   tls: true
@@ -354,13 +324,6 @@ proxies:
   client-fingerprint: chrome
   flow: xtls-rprx-vision
 - name: 🇯🇵 日本 (Japan) 28 - xiaohe
-  type: hysteria2
-  server: msjp1.mangshe.xyz
-  port: 20561
-  password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
-  udp: true
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 29 - xiaohe
   type: vless
   server: 3.114.220.22
   port: 19645
@@ -374,15 +337,7 @@ proxies:
   servername: www.apple.com
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: 🇯🇵 日本 (Japan) 30 - xiaohe
-  type: vless
-  server: 137.220.221.179
-  port: 443
-  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 31 - xiaohe
+- name: 🇯🇵 日本 (Japan) 29 - xiaohe
   type: vless
   server: 3.114.220.22
   port: 10583
@@ -394,17 +349,79 @@ proxies:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
     short-id: 48050fab
   servername: www.apple.com
-  client-fingerprint: qq
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+- name: 🇯🇵 日本 (Japan) 30 - xiaohe
+  type: vless
+  server: 3.114.220.22
+  port: 18007
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇯🇵 日本 (Japan) 31 - xiaohe
+  type: vless
+  server: 3.114.220.22
+  port: 18007
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: ios
   flow: xtls-rprx-vision
 - name: 🇯🇵 日本 (Japan) 32 - xiaohe
   type: vless
-  server: 137.220.221.179
-  port: 443
-  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
+  server: 3.114.220.22
+  port: 19645
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
 - name: 🇯🇵 日本 (Japan) 33 - xiaohe
+  type: vless
+  server: 3.114.220.22
+  port: 10583
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇯🇵 日本 (Japan) 34 - xiaohe
+  type: vless
+  server: 3.114.220.22
+  port: 19645
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+- name: 🇯🇵 日本 (Japan) 35 - xiaohe
   type: vless
   server: 3.114.220.22
   port: 10583
@@ -418,30 +435,20 @@ proxies:
   servername: www.apple.com
   client-fingerprint: edge
   flow: xtls-rprx-vision
-- name: 🇯🇵 日本 (Japan) 34 - xiaohe
-  type: vless
-  server: 137.220.221.179
-  port: 443
-  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 35 - xiaohe
-  type: vless
-  server: 137.220.221.179
-  port: 443
-  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
-  udp: true
-  tls: false
-  skip-cert-verify: true
 - name: 🇯🇵 日本 (Japan) 36 - xiaohe
   type: vless
-  server: 137.220.221.179
-  port: 443
-  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
+  server: 3.114.220.22
+  port: 19645
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
 - name: 🇯🇵 日本 (Japan) 37 - xiaohe
   type: vless
   server: 3.114.220.22
@@ -454,15 +461,126 @@ proxies:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
     short-id: 48050fab
   servername: www.apple.com
-  client-fingerprint: qq
+  client-fingerprint: ios
   flow: xtls-rprx-vision
 - name: 🇯🇵 日本 (Japan) 38 - xiaohe
-  type: hysteria2
-  server: msjp1.mangshe.xyz
-  port: 20561
-  password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
+  type: vless
+  server: 3.114.220.22
+  port: 10583
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
   udp: true
+  tls: true
   skip-cert-verify: true
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇯🇵 日本 (Japan) 39 - xiaohe
+  type: vless
+  server: 137.220.221.179
+  port: 443
+  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 40 - xiaohe
+  type: vless
+  server: 137.220.221.179
+  port: 443
+  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 41 - xiaohe
+  type: vless
+  server: 137.220.221.179
+  port: 443
+  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 42 - xiaohe
+  type: vless
+  server: 137.220.221.179
+  port: 443
+  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 43 - xiaohe
+  type: vless
+  server: 137.220.221.179
+  port: 443
+  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 44 - xiaohe
+  type: vless
+  server: 137.220.221.179
+  port: 443
+  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 45 - xiaohe
+  type: vless
+  server: 13.231.19.51
+  port: 11690
+  uuid: e2b8b217-cffb-4d66-9b8b-eca6e4334032
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: Bv3z0_uFRabB9C4CFpNfqepZUyeO4YTh1duJdMBNLkg
+    short-id: 034885e346fd30
+  servername: www.tesla.com
+  client-fingerprint: qq
+  flow: xtls-rprx-vision
+- name: 🇯🇵 日本 (Japan) 46 - xiaohe
+  type: vless
+  server: 3.114.220.22
+  port: 19645
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: qq
+  flow: xtls-rprx-vision
+- name: 🇯🇵 日本 (Japan) 47 - xiaohe
+  type: vless
+  server: 3.114.220.22
+  port: 10583
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: random
+  flow: xtls-rprx-vision
+- name: 🇯🇵 日本 (Japan) 48 - xiaohe
+  type: vless
+  server: 3.114.220.22
+  port: 10583
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
 proxy-groups:
 - name: PROXIES
   type: select
@@ -506,6 +624,16 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 36 - xiaohe
   - 🇯🇵 日本 (Japan) 37 - xiaohe
   - 🇯🇵 日本 (Japan) 38 - xiaohe
+  - 🇯🇵 日本 (Japan) 39 - xiaohe
+  - 🇯🇵 日本 (Japan) 40 - xiaohe
+  - 🇯🇵 日本 (Japan) 41 - xiaohe
+  - 🇯🇵 日本 (Japan) 42 - xiaohe
+  - 🇯🇵 日本 (Japan) 43 - xiaohe
+  - 🇯🇵 日本 (Japan) 44 - xiaohe
+  - 🇯🇵 日本 (Japan) 45 - xiaohe
+  - 🇯🇵 日本 (Japan) 46 - xiaohe
+  - 🇯🇵 日本 (Japan) 47 - xiaohe
+  - 🇯🇵 日本 (Japan) 48 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -549,5 +677,15 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 36 - xiaohe
   - 🇯🇵 日本 (Japan) 37 - xiaohe
   - 🇯🇵 日本 (Japan) 38 - xiaohe
+  - 🇯🇵 日本 (Japan) 39 - xiaohe
+  - 🇯🇵 日本 (Japan) 40 - xiaohe
+  - 🇯🇵 日本 (Japan) 41 - xiaohe
+  - 🇯🇵 日本 (Japan) 42 - xiaohe
+  - 🇯🇵 日本 (Japan) 43 - xiaohe
+  - 🇯🇵 日本 (Japan) 44 - xiaohe
+  - 🇯🇵 日本 (Japan) 45 - xiaohe
+  - 🇯🇵 日本 (Japan) 46 - xiaohe
+  - 🇯🇵 日本 (Japan) 47 - xiaohe
+  - 🇯🇵 日本 (Japan) 48 - xiaohe
 rules:
 - MATCH,PROXIES

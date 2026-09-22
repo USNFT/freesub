@@ -4,25 +4,11 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe
-  type: vless
-  server: dnlmchnmzhmqwah.cfooov.xyz
-  port: 30198
-  uuid: edc17c6e-bb58-4a98-a4a8-ca37aa8b56d2
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 6dy7ISNOWfupnmbmQ2kMVGDBoD9NjNbrbsh8IltocSQ
-    short-id: dcb9c81d1094
-  servername: www.apple.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
+- name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
   type: vless
   server: ttszhrmghgdssbkqf.cfooov.xyz
   port: 42241
-  uuid: edc17c6e-bb58-4a98-a4a8-ca37aa8b56d2
+  uuid: 55848813-689e-4a39-82cf-00748cbc7289
   udp: true
   tls: true
   skip-cert-verify: true
@@ -37,14 +23,12 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES

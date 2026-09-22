@@ -16,18 +16,33 @@ proxies:
     public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
     short-id: 9e419c0759b54d6f
   servername: www.apple.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
+- name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
+  type: vless
+  server: trk2.chaqalli.com
+  port: 8080
+  uuid: 560ecca1-7e20-4b41-b4d6-781fb3bc179d
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2082
+    headers:
+      Host: primevideo.com
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 02 - xiaohe
 rules:
 - MATCH,PROXIES

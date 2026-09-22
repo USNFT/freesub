@@ -5,43 +5,57 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇴 罗马尼亚 (Romania) 01 - xiaohe
-  type: hysteria2
-  server: 85.204.107.171
-  port: 8443
-  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
+  type: vless
+  server: 46.28.67.55
+  port: 443
+  uuid: d1a6a033-fdbd-46a6-a177-3370ba042b9f
   udp: true
+  tls: true
   skip-cert-verify: true
+  reality-opts:
+    public-key: i2dJ1_XGDpp50qpEclh6SWSWkxt4B0t2hi2qOVQbeSU
+    short-id: d06d78e974491b6e
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
 - name: 🇷🇴 罗马尼亚 (Romania) 02 - xiaohe
-  type: hysteria2
-  server: 85.204.107.173
-  port: 8443
-  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
+  type: vless
+  server: 46.28.67.55
+  port: 443
+  uuid: d1a6a033-fdbd-46a6-a177-3370ba042b9f
   udp: true
+  tls: true
   skip-cert-verify: true
+  reality-opts:
+    public-key: i2dJ1_XGDpp50qpEclh6SWSWkxt4B0t2hi2qOVQbeSU
+    short-id: d06d78e974491b6e
+  servername: www.cloudflare.com
+  client-fingerprint: random
+  flow: xtls-rprx-vision
 - name: 🇷🇴 罗马尼亚 (Romania) 03 - xiaohe
   type: hysteria2
-  server: 85.204.107.174
+  server: 85.204.107.181
   port: 8443
   password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
   udp: true
   skip-cert-verify: true
 - name: 🇷🇴 罗马尼亚 (Romania) 04 - xiaohe
   type: hysteria2
-  server: 85.204.107.172
+  server: 85.204.107.176
   port: 8443
   password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
   udp: true
   skip-cert-verify: true
 - name: 🇷🇴 罗马尼亚 (Romania) 05 - xiaohe
   type: hysteria2
-  server: 85.204.107.177
+  server: 85.204.107.175
   port: 8443
   password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
   udp: true
   skip-cert-verify: true
 - name: 🇷🇴 罗马尼亚 (Romania) 06 - xiaohe
   type: hysteria2
-  server: 85.204.107.176
+  server: 85.204.107.184
   port: 8443
   password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
   udp: true
@@ -55,14 +69,14 @@ proxies:
   skip-cert-verify: true
 - name: 🇷🇴 罗马尼亚 (Romania) 08 - xiaohe
   type: hysteria2
-  server: 85.204.107.175
+  server: 85.204.107.172
   port: 8443
   password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
   udp: true
   skip-cert-verify: true
 - name: 🇷🇴 罗马尼亚 (Romania) 09 - xiaohe
   type: hysteria2
-  server: 85.204.107.178
+  server: 85.204.107.177
   port: 8443
   password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
   udp: true

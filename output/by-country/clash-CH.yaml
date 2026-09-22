@@ -41,7 +41,7 @@ proxies:
   reality-opts:
     public-key: mJ-0fJDvKp0rhuyUvs1bw4RasRRM-BEOAl9iAZ8gXy0
   servername: usa.oblaco.bet
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   flow: xtls-rprx-vision
 - name: 🇨🇭 瑞士 (Switzerland) 04 - xiaohe
   type: vless
@@ -54,7 +54,7 @@ proxies:
   reality-opts:
     public-key: mJ-0fJDvKp0rhuyUvs1bw4RasRRM-BEOAl9iAZ8gXy0
   servername: usa.oblaco.bet
-  client-fingerprint: chrome
+  client-fingerprint: ''
   flow: xtls-rprx-vision
 - name: 🇨🇭 瑞士 (Switzerland) 05 - xiaohe
   type: vless
@@ -93,7 +93,7 @@ proxies:
   reality-opts:
     public-key: mJ-0fJDvKp0rhuyUvs1bw4RasRRM-BEOAl9iAZ8gXy0
   servername: usa.oblaco.bet
-  client-fingerprint: ''
+  client-fingerprint: firefox
   flow: xtls-rprx-vision
 - name: 🇨🇭 瑞士 (Switzerland) 08 - xiaohe
   type: hysteria2

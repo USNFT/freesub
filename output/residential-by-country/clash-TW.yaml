@@ -8,7 +8,7 @@ proxies:
   type: vless
   server: ttszhrmghgdssbkqf.cfooov.xyz
   port: 42241
-  uuid: edc17c6e-bb58-4a98-a4a8-ca37aa8b56d2
+  uuid: 55848813-689e-4a39-82cf-00748cbc7289
   udp: true
   tls: true
   skip-cert-verify: true
