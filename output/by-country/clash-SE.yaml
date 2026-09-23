@@ -15,15 +15,21 @@ proxies:
   reality-opts:
     public-key: wSjV1yR_rhDUdoNbM9zIXNGLASLp9RorComnyoayo2c
   servername: www.ikea.com
-  client-fingerprint: qq
+  client-fingerprint: firefox
   flow: xtls-rprx-vision
 - name: 🇸🇪 瑞典 (Sweden) 02 - xiaohe
-  type: hysteria2
-  server: se-node.rumedia-cdn.com
-  port: 25443
-  password: 29ffde49-e1d6-4dcd-a135-352920f9f0b8
+  type: vless
+  server: 143.246.194.213
+  port: 443
+  uuid: dc9e93bc-b53a-11f1-91d3-52540030ba36
   udp: true
+  tls: true
   skip-cert-verify: true
+  reality-opts:
+    public-key: wSjV1yR_rhDUdoNbM9zIXNGLASLp9RorComnyoayo2c
+  servername: www.ikea.com
+  client-fingerprint: qq
+  flow: xtls-rprx-vision
 proxy-groups:
 - name: PROXIES
   type: select
