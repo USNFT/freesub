@@ -19,27 +19,20 @@ proxies:
   udp: true
   skip-cert-verify: true
 - name: 🇵🇱 波兰 (Poland) 03 - xiaohe
-  type: hysteria2
-  server: 45.192.12.93
+  type: vless
+  server: 2.59.253.251
   port: 443
-  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
+  uuid: adc11f30-e4cb-4985-bf5e-f9ded69c019f
   udp: true
+  tls: true
   skip-cert-verify: true
+  reality-opts:
+    public-key: fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI
+    short-id: db04ce8bdb8900f1
+  servername: nvidia.com
+  client-fingerprint: ''
+  flow: xtls-rprx-vision
 - name: 🇵🇱 波兰 (Poland) 04 - xiaohe
-  type: hysteria2
-  server: 45.192.12.93
-  port: 443
-  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
-  udp: true
-  skip-cert-verify: true
-- name: 🇵🇱 波兰 (Poland) 05 - xiaohe
-  type: hysteria2
-  server: admin.wwwinternetvideo.click
-  port: 443
-  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
-  udp: true
-  skip-cert-verify: true
-- name: 🇵🇱 波兰 (Poland) 06 - xiaohe
   type: vless
   server: 144.31.131.38
   port: 443
@@ -53,14 +46,28 @@ proxies:
   servername: prod.pl-node-01.security-sbrf.ru
   client-fingerprint: firefox
   flow: xtls-rprx-vision
-- name: 🇵🇱 波兰 (Poland) 07 - xiaohe
+- name: 🇵🇱 波兰 (Poland) 05 - xiaohe
   type: hysteria2
   server: admin.wwwinternetvideo.click
   port: 443
   password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
   udp: true
   skip-cert-verify: true
-- name: 🇵🇱 波兰 (Poland) 08 - xiaohe
+- name: 🇵🇱 波兰 (Poland) 06 - xiaohe
+  type: vless
+  server: 144.31.171.108
+  port: 8444
+  uuid: 02bd8b5a-170b-4a79-8e68-9cec710272c7
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: ltHl15Wq549qC2JdAtesy-POs6Hwm_BbrlzuwDkWoUk
+    short-id: 93f5b0d1a8ce6247
+  servername: pl1.chromevpn.cc
+  client-fingerprint: ''
+  flow: xtls-rprx-vision
+- name: 🇵🇱 波兰 (Poland) 07 - xiaohe
   type: vless
   server: 185.138.90.95
   port: 8443
@@ -73,6 +80,13 @@ proxies:
     short-id: 7c8e3d4a9b1f26d3
   servername: web.max.ru
   client-fingerprint: safari
+- name: 🇵🇱 波兰 (Poland) 08 - xiaohe
+  type: hysteria2
+  server: 144.31.49.47
+  port: 443
+  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
+  udp: true
+  skip-cert-verify: true
 - name: 🇵🇱 波兰 (Poland) 09 - xiaohe
   type: hysteria2
   server: 144.31.49.47
@@ -87,41 +101,6 @@ proxies:
   password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
   udp: true
   skip-cert-verify: true
-- name: 🇵🇱 波兰 (Poland) 11 - xiaohe
-  type: hysteria2
-  server: 144.31.49.47
-  port: 443
-  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
-  udp: true
-  skip-cert-verify: true
-- name: 🇵🇱 波兰 (Poland) 12 - xiaohe
-  type: hysteria2
-  server: 144.31.49.47
-  port: 443
-  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
-  udp: true
-  skip-cert-verify: true
-- name: 🇵🇱 波兰 (Poland) 13 - xiaohe
-  type: hysteria2
-  server: go.wwwinternetvideo.click
-  port: 443
-  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
-  udp: true
-  skip-cert-verify: true
-- name: 🇵🇱 波兰 (Poland) 14 - xiaohe
-  type: hysteria2
-  server: go.wwwinternetvideo.click
-  port: 443
-  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
-  udp: true
-  skip-cert-verify: true
-- name: 🇵🇱 波兰 (Poland) 15 - xiaohe
-  type: ss
-  server: 146.59.116.19
-  port: 17000
-  cipher: aes-256-gcm
-  password: pX0uhU3ZjUcLWYs0Vez55BO3JoQrRlL
-  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -137,11 +116,6 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 08 - xiaohe
   - 🇵🇱 波兰 (Poland) 09 - xiaohe
   - 🇵🇱 波兰 (Poland) 10 - xiaohe
-  - 🇵🇱 波兰 (Poland) 11 - xiaohe
-  - 🇵🇱 波兰 (Poland) 12 - xiaohe
-  - 🇵🇱 波兰 (Poland) 13 - xiaohe
-  - 🇵🇱 波兰 (Poland) 14 - xiaohe
-  - 🇵🇱 波兰 (Poland) 15 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -157,10 +131,5 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 08 - xiaohe
   - 🇵🇱 波兰 (Poland) 09 - xiaohe
   - 🇵🇱 波兰 (Poland) 10 - xiaohe
-  - 🇵🇱 波兰 (Poland) 11 - xiaohe
-  - 🇵🇱 波兰 (Poland) 12 - xiaohe
-  - 🇵🇱 波兰 (Poland) 13 - xiaohe
-  - 🇵🇱 波兰 (Poland) 14 - xiaohe
-  - 🇵🇱 波兰 (Poland) 15 - xiaohe
 rules:
 - MATCH,PROXIES

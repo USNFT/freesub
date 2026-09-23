@@ -21,6 +21,14 @@ proxies:
   skip-cert-verify: true
 - name: 🇮🇹 意大利 (Italy) 03 - xiaohe
   type: vless
+  server: 204.216.216.23
+  port: 10086
+  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇮🇹 意大利 (Italy) 04 - xiaohe
+  type: vless
   server: 31.77.201.33
   port: 443
   uuid: c5694dc5-39fd-4a92-8430-3837baa522a3
@@ -33,7 +41,7 @@ proxies:
   servername: italia.superbuba.top
   client-fingerprint: firefox
   flow: xtls-rprx-vision
-- name: 🇮🇹 意大利 (Italy) 04 - xiaohe
+- name: 🇮🇹 意大利 (Italy) 05 - xiaohe
   type: vless
   server: 204.216.216.23
   port: 10086
@@ -50,6 +58,7 @@ proxy-groups:
   - 🇮🇹 意大利 (Italy) 02 - xiaohe
   - 🇮🇹 意大利 (Italy) 03 - xiaohe
   - 🇮🇹 意大利 (Italy) 04 - xiaohe
+  - 🇮🇹 意大利 (Italy) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -59,5 +68,6 @@ proxy-groups:
   - 🇮🇹 意大利 (Italy) 02 - xiaohe
   - 🇮🇹 意大利 (Italy) 03 - xiaohe
   - 🇮🇹 意大利 (Italy) 04 - xiaohe
+  - 🇮🇹 意大利 (Italy) 05 - xiaohe
 rules:
 - MATCH,PROXIES

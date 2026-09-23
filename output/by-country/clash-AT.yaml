@@ -16,7 +16,7 @@ proxies:
     public-key: 3Qh9roHIRJtLEM-gV_hudQrY6wPK_Dc3ePVtWLGqYho
     short-id: ef7db38f625526f5
   servername: www.goo.gl
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select

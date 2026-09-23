@@ -5,13 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
-  type: hysteria2
-  server: 217.60.182.79
-  port: 443
-  password: sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX
-  udp: true
-  skip-cert-verify: true
-- name: 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
   type: vless
   server: 94.183.170.135
   port: 443
@@ -24,46 +17,17 @@ proxies:
     path: /
     headers:
       Host: 94.183.170.135
-- name: 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
-  type: hysteria2
-  server: 217.60.182.79
-  port: 443
-  password: sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX
-  udp: true
-  skip-cert-verify: true
-- name: 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe
-  type: hysteria2
-  server: 31.76.71.63
-  port: 443
-  password: sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX
-  udp: true
-  skip-cert-verify: true
-- name: 🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe
-  type: hysteria2
-  server: 31.76.71.63
-  port: 443
-  password: sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX
-  udp: true
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
-  - 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
-  - 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
-  - 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe
-  - 🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
-  - 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
-  - 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
-  - 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe
-  - 🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe
 rules:
 - MATCH,PROXIES

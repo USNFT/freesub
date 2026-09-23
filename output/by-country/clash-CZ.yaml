@@ -1,0 +1,33 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇨🇿 捷克 (Czechia) 01 - xiaohe
+  type: vless
+  server: lataeo.gmail.com.admni.ir
+  port: 51972
+  uuid: 140d54e9-fe85-4c63-8259-5bf9b3e29349
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: QzfL6yDSIj3j2ItnDGhN_x-FDF-2ixg62Dk5LjnTj1A
+    short-id: 00e6e7ec8f972bc4
+  servername: www.coingecko.com
+  client-fingerprint: chrome
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇨🇿 捷克 (Czechia) 01 - xiaohe
+- name: AUTO
+  type: url-test
+  url: https://www.google.com/generate_204
+  interval: 300
+  proxies:
+  - 🇨🇿 捷克 (Czechia) 01 - xiaohe
+rules:
+- MATCH,PROXIES
