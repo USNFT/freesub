@@ -6,16 +6,20 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🌐 其他地区 (Other) 01 - xiaohe",
-        "🌐 其他地区 (Other) 02 - xiaohe"
+        "🇪🇸 西班牙 (Spain) 01 - xiaohe",
+        "🇪🇸 西班牙 (Spain) 02 - xiaohe",
+        "🇪🇸 西班牙 (Spain) 03 - xiaohe",
+        "🇪🇸 西班牙 (Spain) 04 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🌐 其他地区 (Other) 01 - xiaohe",
-        "🌐 其他地区 (Other) 02 - xiaohe"
+        "🇪🇸 西班牙 (Spain) 01 - xiaohe",
+        "🇪🇸 西班牙 (Spain) 02 - xiaohe",
+        "🇪🇸 西班牙 (Spain) 03 - xiaohe",
+        "🇪🇸 西班牙 (Spain) 04 - xiaohe"
       ],
       "url": "https://www.google.com/generate_204"
     },

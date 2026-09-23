@@ -12,24 +12,16 @@ proxies:
   udp: true
   skip-cert-verify: true
 - name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
-  type: hysteria2
-  server: iq5ny.pleiades.codes
-  port: 8443
-  password: 0dca2cfe-98eb-4f9d-9a47-cf87510c558b
-  udp: true
-  skip-cert-verify: true
-- name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
   type: vless
-  server: 62.238.103.54
-  port: 2083
-  uuid: d78de562-872e-43dd-be48-e9d7b06c87a3
+  server: 62.60.229.124
+  port: 8443
+  uuid: 5b754a1a-11aa-4df9-a8ba-44af9a579fe1
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: tADYkZWWksM_mCqqwlRHCciSCXnP3JMYrPi5eoRHh2s
-    short-id: d059fb98048c5318
-  servername: www.yahoo.com
+    public-key: MjRaYQ5TjfU2rfHxVQ2Sa4nXRHHvsMvi3DW-x09n8Ts
+  servername: finland.b2ai.top
   client-fingerprint: chrome
   flow: xtls-rprx-vision
 proxy-groups:
@@ -39,7 +31,6 @@ proxy-groups:
   - AUTO
   - 🇫🇮 芬兰 (Finland) 01 - xiaohe
   - 🇫🇮 芬兰 (Finland) 02 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -47,6 +38,5 @@ proxy-groups:
   proxies:
   - 🇫🇮 芬兰 (Finland) 01 - xiaohe
   - 🇫🇮 芬兰 (Finland) 02 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 03 - xiaohe
 rules:
 - MATCH,PROXIES

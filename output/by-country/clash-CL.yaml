@@ -16,7 +16,7 @@ proxies:
     public-key: 3ekBKAuIIAOjtkKJ0T-qpC7uJsqsY2fVLRB6C70A5hw
     short-id: d7676b6a468a03b3
   servername: www.cloudflare.com
-  client-fingerprint: random
+  client-fingerprint: chrome
 - name: 🇨🇱 CL 02 - xiaohe
   type: vless
   server: 34.176.98.128
@@ -29,7 +29,7 @@ proxies:
     public-key: 3ekBKAuIIAOjtkKJ0T-qpC7uJsqsY2fVLRB6C70A5hw
     short-id: d7676b6a468a03b3
   servername: www.cloudflare.com
-  client-fingerprint: ios
+  client-fingerprint: chrome
 - name: 🇨🇱 CL 03 - xiaohe
   type: vless
   server: 34.176.98.128
@@ -45,7 +45,7 @@ proxies:
   client-fingerprint: chrome
 - name: 🇨🇱 CL 04 - xiaohe
   type: vless
-  server: platform118.golnamakcert.top
+  server: platform113.golnamakcert.top
   port: 80
   uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   udp: true
@@ -53,9 +53,9 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /platform118
+    path: /platform113
     headers:
-      Host: platform118.golnamakcert.top
+      Host: platform113.halalkhor.info
 proxy-groups:
 - name: PROXIES
   type: select
