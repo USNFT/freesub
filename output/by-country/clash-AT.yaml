@@ -5,12 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇹 奥地利 (Austria) 01 - xiaohe
-  type: ss
-  server: 82.110.60.9
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  type: vless
+  server: 171.22.114.98
+  port: 443
+  uuid: d929e993-8053-488a-8a22-0ae09f706a2e
   udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 3Qh9roHIRJtLEM-gV_hudQrY6wPK_Dc3ePVtWLGqYho
+    short-id: ef7db38f625526f5
+  servername: www.goo.gl
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select

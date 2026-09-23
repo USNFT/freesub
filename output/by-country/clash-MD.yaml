@@ -30,20 +30,6 @@ proxies:
     public-key: cYwrRCz_hKgT_JE8WywuLE3XOkAEqCTuBiUvXAaEjn8
     short-id: 694ee64512cfcbef
   servername: moldova.cdn-europe.org
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇲🇩 MD 03 - xiaohe
-  type: vless
-  server: moldova.cdn-europe.org
-  port: 4443
-  uuid: d7c94b82-657a-4bb7-9b24-2ae566669835
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: cYwrRCz_hKgT_JE8WywuLE3XOkAEqCTuBiUvXAaEjn8
-    short-id: 694ee64512cfcbef
-  servername: moldova.cdn-europe.org
   client-fingerprint: random
   flow: xtls-rprx-vision
 proxy-groups:
@@ -53,7 +39,6 @@ proxy-groups:
   - AUTO
   - 🇲🇩 MD 01 - xiaohe
   - 🇲🇩 MD 02 - xiaohe
-  - 🇲🇩 MD 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -61,6 +46,5 @@ proxy-groups:
   proxies:
   - 🇲🇩 MD 01 - xiaohe
   - 🇲🇩 MD 02 - xiaohe
-  - 🇲🇩 MD 03 - xiaohe
 rules:
 - MATCH,PROXIES
