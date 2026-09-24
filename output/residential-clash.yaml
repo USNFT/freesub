@@ -4,19 +4,19 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇯🇵 日本 (Japan) 01 (家宽) - xiaohe
+- name: 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
   type: vless
-  server: 104.26.13.40
-  port: 8880
-  uuid: 875d3876-ab9a-4dd6-8a8d-bf57f03403aa
+  server: 172.64.52.6
+  port: 2052
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
+    path: /?ed=2560security=tls
     headers:
-      Host: square-sea-01d1.339-be3.workers.dev
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 🇧🇬 保加利亚 (Bulgaria) 02 (家宽) - xiaohe
   type: vless
   server: 136.175.82.85
@@ -31,33 +31,19 @@ proxies:
   servername: addons.mozilla.org
   client-fingerprint: ''
   flow: xtls-rprx-vision
-- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
-  type: vless
-  server: 118.167.206.152
-  port: 24215
-  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
-  servername: addons.mozilla.org
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇯🇵 日本 (Japan) 01 (家宽) - xiaohe
+  - 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
   - 🇧🇬 保加利亚 (Bulgaria) 02 (家宽) - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇯🇵 日本 (Japan) 01 (家宽) - xiaohe
+  - 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
   - 🇧🇬 保加利亚 (Bulgaria) 02 (家宽) - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES
