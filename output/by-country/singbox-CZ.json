@@ -6,18 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇿 捷克 (Czechia) 01 - xiaohe",
-        "🇨🇿 捷克 (Czechia) 02 - xiaohe",
-        "🇨🇿 捷克 (Czechia) 03 - xiaohe"
+        "🇨🇿 捷克 (Czechia) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇿 捷克 (Czechia) 01 - xiaohe",
-        "🇨🇿 捷克 (Czechia) 02 - xiaohe",
-        "🇨🇿 捷克 (Czechia) 03 - xiaohe"
+        "🇨🇿 捷克 (Czechia) 01 - xiaohe"
       ],
       "url": "https://www.google.com/generate_204"
     },

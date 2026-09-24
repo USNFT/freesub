@@ -6,41 +6,28 @@ log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - xiaohe
   type: vless
-  server: 122.8.44.9
-  port: 443
-  uuid: 72d334af-a4e9-ed8f-cbec-75317ce0b463
+  server: trk2.chaqalli.com
+  port: 8080
+  uuid: 560ecca1-7e20-4b41-b4d6-781fb3bc179d
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: D2SXHZRRYM0WcFChGWd57XB-U73aIsGfMpe2-Gq5XSs
-  servername: download.nvidia.com
-  client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
-  type: vless
-  server: 122.8.44.9
-  port: 443
-  uuid: 72d334af-a4e9-ed8f-cbec-75317ce0b463
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: D2SXHZRRYM0WcFChGWd57XB-U73aIsGfMpe2-Gq5XSs
-  servername: download.nvidia.com
-  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /?ed=2082
+    headers:
+      Host: primevideo.com
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 02 - xiaohe
 rules:
 - MATCH,PROXIES
