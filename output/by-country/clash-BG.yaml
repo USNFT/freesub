@@ -7,6 +7,19 @@ proxies:
 - name: 🇧🇬 保加利亚 (Bulgaria) 01 - xiaohe
   type: vless
   server: 131.123.41.18
+  port: 8081
+  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless-test
+    headers:
+      Host: 131.123.41.18
+- name: 🇧🇬 保加利亚 (Bulgaria) 02 - xiaohe
+  type: vless
+  server: 131.123.41.18
   port: 443
   uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
   udp: true
@@ -18,17 +31,34 @@ proxies:
   servername: sheetpeek.com
   client-fingerprint: ''
   flow: xtls-rprx-vision
+- name: 🇧🇬 保加利亚 (Bulgaria) 03 - xiaohe
+  type: vless
+  server: 131.123.41.31
+  port: 8081
+  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless-test
+    headers:
+      Host: 131.123.41.31
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇧🇬 保加利亚 (Bulgaria) 01 - xiaohe
+  - 🇧🇬 保加利亚 (Bulgaria) 02 - xiaohe
+  - 🇧🇬 保加利亚 (Bulgaria) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇧🇬 保加利亚 (Bulgaria) 01 - xiaohe
+  - 🇧🇬 保加利亚 (Bulgaria) 02 - xiaohe
+  - 🇧🇬 保加利亚 (Bulgaria) 03 - xiaohe
 rules:
 - MATCH,PROXIES
