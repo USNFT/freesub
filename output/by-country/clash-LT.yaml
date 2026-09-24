@@ -20,48 +20,6 @@ proxies:
   flow: xtls-rprx-vision
 - name: 🇱🇹 LT 02 - xiaohe
   type: vless
-  server: 188.225.44.89
-  port: 443
-  uuid: 7cde4592-4758-415f-8b97-c188faa4d1c9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: Fgd7fSq-ZXnAZd3GUYGEfTyiz9wno4IWVIcs7-Narwg
-    short-id: f73ac93d
-  servername: app12.betust.net
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇱🇹 LT 03 - xiaohe
-  type: vless
-  server: 188.225.25.142
-  port: 443
-  uuid: 7cde4592-4758-415f-8b97-c188faa4d1c9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: SxbaWzlvE_HQqqsA4PNX2PFcSYXTVE2nZlgLc7cPOgk
-    short-id: 8681edc9
-  servername: prime.betust.net
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇱🇹 LT 04 - xiaohe
-  type: vless
-  server: 188.225.35.207
-  port: 443
-  uuid: 7cde4592-4758-415f-8b97-c188faa4d1c9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: -lLmJilTNFk_DYxnbvWJH_swC9a5JRheZrN1KPVMjCc
-    short-id: 219a891b
-  servername: demo.betust.net
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇱🇹 LT 05 - xiaohe
-  type: vless
   server: 188.225.24.201
   port: 443
   uuid: 7cde4592-4758-415f-8b97-c188faa4d1c9
@@ -81,9 +39,6 @@ proxy-groups:
   - AUTO
   - 🇱🇹 LT 01 - xiaohe
   - 🇱🇹 LT 02 - xiaohe
-  - 🇱🇹 LT 03 - xiaohe
-  - 🇱🇹 LT 04 - xiaohe
-  - 🇱🇹 LT 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -91,8 +46,5 @@ proxy-groups:
   proxies:
   - 🇱🇹 LT 01 - xiaohe
   - 🇱🇹 LT 02 - xiaohe
-  - 🇱🇹 LT 03 - xiaohe
-  - 🇱🇹 LT 04 - xiaohe
-  - 🇱🇹 LT 05 - xiaohe
 rules:
 - MATCH,PROXIES
