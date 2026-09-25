@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇦🇺 澳大利亚 (Australia) 01 - xiaohe
   type: vmess
-  server: 82.198.246.97
+  server: 82.198.246.233
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
@@ -64,7 +64,7 @@ proxies:
     public-key: gCAazs5uxNuMZIxfDdw8wPE0nwKY4QfBfBkQveKAkEk
     short-id: 0ad08b47f498efd2
   servername: www.cloudflare.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   flow: xtls-rprx-vision
 - name: 🇦🇺 澳大利亚 (Australia) 06 - xiaohe
   type: vless
@@ -78,7 +78,7 @@ proxies:
     public-key: gCAazs5uxNuMZIxfDdw8wPE0nwKY4QfBfBkQveKAkEk
     short-id: 0ad08b47f498efd2
   servername: www.cloudflare.com
-  client-fingerprint: random
+  client-fingerprint: firefox
   flow: xtls-rprx-vision
 - name: 🇦🇺 澳大利亚 (Australia) 07 - xiaohe
   type: vless
@@ -92,7 +92,7 @@ proxies:
     public-key: gCAazs5uxNuMZIxfDdw8wPE0nwKY4QfBfBkQveKAkEk
     short-id: 0ad08b47f498efd2
   servername: www.cloudflare.com
-  client-fingerprint: firefox
+  client-fingerprint: random
   flow: xtls-rprx-vision
 - name: 🇦🇺 澳大利亚 (Australia) 08 - xiaohe
   type: vless
@@ -106,77 +106,7 @@ proxies:
     public-key: gCAazs5uxNuMZIxfDdw8wPE0nwKY4QfBfBkQveKAkEk
     short-id: 0ad08b47f498efd2
   servername: www.cloudflare.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇦🇺 澳大利亚 (Australia) 09 - xiaohe
-  type: vless
-  server: au1.gsafevpnapi.com
-  port: 20270
-  uuid: 6eef3a79-22bc-4086-b5e6-95e07db73016
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: RHLiKldLu3DONcQoX4Kjs7Xmd2K25ndVbw4pwxe45XE
-    short-id: e6a5a4a9115456de
-  servername: www.yahoo.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇦🇺 澳大利亚 (Australia) 10 - xiaohe
-  type: vless
-  server: au1.gsafevpnapi.com
-  port: 20270
-  uuid: 6eef3a79-22bc-4086-b5e6-95e07db73016
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: RHLiKldLu3DONcQoX4Kjs7Xmd2K25ndVbw4pwxe45XE
-    short-id: e6a5a4a9115456de
-  servername: www.yahoo.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇦🇺 澳大利亚 (Australia) 11 - xiaohe
-  type: vless
-  server: au1.gsafevpnapi.com
-  port: 20270
-  uuid: 6eef3a79-22bc-4086-b5e6-95e07db73016
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: RHLiKldLu3DONcQoX4Kjs7Xmd2K25ndVbw4pwxe45XE
-    short-id: e6a5a4a9115456de
-  servername: www.yahoo.com
-  client-fingerprint: random
-  flow: xtls-rprx-vision
-- name: 🇦🇺 澳大利亚 (Australia) 12 - xiaohe
-  type: vless
-  server: au1.gsafevpnapi.com
-  port: 20270
-  uuid: 6eef3a79-22bc-4086-b5e6-95e07db73016
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: RHLiKldLu3DONcQoX4Kjs7Xmd2K25ndVbw4pwxe45XE
-    short-id: e6a5a4a9115456de
-  servername: www.yahoo.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇦🇺 澳大利亚 (Australia) 13 - xiaohe
-  type: vless
-  server: au1.gsafevpnapi.com
-  port: 20270
-  uuid: 6eef3a79-22bc-4086-b5e6-95e07db73016
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: RHLiKldLu3DONcQoX4Kjs7Xmd2K25ndVbw4pwxe45XE
-    short-id: e6a5a4a9115456de
-  servername: www.yahoo.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
   flow: xtls-rprx-vision
 proxy-groups:
 - name: PROXIES
@@ -191,11 +121,6 @@ proxy-groups:
   - 🇦🇺 澳大利亚 (Australia) 06 - xiaohe
   - 🇦🇺 澳大利亚 (Australia) 07 - xiaohe
   - 🇦🇺 澳大利亚 (Australia) 08 - xiaohe
-  - 🇦🇺 澳大利亚 (Australia) 09 - xiaohe
-  - 🇦🇺 澳大利亚 (Australia) 10 - xiaohe
-  - 🇦🇺 澳大利亚 (Australia) 11 - xiaohe
-  - 🇦🇺 澳大利亚 (Australia) 12 - xiaohe
-  - 🇦🇺 澳大利亚 (Australia) 13 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -209,10 +134,5 @@ proxy-groups:
   - 🇦🇺 澳大利亚 (Australia) 06 - xiaohe
   - 🇦🇺 澳大利亚 (Australia) 07 - xiaohe
   - 🇦🇺 澳大利亚 (Australia) 08 - xiaohe
-  - 🇦🇺 澳大利亚 (Australia) 09 - xiaohe
-  - 🇦🇺 澳大利亚 (Australia) 10 - xiaohe
-  - 🇦🇺 澳大利亚 (Australia) 11 - xiaohe
-  - 🇦🇺 澳大利亚 (Australia) 12 - xiaohe
-  - 🇦🇺 澳大利亚 (Australia) 13 - xiaohe
 rules:
 - MATCH,PROXIES

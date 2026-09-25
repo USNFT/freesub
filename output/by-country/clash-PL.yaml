@@ -26,6 +26,13 @@ proxies:
   udp: true
   skip-cert-verify: true
 - name: 🇵🇱 波兰 (Poland) 04 - xiaohe
+  type: hysteria2
+  server: admin.wwwinternetvideo.click
+  port: 443
+  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
+  udp: true
+  skip-cert-verify: true
+- name: 🇵🇱 波兰 (Poland) 05 - xiaohe
   type: vless
   server: 144.31.131.38
   port: 443
@@ -39,13 +46,6 @@ proxies:
   servername: prod.pl-node-01.security-sbrf.ru
   client-fingerprint: firefox
   flow: xtls-rprx-vision
-- name: 🇵🇱 波兰 (Poland) 05 - xiaohe
-  type: ss
-  server: 146.59.116.19
-  port: 17000
-  cipher: aes-256-gcm
-  password: pX0uhU3ZjUcLWYs0Vez55BO3JoQrRlL
-  udp: true
 - name: 🇵🇱 波兰 (Poland) 06 - xiaohe
   type: hysteria2
   server: 144.31.49.47
@@ -69,20 +69,6 @@ proxies:
   skip-cert-verify: true
 - name: 🇵🇱 波兰 (Poland) 09 - xiaohe
   type: vless
-  server: pl.bubahero.com
-  port: 443
-  uuid: c5694dc5-39fd-4a92-8430-3837baa522a3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: GmZv3anSeAeHr_cMFKr-6MPLli-nyKNatnY6P3AFK00
-    short-id: 9c2378562188c3cb
-  servername: pl.bubahero.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇵🇱 波兰 (Poland) 10 - xiaohe
-  type: vless
   server: 95.85.254.153
   port: 443
   uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
@@ -94,6 +80,20 @@ proxies:
     short-id: ff776ff77be48b88
   servername: polka.stopingiphatered.shop
   client-fingerprint: firefox
+  flow: xtls-rprx-vision
+- name: 🇵🇱 波兰 (Poland) 10 - xiaohe
+  type: vless
+  server: 144.31.131.38
+  port: 443
+  uuid: adc11f30-e4cb-4985-bf5e-f9ded69c019f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI
+    short-id: db04ce8bdb8900f1
+  servername: prod.pl-node-01.security-sbrf.ru
+  client-fingerprint: chrome
   flow: xtls-rprx-vision
 proxy-groups:
 - name: PROXIES

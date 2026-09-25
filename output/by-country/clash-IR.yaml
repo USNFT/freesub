@@ -6,20 +6,6 @@ log-level: info
 proxies:
 - name: 🇮🇷 IR 01 - xiaohe
   type: vless
-  server: 62.60.152.1
-  port: 56328
-  uuid: ce230b9c-0531-40da-bc3f-f27a8e059db1
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: iI1pc8k9-mIPHL2Dga-4n4h3KoBT68lN434nglpgm2M
-    short-id: f3a9c21e8b6d4571
-  servername: table.vkroom-it-service.xyz
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇮🇷 IR 02 - xiaohe
-  type: vless
   server: 62.60.245.148
   port: 443
   uuid: eec2f6a7-c10f-43b0-b133-61f9bf9bbc27
@@ -38,13 +24,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇮🇷 IR 01 - xiaohe
-  - 🇮🇷 IR 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇮🇷 IR 01 - xiaohe
-  - 🇮🇷 IR 02 - xiaohe
 rules:
 - MATCH,PROXIES
