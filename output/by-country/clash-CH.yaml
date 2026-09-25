@@ -32,19 +32,6 @@ proxies:
   password: we9_I1893UFj3149xbr1_k8qvJ8734ic_Mx82gH
   udp: true
   skip-cert-verify: true
-- name: 🇨🇭 瑞士 (Switzerland) 05 - xiaohe
-  type: vless
-  server: 72.56.35.81
-  port: 443
-  uuid: 13ef8e97-815a-000b-8688-0154d85d26bf
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: Fe5PnOaERhhHbBXhGBEsQaRUBpSM8hCc03zOEpHz218
-    short-id: 51b784e13468
-  servername: ru19.aimodelhub.top
-  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
@@ -54,7 +41,6 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 02 - xiaohe
   - 🇨🇭 瑞士 (Switzerland) 03 - xiaohe
   - 🇨🇭 瑞士 (Switzerland) 04 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -64,6 +50,5 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 02 - xiaohe
   - 🇨🇭 瑞士 (Switzerland) 03 - xiaohe
   - 🇨🇭 瑞士 (Switzerland) 04 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 05 - xiaohe
 rules:
 - MATCH,PROXIES

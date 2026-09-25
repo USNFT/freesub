@@ -20,7 +20,7 @@ proxies:
   flow: xtls-rprx-vision
 - name: 🇨🇿 捷克 (Czechia) 02 - xiaohe
   type: vless
-  server: gerwai1488.vvzzkontaktezzvv.garden
+  server: 87.120.216.144
   port: 443
   uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
   udp: true
@@ -34,7 +34,7 @@ proxies:
   flow: xtls-rprx-vision
 - name: 🇨🇿 捷克 (Czechia) 03 - xiaohe
   type: vless
-  server: 87.120.216.144
+  server: gerwai1488.vvzzkontaktezzvv.garden
   port: 443
   uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
   udp: true

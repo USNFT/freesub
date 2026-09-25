@@ -6,20 +6,6 @@ log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - xiaohe
   type: vless
-  server: 138.124.121.233
-  port: 443
-  uuid: 8e826a69-63f6-0001-a67d-4a1958e8b2d2
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: WWeAHWUVD-phmnjNJ823cer0c4CMIbEs08AhsuEZmDc
-    short-id: a696de84963656de
-  servername: amd.com
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
-  type: vless
   server: 95.216.27.15
   port: 2053
   uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
@@ -31,56 +17,18 @@ proxies:
     short-id: d368b94e275ab080
   servername: www.google.com
   client-fingerprint: ''
+- name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
+  type: hysteria2
+  server: iq5ny.pleiades.codes
+  port: 8443
+  password: 0dca2cfe-98eb-4f9d-9a47-cf87510c558b
+  udp: true
+  skip-cert-verify: true
 - name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
-  type: vmess
-  server: me6.movieseryalirani.ir
-  port: 57361
-  uuid: ed815caa-bff1-4419-8c61-1d108eabaf1f
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇫🇮 芬兰 (Finland) 04 - xiaohe
-  type: vmess
-  server: me6.movieseryalirani.ir
-  port: 57361
-  uuid: ed815caa-bff1-4419-8c61-1d108eabaf1f
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇫🇮 芬兰 (Finland) 05 - xiaohe
-  type: vless
-  server: nothing.quickpl.ir
-  port: 32569
-  uuid: ec825a3d-4136-40db-b39f-2ef40f19aa19
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇫🇮 芬兰 (Finland) 06 - xiaohe
-  type: vmess
-  server: me6.movieseryalirani.ir
-  port: 57361
-  uuid: ed815caa-bff1-4419-8c61-1d108eabaf1f
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇫🇮 芬兰 (Finland) 07 - xiaohe
   type: hysteria2
-  server: iq5ny.pleiades.codes
-  port: 8443
-  password: 0dca2cfe-98eb-4f9d-9a47-cf87510c558b
-  udp: true
-  skip-cert-verify: true
-- name: 🇫🇮 芬兰 (Finland) 08 - xiaohe
-  type: hysteria2
-  server: iq5ny.pleiades.codes
-  port: 8443
-  password: 0dca2cfe-98eb-4f9d-9a47-cf87510c558b
+  server: dissolvedvpn.eu.cc
+  port: 443
+  password: dissolved-vpn-pass
   udp: true
   skip-cert-verify: true
 proxy-groups:
@@ -91,11 +39,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 01 - xiaohe
   - 🇫🇮 芬兰 (Finland) 02 - xiaohe
   - 🇫🇮 芬兰 (Finland) 03 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 04 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 05 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 06 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 07 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 08 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -104,10 +47,5 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 01 - xiaohe
   - 🇫🇮 芬兰 (Finland) 02 - xiaohe
   - 🇫🇮 芬兰 (Finland) 03 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 04 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 05 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 06 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 07 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 08 - xiaohe
 rules:
 - MATCH,PROXIES

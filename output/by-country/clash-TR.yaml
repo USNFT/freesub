@@ -6,77 +6,23 @@ log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - xiaohe
   type: vless
-  server: trk2.chaqalli.com
-  port: 8080
-  uuid: 560ecca1-7e20-4b41-b4d6-781fb3bc179d
+  server: test.keoplentuio.xyz
+  port: 2053
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
   udp: true
   tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2082
-    headers:
-      Host: primevideo.com
-- name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
-  type: vmess
-  server: 206.1.98.34
-  port: 26066
-  uuid: Nitro_Skybot@
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: ''
-    headers:
-      Host: ''
-- name: 🇹🇷 土耳其 (Turkey) 03 - xiaohe
-  type: vmess
-  server: 206.1.98.34
-  port: 26066
-  uuid: Nitro_Skybot@
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ''
-- name: 🇹🇷 土耳其 (Turkey) 04 - xiaohe
-  type: vless
-  server: trk2.chaqalli.com
-  port: 8080
-  uuid: 560ecca1-7e20-4b41-b4d6-781fb3bc179d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: primevideo.com
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 02 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 03 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 02 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 03 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 04 - xiaohe
 rules:
 - MATCH,PROXIES
