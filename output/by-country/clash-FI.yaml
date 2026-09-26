@@ -6,18 +6,32 @@ log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - xiaohe
   type: vless
-  server: fi.snobvpn.online
-  port: 80
-  uuid: 246b101b-4e4a-451f-8e9c-5e8d3b64b4ef
+  server: est1313.ggisopi.su
+  port: 443
+  uuid: d0f0a880-0df1-48c9-bdf1-5669fb9483ce
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /snob-ws
-    headers:
-      Host: fi.snobvpn.online
+  reality-opts:
+    public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
+  servername: est1313.ggisopi.su
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
 - name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
+  type: vless
+  server: 95.217.24.236
+  port: 2087
+  uuid: 10d85f65-f8d6-4504-b1e2-94649db1577a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: KN8tFlpIwPgJGwUCG7Pp9c9c0juYKPvNIv4kFHwqbyk
+    short-id: a32cfb5deca913ad
+  servername: 62.238.41.21
+  client-fingerprint: random
+  flow: xtls-rprx-vision
+- name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
   type: vless
   server: est1313.ggisopi.su
   port: 443
@@ -30,42 +44,33 @@ proxies:
   servername: est1313.ggisopi.su
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
+- name: 🇫🇮 芬兰 (Finland) 04 - xiaohe
   type: vless
-  server: me1.movieseryalirani.ir
+  server: 83.219.97.26
   port: 443
-  uuid: 63aaea7f-2847-4f41-afab-0836b1cf79d9
+  uuid: d0f0a880-0df1-48c9-bdf1-5669fb9483ce
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: CxRZ7oJWwR7okmOoqEEbVYCSfTaBlNA6ycf_UniyeEk
-    short-id: 8d814a
-  servername: matrix-client.matrix.org
-  client-fingerprint: firefox
-- name: 🇫🇮 芬兰 (Finland) 04 - xiaohe
-  type: vmess
-  server: me6.movieseryalirani.ir
-  port: 57361
-  uuid: ed815caa-bff1-4419-8c61-1d108eabaf1f
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
+    public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
+  servername: est1313.ggisopi.su
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
 - name: 🇫🇮 芬兰 (Finland) 05 - xiaohe
   type: vless
-  server: me1.movieseryalirani.ir
-  port: 443
-  uuid: 63aaea7f-2847-4f41-afab-0836b1cf79d9
+  server: 144.31.27.215
+  port: 43000
+  uuid: 47f79fc1-0646-40e8-8a58-73e85d183d5a
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: CxRZ7oJWwR7okmOoqEEbVYCSfTaBlNA6ycf_UniyeEk
-    short-id: 8d814a
-  servername: matrix-client.matrix.org
-  client-fingerprint: firefox
+    public-key: dxCQnOekn14riFxt3vdwDNydvW47FsmwFG6BJ2mUgEg
+    short-id: 568d87a47271344e
+  servername: 144.31.27.215
+  client-fingerprint: edge
+  flow: xtls-rprx-vision
 proxy-groups:
 - name: PROXIES
   type: select

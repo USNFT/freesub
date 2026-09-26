@@ -5,20 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 瑞典 (Sweden) 01 - xiaohe
-  type: ss
-  server: 70.34.212.124
-  port: 8388
-  cipher: aes-256-gcm
-  password: AxIYWtskJWIIaefW
-  udp: true
-- name: 🇸🇪 瑞典 (Sweden) 02 - xiaohe
-  type: ss
-  server: 172.238.244.13
-  port: 17000
-  cipher: aes-256-gcm
-  password: pX0uhU3ZjUcLWYs0Vez55BO3JoQrRlL
-  udp: true
-- name: 🇸🇪 瑞典 (Sweden) 03 - xiaohe
   type: vless
   server: 143.246.193.215
   port: 443
@@ -31,20 +17,13 @@ proxies:
   servername: www.blocket.se
   client-fingerprint: ''
   flow: xtls-rprx-vision
-- name: 🇸🇪 瑞典 (Sweden) 04 - xiaohe
-  type: vless
-  server: 159.194.209.203
-  port: 2087
-  uuid: 6796f262-ca34-4b8e-b86e-6c175c081f2e
+- name: 🇸🇪 瑞典 (Sweden) 02 - xiaohe
+  type: ss
+  server: 172.238.244.13
+  port: 17000
+  cipher: aes-256-gcm
+  password: pX0uhU3ZjUcLWYs0Vez55BO3JoQrRlL
   udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: DcAXpVZZ7_JtJqz9b6ax9gWWvkH_6icdC29j6keGPj8
-    short-id: c4e81a7b
-  servername: 5post-gate.x5.ru
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
 proxy-groups:
 - name: PROXIES
   type: select
@@ -52,8 +31,6 @@ proxy-groups:
   - AUTO
   - 🇸🇪 瑞典 (Sweden) 01 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 02 - xiaohe
-  - 🇸🇪 瑞典 (Sweden) 03 - xiaohe
-  - 🇸🇪 瑞典 (Sweden) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -61,7 +38,5 @@ proxy-groups:
   proxies:
   - 🇸🇪 瑞典 (Sweden) 01 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 02 - xiaohe
-  - 🇸🇪 瑞典 (Sweden) 03 - xiaohe
-  - 🇸🇪 瑞典 (Sweden) 04 - xiaohe
 rules:
 - MATCH,PROXIES
