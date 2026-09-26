@@ -23,22 +23,15 @@ proxies:
     public-key: sQ9CcspZ6urWlzGNjjmtfp8EuuDll5RVtcsVoq_EfUE
     short-id: a3f509aa7a4b41cc
   servername: pl1.gursub.com
-  client-fingerprint: edge
+  client-fingerprint: chrome
   flow: xtls-rprx-vision
 - name: 🇵🇱 波兰 (Poland) 03 - xiaohe
-  type: vless
-  server: 151.241.138.151
-  port: 8444
-  uuid: 02bd8b5a-170b-4a79-8e68-9cec710272c7
+  type: hysteria2
+  server: 45.192.12.93
+  port: 443
+  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
   udp: true
-  tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: sQ9CcspZ6urWlzGNjjmtfp8EuuDll5RVtcsVoq_EfUE
-    short-id: a3f509aa7a4b41cc
-  servername: pl1.gursub.com
-  client-fingerprint: safari
-  flow: xtls-rprx-vision
 - name: 🇵🇱 波兰 (Poland) 04 - xiaohe
   type: hysteria2
   server: 45.192.12.93
@@ -54,47 +47,80 @@ proxies:
   udp: true
   skip-cert-verify: true
 - name: 🇵🇱 波兰 (Poland) 06 - xiaohe
-  type: hysteria2
-  server: 144.31.49.47
-  port: 443
-  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
+  type: vless
+  server: 31.77.13.19
+  port: 2063
+  uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
   udp: true
+  tls: true
   skip-cert-verify: true
+  reality-opts:
+    public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
+  servername: rusbid.de
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
 - name: 🇵🇱 波兰 (Poland) 07 - xiaohe
-  type: hysteria2
-  server: 144.31.49.47
-  port: 443
-  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
+  type: vless
+  server: pl1.gursub.com
+  port: 8444
+  uuid: 02bd8b5a-170b-4a79-8e68-9cec710272c7
   udp: true
+  tls: true
   skip-cert-verify: true
+  reality-opts:
+    public-key: sQ9CcspZ6urWlzGNjjmtfp8EuuDll5RVtcsVoq_EfUE
+    short-id: a3f509aa7a4b41cc
+  servername: pl1.gursub.com
+  client-fingerprint: ''
+  flow: xtls-rprx-vision
 - name: 🇵🇱 波兰 (Poland) 08 - xiaohe
-  type: hysteria2
-  server: go.wwwinternetvideo.click
-  port: 443
-  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
+  type: vless
+  server: pl-waw.dontblockmepls.com
+  port: 2063
+  uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
   udp: true
+  tls: true
   skip-cert-verify: true
+  reality-opts:
+    public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
+  servername: rusbid.de
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
 - name: 🇵🇱 波兰 (Poland) 09 - xiaohe
   type: hysteria2
-  server: go.wwwinternetvideo.click
+  server: 144.31.49.47
   port: 443
   password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
   udp: true
   skip-cert-verify: true
 - name: 🇵🇱 波兰 (Poland) 10 - xiaohe
-  type: vless
-  server: 144.31.131.38
+  type: hysteria2
+  server: go.wwwinternetvideo.click
   port: 443
-  uuid: adc11f30-e4cb-4985-bf5e-f9ded69c019f
+  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
   udp: true
-  tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI
-    short-id: db04ce8bdb8900f1
-  servername: prod.pl-node-01.security-sbrf.ru
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
+- name: 🇵🇱 波兰 (Poland) 11 - xiaohe
+  type: hysteria2
+  server: 144.31.49.47
+  port: 443
+  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
+  udp: true
+  skip-cert-verify: true
+- name: 🇵🇱 波兰 (Poland) 12 - xiaohe
+  type: hysteria2
+  server: go.wwwinternetvideo.click
+  port: 443
+  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
+  udp: true
+  skip-cert-verify: true
+- name: 🇵🇱 波兰 (Poland) 13 - xiaohe
+  type: hysteria2
+  server: go.wwwinternetvideo.click
+  port: 443
+  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
+  udp: true
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -110,6 +136,9 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 08 - xiaohe
   - 🇵🇱 波兰 (Poland) 09 - xiaohe
   - 🇵🇱 波兰 (Poland) 10 - xiaohe
+  - 🇵🇱 波兰 (Poland) 11 - xiaohe
+  - 🇵🇱 波兰 (Poland) 12 - xiaohe
+  - 🇵🇱 波兰 (Poland) 13 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -125,5 +154,8 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 08 - xiaohe
   - 🇵🇱 波兰 (Poland) 09 - xiaohe
   - 🇵🇱 波兰 (Poland) 10 - xiaohe
+  - 🇵🇱 波兰 (Poland) 11 - xiaohe
+  - 🇵🇱 波兰 (Poland) 12 - xiaohe
+  - 🇵🇱 波兰 (Poland) 13 - xiaohe
 rules:
 - MATCH,PROXIES
