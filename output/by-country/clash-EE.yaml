@@ -6,32 +6,6 @@ log-level: info
 proxies:
 - name: 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
   type: vless
-  server: 144.31.170.72
-  port: 443
-  uuid: deea5046-3543-4b1b-a17f-3d08a65db91d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: fkZTYNydTBVO-1LSiTvDcyBMx-zBP5Am780jECmUgg0
-  servername: est.bopen.bond
-  client-fingerprint: safari
-  flow: xtls-rprx-vision
-- name: 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
-  type: vless
-  server: 144.31.170.72
-  port: 443
-  uuid: deea5046-3543-4b1b-a17f-3d08a65db91d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: fkZTYNydTBVO-1LSiTvDcyBMx-zBP5Am780jECmUgg0
-  servername: est.bopen.bond
-  client-fingerprint: safari
-  flow: xtls-rprx-vision
-- name: 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
-  type: vless
   server: 94.183.170.135
   port: 443
   uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
@@ -43,68 +17,28 @@ proxies:
     path: /
     headers:
       Host: 94.183.170.135
+- name: 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
+  type: hysteria2
+  server: 217.60.182.79
+  port: 443
+  password: sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX
+  udp: true
+  skip-cert-verify: true
+- name: 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
+  type: hysteria2
+  server: 217.60.182.79
+  port: 443
+  password: sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX
+  udp: true
+  skip-cert-verify: true
 - name: 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe
-  type: vless
-  server: 144.31.170.72
-  port: 443
-  uuid: deea5046-3543-4b1b-a17f-3d08a65db91d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: fkZTYNydTBVO-1LSiTvDcyBMx-zBP5Am780jECmUgg0
-  servername: est.bopen.bond
-  client-fingerprint: safari
-  flow: xtls-rprx-vision
-- name: 🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe
-  type: hysteria2
-  server: 217.60.182.79
-  port: 443
-  password: sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX
-  udp: true
-  skip-cert-verify: true
-- name: 🇪🇪 爱沙尼亚 (Estonia) 06 - xiaohe
-  type: vless
-  server: 144.31.170.72
-  port: 443
-  uuid: deea5046-3543-4b1b-a17f-3d08a65db91d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: fkZTYNydTBVO-1LSiTvDcyBMx-zBP5Am780jECmUgg0
-  servername: est.bopen.bond
-  client-fingerprint: safari
-  flow: xtls-rprx-vision
-- name: 🇪🇪 爱沙尼亚 (Estonia) 07 - xiaohe
-  type: hysteria2
-  server: 217.60.182.79
-  port: 443
-  password: sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX
-  udp: true
-  skip-cert-verify: true
-- name: 🇪🇪 爱沙尼亚 (Estonia) 08 - xiaohe
-  type: vless
-  server: 5.181.201.44
-  port: 443
-  uuid: 47b63e55-a4e4-43ce-97dc-946e6a26971d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 98MNvJC4t0ZjK_xHlQjOx2WfLfAPluNDb71MzS9sPT8
-    short-id: 38018dde3e27335e
-  servername: bababoy.karp1pdd.life
-  client-fingerprint: random
-  flow: xtls-rprx-vision
-- name: 🇪🇪 爱沙尼亚 (Estonia) 09 - xiaohe
   type: hysteria2
   server: 31.76.71.63
   port: 443
   password: sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX
   udp: true
   skip-cert-verify: true
-- name: 🇪🇪 爱沙尼亚 (Estonia) 10 - xiaohe
+- name: 🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe
   type: hysteria2
   server: 31.76.71.63
   port: 443
@@ -121,11 +55,6 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
   - 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe
   - 🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe
-  - 🇪🇪 爱沙尼亚 (Estonia) 06 - xiaohe
-  - 🇪🇪 爱沙尼亚 (Estonia) 07 - xiaohe
-  - 🇪🇪 爱沙尼亚 (Estonia) 08 - xiaohe
-  - 🇪🇪 爱沙尼亚 (Estonia) 09 - xiaohe
-  - 🇪🇪 爱沙尼亚 (Estonia) 10 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -136,10 +65,5 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
   - 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe
   - 🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe
-  - 🇪🇪 爱沙尼亚 (Estonia) 06 - xiaohe
-  - 🇪🇪 爱沙尼亚 (Estonia) 07 - xiaohe
-  - 🇪🇪 爱沙尼亚 (Estonia) 08 - xiaohe
-  - 🇪🇪 爱沙尼亚 (Estonia) 09 - xiaohe
-  - 🇪🇪 爱沙尼亚 (Estonia) 10 - xiaohe
 rules:
 - MATCH,PROXIES
