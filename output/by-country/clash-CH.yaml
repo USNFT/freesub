@@ -6,19 +6,26 @@ log-level: info
 proxies:
 - name: 🇨🇭 瑞士 (Switzerland) 01 - xiaohe
   type: hysteria2
-  server: 140.238.213.114
-  port: 50160
-  password: 84a506ca5aca505696a454d828420b3f
-  udp: true
-  skip-cert-verify: true
-- name: 🇨🇭 瑞士 (Switzerland) 02 - xiaohe
-  type: hysteria2
   server: 82.38.64.229
   port: 8443
   password: we9_I1893UFj3149xbr1_k8qvJ8734ic_Mx82gH
   udp: true
   skip-cert-verify: true
+- name: 🇨🇭 瑞士 (Switzerland) 02 - xiaohe
+  type: hysteria2
+  server: 82.38.64.237
+  port: 8443
+  password: we9_I1893UFj3149xbr1_k8qvJ8734ic_Mx82gH
+  udp: true
+  skip-cert-verify: true
 - name: 🇨🇭 瑞士 (Switzerland) 03 - xiaohe
+  type: hysteria2
+  server: 82.38.64.239
+  port: 8443
+  password: we9_I1893UFj3149xbr1_k8qvJ8734ic_Mx82gH
+  udp: true
+  skip-cert-verify: true
+- name: 🇨🇭 瑞士 (Switzerland) 04 - xiaohe
   type: hysteria2
   server: 77.110.104.238
   port: 443
@@ -33,6 +40,7 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 01 - xiaohe
   - 🇨🇭 瑞士 (Switzerland) 02 - xiaohe
   - 🇨🇭 瑞士 (Switzerland) 03 - xiaohe
+  - 🇨🇭 瑞士 (Switzerland) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -41,5 +49,6 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 01 - xiaohe
   - 🇨🇭 瑞士 (Switzerland) 02 - xiaohe
   - 🇨🇭 瑞士 (Switzerland) 03 - xiaohe
+  - 🇨🇭 瑞士 (Switzerland) 04 - xiaohe
 rules:
 - MATCH,PROXIES

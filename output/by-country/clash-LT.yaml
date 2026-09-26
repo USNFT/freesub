@@ -4,18 +4,18 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇧🇬 保加利亚 (Bulgaria) 01 (家宽) - xiaohe
+- name: 🇱🇹 LT 01 - xiaohe
   type: vless
-  server: 136.175.82.85
-  port: 18775
-  uuid: 9ae5940b-0278-403d-a1e1-9dddc47bdcf6
+  server: 94.176.234.161
+  port: 443
+  uuid: d448490d-4ee6-442f-80e1-5e1c186c4ce1
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: oR75S6pg_RDAKIuzv_WrCiwaUqqFoek2iuo5N22llQQ
-    short-id: 6ba85179e30d4fc2
-  servername: addons.mozilla.org
+    public-key: UpI0XKNUsMJ24XawPQ8g7br1faEsO7BOvmIIGg9Wrm8
+    short-id: dbb2ef1c7c
+  servername: www.intel.com
   client-fingerprint: chrome
   flow: xtls-rprx-vision
 proxy-groups:
@@ -23,12 +23,12 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇧🇬 保加利亚 (Bulgaria) 01 (家宽) - xiaohe
+  - 🇱🇹 LT 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇧🇬 保加利亚 (Bulgaria) 01 (家宽) - xiaohe
+  - 🇱🇹 LT 01 - xiaohe
 rules:
 - MATCH,PROXIES
