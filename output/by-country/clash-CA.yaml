@@ -5,17 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇦 加拿大 (Canada) 01 - xiaohe
-  type: ss
-  server: 185.156.47.97
-  port: 9443
-  cipher: aes-256-gcm
-  password: eveaaTOb8ji8yntw2Z9yWUG0d6Ir8Ld8m3ymH8THdC5egiTH1mXCiBc0Skr7FibH
+  type: vmess
+  server: 158.51.123.42
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
   udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 02 - xiaohe
   type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  server: 158.51.123.42
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
   alterId: 0
   cipher: auto
   udp: true
@@ -23,9 +26,9 @@ proxies:
   skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 03 - xiaohe
   type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  server: 158.51.123.42
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
   alterId: 0
   cipher: auto
   udp: true
@@ -33,9 +36,9 @@ proxies:
   skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 04 - xiaohe
   type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  server: 158.51.123.42
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
   alterId: 0
   cipher: auto
   udp: true
@@ -43,9 +46,9 @@ proxies:
   skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 05 - xiaohe
   type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  server: 158.51.123.42
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
   alterId: 0
   cipher: auto
   udp: true
@@ -53,9 +56,9 @@ proxies:
   skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 06 - xiaohe
   type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  server: 158.51.123.42
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
   alterId: 0
   cipher: auto
   udp: true
@@ -73,9 +76,9 @@ proxies:
   skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 08 - xiaohe
   type: vmess
-  server: 66.163.113.176
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
   udp: true
@@ -83,9 +86,9 @@ proxies:
   skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 09 - xiaohe
   type: vmess
-  server: 66.163.113.176
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
   udp: true
@@ -93,45 +96,54 @@ proxies:
   skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 10 - xiaohe
   type: vmess
-  server: 66.163.113.176
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 11 - xiaohe
-  type: ss
-  server: 51.222.200.165
-  port: 5000
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
   udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 12 - xiaohe
-  type: ss
-  server: 51.222.136.236
-  port: 8882
-  cipher: aes-256-gcm
-  password: kDWvXYZoTBcGkC4
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
   udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 13 - xiaohe
   type: vmess
-  server: 66.163.113.176
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 14 - xiaohe
-  type: ss
-  server: 142.4.216.225
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: mrs2e9a
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
   udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 15 - xiaohe
   type: vmess
   server: 134.195.196.211
@@ -144,15 +156,142 @@ proxies:
   skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 16 - xiaohe
   type: vmess
-  server: 134.195.198.214
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 17 - xiaohe
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 18 - xiaohe
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 19 - xiaohe
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 20 - xiaohe
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 21 - xiaohe
+  type: vmess
+  server: 23.162.200.198
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 22 - xiaohe
+  type: vmess
+  server: 23.162.200.198
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 23 - xiaohe
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 24 - xiaohe
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 25 - xiaohe
+  type: vmess
+  server: 23.162.200.198
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 26 - xiaohe
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 27 - xiaohe
+  type: vmess
+  server: 23.162.200.198
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 28 - xiaohe
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 29 - xiaohe
+  type: ss
+  server: 185.156.47.97
+  port: 9443
+  cipher: aes-256-gcm
+  password: eveaaTOb8ji8yntw2Z9yWUG0d6Ir8Ld8m3ymH8THdC5egiTH1mXCiBc0Skr7FibH
+  udp: true
+- name: 🇨🇦 加拿大 (Canada) 30 - xiaohe
   type: vmess
   server: 66.163.113.176
   port: 22324
@@ -162,7 +301,34 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 18 - xiaohe
+- name: 🇨🇦 加拿大 (Canada) 31 - xiaohe
+  type: ss
+  server: 142.4.216.225
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: mrs2e9a
+  udp: true
+- name: 🇨🇦 加拿大 (Canada) 32 - xiaohe
+  type: vmess
+  server: 66.163.113.176
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 33 - xiaohe
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 34 - xiaohe
   type: vmess
   server: 134.195.198.214
   port: 22324
@@ -172,16 +338,9 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 19 - xiaohe
-  type: hysteria2
-  server: 15.223.122.197
-  port: 443
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  udp: true
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 20 - xiaohe
+- name: 🇨🇦 加拿大 (Canada) 35 - xiaohe
   type: vmess
-  server: 158.51.123.42
+  server: 134.195.198.214
   port: 22324
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
   alterId: 0
@@ -189,7 +348,263 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 21 - xiaohe
+- name: 🇨🇦 加拿大 (Canada) 36 - xiaohe
+  type: vmess
+  server: 134.195.198.214
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 37 - xiaohe
+  type: vless
+  server: 66.70.179.198
+  port: 2053
+  uuid: dc620cd6-a9d8-4a0f-8f18-006b895db77e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
+    short-id: 83f8317a948bb769
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇨🇦 加拿大 (Canada) 38 - xiaohe
+  type: hysteria2
+  server: 15.223.122.197
+  port: 443
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  udp: true
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 39 - xiaohe
+  type: ss
+  server: 15.235.75.71
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: FD3rCuOsxOay
+  udp: true
+- name: 🇨🇦 加拿大 (Canada) 40 - xiaohe
+  type: vless
+  server: 66.70.179.198
+  port: 2053
+  uuid: dc620cd6-a9d8-4a0f-8f18-006b895db77e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
+    short-id: 83f8317a948bb769
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇨🇦 加拿大 (Canada) 41 - xiaohe
+  type: vless
+  server: 66.70.179.198
+  port: 2053
+  uuid: dc620cd6-a9d8-4a0f-8f18-006b895db77e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
+    short-id: 83f8317a948bb769
+  servername: www.cloudflare.com
+  client-fingerprint: random
+- name: 🇨🇦 加拿大 (Canada) 42 - xiaohe
+  type: vless
+  server: 66.70.179.198
+  port: 2053
+  uuid: dc620cd6-a9d8-4a0f-8f18-006b895db77e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
+    short-id: 83f8317a948bb769
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇨🇦 加拿大 (Canada) 43 - xiaohe
+  type: vless
+  server: 66.70.179.198
+  port: 2053
+  uuid: dc620cd6-a9d8-4a0f-8f18-006b895db77e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
+    short-id: 83f8317a948bb769
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇨🇦 加拿大 (Canada) 44 - xiaohe
+  type: vless
+  server: 66.70.179.198
+  port: 2053
+  uuid: dc620cd6-a9d8-4a0f-8f18-006b895db77e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
+    short-id: 83f8317a948bb769
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇨🇦 加拿大 (Canada) 45 - xiaohe
+  type: ss
+  server: yyz-ca-01.blncvpn4u.cc
+  port: 9443
+  cipher: aes-256-gcm
+  password: eveaaTOb8ji8yntw2Z9yWUG0d6Ir8Ld8m3ymH8THdC5egiTH1mXCiBc0Skr7FibH
+  udp: true
+- name: 🇨🇦 加拿大 (Canada) 46 - xiaohe
+  type: hysteria2
+  server: 15.223.122.197
+  port: 443
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  udp: true
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 47 - xiaohe
+  type: hysteria2
+  server: 15.223.122.197
+  port: 443
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  udp: true
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 48 - xiaohe
+  type: hysteria2
+  server: 15.223.122.197
+  port: 443
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  udp: true
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 49 - xiaohe
+  type: vless
+  server: 130.107.73.148
+  port: 41373
+  uuid: a71c8954-66a8-4321-bedb-2336230d81ce
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: m0GsZOAwvAJEaqh9aH6qfOmBKo0KW0jY_tJEC6KaDEU
+    short-id: 0e
+  servername: google.com
+  client-fingerprint: random
+  flow: xtls-rprx-vision
+- name: 🇨🇦 加拿大 (Canada) 50 - xiaohe
+  type: vless
+  server: 130.107.73.148
+  port: 41373
+  uuid: a71c8954-66a8-4321-bedb-2336230d81ce
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: m0GsZOAwvAJEaqh9aH6qfOmBKo0KW0jY_tJEC6KaDEU
+    short-id: 0e
+  servername: google.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇨🇦 加拿大 (Canada) 51 - xiaohe
+  type: vless
+  server: 130.107.73.148
+  port: 41373
+  uuid: a71c8954-66a8-4321-bedb-2336230d81ce
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: m0GsZOAwvAJEaqh9aH6qfOmBKo0KW0jY_tJEC6KaDEU
+    short-id: 0e
+  servername: google.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇨🇦 加拿大 (Canada) 52 - xiaohe
+  type: vless
+  server: 130.107.73.148
+  port: 41373
+  uuid: a71c8954-66a8-4321-bedb-2336230d81ce
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: m0GsZOAwvAJEaqh9aH6qfOmBKo0KW0jY_tJEC6KaDEU
+    short-id: 0e
+  servername: google.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇨🇦 加拿大 (Canada) 53 - xiaohe
+  type: vless
+  server: 158.69.112.254
+  port: 443
+  uuid: 661f395d-b153-4199-a04b-693f5fe7f261
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: wo417FrFdjy7ZhccQ-VWGZEKcoCHSEfyWcJT1pIVc1Y
+    short-id: 3d3c1e645f763ee3
+  servername: www.speedtest.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇨🇦 加拿大 (Canada) 54 - xiaohe
+  type: vless
+  server: 130.107.73.148
+  port: 41373
+  uuid: a71c8954-66a8-4321-bedb-2336230d81ce
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: m0GsZOAwvAJEaqh9aH6qfOmBKo0KW0jY_tJEC6KaDEU
+    short-id: 0e
+  servername: google.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇨🇦 加拿大 (Canada) 55 - xiaohe
+  type: vless
+  server: 158.69.112.254
+  port: 443
+  uuid: 661f395d-b153-4199-a04b-693f5fe7f261
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: wo417FrFdjy7ZhccQ-VWGZEKcoCHSEfyWcJT1pIVc1Y
+    short-id: 3d3c1e645f763ee3
+  servername: www.speedtest.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇨🇦 加拿大 (Canada) 56 - xiaohe
+  type: vless
+  server: 158.69.112.254
+  port: 443
+  uuid: 661f395d-b153-4199-a04b-693f5fe7f261
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: wo417FrFdjy7ZhccQ-VWGZEKcoCHSEfyWcJT1pIVc1Y
+    short-id: 3d3c1e645f763ee3
+  servername: www.speedtest.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇨🇦 加拿大 (Canada) 57 - xiaohe
+  type: vless
+  server: 158.69.112.254
+  port: 443
+  uuid: 661f395d-b153-4199-a04b-693f5fe7f261
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: wo417FrFdjy7ZhccQ-VWGZEKcoCHSEfyWcJT1pIVc1Y
+    short-id: 3d3c1e645f763ee3
+  servername: www.speedtest.net
+  client-fingerprint: random
+  flow: xtls-rprx-vision
+- name: 🇨🇦 加拿大 (Canada) 58 - xiaohe
   type: vless
   server: 158.69.112.254
   port: 443
@@ -203,38 +618,21 @@ proxies:
   servername: www.speedtest.net
   client-fingerprint: edge
   flow: xtls-rprx-vision
-- name: 🇨🇦 加拿大 (Canada) 22 - xiaohe
-  type: hysteria2
-  server: 15.223.122.197
-  port: 443
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  udp: true
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 23 - xiaohe
-  type: vmess
-  server: 158.51.123.42
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 24 - xiaohe
+- name: 🇨🇦 加拿大 (Canada) 59 - xiaohe
   type: vless
-  server: 209.200.246.148
+  server: 158.69.112.254
   port: 443
-  uuid: ca52e2b6-fb9f-4dac-b6dc-49da9923f251
+  uuid: 661f395d-b153-4199-a04b-693f5fe7f261
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: uTmb-ytXsx8p0fkBz7A76SHpWk7_oVutIA4LGTE8BQk
-    short-id: f98843107912e782
-  servername: www.cloudflare.com
-  client-fingerprint: random
+    public-key: wo417FrFdjy7ZhccQ-VWGZEKcoCHSEfyWcJT1pIVc1Y
+    short-id: 3d3c1e645f763ee3
+  servername: www.speedtest.net
+  client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: 🇨🇦 加拿大 (Canada) 25 - xiaohe
+- name: 🇨🇦 加拿大 (Canada) 60 - xiaohe
   type: vless
   server: 130.107.73.148
   port: 41373
@@ -246,218 +644,23 @@ proxies:
     public-key: m0GsZOAwvAJEaqh9aH6qfOmBKo0KW0jY_tJEC6KaDEU
     short-id: 0e
   servername: google.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇨🇦 加拿大 (Canada) 61 - xiaohe
+  type: vless
+  server: 158.69.112.254
+  port: 443
+  uuid: 661f395d-b153-4199-a04b-693f5fe7f261
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: wo417FrFdjy7ZhccQ-VWGZEKcoCHSEfyWcJT1pIVc1Y
+    short-id: 3d3c1e645f763ee3
+  servername: www.speedtest.net
   client-fingerprint: firefox
   flow: xtls-rprx-vision
-- name: 🇨🇦 加拿大 (Canada) 26 - xiaohe
-  type: vless
-  server: 130.107.73.148
-  port: 41373
-  uuid: a71c8954-66a8-4321-bedb-2336230d81ce
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: m0GsZOAwvAJEaqh9aH6qfOmBKo0KW0jY_tJEC6KaDEU
-    short-id: 0e
-  servername: google.com
-  client-fingerprint: edge
-  flow: xtls-rprx-vision
-- name: 🇨🇦 加拿大 (Canada) 27 - xiaohe
-  type: ss
-  server: yyz-ca-01.blncvpn4u.cc
-  port: 9443
-  cipher: aes-256-gcm
-  password: eveaaTOb8ji8yntw2Z9yWUG0d6Ir8Ld8m3ymH8THdC5egiTH1mXCiBc0Skr7FibH
-  udp: true
-- name: 🇨🇦 加拿大 (Canada) 28 - xiaohe
-  type: vmess
-  server: 158.51.123.42
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 29 - xiaohe
-  type: vless
-  server: 130.107.73.148
-  port: 41373
-  uuid: a71c8954-66a8-4321-bedb-2336230d81ce
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: m0GsZOAwvAJEaqh9aH6qfOmBKo0KW0jY_tJEC6KaDEU
-    short-id: 0e
-  servername: google.com
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇨🇦 加拿大 (Canada) 30 - xiaohe
-  type: vless
-  server: 130.107.73.148
-  port: 41373
-  uuid: a71c8954-66a8-4321-bedb-2336230d81ce
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: m0GsZOAwvAJEaqh9aH6qfOmBKo0KW0jY_tJEC6KaDEU
-    short-id: 0e
-  servername: google.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇨🇦 加拿大 (Canada) 31 - xiaohe
-  type: vmess
-  server: 158.51.123.42
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 32 - xiaohe
-  type: vless
-  server: 130.107.73.148
-  port: 41373
-  uuid: a71c8954-66a8-4321-bedb-2336230d81ce
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: m0GsZOAwvAJEaqh9aH6qfOmBKo0KW0jY_tJEC6KaDEU
-    short-id: 0e
-  servername: google.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇨🇦 加拿大 (Canada) 33 - xiaohe
-  type: vless
-  server: 130.107.73.148
-  port: 41373
-  uuid: a71c8954-66a8-4321-bedb-2336230d81ce
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: m0GsZOAwvAJEaqh9aH6qfOmBKo0KW0jY_tJEC6KaDEU
-    short-id: 0e
-  servername: google.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇨🇦 加拿大 (Canada) 34 - xiaohe
-  type: vless
-  server: 130.107.73.148
-  port: 41373
-  uuid: a71c8954-66a8-4321-bedb-2336230d81ce
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: m0GsZOAwvAJEaqh9aH6qfOmBKo0KW0jY_tJEC6KaDEU
-    short-id: 0e
-  servername: google.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇨🇦 加拿大 (Canada) 35 - xiaohe
-  type: vless
-  server: 130.107.73.148
-  port: 41373
-  uuid: a71c8954-66a8-4321-bedb-2336230d81ce
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: m0GsZOAwvAJEaqh9aH6qfOmBKo0KW0jY_tJEC6KaDEU
-    short-id: 0e
-  servername: google.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇨🇦 加拿大 (Canada) 36 - xiaohe
-  type: vless
-  server: 130.107.73.148
-  port: 41373
-  uuid: a71c8954-66a8-4321-bedb-2336230d81ce
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: m0GsZOAwvAJEaqh9aH6qfOmBKo0KW0jY_tJEC6KaDEU
-    short-id: 0e
-  servername: google.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇨🇦 加拿大 (Canada) 37 - xiaohe
-  type: vless
-  server: 130.107.73.148
-  port: 41373
-  uuid: a71c8954-66a8-4321-bedb-2336230d81ce
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: m0GsZOAwvAJEaqh9aH6qfOmBKo0KW0jY_tJEC6KaDEU
-    short-id: 0e
-  servername: google.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇨🇦 加拿大 (Canada) 38 - xiaohe
-  type: vless
-  server: 130.107.73.148
-  port: 41373
-  uuid: a71c8954-66a8-4321-bedb-2336230d81ce
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: m0GsZOAwvAJEaqh9aH6qfOmBKo0KW0jY_tJEC6KaDEU
-    short-id: 0e
-  servername: google.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇨🇦 加拿大 (Canada) 39 - xiaohe
-  type: vless
-  server: 130.107.73.148
-  port: 41373
-  uuid: a71c8954-66a8-4321-bedb-2336230d81ce
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: m0GsZOAwvAJEaqh9aH6qfOmBKo0KW0jY_tJEC6KaDEU
-    short-id: 0e
-  servername: google.com
-  client-fingerprint: random
-  flow: xtls-rprx-vision
-- name: 🇨🇦 加拿大 (Canada) 40 - xiaohe
-  type: vless
-  server: 130.107.73.148
-  port: 41373
-  uuid: a71c8954-66a8-4321-bedb-2336230d81ce
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: m0GsZOAwvAJEaqh9aH6qfOmBKo0KW0jY_tJEC6KaDEU
-    short-id: 0e
-  servername: google.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇨🇦 加拿大 (Canada) 41 - xiaohe
-  type: vless
-  server: 130.107.73.148
-  port: 41373
-  uuid: a71c8954-66a8-4321-bedb-2336230d81ce
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: m0GsZOAwvAJEaqh9aH6qfOmBKo0KW0jY_tJEC6KaDEU
-    short-id: 0e
-  servername: google.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇨🇦 加拿大 (Canada) 42 - xiaohe
+- name: 🇨🇦 加拿大 (Canada) 62 - xiaohe
   type: vless
   server: 130.107.73.148
   port: 41373
@@ -471,60 +674,49 @@ proxies:
   servername: google.com
   client-fingerprint: qq
   flow: xtls-rprx-vision
-- name: 🇨🇦 加拿大 (Canada) 43 - xiaohe
+- name: 🇨🇦 加拿大 (Canada) 63 - xiaohe
   type: vless
-  server: 66.70.179.198
-  port: 2053
-  uuid: dc620cd6-a9d8-4a0f-8f18-006b895db77e
+  server: 130.107.73.148
+  port: 41373
+  uuid: a71c8954-66a8-4321-bedb-2336230d81ce
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
-    short-id: 83f8317a948bb769
-  servername: www.cloudflare.com
+    public-key: m0GsZOAwvAJEaqh9aH6qfOmBKo0KW0jY_tJEC6KaDEU
+    short-id: 0e
+  servername: google.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇨🇦 加拿大 (Canada) 64 - xiaohe
+  type: vless
+  server: 130.107.73.148
+  port: 41373
+  uuid: a71c8954-66a8-4321-bedb-2336230d81ce
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: m0GsZOAwvAJEaqh9aH6qfOmBKo0KW0jY_tJEC6KaDEU
+    short-id: 0e
+  servername: google.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇨🇦 加拿大 (Canada) 65 - xiaohe
+  type: vless
+  server: 130.107.73.148
+  port: 41373
+  uuid: a71c8954-66a8-4321-bedb-2336230d81ce
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: m0GsZOAwvAJEaqh9aH6qfOmBKo0KW0jY_tJEC6KaDEU
+    short-id: 0e
+  servername: google.com
   client-fingerprint: firefox
-- name: 🇨🇦 加拿大 (Canada) 44 - xiaohe
-  type: vless
-  server: 209.200.246.148
-  port: 443
-  uuid: ca52e2b6-fb9f-4dac-b6dc-49da9923f251
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: uTmb-ytXsx8p0fkBz7A76SHpWk7_oVutIA4LGTE8BQk
-    short-id: f98843107912e782
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: 🇨🇦 加拿大 (Canada) 45 - xiaohe
-  type: vless
-  server: 66.70.179.198
-  port: 2053
-  uuid: dc620cd6-a9d8-4a0f-8f18-006b895db77e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
-    short-id: 83f8317a948bb769
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇨🇦 加拿大 (Canada) 46 - xiaohe
-  type: vless
-  server: 66.70.179.198
-  port: 2053
-  uuid: dc620cd6-a9d8-4a0f-8f18-006b895db77e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
-    short-id: 83f8317a948bb769
-  servername: www.cloudflare.com
-  client-fingerprint: random
-- name: 🇨🇦 加拿大 (Canada) 47 - xiaohe
+- name: 🇨🇦 加拿大 (Canada) 66 - xiaohe
   type: vless
   server: 158.69.112.254
   port: 443
@@ -538,21 +730,7 @@ proxies:
   servername: www.speedtest.net
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: 🇨🇦 加拿大 (Canada) 48 - xiaohe
-  type: vless
-  server: 158.69.112.254
-  port: 443
-  uuid: 661f395d-b153-4199-a04b-693f5fe7f261
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: wo417FrFdjy7ZhccQ-VWGZEKcoCHSEfyWcJT1pIVc1Y
-    short-id: 3d3c1e645f763ee3
-  servername: www.speedtest.net
-  client-fingerprint: random
-  flow: xtls-rprx-vision
-- name: 🇨🇦 加拿大 (Canada) 49 - xiaohe
+- name: 🇨🇦 加拿大 (Canada) 67 - xiaohe
   type: vless
   server: 158.69.112.254
   port: 443
@@ -566,7 +744,63 @@ proxies:
   servername: www.speedtest.net
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: 🇨🇦 加拿大 (Canada) 50 - xiaohe
+- name: 🇨🇦 加拿大 (Canada) 68 - xiaohe
+  type: vless
+  server: 130.107.73.148
+  port: 41373
+  uuid: a71c8954-66a8-4321-bedb-2336230d81ce
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: m0GsZOAwvAJEaqh9aH6qfOmBKo0KW0jY_tJEC6KaDEU
+    short-id: 0e
+  servername: google.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇨🇦 加拿大 (Canada) 69 - xiaohe
+  type: vless
+  server: 130.107.73.148
+  port: 41373
+  uuid: a71c8954-66a8-4321-bedb-2336230d81ce
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: m0GsZOAwvAJEaqh9aH6qfOmBKo0KW0jY_tJEC6KaDEU
+    short-id: 0e
+  servername: google.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇨🇦 加拿大 (Canada) 70 - xiaohe
+  type: vless
+  server: 130.107.73.148
+  port: 41373
+  uuid: a71c8954-66a8-4321-bedb-2336230d81ce
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: m0GsZOAwvAJEaqh9aH6qfOmBKo0KW0jY_tJEC6KaDEU
+    short-id: 0e
+  servername: google.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇨🇦 加拿大 (Canada) 71 - xiaohe
+  type: vless
+  server: 130.107.73.148
+  port: 41373
+  uuid: a71c8954-66a8-4321-bedb-2336230d81ce
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: m0GsZOAwvAJEaqh9aH6qfOmBKo0KW0jY_tJEC6KaDEU
+    short-id: 0e
+  servername: google.com
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+- name: 🇨🇦 加拿大 (Canada) 72 - xiaohe
   type: vless
   server: 158.69.112.254
   port: 443
@@ -580,31 +814,91 @@ proxies:
   servername: www.speedtest.net
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: 🇨🇦 加拿大 (Canada) 51 - xiaohe
-  type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
+- name: 🇨🇦 加拿大 (Canada) 73 - xiaohe
+  type: vless
+  server: 158.69.112.254
+  port: 443
+  uuid: 661f395d-b153-4199-a04b-693f5fe7f261
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 52 - xiaohe
+  reality-opts:
+    public-key: wo417FrFdjy7ZhccQ-VWGZEKcoCHSEfyWcJT1pIVc1Y
+    short-id: 3d3c1e645f763ee3
+  servername: www.speedtest.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇨🇦 加拿大 (Canada) 74 - xiaohe
+  type: vless
+  server: 158.69.112.254
+  port: 443
+  uuid: 661f395d-b153-4199-a04b-693f5fe7f261
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: wo417FrFdjy7ZhccQ-VWGZEKcoCHSEfyWcJT1pIVc1Y
+    short-id: 3d3c1e645f763ee3
+  servername: www.speedtest.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇨🇦 加拿大 (Canada) 75 - xiaohe
+  type: vless
+  server: 158.69.112.254
+  port: 443
+  uuid: 661f395d-b153-4199-a04b-693f5fe7f261
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: wo417FrFdjy7ZhccQ-VWGZEKcoCHSEfyWcJT1pIVc1Y
+    short-id: 3d3c1e645f763ee3
+  servername: www.speedtest.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇨🇦 加拿大 (Canada) 76 - xiaohe
+  type: vless
+  server: 130.107.73.148
+  port: 41373
+  uuid: a71c8954-66a8-4321-bedb-2336230d81ce
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: m0GsZOAwvAJEaqh9aH6qfOmBKo0KW0jY_tJEC6KaDEU
+    short-id: 0e
+  servername: google.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇨🇦 加拿大 (Canada) 77 - xiaohe
+  type: vless
+  server: 158.69.112.254
+  port: 443
+  uuid: 661f395d-b153-4199-a04b-693f5fe7f261
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: wo417FrFdjy7ZhccQ-VWGZEKcoCHSEfyWcJT1pIVc1Y
+    short-id: 3d3c1e645f763ee3
+  servername: www.speedtest.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇨🇦 加拿大 (Canada) 78 - xiaohe
   type: ss
-  server: 51.79.85.185
-  port: 8118
+  server: 51.79.49.116
+  port: 8882
   cipher: aes-256-gcm
-  password: cdBIDV42DCwnfIN
+  password: kDWvXYZoTBcGkC4
   udp: true
-- name: 🇨🇦 加拿大 (Canada) 53 - xiaohe
+- name: 🇨🇦 加拿大 (Canada) 79 - xiaohe
   type: ss
-  server: 51.222.12.127
-  port: 445
+  server: 51.222.136.236
+  port: 8882
   cipher: aes-256-gcm
-  password: zDNVedRFPQexG9v
+  password: kDWvXYZoTBcGkC4
   udp: true
-- name: 🇨🇦 加拿大 (Canada) 54 - xiaohe
+- name: 🇨🇦 加拿大 (Canada) 80 - xiaohe
   type: ss
   server: 51.222.12.127
   port: 445
@@ -670,6 +964,32 @@ proxy-groups:
   - 🇨🇦 加拿大 (Canada) 52 - xiaohe
   - 🇨🇦 加拿大 (Canada) 53 - xiaohe
   - 🇨🇦 加拿大 (Canada) 54 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 55 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 56 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 57 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 58 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 59 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 60 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 61 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 62 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 63 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 64 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 65 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 66 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 67 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 68 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 69 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 70 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 71 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 72 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 73 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 74 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 75 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 76 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 77 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 78 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 79 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 80 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -729,5 +1049,31 @@ proxy-groups:
   - 🇨🇦 加拿大 (Canada) 52 - xiaohe
   - 🇨🇦 加拿大 (Canada) 53 - xiaohe
   - 🇨🇦 加拿大 (Canada) 54 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 55 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 56 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 57 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 58 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 59 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 60 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 61 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 62 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 63 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 64 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 65 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 66 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 67 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 68 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 69 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 70 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 71 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 72 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 73 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 74 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 75 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 76 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 77 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 78 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 79 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 80 - xiaohe
 rules:
 - MATCH,PROXIES

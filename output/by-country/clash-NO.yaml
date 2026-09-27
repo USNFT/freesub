@@ -18,26 +18,17 @@ proxies:
   servername: r-b8a34c.vless.monster
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: 🇳🇴 挪威 (Norway) 02 - xiaohe
-  type: ss
-  server: 139.100.236.74
-  port: 1
-  cipher: chacha20-ietf-poly1305
-  password: WxYpOK1iPSJySbVNMMJDtw
-  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇳🇴 挪威 (Norway) 01 - xiaohe
-  - 🇳🇴 挪威 (Norway) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇳🇴 挪威 (Norway) 01 - xiaohe
-  - 🇳🇴 挪威 (Norway) 02 - xiaohe
 rules:
 - MATCH,PROXIES
