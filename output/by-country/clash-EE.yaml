@@ -33,12 +33,33 @@ proxies:
   skip-cert-verify: true
 - name: 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe
   type: hysteria2
+  server: 94.183.170.65
+  port: 443
+  password: e60bc99b-6630-4799-af84-f90ebdc643b6
+  udp: true
+  skip-cert-verify: true
+- name: 🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe
+  type: vless
+  server: 5.181.201.44
+  port: 443
+  uuid: 47b63e55-a4e4-43ce-97dc-946e6a26971d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 98MNvJC4t0ZjK_xHlQjOx2WfLfAPluNDb71MzS9sPT8
+    short-id: 38018dde3e27335e
+  servername: bababoy.karp1pdd.life
+  client-fingerprint: random
+  flow: xtls-rprx-vision
+- name: 🇪🇪 爱沙尼亚 (Estonia) 06 - xiaohe
+  type: hysteria2
   server: 31.76.71.63
   port: 443
   password: sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX
   udp: true
   skip-cert-verify: true
-- name: 🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe
+- name: 🇪🇪 爱沙尼亚 (Estonia) 07 - xiaohe
   type: hysteria2
   server: 31.76.71.63
   port: 443
@@ -55,6 +76,8 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
   - 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe
   - 🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe
+  - 🇪🇪 爱沙尼亚 (Estonia) 06 - xiaohe
+  - 🇪🇪 爱沙尼亚 (Estonia) 07 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -65,5 +88,7 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
   - 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe
   - 🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe
+  - 🇪🇪 爱沙尼亚 (Estonia) 06 - xiaohe
+  - 🇪🇪 爱沙尼亚 (Estonia) 07 - xiaohe
 rules:
 - MATCH,PROXIES

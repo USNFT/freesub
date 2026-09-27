@@ -13,6 +13,61 @@ proxies:
   udp: true
 - name: 🇸🇪 瑞典 (Sweden) 02 - xiaohe
   type: vless
+  server: 5.157.10.148
+  port: 443
+  uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: x6p656szvu_3CKLsJ4NtkooRvdTVGx7IoPca_p58_jA
+    short-id: fb442438e2223836
+  servername: surstreming.vvzzkontaktezzvv.garden
+  client-fingerprint: random
+  flow: xtls-rprx-vision
+- name: 🇸🇪 瑞典 (Sweden) 03 - xiaohe
+  type: vless
+  server: 5.157.10.250
+  port: 443
+  uuid: f495298f-2bdb-4fd8-9ac9-5dd33d1b482a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: pgG2grngQEtOFJImLfz0AEm-O2IodM2jCY4aMCYQI1U
+    short-id: 6aa2d2e950441a9a
+  servername: swebz.loozerp.wiki
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+- name: 🇸🇪 瑞典 (Sweden) 04 - xiaohe
+  type: vless
+  server: 31.207.7.246
+  port: 443
+  uuid: 206234ff-0e18-4b95-923b-90f60d846d7d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: nF_kEdHan2dgl2tlQ_dtNaKZ4oORhuiFrXHbtEDcT2Q
+    short-id: 2d6d073dc88f22a8
+  servername: nordic.global-cdn.org
+  client-fingerprint: random
+  flow: xtls-rprx-vision
+- name: 🇸🇪 瑞典 (Sweden) 05 - xiaohe
+  type: vless
+  server: 143.246.195.98
+  port: 8081
+  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless-test
+    headers:
+      Host: 143.246.195.98
+- name: 🇸🇪 瑞典 (Sweden) 06 - xiaohe
+  type: vless
   server: 191.44.114.66
   port: 443
   uuid: 718b9643-20e3-4f9e-9f8d-87ce6801d55e
@@ -24,6 +79,19 @@ proxies:
     short-id: 53499a662395
   servername: ai.android
   client-fingerprint: ''
+- name: 🇸🇪 瑞典 (Sweden) 07 - xiaohe
+  type: vless
+  server: condrve.ggisopi.su
+  port: 443
+  uuid: d0f0a880-0df1-48c9-bdf1-5669fb9483ce
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
+  servername: condrve.ggisopi.su
+  client-fingerprint: qq
+  flow: xtls-rprx-vision
 proxy-groups:
 - name: PROXIES
   type: select
@@ -31,6 +99,11 @@ proxy-groups:
   - AUTO
   - 🇸🇪 瑞典 (Sweden) 01 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 02 - xiaohe
+  - 🇸🇪 瑞典 (Sweden) 03 - xiaohe
+  - 🇸🇪 瑞典 (Sweden) 04 - xiaohe
+  - 🇸🇪 瑞典 (Sweden) 05 - xiaohe
+  - 🇸🇪 瑞典 (Sweden) 06 - xiaohe
+  - 🇸🇪 瑞典 (Sweden) 07 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -38,5 +111,10 @@ proxy-groups:
   proxies:
   - 🇸🇪 瑞典 (Sweden) 01 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 02 - xiaohe
+  - 🇸🇪 瑞典 (Sweden) 03 - xiaohe
+  - 🇸🇪 瑞典 (Sweden) 04 - xiaohe
+  - 🇸🇪 瑞典 (Sweden) 05 - xiaohe
+  - 🇸🇪 瑞典 (Sweden) 06 - xiaohe
+  - 🇸🇪 瑞典 (Sweden) 07 - xiaohe
 rules:
 - MATCH,PROXIES
