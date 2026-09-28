@@ -6,31 +6,17 @@ log-level: info
 proxies:
 - name: 🇱🇹 LT 01 - xiaohe
   type: vless
-  server: 88.216.127.171
+  server: 62.77.158.1
   port: 443
-  uuid: 94877739-3af6-4fbb-85b6-ca6fe86c7696
+  uuid: 2eceaf2b-a775-5a9c-9990-dad2b3660fb6
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: zZjrHRzULoXKVccVdPqtrtXLEUPJXwqdE1138vu5x3w
-    short-id: 3e137406
-  servername: admin.betust.net
-  client-fingerprint: random
-  flow: xtls-rprx-vision
-- name: 🇱🇹 LT 02 - xiaohe
-  type: vless
-  server: 188.225.25.142
-  port: 443
-  uuid: 94877739-3af6-4fbb-85b6-ca6fe86c7696
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: SxbaWzlvE_HQqqsA4PNX2PFcSYXTVE2nZlgLc7cPOgk
-    short-id: 8681edc9
-  servername: prime.betust.net
-  client-fingerprint: random
+    public-key: sVhkyiMXvpofflCdSszxQmsqOXV1kg1Ldxq1a9mOPjs
+    short-id: 6a
+  servername: online.1c.ru
+  client-fingerprint: safari
   flow: xtls-rprx-vision
 proxy-groups:
 - name: PROXIES
@@ -38,13 +24,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇱🇹 LT 01 - xiaohe
-  - 🇱🇹 LT 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇱🇹 LT 01 - xiaohe
-  - 🇱🇹 LT 02 - xiaohe
 rules:
 - MATCH,PROXIES

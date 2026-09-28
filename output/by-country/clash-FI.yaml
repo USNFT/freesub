@@ -13,43 +13,44 @@ proxies:
   udp: true
 - name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
   type: vless
-  server: 95.216.27.15
-  port: 2053
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
+  server: 45.149.147.97
+  port: 443
+  uuid: f28e0ce1-ed75-4e90-b069-5215a80dfb4a
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-    short-id: d368b94e275ab080
-  servername: www.google.com
-  client-fingerprint: random
+    public-key: AcuvO982QLzf76fVydfSuJIiF5520rmj7AxpaxyRwUg
+    short-id: d345ad4657adeef9
+  servername: google.com
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
 - name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
   type: vless
-  server: 95.216.27.15
-  port: 2053
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
+  server: 83.219.97.26
+  port: 443
+  uuid: d0f0a880-0df1-48c9-bdf1-5669fb9483ce
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-    short-id: d368b94e275ab080
-  servername: www.google.com
-  client-fingerprint: firefox
+    public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
+  servername: est1313.ggisopi.su
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
 - name: 🇫🇮 芬兰 (Finland) 04 - xiaohe
   type: vless
-  server: 95.216.27.15
-  port: 2053
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
+  server: 83.219.97.26
+  port: 443
+  uuid: d0f0a880-0df1-48c9-bdf1-5669fb9483ce
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-    short-id: d368b94e275ab080
-  servername: www.google.com
+    public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
+  servername: est1313.ggisopi.su
   client-fingerprint: firefox
+  flow: xtls-rprx-vision
 - name: 🇫🇮 芬兰 (Finland) 05 - xiaohe
   type: vless
   server: est1313.ggisopi.su
@@ -64,12 +65,96 @@ proxies:
   client-fingerprint: chrome
   flow: xtls-rprx-vision
 - name: 🇫🇮 芬兰 (Finland) 06 - xiaohe
-  type: hysteria2
-  server: 144.31.212.253
+  type: vless
+  server: est1313.ggisopi.su
   port: 443
-  password: cf83b611-6cba-4535-adcb-8da06c6a9146
+  uuid: d0f0a880-0df1-48c9-bdf1-5669fb9483ce
   udp: true
+  tls: true
   skip-cert-verify: true
+  reality-opts:
+    public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
+  servername: est1313.ggisopi.su
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇫🇮 芬兰 (Finland) 07 - xiaohe
+  type: vless
+  server: 185.79.138.71
+  port: 448
+  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
+    short-id: cd21e552537c7c0b
+  servername: www.samsung.com
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 08 - xiaohe
+  type: vless
+  server: 185.79.138.71
+  port: 448
+  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
+    short-id: cd21e552537c7c0b
+  servername: www.samsung.com
+  client-fingerprint: firefox
+- name: 🇫🇮 芬兰 (Finland) 09 - xiaohe
+  type: vless
+  server: 185.79.138.71
+  port: 448
+  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
+    short-id: cd21e552537c7c0b
+  servername: www.samsung.com
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 10 - xiaohe
+  type: vless
+  server: 185.79.138.71
+  port: 448
+  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
+    short-id: cd21e552537c7c0b
+  servername: www.samsung.com
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 11 - xiaohe
+  type: vless
+  server: 185.79.138.71
+  port: 448
+  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
+    short-id: cd21e552537c7c0b
+  servername: www.samsung.com
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 12 - xiaohe
+  type: vless
+  server: est1313.ggisopi.su
+  port: 443
+  uuid: d0f0a880-0df1-48c9-bdf1-5669fb9483ce
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
+  servername: est1313.ggisopi.su
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
 proxy-groups:
 - name: PROXIES
   type: select
@@ -81,6 +166,12 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 04 - xiaohe
   - 🇫🇮 芬兰 (Finland) 05 - xiaohe
   - 🇫🇮 芬兰 (Finland) 06 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 07 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 08 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 09 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 10 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 11 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 12 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -92,5 +183,11 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 04 - xiaohe
   - 🇫🇮 芬兰 (Finland) 05 - xiaohe
   - 🇫🇮 芬兰 (Finland) 06 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 07 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 08 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 09 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 10 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 11 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 12 - xiaohe
 rules:
 - MATCH,PROXIES

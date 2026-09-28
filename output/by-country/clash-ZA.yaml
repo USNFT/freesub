@@ -13,10 +13,10 @@ proxies:
   udp: true
 - name: 🇿🇦 南非 (South Africa) 02 - xiaohe
   type: ss
-  server: 20.164.220.189
-  port: 443
+  server: 102.133.165.160
+  port: 16233
   cipher: chacha20-ietf-poly1305
-  password: UbkyrKvOtfSd2xQb
+  password: Xsy8Ox4yOV3xLlpxtjzs3X
   udp: true
 proxy-groups:
 - name: PROXIES

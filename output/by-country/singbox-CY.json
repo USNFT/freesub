@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇨🇾 塞浦路斯 (Cyprus) 01 - xiaohe",
+        "🇨🇾 塞浦路斯 (Cyprus) 02 - xiaohe",
+        "🇨🇾 塞浦路斯 (Cyprus) 03 - xiaohe",
+        "🇨🇾 塞浦路斯 (Cyprus) 04 - xiaohe",
+        "🇨🇾 塞浦路斯 (Cyprus) 05 - xiaohe"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇨🇾 塞浦路斯 (Cyprus) 01 - xiaohe",
+        "🇨🇾 塞浦路斯 (Cyprus) 02 - xiaohe",
+        "🇨🇾 塞浦路斯 (Cyprus) 03 - xiaohe",
+        "🇨🇾 塞浦路斯 (Cyprus) 04 - xiaohe",
+        "🇨🇾 塞浦路斯 (Cyprus) 05 - xiaohe"
+      ],
+      "url": "https://www.google.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}

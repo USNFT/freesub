@@ -14,17 +14,146 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇲🇾 马来西亚 (Malaysia) 02 - xiaohe
+  type: vless
+  server: platform128.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform128
+    headers:
+      Host: platform128.halalkhor.info
+- name: 🇲🇾 马来西亚 (Malaysia) 03 - xiaohe
+  type: vless
+  server: platform107.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform107
+    headers:
+      Host: platform107.golnamakcert.top
+- name: 🇲🇾 马来西亚 (Malaysia) 04 - xiaohe
+  type: vmess
+  server: 47.250.135.244
+  port: 10000
+  uuid: aedc66b8-99d7-4a21-8310-61870e7f870d
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇲🇾 马来西亚 (Malaysia) 05 - xiaohe
+  type: vless
+  server: platform107.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform107
+    headers:
+      Host: platform107.halalkhor.info
+- name: 🇲🇾 马来西亚 (Malaysia) 06 - xiaohe
+  type: vmess
+  server: 47.250.135.244
+  port: 10000
+  uuid: aedc66b8-99d7-4a21-8310-61870e7f870d
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇲🇾 马来西亚 (Malaysia) 07 - xiaohe
+  type: vless
+  server: platform106.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform106
+    headers:
+      Host: platform106.halalkhor.info
+- name: 🇲🇾 马来西亚 (Malaysia) 08 - xiaohe
+  type: vless
+  server: platform108.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform108
+    headers:
+      Host: platform108.halalkhor.info
+- name: 🇲🇾 马来西亚 (Malaysia) 09 - xiaohe
+  type: vless
+  server: platform108.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform108
+    headers:
+      Host: platform108.golnamakcert.top
+- name: 🇲🇾 马来西亚 (Malaysia) 10 - xiaohe
+  type: vless
+  server: platform108.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform108
+    headers:
+      Host: platform108.halalkhor.info
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇲🇾 马来西亚 (Malaysia) 01 - xiaohe
+  - 🇲🇾 马来西亚 (Malaysia) 02 - xiaohe
+  - 🇲🇾 马来西亚 (Malaysia) 03 - xiaohe
+  - 🇲🇾 马来西亚 (Malaysia) 04 - xiaohe
+  - 🇲🇾 马来西亚 (Malaysia) 05 - xiaohe
+  - 🇲🇾 马来西亚 (Malaysia) 06 - xiaohe
+  - 🇲🇾 马来西亚 (Malaysia) 07 - xiaohe
+  - 🇲🇾 马来西亚 (Malaysia) 08 - xiaohe
+  - 🇲🇾 马来西亚 (Malaysia) 09 - xiaohe
+  - 🇲🇾 马来西亚 (Malaysia) 10 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇲🇾 马来西亚 (Malaysia) 01 - xiaohe
+  - 🇲🇾 马来西亚 (Malaysia) 02 - xiaohe
+  - 🇲🇾 马来西亚 (Malaysia) 03 - xiaohe
+  - 🇲🇾 马来西亚 (Malaysia) 04 - xiaohe
+  - 🇲🇾 马来西亚 (Malaysia) 05 - xiaohe
+  - 🇲🇾 马来西亚 (Malaysia) 06 - xiaohe
+  - 🇲🇾 马来西亚 (Malaysia) 07 - xiaohe
+  - 🇲🇾 马来西亚 (Malaysia) 08 - xiaohe
+  - 🇲🇾 马来西亚 (Malaysia) 09 - xiaohe
+  - 🇲🇾 马来西亚 (Malaysia) 10 - xiaohe
 rules:
 - MATCH,PROXIES
