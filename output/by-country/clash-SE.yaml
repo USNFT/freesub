@@ -5,31 +5,36 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 瑞典 (Sweden) 01 - xiaohe
-  type: vless
-  server: 51.170.176.145
-  port: 62145
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  type: ss
+  server: 51.170.191.141
+  port: 45819
+  cipher: 2022-blake3-chacha20-poly1305
+  password: f/NpUKMY1ik7lr86dtH+rKX7U12gqCzzzdJYv7QZXk0=
   udp: true
-  tls: false
-  skip-cert-verify: true
 - name: 🇸🇪 瑞典 (Sweden) 02 - xiaohe
-  type: vless
-  server: 51.170.176.145
-  port: 62145
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇪 瑞典 (Sweden) 03 - xiaohe
   type: ss
   server: 70.34.212.124
   port: 8388
   cipher: aes-256-gcm
   password: AxIYWtskJWIIaefW
   udp: true
+- name: 🇸🇪 瑞典 (Sweden) 03 - xiaohe
+  type: vless
+  server: 5.157.10.148
+  port: 443
+  uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: x6p656szvu_3CKLsJ4NtkooRvdTVGx7IoPca_p58_jA
+    short-id: fb442438e2223836
+  servername: surstreming.vvzzkontaktezzvv.garden
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
 - name: 🇸🇪 瑞典 (Sweden) 04 - xiaohe
   type: vless
-  server: surstreming.vvzzkontaktezzvv.garden
+  server: 5.157.10.148
   port: 443
   uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
   udp: true
@@ -43,35 +48,21 @@ proxies:
   flow: xtls-rprx-vision
 - name: 🇸🇪 瑞典 (Sweden) 05 - xiaohe
   type: vless
-  server: 5.157.10.148
-  port: 443
-  uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
+  server: 82.202.178.131
+  port: 31443
+  uuid: cf1ebf93-f80a-46ff-9afb-cf96c0810ec0
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: x6p656szvu_3CKLsJ4NtkooRvdTVGx7IoPca_p58_jA
-    short-id: fb442438e2223836
-  servername: surstreming.vvzzkontaktezzvv.garden
-  client-fingerprint: random
+    public-key: lA0NS88gVVkaZf4qA1aYystzmLsZ5SNzszDsC-8DMSM
+    short-id: e351ebf520
+  servername: smartcaptcha.yandexcloud.net
+  client-fingerprint: firefox
   flow: xtls-rprx-vision
 - name: 🇸🇪 瑞典 (Sweden) 06 - xiaohe
   type: vless
-  server: sw.bmbrvpn.cc
-  port: 443
-  uuid: aded9f36-430b-46de-9e66-fdf2d88464c7
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: Vrd6nDZblB3XlNd9q5yF2pXIPZ5gukxd1jn6aYrpmFY
-    short-id: 335ef6e104e3
-  servername: sw.bmbrvpn.cc
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇸🇪 瑞典 (Sweden) 07 - xiaohe
-  type: vless
-  server: 5.157.10.148
+  server: surstreming.vvzzkontaktezzvv.garden
   port: 443
   uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
   udp: true
@@ -94,7 +85,6 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 04 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 05 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 06 - xiaohe
-  - 🇸🇪 瑞典 (Sweden) 07 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -106,6 +96,5 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 04 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 05 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 06 - xiaohe
-  - 🇸🇪 瑞典 (Sweden) 07 - xiaohe
 rules:
 - MATCH,PROXIES

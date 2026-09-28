@@ -6,47 +6,33 @@ log-level: info
 proxies:
 - name: 🇱🇹 LT 01 - xiaohe
   type: vless
-  server: 84.32.215.66
-  port: 443
-  uuid: 94877739-3af6-4fbb-85b6-ca6fe86c7696
+  server: 84.32.51.238
+  port: 45977
+  uuid: 25284368-40d5-4abe-9f56-54a07e88a7af
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: 5pR15ATlWW3tVzfnMN3xoiN56LjIUbhnOMp37ZvTFUc
-    short-id: d44d6d46
-  servername: app26.betust.net
-  client-fingerprint: firefox
+    public-key: 5JPUCm5vkIUyBfwcgnkWXJNIW4CaWgBzXgT61cvWVVA
+    short-id: f688ff32ece6b15f
+  servername: lt-1.dzvn.space
+  client-fingerprint: ''
   flow: xtls-rprx-vision
 - name: 🇱🇹 LT 02 - xiaohe
   type: vless
-  server: 188.225.25.195
+  server: lithuana.hype-serv.xyz
   port: 443
-  uuid: 94877739-3af6-4fbb-85b6-ca6fe86c7696
+  uuid: ac9a573b-67ff-4953-9e13-4cf43576f8f0
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: Fe_144ALuRRedGs06ljDnE1f_G2B2wE4i9_diqw5LnY
-    short-id: a16bc894
-  servername: app25.betust.net
-  client-fingerprint: random
+    public-key: 8w1MyEJV4l9QeNWbYMXny5tTLNTw_9nsQ7jOuiQhix4
+    short-id: a1b2c3d4e5f60718
+  servername: hh.ru
+  client-fingerprint: firefox
   flow: xtls-rprx-vision
 - name: 🇱🇹 LT 03 - xiaohe
-  type: vless
-  server: 188.225.25.195
-  port: 443
-  uuid: 94877739-3af6-4fbb-85b6-ca6fe86c7696
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: Fe_144ALuRRedGs06ljDnE1f_G2B2wE4i9_diqw5LnY
-    short-id: a16bc894
-  servername: app25.betust.net
-  client-fingerprint: random
-  flow: xtls-rprx-vision
-- name: 🇱🇹 LT 04 - xiaohe
   type: vless
   server: 188.225.25.142
   port: 443
@@ -60,7 +46,35 @@ proxies:
   servername: prime.betust.net
   client-fingerprint: random
   flow: xtls-rprx-vision
+- name: 🇱🇹 LT 04 - xiaohe
+  type: vless
+  server: 188.225.25.195
+  port: 443
+  uuid: 94877739-3af6-4fbb-85b6-ca6fe86c7696
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: Fe_144ALuRRedGs06ljDnE1f_G2B2wE4i9_diqw5LnY
+    short-id: a16bc894
+  servername: app25.betust.net
+  client-fingerprint: random
+  flow: xtls-rprx-vision
 - name: 🇱🇹 LT 05 - xiaohe
+  type: vless
+  server: 188.225.25.195
+  port: 443
+  uuid: 94877739-3af6-4fbb-85b6-ca6fe86c7696
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: Fe_144ALuRRedGs06ljDnE1f_G2B2wE4i9_diqw5LnY
+    short-id: a16bc894
+  servername: app25.betust.net
+  client-fingerprint: random
+  flow: xtls-rprx-vision
+- name: 🇱🇹 LT 06 - xiaohe
   type: vless
   server: 188.225.24.201
   port: 443
@@ -84,6 +98,7 @@ proxy-groups:
   - 🇱🇹 LT 03 - xiaohe
   - 🇱🇹 LT 04 - xiaohe
   - 🇱🇹 LT 05 - xiaohe
+  - 🇱🇹 LT 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -94,5 +109,6 @@ proxy-groups:
   - 🇱🇹 LT 03 - xiaohe
   - 🇱🇹 LT 04 - xiaohe
   - 🇱🇹 LT 05 - xiaohe
+  - 🇱🇹 LT 06 - xiaohe
 rules:
 - MATCH,PROXIES
