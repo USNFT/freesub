@@ -16,48 +16,48 @@ proxies:
     public-key: 8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To
     short-id: a3a578ab
   servername: www.apple.com
-  client-fingerprint: random
+  client-fingerprint: firefox
   flow: xtls-rprx-vision
 - name: 🇮🇱 以色列 (Israel) 02 - xiaohe
   type: vless
-  server: 185.95.231.156
+  server: 185.95.231.233
   port: 443
-  uuid: 1f8cf47a-b66a-4916-979f-26edfcf44eea
+  uuid: 1ffa8e68-3378-4cf4-b8f6-44bf3d46d106
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: 8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To
-    short-id: a3a578ab
-  servername: www.apple.com
-  client-fingerprint: chrome
+    public-key: r4Dp3mztZaizbDk28rEOkLikk7erR9dzzc-Jrsgraho
+    short-id: a1b2c3d4
+  servername: store.steampowered.com
+  client-fingerprint: random
   flow: xtls-rprx-vision
 - name: 🇮🇱 以色列 (Israel) 03 - xiaohe
   type: vless
-  server: 185.95.231.156
+  server: 185.95.231.233
   port: 443
-  uuid: 1f8cf47a-b66a-4916-979f-26edfcf44eea
+  uuid: 1ffa8e68-3378-4cf4-b8f6-44bf3d46d106
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: 8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To
-    short-id: a3a578ab
-  servername: www.apple.com
+    public-key: r4Dp3mztZaizbDk28rEOkLikk7erR9dzzc-Jrsgraho
+    short-id: a1b2c3d4
+  servername: store.steampowered.com
   client-fingerprint: chrome
   flow: xtls-rprx-vision
 - name: 🇮🇱 以色列 (Israel) 04 - xiaohe
   type: vless
-  server: 185.95.231.156
+  server: 185.95.231.233
   port: 443
-  uuid: 1f8cf47a-b66a-4916-979f-26edfcf44eea
+  uuid: 1ffa8e68-3378-4cf4-b8f6-44bf3d46d106
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: 8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To
-    short-id: a3a578ab
-  servername: www.apple.com
+    public-key: r4Dp3mztZaizbDk28rEOkLikk7erR9dzzc-Jrsgraho
+    short-id: a1b2c3d4
+  servername: store.steampowered.com
   client-fingerprint: chrome
   flow: xtls-rprx-vision
 - name: 🇮🇱 以色列 (Israel) 05 - xiaohe
@@ -76,30 +76,30 @@ proxies:
   flow: xtls-rprx-vision
 - name: 🇮🇱 以色列 (Israel) 06 - xiaohe
   type: vless
-  server: 185.95.231.233
+  server: 185.95.231.156
   port: 443
-  uuid: 1ffa8e68-3378-4cf4-b8f6-44bf3d46d106
+  uuid: 1f8cf47a-b66a-4916-979f-26edfcf44eea
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: r4Dp3mztZaizbDk28rEOkLikk7erR9dzzc-Jrsgraho
-    short-id: a1b2c3d4
-  servername: store.steampowered.com
-  client-fingerprint: chrome
+    public-key: 8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To
+    short-id: a3a578ab
+  servername: www.apple.com
+  client-fingerprint: random
   flow: xtls-rprx-vision
 - name: 🇮🇱 以色列 (Israel) 07 - xiaohe
   type: vless
-  server: 185.95.231.233
+  server: 185.95.231.156
   port: 443
-  uuid: 1ffa8e68-3378-4cf4-b8f6-44bf3d46d106
+  uuid: 1f8cf47a-b66a-4916-979f-26edfcf44eea
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: r4Dp3mztZaizbDk28rEOkLikk7erR9dzzc-Jrsgraho
-    short-id: a1b2c3d4
-  servername: store.steampowered.com
+    public-key: 8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To
+    short-id: a3a578ab
+  servername: www.apple.com
   client-fingerprint: chrome
   flow: xtls-rprx-vision
 - name: 🇮🇱 以色列 (Israel) 08 - xiaohe
@@ -128,21 +128,21 @@ proxies:
     public-key: r4Dp3mztZaizbDk28rEOkLikk7erR9dzzc-Jrsgraho
     short-id: a1b2c3d4
   servername: store.steampowered.com
-  client-fingerprint: random
+  client-fingerprint: chrome
   flow: xtls-rprx-vision
 - name: 🇮🇱 以色列 (Israel) 10 - xiaohe
   type: vless
-  server: 185.95.231.233
-  port: 443
-  uuid: 1ffa8e68-3378-4cf4-b8f6-44bf3d46d106
+  server: 193.202.10.137
+  port: 2291
+  uuid: 25284368-40d5-4abe-9f56-54a07e88a7af
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: r4Dp3mztZaizbDk28rEOkLikk7erR9dzzc-Jrsgraho
-    short-id: a1b2c3d4
-  servername: store.steampowered.com
-  client-fingerprint: chrome
+    public-key: tLWqTzKtCCMxxOzSskvSwDB2an1bxxZ706kcNDqGNWg
+    short-id: 50ace5ab34f6df9b
+  servername: de2.dzvn.space
+  client-fingerprint: firefox
   flow: xtls-rprx-vision
 - name: 🇮🇱 以色列 (Israel) 11 - xiaohe
   type: vless
@@ -156,7 +156,7 @@ proxies:
     public-key: tLWqTzKtCCMxxOzSskvSwDB2an1bxxZ706kcNDqGNWg
     short-id: 50ace5ab34f6df9b
   servername: de2.dzvn.space
-  client-fingerprint: chrome
+  client-fingerprint: firefox
   flow: xtls-rprx-vision
 - name: 🇮🇱 以色列 (Israel) 12 - xiaohe
   type: vless
@@ -173,20 +173,6 @@ proxies:
   client-fingerprint: firefox
   flow: xtls-rprx-vision
 - name: 🇮🇱 以色列 (Israel) 13 - xiaohe
-  type: vless
-  server: 193.169.229.145
-  port: 443
-  uuid: 46b3a70b-b99f-4c6e-aa83-df6d842bb954
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 2CwgJn1lc23uxQjAdGphQl4SSRmd1amunSpYXxgCgCM
-    short-id: 7e13fde9
-  servername: isr.vpnskyline.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇮🇱 以色列 (Israel) 14 - xiaohe
   type: vless
   server: 193.169.229.145
   port: 443
@@ -218,7 +204,6 @@ proxy-groups:
   - 🇮🇱 以色列 (Israel) 11 - xiaohe
   - 🇮🇱 以色列 (Israel) 12 - xiaohe
   - 🇮🇱 以色列 (Israel) 13 - xiaohe
-  - 🇮🇱 以色列 (Israel) 14 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -237,6 +222,5 @@ proxy-groups:
   - 🇮🇱 以色列 (Israel) 11 - xiaohe
   - 🇮🇱 以色列 (Israel) 12 - xiaohe
   - 🇮🇱 以色列 (Israel) 13 - xiaohe
-  - 🇮🇱 以色列 (Israel) 14 - xiaohe
 rules:
 - MATCH,PROXIES

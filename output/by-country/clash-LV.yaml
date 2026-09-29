@@ -1,0 +1,27 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇱🇻 拉脱维亚 (Latvia) 01 - xiaohe
+  type: hysteria2
+  server: 212.192.14.212
+  port: 8113
+  password: ODM2MzExOTcyMCwxNzkwNTMyNzE0ksak7YOGMD
+  udp: true
+  skip-cert-verify: true
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇱🇻 拉脱维亚 (Latvia) 01 - xiaohe
+- name: AUTO
+  type: url-test
+  url: https://www.google.com/generate_204
+  interval: 300
+  proxies:
+  - 🇱🇻 拉脱维亚 (Latvia) 01 - xiaohe
+rules:
+- MATCH,PROXIES
