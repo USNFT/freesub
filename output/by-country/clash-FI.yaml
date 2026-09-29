@@ -20,50 +20,96 @@ proxies:
   flow: xtls-rprx-vision
 - name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
   type: vless
-  server: est1313.ggisopi.su
+  server: 138.124.17.179
   port: 443
-  uuid: d0f0a880-0df1-48c9-bdf1-5669fb9483ce
+  uuid: ca5ffe64-81e0-42f0-a136-03cc4f662a4f
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
-  servername: est1313.ggisopi.su
-  client-fingerprint: safari
-  flow: xtls-rprx-vision
+    public-key: eqlfwoHUoRvNeOKYzCzHSV64rSzyUVGS2w_nsOpWIG4
+    short-id: ffdf2e6056999b66
+  servername: finewl1.krusofiya.fun
+  client-fingerprint: random
 - name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
   type: vless
-  server: est1313.ggisopi.su
-  port: 443
-  uuid: d0f0a880-0df1-48c9-bdf1-5669fb9483ce
+  server: 95.216.27.15
+  port: 2053
+  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
-  servername: est1313.ggisopi.su
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
+    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
+    short-id: d368b94e275ab080
+  servername: www.google.com
+  client-fingerprint: firefox
 - name: 🇫🇮 芬兰 (Finland) 04 - xiaohe
-  type: hysteria2
-  server: 144.31.212.253
-  port: 443
-  password: cf83b611-6cba-4535-adcb-8da06c6a9146
+  type: vless
+  server: 185.79.138.71
+  port: 448
+  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
   udp: true
+  tls: true
   skip-cert-verify: true
+  reality-opts:
+    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
+    short-id: cd21e552537c7c0b
+  servername: www.samsung.com
+  client-fingerprint: chrome
 - name: 🇫🇮 芬兰 (Finland) 05 - xiaohe
   type: vless
-  server: cosw.ggisopi.su
-  port: 443
-  uuid: d0f0a880-0df1-0003-bdf1-5669fb9483ce
+  server: 185.79.138.71
+  port: 448
+  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
-  servername: cosw.ggisopi.su
-  client-fingerprint: qq
+    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
+    short-id: cd21e552537c7c0b
+  servername: www.samsung.com
+  client-fingerprint: firefox
+- name: 🇫🇮 芬兰 (Finland) 06 - xiaohe
+  type: vless
+  server: 185.79.138.71
+  port: 448
+  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
+    short-id: cd21e552537c7c0b
+  servername: www.samsung.com
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 07 - xiaohe
+  type: vless
+  server: 144.31.27.215
+  port: 43000
+  uuid: 47f79fc1-0646-40e8-8a58-73e85d183d5a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: dxCQnOekn14riFxt3vdwDNydvW47FsmwFG6BJ2mUgEg
+    short-id: 568d87a47271344e
+  servername: 144.31.27.215
+  client-fingerprint: random
   flow: xtls-rprx-vision
+- name: 🇫🇮 芬兰 (Finland) 08 - xiaohe
+  type: vless
+  server: 138.124.17.179
+  port: 443
+  uuid: ca5ffe64-81e0-42f0-a136-03cc4f662a4f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: eqlfwoHUoRvNeOKYzCzHSV64rSzyUVGS2w_nsOpWIG4
+    short-id: ffdf2e6056999b66
+  servername: finewl1.krusofiya.fun
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
@@ -74,6 +120,9 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 03 - xiaohe
   - 🇫🇮 芬兰 (Finland) 04 - xiaohe
   - 🇫🇮 芬兰 (Finland) 05 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 06 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 07 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 08 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -84,5 +133,8 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 03 - xiaohe
   - 🇫🇮 芬兰 (Finland) 04 - xiaohe
   - 🇫🇮 芬兰 (Finland) 05 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 06 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 07 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 08 - xiaohe
 rules:
 - MATCH,PROXIES

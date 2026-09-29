@@ -16,21 +16,20 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: estproxy4.lockdwn.com
+      Host: 94.183.170.135
 - name: 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
   type: vless
-  server: 212.87.190.166
+  server: 94.183.170.135
   port: 443
-  uuid: 5dff1842-c02f-4dd4-b1ad-2e597b99dc31
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: sQYbY2iYj2RZTUJQTR7ZXE6LtQDNtIFmZhYJbmlv8lw
-    short-id: 7ac6d7ab
-  servername: ee166.mech-pro.online
-  client-fingerprint: qq
-  flow: xtls-rprx-vision
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 94.183.170.135
 proxy-groups:
 - name: PROXIES
   type: select

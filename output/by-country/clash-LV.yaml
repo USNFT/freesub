@@ -5,12 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇱🇻 拉脱维亚 (Latvia) 01 - xiaohe
-  type: hysteria2
-  server: 212.192.14.212
-  port: 8113
-  password: ODM2MzExOTcyMCwxNzkwNTMyNzE0ksak7YOGMD
+  type: vless
+  server: 31.57.28.147
+  port: 443
+  uuid: 2412bd96-925b-43f2-81d1-0ed4f0793699
   udp: true
+  tls: true
   skip-cert-verify: true
+  reality-opts:
+    public-key: d7yg69dK4DkaV1EPpQcgd4GBncMN9u1o1Nk9u-i7wGc
+    short-id: 7a18a196e730e1d5
+  servername: download-cdn.jetbrains.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
 proxy-groups:
 - name: PROXIES
   type: select
