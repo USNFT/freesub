@@ -16,7 +16,7 @@ proxies:
     public-key: d7yg69dK4DkaV1EPpQcgd4GBncMN9u1o1Nk9u-i7wGc
     short-id: 7a18a196e730e1d5
   servername: download-cdn.jetbrains.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
   flow: xtls-rprx-vision
 proxy-groups:
 - name: PROXIES
