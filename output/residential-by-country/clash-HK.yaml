@@ -6,6 +6,13 @@ log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe
   type: hysteria2
+  server: f675b7ac-tmeqo0-0-1imi4.hk3.hyhuawei.com
+  port: 443
+  password: 40fb1315-191a-11ed-b0ca-f23c91cfbbc9
+  udp: true
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe
+  type: hysteria2
   server: hk01.kfc-520.com
   port: 60001
   password: 5ec96249-b753-317a-b065-b67ad66b8185
@@ -17,11 +24,13 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES
