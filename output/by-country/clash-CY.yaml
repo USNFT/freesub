@@ -16,7 +16,7 @@ proxies:
     public-key: g77ZJbm18JEotapmVRjaXi133MzkbhkU2lxhVeXx8zw
     short-id: 68a8
   servername: deepl.com
-  client-fingerprint: firefox
+  client-fingerprint: qq
   flow: xtls-rprx-vision
 - name: 🇨🇾 塞浦路斯 (Cyprus) 02 - xiaohe
   type: vless
@@ -34,9 +34,9 @@ proxies:
   flow: xtls-rprx-vision
 - name: 🇨🇾 塞浦路斯 (Cyprus) 03 - xiaohe
   type: vless
-  server: 5.253.42.164
+  server: 5.253.28.224
   port: 40443
-  uuid: e99ba96d-dec8-42eb-be53-19e71eef7cab
+  uuid: af5eac96-e478-488a-bc8c-45269d7e8847
   udp: true
   tls: true
   skip-cert-verify: true
@@ -62,48 +62,6 @@ proxies:
   flow: xtls-rprx-vision
 - name: 🇨🇾 塞浦路斯 (Cyprus) 05 - xiaohe
   type: vless
-  server: india.letsconnectpoint.com
-  port: 443
-  uuid: 914f3806-07a1-4158-9624-e183de065a38
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: erUEmyU1QK8y2corQh9bOjk0oHl2Mo6Z9WgoyKg_rC0
-    short-id: c1e3d5d4
-  servername: india.letsconnectpoint.com
-  client-fingerprint: random
-  flow: xtls-rprx-vision
-- name: 🇨🇾 塞浦路斯 (Cyprus) 06 - xiaohe
-  type: vless
-  server: india.letsconnectpoint.com
-  port: 443
-  uuid: 914f3806-07a1-4158-9624-e183de065a38
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: erUEmyU1QK8y2corQh9bOjk0oHl2Mo6Z9WgoyKg_rC0
-    short-id: c1e3d5d4
-  servername: india.letsconnectpoint.com
-  client-fingerprint: random
-  flow: xtls-rprx-vision
-- name: 🇨🇾 塞浦路斯 (Cyprus) 07 - xiaohe
-  type: vless
-  server: hydra.yokkastars.com
-  port: 40443
-  uuid: 405b964e-a2d2-454f-aaaa-711cc218897c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0
-    short-id: 88b6
-  servername: deepl.com
-  client-fingerprint: qq
-  flow: xtls-rprx-vision
-- name: 🇨🇾 塞浦路斯 (Cyprus) 08 - xiaohe
-  type: vless
   server: 5.253.30.99
   port: 40443
   uuid: 511c1563-2cb6-4064-abc6-a59ee49818a8
@@ -116,7 +74,21 @@ proxies:
   servername: deepl.com
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: 🇨🇾 塞浦路斯 (Cyprus) 09 - xiaohe
+- name: 🇨🇾 塞浦路斯 (Cyprus) 06 - xiaohe
+  type: vless
+  server: 5.253.28.240
+  port: 40443
+  uuid: 405b964e-a2d2-454f-aaaa-711cc218897c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0
+    short-id: 88b6
+  servername: deepl.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇨🇾 塞浦路斯 (Cyprus) 07 - xiaohe
   type: vless
   server: dorado.yokkastars.com
   port: 40443
@@ -130,6 +102,34 @@ proxies:
   servername: deepl.com
   client-fingerprint: random
   flow: xtls-rprx-vision
+- name: 🇨🇾 塞浦路斯 (Cyprus) 08 - xiaohe
+  type: vless
+  server: 5.253.28.240
+  port: 40443
+  uuid: 405b964e-a2d2-454f-aaaa-711cc218897c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0
+    short-id: 88b6
+  servername: deepl.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇨🇾 塞浦路斯 (Cyprus) 09 - xiaohe
+  type: vless
+  server: 5.253.30.99
+  port: 40443
+  uuid: 511c1563-2cb6-4064-abc6-a59ee49818a8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0
+    short-id: 88b6
+  servername: deepl.com
+  client-fingerprint: qq
+  flow: xtls-rprx-vision
 - name: 🇨🇾 塞浦路斯 (Cyprus) 10 - xiaohe
   type: vless
   server: 5.253.30.99
@@ -142,47 +142,7 @@ proxies:
     public-key: cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0
     short-id: 88b6
   servername: deepl.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇨🇾 塞浦路斯 (Cyprus) 11 - xiaohe
-  type: vless
-  server: 194.76.154.31
-  port: 40443
-  uuid: 9f0baff8-bdee-4de9-9515-bcc4932b41fa
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
-    short-id: a8ae
-  servername: deepl.com
-  client-fingerprint: chrome
-- name: 🇨🇾 塞浦路斯 (Cyprus) 12 - xiaohe
-  type: vless
-  server: 194.76.154.31
-  port: 40443
-  uuid: 9f0baff8-bdee-4de9-9515-bcc4932b41fa
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
-    short-id: a8ae
-  servername: deepl.com
-  client-fingerprint: chrome
-- name: 🇨🇾 塞浦路斯 (Cyprus) 13 - xiaohe
-  type: vless
-  server: india.letsconnectpoint.com
-  port: 443
-  uuid: 914f3806-07a1-4158-9624-e183de065a38
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: erUEmyU1QK8y2corQh9bOjk0oHl2Mo6Z9WgoyKg_rC0
-    short-id: c1e3d5d4
-  servername: india.letsconnectpoint.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
   flow: xtls-rprx-vision
 proxy-groups:
 - name: PROXIES
@@ -199,9 +159,6 @@ proxy-groups:
   - 🇨🇾 塞浦路斯 (Cyprus) 08 - xiaohe
   - 🇨🇾 塞浦路斯 (Cyprus) 09 - xiaohe
   - 🇨🇾 塞浦路斯 (Cyprus) 10 - xiaohe
-  - 🇨🇾 塞浦路斯 (Cyprus) 11 - xiaohe
-  - 🇨🇾 塞浦路斯 (Cyprus) 12 - xiaohe
-  - 🇨🇾 塞浦路斯 (Cyprus) 13 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -217,8 +174,5 @@ proxy-groups:
   - 🇨🇾 塞浦路斯 (Cyprus) 08 - xiaohe
   - 🇨🇾 塞浦路斯 (Cyprus) 09 - xiaohe
   - 🇨🇾 塞浦路斯 (Cyprus) 10 - xiaohe
-  - 🇨🇾 塞浦路斯 (Cyprus) 11 - xiaohe
-  - 🇨🇾 塞浦路斯 (Cyprus) 12 - xiaohe
-  - 🇨🇾 塞浦路斯 (Cyprus) 13 - xiaohe
 rules:
 - MATCH,PROXIES

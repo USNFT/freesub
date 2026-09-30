@@ -6,14 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇪 爱尔兰 (Ireland) 01 - xiaohe"
+        "🇮🇪 爱尔兰 (Ireland) 01 - xiaohe",
+        "🇮🇪 爱尔兰 (Ireland) 02 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇪 爱尔兰 (Ireland) 01 - xiaohe"
+        "🇮🇪 爱尔兰 (Ireland) 01 - xiaohe",
+        "🇮🇪 爱尔兰 (Ireland) 02 - xiaohe"
       ],
       "url": "https://www.google.com/generate_204"
     },

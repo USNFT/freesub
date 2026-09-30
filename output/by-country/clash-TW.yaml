@@ -145,18 +145,15 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 15 - xiaohe
-  type: vmess
-  server: 165.154.195.38
-  port: 35034
-  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
-  alterId: 0
-  cipher: auto
+  type: hysteria2
+  server: 103.115.109.49
+  port: 443
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   udp: true
-  tls: false
   skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 16 - xiaohe
   type: hysteria2
-  server: 103.115.109.49
+  server: 160.187.100.109
   port: 443
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   udp: true
@@ -177,14 +174,14 @@ proxies:
   skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 19 - xiaohe
   type: hysteria2
-  server: 103.115.109.49
+  server: 160.187.100.109
   port: 443
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   udp: true
   skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 20 - xiaohe
   type: hysteria2
-  server: 160.187.100.109
+  server: 103.115.109.49
   port: 443
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   udp: true
@@ -226,7 +223,7 @@ proxies:
   skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 26 - xiaohe
   type: hysteria2
-  server: 160.187.100.109
+  server: vpn-tw-002.fastervpn.world
   port: 443
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   udp: true
@@ -247,35 +244,35 @@ proxies:
   skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 29 - xiaohe
   type: hysteria2
-  server: vpn-tw-002.fastervpn.world
+  server: 103.115.109.49
   port: 443
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   udp: true
   skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 30 - xiaohe
   type: hysteria2
-  server: 160.187.100.109
+  server: 103.115.109.49
   port: 443
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   udp: true
   skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 31 - xiaohe
   type: hysteria2
-  server: 103.115.109.49
+  server: 160.187.100.109
   port: 443
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   udp: true
   skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 32 - xiaohe
   type: hysteria2
-  server: 103.115.109.49
+  server: vpn-tw-002.fastervpn.world
   port: 443
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   udp: true
   skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 33 - xiaohe
   type: hysteria2
-  server: 103.115.109.49
+  server: vpn-tw-002.fastervpn.world
   port: 443
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   udp: true
@@ -296,7 +293,7 @@ proxies:
   skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 36 - xiaohe
   type: hysteria2
-  server: 103.115.109.49
+  server: vpn-tw-002.fastervpn.world
   port: 443
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   udp: true
@@ -310,7 +307,7 @@ proxies:
   skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 38 - xiaohe
   type: hysteria2
-  server: 160.187.100.109
+  server: 103.115.109.49
   port: 443
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   udp: true
@@ -323,195 +320,14 @@ proxies:
   udp: true
   skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 40 - xiaohe
-  type: hysteria2
-  server: 103.115.109.49
-  port: 443
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  type: vmess
+  server: 165.154.195.38
+  port: 35034
+  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
+  alterId: 0
+  cipher: auto
   udp: true
-  skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 41 - xiaohe
-  type: vless
-  server: 35.201.181.122
-  port: 443
-  uuid: 22a0b0bd-1cd0-43fa-a7c3-73b24eae44e2
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: PLslPQOBA3bfWO5hXLv7jioCTuNR8vCxa_axi0dC7C0
-    short-id: 32f66f37df3f58d2
-  servername: www.cloudflare.com
-  client-fingerprint: qq
-- name: 🇹🇼 中国台湾 (Taiwan) 42 - xiaohe
-  type: vless
-  server: 35.201.181.122
-  port: 443
-  uuid: 22a0b0bd-1cd0-43fa-a7c3-73b24eae44e2
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: PLslPQOBA3bfWO5hXLv7jioCTuNR8vCxa_axi0dC7C0
-    short-id: 32f66f37df3f58d2
-  servername: www.cloudflare.com
-  client-fingerprint: safari
-- name: 🇹🇼 中国台湾 (Taiwan) 43 - xiaohe
-  type: vless
-  server: 35.201.181.122
-  port: 443
-  uuid: 22a0b0bd-1cd0-43fa-a7c3-73b24eae44e2
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: PLslPQOBA3bfWO5hXLv7jioCTuNR8vCxa_axi0dC7C0
-    short-id: 32f66f37df3f58d2
-  servername: www.cloudflare.com
-  client-fingerprint: ios
-- name: 🇹🇼 中国台湾 (Taiwan) 44 - xiaohe
-  type: vless
-  server: 35.201.181.122
-  port: 443
-  uuid: 22a0b0bd-1cd0-43fa-a7c3-73b24eae44e2
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: PLslPQOBA3bfWO5hXLv7jioCTuNR8vCxa_axi0dC7C0
-    short-id: 32f66f37df3f58d2
-  servername: www.cloudflare.com
-  client-fingerprint: ios
-- name: 🇹🇼 中国台湾 (Taiwan) 45 - xiaohe
-  type: vless
-  server: 35.201.181.122
-  port: 443
-  uuid: 22a0b0bd-1cd0-43fa-a7c3-73b24eae44e2
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: PLslPQOBA3bfWO5hXLv7jioCTuNR8vCxa_axi0dC7C0
-    short-id: 32f66f37df3f58d2
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇹🇼 中国台湾 (Taiwan) 46 - xiaohe
-  type: vless
-  server: 35.201.181.122
-  port: 443
-  uuid: 22a0b0bd-1cd0-43fa-a7c3-73b24eae44e2
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: PLslPQOBA3bfWO5hXLv7jioCTuNR8vCxa_axi0dC7C0
-    short-id: 32f66f37df3f58d2
-  servername: www.cloudflare.com
-  client-fingerprint: qq
-- name: 🇹🇼 中国台湾 (Taiwan) 47 - xiaohe
-  type: vless
-  server: 35.201.181.122
-  port: 443
-  uuid: 22a0b0bd-1cd0-43fa-a7c3-73b24eae44e2
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: PLslPQOBA3bfWO5hXLv7jioCTuNR8vCxa_axi0dC7C0
-    short-id: 32f66f37df3f58d2
-  servername: www.cloudflare.com
-  client-fingerprint: ios
-- name: 🇹🇼 中国台湾 (Taiwan) 48 - xiaohe
-  type: hysteria2
-  server: vpn-tw-002.fastervpn.world
-  port: 443
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  udp: true
-  skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 49 - xiaohe
-  type: vless
-  server: 35.201.181.122
-  port: 443
-  uuid: 22a0b0bd-1cd0-43fa-a7c3-73b24eae44e2
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: PLslPQOBA3bfWO5hXLv7jioCTuNR8vCxa_axi0dC7C0
-    short-id: 32f66f37df3f58d2
-  servername: www.cloudflare.com
-  client-fingerprint: edge
-- name: 🇹🇼 中国台湾 (Taiwan) 50 - xiaohe
-  type: vless
-  server: 35.201.181.122
-  port: 443
-  uuid: 22a0b0bd-1cd0-43fa-a7c3-73b24eae44e2
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: PLslPQOBA3bfWO5hXLv7jioCTuNR8vCxa_axi0dC7C0
-    short-id: 32f66f37df3f58d2
-  servername: www.cloudflare.com
-  client-fingerprint: edge
-- name: 🇹🇼 中国台湾 (Taiwan) 51 - xiaohe
-  type: vless
-  server: 35.201.181.122
-  port: 443
-  uuid: 22a0b0bd-1cd0-43fa-a7c3-73b24eae44e2
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: PLslPQOBA3bfWO5hXLv7jioCTuNR8vCxa_axi0dC7C0
-    short-id: 32f66f37df3f58d2
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇹🇼 中国台湾 (Taiwan) 52 - xiaohe
-  type: hysteria2
-  server: vpn-tw-002.fastervpn.world
-  port: 443
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  udp: true
-  skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 53 - xiaohe
-  type: hysteria2
-  server: vpn-tw-002.fastervpn.world
-  port: 443
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  udp: true
-  skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 54 - xiaohe
-  type: vless
-  server: 35.201.181.122
-  port: 443
-  uuid: 22a0b0bd-1cd0-43fa-a7c3-73b24eae44e2
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: PLslPQOBA3bfWO5hXLv7jioCTuNR8vCxa_axi0dC7C0
-    short-id: 32f66f37df3f58d2
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇹🇼 中国台湾 (Taiwan) 55 - xiaohe
-  type: vless
-  server: 35.201.181.122
-  port: 443
-  uuid: 22a0b0bd-1cd0-43fa-a7c3-73b24eae44e2
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: PLslPQOBA3bfWO5hXLv7jioCTuNR8vCxa_axi0dC7C0
-    short-id: 32f66f37df3f58d2
-  servername: www.cloudflare.com
-  client-fingerprint: safari
-- name: 🇹🇼 中国台湾 (Taiwan) 56 - xiaohe
-  type: hysteria2
-  server: vpn-tw-002.fastervpn.world
-  port: 443
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  udp: true
+  tls: false
   skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
@@ -558,22 +374,6 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 38 - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 39 - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 40 - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 41 - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 42 - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 43 - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 44 - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 45 - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 46 - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 47 - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 48 - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 49 - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 50 - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 51 - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 52 - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 53 - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 54 - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 55 - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 56 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -619,21 +419,5 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 38 - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 39 - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 40 - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 41 - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 42 - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 43 - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 44 - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 45 - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 46 - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 47 - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 48 - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 49 - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 50 - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 51 - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 52 - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 53 - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 54 - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 55 - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 56 - xiaohe
 rules:
 - MATCH,PROXIES
