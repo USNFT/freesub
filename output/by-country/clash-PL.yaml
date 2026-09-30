@@ -5,6 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - xiaohe
+  type: hysteria2
+  server: 45.192.12.93
+  port: 443
+  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
+  udp: true
+  skip-cert-verify: true
+- name: 🇵🇱 波兰 (Poland) 02 - xiaohe
+  type: hysteria2
+  server: 45.192.12.93
+  port: 443
+  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
+  udp: true
+  skip-cert-verify: true
+- name: 🇵🇱 波兰 (Poland) 03 - xiaohe
   type: vless
   server: 144.31.131.38
   port: 443
@@ -18,7 +32,36 @@ proxies:
   servername: prod.pl-node-01.security-sbrf.ru
   client-fingerprint: firefox
   flow: xtls-rprx-vision
-- name: 🇵🇱 波兰 (Poland) 02 - xiaohe
+- name: 🇵🇱 波兰 (Poland) 04 - xiaohe
+  type: hysteria2
+  server: 45.192.12.93
+  port: 443
+  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
+  udp: true
+  skip-cert-verify: true
+- name: 🇵🇱 波兰 (Poland) 05 - xiaohe
+  type: hysteria2
+  server: admin.wwwinternetvideo.click
+  port: 443
+  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
+  udp: true
+  skip-cert-verify: true
+- name: 🇵🇱 波兰 (Poland) 06 - xiaohe
+  type: hysteria2
+  server: 144.31.49.47
+  port: 443
+  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
+  udp: true
+  skip-cert-verify: true
+- name: 🇵🇱 波兰 (Poland) 07 - xiaohe
+  type: vless
+  server: pl-irancell7.xelfona.ir
+  port: 2095
+  uuid: 452f869f-7720-47c3-a175-b6673e31d3e8
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇵🇱 波兰 (Poland) 08 - xiaohe
   type: vless
   server: pl-waw.dontblockmepls.com
   port: 2063
@@ -31,9 +74,9 @@ proxies:
   servername: rusbid.de
   client-fingerprint: firefox
   flow: xtls-rprx-vision
-- name: 🇵🇱 波兰 (Poland) 03 - xiaohe
+- name: 🇵🇱 波兰 (Poland) 09 - xiaohe
   type: hysteria2
-  server: 45.192.12.93
+  server: 144.31.49.47
   port: 443
   password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
   udp: true
@@ -46,6 +89,12 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 01 - xiaohe
   - 🇵🇱 波兰 (Poland) 02 - xiaohe
   - 🇵🇱 波兰 (Poland) 03 - xiaohe
+  - 🇵🇱 波兰 (Poland) 04 - xiaohe
+  - 🇵🇱 波兰 (Poland) 05 - xiaohe
+  - 🇵🇱 波兰 (Poland) 06 - xiaohe
+  - 🇵🇱 波兰 (Poland) 07 - xiaohe
+  - 🇵🇱 波兰 (Poland) 08 - xiaohe
+  - 🇵🇱 波兰 (Poland) 09 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -54,5 +103,11 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 01 - xiaohe
   - 🇵🇱 波兰 (Poland) 02 - xiaohe
   - 🇵🇱 波兰 (Poland) 03 - xiaohe
+  - 🇵🇱 波兰 (Poland) 04 - xiaohe
+  - 🇵🇱 波兰 (Poland) 05 - xiaohe
+  - 🇵🇱 波兰 (Poland) 06 - xiaohe
+  - 🇵🇱 波兰 (Poland) 07 - xiaohe
+  - 🇵🇱 波兰 (Poland) 08 - xiaohe
+  - 🇵🇱 波兰 (Poland) 09 - xiaohe
 rules:
 - MATCH,PROXIES

@@ -4,24 +4,24 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇷 IR 01 - xiaohe
+- name: 🇮🇪 爱尔兰 (Ireland) 01 - xiaohe
   type: ss
-  server: 176.120.17.22
-  port: 1080
+  server: 20.123.34.66
+  port: 443
   cipher: chacha20-ietf-poly1305
-  password: vUtLhCy8T6zoZv9Y6EP2G9oyWXFFUv-d
+  password: r5D6YOSrT6kC76ro
   udp: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇷 IR 01 - xiaohe
+  - 🇮🇪 爱尔兰 (Ireland) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇷 IR 01 - xiaohe
+  - 🇮🇪 爱尔兰 (Ireland) 01 - xiaohe
 rules:
 - MATCH,PROXIES

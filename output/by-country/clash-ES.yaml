@@ -15,14 +15,11 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇪🇸 西班牙 (Spain) 02 - xiaohe
-  type: vmess
-  server: 66.163.118.73
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
+  type: hysteria2
+  server: 185.174.137.172
+  port: 8446
+  password: e9dc02d400b67c727aca1620
   udp: true
-  tls: false
   skip-cert-verify: true
 - name: 🇪🇸 西班牙 (Spain) 03 - xiaohe
   type: vmess
@@ -36,18 +33,21 @@ proxies:
   skip-cert-verify: true
 - name: 🇪🇸 西班牙 (Spain) 04 - xiaohe
   type: ss
-  server: 140.174.184.5
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: qItG8SueYQcP
-  udp: true
-- name: 🇪🇸 西班牙 (Spain) 05 - xiaohe
-  type: ss
   server: 108.181.121.226
   port: 8388
   cipher: chacha20-ietf-poly1305
   password: WSyL4XTwNsdv
   udp: true
+- name: 🇪🇸 西班牙 (Spain) 05 - xiaohe
+  type: vmess
+  server: 66.163.118.73
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select

@@ -32,20 +32,6 @@ proxies:
   servername: Miro.com
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
-  type: vless
-  server: 89.125.114.9
-  port: 443
-  uuid: 6db7ea14-ed33-4591-a9b1-f1e91b1c0ff5
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: KEoz-uTjqCGwtNakCD-XewbDk_8Vwm_nFv0zg3c2Syg
-    short-id: 67a4fe46bbf783cc
-  servername: ozone.nl
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
 proxy-groups:
 - name: PROXIES
   type: select
@@ -53,7 +39,6 @@ proxy-groups:
   - AUTO
   - 🇫🇮 芬兰 (Finland) 01 - xiaohe
   - 🇫🇮 芬兰 (Finland) 02 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -61,6 +46,5 @@ proxy-groups:
   proxies:
   - 🇫🇮 芬兰 (Finland) 01 - xiaohe
   - 🇫🇮 芬兰 (Finland) 02 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 03 - xiaohe
 rules:
 - MATCH,PROXIES
