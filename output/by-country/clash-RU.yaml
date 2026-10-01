@@ -19,22 +19,22 @@ proxies:
   client-fingerprint: ''
   flow: xtls-rprx-vision
 - name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
-  type: hysteria2
-  server: 91.240.86.70
-  port: 22443
-  password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
-  udp: true
-  skip-cert-verify: true
-- name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
-  type: hysteria2
-  server: srv-17e124.21freedom.net
-  port: 11592
-  password: 41edb44c8e
-  udp: true
-  skip-cert-verify: true
-- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
   type: vless
-  server: china.letsconnectpoint.com
+  server: 194.113.235.66
+  port: 443
+  uuid: 1c5ed2e1-56da-41ab-9a78-159d9892ec17
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: lHCkAu_DOVFtE-iL2JGrPt44QeTCFijXuRfuGaSni3Q
+    short-id: 9e4eced6e98ed4d4
+  servername: github.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
+  type: vless
+  server: 139.28.168.201
   port: 443
   uuid: a368752a-32fc-42f3-980a-6b049218b23f
   udp: true
@@ -46,6 +46,13 @@ proxies:
   servername: china.letsconnectpoint.com
   client-fingerprint: chrome
   flow: xtls-rprx-vision
+- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
+  type: hysteria2
+  server: 91.240.86.70
+  port: 22443
+  password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
+  udp: true
+  skip-cert-verify: true
 - name: 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
   type: vless
   server: 139.28.168.201
@@ -58,7 +65,7 @@ proxies:
     public-key: 4ubYp4HaBJgn1qXwfo0hiejncurXCckII-O_FMDXTgI
     short-id: 3b74d85e
   servername: china.letsconnectpoint.com
-  client-fingerprint: random
+  client-fingerprint: firefox
   flow: xtls-rprx-vision
 - name: 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
   type: vless
@@ -76,9 +83,9 @@ proxies:
   flow: xtls-rprx-vision
 - name: 🇷🇺 俄罗斯 (Russia) 07 - xiaohe
   type: vless
-  server: 139.28.168.201
+  server: china.letsconnectpoint.com
   port: 443
-  uuid: a368752a-32fc-42f3-980a-6b049218b23f
+  uuid: 914f3806-07a1-4158-9624-e183de065a38
   udp: true
   tls: true
   skip-cert-verify: true
@@ -106,7 +113,7 @@ proxies:
   type: vless
   server: china.letsconnectpoint.com
   port: 443
-  uuid: a368752a-32fc-42f3-980a-6b049218b23f
+  uuid: 914f3806-07a1-4158-9624-e183de065a38
   udp: true
   tls: true
   skip-cert-verify: true
@@ -120,6 +127,41 @@ proxies:
   type: vless
   server: china.letsconnectpoint.com
   port: 443
+  uuid: a368752a-32fc-42f3-980a-6b049218b23f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 4ubYp4HaBJgn1qXwfo0hiejncurXCckII-O_FMDXTgI
+    short-id: 3b74d85e
+  servername: china.letsconnectpoint.com
+  client-fingerprint: ios
+  flow: xtls-rprx-vision
+- name: 🇷🇺 俄罗斯 (Russia) 11 - xiaohe
+  type: vless
+  server: china.letsconnectpoint.com
+  port: 443
+  uuid: a368752a-32fc-42f3-980a-6b049218b23f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 4ubYp4HaBJgn1qXwfo0hiejncurXCckII-O_FMDXTgI
+    short-id: 3b74d85e
+  servername: china.letsconnectpoint.com
+  client-fingerprint: random
+  flow: xtls-rprx-vision
+- name: 🇷🇺 俄罗斯 (Russia) 12 - xiaohe
+  type: hysteria2
+  server: 91.240.86.70
+  port: 22443
+  password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
+  udp: true
+  skip-cert-verify: true
+- name: 🇷🇺 俄罗斯 (Russia) 13 - xiaohe
+  type: vless
+  server: china.letsconnectpoint.com
+  port: 443
   uuid: 914f3806-07a1-4158-9624-e183de065a38
   udp: true
   tls: true
@@ -130,53 +172,11 @@ proxies:
   servername: china.letsconnectpoint.com
   client-fingerprint: random
   flow: xtls-rprx-vision
-- name: 🇷🇺 俄罗斯 (Russia) 11 - xiaohe
-  type: vless
-  server: china.letsconnectpoint.com
-  port: 443
-  uuid: 914f3806-07a1-4158-9624-e183de065a38
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 4ubYp4HaBJgn1qXwfo0hiejncurXCckII-O_FMDXTgI
-    short-id: 3b74d85e
-  servername: china.letsconnectpoint.com
-  client-fingerprint: ios
-  flow: xtls-rprx-vision
-- name: 🇷🇺 俄罗斯 (Russia) 12 - xiaohe
-  type: vless
-  server: china.letsconnectpoint.com
-  port: 443
-  uuid: a368752a-32fc-42f3-980a-6b049218b23f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 4ubYp4HaBJgn1qXwfo0hiejncurXCckII-O_FMDXTgI
-    short-id: 3b74d85e
-  servername: china.letsconnectpoint.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇷🇺 俄罗斯 (Russia) 13 - xiaohe
-  type: vless
-  server: china.letsconnectpoint.com
-  port: 443
-  uuid: a368752a-32fc-42f3-980a-6b049218b23f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 4ubYp4HaBJgn1qXwfo0hiejncurXCckII-O_FMDXTgI
-    short-id: 3b74d85e
-  servername: china.letsconnectpoint.com
-  client-fingerprint: ios
-  flow: xtls-rprx-vision
 - name: 🇷🇺 俄罗斯 (Russia) 14 - xiaohe
   type: vless
   server: china.letsconnectpoint.com
   port: 443
-  uuid: a368752a-32fc-42f3-980a-6b049218b23f
+  uuid: 914f3806-07a1-4158-9624-e183de065a38
   udp: true
   tls: true
   skip-cert-verify: true
@@ -187,47 +187,25 @@ proxies:
   client-fingerprint: random
   flow: xtls-rprx-vision
 - name: 🇷🇺 俄罗斯 (Russia) 15 - xiaohe
-  type: vless
-  server: 139.28.168.201
-  port: 443
-  uuid: a368752a-32fc-42f3-980a-6b049218b23f
+  type: hysteria2
+  server: els.mangshe.xyz
+  port: 2060
+  password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
   udp: true
-  tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: 4ubYp4HaBJgn1qXwfo0hiejncurXCckII-O_FMDXTgI
-    short-id: 3b74d85e
-  servername: china.letsconnectpoint.com
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
 - name: 🇷🇺 俄罗斯 (Russia) 16 - xiaohe
   type: vless
-  server: 139.28.168.201
-  port: 443
-  uuid: a368752a-32fc-42f3-980a-6b049218b23f
+  server: 45.12.75.242
+  port: 26424
+  uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: 4ubYp4HaBJgn1qXwfo0hiejncurXCckII-O_FMDXTgI
-    short-id: 3b74d85e
-  servername: china.letsconnectpoint.com
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇷🇺 俄罗斯 (Russia) 17 - xiaohe
-  type: vless
-  server: china.letsconnectpoint.com
-  port: 443
-  uuid: 914f3806-07a1-4158-9624-e183de065a38
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 4ubYp4HaBJgn1qXwfo0hiejncurXCckII-O_FMDXTgI
-    short-id: 3b74d85e
-  servername: china.letsconnectpoint.com
+    public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
+    short-id: 23103e1e
+  servername: ya.ru
   client-fingerprint: chrome
-  flow: xtls-rprx-vision
 proxy-groups:
 - name: PROXIES
   type: select
@@ -249,7 +227,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 14 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 15 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 16 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 17 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -271,6 +248,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 14 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 15 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 16 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 17 - xiaohe
 rules:
 - MATCH,PROXIES

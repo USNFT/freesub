@@ -6,14 +6,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇩 印度尼西亚 (Indonesia) 01 - xiaohe"
+        "🇮🇩 印度尼西亚 (Indonesia) 01 - xiaohe",
+        "🇮🇩 印度尼西亚 (Indonesia) 02 - xiaohe",
+        "🇮🇩 印度尼西亚 (Indonesia) 03 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇩 印度尼西亚 (Indonesia) 01 - xiaohe"
+        "🇮🇩 印度尼西亚 (Indonesia) 01 - xiaohe",
+        "🇮🇩 印度尼西亚 (Indonesia) 02 - xiaohe",
+        "🇮🇩 印度尼西亚 (Indonesia) 03 - xiaohe"
       ],
       "url": "https://www.google.com/generate_204"
     },

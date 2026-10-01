@@ -6,17 +6,17 @@ log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - xiaohe
   type: vless
-  server: 178.83.46.216
-  port: 2053
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
+  server: turkii2.henlo.ir
+  port: 25920
+  uuid: dc01beee-1a43-4378-91a4-666eb027f664
   udp: true
   tls: false
   skip-cert-verify: true
 - name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
   type: vless
-  server: turkii2.henlo.ir
-  port: 25920
-  uuid: dc01beee-1a43-4378-91a4-666eb027f664
+  server: 178.83.46.216
+  port: 2053
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
   udp: true
   tls: false
   skip-cert-verify: true

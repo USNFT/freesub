@@ -6,17 +6,17 @@ log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - xiaohe
   type: vless
-  server: 95.81.75.9
-  port: 57160
-  uuid: 68ad9a6d-2463-4c31-92a7-31547b9d4783
+  server: 149.86.227.16
+  port: 443
+  uuid: 733b2a78-9306-4bbc-a3a0-b8bfb55f430a
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: Tbu7sr_pvHngDWFIa0ApL5UL9vEGxlHESd9g53KQehw
-    short-id: 77b5
-  servername: funpay.com
-  client-fingerprint: ''
+    public-key: JaP4bhvIMW-l7T0_RkLra59DeBYI6W9XemKa8MyRPSY
+    short-id: 6c6082a2223c1d03
+  servername: pmv.raketa-balance.com
+  client-fingerprint: firefox
   flow: xtls-rprx-vision
 - name: 🇵🇱 波兰 (Poland) 02 - xiaohe
   type: vless
@@ -46,13 +46,6 @@ proxies:
   udp: true
   skip-cert-verify: true
 - name: 🇵🇱 波兰 (Poland) 05 - xiaohe
-  type: hysteria2
-  server: 45.192.12.93
-  port: 443
-  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
-  udp: true
-  skip-cert-verify: true
-- name: 🇵🇱 波兰 (Poland) 06 - xiaohe
   type: vless
   server: 144.31.131.38
   port: 443
@@ -66,19 +59,26 @@ proxies:
   servername: prod.pl-node-01.security-sbrf.ru
   client-fingerprint: firefox
   flow: xtls-rprx-vision
+- name: 🇵🇱 波兰 (Poland) 06 - xiaohe
+  type: hysteria2
+  server: admin.wwwinternetvideo.click
+  port: 443
+  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
+  udp: true
+  skip-cert-verify: true
 - name: 🇵🇱 波兰 (Poland) 07 - xiaohe
   type: vless
-  server: 90.156.218.163
+  server: 83.168.95.145
   port: 443
-  uuid: adc11f30-e4cb-4985-bf5e-f9ded69c019f
+  uuid: 82f37352-85e5-49bb-9edc-a80997065659
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI
-    short-id: db04ce8bdb8900f1
-  servername: eh.vk.ru
-  client-fingerprint: firefox
+    public-key: AcuvO982QLzf76fVydfSuJIiF5520rmj7AxpaxyRwUg
+    short-id: d345ad4657adeef9
+  servername: google.com
+  client-fingerprint: ''
   flow: xtls-rprx-vision
 - name: 🇵🇱 波兰 (Poland) 08 - xiaohe
   type: vless
@@ -95,9 +95,9 @@ proxies:
   flow: xtls-rprx-vision
 - name: 🇵🇱 波兰 (Poland) 09 - xiaohe
   type: hysteria2
-  server: 144.31.49.47
-  port: 443
-  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
+  server: scrap.halyvanedorogo.ru
+  port: 35076
+  password: b4c8ee9caa74b7ba0a61
   udp: true
   skip-cert-verify: true
 - name: 🇵🇱 波兰 (Poland) 10 - xiaohe
@@ -116,17 +116,17 @@ proxies:
   skip-cert-verify: true
 - name: 🇵🇱 波兰 (Poland) 12 - xiaohe
   type: vless
-  server: 83.168.95.145
+  server: 90.156.218.163
   port: 443
-  uuid: 82f37352-85e5-49bb-9edc-a80997065659
+  uuid: adc11f30-e4cb-4985-bf5e-f9ded69c019f
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: AcuvO982QLzf76fVydfSuJIiF5520rmj7AxpaxyRwUg
-    short-id: d345ad4657adeef9
-  servername: google.com
-  client-fingerprint: ''
+    public-key: fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI
+    short-id: db04ce8bdb8900f1
+  servername: eh.vk.ru
+  client-fingerprint: firefox
   flow: xtls-rprx-vision
 proxy-groups:
 - name: PROXIES
