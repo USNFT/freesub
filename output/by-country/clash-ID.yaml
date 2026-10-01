@@ -28,7 +28,7 @@ proxies:
   reality-opts:
     public-key: ll7JTP628PuBMZJvx6fuhGSmCRSURnReAetmhCEL8GU
   servername: www.cloudflare.com
-  client-fingerprint: random
+  client-fingerprint: chrome
   flow: xtls-rprx-vision
 - name: 🇮🇩 印度尼西亚 (Indonesia) 03 - xiaohe
   type: vless
@@ -41,7 +41,7 @@ proxies:
   reality-opts:
     public-key: ll7JTP628PuBMZJvx6fuhGSmCRSURnReAetmhCEL8GU
   servername: www.cloudflare.com
-  client-fingerprint: firefox
+  client-fingerprint: random
   flow: xtls-rprx-vision
 - name: 🇮🇩 印度尼西亚 (Indonesia) 04 - xiaohe
   type: vless
@@ -56,6 +56,32 @@ proxies:
   servername: aws.amazon.com
   client-fingerprint: chrome
   flow: xtls-rprx-vision
+- name: 🇮🇩 印度尼西亚 (Indonesia) 05 - xiaohe
+  type: vless
+  server: 103.172.197.2
+  port: 29172
+  uuid: 3977434d-6a9b-4858-8ced-80326ba5e367
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: pff94OJwuKXnF7_3SJ8KKJuAN4GJtInBlR-kg-4mwzQ
+  servername: aws.amazon.com
+  client-fingerprint: random
+  flow: xtls-rprx-vision
+- name: 🇮🇩 印度尼西亚 (Indonesia) 06 - xiaohe
+  type: vless
+  server: 103.172.197.3
+  port: 16006
+  uuid: f8c9d2a1-da40-4f90-b671-11772a0b13d6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: ll7JTP628PuBMZJvx6fuhGSmCRSURnReAetmhCEL8GU
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
 proxy-groups:
 - name: PROXIES
   type: select
@@ -65,6 +91,8 @@ proxy-groups:
   - 🇮🇩 印度尼西亚 (Indonesia) 02 - xiaohe
   - 🇮🇩 印度尼西亚 (Indonesia) 03 - xiaohe
   - 🇮🇩 印度尼西亚 (Indonesia) 04 - xiaohe
+  - 🇮🇩 印度尼西亚 (Indonesia) 05 - xiaohe
+  - 🇮🇩 印度尼西亚 (Indonesia) 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -74,5 +102,7 @@ proxy-groups:
   - 🇮🇩 印度尼西亚 (Indonesia) 02 - xiaohe
   - 🇮🇩 印度尼西亚 (Indonesia) 03 - xiaohe
   - 🇮🇩 印度尼西亚 (Indonesia) 04 - xiaohe
+  - 🇮🇩 印度尼西亚 (Indonesia) 05 - xiaohe
+  - 🇮🇩 印度尼西亚 (Indonesia) 06 - xiaohe
 rules:
 - MATCH,PROXIES

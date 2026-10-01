@@ -6,45 +6,38 @@ log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - xiaohe
   type: vless
-  server: 149.86.227.16
+  server: 95.85.254.153
   port: 443
-  uuid: 733b2a78-9306-4bbc-a3a0-b8bfb55f430a
+  uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: JaP4bhvIMW-l7T0_RkLra59DeBYI6W9XemKa8MyRPSY
-    short-id: 6c6082a2223c1d03
-  servername: pmv.raketa-balance.com
+    public-key: bZpzmeWiEJyJQy0W2hHc34Nr6BuFXj1UDd80Cbwh1Fk
+    short-id: ff776ff77be48b88
+  servername: polka.stopingiphatered.shop
   client-fingerprint: firefox
   flow: xtls-rprx-vision
 - name: 🇵🇱 波兰 (Poland) 02 - xiaohe
   type: vless
-  server: 144.31.131.38
+  server: 34.118.43.106
   port: 443
-  uuid: adc11f30-e4cb-4985-bf5e-f9ded69c019f
+  uuid: 16e310b7-659e-45ee-a4b0-10e0289b8621
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI
-    short-id: db04ce8bdb8900f1
-  servername: prod.pl-node-01.security-sbrf.ru
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
+    public-key: -bjPqNKxxGTKCmH6dwsdGRTUzuatAowBWxyOPW4BiVQ
+    short-id: 7e7623474d41f032
+  servername: www.cloudflare.com
+  client-fingerprint: ''
 - name: 🇵🇱 波兰 (Poland) 03 - xiaohe
-  type: vless
-  server: 95.85.253.202
+  type: hysteria2
+  server: 45.192.12.93
   port: 443
-  uuid: 4314a583-3a39-45e1-883e-70bf570d252a
+  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
   udp: true
-  tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: z-TKWOWgZLfzQ-wNdwXQqVwaUgCmbchM2Xtrk1NGynU
-  servername: pl0001.kubservice.icu
-  client-fingerprint: qq
-  flow: xtls-rprx-vision
 - name: 🇵🇱 波兰 (Poland) 04 - xiaohe
   type: hysteria2
   server: 45.192.12.93
@@ -53,20 +46,19 @@ proxies:
   udp: true
   skip-cert-verify: true
 - name: 🇵🇱 波兰 (Poland) 05 - xiaohe
-  type: hysteria2
-  server: 45.192.12.93
-  port: 443
-  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
+  type: vless
+  server: 31.77.13.19
+  port: 2063
+  uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
   udp: true
+  tls: true
   skip-cert-verify: true
+  reality-opts:
+    public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
+  servername: rusbid.de
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
 - name: 🇵🇱 波兰 (Poland) 06 - xiaohe
-  type: hysteria2
-  server: admin.wwwinternetvideo.click
-  port: 443
-  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
-  udp: true
-  skip-cert-verify: true
-- name: 🇵🇱 波兰 (Poland) 07 - xiaohe
   type: vless
   server: pl-waw.dontblockmepls.com
   port: 2063
@@ -79,6 +71,19 @@ proxies:
   servername: rusbid.de
   client-fingerprint: firefox
   flow: xtls-rprx-vision
+- name: 🇵🇱 波兰 (Poland) 07 - xiaohe
+  type: vless
+  server: pl.srv.vbuste-bot.com
+  port: 444
+  uuid: 318c935d-c195-41d3-99ad-9bbcfdab3386
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08
+    short-id: 4be4110078ebed4a
+  servername: pl.srv.vbuste-bot.com
+  client-fingerprint: firefox
 - name: 🇵🇱 波兰 (Poland) 08 - xiaohe
   type: hysteria2
   server: 144.31.49.47
@@ -95,17 +100,17 @@ proxies:
   skip-cert-verify: true
 - name: 🇵🇱 波兰 (Poland) 10 - xiaohe
   type: vless
-  server: 95.81.75.9
-  port: 57160
-  uuid: 68ad9a6d-2463-4c31-92a7-31547b9d4783
+  server: 83.168.95.145
+  port: 443
+  uuid: 82f37352-85e5-49bb-9edc-a80997065659
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: Tbu7sr_pvHngDWFIa0ApL5UL9vEGxlHESd9g53KQehw
-    short-id: 77b5
-  servername: funpay.com
-  client-fingerprint: ''
+    public-key: AcuvO982QLzf76fVydfSuJIiF5520rmj7AxpaxyRwUg
+    short-id: d345ad4657adeef9
+  servername: google.com
+  client-fingerprint: chrome
   flow: xtls-rprx-vision
 proxy-groups:
 - name: PROXIES
