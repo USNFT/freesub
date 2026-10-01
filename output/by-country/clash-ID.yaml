@@ -28,9 +28,22 @@ proxies:
   reality-opts:
     public-key: ll7JTP628PuBMZJvx6fuhGSmCRSURnReAetmhCEL8GU
   servername: www.cloudflare.com
-  client-fingerprint: firefox
+  client-fingerprint: random
   flow: xtls-rprx-vision
 - name: 🇮🇩 印度尼西亚 (Indonesia) 03 - xiaohe
+  type: vless
+  server: 103.172.197.3
+  port: 16006
+  uuid: f8c9d2a1-da40-4f90-b671-11772a0b13d6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: ll7JTP628PuBMZJvx6fuhGSmCRSURnReAetmhCEL8GU
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+- name: 🇮🇩 印度尼西亚 (Indonesia) 04 - xiaohe
   type: vless
   server: 103.172.197.2
   port: 29172
@@ -51,6 +64,7 @@ proxy-groups:
   - 🇮🇩 印度尼西亚 (Indonesia) 01 - xiaohe
   - 🇮🇩 印度尼西亚 (Indonesia) 02 - xiaohe
   - 🇮🇩 印度尼西亚 (Indonesia) 03 - xiaohe
+  - 🇮🇩 印度尼西亚 (Indonesia) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -59,5 +73,6 @@ proxy-groups:
   - 🇮🇩 印度尼西亚 (Indonesia) 01 - xiaohe
   - 🇮🇩 印度尼西亚 (Indonesia) 02 - xiaohe
   - 🇮🇩 印度尼西亚 (Indonesia) 03 - xiaohe
+  - 🇮🇩 印度尼西亚 (Indonesia) 04 - xiaohe
 rules:
 - MATCH,PROXIES

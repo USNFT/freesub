@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - xiaohe
   type: vless
-  server: smart.avenone.ir
+  server: 77.42.20.51
   port: 1085
   uuid: 0c1b7949-fe09-43d9-863f-2c031f66bfc1
   udp: true
@@ -14,25 +14,18 @@ proxies:
   skip-cert-verify: true
 - name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
   type: vless
-  server: 65.109.28.164
+  server: 212.147.245.198
   port: 443
-  uuid: 8df2e661-6f46-471b-9133-7fc13a0daa35
+  uuid: 042d2d08-2973-5d10-97ad-3b75f16bbe54
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: jDoORbrtDrvAlFSo19CJbc99C4ev8SAo1MwczSUt9no
-    short-id: 90ec9bba2019
-  servername: web.eitaa.com
-  client-fingerprint: firefox
+    public-key: xwLNHc6jBOg5Ddr1LezwY7I45nP485Qfu1YJXMKwVnI
+    short-id: 330a464a00000000
+  servername: online.1c.ru
+  client-fingerprint: ''
   flow: xtls-rprx-vision
-- name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
-  type: hysteria2
-  server: 144.31.212.253
-  port: 443
-  password: cf83b611-6cba-4535-adcb-8da06c6a9146
-  udp: true
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -40,7 +33,6 @@ proxy-groups:
   - AUTO
   - 🇫🇮 芬兰 (Finland) 01 - xiaohe
   - 🇫🇮 芬兰 (Finland) 02 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -48,6 +40,5 @@ proxy-groups:
   proxies:
   - 🇫🇮 芬兰 (Finland) 01 - xiaohe
   - 🇫🇮 芬兰 (Finland) 02 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 03 - xiaohe
 rules:
 - MATCH,PROXIES
