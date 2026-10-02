@@ -5,25 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇿🇦 南非 (South Africa) 01 - xiaohe
-  type: vless
-  server: 104.21.13.173
-  port: 443
-  uuid: 7700ff6d-cefb-4768-a806-ec4f63fe3b38
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 1-M13.4B49f101-6328-41C6-953d-00Ceb79B58aC.kdNs.Fr
-  network: ws
-  ws-opts:
-    path: /ED3ZQPu7lqyeDGD58KabZ
-    headers:
-      Host: 1-m13.4b49F101-6328-41C6-953d-00cEB79B58aC.KDns.Fr
-- name: 🇿🇦 南非 (South Africa) 02 - xiaohe
   type: ss
   server: 139.84.247.164
   port: 8388
   cipher: chacha20-ietf-poly1305
   password: tfAcRikawhNoZAhu
+  udp: true
+- name: 🇿🇦 南非 (South Africa) 02 - xiaohe
+  type: ss
+  server: 102.37.156.224
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: aduB9HGxQHjA2SBMRjkHX6
   udp: true
 - name: 🇿🇦 南非 (South Africa) 03 - xiaohe
   type: ss
@@ -33,12 +26,18 @@ proxies:
   password: Xsy8Ox4yOV3xLlpxtjzs3X
   udp: true
 - name: 🇿🇦 南非 (South Africa) 04 - xiaohe
-  type: ss
-  server: 102.37.156.224
+  type: vless
+  server: 34.35.174.143
   port: 443
-  cipher: chacha20-ietf-poly1305
-  password: aduB9HGxQHjA2SBMRjkHX6
+  uuid: 4758aee6-6d1a-4306-b460-2398b5af4e35
   udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: dcox8XXfkOCmKn3kgrloj6wY5o1_0brJOi2mczYmAT4
+    short-id: 5ced03e42cc31aab
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select

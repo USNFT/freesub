@@ -13,18 +13,12 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
-  type: vless
-  server: 35.228.61.63
+  type: hysteria2
+  server: 144.31.232.216
   port: 443
-  uuid: 06e58eed-afc8-4cbf-a0bf-1b7b42e1a87f
+  password: 06e88dd6-e264-4981-8c26-d7ab17348ab2
   udp: true
-  tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: wJwb5WExAnmGiq9mmjtMvoA8E-k10u5VvPegm9RomWU
-    short-id: d4b34bc6b3d2b5ab
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
 - name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
   type: hysteria2
   server: 144.31.232.216
@@ -34,25 +28,24 @@ proxies:
   skip-cert-verify: true
 - name: 🇫🇮 芬兰 (Finland) 04 - xiaohe
   type: hysteria2
-  server: 144.31.212.253
+  server: 144.31.232.216
   port: 443
-  password: cf83b611-6cba-4535-adcb-8da06c6a9146
+  password: 06e88dd6-e264-4981-8c26-d7ab17348ab2
   udp: true
   skip-cert-verify: true
 - name: 🇫🇮 芬兰 (Finland) 05 - xiaohe
   type: vless
-  server: 144.31.27.215
-  port: 43000
-  uuid: 47f79fc1-0646-40e8-8a58-73e85d183d5a
+  server: 95.216.27.15
+  port: 2053
+  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: dxCQnOekn14riFxt3vdwDNydvW47FsmwFG6BJ2mUgEg
-    short-id: 568d87a47271344e
-  servername: 144.31.27.215
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
+    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
+    short-id: d368b94e275ab080
+  servername: www.google.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select

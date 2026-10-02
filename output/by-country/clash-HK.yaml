@@ -12,164 +12,164 @@ proxies:
   password: pno0e2keji2gsfea
   udp: true
 - name: 🇭🇰 中国香港 (Hong Kong) 02 - xiaohe
-  type: ss
-  server: telegramx.khp25.com
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: m5nsedvdczx6x06e
+  type: hysteria2
+  server: f8524129-tmm5c0-tn28ki-mv7m.hk3.hyhuawei.com
+  port: 443
+  password: 94d40708-8273-11ea-8fc9-f23c913c8d2b
   udp: true
+  skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 03 - xiaohe
   type: hysteria2
-  server: 202.146.222.29
+  server: e49952e3-tmm5c0-tv7zgh-1ijh5.hk3.hyhuawei.com
   port: 443
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  password: f7d95364-607b-11ee-93af-f23c91369f2d
   udp: true
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 04 - xiaohe
   type: hysteria2
-  server: 202.146.222.29
+  server: 7cf51189-tmm5c0-tqrqo1-8rja.hk3.hyhuawei.com
   port: 443
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  password: d18bcaf4-1323-11ec-a0fc-f23c913c8d2b
   udp: true
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 05 - xiaohe
   type: hysteria2
-  server: 202.146.222.89
+  server: 66133e3a-tmm5c0-tmg311-141tv.hk3.hyhuawei.com
   port: 443
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  password: bd77bfe8-e0f3-11ec-bd7c-f23c913c8d2b
   udp: true
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 06 - xiaohe
   type: hysteria2
-  server: 202.146.222.89
+  server: 8a85c177-tmm5c0-tvgkxc-hrtf.hk3.hyhuawei.com
   port: 443
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  password: 0da8651e-e1f6-11ec-bd7c-f23c913c8d2b
   udp: true
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 07 - xiaohe
   type: hysteria2
-  server: 202.146.222.29
+  server: 60f05df6-tmm5c0-tmapa2-1ryup.hk3.hyhuawei.com
   port: 443
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  password: 3ee091ca-ab9c-11ef-a791-f23c9164ca5d
   udp: true
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 08 - xiaohe
   type: hysteria2
-  server: 202.146.222.29
+  server: ab6440be-tmm5c0-truoje-1uni.hk3.hyhuawei.com
   port: 443
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  password: adbd0a82-3336-11ed-bd7c-f23c913c8d2b
   udp: true
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 09 - xiaohe
   type: hysteria2
-  server: 202.146.222.29
+  server: 3de2432e-tmm5c0-tonrqx-1khwf.hk3.hyhuawei.com
   port: 443
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  password: 92bd8c68-6434-11ee-b644-f23c91cfbbc9
   udp: true
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 10 - xiaohe
   type: hysteria2
-  server: 202.146.222.29
+  server: 50dc16b5-tmm5c0-tmj4pk-1kcpe.hk3.hyhuawei.com
   port: 443
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  password: 3f514ea2-4662-11ed-a8bf-f23c91cfbbc9
   udp: true
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 11 - xiaohe
   type: hysteria2
-  server: 202.146.222.174
+  server: e0064cf5-tmm5c0-to0mym-z93q.hk3.hyhuawei.com
   port: 443
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  password: 40639730-e027-11ea-87ad-f23c913c8d2b
   udp: true
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 12 - xiaohe
   type: hysteria2
-  server: 202.146.222.89
+  server: 28bae527-tmm5c0-u5ip77-duku.hk3.hyhuawei.com
   port: 443
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  password: 8e0f8ef2-5fe3-11ec-a8bf-f23c91cfbbc9
   udp: true
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 13 - xiaohe
   type: hysteria2
-  server: 202.146.222.29
+  server: 5e293df6-tmm5c0-tujecz-1qkeg.hk3.hyhuawei.com
   port: 443
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  password: a305ac08-d136-11ee-b6db-f23c91cfbbc9
   udp: true
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 14 - xiaohe
   type: hysteria2
-  server: 202.146.222.29
+  server: 3f86f2b4-tmm5c0-tpaqgu-1smhu.hk3.hyhuawei.com
   port: 443
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  password: 62f2374c-891b-11ef-a3f6-f23c9164ca5d
   udp: true
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 15 - xiaohe
   type: hysteria2
-  server: 202.146.222.29
+  server: 879c2f71-tmm5c0-ttyyk7-1h0r9.hk3.hyhuawei.com
   port: 443
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  password: 9bfd0dde-957e-11ec-a8bf-f23c91cfbbc9
   udp: true
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 16 - xiaohe
   type: hysteria2
-  server: 202.146.222.174
+  server: 5af305e9-tmm5c0-ttyjoe-ieln.hk3.hyhuawei.com
   port: 443
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  password: f5c0eda2-4b97-11ed-bd7c-f23c913c8d2b
   udp: true
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 17 - xiaohe
   type: hysteria2
-  server: 202.146.222.174
+  server: 4e3e8635-tmm5c0-tvh2gy-1qzi1.hk3.hyhuawei.com
   port: 443
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  password: 8f99107c-f091-11ee-9935-f23c9164ca5d
   udp: true
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 18 - xiaohe
   type: hysteria2
-  server: 202.146.222.89
+  server: c3cbc163-tmm5c0-tpkh0c-1r7od.hk3.hyhuawei.com
   port: 443
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  password: 6d56436c-150d-11f0-b0c8-f23c913c8d2b
   udp: true
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 19 - xiaohe
   type: hysteria2
-  server: 202.146.222.29
+  server: 117776f2-tmm5c0-ttxkqc-e06r.hk3.hyhuawei.com
   port: 443
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  password: 861726bb-c61a-b0e0-99fa-5ddfdcf21902
   udp: true
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 20 - xiaohe
   type: hysteria2
-  server: 202.146.222.29
+  server: 9969bb96-tmm5c0-twuk0i-1hzyr.hk3.hyhuawei.com
   port: 443
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  password: 3be8cba8-b721-11ec-8b04-f23c91cfbbc9
   udp: true
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 21 - xiaohe
   type: hysteria2
-  server: 202.146.222.174
+  server: fd16b694-tmm5c0-unh4sc-xm0q.hk3.hyhuawei.com
   port: 443
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  password: 3437f34e-1b77-11eb-8684-f23c913c8d2b
   udp: true
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 22 - xiaohe
   type: hysteria2
-  server: 202.146.222.89
+  server: 202.146.222.29
   port: 443
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   udp: true
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 23 - xiaohe
   type: hysteria2
-  server: 202.146.222.29
+  server: 12fbf518-tmm5c0-tzkd63-1jr1u.hk3.hyhuawei.com
   port: 443
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  password: 2c01eae6-0b6a-11ee-a058-f23c91369f2d
   udp: true
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 24 - xiaohe
   type: hysteria2
-  server: 202.146.222.29
+  server: 653c15ac-tmm5c0-tonrmx-8n27.hk3.hyhuawei.com
   port: 443
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  password: 5dc6fa05-a601-aba6-7761-ecde22d2b0fc
   udp: true
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 25 - xiaohe
@@ -181,58 +181,58 @@ proxies:
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 26 - xiaohe
   type: hysteria2
-  server: 202.146.222.29
+  server: ef105858-tmm5c0-tt2yf5-1j61y.hk3.hyhuawei.com
   port: 443
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  password: f13f964e-f06c-11ec-a858-f23c91cfbbc9
   udp: true
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 27 - xiaohe
   type: hysteria2
-  server: 202.146.222.29
+  server: 9fc34650-tmm5c0-tmj4pk-1kcpe.nw4.hyhuawei.com
   port: 443
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  password: 3f514ea2-4662-11ed-a8bf-f23c91cfbbc9
   udp: true
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 28 - xiaohe
   type: hysteria2
-  server: 202.146.222.29
+  server: f210bf34-tmm5c0-unh4sc-xm0q.nw4.hyhuawei.com
   port: 443
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  password: 3437f34e-1b77-11eb-8684-f23c913c8d2b
   udp: true
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 29 - xiaohe
   type: hysteria2
-  server: 202.146.222.29
+  server: 6d1cc27c-tmm5c0-ts40sw-14g76.hk3.hyhuawei.com
   port: 443
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  password: 4729b4c8-1790-11eb-8684-f23c913c8d2b
   udp: true
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 30 - xiaohe
   type: hysteria2
-  server: 202.146.222.89
+  server: 85715c75-tmm5c0-tncdxq-m0b9.nw4.hyhuawei.com
   port: 443
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  password: bb85e074-b0c2-11ea-ad28-f23c913c8d2b
   udp: true
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 31 - xiaohe
   type: hysteria2
-  server: 202.146.222.174
+  server: 202.146.222.29
   port: 443
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   udp: true
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 32 - xiaohe
   type: hysteria2
-  server: 202.146.222.29
+  server: 29e1f1ee-tmm5c0-tncdxq-m0b9.hk3.hyhuawei.com
   port: 443
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  password: bb85e074-b0c2-11ea-ad28-f23c913c8d2b
   udp: true
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 33 - xiaohe
   type: hysteria2
-  server: 202.146.222.174
+  server: 12e4d2e3-tmm5c0-tnhx9s-1rnrp.hk3.hyhuawei.com
   port: 443
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  password: 989aa406-ea9b-11ef-97da-f23c91cfbbc9
   udp: true
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 34 - xiaohe
@@ -244,102 +244,397 @@ proxies:
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 35 - xiaohe
   type: hysteria2
-  server: 202.146.222.29
+  server: 8a10b982-tmm5c0-truoje-1uni.nw4.hyhuawei.com
   port: 443
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  password: adbd0a82-3336-11ed-bd7c-f23c913c8d2b
   udp: true
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 36 - xiaohe
   type: hysteria2
-  server: 202.146.222.29
+  server: d68b7bb6-tmm5c0-ts40sw-14g76.nw4.hyhuawei.com
   port: 443
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  password: 4729b4c8-1790-11eb-8684-f23c913c8d2b
   udp: true
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 37 - xiaohe
   type: hysteria2
-  server: 202.146.222.29
+  server: e4b172ba-tmm5c0-tntd4s-yjq0.hk3.hyhuawei.com
   port: 443
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  password: 25b2699a-e18e-11ec-8e69-f23c91cfbbc9
   udp: true
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 38 - xiaohe
   type: hysteria2
-  server: 202.146.222.29
+  server: 3b4c630e-tmm5c0-tv7zgh-1ijh5.nw4.hyhuawei.com
   port: 443
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  password: f7d95364-607b-11ee-93af-f23c91369f2d
   udp: true
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 39 - xiaohe
+  type: hysteria2
+  server: b3dfb3ed-tmm5c0-trg4wh-z65w.nw4.hyhuawei.com
+  port: 443
+  password: a2313fba-74a6-11ed-a8bf-f23c91cfbbc9
+  udp: true
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 40 - xiaohe
+  type: hysteria2
+  server: 8783f44d-tmm5c0-tphxte-1h5u7.nw4.hyhuawei.com
+  port: 443
+  password: e3fdbd22-8c17-11ee-ace4-f23c913c8d2b
+  udp: true
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 41 - xiaohe
+  type: hysteria2
+  server: 48b2f4e5-tmm5c0-tmapa2-1ryup.nw4.hyhuawei.com
+  port: 443
+  password: 3ee091ca-ab9c-11ef-a791-f23c9164ca5d
+  udp: true
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 42 - xiaohe
+  type: hysteria2
+  server: 4e3ff39f-tmm5c0-tr9h64-1f1f1.nw4.hyhuawei.com
+  port: 443
+  password: 61c4be90-6235-11ec-a8bf-f23c91cfbbc9
+  udp: true
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 43 - xiaohe
+  type: hysteria2
+  server: 59c70bb8-tmm5c0-txfm0f-1qxa1.nw4.hyhuawei.com
+  port: 443
+  password: f609abb4-ed17-11ee-9fa2-f23c9164ca5d
+  udp: true
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 44 - xiaohe
   type: hysteria2
   server: 202.146.222.174
   port: 443
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   udp: true
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 40 - xiaohe
+- name: 🇭🇰 中国香港 (Hong Kong) 45 - xiaohe
+  type: hysteria2
+  server: aac08668-tmm5c0-tw661e-1isea.hk3.hyhuawei.com
+  port: 443
+  password: d6abdbda-fe9d-11ec-bb74-f23c9164ca5d
+  udp: true
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 46 - xiaohe
+  type: hysteria2
+  server: 33632b49-tmm5c0-tonrmx-8n27.nw4.hyhuawei.com
+  port: 443
+  password: 5dc6fa05-a601-aba6-7761-ecde22d2b0fc
+  udp: true
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 47 - xiaohe
+  type: hysteria2
+  server: 964114bc-tmm5c0-tntd4s-yjq0.nw4.hyhuawei.com
+  port: 443
+  password: 25b2699a-e18e-11ec-8e69-f23c91cfbbc9
+  udp: true
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 48 - xiaohe
+  type: hysteria2
+  server: 75a08777-tmm5c0-ttxkqc-e06r.nw4.hyhuawei.com
+  port: 443
+  password: 861726bb-c61a-b0e0-99fa-5ddfdcf21902
+  udp: true
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 49 - xiaohe
+  type: hysteria2
+  server: 818667a4-tmm5c0-tpsg94-1jbj0.nw4.hyhuawei.com
+  port: 443
+  password: b2c6384c-f63d-11ec-b1b3-f23c91cfbbc9
+  udp: true
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 50 - xiaohe
+  type: hysteria2
+  server: 6131648c-tmm5c0-tpaqgu-1smhu.nw4.hyhuawei.com
+  port: 443
+  password: 62f2374c-891b-11ef-a3f6-f23c9164ca5d
+  udp: true
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 51 - xiaohe
+  type: hysteria2
+  server: be86eb84-tmm5c0-tt2yf5-1j61y.nw4.hyhuawei.com
+  port: 443
+  password: f13f964e-f06c-11ec-a858-f23c91cfbbc9
+  udp: true
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 52 - xiaohe
+  type: hysteria2
+  server: 88f7008b-tmm5c0-tonrqx-1khwf.nw4.hyhuawei.com
+  port: 443
+  password: 92bd8c68-6434-11ee-b644-f23c91cfbbc9
+  udp: true
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 53 - xiaohe
+  type: hysteria2
+  server: 202.146.222.29
+  port: 443
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  udp: true
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 54 - xiaohe
+  type: hysteria2
+  server: 10839548-tmm5c0-ttyyk7-1h0r9.nw4.hyhuawei.com
+  port: 443
+  password: 9bfd0dde-957e-11ec-a8bf-f23c91cfbbc9
+  udp: true
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 55 - xiaohe
+  type: hysteria2
+  server: 3ccb74ed-tmm5c0-ttyjoe-ieln.nw4.hyhuawei.com
+  port: 443
+  password: f5c0eda2-4b97-11ed-bd7c-f23c913c8d2b
+  udp: true
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 56 - xiaohe
+  type: hysteria2
+  server: bada37c4-tmm5c0-u1dafb-1ro8s.nw4.hyhuawei.com
+  port: 443
+  password: a18ef18e-293a-11ef-b76e-f23c91cfbbc9
+  udp: true
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 57 - xiaohe
+  type: hysteria2
+  server: baf80640-tmm5c0-to0mym-z93q.nw4.hyhuawei.com
+  port: 443
+  password: 40639730-e027-11ea-87ad-f23c913c8d2b
+  udp: true
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 58 - xiaohe
+  type: hysteria2
+  server: f7afb605-tmm5c0-tvh2gy-1qzi1.nw4.hyhuawei.com
+  port: 443
+  password: 8f99107c-f091-11ee-9935-f23c9164ca5d
+  udp: true
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 59 - xiaohe
+  type: hysteria2
+  server: 202.146.222.29
+  port: 443
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  udp: true
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 60 - xiaohe
+  type: hysteria2
+  server: 0b16a4e6-tmm5c0-tpkh0c-1r7od.nw4.hyhuawei.com
+  port: 443
+  password: 6d56436c-150d-11f0-b0c8-f23c913c8d2b
+  udp: true
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 61 - xiaohe
+  type: hysteria2
+  server: 202.146.222.29
+  port: 443
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  udp: true
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 62 - xiaohe
+  type: hysteria2
+  server: 202.146.222.29
+  port: 443
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  udp: true
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 63 - xiaohe
+  type: hysteria2
+  server: 202.146.222.29
+  port: 443
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  udp: true
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 64 - xiaohe
   type: hysteria2
   server: 202.146.222.89
   port: 443
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   udp: true
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 41 - xiaohe
+- name: 🇭🇰 中国香港 (Hong Kong) 65 - xiaohe
   type: hysteria2
   server: 202.146.222.29
   port: 443
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   udp: true
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 42 - xiaohe
+- name: 🇭🇰 中国香港 (Hong Kong) 66 - xiaohe
   type: hysteria2
   server: 202.146.222.29
   port: 443
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   udp: true
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 43 - xiaohe
+- name: 🇭🇰 中国香港 (Hong Kong) 67 - xiaohe
+  type: hysteria2
+  server: 202.146.222.174
+  port: 443
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  udp: true
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 68 - xiaohe
   type: hysteria2
   server: 202.146.222.29
   port: 443
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   udp: true
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 44 - xiaohe
+- name: 🇭🇰 中国香港 (Hong Kong) 69 - xiaohe
+  type: hysteria2
+  server: 16113553-tmm5c0-twuk0i-1hzyr.nw4.hyhuawei.com
+  port: 443
+  password: 3be8cba8-b721-11ec-8b04-f23c91cfbbc9
+  udp: true
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 70 - xiaohe
   type: hysteria2
   server: 202.146.222.29
   port: 443
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   udp: true
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 45 - xiaohe
+- name: 🇭🇰 中国香港 (Hong Kong) 71 - xiaohe
   type: hysteria2
-  server: hk2.xiaoliyu.cyou
-  port: 4433
-  password: 19f72087-4591-4d72-930b-2697078ec2be
+  server: 202.146.222.89
+  port: 443
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   udp: true
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 46 - xiaohe
-  type: hysteria2
-  server: 31.57.248.176
-  port: 50160
-  password: b0917015b656b3dd2286b5633af0c5c1
-  udp: true
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 47 - xiaohe
+- name: 🇭🇰 中国香港 (Hong Kong) 72 - xiaohe
   type: hysteria2
   server: 202.146.222.29
   port: 443
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   udp: true
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 48 - xiaohe
+- name: 🇭🇰 中国香港 (Hong Kong) 73 - xiaohe
   type: hysteria2
-  server: meowkong.nethcloud.top
+  server: 202.146.222.29
   port: 443
-  password: 4cbefb4d-328c-411d-bf76-780df1082df8
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   udp: true
   skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 74 - xiaohe
+  type: hysteria2
+  server: 202.146.222.29
+  port: 443
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  udp: true
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 75 - xiaohe
+  type: hysteria2
+  server: 202.146.222.174
+  port: 443
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  udp: true
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 76 - xiaohe
+  type: hysteria2
+  server: 202.146.222.29
+  port: 443
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  udp: true
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 77 - xiaohe
+  type: hysteria2
+  server: 202.146.222.89
+  port: 443
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  udp: true
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 78 - xiaohe
+  type: hysteria2
+  server: 202.146.222.29
+  port: 443
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  udp: true
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 79 - xiaohe
+  type: hysteria2
+  server: 202.146.222.29
+  port: 443
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  udp: true
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 80 - xiaohe
+  type: hysteria2
+  server: 202.146.222.89
+  port: 443
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  udp: true
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 81 - xiaohe
+  type: hysteria2
+  server: 202.146.222.29
+  port: 443
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  udp: true
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 82 - xiaohe
+  type: hysteria2
+  server: 202.146.222.174
+  port: 443
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  udp: true
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 83 - xiaohe
+  type: hysteria2
+  server: 202.146.222.29
+  port: 443
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  udp: true
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 84 - xiaohe
+  type: hysteria2
+  server: 2d6326d2-tmm5c0-u2e9xs-2b2n.nw4.hyhuawei.com
+  port: 443
+  password: fcd39788-ca23-11ed-86e2-f23c913c8d2b
+  udp: true
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 85 - xiaohe
+  type: hysteria2
+  server: 283aa14b-tmm5c0-tzkd63-1jr1u.nw4.hyhuawei.com
+  port: 443
+  password: 2c01eae6-0b6a-11ee-a058-f23c91369f2d
+  udp: true
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 86 - xiaohe
+  type: hysteria2
+  server: f10045ac-tmm5c0-tvgkxc-hrtf.nw4.hyhuawei.com
+  port: 443
+  password: 0da8651e-e1f6-11ec-bd7c-f23c913c8d2b
+  udp: true
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 87 - xiaohe
+  type: hysteria2
+  server: 8a24f231-tmm5c0-tujecz-1qkeg.nw4.hyhuawei.com
+  port: 443
+  password: a305ac08-d136-11ee-b6db-f23c91cfbbc9
+  udp: true
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 88 - xiaohe
+  type: hysteria2
+  server: ca150a01-tmm5c0-twjnjx-1q9g2.nw4.hyhuawei.com
+  port: 443
+  password: 9d80dd14-ac44-11ee-a116-f23c9164ca5d
+  udp: true
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 89 - xiaohe
+  type: vmess
+  server: 156.245.232.239
+  port: 35043
+  uuid: b15e481d-17e4-41a8-84c2-23d4f0514d9a
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ''
 proxy-groups:
 - name: PROXIES
   type: select
@@ -393,6 +688,47 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 46 - xiaohe
   - 🇭🇰 中国香港 (Hong Kong) 47 - xiaohe
   - 🇭🇰 中国香港 (Hong Kong) 48 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 49 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 50 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 51 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 52 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 53 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 54 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 55 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 56 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 57 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 58 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 59 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 60 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 61 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 62 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 63 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 64 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 65 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 66 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 67 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 68 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 69 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 70 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 71 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 72 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 73 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 74 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 75 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 76 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 77 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 78 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 79 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 80 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 81 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 82 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 83 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 84 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 85 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 86 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 87 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 88 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 89 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -446,5 +782,46 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 46 - xiaohe
   - 🇭🇰 中国香港 (Hong Kong) 47 - xiaohe
   - 🇭🇰 中国香港 (Hong Kong) 48 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 49 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 50 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 51 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 52 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 53 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 54 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 55 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 56 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 57 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 58 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 59 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 60 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 61 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 62 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 63 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 64 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 65 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 66 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 67 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 68 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 69 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 70 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 71 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 72 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 73 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 74 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 75 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 76 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 77 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 78 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 79 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 80 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 81 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 82 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 83 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 84 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 85 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 86 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 87 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 88 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 89 - xiaohe
 rules:
 - MATCH,PROXIES
