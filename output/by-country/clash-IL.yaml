@@ -16,7 +16,7 @@ proxies:
     public-key: 8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To
     short-id: a3a578ab
   servername: www.apple.com
-  client-fingerprint: random
+  client-fingerprint: chrome
   flow: xtls-rprx-vision
 - name: 🇮🇱 以色列 (Israel) 02 - xiaohe
   type: vless
@@ -30,7 +30,7 @@ proxies:
     public-key: 8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To
     short-id: a3a578ab
   servername: www.apple.com
-  client-fingerprint: firefox
+  client-fingerprint: random
   flow: xtls-rprx-vision
 - name: 🇮🇱 以色列 (Israel) 03 - xiaohe
   type: vless
@@ -58,21 +58,8 @@ proxies:
     public-key: 8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To
     short-id: a3a578ab
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
   flow: xtls-rprx-vision
-- name: 🇮🇱 以色列 (Israel) 05 - xiaohe
-  type: vless
-  server: 34.165.56.30
-  port: 443
-  uuid: 0c40bce9-8710-4820-8f22-0742b61df999
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: AeQDUAVCESyA1hFkw6lENmgWAY3sBH9CFPpPAddPwVc
-    short-id: fffff8acddadcac3
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -82,7 +69,6 @@ proxy-groups:
   - 🇮🇱 以色列 (Israel) 02 - xiaohe
   - 🇮🇱 以色列 (Israel) 03 - xiaohe
   - 🇮🇱 以色列 (Israel) 04 - xiaohe
-  - 🇮🇱 以色列 (Israel) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -92,6 +78,5 @@ proxy-groups:
   - 🇮🇱 以色列 (Israel) 02 - xiaohe
   - 🇮🇱 以色列 (Israel) 03 - xiaohe
   - 🇮🇱 以色列 (Israel) 04 - xiaohe
-  - 🇮🇱 以色列 (Israel) 05 - xiaohe
 rules:
 - MATCH,PROXIES
