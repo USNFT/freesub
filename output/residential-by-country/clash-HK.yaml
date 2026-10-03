@@ -6,16 +6,16 @@ log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe
   type: hysteria2
-  server: e96c3741-tmm5c0-tw2fdz-1s824.hk3.hyhuawei.com
+  server: a6edadd7-tmm5c0-txfm0f-1qxa1.hk3.hyhuawei.com
   port: 443
-  password: 6d4abac0-86e6-11ef-83cc-f23c913c8d2b
+  password: f609abb4-ed17-11ee-9fa2-f23c9164ca5d
   udp: true
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe
   type: hysteria2
-  server: c39e9624-tmm5c0-twnp5a-ahsb.nw4.hyhuawei.com
+  server: 59c70bb8-tmm5c0-txfm0f-1qxa1.nw4.hyhuawei.com
   port: 443
-  password: 2e42c1ee-aaaa-11ec-bb74-f23c9164ca5d
+  password: f609abb4-ed17-11ee-9fa2-f23c9164ca5d
   udp: true
   skip-cert-verify: true
 proxy-groups:

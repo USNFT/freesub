@@ -36,10 +36,10 @@ proxies:
   skip-cert-verify: true
 - name: 🇪🇸 西班牙 (Spain) 04 - xiaohe
   type: ss
-  server: 140.174.184.5
+  server: 108.181.121.226
   port: 8388
   cipher: chacha20-ietf-poly1305
-  password: qItG8SueYQcP
+  password: WSyL4XTwNsdv
   udp: true
 - name: 🇪🇸 西班牙 (Spain) 05 - xiaohe
   type: ss
@@ -49,31 +49,19 @@ proxies:
   password: WSyL4XTwNsdv
   udp: true
 - name: 🇪🇸 西班牙 (Spain) 06 - xiaohe
-  type: vless
-  server: 212.227.235.66
-  port: 2053
-  uuid: ead0dd61-d398-40ad-80d6-a0e1e516d7d3
+  type: ss
+  server: 140.174.184.5
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: qItG8SueYQcP
   udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk
-    short-id: 29e8dcd2b37aaa7f
-  servername: www.apple.com
-  client-fingerprint: firefox
 - name: 🇪🇸 西班牙 (Spain) 07 - xiaohe
-  type: vless
-  server: 212.227.235.66
-  port: 2053
-  uuid: ead0dd61-d398-40ad-80d6-a0e1e516d7d3
+  type: hysteria2
+  server: xby.mangshe.xyz
+  port: 2060
+  password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
   udp: true
-  tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: 7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk
-    short-id: 29e8dcd2b37aaa7f
-  servername: www.apple.com
-  client-fingerprint: chrome
 - name: 🇪🇸 西班牙 (Spain) 08 - xiaohe
   type: vless
   server: 212.227.235.66
@@ -86,21 +74,56 @@ proxies:
     public-key: 7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk
     short-id: 29e8dcd2b37aaa7f
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇪🇸 西班牙 (Spain) 09 - xiaohe
   type: vless
-  server: 46.28.71.247
+  server: 45.154.206.88
   port: 443
-  uuid: 12c53e32-e589-47d6-b857-e4132294f767
+  uuid: 454431fc-71e2-42b1-b375-5b55dd06666a
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: v4MuZIvFrTPT5GHMSaPryUAbIZlLstmsUTzmC1E-JTE
-    short-id: 0dfc23fe80778c00
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
+    public-key: 2AKBmK0PMf2zUMhRo1Ad-WNf_XoRk3AN-SGo6ZdhxA4
+    short-id: ecca56e9a9963ed7
+  servername: es.monkeyisland.xyz
+  client-fingerprint: firefox
   flow: xtls-rprx-vision
+- name: 🇪🇸 西班牙 (Spain) 10 - xiaohe
+  type: vless
+  server: 45.154.206.88
+  port: 443
+  uuid: 454431fc-71e2-42b1-b375-5b55dd06666a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 2AKBmK0PMf2zUMhRo1Ad-WNf_XoRk3AN-SGo6ZdhxA4
+    short-id: ecca56e9a9963ed7
+  servername: es.monkeyisland.xyz
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+- name: 🇪🇸 西班牙 (Spain) 11 - xiaohe
+  type: vless
+  server: es.monkeyisland.xyz
+  port: 443
+  uuid: 454431fc-71e2-42b1-b375-5b55dd06666a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 2AKBmK0PMf2zUMhRo1Ad-WNf_XoRk3AN-SGo6ZdhxA4
+    short-id: ecca56e9a9963ed7
+  servername: es.monkeyisland.xyz
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+- name: 🇪🇸 西班牙 (Spain) 12 - xiaohe
+  type: ss
+  server: 140.174.184.5
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: qItG8SueYQcP
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -115,6 +138,9 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 07 - xiaohe
   - 🇪🇸 西班牙 (Spain) 08 - xiaohe
   - 🇪🇸 西班牙 (Spain) 09 - xiaohe
+  - 🇪🇸 西班牙 (Spain) 10 - xiaohe
+  - 🇪🇸 西班牙 (Spain) 11 - xiaohe
+  - 🇪🇸 西班牙 (Spain) 12 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -129,5 +155,8 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 07 - xiaohe
   - 🇪🇸 西班牙 (Spain) 08 - xiaohe
   - 🇪🇸 西班牙 (Spain) 09 - xiaohe
+  - 🇪🇸 西班牙 (Spain) 10 - xiaohe
+  - 🇪🇸 西班牙 (Spain) 11 - xiaohe
+  - 🇪🇸 西班牙 (Spain) 12 - xiaohe
 rules:
 - MATCH,PROXIES

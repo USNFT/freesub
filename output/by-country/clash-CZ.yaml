@@ -5,13 +5,30 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czechia) 01 - xiaohe
-  type: hysteria2
-  server: 153.76.190.41
-  port: 8443
-  password: 3a92b39a-5f02-415e-a908-783ec320e83f
+  type: vless
+  server: 86.54.82.184
+  port: 443
+  uuid: 454431fc-71e2-42b1-b375-5b55dd06666a
   udp: true
+  tls: true
   skip-cert-verify: true
+  reality-opts:
+    public-key: aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU
+  servername: example.org
+  client-fingerprint: firefox
 - name: 🇨🇿 捷克 (Czechia) 02 - xiaohe
+  type: vless
+  server: cz.monkora.org
+  port: 443
+  uuid: 454431fc-71e2-42b1-b375-5b55dd06666a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU
+  servername: example.org
+  client-fingerprint: firefox
+- name: 🇨🇿 捷克 (Czechia) 03 - xiaohe
   type: vless
   server: 85.117.235.50
   port: 443
@@ -32,6 +49,7 @@ proxy-groups:
   - AUTO
   - 🇨🇿 捷克 (Czechia) 01 - xiaohe
   - 🇨🇿 捷克 (Czechia) 02 - xiaohe
+  - 🇨🇿 捷克 (Czechia) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -39,5 +57,6 @@ proxy-groups:
   proxies:
   - 🇨🇿 捷克 (Czechia) 01 - xiaohe
   - 🇨🇿 捷克 (Czechia) 02 - xiaohe
+  - 🇨🇿 捷克 (Czechia) 03 - xiaohe
 rules:
 - MATCH,PROXIES

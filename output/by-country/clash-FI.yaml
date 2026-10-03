@@ -5,15 +5,41 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - xiaohe
+  type: vless
+  server: 95.216.27.15
+  port: 2053
+  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
+    short-id: d368b94e275ab080
+  servername: www.google.com
+  client-fingerprint: firefox
+- name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
+  type: vless
+  server: 77.42.28.120
+  port: 1280
+  uuid: c0e8fb58-a60f-4c15-9444-4e7c109797a8
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: is1-ssl.mzstatic.com
+- name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
   type: hysteria2
   server: 144.31.232.216
   port: 443
   password: 06e88dd6-e264-4981-8c26-d7ab17348ab2
   udp: true
   skip-cert-verify: true
-- name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
+- name: 🇫🇮 芬兰 (Finland) 04 - xiaohe
   type: vless
-  server: 170.168.4.52
+  server: finl11.ali-bard.online
   port: 443
   uuid: 4643976f-85fa-40cf-9e58-ea28b50f253b
   udp: true
@@ -24,40 +50,7 @@ proxies:
   servername: finl11.ali-bard.online
   client-fingerprint: qq
   flow: xtls-rprx-vision
-- name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
-  type: vless
-  server: 95.216.27.15
-  port: 2053
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-    short-id: d368b94e275ab080
-  servername: www.google.com
-  client-fingerprint: firefox
-- name: 🇫🇮 芬兰 (Finland) 04 - xiaohe
-  type: vless
-  server: 95.216.27.15
-  port: 2053
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-    short-id: d368b94e275ab080
-  servername: www.google.com
-  client-fingerprint: firefox
 - name: 🇫🇮 芬兰 (Finland) 05 - xiaohe
-  type: hysteria2
-  server: 144.31.212.253
-  port: 443
-  password: cf83b611-6cba-4535-adcb-8da06c6a9146
-  udp: true
-  skip-cert-verify: true
-- name: 🇫🇮 芬兰 (Finland) 06 - xiaohe
   type: vless
   server: Kashgsgsiajsh.apple.gymyoga.ir
   port: 80
@@ -70,6 +63,19 @@ proxies:
     path: /
     headers:
       Host: Kashgsgsiajsh.apple.gymyoga.ir
+- name: 🇫🇮 芬兰 (Finland) 06 - xiaohe
+  type: vless
+  server: Hshsisjshsh.f15.gymyoga.ir
+  port: 80
+  uuid: ba9c0361-143e-4ee4-9c5c-22a222988907
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: Hshsisjshsh.f15.gymyoga.ir
 - name: 🇫🇮 芬兰 (Finland) 07 - xiaohe
   type: vless
   server: 81.94.148.120
@@ -85,19 +91,12 @@ proxies:
   client-fingerprint: firefox
   flow: xtls-rprx-vision
 - name: 🇫🇮 芬兰 (Finland) 08 - xiaohe
-  type: vless
-  server: 81.94.148.120
-  port: 7449
-  uuid: 2690c11f-7258-43fe-aeb9-d90f93a3c317
+  type: hysteria2
+  server: 144.31.212.253
+  port: 443
+  password: cf83b611-6cba-4535-adcb-8da06c6a9146
   udp: true
-  tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: blW-TdkBvKRn4-lkM64Cn2QgfOqjCRYRQ9upE6RPt3c
-    short-id: c0c41dc21cf7c18e
-  servername: passport.yandex.ru
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
 proxy-groups:
 - name: PROXIES
   type: select
