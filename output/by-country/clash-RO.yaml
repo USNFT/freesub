@@ -6,28 +6,28 @@ log-level: info
 proxies:
 - name: 🇷🇴 罗马尼亚 (Romania) 01 - xiaohe
   type: hysteria2
-  server: 77.74.123.102
+  server: 77.74.123.103
   port: 8443
   password: s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z
   udp: true
   skip-cert-verify: true
 - name: 🇷🇴 罗马尼亚 (Romania) 02 - xiaohe
   type: hysteria2
-  server: 77.74.123.103
+  server: 162.249.127.142
   port: 8443
-  password: s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z
+  password: 9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z
   udp: true
   skip-cert-verify: true
 - name: 🇷🇴 罗马尼亚 (Romania) 03 - xiaohe
   type: hysteria2
-  server: 77.74.123.104
+  server: 77.74.123.102
   port: 8443
   password: s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z
   udp: true
   skip-cert-verify: true
 - name: 🇷🇴 罗马尼亚 (Romania) 04 - xiaohe
   type: hysteria2
-  server: 162.249.127.135
+  server: 162.249.127.143
   port: 8443
   password: 9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z
   udp: true
@@ -41,9 +41,9 @@ proxies:
   skip-cert-verify: true
 - name: 🇷🇴 罗马尼亚 (Romania) 06 - xiaohe
   type: hysteria2
-  server: 162.249.127.143
+  server: 77.74.123.103
   port: 8443
-  password: 9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z
+  password: s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z
   udp: true
   skip-cert-verify: true
 - name: 🇷🇴 罗马尼亚 (Romania) 07 - xiaohe

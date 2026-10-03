@@ -18,17 +18,33 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: ''
   flow: xtls-rprx-vision
+- name: 🇬🇷 希腊 (Greece) 02 - xiaohe
+  type: vless
+  server: greeeeeek.pumpkinpie.study
+  port: 443
+  uuid: 8f6e49e6-7f03-4f10-9da9-1716158d80ed
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: lza1anie-lqVSKrFdfSzq4XLd8Ge2qyCDkgZb1xr1k0
+    short-id: 9fa5c0092361b848
+  servername: greeeeeek.pumpkinpie.study
+  client-fingerprint: random
+  flow: xtls-rprx-vision
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇬🇷 希腊 (Greece) 01 - xiaohe
+  - 🇬🇷 希腊 (Greece) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇬🇷 希腊 (Greece) 01 - xiaohe
+  - 🇬🇷 希腊 (Greece) 02 - xiaohe
 rules:
 - MATCH,PROXIES

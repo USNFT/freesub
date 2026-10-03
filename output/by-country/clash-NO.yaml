@@ -11,33 +11,17 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
   udp: true
-- name: 🇳🇴 挪威 (Norway) 02 - xiaohe
-  type: vless
-  server: 89.185.81.95
-  port: 8765
-  uuid: df9f5aca-eda0-428f-a752-e53866153d12
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: Da_s-Cgqm5kqaIbCgXVJdrq_KF7fCQveRByRhKUzonc
-    short-id: 7bf47eabf939728b
-  servername: r-b8a34c.vless.monster
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇳🇴 挪威 (Norway) 01 - xiaohe
-  - 🇳🇴 挪威 (Norway) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇳🇴 挪威 (Norway) 01 - xiaohe
-  - 🇳🇴 挪威 (Norway) 02 - xiaohe
 rules:
 - MATCH,PROXIES
