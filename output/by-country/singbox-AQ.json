@@ -6,16 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇶 AQ 01 - xiaohe",
-        "🇦🇶 AQ 02 - xiaohe"
+        "🇦🇶 AQ 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇶 AQ 01 - xiaohe",
-        "🇦🇶 AQ 02 - xiaohe"
+        "🇦🇶 AQ 01 - xiaohe"
       ],
       "url": "https://www.google.com/generate_204"
     },

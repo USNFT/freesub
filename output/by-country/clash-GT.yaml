@@ -4,31 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇦🇶 AQ 01 - xiaohe
+- name: 🇬🇹 GT 01 - xiaohe
   type: vless
-  server: 2.27.26.128
+  server: 185.47.254.251
   port: 443
-  uuid: 8710a337-f504-4b75-8989-224cfd803b2d
+  uuid: 878fb7f7-fc65-465e-a352-17c7216c6f3d
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: HKkU-5UanGjWdmX8E-EGulXMk1BnidkFsVveyyOlTg8
-    short-id: 90f9d05bf95cb335
-  servername: aq-1.global-cdn.org
-  client-fingerprint: safari
+    public-key: 6-_ZidygR8PRt4gtHlGCAW-PPmjEIm7Wn7MZqJU1z1Q
+    short-id: 6c059ecfddf9b179
+  servername: gateway.icloud.com
+  client-fingerprint: chrome
   flow: xtls-rprx-vision
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇦🇶 AQ 01 - xiaohe
+  - 🇬🇹 GT 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇦🇶 AQ 01 - xiaohe
+  - 🇬🇹 GT 01 - xiaohe
 rules:
 - MATCH,PROXIES
