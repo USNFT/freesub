@@ -5,15 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇩🇪 德国 (Germany) 01 - xiaohe
-  type: vmess
-  server: 185.177.229.129
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 188.114.97.6
+  port: 8080
+  uuid: b69b43d1-091d-4d7c-90b2-7a8bbad9d6a9
   udp: true
   tls: false
   skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoiY0U2T212Y21yeEhUZHRKYSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0
+    headers:
+      Host: BItter-CreDIT-61b8.b76EbA0aBb.wORkerS.dEv
 - name: 🇩🇪 德国 (Germany) 02 - xiaohe
   type: vmess
   server: 185.177.229.129
@@ -26,7 +29,7 @@ proxies:
   skip-cert-verify: true
 - name: 🇩🇪 德国 (Germany) 03 - xiaohe
   type: vmess
-  server: 185.177.229.129
+  server: 185.177.229.128
   port: 22324
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
   alterId: 0
@@ -35,27 +38,271 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇩🇪 德国 (Germany) 04 - xiaohe
-  type: ss
-  server: 51.195.126.38
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: 2YdE4lFOid5a
+  type: vmess
+  server: 185.177.229.129
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
   udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 🇩🇪 德国 (Germany) 05 - xiaohe
-  type: ss
-  server: 8.209.74.72
-  port: 20001
-  cipher: chacha20-ietf-poly1305
-  password: PWpjPo3tqhPN4yRZ
-  udp: true
-- name: 🇩🇪 德国 (Germany) 06 - xiaohe
   type: ss
   server: 185.226.172.8
   port: 8008
   cipher: aes-256-gcm
   password: XKFKl2rULjIp74
   udp: true
+- name: 🇩🇪 德国 (Germany) 06 - xiaohe
+  type: ss
+  server: 51.195.126.38
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: 2YdE4lFOid5a
+  udp: true
 - name: 🇩🇪 德国 (Germany) 07 - xiaohe
+  type: vmess
+  server: 185.177.229.129
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 08 - xiaohe
+  type: vmess
+  server: 185.177.229.129
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 09 - xiaohe
+  type: vmess
+  server: 185.177.229.129
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 10 - xiaohe
+  type: vmess
+  server: 185.177.229.128
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 11 - xiaohe
+  type: vmess
+  server: 185.177.229.129
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 12 - xiaohe
+  type: vless
+  server: 212.232.18.134
+  port: 443
+  uuid: 65616081-1772-49d7-a793-42bc13d22f69
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: gS0qvWKumWcOVoAgf8SHt6Sm3tqpBw07c5sA_Clb1hg
+  servername: de-1-2.imnotgay.party
+  client-fingerprint: firefox
+- name: 🇩🇪 德国 (Germany) 13 - xiaohe
+  type: vless
+  server: 31.77.109.35
+  port: 443
+  uuid: 87fd990d-ca93-440a-bbd4-e8281c4a0910
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: SPyieysl8w1lo950icthB72kn_ElyJXkpCdKqmnjGEY
+    short-id: 494afdc75f8c2fa8
+  servername: d3-de1.cloud-cdn.xyz
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+- name: 🇩🇪 德国 (Germany) 14 - xiaohe
+  type: vless
+  server: 139.162.149.105
+  port: 80
+  uuid: 5aae7d2d-c152-42cc-afb6-fe805fb94531
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 139.162.149.105
+- name: 🇩🇪 德国 (Germany) 15 - xiaohe
+  type: vless
+  server: 139.162.149.105
+  port: 80
+  uuid: 5aae7d2d-c152-42cc-afb6-fe805fb94531
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 139.162.149.105
+- name: 🇩🇪 德国 (Germany) 16 - xiaohe
+  type: vless
+  server: 177.1.186.44
+  port: 443
+  uuid: 55ccbeb5-0bf4-4e4d-afcb-23c038e73e00
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 4hvjCaGIMlFeWxMYoAWTNHQOaZkGvGQREOjB3Unn7iE
+    short-id: 29455a3a790acbd0
+  servername: mcde.67resserv67.info
+  client-fingerprint: random
+  flow: xtls-rprx-vision
+- name: 🇩🇪 德国 (Germany) 17 - xiaohe
+  type: vless
+  server: 31.77.109.35
+  port: 443
+  uuid: 87fd990d-ca93-440a-bbd4-e8281c4a0910
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: SPyieysl8w1lo950icthB72kn_ElyJXkpCdKqmnjGEY
+    short-id: 494afdc75f8c2fa8
+  servername: d3-de1.cloud-cdn.xyz
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+- name: 🇩🇪 德国 (Germany) 18 - xiaohe
+  type: vless
+  server: 31.77.161.15
+  port: 443
+  uuid: adc11f30-e4cb-4985-bf5e-f9ded69c019f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI
+    short-id: db04ce8bdb8900f1
+  servername: nvidia.com
+  client-fingerprint: random
+  flow: xtls-rprx-vision
+- name: 🇩🇪 德国 (Germany) 19 - xiaohe
+  type: vless
+  server: 103.27.157.120
+  port: 443
+  uuid: 025a80fb-233b-4714-b02d-f4384c653d58
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: k0883nIGfstbzb8hES-dQ1yPcBwbUbnsyg4w-UA5gkA
+    short-id: 68aaa5222092bbea
+  servername: download.amd.com
+  client-fingerprint: qq
+  flow: xtls-rprx-vision
+- name: 🇩🇪 德国 (Germany) 20 - xiaohe
+  type: vless
+  server: 57.129.41.216
+  port: 80
+  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: OV-Germany1.09vpn.com
+- name: 🇩🇪 德国 (Germany) 21 - xiaohe
+  type: vless
+  server: 177.1.186.44
+  port: 443
+  uuid: 55ccbeb5-0bf4-4e4d-afcb-23c038e73e00
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 4hvjCaGIMlFeWxMYoAWTNHQOaZkGvGQREOjB3Unn7iE
+    short-id: 29455a3a790acbd0
+  servername: mcde.67resserv67.info
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇩🇪 德国 (Germany) 22 - xiaohe
+  type: vless
+  server: 177.1.186.44
+  port: 443
+  uuid: 55ccbeb5-0bf4-4e4d-afcb-23c038e73e00
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 4hvjCaGIMlFeWxMYoAWTNHQOaZkGvGQREOjB3Unn7iE
+    short-id: 29455a3a790acbd0
+  servername: mcde.67resserv67.info
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇩🇪 德国 (Germany) 23 - xiaohe
+  type: vless
+  server: 177.1.186.44
+  port: 443
+  uuid: 55ccbeb5-0bf4-4e4d-afcb-23c038e73e00
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 4hvjCaGIMlFeWxMYoAWTNHQOaZkGvGQREOjB3Unn7iE
+    short-id: 29455a3a790acbd0
+  servername: mcde.67resserv67.info
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇩🇪 德国 (Germany) 24 - xiaohe
+  type: vless
+  server: 177.1.186.117
+  port: 443
+  uuid: 55ccbeb5-0bf4-4e4d-afcb-23c038e73e00
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: Dx2F6ThyTXQpu07q1cECPCWBpQwWGNWy1WecyCI7ejA
+    short-id: 29455a3a790acbd0
+  servername: rcge.67resserv67.info
+  client-fingerprint: safari
+  flow: xtls-rprx-vision
+- name: 🇩🇪 德国 (Germany) 25 - xiaohe
+  type: vless
+  server: 150.241.64.105
+  port: 443
+  uuid: 9a1b2785-6baf-455c-9f75-80157ee7f7c5
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: PK5kinwngrsb3QKJwwpeMcL4Iqj4r-ck7EwZDl62Sng
+    short-id: 7d286a1f
+  servername: conv.unit-digital.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇩🇪 德国 (Germany) 26 - xiaohe
   type: vless
   server: 130.12.242.106
   port: 443
@@ -69,96 +316,62 @@ proxies:
   servername: deepl.com
   client-fingerprint: firefox
   flow: xtls-rprx-vision
-- name: 🇩🇪 德国 (Germany) 08 - xiaohe
+- name: 🇩🇪 德国 (Germany) 27 - xiaohe
   type: vless
-  server: 139.162.149.105
-  port: 80
-  uuid: 5aae7d2d-c152-42cc-afb6-fe805fb94531
+  server: hikvision-plus.com
+  port: 2052
+  uuid: e3fb01b6-69b4-41d7-babf-696d992de194
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /@BlueKnight_net--@BlueKnight_net
     headers:
-      Host: 139.162.149.105
-- name: 🇩🇪 德国 (Germany) 09 - xiaohe
+      Host: uwu.blueknightnet.qzz.io
+- name: 🇩🇪 德国 (Germany) 28 - xiaohe
   type: vless
-  server: 130.17.25.67
+  server: 95.85.252.72
   port: 443
-  uuid: 1c5ed2e1-56da-41ab-9a78-159d9892ec17
+  uuid: 39770645-fcd2-4f35-a670-877672fc2ef7
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: lHCkAu_DOVFtE-iL2JGrPt44QeTCFijXuRfuGaSni3Q
-    short-id: 9e4eced6e98ed4d4
-  servername: github.com
-  client-fingerprint: firefox
+    public-key: u5gK34Vx2N4cN4dowhD81_ZPMvymSPYt4Fvv44dKHAY
+    short-id: 5cca2511acbc3ca9
+  servername: de1.lostpool.org
+  client-fingerprint: safari
   flow: xtls-rprx-vision
-- name: 🇩🇪 德国 (Germany) 10 - xiaohe
+- name: 🇩🇪 德国 (Germany) 29 - xiaohe
   type: vless
-  server: 162.55.242.208
-  port: 2053
-  uuid: 659ffdfa-47d2-47d7-af40-5afe0907eead
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: jeS6Zu-p1Gf6GtraIAbpgQoSeT26Xq3GqgqVxccbVhY
-    short-id: 4d14da19b19cfc8c
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇩🇪 德国 (Germany) 11 - xiaohe
-  type: vless
-  server: 177.1.186.44
+  server: 150.241.64.105
   port: 443
-  uuid: 55ccbeb5-0bf4-4e4d-afcb-23c038e73e00
+  uuid: 9a1b2785-6baf-455c-9f75-80157ee7f7c5
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: 4hvjCaGIMlFeWxMYoAWTNHQOaZkGvGQREOjB3Unn7iE
-    short-id: 29455a3a790acbd0
-  servername: mcde.67resserv67.info
+    public-key: PK5kinwngrsb3QKJwwpeMcL4Iqj4r-ck7EwZDl62Sng
+    short-id: 7d286a1f
+  servername: conv.unit-digital.com
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: 🇩🇪 德国 (Germany) 12 - xiaohe
+- name: 🇩🇪 德国 (Germany) 30 - xiaohe
   type: vless
-  server: 177.1.186.44
+  server: 144.31.62.162
   port: 443
-  uuid: 55ccbeb5-0bf4-4e4d-afcb-23c038e73e00
+  uuid: 318c935d-c195-41d3-99ad-9bbcfdab3386
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: 4hvjCaGIMlFeWxMYoAWTNHQOaZkGvGQREOjB3Unn7iE
-    short-id: 29455a3a790acbd0
-  servername: mcde.67resserv67.info
-  client-fingerprint: safari
+    public-key: 0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08
+    short-id: 4be4110078ebed4a
+  servername: de2.srv.vbuste.ru
+  client-fingerprint: firefox
   flow: xtls-rprx-vision
-- name: 🇩🇪 德国 (Germany) 13 - xiaohe
-  type: vless
-  server: id-nl-01.mintrocket.org
-  port: 443
-  uuid: f0a52dd3-4377-4402-a450-210bc81bcf25
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: XU7da9vkBex4TUPo1d-ctFY_N6zouBiCRnbnUK82i3Q
-    short-id: fee1f986a72444db
-  servername: id-nl-01.mintrocket.org
-  client-fingerprint: safari
-  flow: xtls-rprx-vision
-- name: 🇩🇪 德国 (Germany) 14 - xiaohe
-  type: ss
-  server: 2.58.81.221
-  port: 443
-  cipher: aes-256-gcm
-  password: kKEd0rBrd56Furjz
-  udp: true
-- name: 🇩🇪 德国 (Germany) 15 - xiaohe
+- name: 🇩🇪 德国 (Germany) 31 - xiaohe
   type: vless
   server: id-nl-01.mintrocket.org
   port: 443
@@ -172,41 +385,21 @@ proxies:
   servername: id-nl-01.mintrocket.org
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: 🇩🇪 德国 (Germany) 16 - xiaohe
-  type: ss
-  server: 213.202.208.199
-  port: 7001
-  cipher: aes-256-gcm
-  password: RexnBgU7EV5ADxG
-  udp: true
-- name: 🇩🇪 德国 (Germany) 17 - xiaohe
+- name: 🇩🇪 德国 (Germany) 32 - xiaohe
   type: vless
-  server: 2.28.142.170
+  server: 144.31.62.195
   port: 443
-  uuid: f774f037-6320-42e3-a97b-6d4a1f018dd5
+  uuid: 318c935d-c195-41d3-99ad-9bbcfdab3386
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: IqFTx4k5VQydmffvavaOHDXBtdgDxX26A6NtsVvDfhw
-    short-id: d485c3d5248d6b51
-  servername: germanytest.tulnaro.ir
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 18 - xiaohe
-  type: vless
-  server: 82.39.171.142
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  servername: yahoo.com
-  client-fingerprint: chrome
+    public-key: 0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08
+    short-id: 4be4110078ebed4a
+  servername: de2.srv.vbuste.ru
+  client-fingerprint: firefox
   flow: xtls-rprx-vision
-- name: 🇩🇪 德国 (Germany) 19 - xiaohe
+- name: 🇩🇪 德国 (Germany) 33 - xiaohe
   type: vless
   server: 109.176.202.7
   port: 443
@@ -220,42 +413,20 @@ proxies:
   servername: id-nl-01.mintrocket.org
   client-fingerprint: safari
   flow: xtls-rprx-vision
-- name: 🇩🇪 德国 (Germany) 20 - xiaohe
-  type: ss
-  server: 185.226.172.8
-  port: 8008
-  cipher: aes-256-gcm
-  password: XKFKl2rULjIp74
-  udp: true
-- name: 🇩🇪 德国 (Germany) 21 - xiaohe
+- name: 🇩🇪 德国 (Germany) 34 - xiaohe
   type: vless
-  server: 144.31.215.227
-  port: 443
-  uuid: 91d734be-a3d0-4d50-83ab-74cf7b6966fa
+  server: 91.107.171.44
+  port: 4040
+  uuid: d7e99010-e7c3-4978-9d30-2e63882dcfbe
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: LEoyslGYLVf2XWq9Bkq8Hod-EsB3ZoTlvR5AKK3rciQ
-    short-id: c885e8f8
-  servername: cdn-de.bulkavpn.top
-  client-fingerprint: random
-  flow: xtls-rprx-vision
-- name: 🇩🇪 德国 (Germany) 22 - xiaohe
-  type: vless
-  server: 64.118.158.56
-  port: 443
-  uuid: 8af93649-403b-46d8-9966-923d4c58402c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: XTarABsaaFbjYNk6lRKnUzGavHzeqMIP7B8dZGNCvkE
-    short-id: 5c6481cdd4
-  servername: buckeye-retail-website.amazon.com
+    public-key: _OmNcv89o5SDt4H3ButRX9UynGIVwNZR250w4Zie-yk
+    short-id: 73693dea6faae051
+  servername: www.actionvfx.com
   client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇩🇪 德国 (Germany) 23 - xiaohe
+- name: 🇩🇪 德国 (Germany) 35 - xiaohe
   type: vmess
   server: 185.177.229.128
   port: 22324
@@ -265,7 +436,173 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 24 - xiaohe
+- name: 🇩🇪 德国 (Germany) 36 - xiaohe
+  type: vmess
+  server: 31.76.11.83
+  port: 26662
+  uuid: 57160c16-b7db-40d8-bd06-ced30edd4df6
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 37 - xiaohe
+  type: vless
+  server: de2.srv.vbuste.ru
+  port: 443
+  uuid: 318c935d-c195-41d3-99ad-9bbcfdab3386
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08
+    short-id: 4be4110078ebed4a
+  servername: de2.srv.vbuste.ru
+  client-fingerprint: random
+  flow: xtls-rprx-vision
+- name: 🇩🇪 德国 (Germany) 38 - xiaohe
+  type: ss
+  server: 2.58.81.221
+  port: 80
+  cipher: aes-256-gcm
+  password: kKEd0rBrd56Furjz
+  udp: true
+- name: 🇩🇪 德国 (Germany) 39 - xiaohe
+  type: vless
+  server: id-nl-01.mintrocket.org
+  port: 443
+  uuid: f0a52dd3-4377-4402-a450-210bc81bcf25
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: XU7da9vkBex4TUPo1d-ctFY_N6zouBiCRnbnUK82i3Q
+    short-id: fee1f986a72444db
+  servername: id-nl-01.mintrocket.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇩🇪 德国 (Germany) 40 - xiaohe
+  type: vless
+  server: de2.srv.vbuste.ru
+  port: 443
+  uuid: 318c935d-c195-41d3-99ad-9bbcfdab3386
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08
+    short-id: 4be4110078ebed4a
+  servername: de2.srv.vbuste.ru
+  client-fingerprint: randomized
+  flow: xtls-rprx-vision
+- name: 🇩🇪 德国 (Germany) 41 - xiaohe
+  type: vless
+  server: de2.srv.vbuste.ru
+  port: 443
+  uuid: 318c935d-c195-41d3-99ad-9bbcfdab3386
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08
+    short-id: 4be4110078ebed4a
+  servername: de2.srv.vbuste.ru
+  client-fingerprint: randomized
+  flow: xtls-rprx-vision
+- name: 🇩🇪 德国 (Germany) 42 - xiaohe
+  type: vless
+  server: 2.28.142.170
+  port: 443
+  uuid: f774f037-6320-42e3-a97b-6d4a1f018dd5
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: IqFTx4k5VQydmffvavaOHDXBtdgDxX26A6NtsVvDfhw
+    short-id: d485c3d5248d6b51
+  servername: germanytest.tulnaro.ir
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 43 - xiaohe
+  type: vless
+  server: id-nl-01.mintrocket.org
+  port: 443
+  uuid: f0a52dd3-4377-4402-a450-210bc81bcf25
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: XU7da9vkBex4TUPo1d-ctFY_N6zouBiCRnbnUK82i3Q
+    short-id: fee1f986a72444db
+  servername: id-nl-01.mintrocket.org
+  client-fingerprint: safari
+  flow: xtls-rprx-vision
+- name: 🇩🇪 德国 (Germany) 44 - xiaohe
+  type: ss
+  server: 2.58.81.221
+  port: 443
+  cipher: aes-256-gcm
+  password: kKEd0rBrd56Furjz
+  udp: true
+- name: 🇩🇪 德国 (Germany) 45 - xiaohe
+  type: vless
+  server: 82.39.171.142
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  servername: yahoo.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇩🇪 德国 (Germany) 46 - xiaohe
+  type: vless
+  server: de-1-1.imnotgay.party
+  port: 443
+  uuid: 65616081-1772-49d7-a793-42bc13d22f69
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: gS0qvWKumWcOVoAgf8SHt6Sm3tqpBw07c5sA_Clb1hg
+  servername: de-1-1.imnotgay.party
+  client-fingerprint: firefox
+- name: 🇩🇪 德国 (Germany) 47 - xiaohe
+  type: vless
+  server: de-1-2.imnotgay.party
+  port: 443
+  uuid: 65616081-1772-49d7-a793-42bc13d22f69
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: gS0qvWKumWcOVoAgf8SHt6Sm3tqpBw07c5sA_Clb1hg
+  servername: de-1-2.imnotgay.party
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 48 - xiaohe
+  type: vless
+  server: de-2.srv.dvzh.net
+  port: 443
+  uuid: 91344c03-b37f-42c5-90f1-cbb95c5cf256
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 9GEc6lOjnGQyyE1951OZSBMWt4uCXsOjKyj9fysxHH0
+    short-id: e4e77e76e6e49da7
+  servername: de-2.srv.dvzh.net
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+- name: 🇩🇪 德国 (Germany) 49 - xiaohe
+  type: ss
+  server: irp.fluxzone.ir
+  port: 25342
+  cipher: chacha20-ietf-poly1305
+  password: 69xKLopoiluvBwXtq4LMHHq-8XyPw4FP
+  udp: true
+- name: 🇩🇪 德国 (Germany) 50 - xiaohe
   type: vless
   server: defrnode.jumpernode.site
   port: 443
@@ -279,33 +616,37 @@ proxies:
   servername: p-nt-www-amazon-com-kalias.amazon.com
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: 🇩🇪 德国 (Germany) 25 - xiaohe
-  type: vmess
-  server: 185.177.229.128
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 26 - xiaohe
+- name: 🇩🇪 德国 (Germany) 51 - xiaohe
   type: vless
-  server: 31.77.161.15
+  server: defrnode.jumpernode.site
   port: 443
-  uuid: adc11f30-e4cb-4985-bf5e-f9ded69c019f
+  uuid: 8af93649-403b-46d8-9966-923d4c58402c
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI
-    short-id: db04ce8bdb8900f1
-  servername: nvidia.com
-  client-fingerprint: safari
+    public-key: XTarABsaaFbjYNk6lRKnUzGavHzeqMIP7B8dZGNCvkE
+    short-id: bc458609
+  servername: p-nt-www-amazon-com-kalias.amazon.com
+  client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: 🇩🇪 德国 (Germany) 27 - xiaohe
+- name: 🇩🇪 德国 (Germany) 52 - xiaohe
   type: vless
-  server: arcturus.yokkastars.com
+  server: 151.242.17.8
+  port: 443
+  uuid: 318c935d-c195-41d3-99ad-9bbcfdab3386
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08
+    short-id: 4be4110078ebed4a
+  servername: de2.srv.vbuste.ru
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+- name: 🇩🇪 德国 (Germany) 53 - xiaohe
+  type: vless
+  server: 93.152.217.152
   port: 40443
   uuid: bb0f1ed0-0298-40a1-adb1-1f5d6ab33d54
   udp: true
@@ -317,16 +658,6 @@ proxies:
   servername: deepl.com
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: 🇩🇪 德国 (Germany) 28 - xiaohe
-  type: vmess
-  server: 185.177.229.128
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -360,6 +691,31 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 26 - xiaohe
   - 🇩🇪 德国 (Germany) 27 - xiaohe
   - 🇩🇪 德国 (Germany) 28 - xiaohe
+  - 🇩🇪 德国 (Germany) 29 - xiaohe
+  - 🇩🇪 德国 (Germany) 30 - xiaohe
+  - 🇩🇪 德国 (Germany) 31 - xiaohe
+  - 🇩🇪 德国 (Germany) 32 - xiaohe
+  - 🇩🇪 德国 (Germany) 33 - xiaohe
+  - 🇩🇪 德国 (Germany) 34 - xiaohe
+  - 🇩🇪 德国 (Germany) 35 - xiaohe
+  - 🇩🇪 德国 (Germany) 36 - xiaohe
+  - 🇩🇪 德国 (Germany) 37 - xiaohe
+  - 🇩🇪 德国 (Germany) 38 - xiaohe
+  - 🇩🇪 德国 (Germany) 39 - xiaohe
+  - 🇩🇪 德国 (Germany) 40 - xiaohe
+  - 🇩🇪 德国 (Germany) 41 - xiaohe
+  - 🇩🇪 德国 (Germany) 42 - xiaohe
+  - 🇩🇪 德国 (Germany) 43 - xiaohe
+  - 🇩🇪 德国 (Germany) 44 - xiaohe
+  - 🇩🇪 德国 (Germany) 45 - xiaohe
+  - 🇩🇪 德国 (Germany) 46 - xiaohe
+  - 🇩🇪 德国 (Germany) 47 - xiaohe
+  - 🇩🇪 德国 (Germany) 48 - xiaohe
+  - 🇩🇪 德国 (Germany) 49 - xiaohe
+  - 🇩🇪 德国 (Germany) 50 - xiaohe
+  - 🇩🇪 德国 (Germany) 51 - xiaohe
+  - 🇩🇪 德国 (Germany) 52 - xiaohe
+  - 🇩🇪 德国 (Germany) 53 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -393,5 +749,30 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 26 - xiaohe
   - 🇩🇪 德国 (Germany) 27 - xiaohe
   - 🇩🇪 德国 (Germany) 28 - xiaohe
+  - 🇩🇪 德国 (Germany) 29 - xiaohe
+  - 🇩🇪 德国 (Germany) 30 - xiaohe
+  - 🇩🇪 德国 (Germany) 31 - xiaohe
+  - 🇩🇪 德国 (Germany) 32 - xiaohe
+  - 🇩🇪 德国 (Germany) 33 - xiaohe
+  - 🇩🇪 德国 (Germany) 34 - xiaohe
+  - 🇩🇪 德国 (Germany) 35 - xiaohe
+  - 🇩🇪 德国 (Germany) 36 - xiaohe
+  - 🇩🇪 德国 (Germany) 37 - xiaohe
+  - 🇩🇪 德国 (Germany) 38 - xiaohe
+  - 🇩🇪 德国 (Germany) 39 - xiaohe
+  - 🇩🇪 德国 (Germany) 40 - xiaohe
+  - 🇩🇪 德国 (Germany) 41 - xiaohe
+  - 🇩🇪 德国 (Germany) 42 - xiaohe
+  - 🇩🇪 德国 (Germany) 43 - xiaohe
+  - 🇩🇪 德国 (Germany) 44 - xiaohe
+  - 🇩🇪 德国 (Germany) 45 - xiaohe
+  - 🇩🇪 德国 (Germany) 46 - xiaohe
+  - 🇩🇪 德国 (Germany) 47 - xiaohe
+  - 🇩🇪 德国 (Germany) 48 - xiaohe
+  - 🇩🇪 德国 (Germany) 49 - xiaohe
+  - 🇩🇪 德国 (Germany) 50 - xiaohe
+  - 🇩🇪 德国 (Germany) 51 - xiaohe
+  - 🇩🇪 德国 (Germany) 52 - xiaohe
+  - 🇩🇪 德国 (Germany) 53 - xiaohe
 rules:
 - MATCH,PROXIES

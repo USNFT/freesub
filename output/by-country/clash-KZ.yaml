@@ -20,6 +20,34 @@ proxies:
   flow: xtls-rprx-vision
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaohe
   type: vless
+  server: 50.7.157.235
+  port: 443
+  uuid: b812a4e0-c90a-4864-8ffb-2af71d69d4f4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: ygxQyBcJzlLgpSl3MCRDDiFET4TT-3wxa4GdG1obkCY
+    short-id: ba4b2afa9e7193ea
+  servername: edge-fr.extazy.org
+  client-fingerprint: safari
+  flow: xtls-rprx-vision
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - xiaohe
+  type: vless
+  server: 172.93.122.4
+  port: 8443
+  uuid: b812a4e0-c90a-4864-8ffb-2af71d69d4f4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: VDZdbh_RzDDZsHpYF58yUuuvXh93XnmkvpSqb50qG2U
+    short-id: 1be482b8e08aa0ef
+  servername: nl2.reddotcorp.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - xiaohe
+  type: vless
   server: 172.93.122.4
   port: 8443
   uuid: b812a4e0-c90a-4864-8ffb-2af71d69d4f4
@@ -39,6 +67,8 @@ proxy-groups:
   - AUTO
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaohe
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaohe
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - xiaohe
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -46,5 +76,7 @@ proxy-groups:
   proxies:
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaohe
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaohe
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - xiaohe
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - xiaohe
 rules:
 - MATCH,PROXIES
