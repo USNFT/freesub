@@ -6,14 +6,14 @@ log-level: info
 proxies:
 - name: 🇷🇴 罗马尼亚 (Romania) 01 - xiaohe
   type: hysteria2
-  server: 77.74.123.106
+  server: 77.74.123.104
   port: 8443
   password: s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z
   udp: true
   skip-cert-verify: true
 - name: 🇷🇴 罗马尼亚 (Romania) 02 - xiaohe
   type: hysteria2
-  server: 77.74.123.105
+  server: 77.74.123.102
   port: 8443
   password: s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z
   udp: true
@@ -34,7 +34,7 @@ proxies:
   skip-cert-verify: true
 - name: 🇷🇴 罗马尼亚 (Romania) 05 - xiaohe
   type: hysteria2
-  server: 77.74.123.105
+  server: 77.74.123.103
   port: 8443
   password: s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z
   udp: true
@@ -48,14 +48,14 @@ proxies:
   skip-cert-verify: true
 - name: 🇷🇴 罗马尼亚 (Romania) 07 - xiaohe
   type: hysteria2
-  server: 77.74.123.102
+  server: 77.74.123.105
   port: 8443
   password: s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z
   udp: true
   skip-cert-verify: true
 - name: 🇷🇴 罗马尼亚 (Romania) 08 - xiaohe
   type: hysteria2
-  server: 77.74.123.99
+  server: 77.74.123.101
   port: 8443
   password: s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z
   udp: true
@@ -69,42 +69,35 @@ proxies:
   skip-cert-verify: true
 - name: 🇷🇴 罗马尼亚 (Romania) 10 - xiaohe
   type: hysteria2
-  server: 77.74.123.99
+  server: 77.74.123.105
   port: 8443
   password: s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z
   udp: true
   skip-cert-verify: true
 - name: 🇷🇴 罗马尼亚 (Romania) 11 - xiaohe
   type: hysteria2
-  server: 77.74.123.102
+  server: 77.74.123.99
   port: 8443
   password: s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z
   udp: true
   skip-cert-verify: true
 - name: 🇷🇴 罗马尼亚 (Romania) 12 - xiaohe
-  type: hysteria2
-  server: 77.74.123.100
-  port: 8443
-  password: s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z
-  udp: true
-  skip-cert-verify: true
-- name: 🇷🇴 罗马尼亚 (Romania) 13 - xiaohe
-  type: hysteria2
-  server: 77.74.123.105
-  port: 8443
-  password: s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z
-  udp: true
-  skip-cert-verify: true
-- name: 🇷🇴 罗马尼亚 (Romania) 14 - xiaohe
-  type: ss
-  server: bogging-eyeteeth-fly.freesocks.work
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: QFWzCw2uX9B9i6qAYeFBIE
-  udp: true
-- name: 🇷🇴 罗马尼亚 (Romania) 15 - xiaohe
   type: vless
-  server: bl3fk52.sysopnova.art
+  server: 109.104.106.149
+  port: 443
+  uuid: 87fd990d-ca93-440a-bbd4-e8281c4a0910
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: a_v5l6R-rpVGlENLeONW4sz-GdRwIoDqISOWXGov8nw
+    short-id: 87709fed663228e5
+  servername: d3-ro.cloud-cdn.xyz
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇷🇴 罗马尼亚 (Romania) 13 - xiaohe
+  type: vless
+  server: 193.163.203.253
   port: 443
   uuid: 441afe11-a180-4516-bb80-80a8a6b38705
   udp: true
@@ -114,7 +107,7 @@ proxies:
     public-key: gE8LUmGFXik94SoDXNiAG5KprGyhjoRwDuhGebgAVWk
     short-id: 5ee019e02e6ed99a
   servername: yandex.ru
-  client-fingerprint: ''
+  client-fingerprint: chrome
   flow: xtls-rprx-vision
 proxy-groups:
 - name: PROXIES
@@ -134,8 +127,6 @@ proxy-groups:
   - 🇷🇴 罗马尼亚 (Romania) 11 - xiaohe
   - 🇷🇴 罗马尼亚 (Romania) 12 - xiaohe
   - 🇷🇴 罗马尼亚 (Romania) 13 - xiaohe
-  - 🇷🇴 罗马尼亚 (Romania) 14 - xiaohe
-  - 🇷🇴 罗马尼亚 (Romania) 15 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -154,7 +145,5 @@ proxy-groups:
   - 🇷🇴 罗马尼亚 (Romania) 11 - xiaohe
   - 🇷🇴 罗马尼亚 (Romania) 12 - xiaohe
   - 🇷🇴 罗马尼亚 (Romania) 13 - xiaohe
-  - 🇷🇴 罗马尼亚 (Romania) 14 - xiaohe
-  - 🇷🇴 罗马尼亚 (Romania) 15 - xiaohe
 rules:
 - MATCH,PROXIES
