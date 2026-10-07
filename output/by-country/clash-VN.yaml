@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇻🇳 越南 (Vietnam) 01 - xiaohe
   type: vless
-  server: 43.255.157.118
+  server: 103.30.76.65
   port: 44988
   uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
   udp: true
@@ -16,7 +16,7 @@ proxies:
     public-key: f6Tj8-uvWsLv3V-lGLuPciArp5oKqUImBg-U7-WJ-0A
     short-id: bb82c8
   servername: www.tesla.com
-  client-fingerprint: random
+  client-fingerprint: firefox
   flow: xtls-rprx-vision
 - name: 🇻🇳 越南 (Vietnam) 02 - xiaohe
   type: vless
@@ -30,7 +30,7 @@ proxies:
     public-key: f6Tj8-uvWsLv3V-lGLuPciArp5oKqUImBg-U7-WJ-0A
     short-id: bb82c8
   servername: www.tesla.com
-  client-fingerprint: qq
+  client-fingerprint: random
   flow: xtls-rprx-vision
 - name: 🇻🇳 越南 (Vietnam) 03 - xiaohe
   type: vless
@@ -48,6 +48,62 @@ proxies:
   flow: xtls-rprx-vision
 - name: 🇻🇳 越南 (Vietnam) 04 - xiaohe
   type: vless
+  server: 43.255.157.118
+  port: 44988
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: f6Tj8-uvWsLv3V-lGLuPciArp5oKqUImBg-U7-WJ-0A
+    short-id: bb82c8
+  servername: www.tesla.com
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+- name: 🇻🇳 越南 (Vietnam) 05 - xiaohe
+  type: vless
+  server: 43.255.157.118
+  port: 44988
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: f6Tj8-uvWsLv3V-lGLuPciArp5oKqUImBg-U7-WJ-0A
+    short-id: bb82c8
+  servername: www.tesla.com
+  client-fingerprint: qq
+  flow: xtls-rprx-vision
+- name: 🇻🇳 越南 (Vietnam) 06 - xiaohe
+  type: vless
+  server: 103.30.76.197
+  port: 44988
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: f6Tj8-uvWsLv3V-lGLuPciArp5oKqUImBg-U7-WJ-0A
+    short-id: bb82c8
+  servername: www.tesla.com
+  client-fingerprint: random
+  flow: xtls-rprx-vision
+- name: 🇻🇳 越南 (Vietnam) 07 - xiaohe
+  type: vless
+  server: 103.30.76.65
+  port: 44988
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: f6Tj8-uvWsLv3V-lGLuPciArp5oKqUImBg-U7-WJ-0A
+    short-id: bb82c8
+  servername: www.tesla.com
+  client-fingerprint: random
+  flow: xtls-rprx-vision
+- name: 🇻🇳 越南 (Vietnam) 08 - xiaohe
+  type: vless
   server: 45.153.130.119
   port: 44988
   uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
@@ -60,9 +116,23 @@ proxies:
   servername: www.tesla.com
   client-fingerprint: ios
   flow: xtls-rprx-vision
-- name: 🇻🇳 越南 (Vietnam) 05 - xiaohe
+- name: 🇻🇳 越南 (Vietnam) 09 - xiaohe
   type: vless
-  server: 103.30.76.65
+  server: 45.153.130.119
+  port: 44988
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: f6Tj8-uvWsLv3V-lGLuPciArp5oKqUImBg-U7-WJ-0A
+    short-id: bb82c8
+  servername: www.tesla.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇻🇳 越南 (Vietnam) 10 - xiaohe
+  type: vless
+  server: 45.153.130.119
   port: 44988
   uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
   udp: true
@@ -74,6 +144,34 @@ proxies:
   servername: www.tesla.com
   client-fingerprint: firefox
   flow: xtls-rprx-vision
+- name: 🇻🇳 越南 (Vietnam) 11 - xiaohe
+  type: vless
+  server: 45.153.130.119
+  port: 44988
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: f6Tj8-uvWsLv3V-lGLuPciArp5oKqUImBg-U7-WJ-0A
+    short-id: bb82c8
+  servername: www.tesla.com
+  client-fingerprint: safari
+  flow: xtls-rprx-vision
+- name: 🇻🇳 越南 (Vietnam) 12 - xiaohe
+  type: vless
+  server: 45.153.130.119
+  port: 44988
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: f6Tj8-uvWsLv3V-lGLuPciArp5oKqUImBg-U7-WJ-0A
+    short-id: bb82c8
+  servername: www.tesla.com
+  client-fingerprint: qq
+  flow: xtls-rprx-vision
 proxy-groups:
 - name: PROXIES
   type: select
@@ -84,6 +182,13 @@ proxy-groups:
   - 🇻🇳 越南 (Vietnam) 03 - xiaohe
   - 🇻🇳 越南 (Vietnam) 04 - xiaohe
   - 🇻🇳 越南 (Vietnam) 05 - xiaohe
+  - 🇻🇳 越南 (Vietnam) 06 - xiaohe
+  - 🇻🇳 越南 (Vietnam) 07 - xiaohe
+  - 🇻🇳 越南 (Vietnam) 08 - xiaohe
+  - 🇻🇳 越南 (Vietnam) 09 - xiaohe
+  - 🇻🇳 越南 (Vietnam) 10 - xiaohe
+  - 🇻🇳 越南 (Vietnam) 11 - xiaohe
+  - 🇻🇳 越南 (Vietnam) 12 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -94,5 +199,12 @@ proxy-groups:
   - 🇻🇳 越南 (Vietnam) 03 - xiaohe
   - 🇻🇳 越南 (Vietnam) 04 - xiaohe
   - 🇻🇳 越南 (Vietnam) 05 - xiaohe
+  - 🇻🇳 越南 (Vietnam) 06 - xiaohe
+  - 🇻🇳 越南 (Vietnam) 07 - xiaohe
+  - 🇻🇳 越南 (Vietnam) 08 - xiaohe
+  - 🇻🇳 越南 (Vietnam) 09 - xiaohe
+  - 🇻🇳 越南 (Vietnam) 10 - xiaohe
+  - 🇻🇳 越南 (Vietnam) 11 - xiaohe
+  - 🇻🇳 越南 (Vietnam) 12 - xiaohe
 rules:
 - MATCH,PROXIES
