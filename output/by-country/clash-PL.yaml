@@ -19,9 +19,9 @@ proxies:
       Host: 70.34.252.154
 - name: 🇵🇱 波兰 (Poland) 02 - xiaohe
   type: vless
-  server: 70.34.252.154
+  server: 70.34.255.101
   port: 80
-  uuid: d9c7ec1f-5aa3-469a-b860-760c686806b0
+  uuid: a889262f-5fe3-4c93-9aaa-3721318dd389
   udp: true
   tls: false
   skip-cert-verify: true
@@ -29,7 +29,7 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: 70.34.252.154
+      Host: 70.34.255.101
 - name: 🇵🇱 波兰 (Poland) 03 - xiaohe
   type: vless
   server: 70.34.255.101
@@ -45,17 +45,18 @@ proxies:
       Host: 70.34.255.101
 - name: 🇵🇱 波兰 (Poland) 04 - xiaohe
   type: vless
-  server: 70.34.255.101
-  port: 80
-  uuid: a889262f-5fe3-4c93-9aaa-3721318dd389
+  server: 177.1.192.72
+  port: 443
+  uuid: 4d852af3-a121-41aa-9aed-4ca40a6f7b4d
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 70.34.255.101
+  reality-opts:
+    public-key: y3YCXTqEVks0nGfiSwJ43ol4pY69-mWFUZsdmveoVDM
+    short-id: 46455ff0
+  servername: addons.mozilla.org
+  client-fingerprint: randomized
+  flow: xtls-rprx-vision
 - name: 🇵🇱 波兰 (Poland) 05 - xiaohe
   type: hysteria2
   server: 45.192.12.93
@@ -71,17 +72,23 @@ proxies:
   udp: true
   skip-cert-verify: true
 - name: 🇵🇱 波兰 (Poland) 07 - xiaohe
-  type: hysteria2
-  server: 45.192.12.93
-  port: 443
-  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
+  type: vless
+  server: 31.77.13.19
+  port: 2063
+  uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
   udp: true
+  tls: true
   skip-cert-verify: true
+  reality-opts:
+    public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
+  servername: rusbid.de
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
 - name: 🇵🇱 波兰 (Poland) 08 - xiaohe
   type: hysteria2
-  server: streambox.wwwinternetvideo.click
+  server: admin.wwwinternetvideo.click
   port: 443
-  password: 865e271f7c97b549b024255c9d02cebe9cc0c2c070a82b1e11bb11b9cd88dd01
+  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
   udp: true
   skip-cert-verify: true
 - name: 🇵🇱 波兰 (Poland) 09 - xiaohe
@@ -100,7 +107,7 @@ proxies:
   skip-cert-verify: true
 - name: 🇵🇱 波兰 (Poland) 11 - xiaohe
   type: vless
-  server: 91.108.249.207
+  server: 91.108.249.201
   port: 705
   uuid: 87fd990d-ca93-440a-bbd4-e8281c4a0910
   udp: true
@@ -112,7 +119,7 @@ proxies:
   client-fingerprint: chrome
 - name: 🇵🇱 波兰 (Poland) 12 - xiaohe
   type: vless
-  server: 91.108.249.201
+  server: 91.108.249.207
   port: 705
   uuid: 87fd990d-ca93-440a-bbd4-e8281c4a0910
   udp: true
