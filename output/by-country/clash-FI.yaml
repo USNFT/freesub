@@ -18,20 +18,6 @@ proxies:
   password: e3c3b722-1264-4cdc-a97c-b0a1bb73cd67
   udp: true
   skip-cert-verify: true
-- name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
-  type: vless
-  server: van2.ragnarok-it.xyz
-  port: 8446
-  uuid: a61496c3-f256-4a36-8a52-8638b9cc900a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: Y6ZtoxCUW1qFIvLTNfbrsyfCDoIBaRsqGNtbF_mcAXM
-    short-id: 7bac4b112d30d1
-  servername: amd.com
-  client-fingerprint: edge
-  flow: xtls-rprx-vision
 proxy-groups:
 - name: PROXIES
   type: select
@@ -39,7 +25,6 @@ proxy-groups:
   - AUTO
   - 🇫🇮 芬兰 (Finland) 01 - xiaohe
   - 🇫🇮 芬兰 (Finland) 02 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -47,6 +32,5 @@ proxy-groups:
   proxies:
   - 🇫🇮 芬兰 (Finland) 01 - xiaohe
   - 🇫🇮 芬兰 (Finland) 02 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 03 - xiaohe
 rules:
 - MATCH,PROXIES
