@@ -29,7 +29,7 @@ proxies:
     public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
     short-id: a8ae
   servername: deepl.com
-  client-fingerprint: qq
+  client-fingerprint: chrome
 - name: 🇨🇾 塞浦路斯 (Cyprus) 03 - xiaohe
   type: vless
   server: 194.76.154.31
@@ -42,7 +42,7 @@ proxies:
     public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
     short-id: a8ae
   servername: deepl.com
-  client-fingerprint: chrome
+  client-fingerprint: qq
 - name: 🇨🇾 塞浦路斯 (Cyprus) 04 - xiaohe
   type: vless
   server: 194.76.154.31
@@ -55,7 +55,7 @@ proxies:
     public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
     short-id: a8ae
   servername: deepl.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇨🇾 塞浦路斯 (Cyprus) 05 - xiaohe
   type: vless
   server: 194.76.154.31
@@ -81,7 +81,7 @@ proxies:
     public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
     short-id: a8ae
   servername: deepl.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇨🇾 塞浦路斯 (Cyprus) 07 - xiaohe
   type: vless
   server: 194.76.154.31
@@ -94,7 +94,7 @@ proxies:
     public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
     short-id: a8ae
   servername: deepl.com
-  client-fingerprint: chrome
+  client-fingerprint: random
 - name: 🇨🇾 塞浦路斯 (Cyprus) 08 - xiaohe
   type: vless
   server: 194.76.154.31
@@ -107,7 +107,7 @@ proxies:
     public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
     short-id: a8ae
   servername: deepl.com
-  client-fingerprint: random
+  client-fingerprint: chrome
 - name: 🇨🇾 塞浦路斯 (Cyprus) 09 - xiaohe
   type: vless
   server: 194.76.154.31
@@ -120,7 +120,7 @@ proxies:
     public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
     short-id: a8ae
   servername: deepl.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇨🇾 塞浦路斯 (Cyprus) 10 - xiaohe
   type: vless
   server: 194.76.154.31
@@ -146,7 +146,7 @@ proxies:
     public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
     short-id: a8ae
   servername: deepl.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇨🇾 塞浦路斯 (Cyprus) 12 - xiaohe
   type: vless
   server: 194.76.154.31
@@ -159,7 +159,7 @@ proxies:
     public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
     short-id: a8ae
   servername: deepl.com
-  client-fingerprint: firefox
+  client-fingerprint: qq
 - name: 🇨🇾 塞浦路斯 (Cyprus) 13 - xiaohe
   type: vless
   server: 194.76.154.31
@@ -185,7 +185,7 @@ proxies:
     public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
     short-id: a8ae
   servername: deepl.com
-  client-fingerprint: qq
+  client-fingerprint: chrome
 - name: 🇨🇾 塞浦路斯 (Cyprus) 15 - xiaohe
   type: vless
   server: 194.76.154.31
@@ -201,18 +201,17 @@ proxies:
   client-fingerprint: chrome
 - name: 🇨🇾 塞浦路斯 (Cyprus) 16 - xiaohe
   type: vless
-  server: 185.166.154.111
-  port: 443
-  uuid: 91d734be-a3d0-4d50-83ab-74cf7b6966fa
+  server: 194.76.154.31
+  port: 40443
+  uuid: 9f0baff8-bdee-4de9-9515-bcc4932b41fa
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: bQZcMViJWXus9rMSTOa-ZAaUJC0mIlPx7XmzrLp8GQU
-    short-id: 94f32cfc
-  servername: cdn.bulkavpn.top
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
+    public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
+    short-id: a8ae
+  servername: deepl.com
+  client-fingerprint: chrome
 - name: 🇨🇾 塞浦路斯 (Cyprus) 17 - xiaohe
   type: vless
   server: 194.76.154.31
@@ -225,8 +224,35 @@ proxies:
     public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
     short-id: a8ae
   servername: deepl.com
-  client-fingerprint: chrome
+  client-fingerprint: qq
 - name: 🇨🇾 塞浦路斯 (Cyprus) 18 - xiaohe
+  type: vless
+  server: 194.76.154.31
+  port: 40443
+  uuid: 9f0baff8-bdee-4de9-9515-bcc4932b41fa
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
+    short-id: a8ae
+  servername: deepl.com
+  client-fingerprint: chrome
+- name: 🇨🇾 塞浦路斯 (Cyprus) 19 - xiaohe
+  type: vless
+  server: 5.253.42.164
+  port: 40443
+  uuid: e99ba96d-dec8-42eb-be53-19e71eef7cab
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: g77ZJbm18JEotapmVRjaXi133MzkbhkU2lxhVeXx8zw
+    short-id: 68a8
+  servername: deepl.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇨🇾 塞浦路斯 (Cyprus) 20 - xiaohe
   type: vless
   server: dorado.yokkastars.com
   port: 40443
@@ -238,15 +264,8 @@ proxies:
     public-key: g77ZJbm18JEotapmVRjaXi133MzkbhkU2lxhVeXx8zw
     short-id: 68a8
   servername: deepl.com
-  client-fingerprint: qq
+  client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: 🇨🇾 塞浦路斯 (Cyprus) 19 - xiaohe
-  type: ss
-  server: 45.149.114.171
-  port: 777
-  cipher: chacha20-ietf-poly1305
-  password: Jeoq8ujfkqZKKvACQhoqBQ1PA3uq4242
-  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -271,6 +290,7 @@ proxy-groups:
   - 🇨🇾 塞浦路斯 (Cyprus) 17 - xiaohe
   - 🇨🇾 塞浦路斯 (Cyprus) 18 - xiaohe
   - 🇨🇾 塞浦路斯 (Cyprus) 19 - xiaohe
+  - 🇨🇾 塞浦路斯 (Cyprus) 20 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -295,5 +315,6 @@ proxy-groups:
   - 🇨🇾 塞浦路斯 (Cyprus) 17 - xiaohe
   - 🇨🇾 塞浦路斯 (Cyprus) 18 - xiaohe
   - 🇨🇾 塞浦路斯 (Cyprus) 19 - xiaohe
+  - 🇨🇾 塞浦路斯 (Cyprus) 20 - xiaohe
 rules:
 - MATCH,PROXIES

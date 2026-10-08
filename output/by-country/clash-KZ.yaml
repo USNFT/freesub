@@ -16,7 +16,7 @@ proxies:
     public-key: 65d6SIYIqiX-SN4vx_BnNiQJ8Lnr0HAgUKoT7WgWRgI
     short-id: ee169e93d3c277a1
   servername: edge-uk2.mystatic-cdn.ru
-  client-fingerprint: chrome
+  client-fingerprint: random
   flow: xtls-rprx-vision
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaohe
   type: vless
@@ -30,7 +30,7 @@ proxies:
     public-key: 65d6SIYIqiX-SN4vx_BnNiQJ8Lnr0HAgUKoT7WgWRgI
     short-id: ee169e93d3c277a1
   servername: edge-uk2.mystatic-cdn.ru
-  client-fingerprint: chrome
+  client-fingerprint: safari
   flow: xtls-rprx-vision
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - xiaohe
   type: vless
@@ -46,6 +46,48 @@ proxies:
   servername: edge-uk2.mystatic-cdn.ru
   client-fingerprint: firefox
   flow: xtls-rprx-vision
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - xiaohe
+  type: vless
+  server: 193.202.113.5
+  port: 443
+  uuid: 6f756511-7fc3-41ba-874b-8cdc8e1b225f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 65d6SIYIqiX-SN4vx_BnNiQJ8Lnr0HAgUKoT7WgWRgI
+    short-id: ee169e93d3c277a1
+  servername: edge-uk2.mystatic-cdn.ru
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 05 - xiaohe
+  type: vless
+  server: 193.202.113.5
+  port: 443
+  uuid: 6f756511-7fc3-41ba-874b-8cdc8e1b225f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 65d6SIYIqiX-SN4vx_BnNiQJ8Lnr0HAgUKoT7WgWRgI
+    short-id: ee169e93d3c277a1
+  servername: edge-uk2.mystatic-cdn.ru
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 06 - xiaohe
+  type: vless
+  server: 185.155.55.3
+  port: 8443
+  uuid: a6be94fc-e742-4714-8a38-c8d7410ae066
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: ApMfbcEyBOve6DxXoBNVu3bCCzQ7XCEYB4ummsDtTBE
+    short-id: 661766b2bcef440a
+  servername: ee-nf.reddotcorp.org
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
 proxy-groups:
 - name: PROXIES
   type: select
@@ -54,6 +96,9 @@ proxy-groups:
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaohe
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaohe
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - xiaohe
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - xiaohe
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 05 - xiaohe
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -62,5 +107,8 @@ proxy-groups:
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaohe
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaohe
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - xiaohe
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - xiaohe
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 05 - xiaohe
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 06 - xiaohe
 rules:
 - MATCH,PROXIES

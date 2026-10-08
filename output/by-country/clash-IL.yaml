@@ -16,7 +16,7 @@ proxies:
     public-key: 8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To
     short-id: a3a578ab
   servername: www.apple.com
-  client-fingerprint: random
+  client-fingerprint: chrome
   flow: xtls-rprx-vision
 - name: 🇮🇱 以色列 (Israel) 02 - xiaohe
   type: vless
@@ -30,7 +30,7 @@ proxies:
     public-key: 8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To
     short-id: a3a578ab
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
   flow: xtls-rprx-vision
 - name: 🇮🇱 以色列 (Israel) 03 - xiaohe
   type: vless
@@ -44,7 +44,7 @@ proxies:
     public-key: 8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To
     short-id: a3a578ab
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: random
   flow: xtls-rprx-vision
 - name: 🇮🇱 以色列 (Israel) 04 - xiaohe
   type: vless
@@ -72,7 +72,7 @@ proxies:
     public-key: 8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To
     short-id: a3a578ab
   servername: www.apple.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   flow: xtls-rprx-vision
 - name: 🇮🇱 以色列 (Israel) 06 - xiaohe
   type: vless
@@ -88,20 +88,6 @@ proxies:
   servername: www.apple.com
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: 🇮🇱 以色列 (Israel) 07 - xiaohe
-  type: vless
-  server: es.srv.dvzh.net
-  port: 443
-  uuid: 91344c03-b37f-42c5-90f1-cbb95c5cf256
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 9GEc6lOjnGQyyE1951OZSBMWt4uCXsOjKyj9fysxHH0
-    short-id: e4e77e76e6e49da7
-  servername: es.srv.dvzh.net
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
 proxy-groups:
 - name: PROXIES
   type: select
@@ -113,7 +99,6 @@ proxy-groups:
   - 🇮🇱 以色列 (Israel) 04 - xiaohe
   - 🇮🇱 以色列 (Israel) 05 - xiaohe
   - 🇮🇱 以色列 (Israel) 06 - xiaohe
-  - 🇮🇱 以色列 (Israel) 07 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -125,6 +110,5 @@ proxy-groups:
   - 🇮🇱 以色列 (Israel) 04 - xiaohe
   - 🇮🇱 以色列 (Israel) 05 - xiaohe
   - 🇮🇱 以色列 (Israel) 06 - xiaohe
-  - 🇮🇱 以色列 (Israel) 07 - xiaohe
 rules:
 - MATCH,PROXIES
