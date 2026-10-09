@@ -55,15 +55,18 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 06 - xiaohe
-  type: hysteria2
-  server: 103.115.109.49
-  port: 443
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  type: vmess
+  server: 165.154.195.38
+  port: 35034
+  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
+  alterId: 0
+  cipher: auto
   udp: true
+  tls: false
   skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 07 - xiaohe
   type: hysteria2
-  server: 103.115.109.49
+  server: 160.187.100.109
   port: 443
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   udp: true
@@ -77,14 +80,14 @@ proxies:
   skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 09 - xiaohe
   type: hysteria2
-  server: 160.187.100.109
+  server: 103.115.109.49
   port: 443
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   udp: true
   skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 10 - xiaohe
   type: hysteria2
-  server: 160.187.100.109
+  server: 103.115.109.49
   port: 443
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   udp: true
@@ -98,7 +101,7 @@ proxies:
   skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 12 - xiaohe
   type: hysteria2
-  server: 103.115.109.49
+  server: 160.187.100.109
   port: 443
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   udp: true
@@ -119,14 +122,14 @@ proxies:
   skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 15 - xiaohe
   type: hysteria2
-  server: 160.187.100.109
+  server: 103.115.109.49
   port: 443
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   udp: true
   skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 16 - xiaohe
   type: hysteria2
-  server: vpn-tw-002.fastervpn.world
+  server: 103.115.109.49
   port: 443
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   udp: true
@@ -161,7 +164,7 @@ proxies:
   skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 21 - xiaohe
   type: hysteria2
-  server: vpn-tw-002.fastervpn.world
+  server: 103.115.109.49
   port: 443
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   udp: true
@@ -182,7 +185,7 @@ proxies:
   skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 24 - xiaohe
   type: hysteria2
-  server: 160.187.100.109
+  server: vpn-tw-002.fastervpn.world
   port: 443
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   udp: true
@@ -196,7 +199,7 @@ proxies:
   skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 26 - xiaohe
   type: hysteria2
-  server: 103.115.109.49
+  server: vpn-tw-002.fastervpn.world
   port: 443
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   udp: true
@@ -231,7 +234,7 @@ proxies:
   skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 31 - xiaohe
   type: hysteria2
-  server: vpn-tw-002.fastervpn.world
+  server: 103.115.109.49
   port: 443
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   udp: true
@@ -244,17 +247,12 @@ proxies:
   udp: true
   skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 33 - xiaohe
-  type: vless
-  server: 61.230.162.88
-  port: 24215
-  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
+  type: hysteria2
+  server: vpn-tw-002.fastervpn.world
+  port: 443
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   udp: true
-  tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
-  servername: addons.mozilla.org
-  client-fingerprint: random
 - name: 🇹🇼 中国台湾 (Taiwan) 34 - xiaohe
   type: hysteria2
   server: vpn-tw-002.fastervpn.world
@@ -268,36 +266,6 @@ proxies:
   port: 443
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   udp: true
-  skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 36 - xiaohe
-  type: vmess
-  server: 165.154.195.38
-  port: 35034
-  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 37 - xiaohe
-  type: vmess
-  server: 165.154.195.38
-  port: 35034
-  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 38 - xiaohe
-  type: vmess
-  server: 165.154.195.38
-  port: 35034
-  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
   skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
@@ -339,9 +307,6 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 33 - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 34 - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 35 - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 36 - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 37 - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 38 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -382,8 +347,5 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 33 - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 34 - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 35 - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 36 - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 37 - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 38 - xiaohe
 rules:
 - MATCH,PROXIES

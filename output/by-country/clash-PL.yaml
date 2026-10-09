@@ -13,19 +13,47 @@ proxies:
   skip-cert-verify: true
 - name: 🇵🇱 波兰 (Poland) 02 - xiaohe
   type: vless
-  server: 177.1.192.72
-  port: 443
-  uuid: 4d852af3-a121-41aa-9aed-4ca40a6f7b4d
+  server: 222.167.245.248
+  port: 8443
+  uuid: a889fba5-5472-4022-a6b4-9710157fda2f
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: y3YCXTqEVks0nGfiSwJ43ol4pY69-mWFUZsdmveoVDM
-    short-id: 46455ff0
-  servername: addons.mozilla.org
-  client-fingerprint: chrome
+    public-key: 7JLSiscJksRdmmRLnbqXlBgc4nce6lTvhKp3NIlXHFg
+    short-id: a2aa
+  servername: pol2.fytpn.com
+  client-fingerprint: firefox
   flow: xtls-rprx-vision
 - name: 🇵🇱 波兰 (Poland) 03 - xiaohe
+  type: hysteria2
+  server: 78.17.128.153
+  port: 35076
+  password: b4c8ee9caa74b7ba0a61
+  udp: true
+  skip-cert-verify: true
+- name: 🇵🇱 波兰 (Poland) 04 - xiaohe
+  type: hysteria2
+  server: 45.192.12.93
+  port: 443
+  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
+  udp: true
+  skip-cert-verify: true
+- name: 🇵🇱 波兰 (Poland) 05 - xiaohe
+  type: vless
+  server: 78.17.159.90
+  port: 443
+  uuid: a889fba5-5472-4022-a6b4-9710157fda2f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: OxUvNHe0yPn3OfNl7ThhzYO0YcntrPNwYMqwjOYK8nI
+    short-id: a2aa
+  servername: github.com
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+- name: 🇵🇱 波兰 (Poland) 06 - xiaohe
   type: vless
   server: 177.1.192.72
   port: 443
@@ -39,14 +67,7 @@ proxies:
   servername: addons.mozilla.org
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: 🇵🇱 波兰 (Poland) 04 - xiaohe
-  type: hysteria2
-  server: 45.192.12.93
-  port: 443
-  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
-  udp: true
-  skip-cert-verify: true
-- name: 🇵🇱 波兰 (Poland) 05 - xiaohe
+- name: 🇵🇱 波兰 (Poland) 07 - xiaohe
   type: vless
   server: 177.1.192.74
   port: 443
@@ -60,53 +81,6 @@ proxies:
   servername: addons.mozilla.org
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: 🇵🇱 波兰 (Poland) 06 - xiaohe
-  type: hysteria2
-  server: 78.17.128.153
-  port: 35076
-  password: b4c8ee9caa74b7ba0a61
-  udp: true
-  skip-cert-verify: true
-- name: 🇵🇱 波兰 (Poland) 07 - xiaohe
-  type: vless
-  server: 31.77.13.19
-  port: 2063
-  uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
-  servername: rusbid.de
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇵🇱 波兰 (Poland) 08 - xiaohe
-  type: hysteria2
-  server: 144.31.49.47
-  port: 443
-  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
-  udp: true
-  skip-cert-verify: true
-- name: 🇵🇱 波兰 (Poland) 09 - xiaohe
-  type: hysteria2
-  server: 144.31.49.47
-  port: 443
-  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
-  udp: true
-  skip-cert-verify: true
-- name: 🇵🇱 波兰 (Poland) 10 - xiaohe
-  type: vless
-  server: pl-waw.dontblockmepls.com
-  port: 2063
-  uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
-  servername: rusbid.de
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
 proxy-groups:
 - name: PROXIES
   type: select
@@ -119,9 +93,6 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 05 - xiaohe
   - 🇵🇱 波兰 (Poland) 06 - xiaohe
   - 🇵🇱 波兰 (Poland) 07 - xiaohe
-  - 🇵🇱 波兰 (Poland) 08 - xiaohe
-  - 🇵🇱 波兰 (Poland) 09 - xiaohe
-  - 🇵🇱 波兰 (Poland) 10 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -134,8 +105,5 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 05 - xiaohe
   - 🇵🇱 波兰 (Poland) 06 - xiaohe
   - 🇵🇱 波兰 (Poland) 07 - xiaohe
-  - 🇵🇱 波兰 (Poland) 08 - xiaohe
-  - 🇵🇱 波兰 (Poland) 09 - xiaohe
-  - 🇵🇱 波兰 (Poland) 10 - xiaohe
 rules:
 - MATCH,PROXIES

@@ -5,12 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇺 澳大利亚 (Australia) 01 - xiaohe
-  type: hysteria2
-  server: vpn-au-001.fastervpn.world
-  port: 443
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  type: vless
+  server: 2610sgdodo.volkvpn.com
+  port: 35715
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
   udp: true
+  tls: true
   skip-cert-verify: true
+  reality-opts:
+    public-key: 7GvJVbR6BRhtrc8-rcZvB8qTFUF1LPeM_MmoZ04mBxo
+    short-id: 54cca3c1c1c7
+  servername: www.apple.com
+  client-fingerprint: ios
+  flow: xtls-rprx-vision
 proxy-groups:
 - name: PROXIES
   type: select
