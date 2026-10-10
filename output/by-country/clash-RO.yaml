@@ -6,61 +6,40 @@ log-level: info
 proxies:
 - name: 🇷🇴 罗马尼亚 (Romania) 01 - xiaohe
   type: hysteria2
-  server: 77.74.123.105
+  server: 77.74.123.99
   port: 8443
   password: s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z
   udp: true
   skip-cert-verify: true
 - name: 🇷🇴 罗马尼亚 (Romania) 02 - xiaohe
   type: hysteria2
-  server: 77.74.123.106
+  server: 77.74.123.107
   port: 8443
   password: s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z
   udp: true
   skip-cert-verify: true
 - name: 🇷🇴 罗马尼亚 (Romania) 03 - xiaohe
   type: hysteria2
-  server: 77.74.123.106
+  server: 77.74.123.104
   port: 8443
   password: s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z
   udp: true
   skip-cert-verify: true
 - name: 🇷🇴 罗马尼亚 (Romania) 04 - xiaohe
   type: hysteria2
-  server: 77.74.123.107
+  server: 77.74.123.99
   port: 8443
   password: s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z
   udp: true
   skip-cert-verify: true
 - name: 🇷🇴 罗马尼亚 (Romania) 05 - xiaohe
   type: hysteria2
-  server: 77.74.123.103
+  server: 77.74.123.98
   port: 8443
   password: s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z
   udp: true
   skip-cert-verify: true
 - name: 🇷🇴 罗马尼亚 (Romania) 06 - xiaohe
-  type: hysteria2
-  server: 77.74.123.99
-  port: 8443
-  password: s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z
-  udp: true
-  skip-cert-verify: true
-- name: 🇷🇴 罗马尼亚 (Romania) 07 - xiaohe
-  type: vless
-  server: 205.237.110.254
-  port: 443
-  uuid: e75ad2eb-6c1f-45ce-8023-f5f10875df66
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: IG6lxrx_xkGOoBuo3DC8sgQoIFmqVgznIr0qOuNO0w4
-    short-id: cd2d53510b4df2a8
-  servername: zsit.eu-cdn294.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇷🇴 罗马尼亚 (Romania) 08 - xiaohe
   type: vless
   server: 205.237.110.254
   port: 443
@@ -85,8 +64,6 @@ proxy-groups:
   - 🇷🇴 罗马尼亚 (Romania) 04 - xiaohe
   - 🇷🇴 罗马尼亚 (Romania) 05 - xiaohe
   - 🇷🇴 罗马尼亚 (Romania) 06 - xiaohe
-  - 🇷🇴 罗马尼亚 (Romania) 07 - xiaohe
-  - 🇷🇴 罗马尼亚 (Romania) 08 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -98,7 +75,5 @@ proxy-groups:
   - 🇷🇴 罗马尼亚 (Romania) 04 - xiaohe
   - 🇷🇴 罗马尼亚 (Romania) 05 - xiaohe
   - 🇷🇴 罗马尼亚 (Romania) 06 - xiaohe
-  - 🇷🇴 罗马尼亚 (Romania) 07 - xiaohe
-  - 🇷🇴 罗马尼亚 (Romania) 08 - xiaohe
 rules:
 - MATCH,PROXIES
