@@ -12,18 +12,12 @@ proxies:
   password: Xsy8Ox4yOV3xLlpxtjzs3X
   udp: true
 - name: 🇿🇦 南非 (South Africa) 02 - xiaohe
-  type: vless
-  server: 34.35.186.228
+  type: ss
+  server: 102.37.156.224
   port: 443
-  uuid: 8d65c8a7-4876-4556-bb6a-feccfb46ee81
+  cipher: chacha20-ietf-poly1305
+  password: aduB9HGxQHjA2SBMRjkHX6
   udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: bSN0cv0VMxmYZsNsMkkLndOTHZu74C1htJ2M71QMaVE
-    short-id: 89b3a20484eb43ec
-  servername: www.cloudflare.com
-  client-fingerprint: qq
 - name: 🇿🇦 南非 (South Africa) 03 - xiaohe
   type: vless
   server: 34.35.186.228
@@ -36,7 +30,7 @@ proxies:
     public-key: bSN0cv0VMxmYZsNsMkkLndOTHZu74C1htJ2M71QMaVE
     short-id: 89b3a20484eb43ec
   servername: www.cloudflare.com
-  client-fingerprint: qq
+  client-fingerprint: chrome
 - name: 🇿🇦 南非 (South Africa) 04 - xiaohe
   type: vless
   server: 34.35.189.111
@@ -63,32 +57,6 @@ proxies:
     short-id: 89b3a20484eb43ec
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇿🇦 南非 (South Africa) 06 - xiaohe
-  type: vless
-  server: 34.35.186.228
-  port: 443
-  uuid: 8d65c8a7-4876-4556-bb6a-feccfb46ee81
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: bSN0cv0VMxmYZsNsMkkLndOTHZu74C1htJ2M71QMaVE
-    short-id: 89b3a20484eb43ec
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇿🇦 南非 (South Africa) 07 - xiaohe
-  type: vless
-  server: 34.35.186.228
-  port: 443
-  uuid: 8d65c8a7-4876-4556-bb6a-feccfb46ee81
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: bSN0cv0VMxmYZsNsMkkLndOTHZu74C1htJ2M71QMaVE
-    short-id: 89b3a20484eb43ec
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -99,8 +67,6 @@ proxy-groups:
   - 🇿🇦 南非 (South Africa) 03 - xiaohe
   - 🇿🇦 南非 (South Africa) 04 - xiaohe
   - 🇿🇦 南非 (South Africa) 05 - xiaohe
-  - 🇿🇦 南非 (South Africa) 06 - xiaohe
-  - 🇿🇦 南非 (South Africa) 07 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -111,7 +77,5 @@ proxy-groups:
   - 🇿🇦 南非 (South Africa) 03 - xiaohe
   - 🇿🇦 南非 (South Africa) 04 - xiaohe
   - 🇿🇦 南非 (South Africa) 05 - xiaohe
-  - 🇿🇦 南非 (South Africa) 06 - xiaohe
-  - 🇿🇦 南非 (South Africa) 07 - xiaohe
 rules:
 - MATCH,PROXIES
