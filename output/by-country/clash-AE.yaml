@@ -8,7 +8,7 @@ proxies:
   type: vless
   server: 157.228.155.238
   port: 443
-  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
+  uuid: 4d852af3-a121-41aa-9aed-4ca40a6f7b4d
   udp: true
   tls: true
   skip-cert-verify: true
@@ -16,19 +16,19 @@ proxies:
     public-key: 5BDht3tAZdKEKpJymGlRK9JugOnieA-kMSWz_0FoE0I
     short-id: 6f76ad09
   servername: addons.mozilla.org
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   flow: xtls-rprx-vision
 - name: 🇦🇪 阿联酋 (UAE) 02 - xiaohe
   type: vless
-  server: 157.228.155.185
+  server: 157.228.155.238
   port: 443
-  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
+  uuid: 4d852af3-a121-41aa-9aed-4ca40a6f7b4d
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: 4q8nqNb-0c-akP3XqVmen67BLXJVlx48a_GDRw16nVg
-    short-id: 5ea112e8
+    public-key: 5BDht3tAZdKEKpJymGlRK9JugOnieA-kMSWz_0FoE0I
+    short-id: 6f76ad09
   servername: addons.mozilla.org
   client-fingerprint: chrome
   flow: xtls-rprx-vision
@@ -48,132 +48,32 @@ proxies:
   flow: xtls-rprx-vision
 - name: 🇦🇪 阿联酋 (UAE) 04 - xiaohe
   type: vless
-  server: 157.228.155.238
-  port: 443
-  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: 5BDht3tAZdKEKpJymGlRK9JugOnieA-kMSWz_0FoE0I
-    short-id: 6f76ad09
-  servername: addons.mozilla.org
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 05 - xiaohe
   type: vless
-  server: 157.228.155.238
-  port: 443
-  uuid: 4d852af3-a121-41aa-9aed-4ca40a6f7b4d
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: 5BDht3tAZdKEKpJymGlRK9JugOnieA-kMSWz_0FoE0I
-    short-id: 6f76ad09
-  servername: addons.mozilla.org
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 06 - xiaohe
   type: vless
-  server: 157.228.155.238
-  port: 443
-  uuid: 4d852af3-a121-41aa-9aed-4ca40a6f7b4d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 5BDht3tAZdKEKpJymGlRK9JugOnieA-kMSWz_0FoE0I
-    short-id: 6f76ad09
-  servername: addons.mozilla.org
-  client-fingerprint: randomized
-  flow: xtls-rprx-vision
-- name: 🇦🇪 阿联酋 (UAE) 07 - xiaohe
-  type: vless
-  server: 157.228.155.238
-  port: 443
-  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 5BDht3tAZdKEKpJymGlRK9JugOnieA-kMSWz_0FoE0I
-    short-id: 6f76ad09
-  servername: addons.mozilla.org
-  client-fingerprint: random
-  flow: xtls-rprx-vision
-- name: 🇦🇪 阿联酋 (UAE) 08 - xiaohe
-  type: vless
-  server: 157.228.155.185
-  port: 443
-  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 4q8nqNb-0c-akP3XqVmen67BLXJVlx48a_GDRw16nVg
-    short-id: 5ea112e8
-  servername: addons.mozilla.org
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇦🇪 阿联酋 (UAE) 09 - xiaohe
-  type: vless
-  server: 157.228.155.185
-  port: 443
-  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 4q8nqNb-0c-akP3XqVmen67BLXJVlx48a_GDRw16nVg
-    short-id: 5ea112e8
-  servername: addons.mozilla.org
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇦🇪 阿联酋 (UAE) 10 - xiaohe
-  type: vless
-  server: 157.228.155.238
-  port: 443
-  uuid: 4d852af3-a121-41aa-9aed-4ca40a6f7b4d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 5BDht3tAZdKEKpJymGlRK9JugOnieA-kMSWz_0FoE0I
-    short-id: 6f76ad09
-  servername: addons.mozilla.org
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇦🇪 阿联酋 (UAE) 11 - xiaohe
-  type: vless
-  server: 157.228.155.238
-  port: 443
-  uuid: 4d852af3-a121-41aa-9aed-4ca40a6f7b4d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 5BDht3tAZdKEKpJymGlRK9JugOnieA-kMSWz_0FoE0I
-    short-id: 6f76ad09
-  servername: addons.mozilla.org
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇦🇪 阿联酋 (UAE) 12 - xiaohe
-  type: vless
-  server: 157.228.128.59
-  port: 443
-  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: QnxkyscHouhaLDJHT47beyenVd4LHi62yfJIeRV01Ws
-    short-id: 06e00e7c
-  servername: addons.mozilla.org
-  client-fingerprint: randomized
-  flow: xtls-rprx-vision
-- name: 🇦🇪 阿联酋 (UAE) 13 - xiaohe
-  type: vless
   server: uae.unixzone.us
   port: 22573
   uuid: 39947382-3212-41c9-bc3a-589574ac8b23
@@ -185,86 +85,6 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 14 - xiaohe
-  type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 15 - xiaohe
-  type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 16 - xiaohe
-  type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 17 - xiaohe
-  type: vless
-  server: 84.235.244.108
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 18 - xiaohe
-  type: vless
-  server: 146.70.102.82
-  port: 443
-  uuid: 31fd2fde-ca69-450e-8c03-eaad819b06b9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: GDer6NQYXdbccrFI0tLn2671PjCvrcSy0R7TKY8vG1k
-    short-id: 002fb4ec7b3088cc
-  servername: www.datadoghq.com
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇦🇪 阿联酋 (UAE) 19 - xiaohe
-  type: vless
-  server: 157.228.160.166
-  port: 443
-  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: NOw-idkk3OCn-N0IRS93leujH4ik-E749O2T5BYJQ0M
-    short-id: 3cef317b
-  servername: addons.mozilla.org
-  client-fingerprint: ''
-  flow: xtls-rprx-vision
 proxy-groups:
 - name: PROXIES
   type: select
@@ -276,19 +96,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 04 - xiaohe
   - 🇦🇪 阿联酋 (UAE) 05 - xiaohe
   - 🇦🇪 阿联酋 (UAE) 06 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 07 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 08 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 09 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 10 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 11 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 12 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 13 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 14 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 15 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 16 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 17 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 18 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 19 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -300,18 +107,5 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 04 - xiaohe
   - 🇦🇪 阿联酋 (UAE) 05 - xiaohe
   - 🇦🇪 阿联酋 (UAE) 06 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 07 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 08 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 09 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 10 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 11 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 12 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 13 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 14 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 15 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 16 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 17 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 18 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 19 - xiaohe
 rules:
 - MATCH,PROXIES

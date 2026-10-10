@@ -12,78 +12,39 @@ proxies:
   password: f9300a9bf39ae0347c3a3bfbc4dd7754
   udp: true
 - name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
-  type: ss
-  server: 185.103.110.66
-  port: 18280
-  cipher: aes-128-gcm
-  password: f9300a9bf39ae0347c3a3bfbc4dd7754
-  udp: true
-- name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
   type: vless
-  server: 95.216.27.15
-  port: 2053
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
+  server: 146.75.119.82
+  port: 80
+  uuid: 83324aab-2981-4036-a7a4-1692d732d82b
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-    short-id: d368b94e275ab080
-  servername: www.google.com
-  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws/?ed=2048/@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1/?2048
+    headers:
+      Host: rb24.ir
+- name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
+  type: hysteria2
+  server: 144.31.212.253
+  port: 443
+  password: cf83b611-6cba-4535-adcb-8da06c6a9146
+  udp: true
+  skip-cert-verify: true
 - name: 🇫🇮 芬兰 (Finland) 04 - xiaohe
   type: vless
-  server: 95.216.27.15
-  port: 2053
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
+  server: 65.108.3.59
+  port: 443
+  uuid: 8df2e661-6f46-471b-9133-7fc13a0daa35
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-    short-id: d368b94e275ab080
-  servername: www.google.com
-  client-fingerprint: firefox
-- name: 🇫🇮 芬兰 (Finland) 05 - xiaohe
-  type: vless
-  server: 95.216.27.15
-  port: 2053
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-    short-id: d368b94e275ab080
-  servername: www.google.com
-  client-fingerprint: firefox
-- name: 🇫🇮 芬兰 (Finland) 06 - xiaohe
-  type: vless
-  server: 144.31.27.215
-  port: 43000
-  uuid: 47f79fc1-0646-40e8-8a58-73e85d183d5a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: dxCQnOekn14riFxt3vdwDNydvW47FsmwFG6BJ2mUgEg
-    short-id: 568d87a47271344e
-  servername: 144.31.27.215
-  client-fingerprint: random
+    public-key: jDoORbrtDrvAlFSo19CJbc99C4ev8SAo1MwczSUt9no
+    short-id: 90ec9bba2019
+  servername: web.eitaa.com
+  client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: 🇫🇮 芬兰 (Finland) 07 - xiaohe
-  type: vless
-  server: feow.nomush.ir
-  port: 11497
-  uuid: 2c5f2d6e-d683-49f7-a12b-a95460b90a92
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: J3DhtzId04tRrOF9HmIxpv6QOGY1g6j2wJ_UtVKmimk
-    short-id: b0063cec752e829a
-  servername: dynu.com
-  client-fingerprint: qq
 proxy-groups:
 - name: PROXIES
   type: select
@@ -93,9 +54,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 02 - xiaohe
   - 🇫🇮 芬兰 (Finland) 03 - xiaohe
   - 🇫🇮 芬兰 (Finland) 04 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 05 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 06 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 07 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -105,8 +63,5 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 02 - xiaohe
   - 🇫🇮 芬兰 (Finland) 03 - xiaohe
   - 🇫🇮 芬兰 (Finland) 04 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 05 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 06 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 07 - xiaohe
 rules:
 - MATCH,PROXIES
