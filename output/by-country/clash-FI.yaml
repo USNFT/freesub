@@ -19,81 +19,94 @@ proxies:
   client-fingerprint: chrome
   flow: xtls-rprx-vision
 - name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
-  type: ss
-  server: 185.103.110.68
-  port: 18283
-  cipher: aes-128-gcm
-  password: f9300a9bf39ae0347c3a3bfbc4dd7754
+  type: vless
+  server: 95.216.27.15
+  port: 2053
+  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
   udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
+    short-id: d368b94e275ab080
+  servername: www.google.com
+  client-fingerprint: chrome
 - name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
+  type: vless
+  server: 95.111.212.241
+  port: 443
+  uuid: 924fe46b-b6e0-479e-ae7f-a3661680e706
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: BSTnEthBXhb_UyuWpLBDxg82-C-wcpU2_kOD5ohS12g
+    short-id: 3a697adb4c58d495
+  servername: www.samsung.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇫🇮 芬兰 (Finland) 04 - xiaohe
   type: ss
   server: 185.103.110.66
   port: 18280
   cipher: aes-128-gcm
   password: f9300a9bf39ae0347c3a3bfbc4dd7754
   udp: true
-- name: 🇫🇮 芬兰 (Finland) 04 - xiaohe
-  type: vless
-  server: 87.58.158.82
-  port: 443
-  uuid: 267b3a79-81f2-42ac-a409-c23b05b6329d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: zBNHm7DwlBZ2rfu2F5e3jMsmR2q74KpS2L6EavCVmkA
-    short-id: f6985908fcb5612f
-  servername: dk7.bbobr.win
-  client-fingerprint: random
-  flow: xtls-rprx-vision
 - name: 🇫🇮 芬兰 (Finland) 05 - xiaohe
   type: vless
-  server: fn-2.ardesnode.ru
+  server: 95.111.212.241
   port: 443
-  uuid: 616c7b3b-41f4-4038-88c6-d6fedd0ae4a7
+  uuid: 924fe46b-b6e0-479e-ae7f-a3661680e706
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: PKlt_5ASsz137EvA9SKSadtjEv1k_U7VRtoelKCgADs
-    short-id: 9ea74b83f4993ca9
-  servername: fn-2.ardesnode.ru
-  client-fingerprint: random
+    public-key: BSTnEthBXhb_UyuWpLBDxg82-C-wcpU2_kOD5ohS12g
+    short-id: 3a697adb4c58d495
+  servername: www.samsung.com
+  client-fingerprint: firefox
   flow: xtls-rprx-vision
 - name: 🇫🇮 芬兰 (Finland) 06 - xiaohe
-  type: hysteria2
-  server: 144.31.212.253
-  port: 443
-  password: cf83b611-6cba-4535-adcb-8da06c6a9146
-  udp: true
-  skip-cert-verify: true
-- name: 🇫🇮 芬兰 (Finland) 07 - xiaohe
   type: vless
-  server: 138.124.15.231
+  server: 95.111.212.241
   port: 443
-  uuid: 616c7b3b-41f4-4038-88c6-d6fedd0ae4a7
+  uuid: 924fe46b-b6e0-479e-ae7f-a3661680e706
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: PKlt_5ASsz137EvA9SKSadtjEv1k_U7VRtoelKCgADs
-    short-id: 9ea74b83f4993ca9
-  servername: fn-2.ardesnode.ru
-  client-fingerprint: random
+    public-key: BSTnEthBXhb_UyuWpLBDxg82-C-wcpU2_kOD5ohS12g
+    short-id: 3a697adb4c58d495
+  servername: www.samsung.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇫🇮 芬兰 (Finland) 07 - xiaohe
+  type: vless
+  server: 95.111.212.241
+  port: 443
+  uuid: 924fe46b-b6e0-479e-ae7f-a3661680e706
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: BSTnEthBXhb_UyuWpLBDxg82-C-wcpU2_kOD5ohS12g
+    short-id: 3a697adb4c58d495
+  servername: www.samsung.com
+  client-fingerprint: safari
   flow: xtls-rprx-vision
 - name: 🇫🇮 芬兰 (Finland) 08 - xiaohe
   type: vless
-  server: fn-1.ardesnode.ru
+  server: 95.111.212.241
   port: 443
-  uuid: 616c7b3b-41f4-4038-88c6-d6fedd0ae4a7
+  uuid: 924fe46b-b6e0-479e-ae7f-a3661680e706
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: PKlt_5ASsz137EvA9SKSadtjEv1k_U7VRtoelKCgADs
-    short-id: 9ea74b83f4993ca9
-  servername: fn-1.ardesnode.ru
-  client-fingerprint: random
+    public-key: BSTnEthBXhb_UyuWpLBDxg82-C-wcpU2_kOD5ohS12g
+    short-id: 3a697adb4c58d495
+  servername: www.samsung.com
+  client-fingerprint: chrome
   flow: xtls-rprx-vision
 - name: 🇫🇮 芬兰 (Finland) 09 - xiaohe
   type: vless
@@ -103,20 +116,6 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇫🇮 芬兰 (Finland) 10 - xiaohe
-  type: vless
-  server: fn-3.ardesnode.ru
-  port: 443
-  uuid: 616c7b3b-41f4-4038-88c6-d6fedd0ae4a7
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: PKlt_5ASsz137EvA9SKSadtjEv1k_U7VRtoelKCgADs
-    short-id: 9ea74b83f4993ca9
-  servername: fn-3.ardesnode.ru
-  client-fingerprint: random
-  flow: xtls-rprx-vision
 proxy-groups:
 - name: PROXIES
   type: select
@@ -131,7 +130,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 07 - xiaohe
   - 🇫🇮 芬兰 (Finland) 08 - xiaohe
   - 🇫🇮 芬兰 (Finland) 09 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 10 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -146,6 +144,5 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 07 - xiaohe
   - 🇫🇮 芬兰 (Finland) 08 - xiaohe
   - 🇫🇮 芬兰 (Finland) 09 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 10 - xiaohe
 rules:
 - MATCH,PROXIES

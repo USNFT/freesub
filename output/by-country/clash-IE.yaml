@@ -6,10 +6,10 @@ log-level: info
 proxies:
 - name: 🇮🇪 爱尔兰 (Ireland) 01 - xiaohe
   type: ss
-  server: 20.123.1.55
+  server: 20.234.97.18
   port: 443
   cipher: chacha20-ietf-poly1305
-  password: YF329KNGVTUZ1qrH
+  password: GayYa2V7pUbJBfKu
   udp: true
 - name: 🇮🇪 爱尔兰 (Ireland) 02 - xiaohe
   type: ss

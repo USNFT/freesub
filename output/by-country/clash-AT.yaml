@@ -13,7 +13,7 @@ proxies:
   udp: true
 - name: 🇦🇹 奥地利 (Austria) 02 - xiaohe
   type: hysteria2
-  server: 5.254.51.109
+  server: 5.254.51.108
   port: 9443
   password: Hc9_NX924RE_Mn948rgrwiub_m93V84nll
   udp: true
