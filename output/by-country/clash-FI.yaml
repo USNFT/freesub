@@ -5,6 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - xiaohe
+  type: ss
+  server: 185.103.110.68
+  port: 18283
+  cipher: aes-128-gcm
+  password: f9300a9bf39ae0347c3a3bfbc4dd7754
+  udp: true
+- name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
   type: vless
   server: 87.58.158.82
   port: 443
@@ -18,20 +25,14 @@ proxies:
   servername: dk7.bbobr.win
   client-fingerprint: random
   flow: xtls-rprx-vision
-- name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
-  type: vless
-  server: 95.216.27.15
-  port: 2053
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-    short-id: d368b94e275ab080
-  servername: www.google.com
-  client-fingerprint: chrome
 - name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
+  type: hysteria2
+  server: 144.31.212.253
+  port: 443
+  password: cf83b611-6cba-4535-adcb-8da06c6a9146
+  udp: true
+  skip-cert-verify: true
+- name: 🇫🇮 芬兰 (Finland) 04 - xiaohe
   type: vless
   server: fn-2.ardesnode.ru
   port: 443
@@ -45,7 +46,7 @@ proxies:
   servername: fn-2.ardesnode.ru
   client-fingerprint: random
   flow: xtls-rprx-vision
-- name: 🇫🇮 芬兰 (Finland) 04 - xiaohe
+- name: 🇫🇮 芬兰 (Finland) 05 - xiaohe
   type: vless
   server: 138.124.15.231
   port: 443
@@ -59,14 +60,28 @@ proxies:
   servername: fn-2.ardesnode.ru
   client-fingerprint: random
   flow: xtls-rprx-vision
-- name: 🇫🇮 芬兰 (Finland) 05 - xiaohe
+- name: 🇫🇮 芬兰 (Finland) 06 - xiaohe
+  type: vless
+  server: 138.124.15.231
+  port: 443
+  uuid: 616c7b3b-41f4-4038-88c6-d6fedd0ae4a7
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: PKlt_5ASsz137EvA9SKSadtjEv1k_U7VRtoelKCgADs
+    short-id: 9ea74b83f4993ca9
+  servername: fn-2.ardesnode.ru
+  client-fingerprint: random
+  flow: xtls-rprx-vision
+- name: 🇫🇮 芬兰 (Finland) 07 - xiaohe
   type: hysteria2
   server: 144.31.212.253
   port: 443
   password: cf83b611-6cba-4535-adcb-8da06c6a9146
   udp: true
   skip-cert-verify: true
-- name: 🇫🇮 芬兰 (Finland) 06 - xiaohe
+- name: 🇫🇮 芬兰 (Finland) 08 - xiaohe
   type: vless
   server: fn-3.ardesnode.ru
   port: 443
@@ -80,21 +95,7 @@ proxies:
   servername: fn-3.ardesnode.ru
   client-fingerprint: random
   flow: xtls-rprx-vision
-- name: 🇫🇮 芬兰 (Finland) 07 - xiaohe
-  type: vless
-  server: fn-1.ardesnode.ru
-  port: 443
-  uuid: 616c7b3b-41f4-4038-88c6-d6fedd0ae4a7
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: PKlt_5ASsz137EvA9SKSadtjEv1k_U7VRtoelKCgADs
-    short-id: 9ea74b83f4993ca9
-  servername: fn-1.ardesnode.ru
-  client-fingerprint: random
-  flow: xtls-rprx-vision
-- name: 🇫🇮 芬兰 (Finland) 08 - xiaohe
+- name: 🇫🇮 芬兰 (Finland) 09 - xiaohe
   type: vless
   server: fn-2.ardesnode.ru
   port: 443
@@ -106,6 +107,20 @@ proxies:
     public-key: PKlt_5ASsz137EvA9SKSadtjEv1k_U7VRtoelKCgADs
     short-id: 9ea74b83f4993ca9
   servername: fn-2.ardesnode.ru
+  client-fingerprint: random
+  flow: xtls-rprx-vision
+- name: 🇫🇮 芬兰 (Finland) 10 - xiaohe
+  type: vless
+  server: fn-1.ardesnode.ru
+  port: 443
+  uuid: 616c7b3b-41f4-4038-88c6-d6fedd0ae4a7
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: PKlt_5ASsz137EvA9SKSadtjEv1k_U7VRtoelKCgADs
+    short-id: 9ea74b83f4993ca9
+  servername: fn-1.ardesnode.ru
   client-fingerprint: random
   flow: xtls-rprx-vision
 proxy-groups:
@@ -121,6 +136,8 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 06 - xiaohe
   - 🇫🇮 芬兰 (Finland) 07 - xiaohe
   - 🇫🇮 芬兰 (Finland) 08 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 09 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 10 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -134,5 +151,7 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 06 - xiaohe
   - 🇫🇮 芬兰 (Finland) 07 - xiaohe
   - 🇫🇮 芬兰 (Finland) 08 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 09 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 10 - xiaohe
 rules:
 - MATCH,PROXIES

@@ -45,15 +45,19 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇹🇭 泰国 (Thailand) 05 - xiaohe
-  type: vmess
-  server: 119.46.51.45
-  port: 37515
-  uuid: 9b76bc31-17a5-4454-934a-8d5fb602cd70
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 154.21.203.106
+  port: 21033
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  reality-opts:
+    public-key: EG-jzQw1RyOwAM4L9rMKondSx7cyFmPyv1OP7xXkIk4
+    short-id: cbd39bea0805e2
+  servername: www.kaidee.com
+  client-fingerprint: random
+  flow: xtls-rprx-vision
 - name: 🇹🇭 泰国 (Thailand) 06 - xiaohe
   type: vless
   server: 154.21.203.106
@@ -68,30 +72,6 @@ proxies:
   servername: www.kaidee.com
   client-fingerprint: firefox
   flow: xtls-rprx-vision
-- name: 🇹🇭 泰国 (Thailand) 07 - xiaohe
-  type: vless
-  server: 154.21.203.106
-  port: 21033
-  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: EG-jzQw1RyOwAM4L9rMKondSx7cyFmPyv1OP7xXkIk4
-    short-id: cbd39bea0805e2
-  servername: www.kaidee.com
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇹🇭 泰国 (Thailand) 08 - xiaohe
-  type: vmess
-  server: 119.46.51.45
-  port: 37515
-  uuid: 9b76bc31-17a5-4454-934a-8d5fb602cd70
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -103,8 +83,6 @@ proxy-groups:
   - 🇹🇭 泰国 (Thailand) 04 - xiaohe
   - 🇹🇭 泰国 (Thailand) 05 - xiaohe
   - 🇹🇭 泰国 (Thailand) 06 - xiaohe
-  - 🇹🇭 泰国 (Thailand) 07 - xiaohe
-  - 🇹🇭 泰国 (Thailand) 08 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -116,7 +94,5 @@ proxy-groups:
   - 🇹🇭 泰国 (Thailand) 04 - xiaohe
   - 🇹🇭 泰国 (Thailand) 05 - xiaohe
   - 🇹🇭 泰国 (Thailand) 06 - xiaohe
-  - 🇹🇭 泰国 (Thailand) 07 - xiaohe
-  - 🇹🇭 泰国 (Thailand) 08 - xiaohe
 rules:
 - MATCH,PROXIES

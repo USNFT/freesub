@@ -18,17 +18,35 @@ proxies:
   servername: de-5.ardesnode.ru
   client-fingerprint: random
   flow: xtls-rprx-vision
+- name: 🇦🇲 AM 02 - xiaohe
+  type: hysteria2
+  server: 157.228.69.91
+  port: 27313
+  password: 8bd04756-3beb-4348-82c9-d35453df50ce
+  udp: true
+  skip-cert-verify: true
+- name: 🇦🇲 AM 03 - xiaohe
+  type: hysteria2
+  server: spainspeedboostjbl88.qcloud.surf
+  port: 27313
+  password: 8bd04756-3beb-4348-82c9-d35453df50ce
+  udp: true
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇦🇲 AM 01 - xiaohe
+  - 🇦🇲 AM 02 - xiaohe
+  - 🇦🇲 AM 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇦🇲 AM 01 - xiaohe
+  - 🇦🇲 AM 02 - xiaohe
+  - 🇦🇲 AM 03 - xiaohe
 rules:
 - MATCH,PROXIES
