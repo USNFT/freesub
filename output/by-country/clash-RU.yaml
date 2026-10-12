@@ -5,52 +5,40 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
-  type: hysteria2
-  server: 91.196.32.163
-  port: 443
-  password: mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj
-  udp: true
-  skip-cert-verify: true
-- name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
-  type: hysteria2
-  server: 91.196.32.163
-  port: 443
-  password: mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj
-  udp: true
-  skip-cert-verify: true
-- name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
-  type: ss
-  server: 130.49.189.158
-  port: 43558
-  cipher: chacha20-ietf-poly1305
-  password: 52+ggoCvKFVJyT1NDiuWOZw2rHIvAg3tgqgJl8aeCwY=
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
-  type: hysteria2
-  server: 94.198.54.132
-  port: 443
-  password: f317b5d6-d399-4d3d-a051-89d674ae953c
-  udp: true
-  skip-cert-verify: true
-- name: 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
-  type: hysteria2
-  server: 139.28.168.126
-  port: 8080
-  password: we_9m92rJZ93_m9Cj3KXB_mC9AS7Nx
-  udp: true
-  skip-cert-verify: true
-- name: 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
   type: vless
-  server: 193.164.149.248
+  server: 194.113.235.121
   port: 443
-  uuid: c6e3c24c-ce20-4ad5-8c8c-68cb05890ea8
+  uuid: 9ee57d03-dcf5-488b-aff7-305301879353
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: gS0qvWKumWcOVoAgf8SHt6Sm3tqpBw07c5sA_Clb1hg
-  servername: ru-1-1.unturned-rust-dead.lol
-  client-fingerprint: random
+    public-key: f2a5R8ubMtjmFDxUt1VtikDOmgPgVWBPzcZjOOJpYlc
+    short-id: 12f319370b60ec2f
+  servername: fr1-4v.zvcorp24.com
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+- name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
+  type: hysteria2
+  server: 194.87.118.184
+  port: 2053
+  password: 7ab3c77e-8fcc-4848-918f-cae3d4eac794
+  udp: true
+  skip-cert-verify: true
+- name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
+  type: hysteria2
+  server: 194.87.118.184
+  port: 2053
+  password: 7ab3c77e-8fcc-4848-918f-cae3d4eac794
+  udp: true
+  skip-cert-verify: true
+- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
+  type: hysteria2
+  server: 91.196.32.163
+  port: 443
+  password: mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj
+  udp: true
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -60,8 +48,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -71,7 +57,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
 rules:
 - MATCH,PROXIES

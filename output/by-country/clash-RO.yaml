@@ -5,55 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇴 罗马尼亚 (Romania) 01 - xiaohe
-  type: hysteria2
-  server: 77.74.123.101
-  port: 8443
-  password: s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z
-  udp: true
-  skip-cert-verify: true
-- name: 🇷🇴 罗马尼亚 (Romania) 02 - xiaohe
-  type: hysteria2
-  server: 77.74.123.109
-  port: 8443
-  password: s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z
-  udp: true
-  skip-cert-verify: true
-- name: 🇷🇴 罗马尼亚 (Romania) 03 - xiaohe
-  type: hysteria2
-  server: 77.74.123.98
-  port: 8443
-  password: s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z
-  udp: true
-  skip-cert-verify: true
-- name: 🇷🇴 罗马尼亚 (Romania) 04 - xiaohe
-  type: hysteria2
-  server: 77.74.123.99
-  port: 8443
-  password: s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z
-  udp: true
-  skip-cert-verify: true
-- name: 🇷🇴 罗马尼亚 (Romania) 05 - xiaohe
-  type: hysteria2
-  server: 77.74.123.103
-  port: 8443
-  password: s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z
-  udp: true
-  skip-cert-verify: true
-- name: 🇷🇴 罗马尼亚 (Romania) 06 - xiaohe
-  type: hysteria2
-  server: 77.74.123.102
-  port: 8443
-  password: s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z
-  udp: true
-  skip-cert-verify: true
-- name: 🇷🇴 罗马尼亚 (Romania) 07 - xiaohe
-  type: hysteria2
-  server: 77.74.123.105
-  port: 8443
-  password: s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z
-  udp: true
-  skip-cert-verify: true
-- name: 🇷🇴 罗马尼亚 (Romania) 08 - xiaohe
   type: vless
   server: 205.237.110.254
   port: 443
@@ -67,28 +18,7 @@ proxies:
   servername: zsit.eu-cdn294.com
   client-fingerprint: firefox
   flow: xtls-rprx-vision
-- name: 🇷🇴 罗马尼亚 (Romania) 09 - xiaohe
-  type: ss
-  server: 154.46.31.106
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: QFWzCw2uX9B9i6qAYeFBIE
-  udp: true
-- name: 🇷🇴 罗马尼亚 (Romania) 10 - xiaohe
-  type: vless
-  server: 82.152.132.120
-  port: 443
-  uuid: 3e0c1fbf-467a-49d7-abd2-3a158628f3d0
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: Aj6Op88j_eYXxoBw095KS_NnKCBm5uwa874uumXdiDQ
-    short-id: ef7c4e4302bd52d7
-  servername: ro1.gigobingo.ru
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇷🇴 罗马尼亚 (Romania) 11 - xiaohe
+- name: 🇷🇴 罗马尼亚 (Romania) 02 - xiaohe
   type: ss
   server: 194.68.44.42
   port: 64546
@@ -102,15 +32,6 @@ proxy-groups:
   - AUTO
   - 🇷🇴 罗马尼亚 (Romania) 01 - xiaohe
   - 🇷🇴 罗马尼亚 (Romania) 02 - xiaohe
-  - 🇷🇴 罗马尼亚 (Romania) 03 - xiaohe
-  - 🇷🇴 罗马尼亚 (Romania) 04 - xiaohe
-  - 🇷🇴 罗马尼亚 (Romania) 05 - xiaohe
-  - 🇷🇴 罗马尼亚 (Romania) 06 - xiaohe
-  - 🇷🇴 罗马尼亚 (Romania) 07 - xiaohe
-  - 🇷🇴 罗马尼亚 (Romania) 08 - xiaohe
-  - 🇷🇴 罗马尼亚 (Romania) 09 - xiaohe
-  - 🇷🇴 罗马尼亚 (Romania) 10 - xiaohe
-  - 🇷🇴 罗马尼亚 (Romania) 11 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -118,14 +39,5 @@ proxy-groups:
   proxies:
   - 🇷🇴 罗马尼亚 (Romania) 01 - xiaohe
   - 🇷🇴 罗马尼亚 (Romania) 02 - xiaohe
-  - 🇷🇴 罗马尼亚 (Romania) 03 - xiaohe
-  - 🇷🇴 罗马尼亚 (Romania) 04 - xiaohe
-  - 🇷🇴 罗马尼亚 (Romania) 05 - xiaohe
-  - 🇷🇴 罗马尼亚 (Romania) 06 - xiaohe
-  - 🇷🇴 罗马尼亚 (Romania) 07 - xiaohe
-  - 🇷🇴 罗马尼亚 (Romania) 08 - xiaohe
-  - 🇷🇴 罗马尼亚 (Romania) 09 - xiaohe
-  - 🇷🇴 罗马尼亚 (Romania) 10 - xiaohe
-  - 🇷🇴 罗马尼亚 (Romania) 11 - xiaohe
 rules:
 - MATCH,PROXIES

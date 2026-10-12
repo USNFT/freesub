@@ -6,19 +6,6 @@ log-level: info
 proxies:
 - name: 🇲🇾 马来西亚 (Malaysia) 01 - xiaohe
   type: vless
-  server: platform102.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform102
-    headers:
-      Host: platform102.halalkhor.info
-- name: 🇲🇾 马来西亚 (Malaysia) 02 - xiaohe
-  type: vless
   server: platform101.golnamakcert.top
   port: 80
   uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
@@ -30,6 +17,19 @@ proxies:
     path: /platform101
     headers:
       Host: platform101.halalkhor.info
+- name: 🇲🇾 马来西亚 (Malaysia) 02 - xiaohe
+  type: vless
+  server: platform102.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform102
+    headers:
+      Host: platform102.halalkhor.info
 proxy-groups:
 - name: PROXIES
   type: select
