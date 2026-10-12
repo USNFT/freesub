@@ -26,19 +26,6 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇹🇷 土耳其 (Turkey) 03 - xiaohe
-  type: vless
-  server: best.valaiqm.ir
-  port: 3035
-  uuid: a1fb63f7-a942-4010-a830-bc395703a9a4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: Pi3B8-R1-lj8ScFPOTRRER709y9hJ0varDPpMzWhtAo
-    short-id: f2fda64d24c4
-  servername: telewebion.ir
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -46,7 +33,6 @@ proxy-groups:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 02 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -54,6 +40,5 @@ proxy-groups:
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 02 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 03 - xiaohe
 rules:
 - MATCH,PROXIES
