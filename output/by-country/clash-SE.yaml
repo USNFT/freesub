@@ -16,34 +16,21 @@ proxies:
     public-key: x6p656szvu_3CKLsJ4NtkooRvdTVGx7IoPca_p58_jA
     short-id: fb442438e2223836
   servername: swerka.loknietotop.digital
-  client-fingerprint: random
+  client-fingerprint: ''
   flow: xtls-rprx-vision
 - name: 🇸🇪 瑞典 (Sweden) 02 - xiaohe
   type: vless
-  server: 31.77.18.220
+  server: nl1.fluxorvpn.net
   port: 443
-  uuid: 4f51ca84-43ea-4087-b8a2-938e0ccbe27a
+  uuid: 6c713691-3ca2-0009-ad25-113d1bed6b03
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: mDDDyruO33nuqcTS7pZOjd9oOpDHUf0aEv2TQ1DFGV4
-  servername: google.com
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇸🇪 瑞典 (Sweden) 03 - xiaohe
-  type: vless
-  server: swe.wizard.select
-  port: 443
-  uuid: 3db6eb7e-c548-11f1-9902-a337233c6cda
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: Sikc1gu5t_uwitf1xTTChP9tpT_sjY530p2tioHbmz0
-    short-id: 3b20e438da99
-  servername: swe.wizard.select
-  client-fingerprint: chrome
+    public-key: JWDpSUaLgiXGXpgZzzxfDnYGvi4MBFcadN6cHZ-He1E
+    short-id: b8c6965f3596688a
+  servername: hatch.senko.ru
+  client-fingerprint: qq
   flow: xtls-rprx-vision
 proxy-groups:
 - name: PROXIES
@@ -52,7 +39,6 @@ proxy-groups:
   - AUTO
   - 🇸🇪 瑞典 (Sweden) 01 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 02 - xiaohe
-  - 🇸🇪 瑞典 (Sweden) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -60,6 +46,5 @@ proxy-groups:
   proxies:
   - 🇸🇪 瑞典 (Sweden) 01 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 02 - xiaohe
-  - 🇸🇪 瑞典 (Sweden) 03 - xiaohe
 rules:
 - MATCH,PROXIES
