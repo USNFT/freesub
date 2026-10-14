@@ -18,33 +18,17 @@ proxies:
   servername: zsit.eu-cdn294.com
   client-fingerprint: firefox
   flow: xtls-rprx-vision
-- name: 🇷🇴 罗马尼亚 (Romania) 02 - xiaohe
-  type: vless
-  server: 146.70.124.85
-  port: 443
-  uuid: 40abbe13-f02e-4da2-9b19-966c2c3eb4ee
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: byzvlw97wjAAAfHs5AZRV0P0H6_JKBEZ4yfLS0HNewE
-    short-id: fe24f8a0a560056e
-  servername: www.datadoghq.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇷🇴 罗马尼亚 (Romania) 01 - xiaohe
-  - 🇷🇴 罗马尼亚 (Romania) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇷🇴 罗马尼亚 (Romania) 01 - xiaohe
-  - 🇷🇴 罗马尼亚 (Romania) 02 - xiaohe
 rules:
 - MATCH,PROXIES
