@@ -6,6 +6,20 @@ log-level: info
 proxies:
 - name: 🇷🇴 罗马尼亚 (Romania) 01 - xiaohe
   type: vless
+  server: 103.244.145.138
+  port: 443
+  uuid: e75ad2eb-6c1f-45ce-8023-f5f10875df66
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: f4EJP55daJRlJkcZbbGsY-gFGGFGiXPPdfVxtNWQPCE
+    short-id: c8621ebb1e56abb3
+  servername: zsde.eu-cdn294.com
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+- name: 🇷🇴 罗马尼亚 (Romania) 02 - xiaohe
+  type: vless
   server: 205.237.110.254
   port: 443
   uuid: e75ad2eb-6c1f-45ce-8023-f5f10875df66
@@ -24,11 +38,13 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇷🇴 罗马尼亚 (Romania) 01 - xiaohe
+  - 🇷🇴 罗马尼亚 (Romania) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇷🇴 罗马尼亚 (Romania) 01 - xiaohe
+  - 🇷🇴 罗马尼亚 (Romania) 02 - xiaohe
 rules:
 - MATCH,PROXIES
