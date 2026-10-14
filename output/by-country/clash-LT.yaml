@@ -4,31 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇩🇪 德国 (Germany) 01 (家宽) - xiaohe
+- name: 🇱🇹 LT 01 - xiaohe
   type: vless
-  server: meowgenicslab.net
+  server: 84.32.109.20
   port: 443
-  uuid: f580778d-8e05-4d88-8724-802eccf4ceff
+  uuid: ee18d188-14cc-417e-beb1-70e4add6d023
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: F7enjoJVna8sj4M9KPqNkN1ATXeflVNx9SHnn4lpAkY
-    short-id: 5f37b7c5e2cc31a3
-  servername: meowgenicslab.net
-  client-fingerprint: firefox
+    public-key: 3jySGemfaqPZ2vM66Qtzo5SotO3eoRn1FeGaKp6KBQ4
+    short-id: 0da7e14db353e7d0
+  servername: litv.nztvpn.com
+  client-fingerprint: chrome
   flow: xtls-rprx-vision
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇩🇪 德国 (Germany) 01 (家宽) - xiaohe
+  - 🇱🇹 LT 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 (Germany) 01 (家宽) - xiaohe
+  - 🇱🇹 LT 01 - xiaohe
 rules:
 - MATCH,PROXIES
