@@ -12,23 +12,30 @@ proxies:
   udp: true
   skip-cert-verify: true
 - name: 🇨🇾 塞浦路斯 (Cyprus) 02 - xiaohe
-  type: hysteria2
-  server: 185.233.187.188
-  port: 2087
-  password: d0589fb6-420b-4078-a72a-66d270a25fd9
-  udp: true
-  skip-cert-verify: true
-- name: 🇨🇾 塞浦路斯 (Cyprus) 03 - xiaohe
   type: vless
-  server: 5.253.30.99
+  server: dorado.yokkastars.com
   port: 40443
-  uuid: 511c1563-2cb6-4064-abc6-a59ee49818a8
+  uuid: af5eac96-e478-488a-bc8c-45269d7e8847
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0
-    short-id: 88b6
+    public-key: g77ZJbm18JEotapmVRjaXi133MzkbhkU2lxhVeXx8zw
+    short-id: 68a8
+  servername: deepl.com
+  client-fingerprint: qq
+  flow: xtls-rprx-vision
+- name: 🇨🇾 塞浦路斯 (Cyprus) 03 - xiaohe
+  type: vless
+  server: dorado.yokkastars.com
+  port: 40443
+  uuid: af5eac96-e478-488a-bc8c-45269d7e8847
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: g77ZJbm18JEotapmVRjaXi133MzkbhkU2lxhVeXx8zw
+    short-id: 68a8
   servername: deepl.com
   client-fingerprint: chrome
   flow: xtls-rprx-vision
@@ -46,6 +53,34 @@ proxies:
   servername: deepl.com
   client-fingerprint: qq
   flow: xtls-rprx-vision
+- name: 🇨🇾 塞浦路斯 (Cyprus) 05 - xiaohe
+  type: vless
+  server: 5.253.28.224
+  port: 40443
+  uuid: af5eac96-e478-488a-bc8c-45269d7e8847
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: g77ZJbm18JEotapmVRjaXi133MzkbhkU2lxhVeXx8zw
+    short-id: 68a8
+  servername: deepl.com
+  client-fingerprint: qq
+  flow: xtls-rprx-vision
+- name: 🇨🇾 塞浦路斯 (Cyprus) 06 - xiaohe
+  type: vless
+  server: 5.253.30.99
+  port: 40443
+  uuid: 511c1563-2cb6-4064-abc6-a59ee49818a8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0
+    short-id: 88b6
+  servername: deepl.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
 proxy-groups:
 - name: PROXIES
   type: select
@@ -55,6 +90,8 @@ proxy-groups:
   - 🇨🇾 塞浦路斯 (Cyprus) 02 - xiaohe
   - 🇨🇾 塞浦路斯 (Cyprus) 03 - xiaohe
   - 🇨🇾 塞浦路斯 (Cyprus) 04 - xiaohe
+  - 🇨🇾 塞浦路斯 (Cyprus) 05 - xiaohe
+  - 🇨🇾 塞浦路斯 (Cyprus) 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -64,5 +101,7 @@ proxy-groups:
   - 🇨🇾 塞浦路斯 (Cyprus) 02 - xiaohe
   - 🇨🇾 塞浦路斯 (Cyprus) 03 - xiaohe
   - 🇨🇾 塞浦路斯 (Cyprus) 04 - xiaohe
+  - 🇨🇾 塞浦路斯 (Cyprus) 05 - xiaohe
+  - 🇨🇾 塞浦路斯 (Cyprus) 06 - xiaohe
 rules:
 - MATCH,PROXIES
