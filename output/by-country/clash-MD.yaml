@@ -32,6 +32,20 @@ proxies:
   servername: ro2.aiage.work
   client-fingerprint: firefox
   flow: xtls-rprx-vision
+- name: 🇲🇩 MD 03 - xiaohe
+  type: vless
+  server: md1.aiage.work
+  port: 443
+  uuid: 6338c01a-310e-42c3-bf4f-2a20e161054b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 0dtXhkhkh-_MBFoGwzdW4PdlJtVX9oswhJZHbUPGCmo
+    short-id: e829f50f0a3f416b
+  servername: md1.aiage.work
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
 proxy-groups:
 - name: PROXIES
   type: select
@@ -39,6 +53,7 @@ proxy-groups:
   - AUTO
   - 🇲🇩 MD 01 - xiaohe
   - 🇲🇩 MD 02 - xiaohe
+  - 🇲🇩 MD 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -46,5 +61,6 @@ proxy-groups:
   proxies:
   - 🇲🇩 MD 01 - xiaohe
   - 🇲🇩 MD 02 - xiaohe
+  - 🇲🇩 MD 03 - xiaohe
 rules:
 - MATCH,PROXIES

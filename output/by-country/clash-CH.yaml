@@ -12,13 +12,6 @@ proxies:
   password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
   udp: true
 - name: 🇨🇭 瑞士 (Switzerland) 02 - xiaohe
-  type: ss
-  server: 132.243.175.144
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
-  udp: true
-- name: 🇨🇭 瑞士 (Switzerland) 03 - xiaohe
   type: vless
   server: 45.90.59.15
   port: 443
@@ -32,6 +25,13 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: firefox
   flow: xtls-rprx-vision
+- name: 🇨🇭 瑞士 (Switzerland) 03 - xiaohe
+  type: ss
+  server: 132.243.175.144
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
+  udp: true
 - name: 🇨🇭 瑞士 (Switzerland) 04 - xiaohe
   type: vless
   server: 208.69.78.217
@@ -45,32 +45,6 @@ proxies:
     short-id: ad86e2d52ff40ebd
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇨🇭 瑞士 (Switzerland) 05 - xiaohe
-  type: vless
-  server: 208.69.78.217
-  port: 2053
-  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
-    short-id: ad86e2d52ff40ebd
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇨🇭 瑞士 (Switzerland) 06 - xiaohe
-  type: vless
-  server: 45.133.151.186
-  port: 25393
-  uuid: d54a7512-dda3-4218-8ae7-c591d300fd7c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 04F4vhrx_H_SHsrsVw1eCpwlysu4kL3hTl9GAr00XkI
-    short-id: bcc707a7148e4a0c
-  servername: www.samsung.com
-  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -80,8 +54,6 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 02 - xiaohe
   - 🇨🇭 瑞士 (Switzerland) 03 - xiaohe
   - 🇨🇭 瑞士 (Switzerland) 04 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 05 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -91,7 +63,5 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 02 - xiaohe
   - 🇨🇭 瑞士 (Switzerland) 03 - xiaohe
   - 🇨🇭 瑞士 (Switzerland) 04 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 05 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 06 - xiaohe
 rules:
 - MATCH,PROXIES

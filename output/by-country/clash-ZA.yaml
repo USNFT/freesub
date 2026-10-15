@@ -6,19 +6,12 @@ log-level: info
 proxies:
 - name: 🇿🇦 南非 (South Africa) 01 - xiaohe
   type: ss
-  server: 102.37.156.224
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: aduB9HGxQHjA2SBMRjkHX6
-  udp: true
-- name: 🇿🇦 南非 (South Africa) 02 - xiaohe
-  type: ss
   server: 102.133.165.160
   port: 16233
   cipher: chacha20-ietf-poly1305
   password: Xsy8Ox4yOV3xLlpxtjzs3X
   udp: true
-- name: 🇿🇦 南非 (South Africa) 03 - xiaohe
+- name: 🇿🇦 南非 (South Africa) 02 - xiaohe
   type: vless
   server: 34.35.189.111
   port: 443
@@ -31,7 +24,7 @@ proxies:
     short-id: 5ced03e42cc31aab
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇿🇦 南非 (South Africa) 04 - xiaohe
+- name: 🇿🇦 南非 (South Africa) 03 - xiaohe
   type: vless
   server: 34.35.186.228
   port: 443
@@ -44,6 +37,13 @@ proxies:
     short-id: 89b3a20484eb43ec
   servername: www.cloudflare.com
   client-fingerprint: chrome
+- name: 🇿🇦 南非 (South Africa) 04 - xiaohe
+  type: ss
+  server: 102.37.156.224
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: aduB9HGxQHjA2SBMRjkHX6
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
