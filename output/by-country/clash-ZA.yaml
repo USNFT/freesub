@@ -12,6 +12,20 @@ proxies:
   password: Xsy8Ox4yOV3xLlpxtjzs3X
   udp: true
 - name: 🇿🇦 南非 (South Africa) 02 - xiaohe
+  type: ss
+  server: 20.164.209.198
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: IdBspBchqpInOZFK
+  udp: true
+- name: 🇿🇦 南非 (South Africa) 03 - xiaohe
+  type: ss
+  server: 102.37.156.224
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: aduB9HGxQHjA2SBMRjkHX6
+  udp: true
+- name: 🇿🇦 南非 (South Africa) 04 - xiaohe
   type: vless
   server: 34.35.189.111
   port: 443
@@ -24,7 +38,20 @@ proxies:
     short-id: 5ced03e42cc31aab
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇿🇦 南非 (South Africa) 03 - xiaohe
+- name: 🇿🇦 南非 (South Africa) 05 - xiaohe
+  type: vless
+  server: 34.35.189.111
+  port: 443
+  uuid: 4758aee6-6d1a-4306-b460-2398b5af4e35
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: dcox8XXfkOCmKn3kgrloj6wY5o1_0brJOi2mczYmAT4
+    short-id: 5ced03e42cc31aab
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇿🇦 南非 (South Africa) 06 - xiaohe
   type: vless
   server: 34.35.186.228
   port: 443
@@ -37,13 +64,6 @@ proxies:
     short-id: 89b3a20484eb43ec
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇿🇦 南非 (South Africa) 04 - xiaohe
-  type: ss
-  server: 102.37.156.224
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: aduB9HGxQHjA2SBMRjkHX6
-  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -53,6 +73,8 @@ proxy-groups:
   - 🇿🇦 南非 (South Africa) 02 - xiaohe
   - 🇿🇦 南非 (South Africa) 03 - xiaohe
   - 🇿🇦 南非 (South Africa) 04 - xiaohe
+  - 🇿🇦 南非 (South Africa) 05 - xiaohe
+  - 🇿🇦 南非 (South Africa) 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -62,5 +84,7 @@ proxy-groups:
   - 🇿🇦 南非 (South Africa) 02 - xiaohe
   - 🇿🇦 南非 (South Africa) 03 - xiaohe
   - 🇿🇦 南非 (South Africa) 04 - xiaohe
+  - 🇿🇦 南非 (South Africa) 05 - xiaohe
+  - 🇿🇦 南非 (South Africa) 06 - xiaohe
 rules:
 - MATCH,PROXIES
