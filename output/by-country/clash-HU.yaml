@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇭🇺 匈牙利 (Hungary) 01 - xiaohe
   type: vless
-  server: 85.155.242.37
+  server: 85.155.242.38
   port: 443
   uuid: 6338c01a-310e-42c3-bf4f-2a20e161054b
   udp: true
@@ -34,7 +34,7 @@ proxies:
   flow: xtls-rprx-vision
 - name: 🇭🇺 匈牙利 (Hungary) 03 - xiaohe
   type: vless
-  server: 85.155.242.38
+  server: 85.155.242.37
   port: 443
   uuid: 6338c01a-310e-42c3-bf4f-2a20e161054b
   udp: true
@@ -48,7 +48,7 @@ proxies:
   flow: xtls-rprx-vision
 - name: 🇭🇺 匈牙利 (Hungary) 04 - xiaohe
   type: vless
-  server: hu1.aiage.work
+  server: 85.155.242.38
   port: 443
   uuid: 6338c01a-310e-42c3-bf4f-2a20e161054b
   udp: true
@@ -62,7 +62,7 @@ proxies:
   flow: xtls-rprx-vision
 - name: 🇭🇺 匈牙利 (Hungary) 05 - xiaohe
   type: vless
-  server: 85.155.242.38
+  server: 85.155.242.37
   port: 443
   uuid: 6338c01a-310e-42c3-bf4f-2a20e161054b
   udp: true
@@ -128,6 +128,34 @@ proxies:
     public-key: mPzNFHO4pZMzFviRkIhRd7xDUz4dMHyI-flZLOrgDVg
     short-id: f8379ce795f2e5ed
   servername: hu1.aiage.work
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇭🇺 匈牙利 (Hungary) 10 - xiaohe
+  type: vless
+  server: hu1.aiage.work
+  port: 443
+  uuid: 6338c01a-310e-42c3-bf4f-2a20e161054b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: mPzNFHO4pZMzFviRkIhRd7xDUz4dMHyI-flZLOrgDVg
+    short-id: f8379ce795f2e5ed
+  servername: hu1.aiage.work
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇭🇺 匈牙利 (Hungary) 11 - xiaohe
+  type: vless
+  server: hu1.aiage.work
+  port: 443
+  uuid: 6338c01a-310e-42c3-bf4f-2a20e161054b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: mPzNFHO4pZMzFviRkIhRd7xDUz4dMHyI-flZLOrgDVg
+    short-id: f8379ce795f2e5ed
+  servername: hu1.aiage.work
   client-fingerprint: firefox
   flow: xtls-rprx-vision
 proxy-groups:
@@ -144,6 +172,8 @@ proxy-groups:
   - 🇭🇺 匈牙利 (Hungary) 07 - xiaohe
   - 🇭🇺 匈牙利 (Hungary) 08 - xiaohe
   - 🇭🇺 匈牙利 (Hungary) 09 - xiaohe
+  - 🇭🇺 匈牙利 (Hungary) 10 - xiaohe
+  - 🇭🇺 匈牙利 (Hungary) 11 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -158,5 +188,7 @@ proxy-groups:
   - 🇭🇺 匈牙利 (Hungary) 07 - xiaohe
   - 🇭🇺 匈牙利 (Hungary) 08 - xiaohe
   - 🇭🇺 匈牙利 (Hungary) 09 - xiaohe
+  - 🇭🇺 匈牙利 (Hungary) 10 - xiaohe
+  - 🇭🇺 匈牙利 (Hungary) 11 - xiaohe
 rules:
 - MATCH,PROXIES
