@@ -30,7 +30,7 @@ proxies:
     public-key: GBdkyDLfr0LIZo_94Xv8ycAKOmkjArYzwJAEMhuXX2c
     short-id: 33acba1b
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
   flow: xtls-rprx-vision
 - name: 🇱🇻 拉脱维亚 (Latvia) 03 - xiaohe
   type: vless
@@ -58,9 +58,23 @@ proxies:
     public-key: GBdkyDLfr0LIZo_94Xv8ycAKOmkjArYzwJAEMhuXX2c
     short-id: 33acba1b
   servername: www.apple.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   flow: xtls-rprx-vision
 - name: 🇱🇻 拉脱维亚 (Latvia) 05 - xiaohe
+  type: vless
+  server: 185.220.223.24
+  port: 443
+  uuid: 6338c01a-310e-42c3-bf4f-2a20e161054b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: ds-U8G06uZvV9qFhAeO16dwS9Nkcw_coYr_4puEUGFg
+    short-id: 3c6afdc4124d0560
+  servername: lv.aiage.work
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇱🇻 拉脱维亚 (Latvia) 06 - xiaohe
   type: vless
   server: 195.123.208.32
   port: 443
@@ -84,6 +98,7 @@ proxy-groups:
   - 🇱🇻 拉脱维亚 (Latvia) 03 - xiaohe
   - 🇱🇻 拉脱维亚 (Latvia) 04 - xiaohe
   - 🇱🇻 拉脱维亚 (Latvia) 05 - xiaohe
+  - 🇱🇻 拉脱维亚 (Latvia) 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -94,5 +109,6 @@ proxy-groups:
   - 🇱🇻 拉脱维亚 (Latvia) 03 - xiaohe
   - 🇱🇻 拉脱维亚 (Latvia) 04 - xiaohe
   - 🇱🇻 拉脱维亚 (Latvia) 05 - xiaohe
+  - 🇱🇻 拉脱维亚 (Latvia) 06 - xiaohe
 rules:
 - MATCH,PROXIES

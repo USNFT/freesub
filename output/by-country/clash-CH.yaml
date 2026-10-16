@@ -5,53 +5,93 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇭 瑞士 (Switzerland) 01 - xiaohe
-  type: hysteria2
-  server: 104.165.205.42
-  port: 8443
-  password: 990c8eb6-4c4e-4277-8602-79af8402cdd0
-  udp: true
-  skip-cert-verify: true
-- name: 🇨🇭 瑞士 (Switzerland) 02 - xiaohe
-  type: hysteria2
-  server: 140.238.213.114
-  port: 50160
-  password: 84a506ca5aca505696a454d828420b3f
-  udp: true
-  skip-cert-verify: true
-- name: 🇨🇭 瑞士 (Switzerland) 03 - xiaohe
   type: ss
   server: 86.106.84.194
   port: 13261
   cipher: aes-128-gcm
   password: 2bf536a4bd6008511734a505d248de2c
   udp: true
+- name: 🇨🇭 瑞士 (Switzerland) 02 - xiaohe
+  type: ss
+  server: 132.243.175.144
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
+  udp: true
+- name: 🇨🇭 瑞士 (Switzerland) 03 - xiaohe
+  type: ss
+  server: 132.243.175.144
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
+  udp: true
 - name: 🇨🇭 瑞士 (Switzerland) 04 - xiaohe
-  type: ss
-  server: 132.243.175.144
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
-  udp: true
-- name: 🇨🇭 瑞士 (Switzerland) 05 - xiaohe
-  type: ss
-  server: 132.243.175.144
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
-  udp: true
-- name: 🇨🇭 瑞士 (Switzerland) 06 - xiaohe
   type: vless
-  server: 45.133.151.186
-  port: 25414
-  uuid: d54a7512-dda3-4218-8ae7-c591d300fd7c
+  server: 45.90.59.15
+  port: 443
+  uuid: 3950b45e-740d-4dca-ac95-505ec8534592
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: KjcB2_xuklgTEHo_L_y3YdGdQoDgA91Yaa3YgRu_Iis
-    short-id: 609c2d15e86108cd
-  servername: www.icloud.com
-  client-fingerprint: ios
+    public-key: P7S4UPFlQbmiBr4txyy8NZIMTrmO3UdxyH16WBU-YzY
+    short-id: 19253fae84102271
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+- name: 🇨🇭 瑞士 (Switzerland) 05 - xiaohe
+  type: vless
+  server: 208.69.78.217
+  port: 2053
+  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
+    short-id: ad86e2d52ff40ebd
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇨🇭 瑞士 (Switzerland) 06 - xiaohe
+  type: hysteria2
+  server: 140.238.213.114
+  port: 50160
+  password: 84a506ca5aca505696a454d828420b3f
+  udp: true
+  skip-cert-verify: true
+- name: 🇨🇭 瑞士 (Switzerland) 07 - xiaohe
+  type: hysteria2
+  server: 104.165.205.42
+  port: 8443
+  password: 990c8eb6-4c4e-4277-8602-79af8402cdd0
+  udp: true
+  skip-cert-verify: true
+- name: 🇨🇭 瑞士 (Switzerland) 08 - xiaohe
+  type: vless
+  server: 208.69.78.217
+  port: 2053
+  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
+    short-id: ad86e2d52ff40ebd
+  servername: www.apple.com
+  client-fingerprint: firefox
+- name: 🇨🇭 瑞士 (Switzerland) 09 - xiaohe
+  type: vless
+  server: 208.69.78.217
+  port: 2053
+  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
+    short-id: ad86e2d52ff40ebd
+  servername: www.apple.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -63,6 +103,9 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 04 - xiaohe
   - 🇨🇭 瑞士 (Switzerland) 05 - xiaohe
   - 🇨🇭 瑞士 (Switzerland) 06 - xiaohe
+  - 🇨🇭 瑞士 (Switzerland) 07 - xiaohe
+  - 🇨🇭 瑞士 (Switzerland) 08 - xiaohe
+  - 🇨🇭 瑞士 (Switzerland) 09 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -74,5 +117,8 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 04 - xiaohe
   - 🇨🇭 瑞士 (Switzerland) 05 - xiaohe
   - 🇨🇭 瑞士 (Switzerland) 06 - xiaohe
+  - 🇨🇭 瑞士 (Switzerland) 07 - xiaohe
+  - 🇨🇭 瑞士 (Switzerland) 08 - xiaohe
+  - 🇨🇭 瑞士 (Switzerland) 09 - xiaohe
 rules:
 - MATCH,PROXIES
