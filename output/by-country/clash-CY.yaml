@@ -13,29 +13,13 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇨🇾 塞浦路斯 (Cyprus) 02 - xiaohe
-  type: vless
-  server: 5.253.29.254
-  port: 10443
-  uuid: c7c27192-60a5-4ce1-b613-95270d82309d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇾 塞浦路斯 (Cyprus) 03 - xiaohe
-  type: vless
-  server: 5.253.29.254
-  port: 10443
-  uuid: c7c27192-60a5-4ce1-b613-95270d82309d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇾 塞浦路斯 (Cyprus) 04 - xiaohe
   type: hysteria2
   server: fi1server.rabstvo.shop
   port: 443
   password: 9yOIR2_QAChKs26rYaiX_aoNnOALd0aU
   udp: true
   skip-cert-verify: true
-- name: 🇨🇾 塞浦路斯 (Cyprus) 05 - xiaohe
+- name: 🇨🇾 塞浦路斯 (Cyprus) 03 - xiaohe
   type: vless
   server: 5.253.29.254
   port: 14430
@@ -48,59 +32,14 @@ proxies:
     path: /vless
     headers:
       Host: 5.253.29.254
-- name: 🇨🇾 塞浦路斯 (Cyprus) 06 - xiaohe
+- name: 🇨🇾 塞浦路斯 (Cyprus) 04 - xiaohe
   type: vless
   server: 5.253.29.254
-  port: 14430
+  port: 10443
   uuid: c7c27192-60a5-4ce1-b613-95270d82309d
   udp: true
   tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 5.253.29.254
-- name: 🇨🇾 塞浦路斯 (Cyprus) 07 - xiaohe
-  type: vless
-  server: 5.253.29.254
-  port: 14430
-  uuid: c7c27192-60a5-4ce1-b613-95270d82309d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 5.253.29.254
-- name: 🇨🇾 塞浦路斯 (Cyprus) 08 - xiaohe
-  type: vless
-  server: 5.253.29.254
-  port: 14430
-  uuid: c7c27192-60a5-4ce1-b613-95270d82309d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 5.253.29.254
-- name: 🇨🇾 塞浦路斯 (Cyprus) 09 - xiaohe
-  type: vless
-  server: 5.253.28.224
-  port: 40443
-  uuid: af5eac96-e478-488a-bc8c-45269d7e8847
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: g77ZJbm18JEotapmVRjaXi133MzkbhkU2lxhVeXx8zw
-    short-id: 68a8
-  servername: deepl.com
-  client-fingerprint: qq
-  flow: xtls-rprx-vision
 proxy-groups:
 - name: PROXIES
   type: select
@@ -110,11 +49,6 @@ proxy-groups:
   - 🇨🇾 塞浦路斯 (Cyprus) 02 - xiaohe
   - 🇨🇾 塞浦路斯 (Cyprus) 03 - xiaohe
   - 🇨🇾 塞浦路斯 (Cyprus) 04 - xiaohe
-  - 🇨🇾 塞浦路斯 (Cyprus) 05 - xiaohe
-  - 🇨🇾 塞浦路斯 (Cyprus) 06 - xiaohe
-  - 🇨🇾 塞浦路斯 (Cyprus) 07 - xiaohe
-  - 🇨🇾 塞浦路斯 (Cyprus) 08 - xiaohe
-  - 🇨🇾 塞浦路斯 (Cyprus) 09 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -124,10 +58,5 @@ proxy-groups:
   - 🇨🇾 塞浦路斯 (Cyprus) 02 - xiaohe
   - 🇨🇾 塞浦路斯 (Cyprus) 03 - xiaohe
   - 🇨🇾 塞浦路斯 (Cyprus) 04 - xiaohe
-  - 🇨🇾 塞浦路斯 (Cyprus) 05 - xiaohe
-  - 🇨🇾 塞浦路斯 (Cyprus) 06 - xiaohe
-  - 🇨🇾 塞浦路斯 (Cyprus) 07 - xiaohe
-  - 🇨🇾 塞浦路斯 (Cyprus) 08 - xiaohe
-  - 🇨🇾 塞浦路斯 (Cyprus) 09 - xiaohe
 rules:
 - MATCH,PROXIES

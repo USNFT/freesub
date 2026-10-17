@@ -6,19 +6,6 @@ log-level: info
 proxies:
 - name: 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
   type: vless
-  server: 138.124.100.29
-  port: 443
-  uuid: 0011d187-d066-48f6-957c-a6983dd63a77
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: KEpkyrOY2wV5h8_bA6doDT1e-lFjYd1jGHKDtDl8hSk
-    short-id: 141fb733511e7553
-  servername: est.netvora.space
-  client-fingerprint: chrome
-- name: 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
-  type: vless
   server: 143.246.41.31
   port: 443
   uuid: 43212c32-01f2-4356-b216-67dc1c178262
@@ -31,7 +18,7 @@ proxies:
   servername: ees92.shhflow.xyz
   client-fingerprint: firefox
   flow: xtls-rprx-vision
-- name: 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
+- name: 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
   type: vless
   server: ees92.shhflow.xyz
   port: 443
@@ -45,7 +32,7 @@ proxies:
   servername: ees92.shhflow.xyz
   client-fingerprint: random
   flow: xtls-rprx-vision
-- name: 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe
+- name: 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
   type: hysteria2
   server: ees92.shhflow.xyz
   port: 5443
@@ -60,7 +47,6 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
   - 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
   - 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
-  - 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -69,6 +55,5 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
   - 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
   - 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
-  - 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe
 rules:
 - MATCH,PROXIES

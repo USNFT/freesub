@@ -32,6 +32,34 @@ proxies:
   servername: www.bing.com
   client-fingerprint: qq
   flow: xtls-rprx-vision
+- name: 🇺🇦 乌克兰 (Ukraine) 03 - xiaohe
+  type: vless
+  server: 83.147.18.75
+  port: 443
+  uuid: 5de0c218-0138-45d8-94d2-c2c3f37a1a6d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: tfFzmbVByvoZxxIEUiHMv22_k0-nQz00L0XjU0bd_Fc
+    short-id: 7f1e29593aa94ad1
+  servername: www.bing.com
+  client-fingerprint: qq
+  flow: xtls-rprx-vision
+- name: 🇺🇦 乌克兰 (Ukraine) 04 - xiaohe
+  type: vless
+  server: 83.147.18.75
+  port: 443
+  uuid: 5de0c218-0138-45d8-94d2-c2c3f37a1a6d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: tfFzmbVByvoZxxIEUiHMv22_k0-nQz00L0XjU0bd_Fc
+    short-id: 7f1e29593aa94ad1
+  servername: www.bing.com
+  client-fingerprint: random
+  flow: xtls-rprx-vision
 proxy-groups:
 - name: PROXIES
   type: select
@@ -39,6 +67,8 @@ proxy-groups:
   - AUTO
   - 🇺🇦 乌克兰 (Ukraine) 01 - xiaohe
   - 🇺🇦 乌克兰 (Ukraine) 02 - xiaohe
+  - 🇺🇦 乌克兰 (Ukraine) 03 - xiaohe
+  - 🇺🇦 乌克兰 (Ukraine) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -46,5 +76,7 @@ proxy-groups:
   proxies:
   - 🇺🇦 乌克兰 (Ukraine) 01 - xiaohe
   - 🇺🇦 乌克兰 (Ukraine) 02 - xiaohe
+  - 🇺🇦 乌克兰 (Ukraine) 03 - xiaohe
+  - 🇺🇦 乌克兰 (Ukraine) 04 - xiaohe
 rules:
 - MATCH,PROXIES

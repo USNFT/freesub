@@ -18,6 +18,76 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
+- name: 🇦🇹 奥地利 (Austria) 03 - xiaohe
+  type: vless
+  server: api.mediakaskad.cc
+  port: 443
+  uuid: 082f5694-9019-4110-b67b-8125dbb9bab8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: r5WB5FnSCt4eeBC1FJMfkWHbzsMuabo0Rc6wuAhlZUs
+    short-id: a8
+  servername: api.mediakaskad.cc
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+- name: 🇦🇹 奥地利 (Austria) 04 - xiaohe
+  type: vless
+  server: 189.74.115.16
+  port: 443
+  uuid: 082f5694-9019-4110-b67b-8125dbb9bab8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: r5WB5FnSCt4eeBC1FJMfkWHbzsMuabo0Rc6wuAhlZUs
+    short-id: a8
+  servername: api.mediakaskad.cc
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+- name: 🇦🇹 奥地利 (Austria) 05 - xiaohe
+  type: vless
+  server: api.mediakaskad.cc
+  port: 443
+  uuid: 082f5694-9019-4110-b67b-8125dbb9bab8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: r5WB5FnSCt4eeBC1FJMfkWHbzsMuabo0Rc6wuAhlZUs
+    short-id: a8
+  servername: api.mediakaskad.cc
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+- name: 🇦🇹 奥地利 (Austria) 06 - xiaohe
+  type: vless
+  server: api.mediakaskad.cc
+  port: 443
+  uuid: 082f5694-9019-4110-b67b-8125dbb9bab8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: r5WB5FnSCt4eeBC1FJMfkWHbzsMuabo0Rc6wuAhlZUs
+    short-id: a8
+  servername: api.mediakaskad.cc
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇦🇹 奥地利 (Austria) 07 - xiaohe
+  type: vless
+  server: api.mediakaskad.cc
+  port: 443
+  uuid: 082f5694-9019-4110-b67b-8125dbb9bab8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: r5WB5FnSCt4eeBC1FJMfkWHbzsMuabo0Rc6wuAhlZUs
+    short-id: a8
+  servername: api.mediakaskad.cc
+  client-fingerprint: safari
+  flow: xtls-rprx-vision
 proxy-groups:
 - name: PROXIES
   type: select
@@ -25,6 +95,11 @@ proxy-groups:
   - AUTO
   - 🇦🇹 奥地利 (Austria) 01 - xiaohe
   - 🇦🇹 奥地利 (Austria) 02 - xiaohe
+  - 🇦🇹 奥地利 (Austria) 03 - xiaohe
+  - 🇦🇹 奥地利 (Austria) 04 - xiaohe
+  - 🇦🇹 奥地利 (Austria) 05 - xiaohe
+  - 🇦🇹 奥地利 (Austria) 06 - xiaohe
+  - 🇦🇹 奥地利 (Austria) 07 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -32,5 +107,10 @@ proxy-groups:
   proxies:
   - 🇦🇹 奥地利 (Austria) 01 - xiaohe
   - 🇦🇹 奥地利 (Austria) 02 - xiaohe
+  - 🇦🇹 奥地利 (Austria) 03 - xiaohe
+  - 🇦🇹 奥地利 (Austria) 04 - xiaohe
+  - 🇦🇹 奥地利 (Austria) 05 - xiaohe
+  - 🇦🇹 奥地利 (Austria) 06 - xiaohe
+  - 🇦🇹 奥地利 (Austria) 07 - xiaohe
 rules:
 - MATCH,PROXIES

@@ -6,20 +6,6 @@ log-level: info
 proxies:
 - name: 🇲🇩 MD 01 - xiaohe
   type: vless
-  server: md1.aiage.work
-  port: 443
-  uuid: 6338c01a-310e-42c3-bf4f-2a20e161054b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 0dtXhkhkh-_MBFoGwzdW4PdlJtVX9oswhJZHbUPGCmo
-    short-id: 5d7a45ac0ad6adff
-  servername: md1.aiage.work
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇲🇩 MD 02 - xiaohe
-  type: vless
   server: 85.120.144.116
   port: 443
   uuid: 6338c01a-310e-42c3-bf4f-2a20e161054b
@@ -32,7 +18,49 @@ proxies:
   servername: ro2.aiage.work
   client-fingerprint: firefox
   flow: xtls-rprx-vision
+- name: 🇲🇩 MD 02 - xiaohe
+  type: vless
+  server: 195.178.106.23
+  port: 443
+  uuid: 6338c01a-310e-42c3-bf4f-2a20e161054b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 0dtXhkhkh-_MBFoGwzdW4PdlJtVX9oswhJZHbUPGCmo
+    short-id: e829f50f0a3f416b
+  servername: md1.aiage.work
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
 - name: 🇲🇩 MD 03 - xiaohe
+  type: vless
+  server: md1.aiage.work
+  port: 443
+  uuid: 6338c01a-310e-42c3-bf4f-2a20e161054b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 0dtXhkhkh-_MBFoGwzdW4PdlJtVX9oswhJZHbUPGCmo
+    short-id: e829f50f0a3f416b
+  servername: md1.aiage.work
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇲🇩 MD 04 - xiaohe
+  type: vless
+  server: md1.aiage.work
+  port: 443
+  uuid: 6338c01a-310e-42c3-bf4f-2a20e161054b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 0dtXhkhkh-_MBFoGwzdW4PdlJtVX9oswhJZHbUPGCmo
+    short-id: e829f50f0a3f416b
+  servername: md1.aiage.work
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+- name: 🇲🇩 MD 05 - xiaohe
   type: vless
   server: 85.120.144.27
   port: 443
@@ -44,35 +72,7 @@ proxies:
     public-key: 0dtXhkhkh-_MBFoGwzdW4PdlJtVX9oswhJZHbUPGCmo
     short-id: 5d7a45ac0ad6adff
   servername: md1.aiage.work
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇲🇩 MD 04 - xiaohe
-  type: vless
-  server: ro2.aiage.work
-  port: 443
-  uuid: 6338c01a-310e-42c3-bf4f-2a20e161054b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: pkKL2cqqPNxc1rqrvhJmexI7NOeZFaGUawAwqQpVY3c
-    short-id: 1d2fecf1d2475168
-  servername: ro2.aiage.work
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇲🇩 MD 05 - xiaohe
-  type: vless
-  server: md1.aiage.work
-  port: 443
-  uuid: 6338c01a-310e-42c3-bf4f-2a20e161054b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 0dtXhkhkh-_MBFoGwzdW4PdlJtVX9oswhJZHbUPGCmo
-    short-id: e829f50f0a3f416b
-  servername: md1.aiage.work
-  client-fingerprint: firefox
+  client-fingerprint: random
   flow: xtls-rprx-vision
 - name: 🇲🇩 MD 06 - xiaohe
   type: vless
@@ -84,13 +84,13 @@ proxies:
   skip-cert-verify: true
   reality-opts:
     public-key: 0dtXhkhkh-_MBFoGwzdW4PdlJtVX9oswhJZHbUPGCmo
-    short-id: e829f50f0a3f416b
+    short-id: 5d7a45ac0ad6adff
   servername: md1.aiage.work
-  client-fingerprint: firefox
+  client-fingerprint: qq
   flow: xtls-rprx-vision
 - name: 🇲🇩 MD 07 - xiaohe
   type: vless
-  server: 195.178.106.23
+  server: 85.120.144.27
   port: 443
   uuid: 6338c01a-310e-42c3-bf4f-2a20e161054b
   udp: true
@@ -98,7 +98,7 @@ proxies:
   skip-cert-verify: true
   reality-opts:
     public-key: 0dtXhkhkh-_MBFoGwzdW4PdlJtVX9oswhJZHbUPGCmo
-    short-id: e829f50f0a3f416b
+    short-id: 5d7a45ac0ad6adff
   servername: md1.aiage.work
   client-fingerprint: firefox
   flow: xtls-rprx-vision
@@ -118,34 +118,6 @@ proxies:
   flow: xtls-rprx-vision
 - name: 🇲🇩 MD 09 - xiaohe
   type: vless
-  server: ro2.aiage.work
-  port: 443
-  uuid: 6338c01a-310e-42c3-bf4f-2a20e161054b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: pkKL2cqqPNxc1rqrvhJmexI7NOeZFaGUawAwqQpVY3c
-    short-id: 1d2fecf1d2475168
-  servername: ro2.aiage.work
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇲🇩 MD 10 - xiaohe
-  type: vless
-  server: md1.aiage.work
-  port: 443
-  uuid: 6338c01a-310e-42c3-bf4f-2a20e161054b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 0dtXhkhkh-_MBFoGwzdW4PdlJtVX9oswhJZHbUPGCmo
-    short-id: 5d7a45ac0ad6adff
-  servername: md1.aiage.work
-  client-fingerprint: qq
-  flow: xtls-rprx-vision
-- name: 🇲🇩 MD 11 - xiaohe
-  type: vless
   server: md1.aiage.work
   port: 443
   uuid: 6338c01a-310e-42c3-bf4f-2a20e161054b
@@ -158,7 +130,7 @@ proxies:
   servername: md1.aiage.work
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: 🇲🇩 MD 12 - xiaohe
+- name: 🇲🇩 MD 10 - xiaohe
   type: vless
   server: md1.aiage.work
   port: 443
@@ -169,6 +141,34 @@ proxies:
   reality-opts:
     public-key: 0dtXhkhkh-_MBFoGwzdW4PdlJtVX9oswhJZHbUPGCmo
     short-id: e829f50f0a3f416b
+  servername: md1.aiage.work
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+- name: 🇲🇩 MD 11 - xiaohe
+  type: vless
+  server: ro2.aiage.work
+  port: 443
+  uuid: 6338c01a-310e-42c3-bf4f-2a20e161054b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: pkKL2cqqPNxc1rqrvhJmexI7NOeZFaGUawAwqQpVY3c
+    short-id: 1d2fecf1d2475168
+  servername: ro2.aiage.work
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇲🇩 MD 12 - xiaohe
+  type: vless
+  server: md1.aiage.work
+  port: 443
+  uuid: 6338c01a-310e-42c3-bf4f-2a20e161054b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 0dtXhkhkh-_MBFoGwzdW4PdlJtVX9oswhJZHbUPGCmo
+    short-id: 5d7a45ac0ad6adff
   servername: md1.aiage.work
   client-fingerprint: chrome
   flow: xtls-rprx-vision
@@ -185,6 +185,34 @@ proxies:
     short-id: 1d2fecf1d2475168
   servername: ro2.aiage.work
   client-fingerprint: firefox
+  flow: xtls-rprx-vision
+- name: 🇲🇩 MD 14 - xiaohe
+  type: vless
+  server: ro2.aiage.work
+  port: 443
+  uuid: 6338c01a-310e-42c3-bf4f-2a20e161054b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: pkKL2cqqPNxc1rqrvhJmexI7NOeZFaGUawAwqQpVY3c
+    short-id: 1d2fecf1d2475168
+  servername: ro2.aiage.work
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+- name: 🇲🇩 MD 15 - xiaohe
+  type: vless
+  server: md1.aiage.work
+  port: 443
+  uuid: 6338c01a-310e-42c3-bf4f-2a20e161054b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 0dtXhkhkh-_MBFoGwzdW4PdlJtVX9oswhJZHbUPGCmo
+    short-id: e829f50f0a3f416b
+  servername: md1.aiage.work
+  client-fingerprint: chrome
   flow: xtls-rprx-vision
 proxy-groups:
 - name: PROXIES
@@ -204,6 +232,8 @@ proxy-groups:
   - 🇲🇩 MD 11 - xiaohe
   - 🇲🇩 MD 12 - xiaohe
   - 🇲🇩 MD 13 - xiaohe
+  - 🇲🇩 MD 14 - xiaohe
+  - 🇲🇩 MD 15 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -222,5 +252,7 @@ proxy-groups:
   - 🇲🇩 MD 11 - xiaohe
   - 🇲🇩 MD 12 - xiaohe
   - 🇲🇩 MD 13 - xiaohe
+  - 🇲🇩 MD 14 - xiaohe
+  - 🇲🇩 MD 15 - xiaohe
 rules:
 - MATCH,PROXIES

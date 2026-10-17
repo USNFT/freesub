@@ -12,47 +12,54 @@ proxies:
   password: j3PKOCj7wHl5Pk6thI9HyXtCa6JU180IlBpWANgFjkY=
   udp: true
 - name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
-  type: hysteria2
-  server: 194.87.118.184
-  port: 2053
-  password: 7ab3c77e-8fcc-4848-918f-cae3d4eac794
+  type: ss
+  server: 194.87.196.107
+  port: 18443
+  cipher: aes-256-gcm
+  password: Lpq5UPVHtQYiuB9jEUNc2WkeIYCUH9DE
   udp: true
-  skip-cert-verify: true
 - name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
-  type: hysteria2
-  server: 194.87.118.184
-  port: 2053
-  password: 7ab3c77e-8fcc-4848-918f-cae3d4eac794
-  udp: true
-  skip-cert-verify: true
-- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
-  type: hysteria2
-  server: 194.87.118.184
-  port: 2053
-  password: 7ab3c77e-8fcc-4848-918f-cae3d4eac794
-  udp: true
-  skip-cert-verify: true
-- name: 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
-  type: hysteria2
-  server: outh.yandex-cloud.org
-  port: 54183
-  password: 082f5694-9019-4110-b67b-8125dbb9bab8
-  udp: true
-  skip-cert-verify: true
-- name: 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
   type: vless
-  server: 139.28.168.75
-  port: 10444
-  uuid: 154bd388-4968-4900-a088-18676f428a20
+  server: 213.165.56.102
+  port: 443
+  uuid: 6338c01a-310e-42c3-bf4f-2a20e161054b
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
-    short-id: 8debcf36f1cc69ff
-  servername: video.yandex.ru
+    public-key: A_bQLZE6D32TJUdAf9doQTPaTUXyJjPXLSklplG4V1g
+    short-id: 57e7977c9011061c
+  servername: freede.aiage.work
   client-fingerprint: chrome
   flow: xtls-rprx-vision
+- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
+  type: vless
+  server: freede.aiage.work
+  port: 443
+  uuid: 6338c01a-310e-42c3-bf4f-2a20e161054b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: A_bQLZE6D32TJUdAf9doQTPaTUXyJjPXLSklplG4V1g
+    short-id: 5f5e74dfd296b28d
+  servername: freede.aiage.work
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+- name: 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
+  type: hysteria2
+  server: 194.87.118.184
+  port: 2053
+  password: 7ab3c77e-8fcc-4848-918f-cae3d4eac794
+  udp: true
+  skip-cert-verify: true
+- name: 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
+  type: hysteria2
+  server: 194.87.118.184
+  port: 2053
+  password: 7ab3c77e-8fcc-4848-918f-cae3d4eac794
+  udp: true
+  skip-cert-verify: true
 - name: 🇷🇺 俄罗斯 (Russia) 07 - xiaohe
   type: hysteria2
   server: 194.87.118.184
@@ -61,62 +68,13 @@ proxies:
   udp: true
   skip-cert-verify: true
 - name: 🇷🇺 俄罗斯 (Russia) 08 - xiaohe
-  type: vless
-  server: 139.28.168.75
-  port: 10444
-  uuid: 154bd388-4968-4900-a088-18676f428a20
+  type: hysteria2
+  server: 194.87.118.184
+  port: 2053
+  password: 7ab3c77e-8fcc-4848-918f-cae3d4eac794
   udp: true
-  tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
-    short-id: 8debcf36f1cc69ff
-  servername: video.yandex.ru
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
 - name: 🇷🇺 俄罗斯 (Russia) 09 - xiaohe
-  type: vless
-  server: 139.28.168.75
-  port: 10444
-  uuid: 154bd388-4968-4900-a088-18676f428a20
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
-    short-id: 8debcf36f1cc69ff
-  servername: video.yandex.ru
-  client-fingerprint: safari
-  flow: xtls-rprx-vision
-- name: 🇷🇺 俄罗斯 (Russia) 10 - xiaohe
-  type: vless
-  server: api.mediakaskad.cc
-  port: 443
-  uuid: 082f5694-9019-4110-b67b-8125dbb9bab8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: r5WB5FnSCt4eeBC1FJMfkWHbzsMuabo0Rc6wuAhlZUs
-    short-id: a8
-  servername: api.mediakaskad.cc
-  client-fingerprint: safari
-  flow: xtls-rprx-vision
-- name: 🇷🇺 俄罗斯 (Russia) 11 - xiaohe
-  type: vless
-  server: api.videolaguna.cc
-  port: 443
-  uuid: 082f5694-9019-4110-b67b-8125dbb9bab8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: r5WB5FnSCt4eeBC1FJMfkWHbzsMuabo0Rc6wuAhlZUs
-    short-id: a8
-  servername: api.videolaguna.cc
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇷🇺 俄罗斯 (Russia) 12 - xiaohe
   type: vless
   server: 168.113.135.90
   port: 443
@@ -129,6 +87,55 @@ proxies:
     short-id: 11ac376e18d20343
   servername: m-vruvc.mvpstr.com
   client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇷🇺 俄罗斯 (Russia) 10 - xiaohe
+  type: vless
+  server: 139.28.168.75
+  port: 10444
+  uuid: 154bd388-4968-4900-a088-18676f428a20
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
+    short-id: 8debcf36f1cc69ff
+  servername: video.yandex.ru
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇷🇺 俄罗斯 (Russia) 11 - xiaohe
+  type: vless
+  server: 139.28.168.75
+  port: 10444
+  uuid: 154bd388-4968-4900-a088-18676f428a20
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
+    short-id: 8debcf36f1cc69ff
+  servername: video.yandex.ru
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇷🇺 俄罗斯 (Russia) 12 - xiaohe
+  type: hysteria2
+  server: 194.87.118.184
+  port: 2053
+  password: 7ab3c77e-8fcc-4848-918f-cae3d4eac794
+  udp: true
+  skip-cert-verify: true
+- name: 🇷🇺 俄罗斯 (Russia) 13 - xiaohe
+  type: vless
+  server: 139.28.168.75
+  port: 10444
+  uuid: 154bd388-4968-4900-a088-18676f428a20
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
+    short-id: 8debcf36f1cc69ff
+  servername: video.yandex.ru
+  client-fingerprint: safari
   flow: xtls-rprx-vision
 proxy-groups:
 - name: PROXIES
@@ -147,6 +154,7 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 10 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 11 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 12 - xiaohe
+  - 🇷🇺 俄罗斯 (Russia) 13 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -164,5 +172,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 10 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 11 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 12 - xiaohe
+  - 🇷🇺 俄罗斯 (Russia) 13 - xiaohe
 rules:
 - MATCH,PROXIES
