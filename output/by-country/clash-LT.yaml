@@ -20,20 +20,6 @@ proxies:
   flow: xtls-rprx-vision
 - name: 🇱🇹 LT 02 - xiaohe
   type: vless
-  server: 84.32.109.20
-  port: 443
-  uuid: ee18d188-14cc-417e-beb1-70e4add6d023
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 3jySGemfaqPZ2vM66Qtzo5SotO3eoRn1FeGaKp6KBQ4
-    short-id: 0da7e14db353e7d0
-  servername: litv.nztvpn.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇱🇹 LT 03 - xiaohe
-  type: vless
   server: b58e68t.lt1.h1clayd.click
   port: 443
   uuid: f90b7d43-69e2-4b46-a672-8029bc6796a2
@@ -45,7 +31,7 @@ proxies:
     short-id: 2301ac8aee8bf6d4
   servername: b58e68t.lt1.h1clayd.click
   client-fingerprint: safari
-- name: 🇱🇹 LT 04 - xiaohe
+- name: 🇱🇹 LT 03 - xiaohe
   type: vless
   server: 84.32.109.20
   port: 443
@@ -59,6 +45,34 @@ proxies:
   servername: litv.nztvpn.com
   client-fingerprint: random
   flow: xtls-rprx-vision
+- name: 🇱🇹 LT 04 - xiaohe
+  type: vless
+  server: 84.32.109.20
+  port: 443
+  uuid: ee18d188-14cc-417e-beb1-70e4add6d023
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 3jySGemfaqPZ2vM66Qtzo5SotO3eoRn1FeGaKp6KBQ4
+    short-id: 0da7e14db353e7d0
+  servername: litv.nztvpn.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇱🇹 LT 05 - xiaohe
+  type: vless
+  server: 84.32.109.20
+  port: 443
+  uuid: ee18d188-14cc-417e-beb1-70e4add6d023
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 3jySGemfaqPZ2vM66Qtzo5SotO3eoRn1FeGaKp6KBQ4
+    short-id: 0da7e14db353e7d0
+  servername: litv.nztvpn.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
 proxy-groups:
 - name: PROXIES
   type: select
@@ -68,6 +82,7 @@ proxy-groups:
   - 🇱🇹 LT 02 - xiaohe
   - 🇱🇹 LT 03 - xiaohe
   - 🇱🇹 LT 04 - xiaohe
+  - 🇱🇹 LT 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -77,5 +92,6 @@ proxy-groups:
   - 🇱🇹 LT 02 - xiaohe
   - 🇱🇹 LT 03 - xiaohe
   - 🇱🇹 LT 04 - xiaohe
+  - 🇱🇹 LT 05 - xiaohe
 rules:
 - MATCH,PROXIES
