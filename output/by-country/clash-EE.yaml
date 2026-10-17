@@ -6,6 +6,19 @@ log-level: info
 proxies:
 - name: 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
   type: vless
+  server: 138.124.100.29
+  port: 443
+  uuid: 0011d187-d066-48f6-957c-a6983dd63a77
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: KEpkyrOY2wV5h8_bA6doDT1e-lFjYd1jGHKDtDl8hSk
+    short-id: 141fb733511e7553
+  servername: est.netvora.space
+  client-fingerprint: chrome
+- name: 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
+  type: vless
   server: 143.246.41.31
   port: 443
   uuid: 43212c32-01f2-4356-b216-67dc1c178262
@@ -18,27 +31,7 @@ proxies:
   servername: ees92.shhflow.xyz
   client-fingerprint: firefox
   flow: xtls-rprx-vision
-- name: 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
-  type: vless
-  server: 188.225.83.133
-  port: 443
-  uuid: 4c346148-ece9-487a-bffb-ba5a399b2d71
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: JqmkP6Fys7jN2Fu1iDJuWKVNPhlgHfy_pj1DHFVKVhw
-    short-id: a1b2c3d4e5f6a7b8
-  servername: xnodtwx.artemida.live
-  client-fingerprint: firefox
 - name: 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
-  type: hysteria2
-  server: ees92.shhflow.xyz
-  port: 5443
-  password: 43212c32-01f2-4356-b216-67dc1c178262
-  udp: true
-  skip-cert-verify: true
-- name: 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe
   type: vless
   server: ees92.shhflow.xyz
   port: 443
@@ -52,20 +45,13 @@ proxies:
   servername: ees92.shhflow.xyz
   client-fingerprint: random
   flow: xtls-rprx-vision
-- name: 🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe
-  type: vless
-  server: 93.89.220.37
-  port: 443
-  uuid: 185e2bb3-2934-48d0-bbd5-dd20d16e83ee
+- name: 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe
+  type: hysteria2
+  server: ees92.shhflow.xyz
+  port: 5443
+  password: 43212c32-01f2-4356-b216-67dc1c178262
   udp: true
-  tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: lwKaUQ81wJUJRsqAPsfTPj5V_f9N50UYEwzRI_nuq2g
-    short-id: e88cb983f3c97528
-  servername: ibm.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
 proxy-groups:
 - name: PROXIES
   type: select
@@ -75,7 +61,6 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
   - 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
   - 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe
-  - 🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -85,6 +70,5 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
   - 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
   - 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe
-  - 🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe
 rules:
 - MATCH,PROXIES
