@@ -6,16 +6,16 @@ log-level: info
 proxies:
 - name: 🇱🇻 拉脱维亚 (Latvia) 01 - xiaohe
   type: vless
-  server: 185.220.223.25
+  server: 138.124.180.137
   port: 443
-  uuid: 6338c01a-310e-42c3-bf4f-2a20e161054b
+  uuid: 5234b2b7-5e07-422c-8159-d62a676c00c6
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: ds-U8G06uZvV9qFhAeO16dwS9Nkcw_coYr_4puEUGFg
-    short-id: 3c6afdc4124d0560
-  servername: lv.aiage.work
+    public-key: GBdkyDLfr0LIZo_94Xv8ycAKOmkjArYzwJAEMhuXX2c
+    short-id: 33acba1b
+  servername: www.apple.com
   client-fingerprint: firefox
   flow: xtls-rprx-vision
 - name: 🇱🇻 拉脱维亚 (Latvia) 02 - xiaohe
@@ -44,50 +44,16 @@ proxies:
     public-key: GBdkyDLfr0LIZo_94Xv8ycAKOmkjArYzwJAEMhuXX2c
     short-id: 33acba1b
   servername: www.apple.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   flow: xtls-rprx-vision
 - name: 🇱🇻 拉脱维亚 (Latvia) 04 - xiaohe
   type: vless
-  server: 138.124.180.137
-  port: 443
-  uuid: 5234b2b7-5e07-422c-8159-d62a676c00c6
+  server: 31.56.177.95
+  port: 8445
+  uuid: bd4badaa-e3a5-48a5-aaf3-2d01b5c17ea5
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: GBdkyDLfr0LIZo_94Xv8ycAKOmkjArYzwJAEMhuXX2c
-    short-id: 33acba1b
-  servername: www.apple.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇱🇻 拉脱维亚 (Latvia) 05 - xiaohe
-  type: vless
-  server: 138.124.180.137
-  port: 443
-  uuid: 5234b2b7-5e07-422c-8159-d62a676c00c6
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: GBdkyDLfr0LIZo_94Xv8ycAKOmkjArYzwJAEMhuXX2c
-    short-id: 33acba1b
-  servername: www.apple.com
-  client-fingerprint: random
-  flow: xtls-rprx-vision
-- name: 🇱🇻 拉脱维亚 (Latvia) 06 - xiaohe
-  type: vless
-  server: 195.123.208.32
-  port: 443
-  uuid: 1ebcb694-875c-4be7-b6a2-d53c8208991b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: ICrsmE5hqN7IsDIyHPG2WkDUUFK_VEj9yobLv8zuDwk
-    short-id: 757b9e1ef18e60f0
-  servername: gateway.icloud.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
 proxy-groups:
 - name: PROXIES
   type: select
@@ -97,8 +63,6 @@ proxy-groups:
   - 🇱🇻 拉脱维亚 (Latvia) 02 - xiaohe
   - 🇱🇻 拉脱维亚 (Latvia) 03 - xiaohe
   - 🇱🇻 拉脱维亚 (Latvia) 04 - xiaohe
-  - 🇱🇻 拉脱维亚 (Latvia) 05 - xiaohe
-  - 🇱🇻 拉脱维亚 (Latvia) 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -108,7 +72,5 @@ proxy-groups:
   - 🇱🇻 拉脱维亚 (Latvia) 02 - xiaohe
   - 🇱🇻 拉脱维亚 (Latvia) 03 - xiaohe
   - 🇱🇻 拉脱维亚 (Latvia) 04 - xiaohe
-  - 🇱🇻 拉脱维亚 (Latvia) 05 - xiaohe
-  - 🇱🇻 拉脱维亚 (Latvia) 06 - xiaohe
 rules:
 - MATCH,PROXIES

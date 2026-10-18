@@ -16,7 +16,7 @@ proxies:
     public-key: 7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk
     short-id: 29e8dcd2b37aaa7f
   servername: www.apple.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇪🇸 西班牙 (Spain) 02 - xiaohe
   type: vless
   server: 212.227.235.66
@@ -29,7 +29,7 @@ proxies:
     public-key: 7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk
     short-id: 29e8dcd2b37aaa7f
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: random
 - name: 🇪🇸 西班牙 (Spain) 03 - xiaohe
   type: vless
   server: 212.227.235.66
@@ -42,34 +42,20 @@ proxies:
     public-key: 7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk
     short-id: 29e8dcd2b37aaa7f
   servername: www.apple.com
-  client-fingerprint: random
+  client-fingerprint: firefox
 - name: 🇪🇸 西班牙 (Spain) 04 - xiaohe
   type: vless
-  server: spain.unixzone.us
-  port: 36326
-  uuid: 63ff4bfa-0f1d-48e4-8314-e882b14e602c
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /jdiedjiedjijd
-    headers:
-      Host: spain.unixzone.us
-- name: 🇪🇸 西班牙 (Spain) 05 - xiaohe
-  type: vless
-  server: 46.28.71.247
-  port: 443
-  uuid: 12c53e32-e589-47d6-b857-e4132294f767
+  server: 196.245.52.149
+  port: 25535
+  uuid: c379d8e4-c67d-42ec-a3ed-ca99d1ad0546
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: v4MuZIvFrTPT5GHMSaPryUAbIZlLstmsUTzmC1E-JTE
-    short-id: 0dfc23fe80778c00
-  servername: www.cloudflare.com
+    public-key: Jh7CocBJSA55VZcLfXwXwoQ_Hi5pV-L1vv1SY-IrSh4
+    short-id: 7642ce57308852e7
+  servername: www.microsoft.com
   client-fingerprint: chrome
-  flow: xtls-rprx-vision
 proxy-groups:
 - name: PROXIES
   type: select
@@ -79,7 +65,6 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 02 - xiaohe
   - 🇪🇸 西班牙 (Spain) 03 - xiaohe
   - 🇪🇸 西班牙 (Spain) 04 - xiaohe
-  - 🇪🇸 西班牙 (Spain) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -89,6 +74,5 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 02 - xiaohe
   - 🇪🇸 西班牙 (Spain) 03 - xiaohe
   - 🇪🇸 西班牙 (Spain) 04 - xiaohe
-  - 🇪🇸 西班牙 (Spain) 05 - xiaohe
 rules:
 - MATCH,PROXIES

@@ -6,6 +6,20 @@ log-level: info
 proxies:
 - name: 🇿🇦 南非 (South Africa) 01 - xiaohe
   type: ss
+  server: 20.164.216.208
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: tM0sV3CrjAU0nokd
+  udp: true
+- name: 🇿🇦 南非 (South Africa) 02 - xiaohe
+  type: ss
+  server: 20.164.216.208
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: tM0sV3CrjAU0nokd
+  udp: true
+- name: 🇿🇦 南非 (South Africa) 03 - xiaohe
+  type: ss
   server: 102.133.165.160
   port: 16233
   cipher: chacha20-ietf-poly1305
@@ -17,11 +31,15 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇿🇦 南非 (South Africa) 01 - xiaohe
+  - 🇿🇦 南非 (South Africa) 02 - xiaohe
+  - 🇿🇦 南非 (South Africa) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇿🇦 南非 (South Africa) 01 - xiaohe
+  - 🇿🇦 南非 (South Africa) 02 - xiaohe
+  - 🇿🇦 南非 (South Africa) 03 - xiaohe
 rules:
 - MATCH,PROXIES
