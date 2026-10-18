@@ -4,30 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🌐 其他地区 (Other) 01 - xiaohe
+- name: 🇫🇮 芬兰 (Finland) 01 (家宽) - xiaohe
   type: vless
-  server: f36.tivexabot.ir
+  server: 212.87.222.10
   port: 8443
-  uuid: cf89fddb-e76b-430e-8952-61e33d4da4a6
+  uuid: 8afeb33c-b686-43e9-a629-0d98f991ec28
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: QJ0hQw2eD-EVhhGSr28CN10dVFDNGKgaIZ8spSZFO3M
-    short-id: 19fad7d75677e2
-  servername: stg-ru-images.shop.samsung.com
+    public-key: f25sygANXTpzdc9YPCwkggwSmm3piA3BluSeHdfG-hg
+  servername: www.nokia.com
   client-fingerprint: chrome
+  flow: xtls-rprx-vision
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🌐 其他地区 (Other) 01 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 01 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🌐 其他地区 (Other) 01 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 01 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES

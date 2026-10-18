@@ -6,14 +6,6 @@ log-level: info
 proxies:
 - name: 🇷🇴 罗马尼亚 (Romania) 01 - xiaohe
   type: vless
-  server: edge10.cyrionflare.com
-  port: 2052
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇷🇴 罗马尼亚 (Romania) 02 - xiaohe
-  type: vless
   server: 205.237.110.254
   port: 443
   uuid: e75ad2eb-6c1f-45ce-8023-f5f10875df66
@@ -26,7 +18,7 @@ proxies:
   servername: zsit.eu-cdn294.com
   client-fingerprint: firefox
   flow: xtls-rprx-vision
-- name: 🇷🇴 罗马尼亚 (Romania) 03 - xiaohe
+- name: 🇷🇴 罗马尼亚 (Romania) 02 - xiaohe
   type: vless
   server: edge10.cyrionflare.com
   port: 2052
@@ -34,7 +26,7 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇷🇴 罗马尼亚 (Romania) 04 - xiaohe
+- name: 🇷🇴 罗马尼亚 (Romania) 03 - xiaohe
   type: vless
   server: 46.28.67.55
   port: 443
@@ -48,6 +40,14 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: chrome
   flow: xtls-rprx-vision
+- name: 🇷🇴 罗马尼亚 (Romania) 04 - xiaohe
+  type: vless
+  server: edge10.cyrionflare.com
+  port: 2052
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+  udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 🇷🇴 罗马尼亚 (Romania) 05 - xiaohe
   type: vless
   server: edge10.cyrionflare.com
@@ -80,25 +80,12 @@ proxies:
   flow: xtls-rprx-vision
 - name: 🇷🇴 罗马尼亚 (Romania) 08 - xiaohe
   type: vless
-  server: 82.117.255.174
-  port: 443
-  uuid: 679439c5-28f2-485e-af5f-60a5fcd9c36c
+  server: edge10.cyrionflare.com
+  port: 2052
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: 0QDBHaCRO2dPeeSVy3B3R_U12ZOvbvWl1JTFW_ZcpD0
-    short-id: 31e91d43e553bf32
-  servername: gateway.icloud.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇷🇴 罗马尼亚 (Romania) 09 - xiaohe
-  type: ss
-  server: 194.68.44.42
-  port: 64546
-  cipher: chacha20-ietf-poly1305
-  password: U83u9OGpvSatIUW7LsWffr
-  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -112,7 +99,6 @@ proxy-groups:
   - 🇷🇴 罗马尼亚 (Romania) 06 - xiaohe
   - 🇷🇴 罗马尼亚 (Romania) 07 - xiaohe
   - 🇷🇴 罗马尼亚 (Romania) 08 - xiaohe
-  - 🇷🇴 罗马尼亚 (Romania) 09 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -126,6 +112,5 @@ proxy-groups:
   - 🇷🇴 罗马尼亚 (Romania) 06 - xiaohe
   - 🇷🇴 罗马尼亚 (Romania) 07 - xiaohe
   - 🇷🇴 罗马尼亚 (Romania) 08 - xiaohe
-  - 🇷🇴 罗马尼亚 (Romania) 09 - xiaohe
 rules:
 - MATCH,PROXIES
