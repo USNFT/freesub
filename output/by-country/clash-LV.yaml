@@ -6,17 +6,17 @@ log-level: info
 proxies:
 - name: 🇱🇻 拉脱维亚 (Latvia) 01 - xiaohe
   type: vless
-  server: 138.124.180.137
+  server: 185.220.223.25
   port: 443
-  uuid: 5234b2b7-5e07-422c-8159-d62a676c00c6
+  uuid: 6338c01a-310e-42c3-bf4f-2a20e161054b
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: GBdkyDLfr0LIZo_94Xv8ycAKOmkjArYzwJAEMhuXX2c
-    short-id: 33acba1b
-  servername: www.apple.com
-  client-fingerprint: chrome
+    public-key: ds-U8G06uZvV9qFhAeO16dwS9Nkcw_coYr_4puEUGFg
+    short-id: 3c6afdc4124d0560
+  servername: lv.aiage.work
+  client-fingerprint: firefox
   flow: xtls-rprx-vision
 - name: 🇱🇻 拉脱维亚 (Latvia) 02 - xiaohe
   type: vless
@@ -44,7 +44,7 @@ proxies:
     public-key: GBdkyDLfr0LIZo_94Xv8ycAKOmkjArYzwJAEMhuXX2c
     short-id: 33acba1b
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
   flow: xtls-rprx-vision
 - name: 🇱🇻 拉脱维亚 (Latvia) 04 - xiaohe
   type: vless
@@ -58,35 +58,35 @@ proxies:
     public-key: GBdkyDLfr0LIZo_94Xv8ycAKOmkjArYzwJAEMhuXX2c
     short-id: 33acba1b
   servername: www.apple.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   flow: xtls-rprx-vision
 - name: 🇱🇻 拉脱维亚 (Latvia) 05 - xiaohe
   type: vless
-  server: lv.aiage.work
+  server: 138.124.180.137
   port: 443
-  uuid: 6338c01a-310e-42c3-bf4f-2a20e161054b
+  uuid: 5234b2b7-5e07-422c-8159-d62a676c00c6
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: ds-U8G06uZvV9qFhAeO16dwS9Nkcw_coYr_4puEUGFg
-    short-id: 3c6afdc4124d0560
-  servername: lv.aiage.work
-  client-fingerprint: firefox
+    public-key: GBdkyDLfr0LIZo_94Xv8ycAKOmkjArYzwJAEMhuXX2c
+    short-id: 33acba1b
+  servername: www.apple.com
+  client-fingerprint: random
   flow: xtls-rprx-vision
 - name: 🇱🇻 拉脱维亚 (Latvia) 06 - xiaohe
   type: vless
-  server: lv.aiage.work
+  server: 195.123.208.32
   port: 443
-  uuid: 6338c01a-310e-42c3-bf4f-2a20e161054b
+  uuid: 1ebcb694-875c-4be7-b6a2-d53c8208991b
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: ds-U8G06uZvV9qFhAeO16dwS9Nkcw_coYr_4puEUGFg
-    short-id: 3c6afdc4124d0560
-  servername: lv.aiage.work
-  client-fingerprint: random
+    public-key: ICrsmE5hqN7IsDIyHPG2WkDUUFK_VEj9yobLv8zuDwk
+    short-id: 757b9e1ef18e60f0
+  servername: gateway.icloud.com
+  client-fingerprint: chrome
   flow: xtls-rprx-vision
 proxy-groups:
 - name: PROXIES

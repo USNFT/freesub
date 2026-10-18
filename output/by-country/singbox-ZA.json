@@ -6,16 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇿🇦 南非 (South Africa) 01 - xiaohe",
-        "🇿🇦 南非 (South Africa) 02 - xiaohe"
+        "🇿🇦 南非 (South Africa) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇿🇦 南非 (South Africa) 01 - xiaohe",
-        "🇿🇦 南非 (South Africa) 02 - xiaohe"
+        "🇿🇦 南非 (South Africa) 01 - xiaohe"
       ],
       "url": "https://www.google.com/generate_204"
     },
