@@ -1,0 +1,49 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇧🇬 保加利亚 (Bulgaria) 01 - xiaohe
+  type: vless
+  server: 94.26.41.225
+  port: 443
+  uuid: 07104d25-afc5-4b3b-a871-c729c57de047
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: Abp__UEbRjj_fRvYa_u-B-I8XoHVUkGmc1ofMBMqHT4
+  servername: qq.remnahoysry.ru
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+- name: 🇧🇬 保加利亚 (Bulgaria) 02 - xiaohe
+  type: vless
+  server: e1-nl.edgemedia.lol
+  port: 20443
+  uuid: 9ebf4fda-7395-4800-b42f-b2dda649880a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 1MLoHw7RVkGefh7XUyuGg4ndxwv4vDU9en-f9JxpXRQ
+    short-id: d2061bb1
+  servername: ya.ru
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇧🇬 保加利亚 (Bulgaria) 01 - xiaohe
+  - 🇧🇬 保加利亚 (Bulgaria) 02 - xiaohe
+- name: AUTO
+  type: url-test
+  url: https://www.google.com/generate_204
+  interval: 300
+  proxies:
+  - 🇧🇬 保加利亚 (Bulgaria) 01 - xiaohe
+  - 🇧🇬 保加利亚 (Bulgaria) 02 - xiaohe
+rules:
+- MATCH,PROXIES
