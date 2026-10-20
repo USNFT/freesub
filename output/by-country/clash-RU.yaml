@@ -6,17 +6,30 @@ log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
   type: vless
-  server: app-sh-143.wb-deep-ai-analytics.com
+  server: 81.177.215.156
   port: 443
-  uuid: 074690f9-cb30-44f5-84e5-f3ce8fc6cf29
+  uuid: 9ab9291e-fd72-4af9-b227-93419e90ff2e
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: _7SmdKnXeQ-pMOR4bbt6N6JJk5rIiRaFVcOTlhFxhEc
-    short-id: 21dbee1dc3c8ef04
-  servername: assets-sh-143.wb-deep-ai-analytics.com
-  client-fingerprint: randomized
+    public-key: VNinTQ6vwOujTkrJgK_NPV4SpSBU6B7xG2tpM7prITQ
+    short-id: fd5b0def0660cdb1
+  servername: tr-4vps.yourzloy.site
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+- name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
+  type: vless
+  server: rusx2.braidx.tech
+  port: 443
+  uuid: e7a4decb-631e-422b-9749-7e8f54618308
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 9mJq2cP3srX_6K1YfMDp1yndvo5CtgL6TEVQ8tm4fVc
+  servername: www.google.com
+  client-fingerprint: chrome
   flow: xtls-rprx-vision
 proxy-groups:
 - name: PROXIES
@@ -24,11 +37,13 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
+  - 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
+  - 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
 rules:
 - MATCH,PROXIES

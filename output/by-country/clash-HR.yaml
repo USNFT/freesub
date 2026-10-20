@@ -4,31 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇧🇬 保加利亚 (Bulgaria) 01 - xiaohe
+- name: 🇭🇷 HR 01 - xiaohe
   type: vless
-  server: 195.123.226.21
+  server: 5.181.2.168
   port: 443
-  uuid: 6589c320-db68-43cd-a273-b46299bab355
+  uuid: 9ab9291e-fd72-4af9-b227-93419e90ff2e
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: rabtI-ymNXBUvYYRwAw8DiR-1pdP7U0WPIaCBHEkgzo
-    short-id: 77bb0d07bddbc832
-  servername: gateway.icloud.com
-  client-fingerprint: chrome
+    public-key: FSoosmyb1Odcc6yucO4B-0YC0fKytdBbvuwJKn7Wbkg
+    short-id: 86afa150bc3a48f6
+  servername: hr1-4v.zvcorp24.com
+  client-fingerprint: firefox
   flow: xtls-rprx-vision
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇧🇬 保加利亚 (Bulgaria) 01 - xiaohe
+  - 🇭🇷 HR 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇧🇬 保加利亚 (Bulgaria) 01 - xiaohe
+  - 🇭🇷 HR 01 - xiaohe
 rules:
 - MATCH,PROXIES
