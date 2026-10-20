@@ -12,12 +12,19 @@ proxies:
   password: I6o9NnialYLMEjVt28RF4dpjmr9wMvNL
   udp: true
 - name: 🇨🇿 捷克 (Czechia) 02 - xiaohe
-  type: hysteria2
-  server: 153.76.190.31
-  port: 8443
-  password: d65fb384-5029-4edf-bdc7-0f5960600e3d
+  type: vless
+  server: server.slavkiti.monster
+  port: 443
+  uuid: 4d017db2-7655-4276-9557-e2ec25b04ee7
   udp: true
+  tls: true
   skip-cert-verify: true
+  reality-opts:
+    public-key: J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk
+    short-id: ee1716767f9b
+  servername: www.tradingview.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
 proxy-groups:
 - name: PROXIES
   type: select

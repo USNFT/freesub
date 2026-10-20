@@ -6,30 +6,16 @@ log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
   type: vless
-  server: 81.177.215.156
+  server: 50.7.157.237
   port: 443
-  uuid: 9ab9291e-fd72-4af9-b227-93419e90ff2e
+  uuid: 258d8fc5-206c-48fd-88df-169dbbe44d3f
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: VNinTQ6vwOujTkrJgK_NPV4SpSBU6B7xG2tpM7prITQ
-    short-id: fd5b0def0660cdb1
-  servername: tr-4vps.yourzloy.site
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
-  type: vless
-  server: rusx2.braidx.tech
-  port: 443
-  uuid: e7a4decb-631e-422b-9749-7e8f54618308
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 9mJq2cP3srX_6K1YfMDp1yndvo5CtgL6TEVQ8tm4fVc
-  servername: www.google.com
-  client-fingerprint: chrome
+    public-key: ygxQyBcJzlLgpSl3MCRDDiFET4TT-3wxa4GdG1obkCY
+  servername: edge-fr.extazy.net
+  client-fingerprint: safari
   flow: xtls-rprx-vision
 proxy-groups:
 - name: PROXIES
@@ -37,13 +23,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
 rules:
 - MATCH,PROXIES
