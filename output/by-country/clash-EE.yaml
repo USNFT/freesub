@@ -1,0 +1,34 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
+  type: vless
+  server: 138.124.4.224
+  port: 443
+  uuid: 9c794bb7-54fe-4acd-844a-a26209af36c3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 13nLTYkdBEFR-A4CfK2beOx-5LKEsXh1QHPq8Kt52BQ
+    short-id: 7271129440ade8fa
+  servername: login.sakhweb.fyi
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
+- name: AUTO
+  type: url-test
+  url: https://www.google.com/generate_204
+  interval: 300
+  proxies:
+  - 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
+rules:
+- MATCH,PROXIES

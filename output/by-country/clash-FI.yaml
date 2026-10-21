@@ -1,0 +1,34 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇫🇮 芬兰 (Finland) 01 - xiaohe
+  type: vless
+  server: 83.219.97.18
+  port: 443
+  uuid: fe551942-d6e5-4361-ae5c-1f2e9077cd79
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 32XFmS-ifqooBFY89KNP3ZrqgSBOd3vel9GlNinL6yw
+    short-id: '03'
+  servername: fi5.silalink.sbs
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇫🇮 芬兰 (Finland) 01 - xiaohe
+- name: AUTO
+  type: url-test
+  url: https://www.google.com/generate_204
+  interval: 300
+  proxies:
+  - 🇫🇮 芬兰 (Finland) 01 - xiaohe
+rules:
+- MATCH,PROXIES
