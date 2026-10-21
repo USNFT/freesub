@@ -6,58 +6,23 @@ log-level: info
 proxies:
 - name: 🇷🇴 罗马尼亚 (Romania) 01 - xiaohe
   type: vless
-  server: 205.237.110.254
-  port: 443
-  uuid: e75ad2eb-6c1f-45ce-8023-f5f10875df66
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: IG6lxrx_xkGOoBuo3DC8sgQoIFmqVgznIr0qOuNO0w4
-    short-id: cd2d53510b4df2a8
-  servername: zsit.eu-cdn294.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇷🇴 罗马尼亚 (Romania) 02 - xiaohe
-  type: vless
   server: edge10.cyrionflare.com
   port: 2052
   uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇷🇴 罗马尼亚 (Romania) 03 - xiaohe
-  type: vless
-  server: edge10.cyrionflare.com
-  port: 2052
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇷🇴 罗马尼亚 (Romania) 04 - xiaohe
-  type: ss
-  server: 194.68.44.42
-  port: 64546
-  cipher: chacha20-ietf-poly1305
-  password: U83u9OGpvSatIUW7LsWffr
-  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇷🇴 罗马尼亚 (Romania) 01 - xiaohe
-  - 🇷🇴 罗马尼亚 (Romania) 02 - xiaohe
-  - 🇷🇴 罗马尼亚 (Romania) 03 - xiaohe
-  - 🇷🇴 罗马尼亚 (Romania) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇷🇴 罗马尼亚 (Romania) 01 - xiaohe
-  - 🇷🇴 罗马尼亚 (Romania) 02 - xiaohe
-  - 🇷🇴 罗马尼亚 (Romania) 03 - xiaohe
-  - 🇷🇴 罗马尼亚 (Romania) 04 - xiaohe
 rules:
 - MATCH,PROXIES

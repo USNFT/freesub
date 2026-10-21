@@ -45,17 +45,17 @@ proxies:
       Host: 13.140.56.100
 - name: 🇮🇳 印度 (India) 04 - xiaohe
   type: vless
-  server: 194.61.31.126
-  port: 2053
-  uuid: 1d4e18bd-1f26-4915-b35a-7ace4826e76a
+  server: 13.140.56.100
+  port: 14430
+  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
-    short-id: 9980e0609b0d3891
-  servername: www.apple.com
-  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 13.140.56.100
 - name: 🇮🇳 印度 (India) 05 - xiaohe
   type: vless
   server: 194.61.31.126
@@ -84,17 +84,17 @@ proxies:
       Host: 13.140.56.100
 - name: 🇮🇳 印度 (India) 07 - xiaohe
   type: vless
-  server: 165.99.222.161
-  port: 443
-  uuid: 30572b57-f5ab-4eb8-82d4-a24d399b99f6
+  server: 194.61.31.126
+  port: 2053
+  uuid: 1d4e18bd-1f26-4915-b35a-7ace4826e76a
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: SC6AnZ_BlvDruiGFpDRno9b1V3wMmq9gjB-KEHHUlE4
-  servername: in1.vkusnews.com
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
+    public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
+    short-id: 9980e0609b0d3891
+  servername: www.apple.com
+  client-fingerprint: chrome
 - name: 🇮🇳 印度 (India) 08 - xiaohe
   type: vless
   server: 165.99.222.161
@@ -106,7 +106,7 @@ proxies:
   reality-opts:
     public-key: SC6AnZ_BlvDruiGFpDRno9b1V3wMmq9gjB-KEHHUlE4
   servername: in1.vkusnews.com
-  client-fingerprint: firefox
+  client-fingerprint: ios
   flow: xtls-rprx-vision
 - name: 🇮🇳 印度 (India) 09 - xiaohe
   type: vless
@@ -119,35 +119,22 @@ proxies:
   reality-opts:
     public-key: SC6AnZ_BlvDruiGFpDRno9b1V3wMmq9gjB-KEHHUlE4
   servername: in1.vkusnews.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
   flow: xtls-rprx-vision
 - name: 🇮🇳 印度 (India) 10 - xiaohe
   type: vless
-  server: 13.140.56.100
-  port: 14430
-  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 13.140.56.100
-- name: 🇮🇳 印度 (India) 11 - xiaohe
-  type: vless
-  server: 194.61.31.126
-  port: 2053
-  uuid: 1d4e18bd-1f26-4915-b35a-7ace4826e76a
+  server: 165.99.222.161
+  port: 443
+  uuid: 30572b57-f5ab-4eb8-82d4-a24d399b99f6
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
-    short-id: 9980e0609b0d3891
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇮🇳 印度 (India) 12 - xiaohe
+    public-key: SC6AnZ_BlvDruiGFpDRno9b1V3wMmq9gjB-KEHHUlE4
+  servername: in1.vkusnews.com
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+- name: 🇮🇳 印度 (India) 11 - xiaohe
   type: vless
   server: 13.140.56.100
   port: 14430
@@ -160,7 +147,33 @@ proxies:
     path: /vless
     headers:
       Host: 13.140.56.100
+- name: 🇮🇳 印度 (India) 12 - xiaohe
+  type: vless
+  server: 165.99.222.161
+  port: 443
+  uuid: 30572b57-f5ab-4eb8-82d4-a24d399b99f6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: SC6AnZ_BlvDruiGFpDRno9b1V3wMmq9gjB-KEHHUlE4
+  servername: in1.vkusnews.com
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
 - name: 🇮🇳 印度 (India) 13 - xiaohe
+  type: vless
+  server: 165.99.222.161
+  port: 443
+  uuid: 30572b57-f5ab-4eb8-82d4-a24d399b99f6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: SC6AnZ_BlvDruiGFpDRno9b1V3wMmq9gjB-KEHHUlE4
+  servername: in1.vkusnews.com
+  client-fingerprint: safari
+  flow: xtls-rprx-vision
+- name: 🇮🇳 印度 (India) 14 - xiaohe
   type: vmess
   server: 152.67.8.205
   port: 80
@@ -193,6 +206,7 @@ proxy-groups:
   - 🇮🇳 印度 (India) 11 - xiaohe
   - 🇮🇳 印度 (India) 12 - xiaohe
   - 🇮🇳 印度 (India) 13 - xiaohe
+  - 🇮🇳 印度 (India) 14 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -211,5 +225,6 @@ proxy-groups:
   - 🇮🇳 印度 (India) 11 - xiaohe
   - 🇮🇳 印度 (India) 12 - xiaohe
   - 🇮🇳 印度 (India) 13 - xiaohe
+  - 🇮🇳 印度 (India) 14 - xiaohe
 rules:
 - MATCH,PROXIES
