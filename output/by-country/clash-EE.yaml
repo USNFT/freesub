@@ -4,30 +4,29 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
+- name: 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
   type: vless
-  server: 50.7.157.237
+  server: 132.243.65.82
   port: 443
-  uuid: 258d8fc5-206c-48fd-88df-169dbbe44d3f
+  uuid: 4f35274e-006f-43e7-87be-c8cba4882b0c
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: ygxQyBcJzlLgpSl3MCRDDiFET4TT-3wxa4GdG1obkCY
-  servername: edge-fr.extazy.net
-  client-fingerprint: safari
-  flow: xtls-rprx-vision
+    public-key: UZKrOusu0M0i3gnqDanh2yXXkTibNEjj41Hsvah2XlI
+  servername: player.vimeo.com
+  client-fingerprint: ''
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
+  - 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
+  - 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
 rules:
 - MATCH,PROXIES

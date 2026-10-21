@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇧🇷 巴西 (Brazil) 01 - xiaohe
   type: hysteria2
-  server: uk-d9ca48498a.shamanapp.online
+  server: 191.215.46.37
   port: 443
   password: b3a11068-1a7e-4643-85de-7c82cce46943
   udp: true
