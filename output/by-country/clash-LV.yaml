@@ -4,18 +4,18 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇲🇾 马来西亚 (Malaysia) 01 - xiaohe
+- name: 🇱🇻 拉脱维亚 (Latvia) 01 - xiaohe
   type: vless
-  server: my2.frnhk.xyz
+  server: 138.124.180.137
   port: 443
-  uuid: 6006c9a2-c0a2-4cda-80f2-405b0d790fc8
+  uuid: 5234b2b7-5e07-422c-8159-d62a676c00c6
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: SPtkbd9O6y-rdGoR2CLzW1IFr6WMlqt2lM9wU-VURig
-    short-id: 6b7a8c9d
-  servername: www.waseda.jp
+    public-key: GBdkyDLfr0LIZo_94Xv8ycAKOmkjArYzwJAEMhuXX2c
+    short-id: 33acba1b
+  servername: www.apple.com
   client-fingerprint: chrome
   flow: xtls-rprx-vision
 proxy-groups:
@@ -23,12 +23,12 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇲🇾 马来西亚 (Malaysia) 01 - xiaohe
+  - 🇱🇻 拉脱维亚 (Latvia) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇲🇾 马来西亚 (Malaysia) 01 - xiaohe
+  - 🇱🇻 拉脱维亚 (Latvia) 01 - xiaohe
 rules:
 - MATCH,PROXIES
