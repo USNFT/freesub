@@ -4,30 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇫🇮 芬兰 (Finland) 01 (家宽) - xiaohe
+- name: 🇲🇾 马来西亚 (Malaysia) 01 - xiaohe
   type: vless
-  server: 212.87.222.10
-  port: 8443
-  uuid: 8afeb33c-b686-43e9-a629-0d98f991ec28
+  server: my2.frnhk.xyz
+  port: 443
+  uuid: 6006c9a2-c0a2-4cda-80f2-405b0d790fc8
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: f25sygANXTpzdc9YPCwkggwSmm3piA3BluSeHdfG-hg
-  servername: www.nokia.com
-  client-fingerprint: safari
+    public-key: SPtkbd9O6y-rdGoR2CLzW1IFr6WMlqt2lM9wU-VURig
+    short-id: 6b7a8c9d
+  servername: www.waseda.jp
+  client-fingerprint: chrome
   flow: xtls-rprx-vision
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇫🇮 芬兰 (Finland) 01 (家宽) - xiaohe
+  - 🇲🇾 马来西亚 (Malaysia) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇫🇮 芬兰 (Finland) 01 (家宽) - xiaohe
+  - 🇲🇾 马来西亚 (Malaysia) 01 - xiaohe
 rules:
 - MATCH,PROXIES

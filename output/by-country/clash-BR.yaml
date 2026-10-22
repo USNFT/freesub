@@ -6,13 +6,6 @@ log-level: info
 proxies:
 - name: 🇧🇷 巴西 (Brazil) 01 - xiaohe
   type: hysteria2
-  server: 191.215.46.37
-  port: 443
-  password: b3a11068-1a7e-4643-85de-7c82cce46943
-  udp: true
-  skip-cert-verify: true
-- name: 🇧🇷 巴西 (Brazil) 02 - xiaohe
-  type: hysteria2
   server: uk-d9ca48498a.shamanapp.online
   port: 443
   password: b3a11068-1a7e-4643-85de-7c82cce46943
@@ -24,13 +17,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇧🇷 巴西 (Brazil) 01 - xiaohe
-  - 🇧🇷 巴西 (Brazil) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇧🇷 巴西 (Brazil) 01 - xiaohe
-  - 🇧🇷 巴西 (Brazil) 02 - xiaohe
 rules:
 - MATCH,PROXIES
