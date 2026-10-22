@@ -19,20 +19,6 @@ proxies:
   client-fingerprint: firefox
   flow: xtls-rprx-vision
 - name: 🇷🇴 罗马尼亚 (Romania) 02 - xiaohe
-  type: vless
-  server: 205.237.110.254
-  port: 443
-  uuid: e75ad2eb-6c1f-45ce-8023-f5f10875df66
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: IG6lxrx_xkGOoBuo3DC8sgQoIFmqVgznIr0qOuNO0w4
-    short-id: cd2d53510b4df2a8
-  servername: zsit.eu-cdn294.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇷🇴 罗马尼亚 (Romania) 03 - xiaohe
   type: ss
   server: 194.68.44.42
   port: 64546
@@ -46,7 +32,6 @@ proxy-groups:
   - AUTO
   - 🇷🇴 罗马尼亚 (Romania) 01 - xiaohe
   - 🇷🇴 罗马尼亚 (Romania) 02 - xiaohe
-  - 🇷🇴 罗马尼亚 (Romania) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -54,6 +39,5 @@ proxy-groups:
   proxies:
   - 🇷🇴 罗马尼亚 (Romania) 01 - xiaohe
   - 🇷🇴 罗马尼亚 (Romania) 02 - xiaohe
-  - 🇷🇴 罗马尼亚 (Romania) 03 - xiaohe
 rules:
 - MATCH,PROXIES
