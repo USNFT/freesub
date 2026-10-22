@@ -13,6 +13,20 @@ proxies:
   udp: true
 - name: 🇨🇿 捷克 (Czechia) 02 - xiaohe
   type: vless
+  server: 89.125.237.24
+  port: 443
+  uuid: 9c794bb7-54fe-4acd-844a-a26209af36c3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 13nLTYkdBEFR-A4CfK2beOx-5LKEsXh1QHPq8Kt52BQ
+    short-id: 7271129440ade8fa
+  servername: web.stride.surf
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+- name: 🇨🇿 捷克 (Czechia) 03 - xiaohe
+  type: vless
   server: server.slavkiti.monster
   port: 443
   uuid: 4d017db2-7655-4276-9557-e2ec25b04ee7
@@ -32,6 +46,7 @@ proxy-groups:
   - AUTO
   - 🇨🇿 捷克 (Czechia) 01 - xiaohe
   - 🇨🇿 捷克 (Czechia) 02 - xiaohe
+  - 🇨🇿 捷克 (Czechia) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -39,5 +54,6 @@ proxy-groups:
   proxies:
   - 🇨🇿 捷克 (Czechia) 01 - xiaohe
   - 🇨🇿 捷克 (Czechia) 02 - xiaohe
+  - 🇨🇿 捷克 (Czechia) 03 - xiaohe
 rules:
 - MATCH,PROXIES

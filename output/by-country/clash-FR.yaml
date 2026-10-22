@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇫🇷 法国 (France) 01 - xiaohe
   type: vless
-  server: 51.44.38.228
+  server: 13.37.186.150
   port: 22222
   uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
   udp: true
@@ -14,7 +14,7 @@ proxies:
   skip-cert-verify: true
 - name: 🇫🇷 法国 (France) 02 - xiaohe
   type: vless
-  server: 51.44.38.228
+  server: 13.37.186.150
   port: 22224
   uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
   udp: true
@@ -22,21 +22,15 @@ proxies:
   skip-cert-verify: true
 - name: 🇫🇷 法国 (France) 03 - xiaohe
   type: vless
-  server: 62.210.91.2
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  server: 13.37.186.150
+  port: 22223
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  servername: fuck.rkn
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
 - name: 🇫🇷 法国 (France) 04 - xiaohe
   type: vless
-  server: 62.210.91.10
+  server: 62.210.91.2
   port: 23576
   uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
   udp: true
@@ -50,7 +44,7 @@ proxies:
   flow: xtls-rprx-vision
 - name: 🇫🇷 法国 (France) 05 - xiaohe
   type: vless
-  server: 62.210.91.10
+  server: 62.210.91.2
   port: 23576
   uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
   udp: true
@@ -63,19 +57,33 @@ proxies:
   client-fingerprint: chrome
   flow: xtls-rprx-vision
 - name: 🇫🇷 法国 (France) 06 - xiaohe
-  type: hysteria2
-  server: 51.44.167.227
+  type: vless
+  server: 137.74.16.237
   port: 443
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  uuid: aaec4e42-a095-44b6-a239-f16d234a0798
   udp: true
+  tls: true
   skip-cert-verify: true
+  reality-opts:
+    public-key: 7LSzvilTVKGMtBDuKGeMrLtlhY7tQf5YcG566dEgO0I
+    short-id: b390e0a721d242b0
+  servername: www.icloud.com
+  client-fingerprint: random
+  flow: xtls-rprx-vision
 - name: 🇫🇷 法国 (France) 07 - xiaohe
-  type: hysteria2
-  server: 13.36.234.11
+  type: vless
+  server: 137.74.16.237
   port: 443
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  uuid: aaec4e42-a095-44b6-a239-f16d234a0798
   udp: true
+  tls: true
   skip-cert-verify: true
+  reality-opts:
+    public-key: 7LSzvilTVKGMtBDuKGeMrLtlhY7tQf5YcG566dEgO0I
+    short-id: b390e0a721d242b0
+  servername: www.icloud.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
 - name: 🇫🇷 法国 (France) 08 - xiaohe
   type: vless
   server: 62.210.91.10
@@ -92,7 +100,21 @@ proxies:
   flow: xtls-rprx-vision
 - name: 🇫🇷 法国 (France) 09 - xiaohe
   type: vless
-  server: 62.210.91.2
+  server: 62.210.91.10
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  servername: fuck.rkn
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇫🇷 法国 (France) 10 - xiaohe
+  type: vless
+  server: 62.210.91.10
   port: 23576
   uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
   udp: true
@@ -104,19 +126,6 @@ proxies:
   servername: fuck.rkn
   client-fingerprint: ''
   flow: xtls-rprx-vision
-- name: 🇫🇷 法国 (France) 10 - xiaohe
-  type: vless
-  server: 62.210.91.2
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-  servername: fuck.rkn
-  client-fingerprint: random
-  flow: xtls-rprx-vision
 - name: 🇫🇷 法国 (France) 11 - xiaohe
   type: hysteria2
   server: 62.210.124.146
@@ -125,19 +134,12 @@ proxies:
   udp: true
   skip-cert-verify: true
 - name: 🇫🇷 法国 (France) 12 - xiaohe
-  type: vless
-  server: 137.74.16.237
+  type: hysteria2
+  server: 13.36.234.11
   port: 443
-  uuid: aaec4e42-a095-44b6-a239-f16d234a0798
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   udp: true
-  tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: 7LSzvilTVKGMtBDuKGeMrLtlhY7tQf5YcG566dEgO0I
-    short-id: b390e0a721d242b0
-  servername: www.icloud.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
 - name: 🇫🇷 法国 (France) 13 - xiaohe
   type: hysteria2
   server: 62.210.124.146
@@ -175,14 +177,6 @@ proxies:
   client-fingerprint: ''
   flow: xtls-rprx-vision
 - name: 🇫🇷 法国 (France) 16 - xiaohe
-  type: vless
-  server: 51.44.38.228
-  port: 22224
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇫🇷 法国 (France) 17 - xiaohe
   type: vmess
   server: 145.239.55.210
   port: 80
@@ -197,7 +191,7 @@ proxies:
     path: /
     headers:
       Host: google.whatsapp.snapp.torob.basalam.fortresshost.ir.
-- name: 🇫🇷 法国 (France) 18 - xiaohe
+- name: 🇫🇷 法国 (France) 17 - xiaohe
   type: vmess
   server: 54.37.131.126
   port: 80
@@ -212,6 +206,14 @@ proxies:
     path: /
     headers:
       Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
+- name: 🇫🇷 法国 (France) 18 - xiaohe
+  type: vless
+  server: 35.180.246.59
+  port: 22223
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  udp: true
+  tls: false
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
