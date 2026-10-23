@@ -5,6 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇴 罗马尼亚 (Romania) 01 - xiaohe
+  type: ss
+  server: bogging-eyeteeth-fly.freesocks.work
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: QFWzCw2uX9B9i6qAYeFBIE
+  udp: true
+- name: 🇷🇴 罗马尼亚 (Romania) 02 - xiaohe
   type: vless
   server: 205.237.110.254
   port: 443
@@ -18,13 +25,6 @@ proxies:
   servername: zsit.eu-cdn294.com
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: 🇷🇴 罗马尼亚 (Romania) 02 - xiaohe
-  type: ss
-  server: bogging-eyeteeth-fly.freesocks.work
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: QFWzCw2uX9B9i6qAYeFBIE
-  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
