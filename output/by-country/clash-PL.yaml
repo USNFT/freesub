@@ -6,17 +6,17 @@ log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - xiaohe
   type: vless
-  server: pl3.himoy.space
+  server: 217.19.122.194
   port: 443
-  uuid: 5131b5e9-2c3c-44a0-8f18-0641f3f21cac
+  uuid: 47ccdaf3-31b0-4945-8a3d-0698063b3127
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: Smu2KKOBtbIEX1mL4t6_-aRTM-bAnjxTuMtWI_hwdBo
-    short-id: 9f986e5d07683c45
-  servername: pl3.himoy.space
-  client-fingerprint: firefox
+    public-key: GyYuIjccJJRQZM72MGdBQEwGwGR9e0UMNlJxw0sQR2M
+    short-id: 38560e0003d69843
+  servername: bm1.hat.onl
+  client-fingerprint: qq
   flow: xtls-rprx-vision
 proxy-groups:
 - name: PROXIES

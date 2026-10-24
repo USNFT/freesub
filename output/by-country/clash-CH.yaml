@@ -12,61 +12,6 @@ proxies:
   password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
   udp: true
 - name: 🇨🇭 瑞士 (Switzerland) 02 - xiaohe
-  type: ss
-  server: 132.243.175.144
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
-  udp: true
-- name: 🇨🇭 瑞士 (Switzerland) 03 - xiaohe
-  type: hysteria2
-  server: 140.238.213.114
-  port: 50160
-  password: 84a506ca5aca505696a454d828420b3f
-  udp: true
-  skip-cert-verify: true
-- name: 🇨🇭 瑞士 (Switzerland) 04 - xiaohe
-  type: vless
-  server: 208.69.78.217
-  port: 2053
-  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
-    short-id: ad86e2d52ff40ebd
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇨🇭 瑞士 (Switzerland) 05 - xiaohe
-  type: vless
-  server: lv5.himoy.space
-  port: 443
-  uuid: 5131b5e9-2c3c-44a0-8f18-0641f3f21cac
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: S8fcWoOddbw_d-s7yrgi6Udb69A2XnW2xfJ-Xk6ubko
-    short-id: 5ff4fb909a3dfebf
-  servername: lv5.himoy.space
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇨🇭 瑞士 (Switzerland) 06 - xiaohe
-  type: vless
-  server: lv4.himoy.space
-  port: 443
-  uuid: 5131b5e9-2c3c-44a0-8f18-0641f3f21cac
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: EqhP9_DUChTnqqWCZ1b7i6WXxNtn1K7Yd-6lFVEPlUQ
-    short-id: 65ffcb37dda77fc5
-  servername: lv4.himoy.space
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇨🇭 瑞士 (Switzerland) 07 - xiaohe
   type: vless
   server: lv1.himoy.space
   port: 443
@@ -80,19 +25,6 @@ proxies:
   servername: lv1.himoy.space
   client-fingerprint: firefox
   flow: xtls-rprx-vision
-- name: 🇨🇭 瑞士 (Switzerland) 08 - xiaohe
-  type: vless
-  server: 208.69.78.217
-  port: 2053
-  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
-    short-id: ad86e2d52ff40ebd
-  servername: www.apple.com
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -100,12 +32,6 @@ proxy-groups:
   - AUTO
   - 🇨🇭 瑞士 (Switzerland) 01 - xiaohe
   - 🇨🇭 瑞士 (Switzerland) 02 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 03 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 04 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 05 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 06 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 07 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 08 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -113,11 +39,5 @@ proxy-groups:
   proxies:
   - 🇨🇭 瑞士 (Switzerland) 01 - xiaohe
   - 🇨🇭 瑞士 (Switzerland) 02 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 03 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 04 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 05 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 06 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 07 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 08 - xiaohe
 rules:
 - MATCH,PROXIES
