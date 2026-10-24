@@ -16,35 +16,21 @@ proxies:
     public-key: 8MkHK9vGRtOA97_ag2qUoru4ONKe3W6r7SR1UtIKiWU
     short-id: c1c6c4326b5b
   servername: 8g6zbdoai3lb.cloudydigital.net
-  client-fingerprint: chrome
+  client-fingerprint: ''
   flow: xtls-rprx-vision
 - name: 🇸🇨 塞舌尔 (Seychelles) 02 - xiaohe
   type: vless
-  server: 45.95.98.135
+  server: 45.95.96.198
   port: 443
   uuid: 2f5cfa10-43e5-4912-800d-557308a26a29
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: 8MkHK9vGRtOA97_ag2qUoru4ONKe3W6r7SR1UtIKiWU
-    short-id: c1c6c4326b5b
-  servername: 8g6zbdoai3lb.cloudydigital.net
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇸🇨 塞舌尔 (Seychelles) 03 - xiaohe
-  type: vless
-  server: 45.95.98.135
-  port: 443
-  uuid: 2f5cfa10-43e5-4912-800d-557308a26a29
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 8MkHK9vGRtOA97_ag2qUoru4ONKe3W6r7SR1UtIKiWU
-    short-id: c1c6c4326b5b
-  servername: 8g6zbdoai3lb.cloudydigital.net
-  client-fingerprint: ''
+    public-key: 8RfEuI1RxxW1dqq2nbt6ssKwx7UdmgKW1nKL9OuilGs
+    short-id: 0492eabdb9
+  servername: yw0ein72.cloudydigital.net
+  client-fingerprint: chrome
   flow: xtls-rprx-vision
 proxy-groups:
 - name: PROXIES
@@ -53,7 +39,6 @@ proxy-groups:
   - AUTO
   - 🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe
   - 🇸🇨 塞舌尔 (Seychelles) 02 - xiaohe
-  - 🇸🇨 塞舌尔 (Seychelles) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -61,6 +46,5 @@ proxy-groups:
   proxies:
   - 🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe
   - 🇸🇨 塞舌尔 (Seychelles) 02 - xiaohe
-  - 🇸🇨 塞舌尔 (Seychelles) 03 - xiaohe
 rules:
 - MATCH,PROXIES
