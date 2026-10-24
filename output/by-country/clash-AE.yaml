@@ -6,18 +6,16 @@ log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - xiaohe
   type: vless
-  server: l415ng0o.himoy.space
+  server: nl-central.v8x2b.lol
   port: 443
-  uuid: 5131b5e9-2c3c-44a0-8f18-0641f3f21cac
+  uuid: 846cedee-2a52-0002-a0b9-11850ead6a8b
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: JOoD5ze_pwrMnQoAIRVieQM8SPJjiLJEw1fwx57iYgk
-    short-id: bbd20b213341644c
-  servername: l415ng0o.himoy.space
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
+    public-key: q3UXFUE5yYxNE4ugLUnYdpc9WRtR-sjsDTrKsiqzDHE
+  servername: nl-central.v8x2b.lol
+  client-fingerprint: ios
 proxy-groups:
 - name: PROXIES
   type: select
