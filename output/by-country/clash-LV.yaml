@@ -16,7 +16,7 @@ proxies:
     public-key: GBdkyDLfr0LIZo_94Xv8ycAKOmkjArYzwJAEMhuXX2c
     short-id: 33acba1b
   servername: www.apple.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   flow: xtls-rprx-vision
 - name: 🇱🇻 拉脱维亚 (Latvia) 02 - xiaohe
   type: vless
@@ -30,7 +30,7 @@ proxies:
     public-key: GBdkyDLfr0LIZo_94Xv8ycAKOmkjArYzwJAEMhuXX2c
     short-id: 33acba1b
   servername: www.apple.com
-  client-fingerprint: random
+  client-fingerprint: firefox
   flow: xtls-rprx-vision
 - name: 🇱🇻 拉脱维亚 (Latvia) 03 - xiaohe
   type: vless
@@ -44,7 +44,7 @@ proxies:
     public-key: GBdkyDLfr0LIZo_94Xv8ycAKOmkjArYzwJAEMhuXX2c
     short-id: 33acba1b
   servername: www.apple.com
-  client-fingerprint: random
+  client-fingerprint: chrome
   flow: xtls-rprx-vision
 - name: 🇱🇻 拉脱维亚 (Latvia) 04 - xiaohe
   type: vless
@@ -58,7 +58,7 @@ proxies:
     public-key: GBdkyDLfr0LIZo_94Xv8ycAKOmkjArYzwJAEMhuXX2c
     short-id: 33acba1b
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: random
   flow: xtls-rprx-vision
 proxy-groups:
 - name: PROXIES
