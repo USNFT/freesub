@@ -6,14 +6,14 @@ log-level: info
 proxies:
 - name: 🇹🇼 中国台湾 (Taiwan) 01 - xiaohe
   type: hysteria2
-  server: 103.115.109.49
+  server: 160.187.100.109
   port: 443
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   udp: true
   skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 02 - xiaohe
   type: hysteria2
-  server: 103.115.109.49
+  server: 160.187.100.109
   port: 443
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   udp: true
@@ -34,14 +34,14 @@ proxies:
   skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 05 - xiaohe
   type: hysteria2
-  server: 103.115.109.49
+  server: 160.187.100.109
   port: 443
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   udp: true
   skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 06 - xiaohe
   type: hysteria2
-  server: 103.115.109.49
+  server: 160.187.100.109
   port: 443
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   udp: true
@@ -55,14 +55,14 @@ proxies:
   skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 08 - xiaohe
   type: hysteria2
-  server: 160.187.100.109
+  server: 103.115.109.49
   port: 443
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   udp: true
   skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 09 - xiaohe
   type: hysteria2
-  server: 160.187.100.109
+  server: 103.115.109.49
   port: 443
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   udp: true
@@ -76,21 +76,21 @@ proxies:
   skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 11 - xiaohe
   type: hysteria2
-  server: vpn-tw-002.fastervpn.world
+  server: 103.115.109.49
   port: 443
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   udp: true
   skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 12 - xiaohe
   type: hysteria2
-  server: 160.187.100.109
+  server: 103.115.109.49
   port: 443
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   udp: true
   skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 13 - xiaohe
   type: hysteria2
-  server: 103.115.109.49
+  server: vpn-tw-002.fastervpn.world
   port: 443
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   udp: true
@@ -104,7 +104,7 @@ proxies:
   skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 15 - xiaohe
   type: hysteria2
-  server: vpn-tw-002.fastervpn.world
+  server: 103.115.109.49
   port: 443
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   udp: true
@@ -132,14 +132,14 @@ proxies:
   skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 19 - xiaohe
   type: hysteria2
-  server: 103.115.109.49
+  server: 160.187.100.109
   port: 443
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   udp: true
   skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 20 - xiaohe
   type: hysteria2
-  server: 160.187.100.109
+  server: 103.115.109.49
   port: 443
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   udp: true
@@ -153,7 +153,7 @@ proxies:
   skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 22 - xiaohe
   type: hysteria2
-  server: 160.187.100.109
+  server: 103.115.109.49
   port: 443
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   udp: true
@@ -174,21 +174,21 @@ proxies:
   skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 25 - xiaohe
   type: hysteria2
-  server: 103.115.109.49
+  server: vpn-tw-002.fastervpn.world
   port: 443
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   udp: true
   skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 26 - xiaohe
   type: hysteria2
-  server: 160.187.100.109
+  server: 103.115.109.49
   port: 443
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   udp: true
   skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 27 - xiaohe
   type: hysteria2
-  server: 103.115.109.49
+  server: vpn-tw-002.fastervpn.world
   port: 443
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   udp: true
@@ -209,7 +209,7 @@ proxies:
   skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 30 - xiaohe
   type: hysteria2
-  server: 103.115.109.49
+  server: vpn-tw-002.fastervpn.world
   port: 443
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   udp: true
@@ -222,41 +222,6 @@ proxies:
   udp: true
   skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 32 - xiaohe
-  type: hysteria2
-  server: 103.115.109.49
-  port: 443
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  udp: true
-  skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 33 - xiaohe
-  type: hysteria2
-  server: vpn-tw-002.fastervpn.world
-  port: 443
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  udp: true
-  skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 34 - xiaohe
-  type: hysteria2
-  server: vpn-tw-002.fastervpn.world
-  port: 443
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  udp: true
-  skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 35 - xiaohe
-  type: hysteria2
-  server: vpn-tw-002.fastervpn.world
-  port: 443
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  udp: true
-  skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 36 - xiaohe
-  type: hysteria2
-  server: vpn-tw-002.fastervpn.world
-  port: 443
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  udp: true
-  skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 37 - xiaohe
   type: hysteria2
   server: vpn-tw-002.fastervpn.world
   port: 443
@@ -300,11 +265,6 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 30 - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 31 - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 32 - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 33 - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 34 - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 35 - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 36 - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 37 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -342,10 +302,5 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 30 - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 31 - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 32 - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 33 - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 34 - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 35 - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 36 - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 37 - xiaohe
 rules:
 - MATCH,PROXIES

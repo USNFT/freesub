@@ -6,21 +6,35 @@ log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - xiaohe
   type: vless
-  server: 31.59.218.43
+  server: 151.241.138.22
   port: 443
   uuid: 5131b5e9-2c3c-44a0-8f18-0641f3f21cac
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: Pb37t99NiJqm-lsTi4tucPFqRXIsek-5G5dqjIqVfxE
-    short-id: 15c87d0b99c0d132
-  servername: tlokexcm.himoy.space
+    public-key: 1D_oMYRytcccH8J2SiM9o0bjmWlDND9CXWLL8LwDvE8
+    short-id: e2201d4d8b942ccc
+  servername: pl1.himoy.space
   client-fingerprint: firefox
   flow: xtls-rprx-vision
 - name: 🇦🇪 阿联酋 (UAE) 02 - xiaohe
   type: vless
-  server: 151.241.138.22
+  server: pl2.himoy.space
+  port: 443
+  uuid: 5131b5e9-2c3c-44a0-8f18-0641f3f21cac
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: eq1GsjxpRmENTkUfjk_QPWUUqGNHwESqoJ7yFs-WpF0
+    short-id: 7f9831bb156cc9e2
+  servername: pl2.himoy.space
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+- name: 🇦🇪 阿联酋 (UAE) 03 - xiaohe
+  type: vless
+  server: pl1.himoy.space
   port: 443
   uuid: 5131b5e9-2c3c-44a0-8f18-0641f3f21cac
   udp: true
@@ -39,6 +53,7 @@ proxy-groups:
   - AUTO
   - 🇦🇪 阿联酋 (UAE) 01 - xiaohe
   - 🇦🇪 阿联酋 (UAE) 02 - xiaohe
+  - 🇦🇪 阿联酋 (UAE) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -46,5 +61,6 @@ proxy-groups:
   proxies:
   - 🇦🇪 阿联酋 (UAE) 01 - xiaohe
   - 🇦🇪 阿联酋 (UAE) 02 - xiaohe
+  - 🇦🇪 阿联酋 (UAE) 03 - xiaohe
 rules:
 - MATCH,PROXIES
