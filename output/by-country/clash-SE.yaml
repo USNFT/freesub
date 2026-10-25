@@ -12,27 +12,6 @@ proxies:
   udp: true
   skip-cert-verify: true
 - name: 🇸🇪 瑞典 (Sweden) 02 - xiaohe
-  type: vless
-  server: 91.242.228.29
-  port: 443
-  uuid: 605dea9b-b485-45c9-af9b-cc2b0195023c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: Su5ULcRQKF-0DJIHZeTNEnXHBpyQtizmUrcNIYhZI0E
-    short-id: afee962d
-  servername: se1.mycloud1.org
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇸🇪 瑞典 (Sweden) 03 - xiaohe
-  type: hysteria2
-  server: promo.betust.net
-  port: 443
-  password: d4ca9415f0eac7897472e1e5b86d2e96
-  udp: true
-  skip-cert-verify: true
-- name: 🇸🇪 瑞典 (Sweden) 04 - xiaohe
   type: hysteria2
   server: promo.betust.net
   port: 443
@@ -46,8 +25,6 @@ proxy-groups:
   - AUTO
   - 🇸🇪 瑞典 (Sweden) 01 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 02 - xiaohe
-  - 🇸🇪 瑞典 (Sweden) 03 - xiaohe
-  - 🇸🇪 瑞典 (Sweden) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -55,7 +32,5 @@ proxy-groups:
   proxies:
   - 🇸🇪 瑞典 (Sweden) 01 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 02 - xiaohe
-  - 🇸🇪 瑞典 (Sweden) 03 - xiaohe
-  - 🇸🇪 瑞典 (Sweden) 04 - xiaohe
 rules:
 - MATCH,PROXIES
