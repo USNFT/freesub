@@ -6,16 +6,44 @@ log-level: info
 proxies:
 - name: 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
   type: vless
-  server: 13.143.239.119
+  server: ee1.mycloud1.org
   port: 443
-  uuid: f36c82e2-e33e-4054-960a-34619d9fdd5b
+  uuid: 605dea9b-b485-45c9-af9b-cc2b0195023c
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: kYbLeoF13TKNPtlYwRsAqFQR3l7v6NMe6ydARMIfEC0
-    short-id: 7230e3b3f137543c
-  servername: www.transip.nl
+    public-key: Su5ULcRQKF-0DJIHZeTNEnXHBpyQtizmUrcNIYhZI0E
+    short-id: afee962d
+  servername: ee1.mycloud1.org
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+- name: 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
+  type: vless
+  server: ee1.mycloud1.org
+  port: 443
+  uuid: 605dea9b-b485-45c9-af9b-cc2b0195023c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: Su5ULcRQKF-0DJIHZeTNEnXHBpyQtizmUrcNIYhZI0E
+    short-id: afee962d
+  servername: ee1.mycloud1.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
+  type: vless
+  server: 194.26.141.223
+  port: 443
+  uuid: 605dea9b-b485-45c9-af9b-cc2b0195023c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: Su5ULcRQKF-0DJIHZeTNEnXHBpyQtizmUrcNIYhZI0E
+    short-id: afee962d
+  servername: ee1.mycloud1.org
   client-fingerprint: firefox
   flow: xtls-rprx-vision
 proxy-groups:
@@ -24,11 +52,15 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
+  - 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
+  - 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
+  - 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
+  - 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
 rules:
 - MATCH,PROXIES
