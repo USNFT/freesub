@@ -15,33 +15,33 @@ proxies:
   reality-opts:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
   servername: ozon.ru
-  client-fingerprint: firefox
+  client-fingerprint: ''
   flow: xtls-rprx-vision
 - name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
   type: vless
-  server: 147.45.47.89
+  server: 147.45.47.83
   port: 443
-  uuid: fd0a5c32-afc0-4d57-b95a-ca6ec8f93e87
+  uuid: 8a1f8853-9a71-4ef2-a64c-4f0a94c2e14b
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
   servername: ozon.ru
-  client-fingerprint: ''
+  client-fingerprint: chrome
   flow: xtls-rprx-vision
 - name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
   type: vless
-  server: 45.128.78.176
-  port: 443
-  uuid: 680e92ac-1688-49e0-af96-7327fbc30ce8
+  server: 45.9.118.177
+  port: 8443
+  uuid: 88c4ce99-31f1-4329-912d-2a3564b3d58b
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  servername: ozon.ru
-  client-fingerprint: ''
+  servername: apple.com
+  client-fingerprint: firefox
   flow: xtls-rprx-vision
 - name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
   type: vless
@@ -58,29 +58,29 @@ proxies:
   flow: xtls-rprx-vision
 - name: 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
   type: vless
-  server: 113.30.154.207
-  port: 8443
-  uuid: ca926603-c678-4639-b726-a5b82d7e110c
+  server: 45.128.78.176
+  port: 443
+  uuid: 680e92ac-1688-49e0-af96-7327fbc30ce8
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  servername: apple.com
-  client-fingerprint: ios
+  servername: ozon.ru
+  client-fingerprint: ''
   flow: xtls-rprx-vision
 - name: 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
   type: vless
-  server: 45.9.118.177
-  port: 8443
-  uuid: 88c4ce99-31f1-4329-912d-2a3564b3d58b
+  server: 193.160.141.27
+  port: 443
+  uuid: fd0a5c32-afc0-4d57-b95a-ca6ec8f93e87
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  servername: apple.com
-  client-fingerprint: firefox
+  servername: abuse.ozon.ru
+  client-fingerprint: chrome
   flow: xtls-rprx-vision
 - name: 🇷🇺 俄罗斯 (Russia) 07 - xiaohe
   type: ss
@@ -90,27 +90,20 @@ proxies:
   password: NTiHBg64fsY8u8DbGrtypD9gPGSL386p
   udp: true
 - name: 🇷🇺 俄罗斯 (Russia) 08 - xiaohe
-  type: ss
-  server: 46.17.43.227
-  port: 18443
-  cipher: aes-256-gcm
-  password: NTiHBg64fsY8u8DbGrtypD9gPGSL386p
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 09 - xiaohe
   type: hysteria2
   server: 103.88.243.142
   port: 11592
   password: 41edb44c8e
   udp: true
   skip-cert-verify: true
-- name: 🇷🇺 俄罗斯 (Russia) 10 - xiaohe
+- name: 🇷🇺 俄罗斯 (Russia) 09 - xiaohe
   type: hysteria2
   server: srv-17e124.21freedom.net
   port: 11592
   password: 41edb44c8e
   udp: true
   skip-cert-verify: true
-- name: 🇷🇺 俄罗斯 (Russia) 11 - xiaohe
+- name: 🇷🇺 俄罗斯 (Russia) 10 - xiaohe
   type: vless
   server: 78.159.250.214
   port: 443
@@ -122,19 +115,6 @@ proxies:
     public-key: drY21DHNOr6ezJLA2B10mzTExeJ9-gVBfTBNLwVBtWI
     short-id: '00000000'
   servername: qq.utiltools.site
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇷🇺 俄罗斯 (Russia) 12 - xiaohe
-  type: vless
-  server: 147.45.47.83
-  port: 443
-  uuid: 8a1f8853-9a71-4ef2-a64c-4f0a94c2e14b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  servername: ozon.ru
   client-fingerprint: chrome
   flow: xtls-rprx-vision
 proxy-groups:
@@ -152,8 +132,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 08 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 09 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 10 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 11 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 12 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -169,7 +147,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 08 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 09 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 10 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 11 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 12 - xiaohe
 rules:
 - MATCH,PROXIES
