@@ -5,17 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
-  type: vless
-  server: 132.243.65.82
-  port: 443
-  uuid: 4f35274e-006f-43e7-87be-c8cba4882b0c
+  type: hysteria2
+  server: 13.143.239.84
+  port: 4443
+  password: 146d567c-6335-4e63-a8aa-7ec068642440
   udp: true
-  tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: UZKrOusu0M0i3gnqDanh2yXXkTibNEjj41Hsvah2XlI
-  servername: player.vimeo.com
-  client-fingerprint: ''
 proxy-groups:
 - name: PROXIES
   type: select

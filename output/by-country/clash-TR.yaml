@@ -15,20 +15,20 @@ proxies:
   reality-opts:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
   servername: apple.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   flow: xtls-rprx-vision
 - name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
   type: vless
-  server: 193.223.104.106
+  server: 193.160.141.81
   port: 8443
-  uuid: d68be168-fda7-4e8c-8638-33a82d2202ca
+  uuid: ee82f319-ab92-425d-8e04-28a29f33f670
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
   servername: apple.com
-  client-fingerprint: firefox
+  client-fingerprint: ''
   flow: xtls-rprx-vision
 - name: 🇹🇷 土耳其 (Turkey) 03 - xiaohe
   type: ss
@@ -39,7 +39,7 @@ proxies:
   udp: true
 - name: 🇹🇷 土耳其 (Turkey) 04 - xiaohe
   type: vless
-  server: 78.135.73.168
+  server: tr2.tv-quoralyx.top
   port: 443
   uuid: 4b1be712-774c-4b65-8491-a3339e124a70
   udp: true
@@ -49,11 +49,11 @@ proxies:
     public-key: w0yEuw7sPMCEwk9_vDVoqjBhJsGoPvR7TsxIZVJy3iw
     short-id: f4b2a12c
   servername: tr2.tv-quoralyx.top
-  client-fingerprint: chrome
+  client-fingerprint: firefox
   flow: xtls-rprx-vision
 - name: 🇹🇷 土耳其 (Turkey) 05 - xiaohe
   type: vless
-  server: tr2.tv-quoralyx.top
+  server: 78.135.73.168
   port: 443
   uuid: 4b1be712-774c-4b65-8491-a3339e124a70
   udp: true
@@ -67,6 +67,20 @@ proxies:
   flow: xtls-rprx-vision
 - name: 🇹🇷 土耳其 (Turkey) 06 - xiaohe
   type: vless
+  server: 78.135.73.47
+  port: 443
+  uuid: 25e16692-d097-4e69-9e2d-8415609c1968
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: sZAJkAu23wp1WKY-qeaeiwR38izP5OyfhumoE9xhbB8
+    short-id: f46cd3ea3d1eb72d
+  servername: www.datadoghq.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇹🇷 土耳其 (Turkey) 07 - xiaohe
+  type: vless
   server: 78.135.73.168
   port: 443
   uuid: 4b1be712-774c-4b65-8491-a3339e124a70
@@ -79,7 +93,35 @@ proxies:
   servername: tr2.tv-quoralyx.top
   client-fingerprint: firefox
   flow: xtls-rprx-vision
-- name: 🇹🇷 土耳其 (Turkey) 07 - xiaohe
+- name: 🇹🇷 土耳其 (Turkey) 08 - xiaohe
+  type: vless
+  server: 78.135.73.47
+  port: 443
+  uuid: 25e16692-d097-4e69-9e2d-8415609c1968
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: sZAJkAu23wp1WKY-qeaeiwR38izP5OyfhumoE9xhbB8
+    short-id: f46cd3ea3d1eb72d
+  servername: www.datadoghq.com
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+- name: 🇹🇷 土耳其 (Turkey) 09 - xiaohe
+  type: vless
+  server: tr2.tv-quoralyx.top
+  port: 443
+  uuid: 4b1be712-774c-4b65-8491-a3339e124a70
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: w0yEuw7sPMCEwk9_vDVoqjBhJsGoPvR7TsxIZVJy3iw
+    short-id: f4b2a12c
+  servername: tr2.tv-quoralyx.top
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇹🇷 土耳其 (Turkey) 10 - xiaohe
   type: vless
   server: tr2.tv-quoralyx.top
   port: 443
@@ -93,7 +135,107 @@ proxies:
   servername: tr2.tv-quoralyx.top
   client-fingerprint: firefox
   flow: xtls-rprx-vision
-- name: 🇹🇷 土耳其 (Turkey) 08 - xiaohe
+- name: 🇹🇷 土耳其 (Turkey) 11 - xiaohe
+  type: vless
+  server: 78.135.73.168
+  port: 443
+  uuid: 4b1be712-774c-4b65-8491-a3339e124a70
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: w0yEuw7sPMCEwk9_vDVoqjBhJsGoPvR7TsxIZVJy3iw
+    short-id: f4b2a12c
+  servername: tr2.tv-quoralyx.top
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇹🇷 土耳其 (Turkey) 12 - xiaohe
+  type: vless
+  server: 151.241.226.201
+  port: 2053
+  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
+    short-id: 9e419c0759b54d6f
+  servername: www.apple.com
+  client-fingerprint: firefox
+- name: 🇹🇷 土耳其 (Turkey) 13 - xiaohe
+  type: vless
+  server: 151.241.226.201
+  port: 2053
+  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
+    short-id: 9e419c0759b54d6f
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇹🇷 土耳其 (Turkey) 14 - xiaohe
+  type: vless
+  server: 151.241.226.201
+  port: 2053
+  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
+    short-id: 9e419c0759b54d6f
+  servername: www.apple.com
+  client-fingerprint: random
+- name: 🇹🇷 土耳其 (Turkey) 15 - xiaohe
+  type: vless
+  server: 151.241.226.201
+  port: 2053
+  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
+    short-id: 9e419c0759b54d6f
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇹🇷 土耳其 (Turkey) 16 - xiaohe
+  type: vless
+  server: tr2.tv-quoralyx.top
+  port: 443
+  uuid: 4b1be712-774c-4b65-8491-a3339e124a70
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: w0yEuw7sPMCEwk9_vDVoqjBhJsGoPvR7TsxIZVJy3iw
+    short-id: f4b2a12c
+  servername: tr2.tv-quoralyx.top
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+- name: 🇹🇷 土耳其 (Turkey) 17 - xiaohe
+  type: vless
+  server: 151.241.226.201
+  port: 2053
+  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
+    short-id: 9e419c0759b54d6f
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇹🇷 土耳其 (Turkey) 18 - xiaohe
+  type: ss
+  server: 87.236.166.217
+  port: 56134
+  cipher: chacha20-ietf-poly1305
+  password: uvKNudV-N8AUCrykPiyznA
+  udp: true
+- name: 🇹🇷 土耳其 (Turkey) 19 - xiaohe
   type: vless
   server: tr2.tv-quoralyx.top
   port: 443
@@ -120,6 +262,17 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 06 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 07 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 08 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 09 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 10 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 11 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 12 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 13 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 14 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 15 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 16 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 17 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 18 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 19 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -133,5 +286,16 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 06 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 07 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 08 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 09 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 10 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 11 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 12 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 13 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 14 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 15 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 16 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 17 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 18 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 19 - xiaohe
 rules:
 - MATCH,PROXIES

@@ -17,47 +17,17 @@ proxies:
     short-id: d758a643034ad90e
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇱🇺 卢森堡 (Luxembourg) 02 - xiaohe
-  type: vless
-  server: 107.189.7.176
-  port: 32752
-  uuid: 4970c1cd-13e1-498a-920a-61d07be2fa65
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: pfFcQxKv4EPhCDUoZMCmTjj4FK7HHQg_me-In3bOejA
-    short-id: d758a643034ad90e
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇱🇺 卢森堡 (Luxembourg) 03 - xiaohe
-  type: vless
-  server: 107.189.7.176
-  port: 32752
-  uuid: 4970c1cd-13e1-498a-920a-61d07be2fa65
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: pfFcQxKv4EPhCDUoZMCmTjj4FK7HHQg_me-In3bOejA
-    short-id: d758a643034ad90e
-  servername: www.apple.com
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇱🇺 卢森堡 (Luxembourg) 01 - xiaohe
-  - 🇱🇺 卢森堡 (Luxembourg) 02 - xiaohe
-  - 🇱🇺 卢森堡 (Luxembourg) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇱🇺 卢森堡 (Luxembourg) 01 - xiaohe
-  - 🇱🇺 卢森堡 (Luxembourg) 02 - xiaohe
-  - 🇱🇺 卢森堡 (Luxembourg) 03 - xiaohe
 rules:
 - MATCH,PROXIES

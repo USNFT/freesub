@@ -6,10 +6,10 @@ log-level: info
 proxies:
 - name: 🇮🇹 意大利 (Italy) 01 - xiaohe
   type: ss
-  server: 57.131.48.45
-  port: 8388
+  server: 185.164.175.81
+  port: 19999
   cipher: aes-256-gcm
-  password: itzvpn@321
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
 - name: 🇮🇹 意大利 (Italy) 02 - xiaohe
   type: ss
@@ -26,12 +26,18 @@ proxies:
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
 - name: 🇮🇹 意大利 (Italy) 04 - xiaohe
-  type: ss
-  server: 185.164.175.81
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  type: vless
+  server: 57.131.38.163
+  port: 2053
+  uuid: d4b08cd6-0903-411a-9dac-45dbdf5c9712
   udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: Ej2H5ucT7qKegYcT8wODdlxa-cLHr7F4hDVUHzAhcnc
+    short-id: 5b8a942318178e7b
+  servername: www.apple.com
+  client-fingerprint: random
 - name: 🇮🇹 意大利 (Italy) 05 - xiaohe
   type: vless
   server: 57.131.38.163
@@ -57,7 +63,7 @@ proxies:
     public-key: Ej2H5ucT7qKegYcT8wODdlxa-cLHr7F4hDVUHzAhcnc
     short-id: 5b8a942318178e7b
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇮🇹 意大利 (Italy) 07 - xiaohe
   type: vless
   server: 57.131.38.163
@@ -70,7 +76,7 @@ proxies:
     public-key: Ej2H5ucT7qKegYcT8wODdlxa-cLHr7F4hDVUHzAhcnc
     short-id: 5b8a942318178e7b
   servername: www.apple.com
-  client-fingerprint: random
+  client-fingerprint: firefox
 - name: 🇮🇹 意大利 (Italy) 08 - xiaohe
   type: vless
   server: 57.131.38.163
@@ -83,20 +89,57 @@ proxies:
     public-key: Ej2H5ucT7qKegYcT8wODdlxa-cLHr7F4hDVUHzAhcnc
     short-id: 5b8a942318178e7b
   servername: www.apple.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇮🇹 意大利 (Italy) 09 - xiaohe
   type: vless
-  server: 57.131.38.163
-  port: 2053
-  uuid: d4b08cd6-0903-411a-9dac-45dbdf5c9712
+  server: 82.118.16.189
+  port: 443
+  uuid: d5e5f5a1-0f23-4c49-af9f-4be445bf9d8e
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: Ej2H5ucT7qKegYcT8wODdlxa-cLHr7F4hDVUHzAhcnc
-    short-id: 5b8a942318178e7b
-  servername: www.apple.com
+    public-key: SjGkzJQ9I6ZZjC3V73atcPMczhMm0oiTrB8mUQXz1HY
+    short-id: 37fbf155c7a9f3ff
+  servername: www.cloudflare.com
   client-fingerprint: firefox
+  flow: xtls-rprx-vision
+- name: 🇮🇹 意大利 (Italy) 10 - xiaohe
+  type: vless
+  server: 82.118.16.187
+  port: 443
+  uuid: dc2259c4-388e-4285-ba18-df619b6672b6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: R5ycsjJ-v024902dMSqTsSdqxUwCFEXMebdBEWFt9VU
+    short-id: cd6065902eea7a02
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇮🇹 意大利 (Italy) 11 - xiaohe
+  type: vless
+  server: 147.45.51.171
+  port: 8443
+  uuid: f5e70ce3-cfb4-4df1-b25c-d19bfae627c0
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: dPa581kev2x9-st7VQ-DTh3NjXlHJ2830YDySuI8n2U
+    short-id: e723d26df67888b9
+  servername: twitch.tv
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+- name: 🇮🇹 意大利 (Italy) 12 - xiaohe
+  type: vless
+  server: supmci.deev-guard.ir
+  port: 44200
+  uuid: a79e1125-bb50-4f11-b1bb-02149f776f58
+  udp: true
+  tls: false
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -111,6 +154,9 @@ proxy-groups:
   - 🇮🇹 意大利 (Italy) 07 - xiaohe
   - 🇮🇹 意大利 (Italy) 08 - xiaohe
   - 🇮🇹 意大利 (Italy) 09 - xiaohe
+  - 🇮🇹 意大利 (Italy) 10 - xiaohe
+  - 🇮🇹 意大利 (Italy) 11 - xiaohe
+  - 🇮🇹 意大利 (Italy) 12 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -125,5 +171,8 @@ proxy-groups:
   - 🇮🇹 意大利 (Italy) 07 - xiaohe
   - 🇮🇹 意大利 (Italy) 08 - xiaohe
   - 🇮🇹 意大利 (Italy) 09 - xiaohe
+  - 🇮🇹 意大利 (Italy) 10 - xiaohe
+  - 🇮🇹 意大利 (Italy) 11 - xiaohe
+  - 🇮🇹 意大利 (Italy) 12 - xiaohe
 rules:
 - MATCH,PROXIES

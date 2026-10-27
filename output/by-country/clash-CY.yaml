@@ -6,25 +6,18 @@ log-level: info
 proxies:
 - name: 🇨🇾 塞浦路斯 (Cyprus) 01 - xiaohe
   type: hysteria2
-  server: 194.76.147.34
+  server: hys-eu.letsconnectpoint.com
   port: 443
   password: 4b1be712-774c-4b65-8491-a3339e124a70
   udp: true
   skip-cert-verify: true
 - name: 🇨🇾 塞浦路斯 (Cyprus) 02 - xiaohe
-  type: vless
-  server: 5.253.28.224
-  port: 40443
-  uuid: af5eac96-e478-488a-bc8c-45269d7e8847
+  type: hysteria2
+  server: hys-eu.letsconnectpoint.com
+  port: 443
+  password: 4b1be712-774c-4b65-8491-a3339e124a70
   udp: true
-  tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: g77ZJbm18JEotapmVRjaXi133MzkbhkU2lxhVeXx8zw
-    short-id: 68a8
-  servername: deepl.com
-  client-fingerprint: random
-  flow: xtls-rprx-vision
 proxy-groups:
 - name: PROXIES
   type: select
