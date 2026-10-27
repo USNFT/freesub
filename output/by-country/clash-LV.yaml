@@ -16,9 +16,65 @@ proxies:
     public-key: GBdkyDLfr0LIZo_94Xv8ycAKOmkjArYzwJAEMhuXX2c
     short-id: 33acba1b
   servername: www.apple.com
-  client-fingerprint: random
+  client-fingerprint: firefox
   flow: xtls-rprx-vision
 - name: 🇱🇻 拉脱维亚 (Latvia) 02 - xiaohe
+  type: vless
+  server: 195.123.213.28
+  port: 443
+  uuid: 02fcc1a4-ee90-4970-8bbb-4ffaa8109d24
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: NMgy1XgCSXExOg6Tg8xG9lCWttMF6sjdpB41lZy6FWo
+    short-id: 5c256336e3b673fa
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇱🇻 拉脱维亚 (Latvia) 03 - xiaohe
+  type: vless
+  server: 138.124.180.137
+  port: 443
+  uuid: 5234b2b7-5e07-422c-8159-d62a676c00c6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: GBdkyDLfr0LIZo_94Xv8ycAKOmkjArYzwJAEMhuXX2c
+    short-id: 33acba1b
+  servername: www.apple.com
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+- name: 🇱🇻 拉脱维亚 (Latvia) 04 - xiaohe
+  type: vless
+  server: 138.124.180.137
+  port: 443
+  uuid: 5234b2b7-5e07-422c-8159-d62a676c00c6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: GBdkyDLfr0LIZo_94Xv8ycAKOmkjArYzwJAEMhuXX2c
+    short-id: 33acba1b
+  servername: www.apple.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇱🇻 拉脱维亚 (Latvia) 05 - xiaohe
+  type: vless
+  server: 138.124.180.137
+  port: 443
+  uuid: 5234b2b7-5e07-422c-8159-d62a676c00c6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: GBdkyDLfr0LIZo_94Xv8ycAKOmkjArYzwJAEMhuXX2c
+    short-id: 33acba1b
+  servername: www.apple.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇱🇻 拉脱维亚 (Latvia) 06 - xiaohe
   type: vless
   server: 138.124.180.137
   port: 443
@@ -32,21 +88,7 @@ proxies:
   servername: www.apple.com
   client-fingerprint: random
   flow: xtls-rprx-vision
-- name: 🇱🇻 拉脱维亚 (Latvia) 03 - xiaohe
-  type: vless
-  server: 45.43.79.92
-  port: 443
-  uuid: 042b12d8-bac4-4b3a-b661-79e333f08e4e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: M4Y9h339sntl5wEpiCa7f4IKhJ_8JLzPnAz2IzKlngM
-    short-id: af4ca5d16438c938
-  servername: vikt659.isgood.host
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇱🇻 拉脱维亚 (Latvia) 04 - xiaohe
+- name: 🇱🇻 拉脱维亚 (Latvia) 07 - xiaohe
   type: vless
   server: 138.124.180.137
   port: 443
@@ -69,6 +111,9 @@ proxy-groups:
   - 🇱🇻 拉脱维亚 (Latvia) 02 - xiaohe
   - 🇱🇻 拉脱维亚 (Latvia) 03 - xiaohe
   - 🇱🇻 拉脱维亚 (Latvia) 04 - xiaohe
+  - 🇱🇻 拉脱维亚 (Latvia) 05 - xiaohe
+  - 🇱🇻 拉脱维亚 (Latvia) 06 - xiaohe
+  - 🇱🇻 拉脱维亚 (Latvia) 07 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -78,5 +123,8 @@ proxy-groups:
   - 🇱🇻 拉脱维亚 (Latvia) 02 - xiaohe
   - 🇱🇻 拉脱维亚 (Latvia) 03 - xiaohe
   - 🇱🇻 拉脱维亚 (Latvia) 04 - xiaohe
+  - 🇱🇻 拉脱维亚 (Latvia) 05 - xiaohe
+  - 🇱🇻 拉脱维亚 (Latvia) 06 - xiaohe
+  - 🇱🇻 拉脱维亚 (Latvia) 07 - xiaohe
 rules:
 - MATCH,PROXIES

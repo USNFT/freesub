@@ -12,12 +12,33 @@ proxies:
   udp: true
   skip-cert-verify: true
 - name: 🇨🇾 塞浦路斯 (Cyprus) 02 - xiaohe
-  type: hysteria2
-  server: hys-eu.letsconnectpoint.com
-  port: 443
-  password: 4b1be712-774c-4b65-8491-a3339e124a70
+  type: vless
+  server: 91.196.163.150
+  port: 8443
+  uuid: e0216964-ffa1-4d39-82c4-0e40879a470d
   udp: true
+  tls: true
   skip-cert-verify: true
+  reality-opts:
+    public-key: XYkuP_Keu-yL7EQ8xZc4RTmcVAfp06Z1onV2ZNrlsHM
+    short-id: c31f187b
+  servername: stable.nullo.pro
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+- name: 🇨🇾 塞浦路斯 (Cyprus) 03 - xiaohe
+  type: vless
+  server: 45.91.53.228
+  port: 443
+  uuid: e0216964-ffa1-4d39-82c4-0e40879a470d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: XYkuP_Keu-yL7EQ8xZc4RTmcVAfp06Z1onV2ZNrlsHM
+    short-id: c31f187b
+  servername: stable.nullo.pro
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
 proxy-groups:
 - name: PROXIES
   type: select
@@ -25,6 +46,7 @@ proxy-groups:
   - AUTO
   - 🇨🇾 塞浦路斯 (Cyprus) 01 - xiaohe
   - 🇨🇾 塞浦路斯 (Cyprus) 02 - xiaohe
+  - 🇨🇾 塞浦路斯 (Cyprus) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -32,5 +54,6 @@ proxy-groups:
   proxies:
   - 🇨🇾 塞浦路斯 (Cyprus) 01 - xiaohe
   - 🇨🇾 塞浦路斯 (Cyprus) 02 - xiaohe
+  - 🇨🇾 塞浦路斯 (Cyprus) 03 - xiaohe
 rules:
 - MATCH,PROXIES
