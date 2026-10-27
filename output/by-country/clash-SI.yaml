@@ -16,11 +16,11 @@ proxies:
     public-key: 8C7evg_SSrJbxMTaUqJoylqB9HSNsmBvmUlgs_c5EiU
     short-id: 88d9dc52ef39c8bd
   servername: node-slo01.rkitman.ru
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   flow: xtls-rprx-vision
 - name: 🇸🇮 SI 02 - xiaohe
   type: vless
-  server: 92.42.201.102
+  server: 92.42.201.107
   port: 443
   uuid: d0c8aa8d-a535-432a-b521-21f0e561f643
   udp: true
@@ -29,11 +29,25 @@ proxies:
   reality-opts:
     public-key: 8C7evg_SSrJbxMTaUqJoylqB9HSNsmBvmUlgs_c5EiU
     short-id: 88d9dc52ef39c8bd
-  servername: node-slo01.rkitman.ru
+  servername: node-slo02.rkitman.ru
   client-fingerprint: ''
   flow: xtls-rprx-vision
 - name: 🇸🇮 SI 03 - xiaohe
   type: vless
+  server: 92.42.201.107
+  port: 443
+  uuid: d0c8aa8d-a535-432a-b521-21f0e561f643
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 8C7evg_SSrJbxMTaUqJoylqB9HSNsmBvmUlgs_c5EiU
+    short-id: 88d9dc52ef39c8bd
+  servername: node-slo02.rkitman.ru
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+- name: 🇸🇮 SI 04 - xiaohe
+  type: vless
   server: 92.42.201.102
   port: 443
   uuid: d0c8aa8d-a535-432a-b521-21f0e561f643
@@ -44,25 +58,11 @@ proxies:
     public-key: 8C7evg_SSrJbxMTaUqJoylqB9HSNsmBvmUlgs_c5EiU
     short-id: 88d9dc52ef39c8bd
   servername: node-slo01.rkitman.ru
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇸🇮 SI 04 - xiaohe
-  type: vless
-  server: 92.42.201.107
-  port: 443
-  uuid: d0c8aa8d-a535-432a-b521-21f0e561f643
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 8C7evg_SSrJbxMTaUqJoylqB9HSNsmBvmUlgs_c5EiU
-    short-id: 88d9dc52ef39c8bd
-  servername: node-slo02.rkitman.ru
   client-fingerprint: ''
   flow: xtls-rprx-vision
 - name: 🇸🇮 SI 05 - xiaohe
   type: vless
-  server: 92.42.201.107
+  server: 92.42.201.102
   port: 443
   uuid: d0c8aa8d-a535-432a-b521-21f0e561f643
   udp: true
@@ -71,21 +71,7 @@ proxies:
   reality-opts:
     public-key: 8C7evg_SSrJbxMTaUqJoylqB9HSNsmBvmUlgs_c5EiU
     short-id: 88d9dc52ef39c8bd
-  servername: node-slo02.rkitman.ru
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇸🇮 SI 06 - xiaohe
-  type: vless
-  server: 92.42.201.107
-  port: 443
-  uuid: d0c8aa8d-a535-432a-b521-21f0e561f643
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 8C7evg_SSrJbxMTaUqJoylqB9HSNsmBvmUlgs_c5EiU
-    short-id: 88d9dc52ef39c8bd
-  servername: node-slo02.rkitman.ru
+  servername: node-slo01.rkitman.ru
   client-fingerprint: firefox
   flow: xtls-rprx-vision
 proxy-groups:
@@ -98,7 +84,6 @@ proxy-groups:
   - 🇸🇮 SI 03 - xiaohe
   - 🇸🇮 SI 04 - xiaohe
   - 🇸🇮 SI 05 - xiaohe
-  - 🇸🇮 SI 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -109,6 +94,5 @@ proxy-groups:
   - 🇸🇮 SI 03 - xiaohe
   - 🇸🇮 SI 04 - xiaohe
   - 🇸🇮 SI 05 - xiaohe
-  - 🇸🇮 SI 06 - xiaohe
 rules:
 - MATCH,PROXIES
