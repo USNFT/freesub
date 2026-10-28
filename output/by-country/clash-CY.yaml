@@ -1,0 +1,34 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇨🇾 塞浦路斯 (Cyprus) 01 - xiaohe
+  type: vless
+  server: hydra.yokkastars.com
+  port: 40443
+  uuid: 405b964e-a2d2-454f-aaaa-711cc218897c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0
+    short-id: 88b6
+  servername: deepl.com
+  client-fingerprint: qq
+  flow: xtls-rprx-vision
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇨🇾 塞浦路斯 (Cyprus) 01 - xiaohe
+- name: AUTO
+  type: url-test
+  url: https://www.google.com/generate_204
+  interval: 300
+  proxies:
+  - 🇨🇾 塞浦路斯 (Cyprus) 01 - xiaohe
+rules:
+- MATCH,PROXIES

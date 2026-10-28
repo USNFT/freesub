@@ -30,7 +30,7 @@ proxies:
     public-key: pOHbbyo_PlUwH4DjC6bKvC3jB8RPnCdu-nL8trAP8CI
     short-id: '50'
   servername: cloudflare.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
   flow: xtls-rprx-vision
 proxy-groups:
 - name: PROXIES

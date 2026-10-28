@@ -6,63 +6,22 @@ log-level: info
 proxies:
 - name: 🇸🇪 瑞典 (Sweden) 01 - xiaohe
   type: hysteria2
-  server: promo.betust.net
+  server: 50.7.38.243
   port: 443
   password: d4ca9415f0eac7897472e1e5b86d2e96
   udp: true
   skip-cert-verify: true
-- name: 🇸🇪 瑞典 (Sweden) 02 - xiaohe
-  type: vless
-  server: 191.44.114.154
-  port: 8443
-  uuid: d1641bc6-3757-43db-815a-9b3f4d9b0d7e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: ndQzAcG4g-2OhvFb8EjFnZyxJ2lhawiulTLJOZrK8lY
-    short-id: c4359f3827231250
-  servername: www.wikipedia.org
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇸🇪 瑞典 (Sweden) 03 - xiaohe
-  type: hysteria2
-  server: promo.betust.net
-  port: 443
-  password: d4ca9415f0eac7897472e1e5b86d2e96
-  udp: true
-  skip-cert-verify: true
-- name: 🇸🇪 瑞典 (Sweden) 04 - xiaohe
-  type: vless
-  server: vpn1.aantoshin.ru
-  port: 2087
-  uuid: aa0faee3-a4f1-4073-a1ec-a108c948adc5
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: REEIQ_PfKFRYuhTX1Ex-JxfTJhwCryeGlCszQOG7Mmc
-    short-id: 8ed34d466d05d404
-  servername: api.vk.com
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇸🇪 瑞典 (Sweden) 01 - xiaohe
-  - 🇸🇪 瑞典 (Sweden) 02 - xiaohe
-  - 🇸🇪 瑞典 (Sweden) 03 - xiaohe
-  - 🇸🇪 瑞典 (Sweden) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇸🇪 瑞典 (Sweden) 01 - xiaohe
-  - 🇸🇪 瑞典 (Sweden) 02 - xiaohe
-  - 🇸🇪 瑞典 (Sweden) 03 - xiaohe
-  - 🇸🇪 瑞典 (Sweden) 04 - xiaohe
 rules:
 - MATCH,PROXIES

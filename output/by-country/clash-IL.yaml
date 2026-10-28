@@ -16,7 +16,7 @@ proxies:
     public-key: 8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To
     short-id: a3a578ab
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: random
   flow: xtls-rprx-vision
 - name: 🇮🇱 以色列 (Israel) 02 - xiaohe
   type: vless
@@ -30,7 +30,7 @@ proxies:
     public-key: 8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To
     short-id: a3a578ab
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: random
   flow: xtls-rprx-vision
 - name: 🇮🇱 以色列 (Israel) 03 - xiaohe
   type: vless
@@ -44,7 +44,7 @@ proxies:
     public-key: 8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To
     short-id: a3a578ab
   servername: www.apple.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   flow: xtls-rprx-vision
 - name: 🇮🇱 以色列 (Israel) 04 - xiaohe
   type: vless
@@ -72,7 +72,7 @@ proxies:
     public-key: 8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To
     short-id: a3a578ab
   servername: www.apple.com
-  client-fingerprint: random
+  client-fingerprint: chrome
   flow: xtls-rprx-vision
 - name: 🇮🇱 以色列 (Israel) 06 - xiaohe
   type: vless
@@ -86,7 +86,7 @@ proxies:
     public-key: 8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To
     short-id: a3a578ab
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
   flow: xtls-rprx-vision
 - name: 🇮🇱 以色列 (Israel) 07 - xiaohe
   type: vless
@@ -114,8 +114,49 @@ proxies:
     public-key: 8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To
     short-id: a3a578ab
   servername: www.apple.com
-  client-fingerprint: random
+  client-fingerprint: chrome
   flow: xtls-rprx-vision
+- name: 🇮🇱 以色列 (Israel) 09 - xiaohe
+  type: vless
+  server: 185.95.231.156
+  port: 443
+  uuid: 1f8cf47a-b66a-4916-979f-26edfcf44eea
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To
+    short-id: a3a578ab
+  servername: www.apple.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇮🇱 以色列 (Israel) 10 - xiaohe
+  type: vless
+  server: 77.91.69.169
+  port: 19226
+  uuid: f0b144bd-4c44-440d-b630-d79ec82cad3a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: PQjgf7GxBd2tDXf0zl9Z5rTZo7LdsWj0hGZLH-lJ-Uk
+    short-id: 7c
+  servername: yahoo.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇮🇱 以色列 (Israel) 11 - xiaohe
+  type: vless
+  server: ee.h1cloud.net
+  port: 25895
+  uuid: f90b7d43-69e2-4b46-a672-8029bc6796a2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: jOVKSP-bS9OkILJ8Epz8hadh6qhavCrOiJYeF0NCn0k
+    short-id: a73f0410d728c823
+  servername: www.samsung.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -129,6 +170,9 @@ proxy-groups:
   - 🇮🇱 以色列 (Israel) 06 - xiaohe
   - 🇮🇱 以色列 (Israel) 07 - xiaohe
   - 🇮🇱 以色列 (Israel) 08 - xiaohe
+  - 🇮🇱 以色列 (Israel) 09 - xiaohe
+  - 🇮🇱 以色列 (Israel) 10 - xiaohe
+  - 🇮🇱 以色列 (Israel) 11 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -142,5 +186,8 @@ proxy-groups:
   - 🇮🇱 以色列 (Israel) 06 - xiaohe
   - 🇮🇱 以色列 (Israel) 07 - xiaohe
   - 🇮🇱 以色列 (Israel) 08 - xiaohe
+  - 🇮🇱 以色列 (Israel) 09 - xiaohe
+  - 🇮🇱 以色列 (Israel) 10 - xiaohe
+  - 🇮🇱 以色列 (Israel) 11 - xiaohe
 rules:
 - MATCH,PROXIES
