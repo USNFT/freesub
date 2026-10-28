@@ -4,18 +4,18 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇩 印度尼西亚 (Indonesia) 01 - xiaohe
+- name: 🇻🇳 越南 (Vietnam) 01 - xiaohe
   type: vless
-  server: 202.10.40.89
-  port: 8443
-  uuid: 5a380395-9c91-4174-8330-475d1235ed61
+  server: 154.21.203.106
+  port: 51279
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: GcraWawjMdjBJLD_HvSZ3BQuHvFnSWjbesCkMeCaITY
-    short-id: 5b4a12ef7e1694dd
-  servername: amproject.my.id
+    public-key: f6Tj8-uvWsLv3V-lGLuPciArp5oKqUImBg-U7-WJ-0A
+    short-id: bb82c8
+  servername: www.tesla.com
   client-fingerprint: chrome
   flow: xtls-rprx-vision
 proxy-groups:
@@ -23,12 +23,12 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇮🇩 印度尼西亚 (Indonesia) 01 - xiaohe
+  - 🇻🇳 越南 (Vietnam) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇩 印度尼西亚 (Indonesia) 01 - xiaohe
+  - 🇻🇳 越南 (Vietnam) 01 - xiaohe
 rules:
 - MATCH,PROXIES
