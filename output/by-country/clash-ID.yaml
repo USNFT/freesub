@@ -1,0 +1,34 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇮🇩 印度尼西亚 (Indonesia) 01 - xiaohe
+  type: vless
+  server: 202.10.40.89
+  port: 8443
+  uuid: 5a380395-9c91-4174-8330-475d1235ed61
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: GcraWawjMdjBJLD_HvSZ3BQuHvFnSWjbesCkMeCaITY
+    short-id: 5b4a12ef7e1694dd
+  servername: amproject.my.id
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇮🇩 印度尼西亚 (Indonesia) 01 - xiaohe
+- name: AUTO
+  type: url-test
+  url: https://www.google.com/generate_204
+  interval: 300
+  proxies:
+  - 🇮🇩 印度尼西亚 (Indonesia) 01 - xiaohe
+rules:
+- MATCH,PROXIES
