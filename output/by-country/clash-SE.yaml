@@ -13,7 +13,7 @@ proxies:
   skip-cert-verify: true
 - name: 🇸🇪 瑞典 (Sweden) 02 - xiaohe
   type: hysteria2
-  server: 50.7.38.243
+  server: promo.betust.net
   port: 443
   password: d4ca9415f0eac7897472e1e5b86d2e96
   udp: true

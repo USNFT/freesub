@@ -16,7 +16,7 @@ proxies:
     public-key: 8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To
     short-id: a3a578ab
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: random
   flow: xtls-rprx-vision
 - name: 🇮🇱 以色列 (Israel) 02 - xiaohe
   type: vless
@@ -44,7 +44,7 @@ proxies:
     public-key: 8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To
     short-id: a3a578ab
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
   flow: xtls-rprx-vision
 - name: 🇮🇱 以色列 (Israel) 04 - xiaohe
   type: vless
@@ -58,7 +58,7 @@ proxies:
     public-key: 8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To
     short-id: a3a578ab
   servername: www.apple.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   flow: xtls-rprx-vision
 - name: 🇮🇱 以色列 (Israel) 05 - xiaohe
   type: vless
@@ -114,7 +114,7 @@ proxies:
     public-key: 8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To
     short-id: a3a578ab
   servername: www.apple.com
-  client-fingerprint: random
+  client-fingerprint: chrome
   flow: xtls-rprx-vision
 - name: 🇮🇱 以色列 (Israel) 09 - xiaohe
   type: vless
@@ -128,20 +128,6 @@ proxies:
     public-key: 8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To
     short-id: a3a578ab
   servername: www.apple.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇮🇱 以色列 (Israel) 10 - xiaohe
-  type: vless
-  server: 77.91.69.169
-  port: 19226
-  uuid: f0b144bd-4c44-440d-b630-d79ec82cad3a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: PQjgf7GxBd2tDXf0zl9Z5rTZo7LdsWj0hGZLH-lJ-Uk
-    short-id: 7c
-  servername: yahoo.com
   client-fingerprint: chrome
   flow: xtls-rprx-vision
 proxy-groups:
@@ -158,7 +144,6 @@ proxy-groups:
   - 🇮🇱 以色列 (Israel) 07 - xiaohe
   - 🇮🇱 以色列 (Israel) 08 - xiaohe
   - 🇮🇱 以色列 (Israel) 09 - xiaohe
-  - 🇮🇱 以色列 (Israel) 10 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -173,6 +158,5 @@ proxy-groups:
   - 🇮🇱 以色列 (Israel) 07 - xiaohe
   - 🇮🇱 以色列 (Israel) 08 - xiaohe
   - 🇮🇱 以色列 (Israel) 09 - xiaohe
-  - 🇮🇱 以色列 (Israel) 10 - xiaohe
 rules:
 - MATCH,PROXIES
