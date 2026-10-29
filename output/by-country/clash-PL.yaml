@@ -5,19 +5,26 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - xiaohe
-  type: hysteria2
-  server: 78.17.128.153
-  port: 35076
-  password: b4c8ee9caa74b7ba0a61
+  type: vless
+  server: pl.peregrine-sub.net
+  port: 1443
+  uuid: 42a64b9a-ab79-4094-8656-30366a7c2ea3
   udp: true
+  tls: true
   skip-cert-verify: true
+  reality-opts:
+    public-key: PUj1la__ltNjv_ASE5n4HJY7GiRs--N-0aYhkcAApCI
+    short-id: 7b6803a79bba5c52
+  servername: pl.peregrine-sub.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
 - name: 🇵🇱 波兰 (Poland) 02 - xiaohe
-  type: hysteria2
-  server: 78.17.128.153
-  port: 35076
-  password: b4c8ee9caa74b7ba0a61
+  type: ss
+  server: pol.rvpn.app
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: 8z2OB_gvFvpKgjFi8s9Cvw
   udp: true
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
