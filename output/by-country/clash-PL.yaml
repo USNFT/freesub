@@ -18,26 +18,17 @@ proxies:
   servername: pl.peregrine-sub.net
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: 🇵🇱 波兰 (Poland) 02 - xiaohe
-  type: ss
-  server: pol.rvpn.app
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: 8z2OB_gvFvpKgjFi8s9Cvw
-  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇵🇱 波兰 (Poland) 01 - xiaohe
-  - 🇵🇱 波兰 (Poland) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇵🇱 波兰 (Poland) 01 - xiaohe
-  - 🇵🇱 波兰 (Poland) 02 - xiaohe
 rules:
 - MATCH,PROXIES
