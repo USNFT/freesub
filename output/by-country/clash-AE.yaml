@@ -6,16 +6,30 @@ log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - xiaohe
   type: vless
-  server: 217.60.151.187
+  server: 31.56.189.208
   port: 47443
   uuid: 1fe01c8a-ab37-4e95-bbfc-95d4a608931e
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: MnW49sASUaQ1Sm8SbCWlU8eKfNR8x1O03YSZdj5vM3Y
-    short-id: ae97223a8f799003
-  servername: ge-3.waspguard.ru
+    public-key: ITUrGb0T4zee52YrsT7lPXvdPmBDDN5R9nh1zBoVnkg
+    short-id: ae97223a8f799002
+  servername: ge-2.waspguard.ru
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+- name: 🇦🇪 阿联酋 (UAE) 02 - xiaohe
+  type: vless
+  server: 217.60.151.141
+  port: 47443
+  uuid: 1fe01c8a-ab37-4e95-bbfc-95d4a608931e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: zHU0WVJ6mMqTgBj6hEt_B0yRnegzdTGGLBydGyAPvlk
+    short-id: ae97223a8f799001
+  servername: ge-1.waspguard.ru
   client-fingerprint: firefox
   flow: xtls-rprx-vision
 proxy-groups:
@@ -24,11 +38,13 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇦🇪 阿联酋 (UAE) 01 - xiaohe
+  - 🇦🇪 阿联酋 (UAE) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇦🇪 阿联酋 (UAE) 01 - xiaohe
+  - 🇦🇪 阿联酋 (UAE) 02 - xiaohe
 rules:
 - MATCH,PROXIES
