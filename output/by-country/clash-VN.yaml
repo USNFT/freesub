@@ -30,7 +30,7 @@ proxies:
     public-key: f6Tj8-uvWsLv3V-lGLuPciArp5oKqUImBg-U7-WJ-0A
     short-id: bb82c8
   servername: www.tesla.com
-  client-fingerprint: safari
+  client-fingerprint: firefox
   flow: xtls-rprx-vision
 - name: 🇻🇳 越南 (Vietnam) 03 - xiaohe
   type: vless
@@ -58,7 +58,7 @@ proxies:
     public-key: f6Tj8-uvWsLv3V-lGLuPciArp5oKqUImBg-U7-WJ-0A
     short-id: bb82c8
   servername: www.tesla.com
-  client-fingerprint: random
+  client-fingerprint: safari
   flow: xtls-rprx-vision
 - name: 🇻🇳 越南 (Vietnam) 05 - xiaohe
   type: vless
@@ -72,7 +72,7 @@ proxies:
     public-key: f6Tj8-uvWsLv3V-lGLuPciArp5oKqUImBg-U7-WJ-0A
     short-id: bb82c8
   servername: www.tesla.com
-  client-fingerprint: firefox
+  client-fingerprint: random
   flow: xtls-rprx-vision
 proxy-groups:
 - name: PROXIES

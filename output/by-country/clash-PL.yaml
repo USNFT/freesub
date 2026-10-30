@@ -1,0 +1,98 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇵🇱 波兰 (Poland) 01 - xiaohe
+  type: vless
+  server: 177.1.192.67
+  port: 443
+  uuid: 706bce83-91db-4260-b175-cba29145cd56
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 5QmUszafz1gigUjf3R2GwZ9RVsEwZT-polu0l8zfNgA
+    short-id: 830e615a39f4c811
+  servername: up4.uni-plan.com
+  client-fingerprint: ''
+  flow: xtls-rprx-vision
+- name: 🇵🇱 波兰 (Poland) 02 - xiaohe
+  type: vless
+  server: 177.1.192.38
+  port: 8443
+  uuid: 706bce83-91db-4260-b175-cba29145cd56
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: rczv8z0BFqH3QS9PfFAzLYZY8Iao1yEBhwcRskkQugo
+    short-id: b3e515e37815559d
+  servername: upnl.giftsbattle.vip
+  client-fingerprint: ''
+  flow: xtls-rprx-vision
+- name: 🇵🇱 波兰 (Poland) 03 - xiaohe
+  type: vless
+  server: 177.1.192.117
+  port: 443
+  uuid: 706bce83-91db-4260-b175-cba29145cd56
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: Lt3gSdGmfQMx50yH-OOJaNBSg80vzIveaNVwUUWJwzQ
+    short-id: 3952a220c86628a8
+  servername: up7.uni-plan.com
+  client-fingerprint: ''
+  flow: xtls-rprx-vision
+- name: 🇵🇱 波兰 (Poland) 04 - xiaohe
+  type: vless
+  server: pl.peregrine-sub.net
+  port: 1443
+  uuid: 42a64b9a-ab79-4094-8656-30366a7c2ea3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: PUj1la__ltNjv_ASE5n4HJY7GiRs--N-0aYhkcAApCI
+    short-id: 7b6803a79bba5c52
+  servername: pl.peregrine-sub.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇵🇱 波兰 (Poland) 05 - xiaohe
+  type: vless
+  server: 2.26.224.23
+  port: 1443
+  uuid: 42a64b9a-ab79-4094-8656-30366a7c2ea3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: PUj1la__ltNjv_ASE5n4HJY7GiRs--N-0aYhkcAApCI
+    short-id: 7b6803a79bba5c52
+  servername: pl.peregrine-sub.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇵🇱 波兰 (Poland) 01 - xiaohe
+  - 🇵🇱 波兰 (Poland) 02 - xiaohe
+  - 🇵🇱 波兰 (Poland) 03 - xiaohe
+  - 🇵🇱 波兰 (Poland) 04 - xiaohe
+  - 🇵🇱 波兰 (Poland) 05 - xiaohe
+- name: AUTO
+  type: url-test
+  url: https://www.google.com/generate_204
+  interval: 300
+  proxies:
+  - 🇵🇱 波兰 (Poland) 01 - xiaohe
+  - 🇵🇱 波兰 (Poland) 02 - xiaohe
+  - 🇵🇱 波兰 (Poland) 03 - xiaohe
+  - 🇵🇱 波兰 (Poland) 04 - xiaohe
+  - 🇵🇱 波兰 (Poland) 05 - xiaohe
+rules:
+- MATCH,PROXIES
