@@ -6,76 +6,6 @@ log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - xiaohe
   type: vless
-  server: 177.1.192.117
-  port: 443
-  uuid: 706bce83-91db-4260-b175-cba29145cd56
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: Lt3gSdGmfQMx50yH-OOJaNBSg80vzIveaNVwUUWJwzQ
-    short-id: 3952a220c86628a8
-  servername: up7.uni-plan.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇵🇱 波兰 (Poland) 02 - xiaohe
-  type: vless
-  server: 177.1.192.38
-  port: 8443
-  uuid: 706bce83-91db-4260-b175-cba29145cd56
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: rczv8z0BFqH3QS9PfFAzLYZY8Iao1yEBhwcRskkQugo
-    short-id: b3e515e37815559d
-  servername: upnl.giftsbattle.vip
-  client-fingerprint: ''
-  flow: xtls-rprx-vision
-- name: 🇵🇱 波兰 (Poland) 03 - xiaohe
-  type: vless
-  server: 177.1.192.67
-  port: 443
-  uuid: 706bce83-91db-4260-b175-cba29145cd56
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 5QmUszafz1gigUjf3R2GwZ9RVsEwZT-polu0l8zfNgA
-    short-id: 830e615a39f4c811
-  servername: up4.uni-plan.com
-  client-fingerprint: ''
-  flow: xtls-rprx-vision
-- name: 🇵🇱 波兰 (Poland) 04 - xiaohe
-  type: vless
-  server: 31.59.143.147
-  port: 443
-  uuid: 1fe01c8a-ab37-4e95-bbfc-95d4a608931e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: Liu35gmIQJtbul5AeCrceJTjsmln4RaqxX6joKlaBjk
-    short-id: ae97223a8f799889
-  servername: pl2.waspnest.space
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇵🇱 波兰 (Poland) 05 - xiaohe
-  type: vless
-  server: 177.1.192.117
-  port: 443
-  uuid: 706bce83-91db-4260-b175-cba29145cd56
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: Lt3gSdGmfQMx50yH-OOJaNBSg80vzIveaNVwUUWJwzQ
-    short-id: 3952a220c86628a8
-  servername: up7.uni-plan.com
-  client-fingerprint: ''
-  flow: xtls-rprx-vision
-- name: 🇵🇱 波兰 (Poland) 06 - xiaohe
-  type: vless
   server: pl.peregrine-sub.net
   port: 1443
   uuid: 42a64b9a-ab79-4094-8656-30366a7c2ea3
@@ -94,21 +24,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇵🇱 波兰 (Poland) 01 - xiaohe
-  - 🇵🇱 波兰 (Poland) 02 - xiaohe
-  - 🇵🇱 波兰 (Poland) 03 - xiaohe
-  - 🇵🇱 波兰 (Poland) 04 - xiaohe
-  - 🇵🇱 波兰 (Poland) 05 - xiaohe
-  - 🇵🇱 波兰 (Poland) 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇵🇱 波兰 (Poland) 01 - xiaohe
-  - 🇵🇱 波兰 (Poland) 02 - xiaohe
-  - 🇵🇱 波兰 (Poland) 03 - xiaohe
-  - 🇵🇱 波兰 (Poland) 04 - xiaohe
-  - 🇵🇱 波兰 (Poland) 05 - xiaohe
-  - 🇵🇱 波兰 (Poland) 06 - xiaohe
 rules:
 - MATCH,PROXIES

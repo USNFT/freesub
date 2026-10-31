@@ -6,46 +6,6 @@ log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czechia) 01 - xiaohe
   type: vless
-  server: 31.77.13.22
-  port: 2063
-  uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
-  servername: rusbid.de
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇨🇿 捷克 (Czechia) 02 - xiaohe
-  type: vless
-  server: cz-prg.dontblockmepls.com
-  port: 2063
-  uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
-  servername: rusbid.de
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇨🇿 捷克 (Czechia) 03 - xiaohe
-  type: vless
-  server: in-nl2.bystriynet.online
-  port: 8469
-  uuid: 1c8f7130-8c1a-4949-831d-1d45b39c795b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: jXnHLdfNcX2fwTFY-d2boAYcfC9EnnhqYS0hfR6WwFo
-    short-id: 55d42bdd79605658
-  servername: svoboda12.bystriynet.online
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇨🇿 捷克 (Czechia) 04 - xiaohe
-  type: vless
   server: de.soft10.ir
   port: 8080
   uuid: 8be3e9b2-54e6-490c-ad5f-5a372765ffae
@@ -64,17 +24,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇨🇿 捷克 (Czechia) 01 - xiaohe
-  - 🇨🇿 捷克 (Czechia) 02 - xiaohe
-  - 🇨🇿 捷克 (Czechia) 03 - xiaohe
-  - 🇨🇿 捷克 (Czechia) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇨🇿 捷克 (Czechia) 01 - xiaohe
-  - 🇨🇿 捷克 (Czechia) 02 - xiaohe
-  - 🇨🇿 捷克 (Czechia) 03 - xiaohe
-  - 🇨🇿 捷克 (Czechia) 04 - xiaohe
 rules:
 - MATCH,PROXIES
