@@ -6,17 +6,17 @@ log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czechia) 01 - xiaohe
   type: vless
-  server: de.soft10.ir
-  port: 8080
-  uuid: 8be3e9b2-54e6-490c-ad5f-5a372765ffae
+  server: 212.102.38.25
+  port: 443
+  uuid: b34a52cb-cd52-49a8-9362-b8e97c151d49
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: Au0lpWqAPpK0aNuc3Uwcsf7fB1B2w2LXzdC1CVKb1ik
-    short-id: a8235bf7eb8fca
-  servername: staticview.microsoft.com
-  client-fingerprint: chrome
+    public-key: 23cb4W9THzBKsrECsLh-A_FcKZfkAtUONoDze8-GnQE
+    short-id: e90360ec7cc61b20
+  servername: udemy.com
+  client-fingerprint: ''
   flow: xtls-rprx-vision
 proxy-groups:
 - name: PROXIES

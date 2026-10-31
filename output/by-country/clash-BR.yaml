@@ -18,49 +18,17 @@ proxies:
   servername: www.apple.com
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: 🇧🇷 巴西 (Brazil) 02 - xiaohe
-  type: vless
-  server: 177.7.51.29
-  port: 8443
-  uuid: c6b1b2d0-ed5e-48ce-99e6-112ff330030d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: laG5BxoSbdRozpauATNFBPPTwhuDuu0JFl_SCP2ZQlU
-    short-id: 14fbf992
-  servername: www.apple.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇧🇷 巴西 (Brazil) 03 - xiaohe
-  type: vless
-  server: 177.7.51.29
-  port: 8443
-  uuid: c6b1b2d0-ed5e-48ce-99e6-112ff330030d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: laG5BxoSbdRozpauATNFBPPTwhuDuu0JFl_SCP2ZQlU
-    short-id: 14fbf992
-  servername: www.apple.com
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇧🇷 巴西 (Brazil) 01 - xiaohe
-  - 🇧🇷 巴西 (Brazil) 02 - xiaohe
-  - 🇧🇷 巴西 (Brazil) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇧🇷 巴西 (Brazil) 01 - xiaohe
-  - 🇧🇷 巴西 (Brazil) 02 - xiaohe
-  - 🇧🇷 巴西 (Brazil) 03 - xiaohe
 rules:
 - MATCH,PROXIES
