@@ -16,7 +16,7 @@ proxies:
     public-key: laG5BxoSbdRozpauATNFBPPTwhuDuu0JFl_SCP2ZQlU
     short-id: 14fbf992
   servername: www.apple.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   flow: xtls-rprx-vision
 - name: 🇧🇷 巴西 (Brazil) 02 - xiaohe
   type: vless
@@ -58,7 +58,7 @@ proxies:
     public-key: laG5BxoSbdRozpauATNFBPPTwhuDuu0JFl_SCP2ZQlU
     short-id: 14fbf992
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
   flow: xtls-rprx-vision
 proxy-groups:
 - name: PROXIES
