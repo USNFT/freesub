@@ -6,6 +6,20 @@ log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - xiaohe
   type: vless
+  server: 2.26.255.215
+  port: 443
+  uuid: 69e41e64-a832-471a-b740-94577ca85520
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: pOHbbyo_PlUwH4DjC6bKvC3jB8RPnCdu-nL8trAP8CI
+    short-id: '50'
+  servername: cloudflare.com
+  client-fingerprint: ''
+  flow: xtls-rprx-vision
+- name: 🇵🇱 波兰 (Poland) 02 - xiaohe
+  type: vless
   server: 45.198.0.88
   port: 443
   uuid: 8263aa5b-601d-4e05-b61d-a70e15d97869
@@ -17,20 +31,6 @@ proxies:
     short-id: 458374ae
   servername: pl1.edge.rbullet.net
   client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇵🇱 波兰 (Poland) 02 - xiaohe
-  type: vless
-  server: pl.peregrine-sub.net
-  port: 1443
-  uuid: 42a64b9a-ab79-4094-8656-30366a7c2ea3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: PUj1la__ltNjv_ASE5n4HJY7GiRs--N-0aYhkcAApCI
-    short-id: 7b6803a79bba5c52
-  servername: pl.peregrine-sub.net
-  client-fingerprint: chrome
   flow: xtls-rprx-vision
 proxy-groups:
 - name: PROXIES
