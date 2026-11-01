@@ -13,17 +13,18 @@ proxies:
   udp: true
 - name: 🇮🇹 意大利 (Italy) 02 - xiaohe
   type: vless
-  server: 57.131.38.163
-  port: 2053
-  uuid: d4b08cd6-0903-411a-9dac-45dbdf5c9712
+  server: 82.118.16.189
+  port: 443
+  uuid: d5e5f5a1-0f23-4c49-af9f-4be445bf9d8e
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: Ej2H5ucT7qKegYcT8wODdlxa-cLHr7F4hDVUHzAhcnc
-    short-id: 5b8a942318178e7b
-  servername: www.apple.com
-  client-fingerprint: chrome
+    public-key: SjGkzJQ9I6ZZjC3V73atcPMczhMm0oiTrB8mUQXz1HY
+    short-id: 37fbf155c7a9f3ff
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
 - name: 🇮🇹 意大利 (Italy) 03 - xiaohe
   type: vless
   server: 82.118.16.189
@@ -36,7 +37,7 @@ proxies:
     public-key: SjGkzJQ9I6ZZjC3V73atcPMczhMm0oiTrB8mUQXz1HY
     short-id: 37fbf155c7a9f3ff
   servername: www.cloudflare.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   flow: xtls-rprx-vision
 - name: 🇮🇹 意大利 (Italy) 04 - xiaohe
   type: vless
@@ -53,20 +54,6 @@ proxies:
   client-fingerprint: random
 - name: 🇮🇹 意大利 (Italy) 05 - xiaohe
   type: vless
-  server: 57.131.21.102
-  port: 8080
-  uuid: 09c10f40-6992-4b33-8d4a-6d8feb01323e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: Lew0Y0hNzQyEeLxBpBxC2QnshUrtPvSdkLykPZcqLHs
-    short-id: b10dd5
-  servername: icloud.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇮🇹 意大利 (Italy) 06 - xiaohe
-  type: vless
   server: 57.131.38.163
   port: 2053
   uuid: d4b08cd6-0903-411a-9dac-45dbdf5c9712
@@ -78,7 +65,7 @@ proxies:
     short-id: 5b8a942318178e7b
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇮🇹 意大利 (Italy) 07 - xiaohe
+- name: 🇮🇹 意大利 (Italy) 06 - xiaohe
   type: vless
   server: 57.131.38.163
   port: 2053
@@ -102,7 +89,6 @@ proxy-groups:
   - 🇮🇹 意大利 (Italy) 04 - xiaohe
   - 🇮🇹 意大利 (Italy) 05 - xiaohe
   - 🇮🇹 意大利 (Italy) 06 - xiaohe
-  - 🇮🇹 意大利 (Italy) 07 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -114,6 +100,5 @@ proxy-groups:
   - 🇮🇹 意大利 (Italy) 04 - xiaohe
   - 🇮🇹 意大利 (Italy) 05 - xiaohe
   - 🇮🇹 意大利 (Italy) 06 - xiaohe
-  - 🇮🇹 意大利 (Italy) 07 - xiaohe
 rules:
 - MATCH,PROXIES
