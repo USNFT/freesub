@@ -4,11 +4,11 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇱🇹 LT 01 - xiaohe
+- name: 🇫🇷 法国 (France) 01 (家宽) - xiaohe
   type: hysteria2
-  server: promo.betust.net
-  port: 443
-  password: d4ca9415f0eac7897472e1e5b86d2e96
+  server: 47.129.112.129
+  port: 20000
+  password: rBM3dgUU0Mtjflss4jeZRw92
   udp: true
   skip-cert-verify: true
 proxy-groups:
@@ -16,12 +16,12 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇱🇹 LT 01 - xiaohe
+  - 🇫🇷 法国 (France) 01 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇱🇹 LT 01 - xiaohe
+  - 🇫🇷 法国 (France) 01 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES
