@@ -30,7 +30,7 @@ proxies:
     public-key: Ej2H5ucT7qKegYcT8wODdlxa-cLHr7F4hDVUHzAhcnc
     short-id: 5b8a942318178e7b
   servername: www.apple.com
-  client-fingerprint: random
+  client-fingerprint: chrome
 - name: 🇮🇹 意大利 (Italy) 04 - xiaohe
   type: vless
   server: 57.131.38.163
@@ -43,8 +43,22 @@ proxies:
     public-key: Ej2H5ucT7qKegYcT8wODdlxa-cLHr7F4hDVUHzAhcnc
     short-id: 5b8a942318178e7b
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇮🇹 意大利 (Italy) 05 - xiaohe
+  type: vless
+  server: 91.201.67.245
+  port: 443
+  uuid: 5c32201a-6c0e-451b-8f0a-24b4bd40df59
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: kBTMVLCNE0jjwuJF6H5-65l5Pe0QToS0Hg-9Tmaa7Sk
+    short-id: 1a2b3c4d
+  servername: files.porsche.com
+  client-fingerprint: ''
+  flow: xtls-rprx-vision
+- name: 🇮🇹 意大利 (Italy) 06 - xiaohe
   type: vless
   server: 57.131.38.163
   port: 2053
@@ -56,7 +70,7 @@ proxies:
     public-key: Ej2H5ucT7qKegYcT8wODdlxa-cLHr7F4hDVUHzAhcnc
     short-id: 5b8a942318178e7b
   servername: www.apple.com
-  client-fingerprint: firefox
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
@@ -67,6 +81,7 @@ proxy-groups:
   - 🇮🇹 意大利 (Italy) 03 - xiaohe
   - 🇮🇹 意大利 (Italy) 04 - xiaohe
   - 🇮🇹 意大利 (Italy) 05 - xiaohe
+  - 🇮🇹 意大利 (Italy) 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -77,5 +92,6 @@ proxy-groups:
   - 🇮🇹 意大利 (Italy) 03 - xiaohe
   - 🇮🇹 意大利 (Italy) 04 - xiaohe
   - 🇮🇹 意大利 (Italy) 05 - xiaohe
+  - 🇮🇹 意大利 (Italy) 06 - xiaohe
 rules:
 - MATCH,PROXIES
