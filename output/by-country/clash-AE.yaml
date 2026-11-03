@@ -6,14 +6,14 @@ log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - xiaohe
   type: hysteria2
-  server: forshynewh.duckdns.org
+  server: 217.60.73.56
   port: 443
   password: 69e41e64-a832-471a-b740-94577ca85520
   udp: true
   skip-cert-verify: true
 - name: 🇦🇪 阿联酋 (UAE) 02 - xiaohe
   type: hysteria2
-  server: 217.60.73.56
+  server: forshynewh.duckdns.org
   port: 443
   password: 69e41e64-a832-471a-b740-94577ca85520
   udp: true
