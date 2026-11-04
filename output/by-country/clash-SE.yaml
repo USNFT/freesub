@@ -5,13 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 瑞典 (Sweden) 01 - xiaohe
-  type: hysteria2
-  server: se.mimowhat.online
-  port: 443
-  password: 769f34f0-1500-488f-b414-03bc90666502
-  udp: true
-  skip-cert-verify: true
-- name: 🇸🇪 瑞典 (Sweden) 02 - xiaohe
   type: vless
   server: 81.163.22.194
   port: 443
@@ -31,13 +24,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇸🇪 瑞典 (Sweden) 01 - xiaohe
-  - 🇸🇪 瑞典 (Sweden) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇸🇪 瑞典 (Sweden) 01 - xiaohe
-  - 🇸🇪 瑞典 (Sweden) 02 - xiaohe
 rules:
 - MATCH,PROXIES
