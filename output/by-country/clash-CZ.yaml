@@ -8,19 +8,19 @@ proxies:
   type: vless
   server: 193.124.17.190
   port: 443
-  uuid: b60cab55-e7a1-413d-a297-ddd7bad3fb62
+  uuid: fad0b9a6-187d-4fcc-96fc-498bc5b3135a
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
     public-key: J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk
-    short-id: bbcab8fa80a3
-  servername: www.microsoft.com
+    short-id: 8325360e8bd2
+  servername: www.foxsports.com
   client-fingerprint: firefox
   flow: xtls-rprx-vision
 - name: 🇨🇿 捷克 (Czechia) 02 - xiaohe
   type: vless
-  server: 193.124.17.190
+  server: server.slavkiti.monster
   port: 443
   uuid: 4d017db2-7655-4276-9557-e2ec25b04ee7
   udp: true
@@ -30,7 +30,21 @@ proxies:
     public-key: J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk
     short-id: ee1716767f9b
   servername: www.tradingview.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇨🇿 捷克 (Czechia) 03 - xiaohe
+  type: vless
+  server: server.slavkiti.monster
+  port: 443
+  uuid: 68cf8d29-5aa0-44b3-88a9-f1a576b6e84c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk
+    short-id: 73a9e631a09b
+  servername: www.microsoft.com
+  client-fingerprint: chrome
   flow: xtls-rprx-vision
 proxy-groups:
 - name: PROXIES
@@ -39,6 +53,7 @@ proxy-groups:
   - AUTO
   - 🇨🇿 捷克 (Czechia) 01 - xiaohe
   - 🇨🇿 捷克 (Czechia) 02 - xiaohe
+  - 🇨🇿 捷克 (Czechia) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -46,5 +61,6 @@ proxy-groups:
   proxies:
   - 🇨🇿 捷克 (Czechia) 01 - xiaohe
   - 🇨🇿 捷克 (Czechia) 02 - xiaohe
+  - 🇨🇿 捷克 (Czechia) 03 - xiaohe
 rules:
 - MATCH,PROXIES

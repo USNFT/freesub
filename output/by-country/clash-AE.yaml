@@ -1,0 +1,34 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇦🇪 阿联酋 (UAE) 01 - xiaohe
+  type: vless
+  server: 217.19.122.170
+  port: 2087
+  uuid: 00d09ead-4080-4c39-a75d-be7dcabe77f4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: WL9GPq_lRWgT2lNCnDGSSU9GB9LghVKZ7nUrHAS5Pw8
+    short-id: 6f009fe1fab1d42e
+  servername: bm7.hat.onl
+  client-fingerprint: qq
+  flow: xtls-rprx-vision
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇦🇪 阿联酋 (UAE) 01 - xiaohe
+- name: AUTO
+  type: url-test
+  url: https://www.google.com/generate_204
+  interval: 300
+  proxies:
+  - 🇦🇪 阿联酋 (UAE) 01 - xiaohe
+rules:
+- MATCH,PROXIES
