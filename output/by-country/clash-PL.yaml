@@ -30,19 +30,6 @@ proxies:
   servername: poland.biznes.lol
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: 🇵🇱 波兰 (Poland) 03 - xiaohe
-  type: vless
-  server: direct-nl.bachidze.com
-  port: 443
-  uuid: 3bb97d46-789b-4229-88f6-9beb222a4137
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: E12wXXagR8xuql7KlWCLTgMaXj74JcU__lg66yz6iTw
-  servername: direct-nl.bachidze.com
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
 proxy-groups:
 - name: PROXIES
   type: select
@@ -50,7 +37,6 @@ proxy-groups:
   - AUTO
   - 🇵🇱 波兰 (Poland) 01 - xiaohe
   - 🇵🇱 波兰 (Poland) 02 - xiaohe
-  - 🇵🇱 波兰 (Poland) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -58,6 +44,5 @@ proxy-groups:
   proxies:
   - 🇵🇱 波兰 (Poland) 01 - xiaohe
   - 🇵🇱 波兰 (Poland) 02 - xiaohe
-  - 🇵🇱 波兰 (Poland) 03 - xiaohe
 rules:
 - MATCH,PROXIES

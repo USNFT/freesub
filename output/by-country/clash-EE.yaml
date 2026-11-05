@@ -5,6 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
+  type: hysteria2
+  server: 141.0.187.15
+  port: 443
+  password: 70043bfa-d6fb-4980-b27e-773e9e8b2004
+  udp: true
+  skip-cert-verify: true
+- name: 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
   type: vless
   server: 31.77.236.114
   port: 443
@@ -24,11 +31,13 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
+  - 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
+  - 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
 rules:
 - MATCH,PROXIES

@@ -32,6 +32,13 @@ proxies:
   servername: no1.fox-lisa.ru
   client-fingerprint: firefox
   flow: xtls-rprx-vision
+- name: 🇳🇴 挪威 (Norway) 03 - xiaohe
+  type: ss
+  server: 185.213.23.63
+  port: 990
+  cipher: chacha20-ietf-poly1305
+  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -39,6 +46,7 @@ proxy-groups:
   - AUTO
   - 🇳🇴 挪威 (Norway) 01 - xiaohe
   - 🇳🇴 挪威 (Norway) 02 - xiaohe
+  - 🇳🇴 挪威 (Norway) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -46,5 +54,6 @@ proxy-groups:
   proxies:
   - 🇳🇴 挪威 (Norway) 01 - xiaohe
   - 🇳🇴 挪威 (Norway) 02 - xiaohe
+  - 🇳🇴 挪威 (Norway) 03 - xiaohe
 rules:
 - MATCH,PROXIES
