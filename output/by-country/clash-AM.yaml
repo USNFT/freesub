@@ -6,16 +6,16 @@ log-level: info
 proxies:
 - name: 🇦🇲 AM 01 - xiaohe
   type: vless
-  server: it1.japancase.site
+  server: 157.228.64.24
   port: 443
   uuid: db80088c-32a1-4cb8-a907-0f3cb7844152
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: zEntiD6D81wY__YHPvIw78e09CBIgYkyQ5meIo7c_hg
-    short-id: 41ae8e266bc3346f
-  servername: it1.japancase.site
+    public-key: QFYzek1TNFeZxhHP3gH-42RUYDGw0ZiigeDcUOFL2Vs
+    short-id: bd44ae7c721b8252
+  servername: gb1.japancase.site
   client-fingerprint: ''
   flow: xtls-rprx-vision
 proxy-groups:

@@ -19,17 +19,17 @@ proxies:
   client-fingerprint: chrome
 - name: 🇵🇱 波兰 (Poland) 02 - xiaohe
   type: vless
-  server: 15d7fft.nl11.h1clayd.click
+  server: 222.167.245.16
   port: 443
-  uuid: b7b8ee80-db83-4276-8c68-87dc88b0b0b5
+  uuid: 7d43670b-6b08-45b9-8a24-8f3971abc132
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: xv6OUZcyzEHXFMTfumuJH-1Rd4NQ0cdmWikek4mm0m4
-    short-id: c71118d9399fb8c2
-  servername: 15d7fft.nl11.h1clayd.click
-  client-fingerprint: ''
+    public-key: j4Uc6ljg9by_VKYywo5h2N-eh3kpUbFL5Bsp8-AX4Qk
+  servername: poland.biznes.lol
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
 - name: 🇵🇱 波兰 (Poland) 03 - xiaohe
   type: vless
   server: 15d7fft.nl11.h1clayd.click
@@ -43,6 +43,19 @@ proxies:
     short-id: c71118d9399fb8c2
   servername: 15d7fft.nl11.h1clayd.click
   client-fingerprint: chrome
+- name: 🇵🇱 波兰 (Poland) 04 - xiaohe
+  type: vless
+  server: f0d7aft.nl13.h1clayd.click
+  port: 443
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: kkCGiCQCKnkozJR1KKCRNtmdBECmThCgI9VSv7iDcWI
+    short-id: 8956c57cb4c4f8d2
+  servername: f0d7aft.nl13.h1clayd.click
+  client-fingerprint: ''
 proxy-groups:
 - name: PROXIES
   type: select
@@ -51,6 +64,7 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 01 - xiaohe
   - 🇵🇱 波兰 (Poland) 02 - xiaohe
   - 🇵🇱 波兰 (Poland) 03 - xiaohe
+  - 🇵🇱 波兰 (Poland) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -59,5 +73,6 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 01 - xiaohe
   - 🇵🇱 波兰 (Poland) 02 - xiaohe
   - 🇵🇱 波兰 (Poland) 03 - xiaohe
+  - 🇵🇱 波兰 (Poland) 04 - xiaohe
 rules:
 - MATCH,PROXIES
