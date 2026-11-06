@@ -6,6 +6,32 @@ log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - xiaohe
   type: vless
+  server: 76574ct.nl7.h1clayd.click
+  port: 443
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 9zW5lTDbs9svY-lzlPp-pq0j2Sr6g031SY0E-3xSHDc
+    short-id: 2ca59bdc5121f921
+  servername: 76574ct.nl7.h1clayd.click
+  client-fingerprint: chrome
+- name: 🇵🇱 波兰 (Poland) 02 - xiaohe
+  type: vless
+  server: 15d7fft.nl11.h1clayd.click
+  port: 443
+  uuid: b7b8ee80-db83-4276-8c68-87dc88b0b0b5
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: xv6OUZcyzEHXFMTfumuJH-1Rd4NQ0cdmWikek4mm0m4
+    short-id: c71118d9399fb8c2
+  servername: 15d7fft.nl11.h1clayd.click
+  client-fingerprint: ''
+- name: 🇵🇱 波兰 (Poland) 03 - xiaohe
+  type: vless
   server: 15d7fft.nl11.h1clayd.click
   port: 443
   uuid: b7b8ee80-db83-4276-8c68-87dc88b0b0b5
@@ -23,11 +49,15 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇵🇱 波兰 (Poland) 01 - xiaohe
+  - 🇵🇱 波兰 (Poland) 02 - xiaohe
+  - 🇵🇱 波兰 (Poland) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇵🇱 波兰 (Poland) 01 - xiaohe
+  - 🇵🇱 波兰 (Poland) 02 - xiaohe
+  - 🇵🇱 波兰 (Poland) 03 - xiaohe
 rules:
 - MATCH,PROXIES

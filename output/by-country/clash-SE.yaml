@@ -15,7 +15,7 @@ proxies:
   reality-opts:
     public-key: vzRgIP8Mvd9V6krwKxw5EwwzvC4uiaW3wo0Y2ri2_Wc
   servername: smart.bachidze.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
   flow: xtls-rprx-vision
 - name: 🇸🇪 瑞典 (Sweden) 02 - xiaohe
   type: vless
@@ -41,7 +41,7 @@ proxies:
   reality-opts:
     public-key: vzRgIP8Mvd9V6krwKxw5EwwzvC4uiaW3wo0Y2ri2_Wc
   servername: smart.bachidze.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   flow: xtls-rprx-vision
 proxy-groups:
 - name: PROXIES
