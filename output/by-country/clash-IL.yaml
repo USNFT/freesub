@@ -16,7 +16,7 @@ proxies:
     public-key: 8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To
     short-id: a3a578ab
   servername: www.apple.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   flow: xtls-rprx-vision
 - name: 🇮🇱 以色列 (Israel) 02 - xiaohe
   type: vless
@@ -86,7 +86,7 @@ proxies:
     public-key: 8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To
     short-id: a3a578ab
   servername: www.apple.com
-  client-fingerprint: random
+  client-fingerprint: firefox
   flow: xtls-rprx-vision
 - name: 🇮🇱 以色列 (Israel) 07 - xiaohe
   type: vless
@@ -100,7 +100,7 @@ proxies:
     public-key: 8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To
     short-id: a3a578ab
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: random
   flow: xtls-rprx-vision
 - name: 🇮🇱 以色列 (Israel) 08 - xiaohe
   type: vless
@@ -170,19 +170,6 @@ proxies:
     short-id: 361d0dd59c70516f
   servername: 5d0319t.nl7.h1clayd.click
   client-fingerprint: firefox
-- name: 🇮🇱 以色列 (Israel) 13 - xiaohe
-  type: vless
-  server: 76574ct.nl7.h1clayd.click
-  port: 443
-  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 9zW5lTDbs9svY-lzlPp-pq0j2Sr6g031SY0E-3xSHDc
-    short-id: 2ca59bdc5121f921
-  servername: 76574ct.nl7.h1clayd.click
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -200,7 +187,6 @@ proxy-groups:
   - 🇮🇱 以色列 (Israel) 10 - xiaohe
   - 🇮🇱 以色列 (Israel) 11 - xiaohe
   - 🇮🇱 以色列 (Israel) 12 - xiaohe
-  - 🇮🇱 以色列 (Israel) 13 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -218,6 +204,5 @@ proxy-groups:
   - 🇮🇱 以色列 (Israel) 10 - xiaohe
   - 🇮🇱 以色列 (Israel) 11 - xiaohe
   - 🇮🇱 以色列 (Israel) 12 - xiaohe
-  - 🇮🇱 以色列 (Israel) 13 - xiaohe
 rules:
 - MATCH,PROXIES
