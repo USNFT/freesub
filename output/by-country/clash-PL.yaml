@@ -6,15 +6,16 @@ log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - xiaohe
   type: vless
-  server: 222.167.245.16
+  server: 2.26.255.215
   port: 443
-  uuid: 7d43670b-6b08-45b9-8a24-8f3971abc132
+  uuid: 69e41e64-a832-471a-b740-94577ca85520
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: j4Uc6ljg9by_VKYywo5h2N-eh3kpUbFL5Bsp8-AX4Qk
-  servername: poland.biznes.lol
+    public-key: pOHbbyo_PlUwH4DjC6bKvC3jB8RPnCdu-nL8trAP8CI
+    short-id: '50'
+  servername: cloudflare.com
   client-fingerprint: chrome
   flow: xtls-rprx-vision
 - name: 🇵🇱 波兰 (Poland) 02 - xiaohe

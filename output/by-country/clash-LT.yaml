@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇱🇹 LT 01 - xiaohe
   type: vless
-  server: app26.betust.net
+  server: 84.32.151.159
   port: 443
   uuid: 2232d904-8e6a-4202-8240-6efd8aec02e9
   udp: true

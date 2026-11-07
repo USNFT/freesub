@@ -4,31 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇦🇲 AM 01 - xiaohe
+- name: 🇨🇿 捷克 (Czechia) 01 - xiaohe
   type: vless
-  server: 157.228.64.24
+  server: server.slavkiti.monster
   port: 443
-  uuid: db80088c-32a1-4cb8-a907-0f3cb7844152
+  uuid: 4d017db2-7655-4276-9557-e2ec25b04ee7
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: QFYzek1TNFeZxhHP3gH-42RUYDGw0ZiigeDcUOFL2Vs
-    short-id: bd44ae7c721b8252
-  servername: gb1.japancase.site
-  client-fingerprint: ''
+    public-key: J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk
+    short-id: ee1716767f9b
+  servername: www.tradingview.com
+  client-fingerprint: chrome
   flow: xtls-rprx-vision
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇦🇲 AM 01 - xiaohe
+  - 🇨🇿 捷克 (Czechia) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇦🇲 AM 01 - xiaohe
+  - 🇨🇿 捷克 (Czechia) 01 - xiaohe
 rules:
 - MATCH,PROXIES
