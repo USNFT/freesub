@@ -6,14 +6,14 @@ log-level: info
 proxies:
 - name: 🇨🇭 瑞士 (Switzerland) 01 - xiaohe
   type: ss
-  server: 186.190.215.251
+  server: 79.127.184.104
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
 - name: 🇨🇭 瑞士 (Switzerland) 02 - xiaohe
   type: ss
-  server: 79.127.184.104
+  server: 186.190.215.251
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
@@ -26,6 +26,13 @@ proxies:
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
 - name: 🇨🇭 瑞士 (Switzerland) 04 - xiaohe
+  type: hysteria2
+  server: 140.238.213.114
+  port: 50160
+  password: 84a506ca5aca505696a454d828420b3f
+  udp: true
+  skip-cert-verify: true
+- name: 🇨🇭 瑞士 (Switzerland) 05 - xiaohe
   type: vless
   server: 45.90.59.15
   port: 443
@@ -39,46 +46,41 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: 🇨🇭 瑞士 (Switzerland) 05 - xiaohe
+- name: 🇨🇭 瑞士 (Switzerland) 06 - xiaohe
   type: hysteria2
   server: 140.238.213.114
   port: 50160
   password: 84a506ca5aca505696a454d828420b3f
   udp: true
   skip-cert-verify: true
-- name: 🇨🇭 瑞士 (Switzerland) 06 - xiaohe
+- name: 🇨🇭 瑞士 (Switzerland) 07 - xiaohe
   type: vless
-  server: 208.69.78.217
-  port: 2053
-  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
+  server: 62.109.1.5
+  port: 2058
+  uuid: 4ad9f982-b56a-444a-9684-35ce51307a36
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
-    short-id: ad86e2d52ff40ebd
-  servername: www.apple.com
+    public-key: lJBsn9ndieTIUBzXkJUhf6O0OE8pm29_z1fUtARwL0s
+    short-id: 937255313d6ce673
+  servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇨🇭 瑞士 (Switzerland) 07 - xiaohe
-  type: hysteria2
-  server: 140.238.213.114
-  port: 50160
-  password: 84a506ca5aca505696a454d828420b3f
-  udp: true
-  skip-cert-verify: true
+  flow: xtls-rprx-vision
 - name: 🇨🇭 瑞士 (Switzerland) 08 - xiaohe
   type: vless
-  server: 208.69.78.217
-  port: 2053
-  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
+  server: dddz-3-z.473221.xyz
+  port: 33169
+  uuid: 65ec84f5-0dd4-4582-8b4f-592e50b22116
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
-    short-id: ad86e2d52ff40ebd
-  servername: www.apple.com
-  client-fingerprint: chrome
+    public-key: A9EF_1fUwOcGSP6bmSmuAIls4XpgciihICNTarLZ-2o
+    short-id: 01f2513112301a
+  servername: download-porter.hoyoverse.com
+  client-fingerprint: edge
+  flow: xtls-rprx-vision
 proxy-groups:
 - name: PROXIES
   type: select

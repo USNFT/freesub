@@ -1,0 +1,34 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇴🇲 OM 01 (家宽) - xiaohe
+  type: vless
+  server: vpn.noxtem.cc
+  port: 443
+  uuid: b2ee4a4e-eb20-4bb4-956c-dc0f5187633e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: l688n0i3cg86xE5siG0BO4iSfwdzIqB-PX1M0P8Pk2s
+    short-id: 1123f4e63ee6b2
+  servername: blog.api.www.cloudflare.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇴🇲 OM 01 (家宽) - xiaohe
+- name: AUTO
+  type: url-test
+  url: https://www.google.com/generate_204
+  interval: 300
+  proxies:
+  - 🇴🇲 OM 01 (家宽) - xiaohe
+rules:
+- MATCH,PROXIES
