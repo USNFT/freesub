@@ -6,6 +6,19 @@ log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - xiaohe
   type: vless
+  server: 222.167.245.16
+  port: 443
+  uuid: 7d43670b-6b08-45b9-8a24-8f3971abc132
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: j4Uc6ljg9by_VKYywo5h2N-eh3kpUbFL5Bsp8-AX4Qk
+  servername: poland.biznes.lol
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇵🇱 波兰 (Poland) 02 - xiaohe
+  type: vless
   server: 150.251.112.45
   port: 2066
   uuid: f333ac5d-1e0b-4947-a123-7bb605803ad8
@@ -24,11 +37,13 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇵🇱 波兰 (Poland) 01 - xiaohe
+  - 🇵🇱 波兰 (Poland) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇵🇱 波兰 (Poland) 01 - xiaohe
+  - 🇵🇱 波兰 (Poland) 02 - xiaohe
 rules:
 - MATCH,PROXIES
