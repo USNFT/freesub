@@ -13,17 +13,17 @@ proxies:
   udp: true
 - name: 🇸🇪 瑞典 (Sweden) 02 - xiaohe
   type: ss
-  server: 62.182.193.228
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: 2e555e46dbc421452416834962fd014f
-  udp: true
-- name: 🇸🇪 瑞典 (Sweden) 03 - xiaohe
-  type: ss
   server: 138.199.55.243
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇸🇪 瑞典 (Sweden) 03 - xiaohe
+  type: ss
+  server: 62.182.193.228
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: 2e555e46dbc421452416834962fd014f
   udp: true
 - name: 🇸🇪 瑞典 (Sweden) 04 - xiaohe
   type: vless
@@ -83,7 +83,7 @@ proxies:
   flow: xtls-rprx-vision
 - name: 🇸🇪 瑞典 (Sweden) 08 - xiaohe
   type: vless
-  server: 185.189.45.195
+  server: get.jarbook.net
   port: 443
   uuid: dd5bed0b-ee77-481b-9f2c-250a632ddd9f
   udp: true
@@ -97,17 +97,17 @@ proxies:
   flow: xtls-rprx-vision
 - name: 🇸🇪 瑞典 (Sweden) 09 - xiaohe
   type: vless
-  server: get.jarbook.net
+  server: 94.183.234.245
   port: 443
-  uuid: dd5bed0b-ee77-481b-9f2c-250a632ddd9f
+  uuid: 5de0c218-0138-45d8-94d2-c2c3f37a1a6d
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: BIy6H-jndn24Ukyw83ML8LDB1HL8WLJmfCADEy8lzVs
-    short-id: c6f97313
-  servername: get.jarbook.net
-  client-fingerprint: firefox
+    public-key: tfFzmbVByvoZxxIEUiHMv22_k0-nQz00L0XjU0bd_Fc
+    short-id: 7f1e29593aa94ad1
+  servername: www.bing.com
+  client-fingerprint: qq
   flow: xtls-rprx-vision
 proxy-groups:
 - name: PROXIES

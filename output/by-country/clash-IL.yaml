@@ -16,7 +16,7 @@ proxies:
     public-key: 8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To
     short-id: a3a578ab
   servername: www.apple.com
-  client-fingerprint: random
+  client-fingerprint: chrome
   flow: xtls-rprx-vision
 - name: 🇮🇱 以色列 (Israel) 02 - xiaohe
   type: vless
@@ -58,7 +58,7 @@ proxies:
     public-key: 8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To
     short-id: a3a578ab
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: random
   flow: xtls-rprx-vision
 - name: 🇮🇱 以色列 (Israel) 05 - xiaohe
   type: vless
@@ -100,7 +100,7 @@ proxies:
     public-key: 8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To
     short-id: a3a578ab
   servername: www.apple.com
-  client-fingerprint: random
+  client-fingerprint: chrome
   flow: xtls-rprx-vision
 - name: 🇮🇱 以色列 (Israel) 08 - xiaohe
   type: vless
@@ -114,7 +114,7 @@ proxies:
     public-key: 8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To
     short-id: a3a578ab
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: random
   flow: xtls-rprx-vision
 - name: 🇮🇱 以色列 (Israel) 09 - xiaohe
   type: vless
@@ -130,34 +130,6 @@ proxies:
   servername: www.apple.com
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: 🇮🇱 以色列 (Israel) 10 - xiaohe
-  type: vless
-  server: 8a2e72t.nl11.h1clayd.click
-  port: 443
-  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: VZS639V1i-35g7VXb9EoTYL-Srm7858sxcvFAunncmA
-    short-id: 8d0d0679f42ffd98
-  servername: 8a2e72t.nl11.h1clayd.click
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇮🇱 以色列 (Israel) 11 - xiaohe
-  type: vless
-  server: 196.245.217.70
-  port: 443
-  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: VZS639V1i-35g7VXb9EoTYL-Srm7858sxcvFAunncmA
-    short-id: 8d0d0679f42ffd98
-  servername: 8a2e72t.nl11.h1clayd.click
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
 proxy-groups:
 - name: PROXIES
   type: select
@@ -172,8 +144,6 @@ proxy-groups:
   - 🇮🇱 以色列 (Israel) 07 - xiaohe
   - 🇮🇱 以色列 (Israel) 08 - xiaohe
   - 🇮🇱 以色列 (Israel) 09 - xiaohe
-  - 🇮🇱 以色列 (Israel) 10 - xiaohe
-  - 🇮🇱 以色列 (Israel) 11 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -188,7 +158,5 @@ proxy-groups:
   - 🇮🇱 以色列 (Israel) 07 - xiaohe
   - 🇮🇱 以色列 (Israel) 08 - xiaohe
   - 🇮🇱 以色列 (Israel) 09 - xiaohe
-  - 🇮🇱 以色列 (Israel) 10 - xiaohe
-  - 🇮🇱 以色列 (Israel) 11 - xiaohe
 rules:
 - MATCH,PROXIES
