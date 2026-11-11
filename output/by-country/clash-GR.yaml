@@ -4,30 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇦 乌克兰 (Ukraine) 01 - xiaohe
+- name: 🇬🇷 希腊 (Greece) 01 - xiaohe
   type: vless
-  server: 185.194.191.3
+  server: 85.90.197.220
   port: 443
-  uuid: 69b5eabd-1232-4b9d-8b9f-62d4654a5de6
+  uuid: 8f704ed6-9a1a-4d04-94dd-1bff501716de
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: TDnaM_SEdm44hyHFXcs1diltCym-iqjxOsJz6wHMySU
-    short-id: '03'
-  servername: play.google.com
+    public-key: biNcdU5mywtNw-KyPpLHindBxdEyAolT1WJ26N0b7y4
+    short-id: 94acb54627612d43
+  servername: www.cloudflare.com
   client-fingerprint: chrome
+  flow: xtls-rprx-vision
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇺🇦 乌克兰 (Ukraine) 01 - xiaohe
+  - 🇬🇷 希腊 (Greece) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇦 乌克兰 (Ukraine) 01 - xiaohe
+  - 🇬🇷 希腊 (Greece) 01 - xiaohe
 rules:
 - MATCH,PROXIES
