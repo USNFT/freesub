@@ -6,29 +6,43 @@ log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - xiaohe
   type: vless
-  server: 2.26.224.174
-  port: 8443
-  uuid: a4e5f910-23f4-470f-82a7-ed9d7be71dec
+  server: 222.167.245.16
+  port: 443
+  uuid: 7d43670b-6b08-45b9-8a24-8f3971abc132
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: d6qmF8ibk_PxtDJPzSa7LKw9VUI_mZ59DrTvmW3RaFc
-    short-id: 10983e6c816181c2
-  servername: teamdocs.su
-  client-fingerprint: firefox
+    public-key: j4Uc6ljg9by_VKYywo5h2N-eh3kpUbFL5Bsp8-AX4Qk
+  servername: poland.biznes.lol
+  client-fingerprint: chrome
   flow: xtls-rprx-vision
+- name: 🇵🇱 波兰 (Poland) 02 - xiaohe
+  type: vless
+  server: 201.58.139.66
+  port: 443
+  uuid: 056405e8-de9f-4d0d-8145-956f13cc34da
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: LY0H47MWx87_L_JBzxFAuTzKZB53U7MrZQK8-dNnMxM
+    short-id: 6c5c7900406a1ae7
+  servername: 57aac2t.pl7.h1clayd.click
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇵🇱 波兰 (Poland) 01 - xiaohe
+  - 🇵🇱 波兰 (Poland) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇵🇱 波兰 (Poland) 01 - xiaohe
+  - 🇵🇱 波兰 (Poland) 02 - xiaohe
 rules:
 - MATCH,PROXIES
