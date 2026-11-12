@@ -4,34 +4,7 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇳🇱 荷兰 (Netherlands) 01 (家宽) - xiaohe
-  type: vless
-  server: nl-balancer.peregrine-sub.net
-  port: 443
-  uuid: 42a64b9a-ab79-4094-8656-30366a7c2ea3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: Y2uyTCt5ofoFht6Xl-55dBPCBUiYi1fFTVcmZtoiqFw
-  servername: nl-balancer.peregrine-sub.net
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe
-  type: vless
-  server: 169.40.34.41
-  port: 443
-  uuid: 622654a4-b666-000b-9260-fb717e05154f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 6VMgXXhZdJCiOG05EyK_zTHh00kpFGrZJeZIEPgqhjY
-    short-id: 1c3e8241a8743df9
-  servername: key-master-saver.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe
+- name: 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe
   type: vless
   server: 169.40.34.41
   port: 443
@@ -45,21 +18,32 @@ proxies:
   servername: key-master-saver.com
   client-fingerprint: ios
   flow: xtls-rprx-vision
+- name: 🇳🇱 荷兰 (Netherlands) 02 (家宽) - xiaohe
+  type: vless
+  server: nl-balancer.peregrine-sub.net
+  port: 443
+  uuid: 42a64b9a-ab79-4094-8656-30366a7c2ea3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: Y2uyTCt5ofoFht6Xl-55dBPCBUiYi1fFTVcmZtoiqFw
+  servername: nl-balancer.peregrine-sub.net
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇳🇱 荷兰 (Netherlands) 01 (家宽) - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe
+  - 🇳🇱 荷兰 (Netherlands) 02 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇳🇱 荷兰 (Netherlands) 01 (家宽) - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe
+  - 🇳🇱 荷兰 (Netherlands) 02 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES

@@ -6,42 +6,17 @@ log-level: info
 proxies:
 - name: 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
   type: vless
-  server: dwedfs.whitenw.net
-  port: 8445
-  uuid: 84a56b88-2f89-4a57-b925-74abd5b7fd87
+  server: ee.subv.ru
+  port: 443
+  uuid: 90157e25-cee1-4217-921e-91f300bc1a24
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: I_0JD13_bJuD6bNhTfb1PFPJUQqEVHl-YFluNwHAPD4
-  servername: passport.yandex.ru
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
-  type: vless
-  server: 78.159.245.40
-  port: 8445
-  uuid: 84a56b88-2f89-4a57-b925-74abd5b7fd87
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: I_0JD13_bJuD6bNhTfb1PFPJUQqEVHl-YFluNwHAPD4
-  servername: passport.yandex.ru
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
-  type: vless
-  server: 78.159.245.40
-  port: 8445
-  uuid: 84a56b88-2f89-4a57-b925-74abd5b7fd87
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: I_0JD13_bJuD6bNhTfb1PFPJUQqEVHl-YFluNwHAPD4
-  servername: passport.yandex.ru
-  client-fingerprint: chrome
+    public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
+    short-id: 428ef87fd47a3a32
+  servername: dvizhok.su
+  client-fingerprint: firefox
   flow: xtls-rprx-vision
 proxy-groups:
 - name: PROXIES
@@ -49,15 +24,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
-  - 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
-  - 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
-  - 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
-  - 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
 rules:
 - MATCH,PROXIES
