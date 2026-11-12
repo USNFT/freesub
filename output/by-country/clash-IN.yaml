@@ -29,7 +29,7 @@ proxies:
     public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
     short-id: 9980e0609b0d3891
   servername: www.apple.com
-  client-fingerprint: random
+  client-fingerprint: firefox
 - name: 🇮🇳 印度 (India) 03 - xiaohe
   type: vless
   server: 194.61.31.126
@@ -58,18 +58,17 @@ proxies:
   client-fingerprint: chrome
 - name: 🇮🇳 印度 (India) 05 - xiaohe
   type: vless
-  server: 148.113.5.22
+  server: in.smrtai.top
   port: 443
-  uuid: 7d53c50c-3abf-4cb5-9d58-e7a42ce1d1c6
+  uuid: 6bdc8320-7eae-46fc-be08-f5f54e65dfc8
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: Z427KvuqeeUvrRo-BDKuc9xG5t0z0y4zAnhA_NIFFwI
-    short-id: 7ff98efcced3fd5b
+    public-key: 3LbVuwKpQv55GngyRhvGl9KyAHIDAgvJx_VRM5mUD2Q
+    short-id: 6bdc8320
   servername: www.cloudflare.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
+  client-fingerprint: random
 - name: 🇮🇳 印度 (India) 06 - xiaohe
   type: vless
   server: in.smrtai.top
@@ -95,19 +94,6 @@ proxies:
     public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
     short-id: 9980e0609b0d3891
   servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇮🇳 印度 (India) 08 - xiaohe
-  type: vless
-  server: in.smrtai.top
-  port: 443
-  uuid: 6bdc8320-7eae-46fc-be08-f5f54e65dfc8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 3LbVuwKpQv55GngyRhvGl9KyAHIDAgvJx_VRM5mUD2Q
-    short-id: 6bdc8320
-  servername: www.cloudflare.com
   client-fingerprint: random
 proxy-groups:
 - name: PROXIES
@@ -121,7 +107,6 @@ proxy-groups:
   - 🇮🇳 印度 (India) 05 - xiaohe
   - 🇮🇳 印度 (India) 06 - xiaohe
   - 🇮🇳 印度 (India) 07 - xiaohe
-  - 🇮🇳 印度 (India) 08 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -134,6 +119,5 @@ proxy-groups:
   - 🇮🇳 印度 (India) 05 - xiaohe
   - 🇮🇳 印度 (India) 06 - xiaohe
   - 🇮🇳 印度 (India) 07 - xiaohe
-  - 🇮🇳 印度 (India) 08 - xiaohe
 rules:
 - MATCH,PROXIES
