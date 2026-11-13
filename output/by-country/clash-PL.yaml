@@ -6,16 +6,17 @@ log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - xiaohe
   type: vless
-  server: 222.167.245.16
-  port: 443
-  uuid: 7d43670b-6b08-45b9-8a24-8f3971abc132
+  server: 2.26.224.174
+  port: 8445
+  uuid: a4e5f910-23f4-470f-82a7-ed9d7be71dec
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: j4Uc6ljg9by_VKYywo5h2N-eh3kpUbFL5Bsp8-AX4Qk
-  servername: poland.biznes.lol
-  client-fingerprint: chrome
+    public-key: d6qmF8ibk_PxtDJPzSa7LKw9VUI_mZ59DrTvmW3RaFc
+    short-id: 10983e6c816181c2
+  servername: blog.ncknms.com
+  client-fingerprint: edge
   flow: xtls-rprx-vision
 - name: 🇵🇱 波兰 (Poland) 02 - xiaohe
   type: vless
@@ -45,20 +46,6 @@ proxies:
   servername: www.apple.com
   client-fingerprint: ''
   flow: xtls-rprx-vision
-- name: 🇵🇱 波兰 (Poland) 04 - xiaohe
-  type: vless
-  server: 2.26.224.174
-  port: 8445
-  uuid: a4e5f910-23f4-470f-82a7-ed9d7be71dec
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: d6qmF8ibk_PxtDJPzSa7LKw9VUI_mZ59DrTvmW3RaFc
-    short-id: 10983e6c816181c2
-  servername: blog.ncknms.com
-  client-fingerprint: edge
-  flow: xtls-rprx-vision
 proxy-groups:
 - name: PROXIES
   type: select
@@ -67,7 +54,6 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 01 - xiaohe
   - 🇵🇱 波兰 (Poland) 02 - xiaohe
   - 🇵🇱 波兰 (Poland) 03 - xiaohe
-  - 🇵🇱 波兰 (Poland) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -76,6 +62,5 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 01 - xiaohe
   - 🇵🇱 波兰 (Poland) 02 - xiaohe
   - 🇵🇱 波兰 (Poland) 03 - xiaohe
-  - 🇵🇱 波兰 (Poland) 04 - xiaohe
 rules:
 - MATCH,PROXIES
