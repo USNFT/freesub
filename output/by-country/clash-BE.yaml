@@ -1,0 +1,48 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇧🇪 比利时 (Belgium) 01 - xiaohe
+  type: vless
+  server: 109.69.218.172
+  port: 443
+  uuid: 664f65f4-33b3-43a3-b9e5-68192d1d428e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: cv_KJnMzQUZruACPbH-BCgLWrYqPm2dbUymg-gW_sVc
+  servername: zealous-vortex.cdn.cachefleet.com
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+- name: 🇧🇪 比利时 (Belgium) 02 - xiaohe
+  type: vless
+  server: 109.69.218.172
+  port: 443
+  uuid: 664f65f4-33b3-43a3-b9e5-68192d1d428e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: cv_KJnMzQUZruACPbH-BCgLWrYqPm2dbUymg-gW_sVc
+  servername: zealous-vortex.cdn.cachefleet.com
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇧🇪 比利时 (Belgium) 01 - xiaohe
+  - 🇧🇪 比利时 (Belgium) 02 - xiaohe
+- name: AUTO
+  type: url-test
+  url: https://www.google.com/generate_204
+  interval: 300
+  proxies:
+  - 🇧🇪 比利时 (Belgium) 01 - xiaohe
+  - 🇧🇪 比利时 (Belgium) 02 - xiaohe
+rules:
+- MATCH,PROXIES
