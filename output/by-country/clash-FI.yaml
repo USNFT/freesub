@@ -5,19 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - xiaohe
-  type: vless
-  server: 178.214.125.1
-  port: 443
-  uuid: 3f3160a0-747d-4fed-bf3d-4d884bfa964d
+  type: hysteria2
+  server: 94.183.164.119
+  port: 24433
+  password: 549766c3-fa5f-471e-8031-ffc1f8d5064f
   udp: true
-  tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: ZxCwJxbsZWJYYCPzeWj7_fxJMVhwh4XGfpvjmEIQjHY
-    short-id: 6172ba9cffe9c22f
-  servername: conf.emaar.ru
-  client-fingerprint: edge
-  flow: xtls-rprx-vision
 - name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
   type: hysteria2
   server: 94.183.164.119
