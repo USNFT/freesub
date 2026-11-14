@@ -6,10 +6,10 @@ log-level: info
 proxies:
 - name: 🇮🇹 意大利 (Italy) 01 - xiaohe
   type: ss
-  server: 57.131.4.13
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: mx81glqbtlwuhcjo
+  server: 185.164.175.81
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
 - name: 🇮🇹 意大利 (Italy) 02 - xiaohe
   type: ss
@@ -19,19 +19,19 @@ proxies:
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
 - name: 🇮🇹 意大利 (Italy) 03 - xiaohe
-  type: ss
-  server: 185.164.175.81
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  type: vless
+  server: 172.213.24.16
+  port: 2083
+  uuid: 52a5a29f-c162-411a-8a37-a3f11b0dc537
   udp: true
-- name: 🇮🇹 意大利 (Italy) 04 - xiaohe
-  type: ss
-  server: dns24.m3hrzd.ir
-  port: 1349
-  cipher: chacha20-ietf-poly1305
-  password: byX4-DV0C42PLFTWQhMTAQ63mZ8qrDRB
-  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: WbgtxLlo2gmTzB4Wzxgh_U7G97d4ENTS10fYIoujET4
+    short-id: 0123456789abcdef
+  servername: www.apple.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
 proxy-groups:
 - name: PROXIES
   type: select
@@ -40,7 +40,6 @@ proxy-groups:
   - 🇮🇹 意大利 (Italy) 01 - xiaohe
   - 🇮🇹 意大利 (Italy) 02 - xiaohe
   - 🇮🇹 意大利 (Italy) 03 - xiaohe
-  - 🇮🇹 意大利 (Italy) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -49,6 +48,5 @@ proxy-groups:
   - 🇮🇹 意大利 (Italy) 01 - xiaohe
   - 🇮🇹 意大利 (Italy) 02 - xiaohe
   - 🇮🇹 意大利 (Italy) 03 - xiaohe
-  - 🇮🇹 意大利 (Italy) 04 - xiaohe
 rules:
 - MATCH,PROXIES
