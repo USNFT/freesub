@@ -1,0 +1,34 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇵🇱 波兰 (Poland) 01 - xiaohe
+  type: vless
+  server: pl3.fox-lisa.ru
+  port: 443
+  uuid: ccb8ff48-3934-4250-b4ec-bb76b95d154f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: NaCZ-sS4poEbFwKmD7ePAVyc5OhHxsD9nkAStjXkoWs
+    short-id: 027af64166562b09
+  servername: pl3.fox-lisa.ru
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇵🇱 波兰 (Poland) 01 - xiaohe
+- name: AUTO
+  type: url-test
+  url: https://www.google.com/generate_204
+  interval: 300
+  proxies:
+  - 🇵🇱 波兰 (Poland) 01 - xiaohe
+rules:
+- MATCH,PROXIES
