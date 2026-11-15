@@ -4,18 +4,18 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇬🇷 希腊 (Greece) 01 - xiaohe
+- name: 🇻🇳 越南 (Vietnam) 01 - xiaohe
   type: vless
-  server: 85.90.197.220
-  port: 443
-  uuid: 8f704ed6-9a1a-4d04-94dd-1bff501716de
+  server: zfapi.zalolink.com
+  port: 55688
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: biNcdU5mywtNw-KyPpLHindBxdEyAolT1WJ26N0b7y4
-    short-id: 94acb54627612d43
-  servername: www.cloudflare.com
+    public-key: 6dqd0hqbC0bht9RtsYamvlYdMpxyUbk7uXw0xtO8DzQ
+    short-id: 865c1b2c
+  servername: bilibili-vn.biliimg.com
   client-fingerprint: chrome
   flow: xtls-rprx-vision
 proxy-groups:
@@ -23,12 +23,12 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇬🇷 希腊 (Greece) 01 - xiaohe
+  - 🇻🇳 越南 (Vietnam) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇬🇷 希腊 (Greece) 01 - xiaohe
+  - 🇻🇳 越南 (Vietnam) 01 - xiaohe
 rules:
 - MATCH,PROXIES

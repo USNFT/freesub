@@ -19,13 +19,6 @@ proxies:
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
 - name: 🇮🇹 意大利 (Italy) 03 - xiaohe
-  type: ss
-  server: 57.131.4.13
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: mx81glqbtlwuhcjo
-  udp: true
-- name: 🇮🇹 意大利 (Italy) 04 - xiaohe
   type: vless
   server: 172.213.24.16
   port: 2083
@@ -39,20 +32,6 @@ proxies:
   servername: www.apple.com
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: 🇮🇹 意大利 (Italy) 05 - xiaohe
-  type: vless
-  server: 83.141.92.190
-  port: 443
-  uuid: 555b35c4-30f9-40c6-a61a-7f53ab1bea45
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: kBTMVLCNE0jjwuJF6H5-65l5Pe0QToS0Hg-9Tmaa7Sk
-    short-id: 1a2b3c4d
-  servername: images.porsche.com
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
 proxy-groups:
 - name: PROXIES
   type: select
@@ -61,8 +40,6 @@ proxy-groups:
   - 🇮🇹 意大利 (Italy) 01 - xiaohe
   - 🇮🇹 意大利 (Italy) 02 - xiaohe
   - 🇮🇹 意大利 (Italy) 03 - xiaohe
-  - 🇮🇹 意大利 (Italy) 04 - xiaohe
-  - 🇮🇹 意大利 (Italy) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -71,7 +48,5 @@ proxy-groups:
   - 🇮🇹 意大利 (Italy) 01 - xiaohe
   - 🇮🇹 意大利 (Italy) 02 - xiaohe
   - 🇮🇹 意大利 (Italy) 03 - xiaohe
-  - 🇮🇹 意大利 (Italy) 04 - xiaohe
-  - 🇮🇹 意大利 (Italy) 05 - xiaohe
 rules:
 - MATCH,PROXIES

@@ -16,7 +16,7 @@ proxies:
     public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
     short-id: 9e419c0759b54d6f
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: random
 - name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
   type: vless
   server: 151.241.226.201
@@ -32,14 +32,6 @@ proxies:
   client-fingerprint: random
 - name: 🇹🇷 土耳其 (Turkey) 03 - xiaohe
   type: vless
-  server: n.shopthc.ir
-  port: 1003
-  uuid: 7e8c5916-2070-4013-864d-be767d4e2fd7
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇹🇷 土耳其 (Turkey) 04 - xiaohe
-  type: vless
   server: 151.241.226.201
   port: 2053
   uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
@@ -50,7 +42,46 @@ proxies:
     public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
     short-id: 9e419c0759b54d6f
   servername: www.apple.com
-  client-fingerprint: random
+  client-fingerprint: chrome
+- name: 🇹🇷 土耳其 (Turkey) 04 - xiaohe
+  type: vless
+  server: 196.245.153.112
+  port: 443
+  uuid: 474638a5-dc58-4453-9e40-70bcaa4ef74c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: RjoTK5x2_y3hb4nsOUnjii7IAu6gy5GrC-VN-H_AIh0
+    short-id: c10f4100fa3a8d47
+  servername: b998f03d.de-p2.h1clayd.click
+  client-fingerprint: firefox
+- name: 🇹🇷 土耳其 (Turkey) 05 - xiaohe
+  type: vless
+  server: bbcdd4t.de-p2.h1clayd.click
+  port: 443
+  uuid: 4618cebd-e1e9-45c3-be98-d9d6e3ee8bef
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: n9cdr2Qf9h3S_jf5Rcd15fl-4fxuztHvlexE7G-QvW8
+    short-id: 1aab0b827885a8b4
+  servername: bbcdd4t.de-p2.h1clayd.click
+  client-fingerprint: firefox
+- name: 🇹🇷 土耳其 (Turkey) 06 - xiaohe
+  type: vless
+  server: b998f03d.de-p2.h1clayd.click
+  port: 443
+  uuid: 474638a5-dc58-4453-9e40-70bcaa4ef74c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: RjoTK5x2_y3hb4nsOUnjii7IAu6gy5GrC-VN-H_AIh0
+    short-id: c10f4100fa3a8d47
+  servername: b998f03d.de-p2.h1clayd.click
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -60,6 +91,8 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 02 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 03 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 04 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 05 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -69,5 +102,7 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 02 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 03 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 04 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 05 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 06 - xiaohe
 rules:
 - MATCH,PROXIES

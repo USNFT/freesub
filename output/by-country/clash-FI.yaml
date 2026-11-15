@@ -5,27 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - xiaohe
-  type: vless
-  server: 132.243.163.119
-  port: 25749
-  uuid: e460e79d-5dd9-451d-8d1a-a84c8b70c9a7
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: nmjOhfpVZtk9W-3GZk5JY0B-OvCFkjP2RvTVBNZO7lE
-    short-id: f6b3841eabafff9a
-  servername: 80aa2br.fi4.h1clayd.click
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
   type: hysteria2
   server: 94.183.164.119
   port: 24433
   password: 549766c3-fa5f-471e-8031-ffc1f8d5064f
   udp: true
   skip-cert-verify: true
-- name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
+- name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
   type: hysteria2
   server: 94.183.164.119
   port: 24433
@@ -39,7 +25,6 @@ proxy-groups:
   - AUTO
   - 🇫🇮 芬兰 (Finland) 01 - xiaohe
   - 🇫🇮 芬兰 (Finland) 02 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -47,6 +32,5 @@ proxy-groups:
   proxies:
   - 🇫🇮 芬兰 (Finland) 01 - xiaohe
   - 🇫🇮 芬兰 (Finland) 02 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 03 - xiaohe
 rules:
 - MATCH,PROXIES
