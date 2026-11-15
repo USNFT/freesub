@@ -13,6 +13,13 @@ proxies:
   skip-cert-verify: true
 - name: 🇷🇸 塞尔维亚 (Serbia) 02 - xiaohe
   type: hysteria2
+  server: 130.49.163.188
+  port: 443
+  password: 307ee0e53ea04dfd86a7f2f9fcd53844
+  udp: true
+  skip-cert-verify: true
+- name: 🇷🇸 塞尔维亚 (Serbia) 03 - xiaohe
+  type: hysteria2
   server: s5.libertyrunet.store
   port: 443
   password: 307ee0e53ea04dfd86a7f2f9fcd53844
@@ -25,6 +32,7 @@ proxy-groups:
   - AUTO
   - 🇷🇸 塞尔维亚 (Serbia) 01 - xiaohe
   - 🇷🇸 塞尔维亚 (Serbia) 02 - xiaohe
+  - 🇷🇸 塞尔维亚 (Serbia) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -32,5 +40,6 @@ proxy-groups:
   proxies:
   - 🇷🇸 塞尔维亚 (Serbia) 01 - xiaohe
   - 🇷🇸 塞尔维亚 (Serbia) 02 - xiaohe
+  - 🇷🇸 塞尔维亚 (Serbia) 03 - xiaohe
 rules:
 - MATCH,PROXIES
