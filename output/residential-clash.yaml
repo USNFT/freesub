@@ -4,18 +4,18 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇻🇳 越南 (Vietnam) 01 - xiaohe
+- name: 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
   type: vless
-  server: zfapi.zalolink.com
-  port: 55688
-  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  server: 69.17.3.150
+  port: 443
+  uuid: 140d6fc9-2c6d-41bd-a487-182b52c0184f
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: 6dqd0hqbC0bht9RtsYamvlYdMpxyUbk7uXw0xtO8DzQ
-    short-id: 865c1b2c
-  servername: bilibili-vn.biliimg.com
+    public-key: zUbdpLqoZN7kSFDrHgGnAcZqJzKilme_rIJwI3FPGCA
+    short-id: d898752d58acbfe0
+  servername: caissuers.microsoft.com
   client-fingerprint: chrome
   flow: xtls-rprx-vision
 proxy-groups:
@@ -23,12 +23,12 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇻🇳 越南 (Vietnam) 01 - xiaohe
+  - 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇻🇳 越南 (Vietnam) 01 - xiaohe
+  - 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES
