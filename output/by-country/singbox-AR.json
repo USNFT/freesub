@@ -6,18 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇷🇸 塞尔维亚 (Serbia) 01 - xiaohe",
-        "🇷🇸 塞尔维亚 (Serbia) 02 - xiaohe",
-        "🇷🇸 塞尔维亚 (Serbia) 03 - xiaohe"
+        "🇦🇷 AR 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇸 塞尔维亚 (Serbia) 01 - xiaohe",
-        "🇷🇸 塞尔维亚 (Serbia) 02 - xiaohe",
-        "🇷🇸 塞尔维亚 (Serbia) 03 - xiaohe"
+        "🇦🇷 AR 01 - xiaohe"
       ],
       "url": "https://www.google.com/generate_204"
     },
