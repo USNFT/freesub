@@ -6,25 +6,26 @@ log-level: info
 proxies:
 - name: 🇸🇪 瑞典 (Sweden) 01 - xiaohe
   type: ss
+  server: 70.34.212.124
+  port: 8388
+  cipher: aes-256-gcm
+  password: AxIYWtskJWIIaefW
+  udp: true
+- name: 🇸🇪 瑞典 (Sweden) 02 - xiaohe
+  type: ss
   server: 138.199.55.243
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇸🇪 瑞典 (Sweden) 02 - xiaohe
-  type: vless
-  server: 88.216.60.73
-  port: 443
-  uuid: a30903dc-1bf0-4be5-8b1b-603a3a56211c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
-    short-id: a7c92e4b10d6f835
-  servername: ns-api-gw.galioncc.com
-  client-fingerprint: firefox
 - name: 🇸🇪 瑞典 (Sweden) 03 - xiaohe
+  type: ss
+  server: 62.182.193.228
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: 2e555e46dbc421452416834962fd014f
+  udp: true
+- name: 🇸🇪 瑞典 (Sweden) 04 - xiaohe
   type: vless
   server: 88.216.214.159
   port: 443
@@ -37,47 +38,6 @@ proxies:
     short-id: a7c92e4b10d6f835
   servername: api-svc-mgr.galioncc.com
   client-fingerprint: firefox
-- name: 🇸🇪 瑞典 (Sweden) 04 - xiaohe
-  type: vless
-  server: 88.216.60.73
-  port: 443
-  uuid: a30903dc-1bf0-4be5-8b1b-603a3a56211c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
-    short-id: a7c92e4b10d6f835
-  servername: ns-api-gw.galioncc.com
-  client-fingerprint: ios
-- name: 🇸🇪 瑞典 (Sweden) 05 - xiaohe
-  type: vless
-  server: 56.228.115.67
-  port: 443
-  uuid: f39ff3a5-cf86-4514-88ee-006aa4b6f883
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: HjBtew1EYyAA5EnDBuZu4GR2u0OvitC5xp2fvqiYOwQ
-    short-id: 4c36b466
-  servername: dl.google.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇸🇪 瑞典 (Sweden) 06 - xiaohe
-  type: vless
-  server: 195.72.62.7
-  port: 443
-  uuid: 8197b9b9-8945-460f-99c9-325ef8a8a7c3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: GQC47B2ZbBygpgJap7Em9lZmCZZkzlckiadXWXlVxGU
-    short-id: 2a67748b0d641e16
-  servername: fexzoo.net
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
 proxy-groups:
 - name: PROXIES
   type: select
@@ -87,8 +47,6 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 02 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 03 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 04 - xiaohe
-  - 🇸🇪 瑞典 (Sweden) 05 - xiaohe
-  - 🇸🇪 瑞典 (Sweden) 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -98,7 +56,5 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 02 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 03 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 04 - xiaohe
-  - 🇸🇪 瑞典 (Sweden) 05 - xiaohe
-  - 🇸🇪 瑞典 (Sweden) 06 - xiaohe
 rules:
 - MATCH,PROXIES

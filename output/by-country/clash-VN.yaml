@@ -4,31 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇬🇪 GE 01 - xiaohe
+- name: 🇻🇳 越南 (Vietnam) 01 - xiaohe
   type: vless
-  server: 194.135.119.135
-  port: 443
-  uuid: 8197b9b9-8945-460f-99c9-325ef8a8a7c3
+  server: zfapi.zalolink.com
+  port: 55688
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: fVo5hYUD3VkxEetcXSMVWp7hjvz4YrKLNHDhGhn-d3M
-    short-id: 0640a12b
-  servername: ge1.gofizzin.com
-  client-fingerprint: ''
+    public-key: 6dqd0hqbC0bht9RtsYamvlYdMpxyUbk7uXw0xtO8DzQ
+    short-id: 865c1b2c
+  servername: bilibili-vn.biliimg.com
+  client-fingerprint: chrome
   flow: xtls-rprx-vision
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇬🇪 GE 01 - xiaohe
+  - 🇻🇳 越南 (Vietnam) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇬🇪 GE 01 - xiaohe
+  - 🇻🇳 越南 (Vietnam) 01 - xiaohe
 rules:
 - MATCH,PROXIES

@@ -6,19 +6,6 @@ log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - xiaohe
   type: vless
-  server: 222.167.245.16
-  port: 443
-  uuid: 7d43670b-6b08-45b9-8a24-8f3971abc132
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: j4Uc6ljg9by_VKYywo5h2N-eh3kpUbFL5Bsp8-AX4Qk
-  servername: poland.biznes.lol
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇵🇱 波兰 (Poland) 02 - xiaohe
-  type: vless
   server: 80.47.10.106
   port: 443
   uuid: a30903dc-1bf0-4be5-8b1b-603a3a56211c
@@ -30,6 +17,19 @@ proxies:
     short-id: a7c92e4b10d6f835
   servername: pl8.galioncc.com
   client-fingerprint: firefox
+- name: 🇵🇱 波兰 (Poland) 02 - xiaohe
+  type: vless
+  server: 45.192.12.92
+  port: 443
+  uuid: 352a250d-080b-47b5-b7db-f9f8fa31c551
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: aUOP5gJGQ1QFhdZuREZ8yosfPavFiJ6f_EySIBZ2WCE
+  servername: nltimes.nl
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
 - name: 🇵🇱 波兰 (Poland) 03 - xiaohe
   type: vless
   server: 45.192.12.92
