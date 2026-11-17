@@ -11,26 +11,17 @@ proxies:
   password: 549766c3-fa5f-471e-8031-ffc1f8d5064f
   udp: true
   skip-cert-verify: true
-- name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
-  type: hysteria2
-  server: 94.183.164.119
-  port: 24433
-  password: 549766c3-fa5f-471e-8031-ffc1f8d5064f
-  udp: true
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇫🇮 芬兰 (Finland) 01 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇫🇮 芬兰 (Finland) 01 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 02 - xiaohe
 rules:
 - MATCH,PROXIES

@@ -4,31 +4,29 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
+- name: 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe
   type: vless
-  server: 69.17.3.150
+  server: 9e5f5c4b-tomdc0-tpolhi-1rgxu.hk2.hyhuawei.com
   port: 443
-  uuid: 140d6fc9-2c6d-41bd-a487-182b52c0184f
+  uuid: ea93064c-176c-11f0-885d-f23c91cfbbc9
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: zUbdpLqoZN7kSFDrHgGnAcZqJzKilme_rIJwI3FPGCA
-    short-id: d898752d58acbfe0
-  servername: caissuers.microsoft.com
+    public-key: c9DdggKaJGSH7FN3JgGbi9ZvsUqOGGpIr7BhzTWeTCo
+  servername: download.windowsupdate.com
   client-fingerprint: chrome
-  flow: xtls-rprx-vision
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES
