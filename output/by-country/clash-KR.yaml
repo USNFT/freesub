@@ -13,16 +13,16 @@ proxies:
   skip-cert-verify: true
 - name: 🇰🇷 韩国 (South Korea) 02 - xiaohe
   type: hysteria2
-  server: 152.70.237.123
-  port: 2053
-  password: maintell
+  server: 132.226.226.189
+  port: 50160
+  password: 1671a252e2a97dc2bda4e515475931da
   udp: true
   skip-cert-verify: true
 - name: 🇰🇷 韩国 (South Korea) 03 - xiaohe
   type: hysteria2
-  server: 152.69.231.175
-  port: 50160
-  password: 1beb216e3f60aea9555dae60d219a5ca
+  server: 152.70.237.123
+  port: 2053
+  password: maintell
   udp: true
   skip-cert-verify: true
 - name: 🇰🇷 韩国 (South Korea) 04 - xiaohe
@@ -48,9 +48,9 @@ proxies:
   skip-cert-verify: true
 - name: 🇰🇷 韩国 (South Korea) 07 - xiaohe
   type: hysteria2
-  server: 152.67.200.82
+  server: 132.226.226.189
   port: 50160
-  password: 3d7634af8cb2c6cb4bac1c0efad8b43d
+  password: 1671a252e2a97dc2bda4e515475931da
   udp: true
   skip-cert-verify: true
 - name: 🇰🇷 韩国 (South Korea) 08 - xiaohe
@@ -62,9 +62,9 @@ proxies:
   skip-cert-verify: true
 - name: 🇰🇷 韩国 (South Korea) 09 - xiaohe
   type: hysteria2
-  server: 152.67.200.82
+  server: 152.69.231.175
   port: 50160
-  password: 3d7634af8cb2c6cb4bac1c0efad8b43d
+  password: 1beb216e3f60aea9555dae60d219a5ca
   udp: true
   skip-cert-verify: true
 - name: 🇰🇷 韩国 (South Korea) 10 - xiaohe
@@ -76,9 +76,9 @@ proxies:
   skip-cert-verify: true
 - name: 🇰🇷 韩国 (South Korea) 11 - xiaohe
   type: hysteria2
-  server: 132.226.226.189
+  server: 152.67.200.82
   port: 50160
-  password: 1671a252e2a97dc2bda4e515475931da
+  password: 3d7634af8cb2c6cb4bac1c0efad8b43d
   udp: true
   skip-cert-verify: true
 - name: 🇰🇷 韩国 (South Korea) 12 - xiaohe
@@ -86,6 +86,13 @@ proxies:
   server: 132.226.226.189
   port: 50160
   password: 1671a252e2a97dc2bda4e515475931da
+  udp: true
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 13 - xiaohe
+  type: hysteria2
+  server: 152.67.200.82
+  port: 50160
+  password: 3d7634af8cb2c6cb4bac1c0efad8b43d
   udp: true
   skip-cert-verify: true
 proxy-groups:
@@ -105,6 +112,7 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 10 - xiaohe
   - 🇰🇷 韩国 (South Korea) 11 - xiaohe
   - 🇰🇷 韩国 (South Korea) 12 - xiaohe
+  - 🇰🇷 韩国 (South Korea) 13 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -122,5 +130,6 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 10 - xiaohe
   - 🇰🇷 韩国 (South Korea) 11 - xiaohe
   - 🇰🇷 韩国 (South Korea) 12 - xiaohe
+  - 🇰🇷 韩国 (South Korea) 13 - xiaohe
 rules:
 - MATCH,PROXIES
