@@ -1,0 +1,33 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇷🇸 塞尔维亚 (Serbia) 01 - xiaohe
+  type: vless
+  server: netherlanddocjac.whooisthebest.ir
+  port: 10000
+  uuid: 97be5ac0-dae3-43c1-aae8-3fcb7b130c59
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: Du5pk4KuMNA1sRcSpmuoLuC0HmxDBmFljFNfUzqxKiM
+    short-id: cd0a1986719e44c8
+  servername: amp-api-edge.apps.apple.com
+  client-fingerprint: chrome
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇷🇸 塞尔维亚 (Serbia) 01 - xiaohe
+- name: AUTO
+  type: url-test
+  url: https://www.google.com/generate_204
+  interval: 300
+  proxies:
+  - 🇷🇸 塞尔维亚 (Serbia) 01 - xiaohe
+rules:
+- MATCH,PROXIES
