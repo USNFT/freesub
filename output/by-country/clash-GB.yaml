@@ -88,8 +88,22 @@ proxies:
   ws-opts:
     path: /vmess/
     headers:
-      Host: viber.com
+      Host: google.com
 - name: 🇬🇧 英国 (United Kingdom) 12 - xiaohe
+  type: vless
+  server: 138.124.125.193
+  port: 10444
+  uuid: e57ce64d-5a1a-4a90-96df-9e1bd3ad26e4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
+    short-id: 8debcf36f1cc69ff
+  servername: ads.x5.ru
+  client-fingerprint: random
+  flow: xtls-rprx-vision
+- name: 🇬🇧 英国 (United Kingdom) 13 - xiaohe
   type: vmess
   server: 57.129.132.223
   port: 80
@@ -101,10 +115,10 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /vmess/?ed#Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
+    path: /vmess/
     headers:
-      Host: google.com
-- name: 🇬🇧 英国 (United Kingdom) 13 - xiaohe
+      Host: viber.com
+- name: 🇬🇧 英国 (United Kingdom) 14 - xiaohe
   type: vless
   server: englandssihcwpocj.whooisthebest.ir
   port: 10000
@@ -117,35 +131,7 @@ proxies:
     short-id: cd0a1986719e44c8
   servername: amp-api-edge.apps.apple.com
   client-fingerprint: chrome
-- name: 🇬🇧 英国 (United Kingdom) 14 - xiaohe
-  type: vless
-  server: 45.43.153.33
-  port: 443
-  uuid: d6752c6b-80ae-4a91-b446-bb330f7f8177
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: _0fpFqEEuCso3B8K7AAcMjctwG_xfCxO2PdKzGd_-hg
-    short-id: 88a13cf2655c
-  servername: www.foxsports.com
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
 - name: 🇬🇧 英国 (United Kingdom) 15 - xiaohe
-  type: vless
-  server: webdisk.jaggyslawa.org
-  port: 443
-  uuid: b62e3646-b84d-443c-9c94-718b646502e0
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: zfsjt2A8ur0qHWIuCG7F9W4wZN3VTuL6fkTljC-9R0s
-    short-id: dda5f542d835
-  servername: www.foxsports.com
-  client-fingerprint: edge
-  flow: xtls-rprx-vision
-- name: 🇬🇧 英国 (United Kingdom) 16 - xiaohe
   type: vless
   server: 107.181.151.128
   port: 443
@@ -179,7 +165,6 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 13 - xiaohe
   - 🇬🇧 英国 (United Kingdom) 14 - xiaohe
   - 🇬🇧 英国 (United Kingdom) 15 - xiaohe
-  - 🇬🇧 英国 (United Kingdom) 16 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -200,6 +185,5 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 13 - xiaohe
   - 🇬🇧 英国 (United Kingdom) 14 - xiaohe
   - 🇬🇧 英国 (United Kingdom) 15 - xiaohe
-  - 🇬🇧 英国 (United Kingdom) 16 - xiaohe
 rules:
 - MATCH,PROXIES

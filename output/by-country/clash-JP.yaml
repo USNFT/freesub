@@ -6,14 +6,14 @@ log-level: info
 proxies:
 - name: 🇯🇵 日本 (Japan) 01 - xiaohe
   type: ss
-  server: 149.22.87.204
+  server: 149.22.87.240
   port: 443
   cipher: aes-128-gcm
   password: shadowsocks
   udp: true
 - name: 🇯🇵 日本 (Japan) 02 - xiaohe
   type: ss
-  server: 149.22.87.240
+  server: 149.22.87.204
   port: 443
   cipher: aes-128-gcm
   password: shadowsocks
@@ -27,39 +27,39 @@ proxies:
   udp: true
 - name: 🇯🇵 日本 (Japan) 04 - xiaohe
   type: ss
-  server: 149.22.87.240
+  server: 149.22.87.204
   port: 443
   cipher: aes-128-gcm
   password: shadowsocks
   udp: true
 - name: 🇯🇵 日本 (Japan) 05 - xiaohe
   type: ss
-  server: 149.22.87.241
+  server: 149.22.87.240
   port: 443
   cipher: aes-128-gcm
   password: shadowsocks
   udp: true
 - name: 🇯🇵 日本 (Japan) 06 - xiaohe
   type: ss
-  server: 149.22.87.204
+  server: 149.22.87.241
   port: 443
   cipher: aes-128-gcm
   password: shadowsocks
   udp: true
 - name: 🇯🇵 日本 (Japan) 07 - xiaohe
   type: hysteria2
+  server: 8.209.247.109
+  port: 443
+  password: usqmqUKJFIlCmvkCNSY64L3k
+  udp: true
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 08 - xiaohe
+  type: hysteria2
   server: 138.3.208.26
   port: 50160
   password: 184cdec28da5a09450803c8debcd2cc9
   udp: true
   skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 08 - xiaohe
-  type: ss
-  server: 84.247.155.196
-  port: 443
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
-  udp: true
 - name: 🇯🇵 日本 (Japan) 09 - xiaohe
   type: ss
   server: 84.247.155.196
@@ -75,34 +75,20 @@ proxies:
   udp: true
   skip-cert-verify: true
 - name: 🇯🇵 日本 (Japan) 11 - xiaohe
-  type: hysteria2
-  server: 8.209.247.109
+  type: ss
+  server: 84.247.155.196
   port: 443
-  password: usqmqUKJFIlCmvkCNSY64L3k
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
   udp: true
-  skip-cert-verify: true
 - name: 🇯🇵 日本 (Japan) 12 - xiaohe
-  type: hysteria2
-  server: 138.3.208.26
-  port: 50160
-  password: 184cdec28da5a09450803c8debcd2cc9
-  udp: true
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 13 - xiaohe
-  type: hysteria2
-  server: 138.3.208.26
-  port: 50160
-  password: 184cdec28da5a09450803c8debcd2cc9
-  udp: true
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 14 - xiaohe
   type: ss
   server: 84.247.155.196
   port: 80
   cipher: aes-256-gcm
   password: 3eOFeNssde7PYYMv
   udp: true
-- name: 🇯🇵 日本 (Japan) 15 - xiaohe
+- name: 🇯🇵 日本 (Japan) 13 - xiaohe
   type: hysteria2
   server: 8.211.175.236
   port: 8443
@@ -127,8 +113,6 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 11 - xiaohe
   - 🇯🇵 日本 (Japan) 12 - xiaohe
   - 🇯🇵 日本 (Japan) 13 - xiaohe
-  - 🇯🇵 日本 (Japan) 14 - xiaohe
-  - 🇯🇵 日本 (Japan) 15 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -147,7 +131,5 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 11 - xiaohe
   - 🇯🇵 日本 (Japan) 12 - xiaohe
   - 🇯🇵 日本 (Japan) 13 - xiaohe
-  - 🇯🇵 日本 (Japan) 14 - xiaohe
-  - 🇯🇵 日本 (Japan) 15 - xiaohe
 rules:
 - MATCH,PROXIES
