@@ -6,6 +6,14 @@ log-level: info
 proxies:
 - name: 🇻🇳 越南 (Vietnam) 01 - xiaohe
   type: vless
+  server: 150.95.109.109
+  port: 2086
+  uuid: b83faafc-cbb7-4655-99d4-2c4c39a49d1b
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇻🇳 越南 (Vietnam) 02 - xiaohe
+  type: vless
   server: kir3.crackerbinam.org
   port: 56026
   uuid: a1f0cbb8-c74a-4c27-b881-7b14d96aece1
@@ -23,11 +31,13 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇻🇳 越南 (Vietnam) 01 - xiaohe
+  - 🇻🇳 越南 (Vietnam) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇻🇳 越南 (Vietnam) 01 - xiaohe
+  - 🇻🇳 越南 (Vietnam) 02 - xiaohe
 rules:
 - MATCH,PROXIES

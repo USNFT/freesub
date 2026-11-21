@@ -5,6 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czechia) 01 - xiaohe
+  type: hysteria2
+  server: 188.68.216.27
+  port: 443
+  password: 49b5c86a-fbfc-0001-82af-171a932d04e7
+  udp: true
+  skip-cert-verify: true
+- name: 🇨🇿 捷克 (Czechia) 02 - xiaohe
   type: ss
   server: 194.87.233.93
   port: 46190
@@ -17,11 +24,13 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇨🇿 捷克 (Czechia) 01 - xiaohe
+  - 🇨🇿 捷克 (Czechia) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇨🇿 捷克 (Czechia) 01 - xiaohe
+  - 🇨🇿 捷克 (Czechia) 02 - xiaohe
 rules:
 - MATCH,PROXIES
