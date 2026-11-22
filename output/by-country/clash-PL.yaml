@@ -1,0 +1,50 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇵🇱 波兰 (Poland) 01 - xiaohe
+  type: vless
+  server: 191.217.253.12
+  port: 443
+  uuid: 6dd17e9f-5b7c-466d-a53a-7c30f5dc8338
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI
+    short-id: db04ce8bdb8900f1
+  servername: 191.217.253.12
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇵🇱 波兰 (Poland) 02 - xiaohe
+  type: vless
+  server: 45.132.179.90
+  port: 443
+  uuid: ef5a57c7-84d5-4f86-b99c-875a16da485f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: Ldrfdkq0bJrZWCS0p1u6Z2tPPal0LzRm4cgEYF_2KH8
+    short-id: cda7e8556ea56616
+  servername: sbmicro683.gangplatform.com
+  client-fingerprint: edge
+  flow: xtls-rprx-vision
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇵🇱 波兰 (Poland) 01 - xiaohe
+  - 🇵🇱 波兰 (Poland) 02 - xiaohe
+- name: AUTO
+  type: url-test
+  url: https://www.google.com/generate_204
+  interval: 300
+  proxies:
+  - 🇵🇱 波兰 (Poland) 01 - xiaohe
+  - 🇵🇱 波兰 (Poland) 02 - xiaohe
+rules:
+- MATCH,PROXIES

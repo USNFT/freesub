@@ -13,16 +13,17 @@ proxies:
   udp: true
 - name: 🇸🇪 瑞典 (Sweden) 02 - xiaohe
   type: vless
-  server: swe1.baterium.space
-  port: 443
-  uuid: 7d63243c-983e-44db-a1b8-13dc3fd6f7a2
+  server: 185.117.88.9
+  port: 8443
+  uuid: 9a597d68-6688-4046-bf24-a5a541e115e0
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: mg2MoLpb8B51aZiko_nW2SBRoaudv-O6HLHx8VYP7Do
-  servername: cdnjs.com
-  client-fingerprint: qq
+    public-key: 6FI4VM9WlQEGVjyCvLDQLz1jOkrzzhtfGl9eQTBn6HU
+    short-id: f8d0271b4b5f9efc
+  servername: www.apple.com
+  client-fingerprint: chrome
   flow: xtls-rprx-vision
 proxy-groups:
 - name: PROXIES

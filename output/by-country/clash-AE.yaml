@@ -20,17 +20,17 @@ proxies:
   udp: true
 - name: 🇦🇪 阿联酋 (UAE) 03 - xiaohe
   type: vless
-  server: 31.59.154.82
-  port: 8459
-  uuid: 11f48e58-bdd8-4251-ba00-ad05d05d9dcf
+  server: 31.56.18.99
+  port: 443
+  uuid: 0ef68b29-266e-4e0a-b935-eaa02975a439
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: mTSn98b4yZG3im3ITn-kNLPbT8ljc9ILvAqiT4jyKXk
-    short-id: 0f0e381ec0c4690d
-  servername: nl-edge.airlinesvpn.com
-  client-fingerprint: ''
+    public-key: RtoBkG8dr6pam2Z7bskxQxSlw17C1pDfzYeafDo2nG8
+    short-id: d16188300cd57a53
+  servername: play.cloudconsole.ru
+  client-fingerprint: safari
   flow: xtls-rprx-vision
 proxy-groups:
 - name: PROXIES
