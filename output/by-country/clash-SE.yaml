@@ -13,32 +13,6 @@ proxies:
   udp: true
 - name: 🇸🇪 瑞典 (Sweden) 02 - xiaohe
   type: vless
-  server: 70.34.211.236
-  port: 40118
-  uuid: 29872718-970b-493e-abc9-524fa266d16b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: NpgXDQ6jl_HGPdHAHFeiBl5Ym7bywxmw_EYovmFjVQs
-    short-id: 9e3f5e25c17d2615
-  servername: delivery.mp.microsoft.com
-  client-fingerprint: firefox
-- name: 🇸🇪 瑞典 (Sweden) 03 - xiaohe
-  type: vless
-  server: sonau.yaremonta.loc.cc
-  port: 443
-  uuid: c5468915-f60c-4134-b4d3-eb24501d7c65
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: _DS81HrngZsd_laYN5H0ZLvrqWhiW2DgMP2ea8KQkBc
-    short-id: abcd1234
-  servername: dl.google.com
-  client-fingerprint: firefox
-- name: 🇸🇪 瑞典 (Sweden) 04 - xiaohe
-  type: vless
   server: swe1.baterium.space
   port: 443
   uuid: 7d63243c-983e-44db-a1b8-13dc3fd6f7a2
@@ -50,21 +24,18 @@ proxies:
   servername: cdnjs.com
   client-fingerprint: qq
   flow: xtls-rprx-vision
-- name: 🇸🇪 瑞典 (Sweden) 05 - xiaohe
-  type: vmess
-  server: sonau.yaremonta.loc.cc
-  port: 8081
-  uuid: c5468915-f60c-4134-b4d3-eb24501d7c65
-  alterId: 0
-  cipher: auto
+- name: 🇸🇪 瑞典 (Sweden) 03 - xiaohe
+  type: vless
+  server: 188.225.57.185
+  port: 443
+  uuid: 88e79aa6-f431-4453-8dcc-652a0c747198
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vmess
-    headers:
-      Host: ''
+  reality-opts:
+    public-key: 4JggwEKhrkrIjQjO8kRX6iGvHQJixIFkiDOnE7zd3xE
+  servername: flintstack.dev
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -73,8 +44,6 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 01 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 02 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 03 - xiaohe
-  - 🇸🇪 瑞典 (Sweden) 04 - xiaohe
-  - 🇸🇪 瑞典 (Sweden) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -83,7 +52,5 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 01 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 02 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 03 - xiaohe
-  - 🇸🇪 瑞典 (Sweden) 04 - xiaohe
-  - 🇸🇪 瑞典 (Sweden) 05 - xiaohe
 rules:
 - MATCH,PROXIES
