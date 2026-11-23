@@ -5,54 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
-  type: vless
-  server: 193.233.198.117
-  port: 443
-  uuid: 03786aa4-21a5-4e7c-83d6-873aafc41217
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: zT-G11tZiOO7DFJD23MCeZC3TwaUJr6NMDHW4CLif1Y
-    short-id: 5eebb4b74e873b14
-  servername: de-03.neverspy.tech
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
-  type: ss
-  server: 130.49.189.158
-  port: 43558
-  cipher: chacha20-ietf-poly1305
-  password: LNc9h/4NA9Q6ZHNeYHoT5X/fR9aoE9KQR1SWhVDHBog=
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
   type: hysteria2
   server: 103.88.243.142
   port: 11592
   password: 41edb44c8e
   udp: true
   skip-cert-verify: true
-- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
-  type: ss
-  server: 46.17.42.129
-  port: 18443
-  cipher: aes-256-gcm
-  password: NTiHBg64fsY8u8DbGrtypD9gPGSL386p
+- name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
+  type: hysteria2
+  server: 103.88.243.142
+  port: 11592
+  password: 41edb44c8e
   udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
-  type: vless
-  server: 45.132.179.90
-  port: 443
-  uuid: ef5a57c7-84d5-4f86-b99c-875a16da485f
-  udp: true
-  tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: Ldrfdkq0bJrZWCS0p1u6Z2tPPal0LzRm4cgEYF_2KH8
-    short-id: cda7e8556ea56616
-  servername: sbmicro683.gangplatform.com
-  client-fingerprint: edge
-  flow: xtls-rprx-vision
 proxy-groups:
 - name: PROXIES
   type: select
@@ -60,9 +25,6 @@ proxy-groups:
   - AUTO
   - 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -70,8 +32,5 @@ proxy-groups:
   proxies:
   - 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
 rules:
 - MATCH,PROXIES
