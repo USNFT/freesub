@@ -1,0 +1,50 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇦🇲 AM 01 - xiaohe
+  type: vless
+  server: 03e488t.es12.h1clayd.shop
+  port: 443
+  uuid: c5470a56-1b9b-451c-b075-02c82ee4aa6c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: F-QRCTOgAul242ISSobCpwO8G6JGN0qeIdJdv60HIRo
+    short-id: bd35558b17a4930b
+  servername: 03e488t.es12.h1clayd.shop
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇦🇲 AM 02 - xiaohe
+  type: vless
+  server: 03e488t.es12.h1clayd.shop
+  port: 443
+  uuid: c5470a56-1b9b-451c-b075-02c82ee4aa6c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: F-QRCTOgAul242ISSobCpwO8G6JGN0qeIdJdv60HIRo
+    short-id: bd35558b17a4930b
+  servername: 03e488t.es12.h1clayd.shop
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇦🇲 AM 01 - xiaohe
+  - 🇦🇲 AM 02 - xiaohe
+- name: AUTO
+  type: url-test
+  url: https://www.google.com/generate_204
+  interval: 300
+  proxies:
+  - 🇦🇲 AM 01 - xiaohe
+  - 🇦🇲 AM 02 - xiaohe
+rules:
+- MATCH,PROXIES
