@@ -20,7 +20,7 @@ proxies:
   flow: xtls-rprx-vision
 - name: 🇨🇿 捷克 (Czechia) 02 - xiaohe
   type: vless
-  server: leviko-nl9472.shopingggg.ir
+  server: leviko-nl2962.shopingggg.ir
   port: 9543
   uuid: 920b3cd9-4f82-4669-bbd2-d4a28b9052c6
   udp: true
@@ -47,29 +47,8 @@ proxies:
   client-fingerprint: firefox
   flow: xtls-rprx-vision
 - name: 🇨🇿 捷克 (Czechia) 04 - xiaohe
-  type: hysteria2
-  server: 136.148.83.69
-  port: 443
-  password: 87bb2ac4-b7a1-0001-b11d-2107709ea6cb
-  udp: true
-  skip-cert-verify: true
-- name: 🇨🇿 捷克 (Czechia) 05 - xiaohe
   type: vless
-  server: 83.141.92.168
-  port: 443
-  uuid: a7595994-695d-484e-bfcb-e9fbb73cfa39
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: kpQWnVk3fEJXfPGFsMerUoPV_ZqUJUJFRnF1FvKyhRY
-    short-id: 7a7d19880a9ee786
-  servername: sladovna.russianpiwo.fun
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇨🇿 捷克 (Czechia) 06 - xiaohe
-  type: vless
-  server: leviko-nl2962.shopingggg.ir
+  server: leviko-nl9472.shopingggg.ir
   port: 9543
   uuid: 920b3cd9-4f82-4669-bbd2-d4a28b9052c6
   udp: true
@@ -90,8 +69,6 @@ proxy-groups:
   - 🇨🇿 捷克 (Czechia) 02 - xiaohe
   - 🇨🇿 捷克 (Czechia) 03 - xiaohe
   - 🇨🇿 捷克 (Czechia) 04 - xiaohe
-  - 🇨🇿 捷克 (Czechia) 05 - xiaohe
-  - 🇨🇿 捷克 (Czechia) 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -101,7 +78,5 @@ proxy-groups:
   - 🇨🇿 捷克 (Czechia) 02 - xiaohe
   - 🇨🇿 捷克 (Czechia) 03 - xiaohe
   - 🇨🇿 捷克 (Czechia) 04 - xiaohe
-  - 🇨🇿 捷克 (Czechia) 05 - xiaohe
-  - 🇨🇿 捷克 (Czechia) 06 - xiaohe
 rules:
 - MATCH,PROXIES

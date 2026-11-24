@@ -6,17 +6,17 @@ log-level: info
 proxies:
 - name: 🇧🇷 巴西 (Brazil) 01 - xiaohe
   type: vless
-  server: dddz-4-z.473221.xyz
-  port: 33161
-  uuid: 5807f1c4-b50e-4ec0-8d01-274045da0da5
+  server: free.fugui.lol
+  port: 47396
+  uuid: ead3595f-4020-4e76-a3ec-c248e1a2f2f7
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: BECARsUsTAoGzHFcGEquyFHKnI_LVL5FL6s1jZbLhVk
-    short-id: 6dbd86dc61ccb46d
-  servername: v1-dy.ixigua.com
-  client-fingerprint: firefox
+    public-key: IjWYbHNrZb3UCQxsTJyekEOA3tHq42L6Jw3O8MmLYVQ
+    short-id: fa514b83
+  servername: swdist.apple.com
+  client-fingerprint: chrome
   flow: xtls-rprx-vision
 proxy-groups:
 - name: PROXIES
