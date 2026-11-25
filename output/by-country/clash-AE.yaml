@@ -5,34 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - xiaohe
-  type: hysteria2
-  server: 193.233.130.66
-  port: 443
-  password: e2552c42-fdf8-45d4-9be5-98819dcd0211
-  udp: true
-  skip-cert-verify: true
-- name: 🇦🇪 阿联酋 (UAE) 02 - xiaohe
-  type: hysteria2
-  server: 193.233.130.66
-  port: 443
-  password: d0975db4-e8c8-41f7-a5f3-a3d1d432e499
-  udp: true
-  skip-cert-verify: true
-- name: 🇦🇪 阿联酋 (UAE) 03 - xiaohe
-  type: ss
-  server: 151.241.19.36
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇦🇪 阿联酋 (UAE) 04 - xiaohe
   type: ss
   server: 151.241.19.29
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇦🇪 阿联酋 (UAE) 05 - xiaohe
+- name: 🇦🇪 阿联酋 (UAE) 02 - xiaohe
+  type: ss
+  server: 151.241.19.36
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇦🇪 阿联酋 (UAE) 03 - xiaohe
   type: vless
   server: 212.192.3.63
   port: 9543
@@ -54,8 +40,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 01 - xiaohe
   - 🇦🇪 阿联酋 (UAE) 02 - xiaohe
   - 🇦🇪 阿联酋 (UAE) 03 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 04 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -64,7 +48,5 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 01 - xiaohe
   - 🇦🇪 阿联酋 (UAE) 02 - xiaohe
   - 🇦🇪 阿联酋 (UAE) 03 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 04 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 05 - xiaohe
 rules:
 - MATCH,PROXIES
