@@ -6,67 +6,67 @@ log-level: info
 proxies:
 - name: 🇨🇭 瑞士 (Switzerland) 01 - xiaohe
   type: ss
-  server: 23.166.88.189
+  server: 79.127.184.104
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
 - name: 🇨🇭 瑞士 (Switzerland) 02 - xiaohe
   type: ss
-  server: 23.166.88.127
+  server: 23.166.88.189
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
 - name: 🇨🇭 瑞士 (Switzerland) 03 - xiaohe
   type: ss
-  server: 186.190.215.251
+  server: 23.166.88.127
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
 - name: 🇨🇭 瑞士 (Switzerland) 04 - xiaohe
-  type: vless
-  server: 195.15.207.252
-  port: 443
-  uuid: 65b6bc06-44c9-4b21-8dc0-bdf1d688c0e6
+  type: ss
+  server: 186.190.215.251
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: dqhYuWM5WUOgUYe4FmvLZS-Nb4tY9qZ7_WffpePl6lQ
-    short-id: 76d0389e457fcba0
-  servername: ch.mntw.lol
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
 - name: 🇨🇭 瑞士 (Switzerland) 05 - xiaohe
-  type: vless
-  server: 195.15.207.252
-  port: 443
-  uuid: 65b6bc06-44c9-4b21-8dc0-bdf1d688c0e6
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: dqhYuWM5WUOgUYe4FmvLZS-Nb4tY9qZ7_WffpePl6lQ
-    short-id: 76d0389e457fcba0
-  servername: ch.mntw.lol
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇨🇭 瑞士 (Switzerland) 06 - xiaohe
   type: hysteria2
   server: 140.238.213.114
   port: 50160
   password: 84a506ca5aca505696a454d828420b3f
   udp: true
   skip-cert-verify: true
-- name: 🇨🇭 瑞士 (Switzerland) 07 - xiaohe
-  type: ss
-  server: 79.127.184.104
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇨🇭 瑞士 (Switzerland) 06 - xiaohe
+  type: vless
+  server: 195.15.207.252
+  port: 443
+  uuid: 65b6bc06-44c9-4b21-8dc0-bdf1d688c0e6
   udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: dqhYuWM5WUOgUYe4FmvLZS-Nb4tY9qZ7_WffpePl6lQ
+    short-id: 76d0389e457fcba0
+  servername: ch.mntw.lol
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇨🇭 瑞士 (Switzerland) 07 - xiaohe
+  type: vless
+  server: 195.15.207.252
+  port: 443
+  uuid: 65b6bc06-44c9-4b21-8dc0-bdf1d688c0e6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: dqhYuWM5WUOgUYe4FmvLZS-Nb4tY9qZ7_WffpePl6lQ
+    short-id: 76d0389e457fcba0
+  servername: ch.mntw.lol
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
 - name: 🇨🇭 瑞士 (Switzerland) 08 - xiaohe
   type: hysteria2
   server: 140.238.213.114
@@ -81,6 +81,19 @@ proxies:
   password: 84a506ca5aca505696a454d828420b3f
   udp: true
   skip-cert-verify: true
+- name: 🇨🇭 瑞士 (Switzerland) 10 - xiaohe
+  type: vless
+  server: 171.22.129.227
+  port: 443
+  uuid: 42c83523-9f96-41b2-82d6-2edb71a4ac19
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: fJnm6-PhJGSwHaAdJOzXkYOfCPPCWSlaZrtfm1XsqhA
+  servername: nujd35aknu.static-mirror.site
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
 proxy-groups:
 - name: PROXIES
   type: select
@@ -95,6 +108,7 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 07 - xiaohe
   - 🇨🇭 瑞士 (Switzerland) 08 - xiaohe
   - 🇨🇭 瑞士 (Switzerland) 09 - xiaohe
+  - 🇨🇭 瑞士 (Switzerland) 10 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -109,5 +123,6 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 07 - xiaohe
   - 🇨🇭 瑞士 (Switzerland) 08 - xiaohe
   - 🇨🇭 瑞士 (Switzerland) 09 - xiaohe
+  - 🇨🇭 瑞士 (Switzerland) 10 - xiaohe
 rules:
 - MATCH,PROXIES

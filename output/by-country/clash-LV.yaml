@@ -1,0 +1,63 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇱🇻 拉脱维亚 (Latvia) 01 - xiaohe
+  type: vless
+  server: 185.81.129.161
+  port: 443
+  uuid: 13908eee-ea78-4363-adab-6cca98ecfce3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: q4_o7NvD6vQg4hYsyO29Q6PVufjTJHDUbQTqstre9EQ
+  servername: lite.3apes.pro
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇱🇻 拉脱维亚 (Latvia) 02 - xiaohe
+  type: vless
+  server: 185.81.129.161
+  port: 443
+  uuid: 13908eee-ea78-4363-adab-6cca98ecfce3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: q4_o7NvD6vQg4hYsyO29Q6PVufjTJHDUbQTqstre9EQ
+  servername: lite.3apes.pro
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+- name: 🇱🇻 拉脱维亚 (Latvia) 03 - xiaohe
+  type: vless
+  server: lites.3apes.pro
+  port: 443
+  uuid: 13908eee-ea78-4363-adab-6cca98ecfce3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: q4_o7NvD6vQg4hYsyO29Q6PVufjTJHDUbQTqstre9EQ
+  servername: lites.3apes.pro
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇱🇻 拉脱维亚 (Latvia) 01 - xiaohe
+  - 🇱🇻 拉脱维亚 (Latvia) 02 - xiaohe
+  - 🇱🇻 拉脱维亚 (Latvia) 03 - xiaohe
+- name: AUTO
+  type: url-test
+  url: https://www.google.com/generate_204
+  interval: 300
+  proxies:
+  - 🇱🇻 拉脱维亚 (Latvia) 01 - xiaohe
+  - 🇱🇻 拉脱维亚 (Latvia) 02 - xiaohe
+  - 🇱🇻 拉脱维亚 (Latvia) 03 - xiaohe
+rules:
+- MATCH,PROXIES
