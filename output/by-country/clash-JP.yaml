@@ -13,28 +13,28 @@ proxies:
   udp: true
 - name: 🇯🇵 日本 (Japan) 02 - xiaohe
   type: ss
-  server: 149.22.87.241
+  server: 149.22.87.204
   port: 443
   cipher: aes-128-gcm
   password: shadowsocks
   udp: true
 - name: 🇯🇵 日本 (Japan) 03 - xiaohe
   type: ss
-  server: 149.22.87.240
+  server: 149.22.87.241
   port: 443
   cipher: aes-128-gcm
   password: shadowsocks
   udp: true
 - name: 🇯🇵 日本 (Japan) 04 - xiaohe
   type: ss
-  server: 149.22.87.204
+  server: 149.22.87.241
   port: 443
   cipher: aes-128-gcm
   password: shadowsocks
   udp: true
 - name: 🇯🇵 日本 (Japan) 05 - xiaohe
   type: ss
-  server: 149.22.87.241
+  server: 149.22.87.240
   port: 443
   cipher: aes-128-gcm
   password: shadowsocks
@@ -47,6 +47,13 @@ proxies:
   password: shadowsocks
   udp: true
 - name: 🇯🇵 日本 (Japan) 07 - xiaohe
+  type: hysteria2
+  server: 8.211.175.236
+  port: 8443
+  password: u63SxILNwtrQZ7Y1ZrFaZfsA
+  udp: true
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 08 - xiaohe
   type: vless
   server: 158.101.151.157
   port: 443
@@ -60,26 +67,11 @@ proxies:
   servername: www.microsoft.com
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: 🇯🇵 日本 (Japan) 08 - xiaohe
-  type: vmess
-  server: 161.33.20.255
-  port: 8880
-  uuid: e0856508-d693-450a-a099-455091dc4f25
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /e0856508-d693-450a-a099-455091dc4f25-vm
-    headers:
-      Host: ''
 - name: 🇯🇵 日本 (Japan) 09 - xiaohe
   type: hysteria2
-  server: 8.209.247.109
-  port: 443
-  password: usqmqUKJFIlCmvkCNSY64L3k
+  server: 8.211.175.236
+  port: 8443
+  password: u63SxILNwtrQZ7Y1ZrFaZfsA
   udp: true
   skip-cert-verify: true
 - name: 🇯🇵 日本 (Japan) 10 - xiaohe
@@ -90,17 +82,40 @@ proxies:
   udp: true
   skip-cert-verify: true
 - name: 🇯🇵 日本 (Japan) 11 - xiaohe
-  type: hysteria2
-  server: 8.211.175.236
-  port: 8443
-  password: u63SxILNwtrQZ7Y1ZrFaZfsA
+  type: vmess
+  server: 168.138.43.75
+  port: 80
+  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  alterId: 0
+  cipher: auto
   udp: true
+  tls: false
   skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+    headers:
+      Host: None
 - name: 🇯🇵 日本 (Japan) 12 - xiaohe
+  type: vmess
+  server: 168.110.63.247
+  port: 8081
+  uuid: c3bde296-8e44-4b8c-a325-577d5b3cc7c8
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: ''
+- name: 🇯🇵 日本 (Japan) 13 - xiaohe
   type: hysteria2
-  server: 8.211.175.236
-  port: 8443
-  password: u63SxILNwtrQZ7Y1ZrFaZfsA
+  server: 8.209.247.109
+  port: 443
+  password: usqmqUKJFIlCmvkCNSY64L3k
   udp: true
   skip-cert-verify: true
 proxy-groups:
@@ -120,6 +135,7 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 10 - xiaohe
   - 🇯🇵 日本 (Japan) 11 - xiaohe
   - 🇯🇵 日本 (Japan) 12 - xiaohe
+  - 🇯🇵 日本 (Japan) 13 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -137,5 +153,6 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 10 - xiaohe
   - 🇯🇵 日本 (Japan) 11 - xiaohe
   - 🇯🇵 日本 (Japan) 12 - xiaohe
+  - 🇯🇵 日本 (Japan) 13 - xiaohe
 rules:
 - MATCH,PROXIES
