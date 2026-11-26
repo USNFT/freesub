@@ -1,0 +1,50 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇵🇱 波兰 (Poland) 01 - xiaohe
+  type: vless
+  server: 45.142.212.191
+  port: 443
+  uuid: 148917bd-0b37-42b8-98f4-aa94ca73e75a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: tp7awfnKLbhIDkdYlT7Avf-SfUwt7ncX5oyWS5wQmR0
+    short-id: 24c4
+  servername: travel.yandex.ru
+  client-fingerprint: ''
+  flow: xtls-rprx-vision
+- name: 🇵🇱 波兰 (Poland) 02 - xiaohe
+  type: vless
+  server: 144.31.171.37
+  port: 443
+  uuid: 873767a0-9b4a-470c-85f8-7449cd7a561c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: Z-v1tBIQpFBfedRUOeHovEVL6Y22KmrBrDWY23cgtAI
+    short-id: 4bd5aa582ceabfdd
+  servername: hellverser.mult-fandom.ru
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇵🇱 波兰 (Poland) 01 - xiaohe
+  - 🇵🇱 波兰 (Poland) 02 - xiaohe
+- name: AUTO
+  type: url-test
+  url: https://www.google.com/generate_204
+  interval: 300
+  proxies:
+  - 🇵🇱 波兰 (Poland) 01 - xiaohe
+  - 🇵🇱 波兰 (Poland) 02 - xiaohe
+rules:
+- MATCH,PROXIES
