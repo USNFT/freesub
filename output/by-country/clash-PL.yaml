@@ -4,18 +4,18 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇧🇬 保加利亚 (Bulgaria) 01 - xiaohe
+- name: 🇵🇱 波兰 (Poland) 01 - xiaohe
   type: vless
-  server: 195.123.226.21
+  server: 150.251.113.34
   port: 443
-  uuid: 6589c320-db68-43cd-a273-b46299bab355
+  uuid: d7d724b5-17ce-4f3c-877d-dfbf0f07afa1
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: rabtI-ymNXBUvYYRwAw8DiR-1pdP7U0WPIaCBHEkgzo
-    short-id: 77bb0d07bddbc832
-  servername: gateway.icloud.com
+    public-key: 8yMLSTbkpJFfbgTjNzotzz7U8OT6AERrclgKdKrXXW8
+    short-id: 150a627d15154cf2
+  servername: www.cloudflare.com
   client-fingerprint: chrome
   flow: xtls-rprx-vision
 proxy-groups:
@@ -23,12 +23,12 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇧🇬 保加利亚 (Bulgaria) 01 - xiaohe
+  - 🇵🇱 波兰 (Poland) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇧🇬 保加利亚 (Bulgaria) 01 - xiaohe
+  - 🇵🇱 波兰 (Poland) 01 - xiaohe
 rules:
 - MATCH,PROXIES

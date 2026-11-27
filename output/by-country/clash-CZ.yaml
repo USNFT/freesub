@@ -5,6 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czechia) 01 - xiaohe
+  type: vless
+  server: 5.39.202.153
+  port: 443
+  uuid: c0742f77-5495-43bf-b007-88d368774d7c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: WU5baXUzRH9BceiYI8MPBmDMEloTFImx2vvE5uh1yjM
+    short-id: f19e02a2fb573c18
+  servername: czek.oblachniy.ink
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+- name: 🇨🇿 捷克 (Czechia) 02 - xiaohe
   type: hysteria2
   server: 136.148.83.69
   port: 443
@@ -17,11 +31,13 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇨🇿 捷克 (Czechia) 01 - xiaohe
+  - 🇨🇿 捷克 (Czechia) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇨🇿 捷克 (Czechia) 01 - xiaohe
+  - 🇨🇿 捷克 (Czechia) 02 - xiaohe
 rules:
 - MATCH,PROXIES
