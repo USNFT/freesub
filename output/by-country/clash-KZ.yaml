@@ -18,31 +18,17 @@ proxies:
   servername: kz.koteika3528.dev
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaohe
-  type: vless
-  server: 38.180.206.44
-  port: 48982
-  uuid: a80acd3a-3df5-40b5-a54a-29bb18056115
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: A1ygNS8bIvKp7ZlUnjjHX_Z2AS_e4suvSs_IkWICvGE
-  servername: cdn3-88.yahoo.com
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaohe
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaohe
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaohe
 rules:
 - MATCH,PROXIES
