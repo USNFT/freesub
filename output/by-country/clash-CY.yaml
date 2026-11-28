@@ -1,0 +1,50 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇨🇾 塞浦路斯 (Cyprus) 01 - xiaohe
+  type: vless
+  server: 83.141.86.180
+  port: 443
+  uuid: 0444647e-6388-4c4b-9847-1fcd5bc101ea
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: LPxxKvSEfGrfShtdNl4e9fDrjdwVfwceocYPfCHJix8
+    short-id: 040175d0947db95a
+  servername: az-de-01-ut34t1ug.farmerly.cc
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇨🇾 塞浦路斯 (Cyprus) 02 - xiaohe
+  type: vless
+  server: 83.141.86.180
+  port: 443
+  uuid: 0444647e-6388-4c4b-9847-1fcd5bc101ea
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: LPxxKvSEfGrfShtdNl4e9fDrjdwVfwceocYPfCHJix8
+    short-id: 040175d0947db95a
+  servername: az-de-01-ut34t1ug.farmerly.cc
+  client-fingerprint: ''
+  flow: xtls-rprx-vision
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇨🇾 塞浦路斯 (Cyprus) 01 - xiaohe
+  - 🇨🇾 塞浦路斯 (Cyprus) 02 - xiaohe
+- name: AUTO
+  type: url-test
+  url: https://www.google.com/generate_204
+  interval: 300
+  proxies:
+  - 🇨🇾 塞浦路斯 (Cyprus) 01 - xiaohe
+  - 🇨🇾 塞浦路斯 (Cyprus) 02 - xiaohe
+rules:
+- MATCH,PROXIES

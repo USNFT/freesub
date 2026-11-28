@@ -1,0 +1,33 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇵🇱 波兰 (Poland) 01 - xiaohe
+  type: vless
+  server: 31.59.116.161
+  port: 443
+  uuid: 6ac6d17d-040c-4fab-940e-8f5d72c3fed6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: dVUZKjDwnF7ubnhOxbEVcKxwczLZt7dl_TH-_RGKpiI
+    short-id: 0c7d54bc
+  servername: www.samsung.com
+  client-fingerprint: ''
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇵🇱 波兰 (Poland) 01 - xiaohe
+- name: AUTO
+  type: url-test
+  url: https://www.google.com/generate_204
+  interval: 300
+  proxies:
+  - 🇵🇱 波兰 (Poland) 01 - xiaohe
+rules:
+- MATCH,PROXIES

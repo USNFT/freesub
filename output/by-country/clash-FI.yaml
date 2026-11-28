@@ -6,6 +6,34 @@ log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - xiaohe
   type: vless
+  server: 31.77.138.5
+  port: 443
+  uuid: 55ba7b31-b0eb-4362-9c9b-fc53b0a53fab
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: A_h5ecRXxMPMJwSqT3Wzcs93TZrRmv1Wkb-9daHzngU
+    short-id: 8223daaa6d035100
+  servername: fi1.setlocation.top
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+- name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
+  type: vless
+  server: 31.77.138.211
+  port: 443
+  uuid: 55ba7b31-b0eb-4362-9c9b-fc53b0a53fab
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: CfkGhr_sLpU9RJouAtTUnX1CpDTK6hRKEl01wMtN4Ro
+    short-id: ff67a6fea811a566
+  servername: fi3.setlocation.top
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+- name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
+  type: vless
   server: 138.124.37.196
   port: 443
   uuid: 97daeafa-0744-38a0-9441-74d6cdb63e80
@@ -16,19 +44,33 @@ proxies:
     public-key: r7gK1xDtZl5wDL59Teyw--KXacW1EjOT2mm0MdwY7gM
     short-id: 39b7084197ed8260
   servername: lg.hel.play2go.cloud
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   flow: xtls-rprx-vision
+- name: 🇫🇮 芬兰 (Finland) 04 - xiaohe
+  type: vless
+  server: SUQmci.Deev-Guard.ir
+  port: 3036
+  uuid: d1ec39e3-ad7b-4b65-9f65-813696f9a04e
+  udp: true
+  tls: false
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇫🇮 芬兰 (Finland) 01 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 02 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 03 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇫🇮 芬兰 (Finland) 01 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 02 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 03 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 04 - xiaohe
 rules:
 - MATCH,PROXIES

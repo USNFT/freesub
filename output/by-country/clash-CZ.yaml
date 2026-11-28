@@ -1,0 +1,27 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇨🇿 捷克 (Czechia) 01 - xiaohe
+  type: hysteria2
+  server: 136.148.83.69
+  port: 443
+  password: 87bb2ac4-b7a1-0001-b11d-2107709ea6cb
+  udp: true
+  skip-cert-verify: true
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇨🇿 捷克 (Czechia) 01 - xiaohe
+- name: AUTO
+  type: url-test
+  url: https://www.google.com/generate_204
+  interval: 300
+  proxies:
+  - 🇨🇿 捷克 (Czechia) 01 - xiaohe
+rules:
+- MATCH,PROXIES
