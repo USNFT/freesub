@@ -6,28 +6,28 @@ log-level: info
 proxies:
 - name: 🇬🇷 希腊 (Greece) 01 - xiaohe
   type: hysteria2
-  server: 128.254.186.57
+  server: 128.254.186.213
   port: 13337
   password: 900c8c92-1979-4c7c-8f2f-63e87d53d8fe
   udp: true
   skip-cert-verify: true
 - name: 🇬🇷 希腊 (Greece) 02 - xiaohe
   type: hysteria2
-  server: 128.254.186.190
+  server: 128.254.186.163
   port: 13337
   password: 900c8c92-1979-4c7c-8f2f-63e87d53d8fe
   udp: true
   skip-cert-verify: true
 - name: 🇬🇷 希腊 (Greece) 03 - xiaohe
   type: hysteria2
-  server: 128.254.186.57
+  server: 128.254.186.82
   port: 13337
   password: 900c8c92-1979-4c7c-8f2f-63e87d53d8fe
   udp: true
   skip-cert-verify: true
 - name: 🇬🇷 希腊 (Greece) 04 - xiaohe
   type: hysteria2
-  server: 128.254.186.190
+  server: 128.254.186.57
   port: 13337
   password: 900c8c92-1979-4c7c-8f2f-63e87d53d8fe
   udp: true
@@ -48,25 +48,25 @@ proxies:
   skip-cert-verify: true
 - name: 🇬🇷 希腊 (Greece) 07 - xiaohe
   type: hysteria2
-  server: uk-tube-01.stre4m.net
+  server: 128.254.186.190
   port: 13337
   password: 900c8c92-1979-4c7c-8f2f-63e87d53d8fe
   udp: true
   skip-cert-verify: true
 - name: 🇬🇷 希腊 (Greece) 08 - xiaohe
-  type: vless
-  server: 85.90.197.220
-  port: 443
-  uuid: 8f704ed6-9a1a-4d04-94dd-1bff501716de
+  type: hysteria2
+  server: uk-tube-01.stre4m.net
+  port: 13337
+  password: 900c8c92-1979-4c7c-8f2f-63e87d53d8fe
   udp: true
-  tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: biNcdU5mywtNw-KyPpLHindBxdEyAolT1WJ26N0b7y4
-    short-id: 94acb54627612d43
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
+- name: 🇬🇷 希腊 (Greece) 09 - xiaohe
+  type: hysteria2
+  server: uk-tube-01.stre4m.net
+  port: 13337
+  password: 900c8c92-1979-4c7c-8f2f-63e87d53d8fe
+  udp: true
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -80,6 +80,7 @@ proxy-groups:
   - 🇬🇷 希腊 (Greece) 06 - xiaohe
   - 🇬🇷 希腊 (Greece) 07 - xiaohe
   - 🇬🇷 希腊 (Greece) 08 - xiaohe
+  - 🇬🇷 希腊 (Greece) 09 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -93,5 +94,6 @@ proxy-groups:
   - 🇬🇷 希腊 (Greece) 06 - xiaohe
   - 🇬🇷 希腊 (Greece) 07 - xiaohe
   - 🇬🇷 希腊 (Greece) 08 - xiaohe
+  - 🇬🇷 希腊 (Greece) 09 - xiaohe
 rules:
 - MATCH,PROXIES
